@@ -1,0 +1,351 @@
+{
+  "verified_prediction_scenarios": 70,
+  "prediction_sources": [
+    {
+      "path": "runs/control_delay0_fold0/predictions/clean.csv",
+      "sha256": "b2a54c639e856eddf69760728896a2c7682b278ad652a692346a19b125588f8c"
+    },
+    {
+      "path": "runs/control_delay0_fold0/predictions/text_10_random.csv",
+      "sha256": "399e8b6d938cdc310428f39fa38581c7d7a9eda585be2395b3c35c41118f6553"
+    },
+    {
+      "path": "runs/control_delay0_fold0/predictions/text_30_random.csv",
+      "sha256": "a72ce5a91d8d40bc7178dce4d58920cdd5c174585c2b7aaab254be4068a5ebea"
+    },
+    {
+      "path": "runs/control_delay0_fold0/predictions/text_50_random.csv",
+      "sha256": "095222600ed25c11de62aec46f3349f5750e84bde7f7634fa6dd4959f84eed73"
+    },
+    {
+      "path": "runs/control_delay0_fold0/predictions/audio_10_random.csv",
+      "sha256": "c8792fb9fd8a47fa6ffcaffe08564fafa9243d3772070cd3711d148d07927ffc"
+    },
+    {
+      "path": "runs/control_delay0_fold0/predictions/audio_30_random.csv",
+      "sha256": "079eee7d97d36a8dd685b8b95a011f7e3f1ed89b692183f012e7396de5be5cf4"
+    },
+    {
+      "path": "runs/control_delay0_fold0/predictions/audio_50_random.csv",
+      "sha256": "71bdb0bba4a45b0d501f0918450ca13a1150efeb905cf5fe3e67ef45b2e69177"
+    },
+    {
+      "path": "runs/control_delay0_fold0/predictions/vision_10_random.csv",
+      "sha256": "141cd484c5594907b8d6598ebd4f21ef346855a6ffda6723784f136cacfa6b87"
+    },
+    {
+      "path": "runs/control_delay0_fold0/predictions/vision_30_random.csv",
+      "sha256": "d9c8a643d57128b371122f563e47abfcbf377636a086f591ac28b5a2d4a85546"
+    },
+    {
+      "path": "runs/control_delay0_fold0/predictions/vision_50_random.csv",
+      "sha256": "182364c9c3568aafe463b53a65efdcfba8935b48e176ae255c6738a6691decd3"
+    },
+    {
+      "path": "runs/defer1_fold0/predictions/clean.csv",
+      "sha256": "ac23e6f4b35fb1c7b9fbea14646179af6c842954a2e6fbc99a991da907efbbcd"
+    },
+    {
+      "path": "runs/defer1_fold0/predictions/text_10_random.csv",
+      "sha256": "b37087d04176fa17448377e84a0a720c74d5d16bbaa6de34254d1787a77015af"
+    },
+    {
+      "path": "runs/defer1_fold0/predictions/text_30_random.csv",
+      "sha256": "3734a928b713ddb0845e4bce21404a66323ebdc6454f441ddc72cc7847afa672"
+    },
+    {
+      "path": "runs/defer1_fold0/predictions/text_50_random.csv",
+      "sha256": "679b7b9225358a7b11ccb7009ee64a30c6e8181bd17d5fc218fa7d3fa732a69f"
+    },
+    {
+      "path": "runs/defer1_fold0/predictions/audio_10_random.csv",
+      "sha256": "04c2e3c252fce2659bf66837c2040008990b994b1da05c8eba27474cd94e4c9c"
+    },
+    {
+      "path": "runs/defer1_fold0/predictions/audio_30_random.csv",
+      "sha256": "218ef7021afcd3bba2c6749d46e96b646c1531130597b1da66231c935855ebf3"
+    },
+    {
+      "path": "runs/defer1_fold0/predictions/audio_50_random.csv",
+      "sha256": "805a503e1193997fca6de09135602239eb505db35adabffa6ccd038cc30851ed"
+    },
+    {
+      "path": "runs/defer1_fold0/predictions/vision_10_random.csv",
+      "sha256": "42770824a2d61b10f8dcf09403f12e550edc8fb2afe4ecc1b7c018f675ca6fa0"
+    },
+    {
+      "path": "runs/defer1_fold0/predictions/vision_30_random.csv",
+      "sha256": "cf0f27e89ab0ae014e2399ca047230b331abb0900d1b063f0b20bc981cb10973"
+    },
+    {
+      "path": "runs/defer1_fold0/predictions/vision_50_random.csv",
+      "sha256": "fea5099891dcdeb70bc66a42687665022f5df0a080a398006dee35035525363f"
+    },
+    {
+      "path": "runs/defer1_fold1/predictions/clean.csv",
+      "sha256": "1460d06c5d71a83b05f55e696c25b1ea893592b9aba1fd312210af58a07a72b6"
+    },
+    {
+      "path": "runs/defer1_fold1/predictions/text_10_random.csv",
+      "sha256": "bba4fdaa7db3d7b9cd773d84b6f2a9573cac99f3b9c04eb3aab2c4db6a2fdd0e"
+    },
+    {
+      "path": "runs/defer1_fold1/predictions/text_30_random.csv",
+      "sha256": "5b4ff54839872486411a71482556fadc556847265ef833ba9eb54e801e83c117"
+    },
+    {
+      "path": "runs/defer1_fold1/predictions/text_50_random.csv",
+      "sha256": "330942a1ffd5f1617ae560b1c73b4d0d505ddc5caa310807c3a6fe2c3b7d9dd2"
+    },
+    {
+      "path": "runs/defer1_fold1/predictions/audio_10_random.csv",
+      "sha256": "0d99031dd541b4bc38315b029c29107b4f6218f515a02b791bacfc663b15694a"
+    },
+    {
+      "path": "runs/defer1_fold1/predictions/audio_30_random.csv",
+      "sha256": "900796ae0169ab4428bea10c9ec6a426cfd9fdda7a179e9807330da3b7b6f99c"
+    },
+    {
+      "path": "runs/defer1_fold1/predictions/audio_50_random.csv",
+      "sha256": "ceaeac6cad482e7c741f3e515e5a2e4ca862dca851ce965929bc3abdc7057ecd"
+    },
+    {
+      "path": "runs/defer1_fold1/predictions/vision_10_random.csv",
+      "sha256": "ba3e3aad6584853751c6f3ac66bc14367dc5fc68a75461a24ae0fb7fd84cf43c"
+    },
+    {
+      "path": "runs/defer1_fold1/predictions/vision_30_random.csv",
+      "sha256": "fa6bae0ffeb94b0f520d02899c9427f1bc7868c84b38e57fb7e092ac0cf8629f"
+    },
+    {
+      "path": "runs/defer1_fold1/predictions/vision_50_random.csv",
+      "sha256": "f27ff56fb54bce1c20a2e481c7521fd966b9e125e28ea400181203e2c0366491"
+    },
+    {
+      "path": "runs/defer1_fold2/predictions/clean.csv",
+      "sha256": "a1cff0277b17ad87b25ad4a6a9b39f04275af7c82fdfed69e79db367a338c822"
+    },
+    {
+      "path": "runs/defer1_fold2/predictions/text_10_random.csv",
+      "sha256": "8dcb94cb620ae8a975b2721a8139a9843d2926ed897b1ef30963f684c23c6021"
+    },
+    {
+      "path": "runs/defer1_fold2/predictions/text_30_random.csv",
+      "sha256": "6f846e3a02a658106deadf213032fcb0797b53f415af9678bc77b24957b0412e"
+    },
+    {
+      "path": "runs/defer1_fold2/predictions/text_50_random.csv",
+      "sha256": "5a16c7b49190b96b2f14b459864641a20b486fffe54518bc005f5f6a656857ad"
+    },
+    {
+      "path": "runs/defer1_fold2/predictions/audio_10_random.csv",
+      "sha256": "7f6125e6ec90e5838066313ebb998fbc6ae376550e63d5d5d8c8004d5caca735"
+    },
+    {
+      "path": "runs/defer1_fold2/predictions/audio_30_random.csv",
+      "sha256": "853dd0da890236dded905950940f56f86bd37f8730f8f7e2c756a2f421f82f0b"
+    },
+    {
+      "path": "runs/defer1_fold2/predictions/audio_50_random.csv",
+      "sha256": "313dea9357ee3221e19bd350ac1ddcce354f2c976f29dd15aba61aef3a77e89f"
+    },
+    {
+      "path": "runs/defer1_fold2/predictions/vision_10_random.csv",
+      "sha256": "de47b195643f74d541ce9418c81464020007046e280cb1b9fbc63a0f001742b0"
+    },
+    {
+      "path": "runs/defer1_fold2/predictions/vision_30_random.csv",
+      "sha256": "8f99b2d0d58b1d6f05ee65aa417117361351f2fffb0a74be2d9b23ed64e37cfb"
+    },
+    {
+      "path": "runs/defer1_fold2/predictions/vision_50_random.csv",
+      "sha256": "8caa847b08f02285f99ed018a9b4947316d820827c6a7b0eed1b90a8a8ca3f81"
+    },
+    {
+      "path": "evidence/reference/runs/balanced_inverse_fold0/predictions/clean.csv",
+      "sha256": "b2a54c639e856eddf69760728896a2c7682b278ad652a692346a19b125588f8c"
+    },
+    {
+      "path": "evidence/reference/runs/balanced_inverse_fold0/predictions/text_10_random.csv",
+      "sha256": "399e8b6d938cdc310428f39fa38581c7d7a9eda585be2395b3c35c41118f6553"
+    },
+    {
+      "path": "evidence/reference/runs/balanced_inverse_fold0/predictions/text_30_random.csv",
+      "sha256": "a72ce5a91d8d40bc7178dce4d58920cdd5c174585c2b7aaab254be4068a5ebea"
+    },
+    {
+      "path": "evidence/reference/runs/balanced_inverse_fold0/predictions/text_50_random.csv",
+      "sha256": "095222600ed25c11de62aec46f3349f5750e84bde7f7634fa6dd4959f84eed73"
+    },
+    {
+      "path": "evidence/reference/runs/balanced_inverse_fold0/predictions/audio_10_random.csv",
+      "sha256": "c8792fb9fd8a47fa6ffcaffe08564fafa9243d3772070cd3711d148d07927ffc"
+    },
+    {
+      "path": "evidence/reference/runs/balanced_inverse_fold0/predictions/audio_30_random.csv",
+      "sha256": "079eee7d97d36a8dd685b8b95a011f7e3f1ed89b692183f012e7396de5be5cf4"
+    },
+    {
+      "path": "evidence/reference/runs/balanced_inverse_fold0/predictions/audio_50_random.csv",
+      "sha256": "71bdb0bba4a45b0d501f0918450ca13a1150efeb905cf5fe3e67ef45b2e69177"
+    },
+    {
+      "path": "evidence/reference/runs/balanced_inverse_fold0/predictions/vision_10_random.csv",
+      "sha256": "141cd484c5594907b8d6598ebd4f21ef346855a6ffda6723784f136cacfa6b87"
+    },
+    {
+      "path": "evidence/reference/runs/balanced_inverse_fold0/predictions/vision_30_random.csv",
+      "sha256": "d9c8a643d57128b371122f563e47abfcbf377636a086f591ac28b5a2d4a85546"
+    },
+    {
+      "path": "evidence/reference/runs/balanced_inverse_fold0/predictions/vision_50_random.csv",
+      "sha256": "182364c9c3568aafe463b53a65efdcfba8935b48e176ae255c6738a6691decd3"
+    },
+    {
+      "path": "evidence/reference/runs/balanced_inverse_fold1/predictions/clean.csv",
+      "sha256": "f32c7dd29ecb8a50885611457cf2062cebded6372394ed1de59729c5a3e82b97"
+    },
+    {
+      "path": "evidence/reference/runs/balanced_inverse_fold1/predictions/text_10_random.csv",
+      "sha256": "579e23e560c091fffb90c8029394eb4853359f533d48febd45390279468eb515"
+    },
+    {
+      "path": "evidence/reference/runs/balanced_inverse_fold1/predictions/text_30_random.csv",
+      "sha256": "7712589ef275acb5a717cfdc45d9636401d720d32d47ee7f1b81a8332067a84a"
+    },
+    {
+      "path": "evidence/reference/runs/balanced_inverse_fold1/predictions/text_50_random.csv",
+      "sha256": "87f671494f8cbc467dfad1b3f52aaa8dcd9e09d7cb0ff84ea2e9f39a91dd2303"
+    },
+    {
+      "path": "evidence/reference/runs/balanced_inverse_fold1/predictions/audio_10_random.csv",
+      "sha256": "80c32c6671ae024d8a6637350696d60b07be4abdea1d428a92d7868f128d2e89"
+    },
+    {
+      "path": "evidence/reference/runs/balanced_inverse_fold1/predictions/audio_30_random.csv",
+      "sha256": "f2a321b12c87c240c3904b87845aaf1a2aa2d36c776fe042b9fad56372014600"
+    },
+    {
+      "path": "evidence/reference/runs/balanced_inverse_fold1/predictions/audio_50_random.csv",
+      "sha256": "5d4a8b0837abde61f935c0637191790ac12152fcd89bce4db8ba856452ff106e"
+    },
+    {
+      "path": "evidence/reference/runs/balanced_inverse_fold1/predictions/vision_10_random.csv",
+      "sha256": "01a11734e9ff19f5fdb92f757803d1c7db5f5a7b80ecba02aaab64822bc681d7"
+    },
+    {
+      "path": "evidence/reference/runs/balanced_inverse_fold1/predictions/vision_30_random.csv",
+      "sha256": "3ae58e2be6873028d5e77fa75ebc97d69069692a63faa2df3087012e1010998e"
+    },
+    {
+      "path": "evidence/reference/runs/balanced_inverse_fold1/predictions/vision_50_random.csv",
+      "sha256": "8885d5121c72ba36fe02361bcfc3f9d88da13a11deab8310df348d973e19caec"
+    },
+    {
+      "path": "evidence/reference/runs/balanced_inverse_fold2/predictions/clean.csv",
+      "sha256": "094a026a9f51717af8cc8848bbcd5f21f8fa02ece7acdf6bf3b9835b56b33857"
+    },
+    {
+      "path": "evidence/reference/runs/balanced_inverse_fold2/predictions/text_10_random.csv",
+      "sha256": "7cd3bffe7652d657dc28562e90e8f75be54c1f625df6a8dee51000097a4ece85"
+    },
+    {
+      "path": "evidence/reference/runs/balanced_inverse_fold2/predictions/text_30_random.csv",
+      "sha256": "f812fad2374fd678be0e0797cd810667c8fa09ee4efd21c3fb54899a2d12f78b"
+    },
+    {
+      "path": "evidence/reference/runs/balanced_inverse_fold2/predictions/text_50_random.csv",
+      "sha256": "6b1d106382f46cc96c84c0070ea85383210631275103a89a3faee6fc16cf1a39"
+    },
+    {
+      "path": "evidence/reference/runs/balanced_inverse_fold2/predictions/audio_10_random.csv",
+      "sha256": "2f998f7161ca7e72b730d49c00e1a7072f5724398796c65a52e1bd476500f0a1"
+    },
+    {
+      "path": "evidence/reference/runs/balanced_inverse_fold2/predictions/audio_30_random.csv",
+      "sha256": "b33e578653603663a11b005a158849e5644713c58a4623ceec6fe65dfacc161c"
+    },
+    {
+      "path": "evidence/reference/runs/balanced_inverse_fold2/predictions/audio_50_random.csv",
+      "sha256": "e8895bd0bc8e9c6128e43b0cac95f3d0761b216f092f5fd8b93fd5b603533acd"
+    },
+    {
+      "path": "evidence/reference/runs/balanced_inverse_fold2/predictions/vision_10_random.csv",
+      "sha256": "39d6f3004fab4868e4dc354fc1d953c44bff11428f1ef1cde133cc345564053f"
+    },
+    {
+      "path": "evidence/reference/runs/balanced_inverse_fold2/predictions/vision_30_random.csv",
+      "sha256": "4e35655caa17b540100f18b2dfaaffe8cca90072b65a0bbe24236dff7b3cd0cb"
+    },
+    {
+      "path": "evidence/reference/runs/balanced_inverse_fold2/predictions/vision_50_random.csv",
+      "sha256": "86481b5e1329e6049ce74ec2b8c0f7deaca1b2b513ce9215f36d2cde4bb52a22"
+    }
+  ],
+  "fit_weight_and_epoch_audit": [
+    {
+      "run": "runs/defer1_fold0",
+      "delay": 1,
+      "fit_counts": [
+        622,
+        483,
+        1085
+      ],
+      "best_epoch": 4,
+      "schedule_verified": true
+    },
+    {
+      "run": "runs/defer1_fold1",
+      "delay": 1,
+      "fit_counts": [
+        649,
+        519,
+        1134
+      ],
+      "best_epoch": 6,
+      "schedule_verified": true
+    },
+    {
+      "run": "runs/defer1_fold2",
+      "delay": 1,
+      "fit_counts": [
+        663,
+        514,
+        1121
+      ],
+      "best_epoch": 4,
+      "schedule_verified": true
+    }
+  ],
+  "independent_selection_verified": true,
+  "control": {
+    "tensor_count": 217,
+    "all_tensors_exact": true,
+    "maximum_absolute_difference": 0.0,
+    "score_delta": 0.0
+  },
+  "reference_unchanged": true,
+  "official_confirmation_runs": 0,
+  "new_official_validation_used": false,
+  "test_used_for_selection": false,
+  "sources_unchanged": true,
+  "analysis_script_sha256": "ce14ce1cc8d5c2c5323fbac6be124c6175bb51415ace8eea079861dcfba815f2",
+  "study_status": "interrupted_incomplete",
+  "incomplete_candidates_excluded_from_inference": [
+    {
+      "name": "defer2",
+      "status": "interrupted_incomplete",
+      "completed_folds": 0,
+      "checkpoints": [
+        {
+          "path": "runs/defer2_fold0/best.pt",
+          "bytes": 215195840,
+          "sha256": "b50518c99531d2dd111fdd948fc46c9723d4acb54c02c42840389118b602f14d",
+          "mtime_utc": "2026-09-25T10:48:41.567412+00:00",
+          "zip_complete": false,
+          "load_error": "RuntimeError('PytorchStreamReader failed reading zip archive: failed finding central directory')"
+        }
+      ]
+    }
+  ]
+}

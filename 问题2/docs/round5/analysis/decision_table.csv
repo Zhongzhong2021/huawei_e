@@ -1,0 +1,2 @@
+﻿model,fold_improvements,eligible,failed_conditions,delta_score,delta_clean_f1,delta_clean_mae,delta_accuracy,delta_neutral_f1,delta_positive_f1,delta_missing_f1,delta_missing_mae
+defer1,1,False,score_improved;accuracy;positive_f1_improved;fold_improvements,-0.0007468667509126226,-0.002754590063194451,-0.003555050890608369,-0.005032770032487477,-0.006310339266244525,-0.005830710818699458,-0.0021646119997152935,-0.004025270987340845

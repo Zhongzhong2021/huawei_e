@@ -1,0 +1,8 @@
+{
+  "tensor_count": 217,
+  "all_tensors_exact": true,
+  "maximum_absolute_difference": 0.0,
+  "score_delta": 0.0,
+  "reference_model_unchanged": true,
+  "checkpoint_file_hash_may_differ": "CPU storage tags and transactional file serialization change bytes, not fitted tensor values"
+}

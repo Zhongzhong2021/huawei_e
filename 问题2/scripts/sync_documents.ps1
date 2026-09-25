@@ -54,6 +54,21 @@ if ($Round5Root) {
         Copy-Verified (Join-Path $Round5Root $relative) (Join-Path $target "round5_snapshot/$relative") "round5/$relative"
     }
 }
+if (Test-Path -LiteralPath (Join-Path $source 'round5/reports')) {
+    Copy-Tree 'round5/reports' 'round5/reports' @('.md','.json','.tex')
+    Copy-Tree 'round5/figures' 'round5/figures' @('.png','.svg','.pdf','.json')
+    foreach ($relative in @(
+        'audit/poststudy_checks.json','audit/interruption_closure.json',
+        'recovery_evidence/recovery_verification_complete.json',
+        'recovery_evidence/serialization_roundtrips.json','recovery_evidence/tests.log',
+        'analysis/internal_folds.csv','analysis/decision_table.csv','study/protocol.json'
+    )) {
+        $folder = if ($relative.StartsWith('analysis/') -or $relative.StartsWith('study/')) {
+            $relative
+        } else { 'evidence/'+[IO.Path]::GetFileName($relative) }
+        Copy-Verified (Join-Path $source "round5/$relative") (Join-Path $target "round5/$folder") "round5/$relative"
+    }
+}
 
 # A byte-identical copy retains the prior rendered-document QA, not a new QA claim.
 $r3qa = Get-Content -LiteralPath (Join-Path $target 'round3/evidence/document_qa.json') -Raw | ConvertFrom-Json

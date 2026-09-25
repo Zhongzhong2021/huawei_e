@@ -1,5 +1,5 @@
 {
-  "synchronized_utc": "2026-09-25T16:00:23.5227767Z",
+  "synchronized_utc": "2026-09-25T16:27:20.2838868Z",
   "files": [
     {
       "path": "round1/reports/E题问题2解决方案与实验报告.docx",
@@ -438,6 +438,114 @@
       "source": "round5/runs/defer2_fold0/epochs.json",
       "sha256": "dad7a0e7eff8d4daeac312ff85398f93348aeb2c24b836248528c2034f6df865",
       "bytes": 925
+    },
+    {
+      "path": "round5/reports/E题问题2第五轮延后加权实验与论文补充.md",
+      "source": "round5/reports/E题问题2第五轮延后加权实验与论文补充.md",
+      "sha256": "b8fa5e9df6d0b2b63015eff30485af158013a808836c3bc0f53281950e8bdad3",
+      "bytes": 8871
+    },
+    {
+      "path": "round5/reports/round5_content.json",
+      "source": "round5/reports/round5_content.json",
+      "sha256": "4c6ec63a6689551d06d8e511c1570a48d7ea0a3ac18c6d53702ef0c33fb31159",
+      "bytes": 13499
+    },
+    {
+      "path": "round5/reports/round5_equations.tex",
+      "source": "round5/reports/round5_equations.tex",
+      "sha256": "d8c1b67c70ffc98265a85431fd20ff4387e8e5182d3fdb981475b7ba6a975840",
+      "bytes": 376
+    },
+    {
+      "path": "round5/figures/r5_01_paired.pdf",
+      "source": "round5/figures/r5_01_paired.pdf",
+      "sha256": "8bbc8a32fc4811405e4ef9f6eb8fed4e7d5c734b161eb22a35893790632168c5",
+      "bytes": 13169
+    },
+    {
+      "path": "round5/figures/r5_01_paired.png",
+      "source": "round5/figures/r5_01_paired.png",
+      "sha256": "d22fa3cd8b28c8376fdd8d1fecfc93a0560455c1f90e13a45b66e9b105ec7321",
+      "bytes": 288923
+    },
+    {
+      "path": "round5/figures/r5_01_paired.svg",
+      "source": "round5/figures/r5_01_paired.svg",
+      "sha256": "3fc6b726aeedaff46f3c0448dbdda96513ee05c9b6a8e81a08e7a663c2488d84",
+      "bytes": 17099
+    },
+    {
+      "path": "round5/figures/r5_02_tradeoffs.pdf",
+      "source": "round5/figures/r5_02_tradeoffs.pdf",
+      "sha256": "8bc191ad2ce7ecfe155691f0a6e04ea642710ec917f2573bd1c7cbc8969a1867",
+      "bytes": 15303
+    },
+    {
+      "path": "round5/figures/r5_02_tradeoffs.png",
+      "source": "round5/figures/r5_02_tradeoffs.png",
+      "sha256": "41020c483140ea842f528e32cf5e9b88c2b8c51104ba65b01b7c0575f1d5379f",
+      "bytes": 357142
+    },
+    {
+      "path": "round5/figures/r5_02_tradeoffs.svg",
+      "source": "round5/figures/r5_02_tradeoffs.svg",
+      "sha256": "f8e609347eaec7984015af3fd4afd47696b066d2b62480882427337a717c5165",
+      "bytes": 35331
+    },
+    {
+      "path": "round5/figures/round5_figure_manifest.json",
+      "source": "round5/figures/round5_figure_manifest.json",
+      "sha256": "7ba7355faa670468b6ae2b6cf27b3a728cffbcb6252ea8864020194fb56cce46",
+      "bytes": 1113
+    },
+    {
+      "path": "round5/evidence/poststudy_checks.json",
+      "source": "round5/audit/poststudy_checks.json",
+      "sha256": "2f59d9e7d557a51adbe87d43fff26b5fe3006442d9014b8175dce906ef2fd54c",
+      "bytes": 14057
+    },
+    {
+      "path": "round5/evidence/interruption_closure.json",
+      "source": "round5/audit/interruption_closure.json",
+      "sha256": "d3cff593edae09682692d9104e2d68d473ce6a8e0773727e5319071fcb38f456",
+      "bytes": 1452
+    },
+    {
+      "path": "round5/evidence/recovery_verification_complete.json",
+      "source": "round5/recovery_evidence/recovery_verification_complete.json",
+      "sha256": "f59c7d64de2b3dd1473a8a813f2731c5d277a4f0faa60d7272ac2c61ce4f2830",
+      "bytes": 284
+    },
+    {
+      "path": "round5/evidence/serialization_roundtrips.json",
+      "source": "round5/recovery_evidence/serialization_roundtrips.json",
+      "sha256": "f254cc36e62cba7c60d95d8822b560a20e03490679c6b5fb6a93001012379d1b",
+      "bytes": 139
+    },
+    {
+      "path": "round5/evidence/tests.log",
+      "source": "round5/recovery_evidence/tests.log",
+      "sha256": "9e83704fd47c02701c677ce46566506cd62d18a6089600d144fd25f509e21613",
+      "bytes": 4438
+    },
+    {
+      "path": "round5/analysis/internal_folds.csv",
+      "source": "round5/analysis/internal_folds.csv",
+      "sha256": "771df6be4766b23054b64ad0e61ceaf7dcae9986f45b755ac0b64ae8846911f7",
+      "bytes": 1125
+    },
+    {
+      "path": "round5/analysis/decision_table.csv",
+      "source": "round5/analysis/decision_table.csv",
+      "sha256": "66bc3d2c729b55eb9686a1f046c57ab535c46bd2e918c66bba4d7f5b82063bd2",
+      "bytes": 440
+    },
+    {
+      "path": "round5/study/protocol.json",
+      "source": "round5/study/protocol.json",
+      "sha256": "aac4226ae3fbb5d23cacd4c494bfa0989d6c4827758226611325c56b6a98c1ef",
+      "bytes": 2784
     }
   ],
   "prior_document_qa_hashes_verified": [

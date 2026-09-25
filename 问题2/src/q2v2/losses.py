@@ -5,6 +5,15 @@ import torch
 from torch.nn import functional as F
 
 
+def epoch_class_weights(weights, epoch, delay_epochs=0):
+    """Use unweighted CE for the first fixed number of epochs, then frozen weights."""
+    if not isinstance(delay_epochs, int) or isinstance(delay_epochs, bool) or delay_epochs < 0:
+        raise ValueError('class_weight_delay_epochs must be a nonnegative integer')
+    if not isinstance(epoch, int) or isinstance(epoch, bool) or epoch < 1:
+        raise ValueError('epoch must be a positive integer')
+    return None if epoch <= delay_epochs else weights
+
+
 def frequency_weights(labels, power=0., classes=3):
     if not math.isfinite(power) or not 0 <= power <= 1:
         raise ValueError('class_weight_power must be finite and in [0, 1]')

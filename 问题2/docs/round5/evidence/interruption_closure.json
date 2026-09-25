@@ -1,0 +1,36 @@
+{
+  "closed_utc": "2026-09-25T16:19:31.363368+00:00",
+  "status": "interrupted_closed_without_budget_extension",
+  "process_check": "No live run_round5.py process with this root in /proc",
+  "current_boot_id": "23022055-3711-403b-b5f7-3de9e37bb3d2",
+  "cause": "Checkpoint archive incomplete; original stall and process exit causes unproven. WSL has rebooted since the run.",
+  "completed_candidates": [
+    "defer1"
+  ],
+  "incomplete_candidates": [
+    {
+      "name": "defer2",
+      "status": "interrupted_incomplete",
+      "completed_folds": 0,
+      "checkpoints": [
+        {
+          "path": "runs/defer2_fold0/best.pt",
+          "bytes": 215195840,
+          "sha256": "b50518c99531d2dd111fdd948fc46c9723d4acb54c02c42840389118b602f14d",
+          "mtime_utc": "2026-09-25T10:48:41.567412+00:00",
+          "zip_complete": false,
+          "load_error": "RuntimeError('PytorchStreamReader failed reading zip archive: failed finding central directory')"
+        }
+      ]
+    }
+  ],
+  "original_study_hashes": {
+    "study/protocol.json": "aac4226ae3fbb5d23cacd4c494bfa0989d6c4827758226611325c56b6a98c1ef",
+    "study/started.json": "678020cbef5128d08071bcbd857cba0a7b40345eaa91ea5a489ba14bf8d4c279",
+    "study/development.json": "0c6e2550243be04243e3ba38a3d1b82ffede59e0cb5bf84823d495778d8708f3"
+  },
+  "original_protocol_unchanged": true,
+  "new_official_validation_used": false,
+  "new_test_used": false,
+  "optimization_success": false
+}

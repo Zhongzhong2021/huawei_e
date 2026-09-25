@@ -1,0 +1,20 @@
+[
+  {
+    "id": "r5_01_paired",
+    "caption": "图1 内部三折配对结果，验证样本量依次为1205、1093、1097。每个彩色点代表一折，灰线连接同折，黑色短线为三折均值。两指标越高越好；折间差异不是独立种子标准差或置信区间。",
+    "sources": {
+      "analysis/internal_folds.csv": "771df6be4766b23054b64ad0e61ceaf7dcae9986f45b755ac0b64ae8846911f7",
+      "study/protocol.json": "aac4226ae3fbb5d23cacd4c494bfa0989d6c4827758226611325c56b6a98c1ef"
+    },
+    "png_dpi": 600
+  },
+  {
+    "id": "r5_02_tradeoffs",
+    "caption": "图2 相对立即加权对照的逐折指标差值。黑色短线为均值，虚线为预设均值保护边界；MAE越低越好，其余指标越高越好。S与正向F1要求严格改善，另外还须至少两折提高S。单项通过不代表候选通过全部条件。",
+    "sources": {
+      "analysis/internal_folds.csv": "771df6be4766b23054b64ad0e61ceaf7dcae9986f45b755ac0b64ae8846911f7",
+      "study/protocol.json": "aac4226ae3fbb5d23cacd4c494bfa0989d6c4827758226611325c56b6a98c1ef"
+    },
+    "png_dpi": 600
+  }
+]

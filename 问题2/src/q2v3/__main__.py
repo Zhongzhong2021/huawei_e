@@ -6,16 +6,26 @@ import subprocess
 import sys
 
 def script(root,name):
+    # Study helpers may import sibling helper modules. Preserve the process path
+    # after execution while making the selected artifact's scripts authoritative.
     spec=importlib.util.spec_from_file_location(name,root/'scripts'/f'{name}.py')
-    module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+    module=importlib.util.module_from_spec(spec)
+    sys.path.insert(0,str(root/'scripts'))
+    try:spec.loader.exec_module(module)
+    finally:sys.path.pop(0)
     return module
 
-def is_round4(root):
+def study_round(root):
     for relative in ['study/protocol.json', 'configs/frozen_protocol.json']:
         path=root/relative
         if path.is_file():
-            return json.loads(path.read_text(encoding='utf-8')).get('version','').startswith('round4-')
-    return False
+            version=json.loads(path.read_text(encoding='utf-8')).get('version','')
+            if version.startswith('round5-'):return 5
+            if version.startswith('round4-'):return 4
+            return 3
+    return 3
+
+def is_round4(root):return study_round(root)==4
 
 def main():
     parser=argparse.ArgumentParser(description='Q2 frozen-model research and paper evidence')
@@ -62,7 +72,7 @@ def main():
             record['vocabulary'].numpy(),source=torch.load(plan['inputs']['pretrained'],map_location='cpu',weights_only=True),
             fixed_epochs=epoch,reproduction=True,training_protocol=plan['training_protocol']))
     elif args.command=='evaluate':
-        if is_round4(root):
+        if study_round(root)>=4:
             from .evaluation import evaluate_frozen
             print(evaluate_frozen(root,args.data_root,args.output_dir,args.split,args.device))
         elif args.data_root is not None or args.output_dir is not None or args.split!='valid' or args.device!='cpu':
@@ -70,14 +80,17 @@ def main():
         else:script(root,'evaluate_frozen').main()
     else:
         if args.command in ['analyze','report']:
-            from .analysis import main as analyze
-            analyze(root)
-            if is_round4(root):script(root,'analyze_round4_tradeoffs').main(root)
+            if study_round(root)==5:script(root,'analyze_round5').recompute_saved(root)
+            else:
+                from .analysis import main as analyze
+                analyze(root)
+                if is_round4(root):script(root,'analyze_round4_tradeoffs').main(root)
         if args.command in ['figures','report']:
-            if is_round4(root):script(root,'plot_round4').main(root)
+            if study_round(root)==5:script(root,'plot_round5').main(root)
+            elif is_round4(root):script(root,'plot_round4').main(root)
             else:
                 from .figures import main as figures
                 figures(root)
-        if args.command in ['paper','report']:script(root,'paper_round4' if is_round4(root) else 'build_paper').main(root)
+        if args.command in ['paper','report']:script(root,{3:'build_paper',4:'paper_round4',5:'paper_round5'}[study_round(root)]).main(root)
 
 if __name__=='__main__':main()

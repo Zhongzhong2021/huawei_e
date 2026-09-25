@@ -1,0 +1,54 @@
+test_existing_run_is_not_silently_restarted_or_cached (test_checkpoint.CheckpointTests) ... ok
+test_failed_first_save_does_not_publish_checkpoint (test_checkpoint.CheckpointTests) ... ok
+test_mismatched_tensor_and_container_types_are_rejected (test_checkpoint.CheckpointTests) ... ok
+test_partial_write_does_not_replace_previous_best (test_checkpoint.CheckpointTests) ... ok
+test_readback_failure_keeps_previous_best (test_checkpoint.CheckpointTests) ... ok
+test_replace_error_keeps_previous_best (test_checkpoint.CheckpointTests) ... ok
+test_roundtrip_snapshot_and_success_events (test_checkpoint.CheckpointTests) ... ok
+test_snapshot_error_happens_before_disk_checkpoint_creation (test_checkpoint.CheckpointTests) ... ok
+test_absent_class_and_invalid_power_are_rejected (test_class_balance.ClassBalanceTests) ... ok
+test_weighted_accumulation_matches_full_batch_gradient (test_class_balance.ClassBalanceTests) ... ok
+test_weights_use_only_supplied_fitting_counts (test_class_balance.ClassBalanceTests) ... ok
+test_zero_power_preserves_unweighted_loss_exactly (test_class_balance.ClassBalanceTests) ... ok
+test_label_mapping_and_integer_validation (test_contract.ContractTests) ... ok
+test_masks_special_padding_and_partial_zero (test_contract.ContractTests) ... ok
+test_metrics_and_constant_pearson (test_contract.ContractTests) ... ok
+test_missing_reproducible_and_exact_count (test_contract.ContractTests) ... ok
+test_neutral_and_unique_ids (test_contract.ContractTests) ... ok
+test_no_leakage_and_all_unavailable (test_contract.ContractTests) ... ok
+test_nonfinite_feature_does_not_poison_scaler (test_contract.ContractTests) ... ok
+test_train_only_stats (test_contract.ContractTests) ... ok
+test_delay_cannot_consume_whole_run_and_creates_no_files (test_deferred_weights.DeferredWeightTests) ... ok
+test_invalid_epochs_rejected (test_deferred_weights.DeferredWeightTests) ... ok
+test_switch_uses_fixed_absolute_epoch (test_deferred_weights.DeferredWeightTests) ... ok
+test_zero_delay_returns_identical_tensor_without_copy (test_deferred_weights.DeferredWeightTests) ... ok
+test_empty_sequence_and_partial_zero_vectors_remain_finite (test_pretrained.PretrainedTests) ... ok
+test_hidden_token_cannot_influence_other_observed_tokens (test_pretrained.PretrainedTests) ... ok
+test_unknown_vocabulary_and_all_missing (test_pretrained.PretrainedTests) ... ok
+test_reject_invalid_format (test_quantization.QuantizationTests) ... ok
+test_roundtrip_odd_shapes_and_zeros (test_quantization.QuantizationTests) ... ok
+test_cli_passes_explicit_protocol_and_frozen_epoch (test_reproduction.ReproductionTests) ... ok
+test_dry_run_never_fits_or_creates_run (test_reproduction.ReproductionTests) ... ok
+test_existing_study_protocol_has_priority (test_reproduction.ReproductionTests) ... ok
+test_invalid_numeric_protocol_settings_are_rejected (test_reproduction.ReproductionTests) ... ok
+test_missing_input_fails_before_loading_any_model (test_reproduction.ReproductionTests) ... ok
+test_reject_existing_run_and_invalid_seed (test_reproduction.ReproductionTests) ... ok
+test_reject_path_traversal_and_windows_reserved_names (test_reproduction.ReproductionTests) ... ok
+test_tracked_protocol_fallback_is_read_only (test_reproduction.ReproductionTests) ... ok
+test_accumulation_preserves_effective_batch_gradient (test_research.ResearchTests) ... ok
+test_bootstrap_metric_matches_literal_replication (test_research.ResearchTests) ... ok
+test_complete_pretrained_vocabulary_keeps_every_id (test_research.ResearchTests) ... ok
+test_identical_predictions_have_zero_paired_difference (test_research.ResearchTests) ... ok
+test_video_clusters_remain_together_and_paired (test_research.ResearchTests) ... ok
+test_evaluate_refuses_existing_output_before_loading_model (test_round_routing.RoundRoutingTests) ... ok
+test_evaluate_requires_freeze_before_creating_output (test_round_routing.RoundRoutingTests) ... ok
+test_round4_evaluate_passes_explicit_paths (test_round_routing.RoundRoutingTests) ... ok
+test_round4_figures_and_paper_route_to_matching_generators (test_round_routing.RoundRoutingTests) ... ok
+test_round5_uses_saved_predictions_and_own_figures_and_paper (test_round_routing.RoundRoutingTests) ... ok
+test_study_record_overrides_default_version (test_round_routing.RoundRoutingTests) ... ok
+
+----------------------------------------------------------------------
+Ran 48 tests in 0.607s
+
+OK
+<MagicMock name='evaluate_frozen()' id='132912176539552'>

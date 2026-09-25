@@ -25,6 +25,13 @@ class RoundRoutingTests(unittest.TestCase):
                 main(); factory.assert_called_once_with(self.root, expected)
                 factory.return_value.main.assert_called_once_with(self.root)
 
+    def test_round5_uses_saved_predictions_and_own_figures_and_paper(self):
+        (self.root / 'configs/frozen_protocol.json').write_text(json.dumps({'version':'round5-deferred-weighting-predeclared-v1'}))
+        for command, expected, method in [('analyze','analyze_round5','recompute_saved'),('figures','plot_round5','main'),('paper','paper_round5','main')]:
+            with self.subTest(command=command), mock.patch('sys.argv',['q2v3','--root',str(self.root),command]), mock.patch('q2v3.__main__.script') as factory:
+                main();factory.assert_called_once_with(self.root,expected)
+                getattr(factory.return_value,method).assert_called_once_with(self.root)
+
     def test_round4_evaluate_passes_explicit_paths(self):
         with mock.patch('sys.argv', ['q2v3', '--root', str(self.root), 'evaluate', '--data-root', str(self.root), '--split', 'test', '--device', 'cuda']), mock.patch('q2v3.evaluation.evaluate_frozen') as run:
             main(); run.assert_called_once_with(self.root, self.root, None, 'test', 'cuda')

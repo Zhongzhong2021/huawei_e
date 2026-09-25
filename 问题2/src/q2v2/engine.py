@@ -14,7 +14,8 @@ from q2.missing import MAIN, augmentation_mask, scenario_mask
 from q2.model import SentimentModel
 from .model import PretrainedMultimodal
 from .data import load_fold
-from .losses import frequency_weights, microbatch_cross_entropy
+from .losses import frequency_weights, microbatch_cross_entropy, epoch_class_weights
+from .checkpoint import atomic_save
 
 
 def load_model(path, device="cpu"):
@@ -36,11 +37,16 @@ def train_run(root, name, config, train_data, valid_data, vocabulary, source=Non
     protocol = copy.deepcopy(training_protocol) if training_protocol is not None else json.loads(
         (root / "study/protocol.json").read_text(encoding="utf-8"))
     settings = protocol["training"]
+    delay_epochs = config.get('class_weight_delay_epochs', 0)
+    epoch_class_weights(None, 1, delay_epochs)  # validate before creating a run
+    planned_epochs = int(fixed_epochs or (40 if config.get('kind') == 'mlp' else config.get('max_epochs', settings['max_epochs'])))
+    if delay_epochs >= planned_epochs:
+        raise ValueError('Delayed reweighting requires at least one weighted epoch')
     run = root / "runs" / name
     result_path = run / "metrics.json"
-    if result_path.exists():
-        return json.loads(result_path.read_text())
-    run.mkdir(parents=True, exist_ok=True)
+    # Neither complete results nor a partial best.pt are permission to reuse an
+    # experiment name. In particular, best.pt has no optimizer/RNG resume state.
+    run.mkdir(parents=True, exist_ok=False)
     config = dict(config)
     setup(config.get("seed", 42))
     torch.backends.cudnn.allow_tf32 = False
@@ -49,6 +55,7 @@ def train_run(root, name, config, train_data, valid_data, vocabulary, source=Non
     class_weights = frequency_weights(train_data['labels'], config.get('class_weight_power', 0.))
     if class_weights is not None:
         class_weights = class_weights.to(device)
+    final_class_weights = class_weights
     is_mlp = config.get("kind") == "mlp"
     if is_mlp:
         model = SentimentModel(config).to(device)
@@ -96,6 +103,8 @@ def train_run(root, name, config, train_data, valid_data, vocabulary, source=Non
                 "training_precision": "FP32 MLP or BF16 CUDA autocast BERT; FP32 evaluation, TF32 disabled",
                 "classification_weights": class_weights.detach().cpu().tolist() if class_weights is not None else None,
                 "classification_weight_source": "fitting subset labels only",
+                "classification_weight_delay_epochs": delay_epochs,
+                "checkpoint_eligibility": "after the unweighted warm-start epochs; fixed confirmation never selects epochs",
                 "scheduler": "constant MLP; BERT 10% linear warmup then linear decay, fixed before results"}
     save_json(run / "config.json", config)
     save_json(run / "training_protocol.json", protocol)
@@ -105,6 +114,7 @@ def train_run(root, name, config, train_data, valid_data, vocabulary, source=Non
         if not reproduction and deadline and datetime.now(timezone.utc) >= datetime.fromisoformat(deadline):
             raise TimeoutError("Predeclared optimization deadline reached")
         model.train()
+        class_weights = epoch_class_weights(final_class_weights, epoch, delay_epochs)
         order = rng.permutation(len(train_data["ids"]))
         start, loss_sum, examples = 0, 0., 0
         while start < len(order):
@@ -172,18 +182,21 @@ def train_run(root, name, config, train_data, valid_data, vocabulary, source=Non
             score = result["selection"]["score"]
             clean_f1, clean_mae = result["clean"]["macro_f1"], result["clean"]["mae"]
         row = {"epoch": epoch, "loss": loss_sum/examples, "score": score, "clean_f1": clean_f1,
-               "clean_mae": clean_mae, "seconds": time.time()-started, "batch_size": batch_size, "microbatch_size": microbatch_size}
+               "clean_mae": clean_mae, "seconds": time.time()-started, "batch_size": batch_size, "microbatch_size": microbatch_size,
+               "classification_weights": class_weights.detach().cpu().tolist() if class_weights is not None else None}
         log.append(row)
         save_json(run / "epochs.json", log)
         print(json.dumps({"run":name, **row}), flush=True)
-        improved = fixed_epochs is not None or score > best + 1e-6
+        selectable = epoch > delay_epochs
+        improved = fixed_epochs is not None or (selectable and score > best + 1e-6)
         if improved:
             best_epoch, stale = epoch, 0
             if score is not None:
                 best = score
-            torch.save({"config": config, "vocabulary": torch.as_tensor(vocabulary),
-                        "state_dict": model.state_dict(), "epoch": epoch}, run / "best.pt")
-        else:
+            atomic_save({"config": config, "vocabulary": torch.as_tensor(vocabulary),
+                         "state_dict": model.state_dict(), "epoch": epoch}, run / "best.pt",
+                        event_path=run / 'checkpoint_events.jsonl')
+        elif selectable:
             stale += 1
         if fixed_epochs is None and stale >= patience_limit:
             break
