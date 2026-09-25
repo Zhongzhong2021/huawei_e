@@ -1,0 +1,62 @@
+{
+  "version": "round4-class-balance-predeclared-v1",
+  "started_utc": "2026-09-25T02:31:45.738329+00:00",
+  "new_configuration_deadline": "2026-09-25T04:31:45.738329+00:00",
+  "optimization_deadline": "2026-09-25T05:31:45.738329+00:00",
+  "delivery_deadline": "2026-09-25T06:31:45.738329+00:00",
+  "reference": "round3 full-vocabulary 12-layer span model, FP32 inference",
+  "candidates": [
+    {
+      "name": "balanced_sqrt",
+      "class_weight_power": 0.5
+    },
+    {
+      "name": "balanced_inverse",
+      "class_weight_power": 1.0
+    }
+  ],
+  "training": {
+    "backbone_lr": 2e-05,
+    "head_lr": 0.0005,
+    "batch_size": 32,
+    "max_epochs": 6,
+    "patience": 3,
+    "weight_decay": 0.01,
+    "gradient_clip": 1.0,
+    "regression_weight": 1.0,
+    "augmentation_probability": 0.7,
+    "teacher_max_epochs": 6,
+    "kl_temperature": 2.0,
+    "distill_kl_weight": 0.5,
+    "distill_reg_weight": 0.25,
+    "distill_feature_weight": 0.1
+  },
+  "class_weight_definition": "w_c proportional to (N/(3*n_c))**power, arithmetic mean normalized to 1; counts from fitting labels only",
+  "classification_loss": "sum(w_y * CE)/sum(w_y) over the effective batch; microbatch accumulation preserves the denominator",
+  "fixed_other_factors": "same initialization, folds, train-only scaler, full vocabulary, 0.7 span augmentation, CE+Huber, optimizer, batch32 and precision as round3",
+  "selection_score": "0.5 * mean_missing_macro_f1 + 0.5 * (1 - mean_missing_mae/6)",
+  "guardrails": {
+    "mean_clean_f1_max_drop": 0.01,
+    "mean_clean_mae_max_increase": 0.03,
+    "min_fold_score_improvements": 2
+  },
+  "folds": 3,
+  "development_seed": 42,
+  "confirmation_seeds": [
+    42,
+    2026,
+    3407
+  ],
+  "selection_rule": "at least 2/3 internal fold score improvements and mean clean guards; best eligible mean S; median internal best epoch; >=2/3 paired confirmation successes and mean success against round3",
+  "selection_success": "S strictly improves, clean Macro-F1 drop <=0.01, clean MAE increase <=0.03",
+  "test_policy": "No test reads before freeze; previously observed test is descriptive only",
+  "attachment3_policy": "No attachment3 predictions used for tuning",
+  "baseline_control": "Replay unweighted fold0 first; require every tensor identical before reusing old reference runs",
+  "statistical_scope": "official validation has been reused across rounds; improvements are conditional, not unbiased performance estimates",
+  "class_weight_counts_never_use": [
+    "internal validation",
+    "official validation",
+    "test",
+    "attachment3"
+  ]
+}

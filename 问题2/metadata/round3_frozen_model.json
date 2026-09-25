@@ -1,0 +1,12 @@
+{
+  "frozen_utc": "2026-09-24T12:18:08.419282+00:00",
+  "selected_checkpoint": "/home/xifenglin/e_q2/round3/runs/confirmed_bert12_full_span_s42/best.pt",
+  "model_name": "bert12_full_span",
+  "stable_improvement": true,
+  "checkpoint_sha256": "2b91c28f9d3087f61438443ad9f0a365c136406f34314d4792f8b2cf60cdd407",
+  "scaler_sha256": "30bfe7e4d67527107f6931794e53d5a5f977517dd644ac477cb5ca3b38285d6c",
+  "protocol_sha256": "439d3e50ce8350cac50865085e6ca89df0a845a984961854fef3ba519037c4b4",
+  "test_used_for_selection": false,
+  "test_role": "previously observed; descriptive only",
+  "quantization": null
+}

@@ -14,6 +14,7 @@ from q2.missing import MAIN, augmentation_mask, scenario_mask
 from q2.model import SentimentModel
 from .model import PretrainedMultimodal
 from .data import load_fold
+from .losses import frequency_weights, microbatch_cross_entropy
 
 
 def load_model(path, device="cpu"):
@@ -28,8 +29,13 @@ def load_model(path, device="cpu"):
 
 
 def train_run(root, name, config, train_data, valid_data, vocabulary, source=None,
-              teacher_path=None, fixed_epochs=None, reproduction=False):
+              teacher_path=None, fixed_epochs=None, reproduction=False, training_protocol=None):
     root = Path(root)
+    # The portable repository may carry its frozen protocol in configs/ rather
+    # than an untracked study/ directory. Existing callers keep their old path.
+    protocol = copy.deepcopy(training_protocol) if training_protocol is not None else json.loads(
+        (root / "study/protocol.json").read_text(encoding="utf-8"))
+    settings = protocol["training"]
     run = root / "runs" / name
     result_path = run / "metrics.json"
     if result_path.exists():
@@ -40,6 +46,9 @@ def train_run(root, name, config, train_data, valid_data, vocabulary, source=Non
     torch.backends.cudnn.allow_tf32 = False
     torch.backends.cuda.matmul.allow_tf32 = False
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    class_weights = frequency_weights(train_data['labels'], config.get('class_weight_power', 0.))
+    if class_weights is not None:
+        class_weights = class_weights.to(device)
     is_mlp = config.get("kind") == "mlp"
     if is_mlp:
         model = SentimentModel(config).to(device)
@@ -57,7 +66,6 @@ def train_run(root, name, config, train_data, valid_data, vocabulary, source=Non
         teacher, teacher_record = load_model(teacher_path, device)
         for p in teacher.parameters():
             p.requires_grad_(False)
-    settings = json.loads((root / "study/protocol.json").read_text())["training"]
     batch_size = 64 if is_mlp else settings["batch_size"]
     microbatch_size = batch_size
     max_epochs = int(fixed_epochs or (40 if is_mlp else config.get("max_epochs", settings["max_epochs"])))
@@ -86,11 +94,14 @@ def train_run(root, name, config, train_data, valid_data, vocabulary, source=Non
                 "fit_ids": train_data["ids"].tolist(), "validation_ids": valid_data["ids"].tolist(),
                 "vocabulary_size": len(vocabulary), "teacher_checkpoint_sha256": digest(teacher_path) if teacher_path else None,
                 "training_precision": "FP32 MLP or BF16 CUDA autocast BERT; FP32 evaluation, TF32 disabled",
+                "classification_weights": class_weights.detach().cpu().tolist() if class_weights is not None else None,
+                "classification_weight_source": "fitting subset labels only",
                 "scheduler": "constant MLP; BERT 10% linear warmup then linear decay, fixed before results"}
     save_json(run / "config.json", config)
+    save_json(run / "training_protocol.json", protocol)
     save_json(run / "provenance.json", metadata)
     for epoch in range(1, max_epochs + 1):
-        deadline = json.loads((root / "study/protocol.json").read_text()).get("optimization_deadline")
+        deadline = protocol.get("optimization_deadline")
         if not reproduction and deadline and datetime.now(timezone.utc) >= datetime.fromisoformat(deadline):
             raise TimeoutError("Predeclared optimization deadline reached")
         model.train()
@@ -98,6 +109,8 @@ def train_run(root, name, config, train_data, valid_data, vocabulary, source=Non
         start, loss_sum, examples = 0, 0., 0
         while start < len(order):
             idx = order[start:start + batch_size]
+            weight_sum = None if class_weights is None else float(class_weights[
+                torch.from_numpy(train_data['labels'][idx]).to(device)].sum().item())
             optimizer.zero_grad(set_to_none=True)
             rng_state = copy.deepcopy(rng.bit_generator.state)
             cpu_state = torch.get_rng_state()
@@ -119,7 +132,7 @@ def train_run(root, name, config, train_data, valid_data, vocabulary, source=Non
                                 t_logits, t_regression, t_features = teacher(**batch, return_features=True)
                         else:
                             logits, regression = model(**batch)
-                        loss = F.cross_entropy(logits.float(), labels) + F.huber_loss(regression.float(), targets)
+                        loss = microbatch_cross_entropy(logits, labels, class_weights, len(idx), weight_sum) + F.huber_loss(regression.float(), targets)
                         if teacher is not None:
                             temperature = settings["kl_temperature"]
                             kd = F.kl_div(F.log_softmax(logits.float()/temperature, -1),

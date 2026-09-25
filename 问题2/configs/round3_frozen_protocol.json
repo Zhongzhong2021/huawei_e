@@ -1,0 +1,55 @@
+{
+  "version": "round3-predeclared-v1",
+  "started_utc": "2026-09-24T12:06:45.047756+00:00",
+  "new_configuration_deadline": "2026-09-24T12:26:25+00:00",
+  "optimization_deadline": "2026-09-24T13:26:25+00:00",
+  "delivery_deadline": "2026-09-24T17:26:25+00:00",
+  "reference": "round2 bert2_distill FP32, same three video-group folds",
+  "candidates": [
+    "teacher12_compact_reuse",
+    "bert12_full_span"
+  ],
+  "ablation_only": [
+    "bert12_full_none"
+  ],
+  "seeds": [
+    42,
+    2026,
+    3407
+  ],
+  "selection_score": "0.5 * mean_missing_macro_f1 + 0.5 * (1 - mean_missing_mae/6)",
+  "guardrails": {
+    "mean_clean_f1_max_drop": 0.01,
+    "mean_clean_mae_max_increase": 0.03,
+    "min_fold_score_improvements": 2
+  },
+  "training": {
+    "backbone_lr": 2e-05,
+    "head_lr": 0.0005,
+    "batch_size": 32,
+    "max_epochs": 6,
+    "patience": 3,
+    "weight_decay": 0.01,
+    "gradient_clip": 1.0,
+    "regression_weight": 1.0,
+    "class_weight": false,
+    "augmentation_probability": 0.7,
+    "teacher_max_epochs": 6,
+    "kl_temperature": 2.0,
+    "distill_kl_weight": 0.5,
+    "distill_reg_weight": 0.25,
+    "distill_feature_weight": 0.1
+  },
+  "vocabulary": "Full public pretrained 30522 IDs; never derived from valid/test/attachment3",
+  "rules": "Three complete folds required; rounded median best epoch; one winner confirmed; >=2 paired seed passes and mean score/clean guards; no fallback search on valid",
+  "test_policy": "Frozen-model descriptive evaluation only; test previously observed",
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 240924,
+    "unit": "video group",
+    "pairing": "same sampled groups for both models and all scenarios",
+    "interval": "95% percentile conditional on fixed seed42 predictions"
+  },
+  "case_rule": "Per true class: largest-MAE misclassification and median-MAE correct case, sorted by sample ID to break ties; absent groups omitted",
+  "no_size_filter": true
+}

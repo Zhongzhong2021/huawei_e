@@ -20,6 +20,5 @@
   "distillation": false,
   "seed": 42,
   "max_epochs": 6,
-  "vocabulary_mode": "full",
-  "class_weight_power": 1.0
+  "vocabulary_mode": "full"
 }

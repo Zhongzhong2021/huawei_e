@@ -275,7 +275,9 @@ def build_docx(root,blocks):
     for b in blocks:
         typ=b['type']
         if typ=='title':paragraph(b['text'],'Title')
-        elif typ=='heading':paragraph(b['text'],'Heading '+str(b['level']))
+        elif typ=='heading':
+            p=paragraph(b['text'],'Heading '+str(b['level']))
+            if b.get('page_break_before'):p.paragraph_format.page_break_before=True
         elif typ=='paragraph':paragraph(b['text'])
         elif typ=='equation':
             p=paragraph('');p.paragraph_format.first_line_indent=Pt(0);p.paragraph_format.space_before=Pt(4);p.paragraph_format.space_after=Pt(8);p.alignment=WD_ALIGN_PARAGRAPH.CENTER
