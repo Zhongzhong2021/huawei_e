@@ -1,0 +1,11 @@
+{
+  "verified_date": "2026-09-24",
+  "references": [
+    "[1] Devlin J, Chang M W, Lee K, Toutanova K. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding[C]. NAACL-HLT, 2019: 4171–4186. DOI: 10.18653/v1/N19-1423. https://aclanthology.org/N19-1423/",
+    "[2] Google. bert-base-uncased model card[EB/OL]. https://huggingface.co/google-bert/bert-base-uncased. 使用本地固定快照86b5e0934494bd15c9632b12f734a8a67f723594，Apache-2.0许可，访问核验日期2026-09-24。",
+    "[3] Loshchilov I, Hutter F. Decoupled Weight Decay Regularization[C]. ICLR, 2019. https://arxiv.org/abs/1711.05101.",
+    "[4] Hinton G, Vinyals O, Dean J. Distilling the Knowledge in a Neural Network[EB/OL]. arXiv:1503.02531, 2015. https://arxiv.org/abs/1503.02531.",
+    "[5] Sun S, Cheng Y, Gan Z, Liu J. Patient Knowledge Distillation for BERT Model Compression[C]. EMNLP-IJCNLP, 2019: 4323–4332. DOI: 10.18653/v1/D19-1441. https://aclanthology.org/D19-1441/"
+  ],
+  "primary_sources_only": true
+}

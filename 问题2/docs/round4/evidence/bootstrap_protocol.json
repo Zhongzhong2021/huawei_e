@@ -1,0 +1,10 @@
+{
+  "replicates": 2000,
+  "seed": 240924,
+  "clusters": 239,
+  "samples": 728,
+  "unit": "video ID prefix before $_$",
+  "paired_across_models_and_scenarios": true,
+  "interval": "percentile .025/.975",
+  "interpretation": "Conditional on fixed seed42 fitted predictions. Not seed variability or selection-corrected inference."
+}

@@ -1,0 +1,112 @@
+[
+  {
+    "id": "fig01_architecture",
+    "caption": "模型结构与编码前缺失处理。长度50为特征位置上限，不代表50秒。融合为拼接与可用比例输入，不包含动态门控。",
+    "sources": {
+      "study/frozen.json": "6432d8b99c792872ff2f9eb90fc8489bcdc79aaa53cda1104ac431e3adc15e17",
+      "src/q2v2/model.py": "6d38f14ff627c19659807a1467c2ca3553a83258c69205d26471201478e44a27"
+    },
+    "formats": [
+      "svg",
+      "pdf",
+      "png"
+    ],
+    "png_dpi": 600
+  },
+  {
+    "id": "fig02_comparison",
+    "caption": "验证集模型比较。上排为空心逐种子点与均值±样本标准差，下排为固定种子42模型差异的95%视频分组Bootstrap区间。两种不确定性含义不同。",
+    "sources": {
+      "analysis/seed_metrics.csv": "8df9b0747e8f160c7fc7b1c97f7ab38fd7604ac226ab03620eb7fc7bf6325fcf",
+      "analysis/paired_cluster_intervals.csv": "cd29d00279bf8b7338a78138c3da3ecd86039821f0cb5f51bd9bfc9b48b5db60"
+    },
+    "formats": [
+      "svg",
+      "pdf",
+      "png"
+    ],
+    "png_dpi": 600
+  },
+  {
+    "id": "fig03_missing_rates",
+    "caption": "验证集随机连续缺失的比例响应。折线为三个种子的均值，阴影为±一个样本标准差；0%表示不额外施加缺失。各行坐标范围相同。",
+    "sources": {
+      "analysis/seed_metrics.csv": "8df9b0747e8f160c7fc7b1c97f7ab38fd7604ac226ab03620eb7fc7bf6325fcf"
+    },
+    "formats": [
+      "svg",
+      "pdf",
+      "png"
+    ],
+    "png_dpi": 600
+  },
+  {
+    "id": "fig04_missing_shapes",
+    "caption": "最终模型在验证集36类补充场景中的变化，均相对于同模型完整输入。上排ΔF1越负表示损失越大，下排ΔMAE越正表示损失越大。同一指标共用色标。此图为种子42描述性结果。",
+    "sources": {
+      "analysis/summary.json": "7654a29c05df0773d8bab80f11247d9d85dac5f34ffb64d578abc2508ef8bcf2"
+    },
+    "formats": [
+      "svg",
+      "pdf",
+      "png"
+    ],
+    "png_dpi": 600
+  },
+  {
+    "id": "fig05_ablation",
+    "caption": "内部三折对照。蓝点为各折，橙色菱形为三折算术平均；右图灰线连接同一折。左图与右图训练预算不同，不能将其差异解释为单一因素的因果效应。",
+    "sources": {
+      "analysis/summary.json": "7654a29c05df0773d8bab80f11247d9d85dac5f34ffb64d578abc2508ef8bcf2",
+      "evidence/round2/study/development.json": "93f18817c7958b072c5ff23abe72cbb6678119fa6d523f41e2d1d14d76b00e71"
+    },
+    "formats": [
+      "svg",
+      "pdf",
+      "png"
+    ],
+    "png_dpi": 600
+  },
+  {
+    "id": "fig06_classification",
+    "caption": "最终模型种子42的完整验证集分类诊断。混淆矩阵同时标注计数和真实类别内百分比；类别F1与第二轮FP32基准使用相同样本。",
+    "sources": {
+      "analysis/summary.json": "7654a29c05df0773d8bab80f11247d9d85dac5f34ffb64d578abc2508ef8bcf2"
+    },
+    "formats": [
+      "svg",
+      "pdf",
+      "png"
+    ],
+    "png_dpi": 600
+  },
+  {
+    "id": "fig07_learning",
+    "caption": "完整词表连续缺失模型的三折学习曲线。损失为训练样本平均监督损失，选择分数来自内部验证的固定九类缺失场景。",
+    "sources": {
+      "study/protocol.json": "439d3e50ce8350cac50865085e6ca89df0a845a984961854fef3ba519037c4b4",
+      "runs/bert12_full_span_fold0/epochs.json": "eb436d2c2fd29f4f7f031fb289b2f9795d7d8fdb685137525a06bd10a0f909ed",
+      "runs/bert12_full_span_fold1/epochs.json": "72ce87a1b54d923fe6b06c0e727946085e2700f0e33502155ac899e02c7a99a9",
+      "runs/bert12_full_span_fold2/epochs.json": "0374bdd50d2d295482e83495f83a2107e6203ecfe396dda7a9589f32a7b47429"
+    },
+    "formats": [
+      "svg",
+      "pdf",
+      "png"
+    ],
+    "png_dpi": 600
+  },
+  {
+    "id": "fig08_regression",
+    "caption": "最终模型种子42的完整验证集回归诊断。左图为二维计数而非平滑拟合，虚线为理想预测；右图按真实类别展示残差，保留离群点。",
+    "sources": {
+      "evaluation/final/valid/predictions/clean.csv": "0da03d05766ad3a1f83b18a3ee61bc14c9c982b50085a80d4e422973e7124a1b"
+    },
+    "formats": [
+      "svg",
+      "pdf",
+      "png"
+    ],
+    "png_dpi": 600
+  }
+]

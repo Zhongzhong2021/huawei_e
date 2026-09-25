@@ -1,0 +1,448 @@
+{
+  "synchronized_utc": "2026-09-25T16:00:23.5227767Z",
+  "files": [
+    {
+      "path": "round1/reports/E题问题2解决方案与实验报告.docx",
+      "source": "reports/E题问题2解决方案与实验报告.docx",
+      "sha256": "3490c5f10cd4bd3d042a59621429a4aeaaead7f84327e8fb53ea84bdd0b715c4",
+      "bytes": 241505
+    },
+    {
+      "path": "round1/reports/E题问题2解决方案与实验报告.md",
+      "source": "reports/E题问题2解决方案与实验报告.md",
+      "sha256": "fa31f54d556938d704fb6bff480d1efb9e4670b95a04d6829b625e8cd885a93d",
+      "bytes": 17995
+    },
+    {
+      "path": "round1/reports/figures/confusion_valid.png",
+      "source": "reports/figures/confusion_valid.png",
+      "sha256": "9b4df9537c2863e0ae8da9d991cd3a1019facc4b1fde890cc0e7c6f70c1b6cea",
+      "bytes": 32883
+    },
+    {
+      "path": "round1/reports/figures/learning_curve.png",
+      "source": "reports/figures/learning_curve.png",
+      "sha256": "cd52f764de099297a50779335ee8d8defadfb00b966cebf82037909c0786a338",
+      "bytes": 73703
+    },
+    {
+      "path": "round1/reports/figures/missing_impact.png",
+      "source": "reports/figures/missing_impact.png",
+      "sha256": "30f9522a0642d22fba56e7a08969e54288ef4d22afc9ca0671dd9ba37d4386d7",
+      "bytes": 102235
+    },
+    {
+      "path": "round2/reports/E题问题2第二轮优化方案与实验报告.docx",
+      "source": "round2/reports/E题问题2第二轮优化方案与实验报告.docx",
+      "sha256": "739c1fd298b58103c6b94fb1376914d371dd86f2ee55b91f4a52cac08502fe3d",
+      "bytes": 183714
+    },
+    {
+      "path": "round2/reports/E题问题2第二轮优化方案与实验报告.md",
+      "source": "round2/reports/E题问题2第二轮优化方案与实验报告.md",
+      "sha256": "111d4e330a6b8b5e7c7e3f7ce15f39937c686ea2485dfaacdc6d9fb591370017",
+      "bytes": 14084
+    },
+    {
+      "path": "round2/reports/internal_cv.png",
+      "source": "round2/reports/internal_cv.png",
+      "sha256": "827be7cfe28d424901db091ebc37531837c396f84ac16e18c86d824c0f7e1ea4",
+      "bytes": 42478
+    },
+    {
+      "path": "round2/reports/test_confusion.png",
+      "source": "round2/reports/test_confusion.png",
+      "sha256": "92ad11d7f17dbcba7f59342bdfa5f83f3daa78cc3ed3afa2ab5d1a7cac1358dd",
+      "bytes": 31441
+    },
+    {
+      "path": "round2/reports/valid_missing.png",
+      "source": "round2/reports/valid_missing.png",
+      "sha256": "7311eb3b6f68e587ff4e97c7b85c11ff2300bc2d19871ee59100075cd6e59c65",
+      "bytes": 80056
+    },
+    {
+      "path": "round3/reports/E题问题2局部模态缺失鲁棒预测论文素材.docx",
+      "source": "round3/reports/E题问题2局部模态缺失鲁棒预测论文素材.docx",
+      "sha256": "d049b6d4b302d825463fc22064acc847d1ed200356d9840e89a526fc5ba4f3e8",
+      "bytes": 2649857
+    },
+    {
+      "path": "round3/reports/E题问题2局部模态缺失鲁棒预测论文素材.md",
+      "source": "round3/reports/E题问题2局部模态缺失鲁棒预测论文素材.md",
+      "sha256": "7210cd757d451cc4c5c3f118c9795bc6861296d870ae9d03f2eccf64189528c3",
+      "bytes": 33992
+    },
+    {
+      "path": "round3/reports/equations.tex",
+      "source": "round3/reports/equations.tex",
+      "sha256": "9b97c34a5162393cbc55efacdea7f44167fd88b27e74b75500a6d1c31c0e7bd1",
+      "bytes": 2181
+    },
+    {
+      "path": "round3/reports/figure_order.json",
+      "source": "round3/reports/figure_order.json",
+      "sha256": "bbc77da801001f69d982a30597202e08a3c18d7febb840a459d403b33d97a641",
+      "bytes": 588
+    },
+    {
+      "path": "round3/reports/paper_content.json",
+      "source": "round3/reports/paper_content.json",
+      "sha256": "6a56e79479403dea548e25db99695fce4ecf971dc13377729f241cffaca20b24",
+      "bytes": 58013
+    },
+    {
+      "path": "round3/reports/references_verified.json",
+      "source": "round3/reports/references_verified.json",
+      "sha256": "91a437f5dd1d352313987a5d29116b08acd5c47198f64652a772ae108a612e55",
+      "bytes": 1028
+    },
+    {
+      "path": "round3/reports/table_data.json",
+      "source": "round3/reports/table_data.json",
+      "sha256": "ea87c8d85569398867af2b1dff45daff12619973485b3a76a9673cc79092404f",
+      "bytes": 16650
+    },
+    {
+      "path": "round3/figures/图表说明.md",
+      "source": "round3/figures/图表说明.md",
+      "sha256": "34936aaae053df24b641f8dd3a17033c08d26c6fd16cdf6ded2a8ad41a2b22cf",
+      "bytes": 2150
+    },
+    {
+      "path": "round3/figures/fig01_architecture.pdf",
+      "source": "round3/figures/fig01_architecture.pdf",
+      "sha256": "e2f2b461dc5095bcd8564b2f954b47b6462dc19d7fb17eb17ca6c981f2cc748f",
+      "bytes": 16305
+    },
+    {
+      "path": "round3/figures/fig01_architecture.png",
+      "source": "round3/figures/fig01_architecture.png",
+      "sha256": "5cb90ebb3a01b4a7c1f77d34101d993f2781e81bd76ac64eda8aa84cbe87ef03",
+      "bytes": 342218
+    },
+    {
+      "path": "round3/figures/fig01_architecture.svg",
+      "source": "round3/figures/fig01_architecture.svg",
+      "sha256": "32606d4da8e3ef15eec0dba1f3b794014f3ef336b5d79d8876e44a78e0254639",
+      "bytes": 55864
+    },
+    {
+      "path": "round3/figures/fig02_comparison.pdf",
+      "source": "round3/figures/fig02_comparison.pdf",
+      "sha256": "ecb87d2f3053c55d3a725e642cfedf7cd59a86f0db2d8d89f338e1ac04add045",
+      "bytes": 21939
+    },
+    {
+      "path": "round3/figures/fig02_comparison.png",
+      "source": "round3/figures/fig02_comparison.png",
+      "sha256": "11a8c868ef84eebcd4041b12bef6d384e47ca54f92bf150cd59a26c30dab4340",
+      "bytes": 386179
+    },
+    {
+      "path": "round3/figures/fig02_comparison.svg",
+      "source": "round3/figures/fig02_comparison.svg",
+      "sha256": "baa9fc94536258eee3b75b86d289d3b6da4eb6727bc08148aef0abda8c6b4e7b",
+      "bytes": 85870
+    },
+    {
+      "path": "round3/figures/fig03_missing_rates.pdf",
+      "source": "round3/figures/fig03_missing_rates.pdf",
+      "sha256": "1a15fcf7c6cb40e718056ba07dbb7eeb05ced1d7a57e304f111bf154b435e547",
+      "bytes": 19951
+    },
+    {
+      "path": "round3/figures/fig03_missing_rates.png",
+      "source": "round3/figures/fig03_missing_rates.png",
+      "sha256": "2fcc61501ac8c83da5da010a514e61cf30982b2ec51862bceda29504ca570aed",
+      "bytes": 521850
+    },
+    {
+      "path": "round3/figures/fig03_missing_rates.svg",
+      "source": "round3/figures/fig03_missing_rates.svg",
+      "sha256": "daf2704d346c94f4c29c28f8dfc1248838fd32a5a49eaffd8bd13fd55be81d59",
+      "bytes": 100993
+    },
+    {
+      "path": "round3/figures/fig04_missing_shapes.pdf",
+      "source": "round3/figures/fig04_missing_shapes.pdf",
+      "sha256": "ca08f3e8e59cfc9a68bbb837eb27831b1c516d78c7e3eeb8adaa61eb179ca723",
+      "bytes": 50261
+    },
+    {
+      "path": "round3/figures/fig04_missing_shapes.png",
+      "source": "round3/figures/fig04_missing_shapes.png",
+      "sha256": "82ed130b9546d93a0261fa981366cf2bcd9dbd47b946174812fb7083d20d9574",
+      "bytes": 524642
+    },
+    {
+      "path": "round3/figures/fig04_missing_shapes.svg",
+      "source": "round3/figures/fig04_missing_shapes.svg",
+      "sha256": "56b2b19a6729b1533178058e2c3098e1f5b5a0e171f48471e11b006e91268462",
+      "bytes": 161430
+    },
+    {
+      "path": "round3/figures/fig05_ablation.pdf",
+      "source": "round3/figures/fig05_ablation.pdf",
+      "sha256": "ac8a491081b088b833783f5b6a69bee9acb37f7e1636973eba0a61ef5680783e",
+      "bytes": 15996
+    },
+    {
+      "path": "round3/figures/fig05_ablation.png",
+      "source": "round3/figures/fig05_ablation.png",
+      "sha256": "664beb38ee4a3d8ed9a71c41df7e00a684192450b40175e22c5cab87a2189659",
+      "bytes": 295639
+    },
+    {
+      "path": "round3/figures/fig05_ablation.svg",
+      "source": "round3/figures/fig05_ablation.svg",
+      "sha256": "ff0099d88c69ea9efab3c668958a64c9711fa7adb4f612fc6633d10837f6dd41",
+      "bytes": 52778
+    },
+    {
+      "path": "round3/figures/fig06_classification.pdf",
+      "source": "round3/figures/fig06_classification.pdf",
+      "sha256": "56c0bea5d848145e63e4633faad170b79c4fcd4c3ecdb3ce83a386580861f52d",
+      "bytes": 24504
+    },
+    {
+      "path": "round3/figures/fig06_classification.png",
+      "source": "round3/figures/fig06_classification.png",
+      "sha256": "7be0f44092c6d3b67261ab6b0a1238aac5ae90d255fd9cdf42f8c28b68b161ad",
+      "bytes": 299631
+    },
+    {
+      "path": "round3/figures/fig06_classification.svg",
+      "source": "round3/figures/fig06_classification.svg",
+      "sha256": "e939db03972947bfcb284d892797eaf1d4bc7b02ae8c6d63ef6d48ea6b0b600b",
+      "bytes": 67131
+    },
+    {
+      "path": "round3/figures/fig07_learning.pdf",
+      "source": "round3/figures/fig07_learning.pdf",
+      "sha256": "0438233ce017ef6de9c340d6698c901a4f93797c82ca4e6b70c1d78583176e39",
+      "bytes": 15171
+    },
+    {
+      "path": "round3/figures/fig07_learning.png",
+      "source": "round3/figures/fig07_learning.png",
+      "sha256": "0e665d5520bd3f4020c486420c127611d893317081545a2546fa9f3d1f0172af",
+      "bytes": 366120
+    },
+    {
+      "path": "round3/figures/fig07_learning.svg",
+      "source": "round3/figures/fig07_learning.svg",
+      "sha256": "a409ed1e53f3a1a46269ef14e726687abfd34c90ed592db36f01a7e28271c5c8",
+      "bytes": 54816
+    },
+    {
+      "path": "round3/figures/fig08_regression.pdf",
+      "source": "round3/figures/fig08_regression.pdf",
+      "sha256": "e768f971b4a4129f65172e2cabe2e6ef338763592502b0304ab97ea5c77e9f03",
+      "bytes": 17587
+    },
+    {
+      "path": "round3/figures/fig08_regression.png",
+      "source": "round3/figures/fig08_regression.png",
+      "sha256": "6dbaf6ec987d130bbf958e641874746f83abd6cf4b2ebf85aa9647b651a10682",
+      "bytes": 302094
+    },
+    {
+      "path": "round3/figures/fig08_regression.svg",
+      "source": "round3/figures/fig08_regression.svg",
+      "sha256": "6ed80b5d39d397b2073f16562343b17b56e36f5837673d88a13ca9d532a7ec14",
+      "bytes": 80067
+    },
+    {
+      "path": "round3/figures/figure_manifest.json",
+      "source": "round3/figures/figure_manifest.json",
+      "sha256": "e2e92388c9bd634b542312d1da654b64975ab68a9ee65737be0379ca7f1d41e1",
+      "bytes": 4228
+    },
+    {
+      "path": "round4/reports/E题问题2第四轮类别平衡实验与论文补充.docx",
+      "source": "round4/reports/E题问题2第四轮类别平衡实验与论文补充.docx",
+      "sha256": "de6bffd669faf4cac2d30053733fb0aa258ab22f5522775668d42e6cf0b62f60",
+      "bytes": 1312179
+    },
+    {
+      "path": "round4/reports/E题问题2第四轮类别平衡实验与论文补充.md",
+      "source": "round4/reports/E题问题2第四轮类别平衡实验与论文补充.md",
+      "sha256": "de02e6faa7151db7b9b1ce30d45c4b69bd61bf17edbb619692d3acb0be2e3d08",
+      "bytes": 15316
+    },
+    {
+      "path": "round4/reports/round4_content.json",
+      "source": "round4/reports/round4_content.json",
+      "sha256": "1d639a4f855b4465a72402e594c8f424d84559a099465d5a7e133d07961f1955",
+      "bytes": 24372
+    },
+    {
+      "path": "round4/reports/round4_equations.tex",
+      "source": "round4/reports/round4_equations.tex",
+      "sha256": "e8f92aaa0a85718aa12b25379b638a1b15ee2d411c4f8a2684a579ee7c9ee30b",
+      "bytes": 609
+    },
+    {
+      "path": "round4/reports/round4_tables.json",
+      "source": "round4/reports/round4_tables.json",
+      "sha256": "b912438c8aca0865f1b8151147c38659b1e88eac7729f65b8a731e101af373fc",
+      "bytes": 6675
+    },
+    {
+      "path": "round4/figures/r4_01_internal.pdf",
+      "source": "round4/figures/r4_01_internal.pdf",
+      "sha256": "5710dc0db520532b1df0f35c8053f467c35f89c924d9fe2563456d30b1d61dd4",
+      "bytes": 14208
+    },
+    {
+      "path": "round4/figures/r4_01_internal.png",
+      "source": "round4/figures/r4_01_internal.png",
+      "sha256": "015edcb3410a5c258fcc2e6441f67c639e346724701286e57951ddf9a5b0e6fc",
+      "bytes": 318518
+    },
+    {
+      "path": "round4/figures/r4_01_internal.svg",
+      "source": "round4/figures/r4_01_internal.svg",
+      "sha256": "5b6dd937f6fc4a4611a7add77f750c60038b9ec88cd56407c61c4f330b3a1ee0",
+      "bytes": 20639
+    },
+    {
+      "path": "round4/figures/r4_02_seeds.pdf",
+      "source": "round4/figures/r4_02_seeds.pdf",
+      "sha256": "5ddff41b4e6ceae6fca6b523a29f3ee532e4d2ecbb1f1d3ee791b2b93157e4d9",
+      "bytes": 14058
+    },
+    {
+      "path": "round4/figures/r4_02_seeds.png",
+      "source": "round4/figures/r4_02_seeds.png",
+      "sha256": "ba01f01d5a59ff9b6bf2b81cd18dff5c0043cd4c3562a4d057c840a98d689190",
+      "bytes": 314888
+    },
+    {
+      "path": "round4/figures/r4_02_seeds.svg",
+      "source": "round4/figures/r4_02_seeds.svg",
+      "sha256": "b263eab7849058429e7a313a42a96558f5548014616bd4fe59ec858a09925a30",
+      "bytes": 27792
+    },
+    {
+      "path": "round4/figures/r4_03_confusion.pdf",
+      "source": "round4/figures/r4_03_confusion.pdf",
+      "sha256": "936a584d24334fb5f25dcb9c77f3ba4bce3951689915b0016645dcf94f5fb691",
+      "bytes": 31111
+    },
+    {
+      "path": "round4/figures/r4_03_confusion.png",
+      "source": "round4/figures/r4_03_confusion.png",
+      "sha256": "f655f4da9cca589fff565d110710e8dff02795df6a36531ac60e532a9928af91",
+      "bytes": 327031
+    },
+    {
+      "path": "round4/figures/r4_03_confusion.svg",
+      "source": "round4/figures/r4_03_confusion.svg",
+      "sha256": "b41e456d78c4f2f49bd6bb05b0257cae9a099a36abaed6f4973beb7ac0d4580d",
+      "bytes": 44427
+    },
+    {
+      "path": "round4/figures/r4_04_missing.pdf",
+      "source": "round4/figures/r4_04_missing.pdf",
+      "sha256": "93a1eab2dd9978ecc7cdd2f779e7c1d19b468af3be6dd609fd6fc85dfe1ea3f4",
+      "bytes": 18426
+    },
+    {
+      "path": "round4/figures/r4_04_missing.png",
+      "source": "round4/figures/r4_04_missing.png",
+      "sha256": "9ceff971ab93b43eb957030c0b070477f22ad0964c794ae1bec7786da3e1ff32",
+      "bytes": 519579
+    },
+    {
+      "path": "round4/figures/r4_04_missing.svg",
+      "source": "round4/figures/r4_04_missing.svg",
+      "sha256": "0a0d9e5c87bf076a277a9dfacedec711f5c43d6bf6c50c5e72e8f305e5b025be",
+      "bytes": 52017
+    },
+    {
+      "path": "round4/figures/round4_figure_manifest.json",
+      "source": "round4/figures/round4_figure_manifest.json",
+      "sha256": "5f75b8d0384832d379216e1bc141a81de271adcabe2e1bb01dec5f8a87e51de3",
+      "bytes": 2314
+    },
+    {
+      "path": "round3/evidence/document_qa.json",
+      "source": "round3/audit/document_qa.json",
+      "sha256": "b1c40a8440430b76f49fda7d151047863095909c41f9506be5d035c397c5c9a4",
+      "bytes": 2769
+    },
+    {
+      "path": "round3/evidence/release_acceptance.json",
+      "source": "round3/audit/release_acceptance.json",
+      "sha256": "e65a115a560abd9de0d2fbfbe949be88a763c8fbb67df8018c58e16cbe0a024a",
+      "bytes": 1020
+    },
+    {
+      "path": "round4/evidence/release_verification.json",
+      "source": "round4/audit/release_verification.json",
+      "sha256": "6f8c115dca62407bad15cec6b82243afc5f0a2e73cca151488b51ab716cf6960",
+      "bytes": 1129
+    },
+    {
+      "path": "round4/evidence/frozen.json",
+      "source": "round4/study/frozen.json",
+      "sha256": "9db3f49bb7b426ae8593b6aa2526f6daa32938ada4031d679818484ffdda6cfc",
+      "bytes": 547
+    },
+    {
+      "path": "round4/evidence/protocol.json",
+      "source": "round4/study/protocol.json",
+      "sha256": "7c0d5ca34a359855c4da8c8884254810d418a09c1cebd723732e69404d50401a",
+      "bytes": 2570
+    },
+    {
+      "path": "round4/evidence/confirmed.json",
+      "source": "round4/study/confirmed.json",
+      "sha256": "9770f44e12ed727f121ebd02c3fdbe6c7e373d49c6172c0ea6cc8fe48caa3afa",
+      "bytes": 67611
+    },
+    {
+      "path": "round4/evidence/class_tradeoff_protocol.json",
+      "source": "round4/analysis/class_tradeoff_protocol.json",
+      "sha256": "493ed4a4a56f0ed00e67d68a56796265d516f3f7dca26682ca8b9b160d216518",
+      "bytes": 1163
+    },
+    {
+      "path": "round4/evidence/bootstrap_protocol.json",
+      "source": "round4/analysis/bootstrap_protocol.json",
+      "sha256": "917418f55f542a9aa868e90d25a664e9fa7e69c22609c68e22ac1e4baca4db77",
+      "bytes": 329
+    },
+    {
+      "path": "round5_snapshot/study/protocol.json",
+      "source": "round5/study/protocol.json",
+      "sha256": "aac4226ae3fbb5d23cacd4c494bfa0989d6c4827758226611325c56b6a98c1ef",
+      "bytes": 2784
+    },
+    {
+      "path": "round5_snapshot/study/development.json",
+      "source": "round5/study/development.json",
+      "sha256": "0c6e2550243be04243e3ba38a3d1b82ffede59e0cb5bf84823d495778d8708f3",
+      "bytes": 45830
+    },
+    {
+      "path": "round5_snapshot/audit/control_reproduction.json",
+      "source": "round5/audit/control_reproduction.json",
+      "sha256": "1e4aedc2f9165d9a11a1ae03d6d40651d84df3314050a1db908217472327d2c7",
+      "bytes": 114
+    },
+    {
+      "path": "round5_snapshot/runs/defer2_fold0/epochs.json",
+      "source": "round5/runs/defer2_fold0/epochs.json",
+      "sha256": "dad7a0e7eff8d4daeac312ff85398f93348aeb2c24b836248528c2034f6df865",
+      "bytes": 925
+    }
+  ],
+  "prior_document_qa_hashes_verified": [
+    "round3",
+    "round4"
+  ],
+  "note": "Documents and figures copied without edits. Historical first/second rounds are not the current model. No raw PKL data, weights, or full prediction archives included."
+}

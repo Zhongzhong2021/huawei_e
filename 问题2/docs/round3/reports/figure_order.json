@@ -1,0 +1,34 @@
+[
+  {
+    "paper_number": 1,
+    "source_id": "fig01_architecture"
+  },
+  {
+    "paper_number": 2,
+    "source_id": "fig05_ablation"
+  },
+  {
+    "paper_number": 3,
+    "source_id": "fig02_comparison"
+  },
+  {
+    "paper_number": 4,
+    "source_id": "fig03_missing_rates"
+  },
+  {
+    "paper_number": 5,
+    "source_id": "fig04_missing_shapes"
+  },
+  {
+    "paper_number": 6,
+    "source_id": "fig06_classification"
+  },
+  {
+    "paper_number": 7,
+    "source_id": "fig07_learning"
+  },
+  {
+    "paper_number": 8,
+    "source_id": "fig08_regression"
+  }
+]

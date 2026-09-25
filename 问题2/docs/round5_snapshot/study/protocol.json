@@ -1,0 +1,64 @@
+{
+  "version": "round5-deferred-weighting-predeclared-v1",
+  "started_utc": "2026-09-25T10:42:02.948191+00:00",
+  "new_configuration_deadline": "2026-09-25T12:42:02.948191+00:00",
+  "optimization_deadline": "2026-09-25T13:42:02.948191+00:00",
+  "delivery_deadline": "2026-09-25T14:42:02.948191+00:00",
+  "reference": "round4 balanced_inverse full-vocabulary 12-layer multimodal model",
+  "candidates": [
+    {
+      "name": "defer1",
+      "class_weight_delay_epochs": 1
+    },
+    {
+      "name": "defer2",
+      "class_weight_delay_epochs": 2
+    }
+  ],
+  "training": {
+    "backbone_lr": 2e-05,
+    "head_lr": 0.0005,
+    "batch_size": 32,
+    "max_epochs": 6,
+    "patience": 3,
+    "weight_decay": 0.01,
+    "gradient_clip": 1.0,
+    "regression_weight": 1.0,
+    "augmentation_probability": 0.7,
+    "teacher_max_epochs": 6,
+    "kl_temperature": 2.0,
+    "distill_kl_weight": 0.5,
+    "distill_reg_weight": 0.25,
+    "distill_feature_weight": 0.1
+  },
+  "class_weight_power": 1.0,
+  "schedule": "unweighted CE for epochs 1..d; frozen fitting-only inverse-frequency CE afterward; Huber and LR schedule unchanged",
+  "checkpoint_selection": "Only epochs > d eligible; patience counted only after the switch. Median internal best epoch fixes confirmation length.",
+  "selection_score": "0.5 * mean_missing_macro_f1 + 0.5 * (1 - mean_missing_mae/6)",
+  "guardrails": {
+    "min_fold_score_improvements": 2,
+    "clean_f1_max_drop": 0.01,
+    "clean_mae_max_increase": 0.03,
+    "accuracy_max_drop": 0.005,
+    "neutral_f1_max_drop": 0.01,
+    "positive_f1": "strictly improve"
+  },
+  "selection_rule": "At least 2/3 folds improve S, all mean guards pass; select highest mean eligible S; confirm only one candidate on 42/2026/3407, >=2/3 paired guards and all mean guards",
+  "folds": 3,
+  "development_seed": 42,
+  "confirmation_seeds": [
+    42,
+    2026,
+    3407
+  ],
+  "controls": "Replay delay=0 fold0 with every tensor identical before reusing round4 evidence",
+  "data_policy": "Official train only for fitting; internal validation for development; official validation once for selected recipe confirmation; test and attachment3 never used for selection",
+  "scope": "DRW-inspired schedule adaptation, not LDAM loss, not a replication of the original paper, no long-tail performance guarantee",
+  "reference_paper": {
+    "authors": "Kaidi Cao, Colin Wei, Adrien Gaidon, Nikos Arechiga, Tengyu Ma",
+    "title": "Learning Imbalanced Datasets with Label-Distribution-Aware Margin Loss",
+    "venue": "NeurIPS 2019",
+    "url": "https://papers.neurips.cc/paper_files/paper/2019/hash/621461af90cadfdaf0e8d4cc25129f91-Abstract.html"
+  },
+  "statistical_limit": "Official validation reused across rounds; repeated adaptive development precludes unbiased generalization claims."
+}

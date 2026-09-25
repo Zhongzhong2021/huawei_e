@@ -1,0 +1,32 @@
+{
+  "verified_utc": "2026-09-25T09:57:34.739781+00:00",
+  "attachment3_rows": 30,
+  "editable_equations": 4,
+  "tables": 8,
+  "figure_groups": 4,
+  "docx_sha256": "de6bffd669faf4cac2d30053733fb0aa258ab22f5522775668d42e6cf0b62f60",
+  "markdown_sha256": "de02e6faa7151db7b9b1ce30d45c4b69bd61bf17edbb619692d3acb0be2e3d08",
+  "portable_cli_identical_validation_scenarios": 46,
+  "all_word_tables_equal_generated_evidence": true,
+  "word_markdown_text_consistent": true,
+  "visual_review": {
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "renderer": "Word COM fallback: packaged LibreOffice unavailable",
+    "pdf_sha256": "0057cd48de48c6a44e873c2d2c7b1480b344f869e53640e7b9b967609f415895",
+    "review": "All eight rendered pages inspected; no clipping, detached captions or illegible figures"
+  },
+  "changed_provided_sources_since_training": [
+    "src/q2v3/__main__.py",
+    "scripts/build_paper.py"
+  ],
+  "source_version_note": "The WSL research snapshot remains immutable; exported CLI and authoring utilities include postfreeze improvements."
+}

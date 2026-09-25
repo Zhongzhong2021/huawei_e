@@ -1,0 +1,57 @@
+[
+  {
+    "id": "r4_01_internal",
+    "caption": "图1 内部三折配对比较，折验证样本量依次为1205、1093、1097。每个彩色点代表一折，灰线连接同一折，黑色短线为三折算术均值；这些点不是独立重复实验或置信区间。分数与F1均越高越好。",
+    "sources": {
+      "analysis/internal_folds.csv": "7d111bfada2c9fca27b8fb0332b4f85a6af8018ca490b5786834269e0c7da020",
+      "study/protocol.json": "7c0d5ca34a359855c4da8c8884254810d418a09c1cebd723732e69404d50401a"
+    },
+    "png_dpi": 600,
+    "formats": [
+      "svg",
+      "pdf",
+      "png"
+    ]
+  },
+  {
+    "id": "r4_02_seeds",
+    "caption": "图2 官方验证集728条样本的三种子确认。圆点与方点为逐种子结果，连线保持相同种子配对，菱形与误差线为均值±样本标准差；标准差不是Bootstrap置信区间。F1越高越好，MAE越低越好。",
+    "sources": {
+      "study/confirmed.json": "9770f44e12ed727f121ebd02c3fdbe6c7e373d49c6172c0ea6cc8fe48caa3afa"
+    },
+    "png_dpi": 600,
+    "formats": [
+      "svg",
+      "pdf",
+      "png"
+    ]
+  },
+  {
+    "id": "r4_03_confusion",
+    "caption": "图3 固定种子42的完整官方验证集混淆矩阵，两个模型均使用相同728条样本。格内同时给出计数与真实类别内比例，两图使用共同色标。",
+    "sources": {
+      "evaluation/reference/valid/metrics.json": "58e65c57ad049f2d647fa692b1c4005d0f92bf52a12a012712a25cb4f56d67a6",
+      "evaluation/final/valid/metrics.json": "794b72ca66216624b0eff0995a5763a7c8cc55087e7f639e0c5446d027413f40"
+    },
+    "png_dpi": 600,
+    "formats": [
+      "svg",
+      "pdf",
+      "png"
+    ]
+  },
+  {
+    "id": "r4_04_missing",
+    "caption": "图4 官方验证集连续缺失比例响应。线为三种子均值，阴影为±一个样本标准差，0%为完整输入；横轴是名义特征位置比例，非秒数。各行共用纵轴，保留非单调变化。Macro-F1越高越好，MAE越低越好。",
+    "sources": {
+      "analysis/seed_metrics.csv": "2cb83dfce9a0a212b96ad3a83e74db39f5b97c1eb15f0f97009ff75008144be2",
+      "analysis/actual_missing_rates.csv": "c63fd11577f4d2262a145e82c57155ff43bd3a41d7942f66985fc947c2248b04"
+    },
+    "png_dpi": 600,
+    "formats": [
+      "svg",
+      "pdf",
+      "png"
+    ]
+  }
+]

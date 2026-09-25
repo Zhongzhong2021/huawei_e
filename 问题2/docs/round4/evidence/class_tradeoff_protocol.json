@@ -1,0 +1,42 @@
+{
+  "replicates": 2000,
+  "seed": 240924,
+  "groups": 239,
+  "samples": 728,
+  "model_seed": 42,
+  "role": "secondary description of all three classes and accuracy; never used for selection; no multiple-comparison correction",
+  "records": [
+    {
+      "metric": "accuracy",
+      "reference": 0.6332417582417582,
+      "final": 0.6208791208791209,
+      "difference": -0.012362637362637319,
+      "lower": -0.04266951871657751,
+      "upper": 0.017615773681481765
+    },
+    {
+      "metric": "negative_f1",
+      "reference": 0.6649874055415617,
+      "final": 0.675,
+      "difference": 0.010012594458438384,
+      "lower": -0.008317629563327952,
+      "upper": 0.029971267857376766
+    },
+    {
+      "metric": "neutral_f1",
+      "reference": 0.38095238095238093,
+      "final": 0.48095238095238096,
+      "difference": 0.10000000000000003,
+      "lower": 0.039496442271647815,
+      "upper": 0.16167772187322596
+    },
+    {
+      "metric": "positive_f1",
+      "reference": 0.7231182795698925,
+      "final": 0.6792452830188679,
+      "difference": -0.04387299655102461,
+      "lower": -0.0805876425427395,
+      "upper": -0.010819416958714842
+    }
+  ]
+}

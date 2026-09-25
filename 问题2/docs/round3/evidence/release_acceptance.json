@@ -1,0 +1,29 @@
+{
+  "tests_run": 18,
+  "tests_passed": true,
+  "metrics_verified": 184,
+  "single_batch_reload": {
+    "rows": 30,
+    "unique_ids": 30,
+    "device": "cuda",
+    "single_batch_max_probability_diff": 5.364418029785156e-07,
+    "single_batch_max_intensity_diff": 7.152557373046875e-07,
+    "single_batch_class_equal": true,
+    "reload_exact_match": true,
+    "finite": true,
+    "checkpoint_sha256": "2b91c28f9d3087f61438443ad9f0a365c136406f34314d4792f8b2cf60cdd407",
+    "scaler_sha256": "30bfe7e4d67527107f6931794e53d5a5f977517dd644ac477cb5ca3b38285d6c",
+    "csv_sha256": "b2875bbb830e06d9a668f18f2f6b398aec69e2db1ff1ea6c49bc312a43a71021"
+  },
+  "cpu_gpu": {
+    "max_probability_difference": 1.1324882507324219e-06,
+    "max_intensity_difference": 1.1324882507324219e-06,
+    "class_equal": true,
+    "empty_final_model_finite": true
+  },
+  "reproduction_exact": true,
+  "final_model_bytes": 435502507,
+  "no_new_quantization": true,
+  "old_data_and_missing_implementation_unchanged": true,
+  "training_events": []
+}

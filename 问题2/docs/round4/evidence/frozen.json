@@ -1,0 +1,11 @@
+{
+  "frozen_utc": "2026-09-25T02:43:06.687828+00:00",
+  "selected_checkpoint": "/home/xifenglin/e_q2/round4/runs/confirmed_balanced_inverse_s42/best.pt",
+  "model_name": "balanced_inverse",
+  "stable_improvement": true,
+  "checkpoint_sha256": "56c8e2267dfa31f29929af9c68940d169ebe7fac3f1020cd05d697db0ea86e2e",
+  "scaler_sha256": "30bfe7e4d67527107f6931794e53d5a5f977517dd644ac477cb5ca3b38285d6c",
+  "protocol_sha256": "7c0d5ca34a359855c4da8c8884254810d418a09c1cebd723732e69404d50401a",
+  "test_used_for_selection": false,
+  "quantization": null
+}
