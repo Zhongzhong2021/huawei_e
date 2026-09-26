@@ -1,0 +1,195 @@
+{
+  "sample_id": "-mJ2ud6oKI8$_$2",
+  "table_row_0based": 42,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-mJ2ud6oKI8/2.mp4",
+  "source_sha256": "c41790f8b75f886bd1f5d6d72cbab1985306d0b715e5ae47203f3d0c8a3e7b28",
+  "text_original": "So physical therapists and chiropractors will do joint manipulations and mobilizations",
+  "words": [
+    {
+      "word": "so",
+      "source_text": "So",
+      "char_start": 0,
+      "char_end": 2,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "so"
+      ]
+    },
+    {
+      "word": "physical",
+      "source_text": "physical",
+      "char_start": 3,
+      "char_end": 11,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "physical"
+      ]
+    },
+    {
+      "word": "therapists",
+      "source_text": "therapists",
+      "char_start": 12,
+      "char_end": 22,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3,
+        4
+      ],
+      "bert_tokens": [
+        "therapist",
+        "##s"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 23,
+      "char_end": 26,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "chiropractors",
+      "source_text": "chiropractors",
+      "char_start": 27,
+      "char_end": 40,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "bert_tokens": [
+        "chi",
+        "##rop",
+        "##rac",
+        "##tors"
+      ]
+    },
+    {
+      "word": "will",
+      "source_text": "will",
+      "char_start": 41,
+      "char_end": 45,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "will"
+      ]
+    },
+    {
+      "word": "do",
+      "source_text": "do",
+      "char_start": 46,
+      "char_end": 48,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "do"
+      ]
+    },
+    {
+      "word": "joint",
+      "source_text": "joint",
+      "char_start": 49,
+      "char_end": 54,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "joint"
+      ]
+    },
+    {
+      "word": "manipulations",
+      "source_text": "manipulations",
+      "char_start": 55,
+      "char_end": 68,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13,
+        14
+      ],
+      "bert_tokens": [
+        "manipulation",
+        "##s"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 69,
+      "char_end": 72,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "mobilizations",
+      "source_text": "mobilizations",
+      "char_start": 73,
+      "char_end": 86,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16,
+        17
+      ],
+      "bert_tokens": [
+        "mobilization",
+        "##s"
+      ]
+    }
+  ],
+  "duration_s": 5.7057,
+  "container_declared_duration_s": 6.781,
+  "media_clock": {
+    "stem": "-mJ2ud6oKI8__2",
+    "sample_id": "-mJ2ud6oKI8$_$2",
+    "container_duration_s": 6.781,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 5.7016875,
+    "audio_end_s": 5.7016875,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 5.672333,
+    "last_frame_duration_s": 0.033367,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 5.7057,
+    "observed_end_s": 5.7057,
+    "empty_declared_tail_s": 1.0752999999999995,
+    "original_video_frames": 171,
+    "source_sha256": "c41790f8b75f886bd1f5d6d72cbab1985306d0b715e5ae47203f3d0c8a3e7b28"
+  },
+  "decoded_audio_duration_s": 5.7016875,
+  "audio_start_s": 0.0,
+  "feature_sha256": "13ef463b07d45cca4a2a54f3c5b696b1a0a8201b1b9faee84a2e13d644a2ce12",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-mJ2ud6oKI8__2.json": "27e7479720943ce6991f6f3737a92a834519b6c1fb31f615f474917141c80b9e",
+    "results/q1/samples/-mJ2ud6oKI8__2.npz": "d0df9d12b7409bee26aa71870136bc2081cc10b52b59416561d4b8768a22f585",
+    "results/q1_next/enhanced/-mJ2ud6oKI8__2.npz": "c324905bbf2e5415b2b0b37dac450b25ea49abd0dc9aa19afd55ec272c89cb1a",
+    "results/q1_refinement_v1/faces/-mJ2ud6oKI8__2.npz": "a1de339a4352233266143b6eb83adb9141afe298c7501f35f168bbeb73dcd3ad",
+    "results/q1_deep_v6/alignment/MMS_FA/-mJ2ud6oKI8__2/original.npz": "a627012b272f5962ce999b504bf9fc89c9f14a051e7351b7610378befaacfc95",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

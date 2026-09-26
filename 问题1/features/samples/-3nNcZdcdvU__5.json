@@ -1,0 +1,280 @@
+{
+  "sample_id": "-3nNcZdcdvU$_$5",
+  "table_row_0based": 4,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-3nNcZdcdvU/5.mp4",
+  "source_sha256": "7ea53ad502b77be7d2ee4494dc23a9478c897792203cf887d546e83d584c1728",
+  "text_original": "Noncompliance can result in legal liability to you and to the school district in which you are employed.",
+  "words": [
+    {
+      "word": "noncompliance",
+      "source_text": "Noncompliance",
+      "char_start": 0,
+      "char_end": 13,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "bert_tokens": [
+        "non",
+        "##com",
+        "##pl",
+        "##iance"
+      ]
+    },
+    {
+      "word": "can",
+      "source_text": "can",
+      "char_start": 14,
+      "char_end": 17,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "can"
+      ]
+    },
+    {
+      "word": "result",
+      "source_text": "result",
+      "char_start": 18,
+      "char_end": 24,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "result"
+      ]
+    },
+    {
+      "word": "in",
+      "source_text": "in",
+      "char_start": 25,
+      "char_end": 27,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "in"
+      ]
+    },
+    {
+      "word": "legal",
+      "source_text": "legal",
+      "char_start": 28,
+      "char_end": 33,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "legal"
+      ]
+    },
+    {
+      "word": "liability",
+      "source_text": "liability",
+      "char_start": 34,
+      "char_end": 43,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "liability"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 44,
+      "char_end": 46,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "you",
+      "source_text": "you",
+      "char_start": 47,
+      "char_end": 50,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "you"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 51,
+      "char_end": 54,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 55,
+      "char_end": 57,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 58,
+      "char_end": 61,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "school",
+      "source_text": "school",
+      "char_start": 62,
+      "char_end": 68,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "school"
+      ]
+    },
+    {
+      "word": "district",
+      "source_text": "district",
+      "char_start": 69,
+      "char_end": 77,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "district"
+      ]
+    },
+    {
+      "word": "in",
+      "source_text": "in",
+      "char_start": 78,
+      "char_end": 80,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17
+      ],
+      "bert_tokens": [
+        "in"
+      ]
+    },
+    {
+      "word": "which",
+      "source_text": "which",
+      "char_start": 81,
+      "char_end": 86,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        18
+      ],
+      "bert_tokens": [
+        "which"
+      ]
+    },
+    {
+      "word": "you",
+      "source_text": "you",
+      "char_start": 87,
+      "char_end": 90,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        19
+      ],
+      "bert_tokens": [
+        "you"
+      ]
+    },
+    {
+      "word": "are",
+      "source_text": "are",
+      "char_start": 91,
+      "char_end": 94,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        20
+      ],
+      "bert_tokens": [
+        "are"
+      ]
+    },
+    {
+      "word": "employed",
+      "source_text": "employed",
+      "char_start": 95,
+      "char_end": 103,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        21
+      ],
+      "bert_tokens": [
+        "employed"
+      ]
+    }
+  ],
+  "duration_s": 7.8666659999999995,
+  "container_declared_duration_s": 10.937,
+  "media_clock": {
+    "stem": "-3nNcZdcdvU__5",
+    "sample_id": "-3nNcZdcdvU$_$5",
+    "container_duration_s": 10.937,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 7.7885625,
+    "audio_end_s": 7.7885625,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 7.833333,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 7.8666659999999995,
+    "observed_end_s": 7.8666659999999995,
+    "empty_declared_tail_s": 3.070334,
+    "original_video_frames": 236,
+    "source_sha256": "7ea53ad502b77be7d2ee4494dc23a9478c897792203cf887d546e83d584c1728"
+  },
+  "decoded_audio_duration_s": 7.7885625,
+  "audio_start_s": 0.0,
+  "feature_sha256": "028ca7cb31fbca1555442506c00ed531ccf94ba19f5d156f8790efee3a601cc5",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-3nNcZdcdvU__5.json": "cadbf43ba483b4e8e46bd1cfc0234437cdbca4073b1a9e36bcdf1e54794d2bab",
+    "results/q1/samples/-3nNcZdcdvU__5.npz": "d35a8c1df9fd45f6b8d54819a2919fb0d6e86bb7eaf2c6e5b807cba48b45ac21",
+    "results/q1_next/enhanced/-3nNcZdcdvU__5.npz": "ef354d4c300a30147773df8c0bfd1ff3343c5fd6b195636fc1b35acd27dc8200",
+    "results/q1_refinement_v1/faces/-3nNcZdcdvU__5.npz": "74bb832454b28a799db87818cb98d959355ccdfb636cd109b9d24323e1409acf",
+    "results/q1_deep_v6/alignment/MMS_FA/-3nNcZdcdvU__5/original.npz": "1e0a721a901a81514fe95c7d59128e53ad2308e44df8111a64561560e2d485bb",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

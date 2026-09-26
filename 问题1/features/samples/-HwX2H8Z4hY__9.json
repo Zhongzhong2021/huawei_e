@@ -1,0 +1,330 @@
+{
+  "sample_id": "-HwX2H8Z4hY$_$9",
+  "table_row_0based": 8,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-HwX2H8Z4hY/9.mp4",
+  "source_sha256": "90c18e627f27a12c14e21ba24c79edf3008762b4ac26874b490ad3f888381702",
+  "text_original": "It is a word which the administrator uses when he turns around anything which he doesn't like that the teacher is doing",
+  "words": [
+    {
+      "word": "it",
+      "source_text": "It",
+      "char_start": 0,
+      "char_end": 2,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "it"
+      ]
+    },
+    {
+      "word": "is",
+      "source_text": "is",
+      "char_start": 3,
+      "char_end": 5,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "is"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 6,
+      "char_end": 7,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "word",
+      "source_text": "word",
+      "char_start": 8,
+      "char_end": 12,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "word"
+      ]
+    },
+    {
+      "word": "which",
+      "source_text": "which",
+      "char_start": 13,
+      "char_end": 18,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "which"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 19,
+      "char_end": 22,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "administrator",
+      "source_text": "administrator",
+      "char_start": 23,
+      "char_end": 36,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "administrator"
+      ]
+    },
+    {
+      "word": "uses",
+      "source_text": "uses",
+      "char_start": 37,
+      "char_end": 41,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "uses"
+      ]
+    },
+    {
+      "word": "when",
+      "source_text": "when",
+      "char_start": 42,
+      "char_end": 46,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "when"
+      ]
+    },
+    {
+      "word": "he",
+      "source_text": "he",
+      "char_start": 47,
+      "char_end": 49,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "he"
+      ]
+    },
+    {
+      "word": "turns",
+      "source_text": "turns",
+      "char_start": 50,
+      "char_end": 55,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "turns"
+      ]
+    },
+    {
+      "word": "around",
+      "source_text": "around",
+      "char_start": 56,
+      "char_end": 62,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "around"
+      ]
+    },
+    {
+      "word": "anything",
+      "source_text": "anything",
+      "char_start": 63,
+      "char_end": 71,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "anything"
+      ]
+    },
+    {
+      "word": "which",
+      "source_text": "which",
+      "char_start": 72,
+      "char_end": 77,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "which"
+      ]
+    },
+    {
+      "word": "he",
+      "source_text": "he",
+      "char_start": 78,
+      "char_end": 80,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "he"
+      ]
+    },
+    {
+      "word": "doesn't",
+      "source_text": "doesn't",
+      "char_start": 81,
+      "char_end": 88,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16,
+        17,
+        18
+      ],
+      "bert_tokens": [
+        "doesn",
+        "'",
+        "t"
+      ]
+    },
+    {
+      "word": "like",
+      "source_text": "like",
+      "char_start": 89,
+      "char_end": 93,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        19
+      ],
+      "bert_tokens": [
+        "like"
+      ]
+    },
+    {
+      "word": "that",
+      "source_text": "that",
+      "char_start": 94,
+      "char_end": 98,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        20
+      ],
+      "bert_tokens": [
+        "that"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 99,
+      "char_end": 102,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        21
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "teacher",
+      "source_text": "teacher",
+      "char_start": 103,
+      "char_end": 110,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        22
+      ],
+      "bert_tokens": [
+        "teacher"
+      ]
+    },
+    {
+      "word": "is",
+      "source_text": "is",
+      "char_start": 111,
+      "char_end": 113,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        23
+      ],
+      "bert_tokens": [
+        "is"
+      ]
+    },
+    {
+      "word": "doing",
+      "source_text": "doing",
+      "char_start": 114,
+      "char_end": 119,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        24
+      ],
+      "bert_tokens": [
+        "doing"
+      ]
+    }
+  ],
+  "duration_s": 7.733333,
+  "container_declared_duration_s": 11.434,
+  "media_clock": {
+    "stem": "-HwX2H8Z4hY__9",
+    "sample_id": "-HwX2H8Z4hY$_$9",
+    "container_duration_s": 11.434,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 7.6363125,
+    "audio_end_s": 7.6363125,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 7.7,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 7.733333,
+    "observed_end_s": 7.733333,
+    "empty_declared_tail_s": 3.7006669999999993,
+    "original_video_frames": 232,
+    "source_sha256": "90c18e627f27a12c14e21ba24c79edf3008762b4ac26874b490ad3f888381702"
+  },
+  "decoded_audio_duration_s": 7.6363125,
+  "audio_start_s": 0.0,
+  "feature_sha256": "5548db37d9471213ce5b02989d3265b5eab10f771c17a29a9c4613b800a3f35e",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-HwX2H8Z4hY__9.json": "811e4bd13a3481dc993c4acedccb34c1148a8c2e594322833a8207063a41d3e8",
+    "results/q1/samples/-HwX2H8Z4hY__9.npz": "29c47f5c08a6a51c6127bb17b3f7c0e4d8e39353c303862e54c239191a645841",
+    "results/q1_next/enhanced/-HwX2H8Z4hY__9.npz": "4f46c7f45eb0074369d53d379ba2d023a410cdde6887270709b199ad278f8169",
+    "results/q1_refinement_v1/faces/-HwX2H8Z4hY__9.npz": "2c00cef1304d1f0d071ced97234c61511695f7b563b5d8e819fdfb852689877e",
+    "results/q1_deep_v6/alignment/MMS_FA/-HwX2H8Z4hY__9/original.npz": "fd79d0f76ec2f5c169b90f435a75b170628f62709e485ea94773c9c91a608da0",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

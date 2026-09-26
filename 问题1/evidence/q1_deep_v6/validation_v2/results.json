@@ -1,0 +1,236 @@
+{
+  "samples": 100,
+  "source_hash_and_structural_checks": 3700,
+  "independent_pitch_pool_scaled_max_error": 5.5263353131424494e-08,
+  "all_native_features_unchanged": true,
+  "word_and_clock_collate_padding_passed": true,
+  "clock_steps_checked": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "clock_effective_duration_conserved": true,
+  "perturbation_summaries": [
+    {
+      "model": "MMS_FA",
+      "condition": "prepend_silence_0.6s",
+      "group": "all",
+      "n": 1948,
+      "median": 4.440892098500626e-16,
+      "p95": 0.1129999999999968,
+      "over100ms": 98,
+      "over200ms": 85
+    },
+    {
+      "model": "MMS_FA",
+      "condition": "prepend_silence_0.6s",
+      "group": "supported",
+      "n": 1464,
+      "median": 4.440892098500626e-16,
+      "p95": 0.019999999999999574,
+      "over100ms": 0,
+      "over200ms": 0
+    },
+    {
+      "model": "MMS_FA",
+      "condition": "prepend_silence_0.6s",
+      "group": "unsupported",
+      "n": 484,
+      "median": 8.881784197001252e-16,
+      "p95": 1.0113703124999978,
+      "over100ms": 98,
+      "over200ms": 85
+    },
+    {
+      "model": "MMS_FA",
+      "condition": "gain_0.5",
+      "group": "all",
+      "n": 1948,
+      "median": 0.0,
+      "p95": 0.0,
+      "over100ms": 0,
+      "over200ms": 0
+    },
+    {
+      "model": "MMS_FA",
+      "condition": "gain_0.5",
+      "group": "supported",
+      "n": 1464,
+      "median": 0.0,
+      "p95": 0.0,
+      "over100ms": 0,
+      "over200ms": 0
+    },
+    {
+      "model": "MMS_FA",
+      "condition": "gain_0.5",
+      "group": "unsupported",
+      "n": 484,
+      "median": 0.0,
+      "p95": 0.0,
+      "over100ms": 0,
+      "over200ms": 0
+    },
+    {
+      "model": "MMS_FA",
+      "condition": "white_noise_20dB",
+      "group": "all",
+      "n": 1948,
+      "median": 0.0,
+      "p95": 0.17999999999999972,
+      "over100ms": 116,
+      "over200ms": 81
+    },
+    {
+      "model": "MMS_FA",
+      "condition": "white_noise_20dB",
+      "group": "supported",
+      "n": 1464,
+      "median": 0.0,
+      "p95": 0.020000000000000462,
+      "over100ms": 0,
+      "over200ms": 0
+    },
+    {
+      "model": "MMS_FA",
+      "condition": "white_noise_20dB",
+      "group": "unsupported",
+      "n": 484,
+      "median": 0.019999999999999574,
+      "p95": 1.18,
+      "over100ms": 116,
+      "over200ms": 81
+    },
+    {
+      "model": "WAV2VEC2_ASR_BASE_960H",
+      "condition": "prepend_silence_0.6s",
+      "group": "all",
+      "n": 1948,
+      "median": 4.440892098500626e-16,
+      "p95": 0.23999999999999977,
+      "over100ms": 114,
+      "over200ms": 104
+    },
+    {
+      "model": "WAV2VEC2_ASR_BASE_960H",
+      "condition": "prepend_silence_0.6s",
+      "group": "supported",
+      "n": 1464,
+      "median": 4.440892098500626e-16,
+      "p95": 0.01999999999999989,
+      "over100ms": 0,
+      "over200ms": 0
+    },
+    {
+      "model": "WAV2VEC2_ASR_BASE_960H",
+      "condition": "prepend_silence_0.6s",
+      "group": "unsupported",
+      "n": 484,
+      "median": 8.881784197001252e-16,
+      "p95": 1.673999999999998,
+      "over100ms": 114,
+      "over200ms": 104
+    },
+    {
+      "model": "WAV2VEC2_ASR_BASE_960H",
+      "condition": "gain_0.5",
+      "group": "all",
+      "n": 1948,
+      "median": 0.0,
+      "p95": 0.060000000000000345,
+      "over100ms": 86,
+      "over200ms": 78
+    },
+    {
+      "model": "WAV2VEC2_ASR_BASE_960H",
+      "condition": "gain_0.5",
+      "group": "supported",
+      "n": 1464,
+      "median": 0.0,
+      "p95": 0.019999999999999574,
+      "over100ms": 0,
+      "over200ms": 0
+    },
+    {
+      "model": "WAV2VEC2_ASR_BASE_960H",
+      "condition": "gain_0.5",
+      "group": "unsupported",
+      "n": 484,
+      "median": 0.0,
+      "p95": 1.353999999999999,
+      "over100ms": 86,
+      "over200ms": 78
+    },
+    {
+      "model": "WAV2VEC2_ASR_BASE_960H",
+      "condition": "white_noise_20dB",
+      "group": "all",
+      "n": 1948,
+      "median": 0.0,
+      "p95": 0.3400000000000006,
+      "over100ms": 160,
+      "over200ms": 130
+    },
+    {
+      "model": "WAV2VEC2_ASR_BASE_960H",
+      "condition": "white_noise_20dB",
+      "group": "supported",
+      "n": 1464,
+      "median": 0.0,
+      "p95": 0.020000000000000462,
+      "over100ms": 9,
+      "over200ms": 6
+    },
+    {
+      "model": "WAV2VEC2_ASR_BASE_960H",
+      "condition": "white_noise_20dB",
+      "group": "unsupported",
+      "n": 484,
+      "median": 0.020000000000000462,
+      "p95": 3.047999999999997,
+      "over100ms": 151,
+      "over200ms": 124
+    }
+  ],
+  "video_groups": 37,
+  "bootstrap_reps": 2000,
+  "bootstrap_seed": 62026,
+  "paired_group_intervals": [
+    {
+      "condition": "prepend_silence_0.6s",
+      "estimand": "Wav2vec minus MMS fraction >100ms on fixed supported words",
+      "estimate": 0.0,
+      "percentile95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "condition": "gain_0.5",
+      "estimand": "Wav2vec minus MMS fraction >100ms on fixed supported words",
+      "estimate": 0.0,
+      "percentile95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "condition": "white_noise_20dB",
+      "estimand": "Wav2vec minus MMS fraction >100ms on fixed supported words",
+      "estimate": 0.006147540983606557,
+      "percentile95": [
+        0.0020599750237001386,
+        0.011590366548590785
+      ]
+    }
+  ],
+  "supported_cross_model_boundary_disagreement": {
+    "n": 1464,
+    "median": 0.020000000000000462,
+    "p95": 0.0600000000000005,
+    "over200ms": 5
+  },
+  "threshold_numeric_tolerance_seconds": 1e-08,
+  "limits": "Conditional descriptions of fixed source videos and fixed supported words; thresholds are not calibrated accuracy guarantees. Do not count numerical100ms equality as >100ms.",
+  "seconds": 52.15799905298627
+}

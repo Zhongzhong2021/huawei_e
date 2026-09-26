@@ -1,0 +1,170 @@
+{
+  "sample_id": "-egA8-b7-3M$_$9",
+  "table_row_0based": 32,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-egA8-b7-3M/9.mp4",
+  "source_sha256": "bcd643f328616312eae9b28e6c9aabbe8acaec3e4c4be58daeb45e3eee4d973c",
+  "text_original": "Secondly, another goal of exhibiting  is building your company image.",
+  "words": [
+    {
+      "word": "secondly",
+      "source_text": "Secondly",
+      "char_start": 0,
+      "char_end": 8,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "secondly"
+      ]
+    },
+    {
+      "word": "another",
+      "source_text": "another",
+      "char_start": 10,
+      "char_end": 17,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "another"
+      ]
+    },
+    {
+      "word": "goal",
+      "source_text": "goal",
+      "char_start": 18,
+      "char_end": 22,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "goal"
+      ]
+    },
+    {
+      "word": "of",
+      "source_text": "of",
+      "char_start": 23,
+      "char_end": 25,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "of"
+      ]
+    },
+    {
+      "word": "exhibiting",
+      "source_text": "exhibiting",
+      "char_start": 26,
+      "char_end": 36,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "exhibiting"
+      ]
+    },
+    {
+      "word": "is",
+      "source_text": "is",
+      "char_start": 38,
+      "char_end": 40,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "is"
+      ]
+    },
+    {
+      "word": "building",
+      "source_text": "building",
+      "char_start": 41,
+      "char_end": 49,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "building"
+      ]
+    },
+    {
+      "word": "your",
+      "source_text": "your",
+      "char_start": 50,
+      "char_end": 54,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "your"
+      ]
+    },
+    {
+      "word": "company",
+      "source_text": "company",
+      "char_start": 55,
+      "char_end": 62,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "company"
+      ]
+    },
+    {
+      "word": "image",
+      "source_text": "image",
+      "char_start": 63,
+      "char_end": 68,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "image"
+      ]
+    }
+  ],
+  "duration_s": 5.066666,
+  "container_declared_duration_s": 10.134,
+  "media_clock": {
+    "stem": "-egA8-b7-3M__9",
+    "sample_id": "-egA8-b7-3M$_$9",
+    "container_duration_s": 10.134,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 4.936125,
+    "audio_end_s": 4.936125,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 5.033333,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 5.066666,
+    "observed_end_s": 5.066666,
+    "empty_declared_tail_s": 5.067334000000001,
+    "original_video_frames": 150,
+    "source_sha256": "bcd643f328616312eae9b28e6c9aabbe8acaec3e4c4be58daeb45e3eee4d973c"
+  },
+  "decoded_audio_duration_s": 4.936125,
+  "audio_start_s": 0.0,
+  "feature_sha256": "d9365f447b49111e9662bd9e2caaf77a5426537ccfef01b3d151e6251aa9a6ae",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-egA8-b7-3M__9.json": "b3c0ba2d757023e41152504e415d36a1cbe2f73589ff84257f4a67dc5af09e7b",
+    "results/q1/samples/-egA8-b7-3M__9.npz": "b8395012705df56491e3895fef554e0575d213b44d088a1406640484e5eefb8a",
+    "results/q1_next/enhanced/-egA8-b7-3M__9.npz": "ccba1d739a6e29109e42f9b09b1dfe98cbd2f886df9f9c9b434b3a7cb6508413",
+    "results/q1_refinement_v1/faces/-egA8-b7-3M__9.npz": "473741dbe6d59b4e3f25d2ba6482149f24c260977d59cf949452030f6cb7159d",
+    "results/q1_deep_v6/alignment/MMS_FA/-egA8-b7-3M__9/original.npz": "76fd45e263c47e88df23d7a15cb61a0db116f1d14f7cb1be3e3863d2a247f879",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

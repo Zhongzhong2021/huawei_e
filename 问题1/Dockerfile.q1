@@ -1,0 +1,7 @@
+FROM huawei-model-e:torch2.7.1-cu126
+RUN apt-get update && apt-get install -y --no-install-recommends libportaudio2 libgl1 && rm -rf /var/lib/apt/lists/*
+RUN python -m pip uninstall -y opencv-python-headless && python -m pip install --no-cache-dir \
+    opencv-contrib-python==4.11.0.86 mediapipe==0.10.32 absl-py==2.3.1 \
+    flatbuffers==25.9.23 sounddevice==0.5.3 num2words==0.5.14 docopt==0.6.2
+ENV TORCH_HOME=/cache/torch
+ENV MPLCONFIGDIR=/cache/matplotlib

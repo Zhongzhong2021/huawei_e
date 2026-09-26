@@ -1,0 +1,352 @@
+{
+  "sample_id": "-s9qJ7ATP7w$_$0",
+  "table_row_0based": 91,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-s9qJ7ATP7w/0.mp4",
+  "source_sha256": "f2324dbc6debe0d1e4254e6f943523373e3cbb30d8d0555413ce3a7b370a4af5",
+  "text_original": "they have doubt, they have fear, they lose in a Ferrari race, or they lose in a race, and then they just give up",
+  "words": [
+    {
+      "word": "they",
+      "source_text": "they",
+      "char_start": 0,
+      "char_end": 4,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "they"
+      ]
+    },
+    {
+      "word": "have",
+      "source_text": "have",
+      "char_start": 5,
+      "char_end": 9,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "have"
+      ]
+    },
+    {
+      "word": "doubt",
+      "source_text": "doubt",
+      "char_start": 10,
+      "char_end": 15,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "doubt"
+      ]
+    },
+    {
+      "word": "they",
+      "source_text": "they",
+      "char_start": 17,
+      "char_end": 21,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "they"
+      ]
+    },
+    {
+      "word": "have",
+      "source_text": "have",
+      "char_start": 22,
+      "char_end": 26,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "have"
+      ]
+    },
+    {
+      "word": "fear",
+      "source_text": "fear",
+      "char_start": 27,
+      "char_end": 31,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "fear"
+      ]
+    },
+    {
+      "word": "they",
+      "source_text": "they",
+      "char_start": 33,
+      "char_end": 37,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "they"
+      ]
+    },
+    {
+      "word": "lose",
+      "source_text": "lose",
+      "char_start": 38,
+      "char_end": 42,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "lose"
+      ]
+    },
+    {
+      "word": "in",
+      "source_text": "in",
+      "char_start": 43,
+      "char_end": 45,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "in"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 46,
+      "char_end": 47,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "ferrari",
+      "source_text": "Ferrari",
+      "char_start": 48,
+      "char_end": 55,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "ferrari"
+      ]
+    },
+    {
+      "word": "race",
+      "source_text": "race",
+      "char_start": 56,
+      "char_end": 60,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "race"
+      ]
+    },
+    {
+      "word": "or",
+      "source_text": "or",
+      "char_start": 62,
+      "char_end": 64,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "or"
+      ]
+    },
+    {
+      "word": "they",
+      "source_text": "they",
+      "char_start": 65,
+      "char_end": 69,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17
+      ],
+      "bert_tokens": [
+        "they"
+      ]
+    },
+    {
+      "word": "lose",
+      "source_text": "lose",
+      "char_start": 70,
+      "char_end": 74,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        18
+      ],
+      "bert_tokens": [
+        "lose"
+      ]
+    },
+    {
+      "word": "in",
+      "source_text": "in",
+      "char_start": 75,
+      "char_end": 77,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        19
+      ],
+      "bert_tokens": [
+        "in"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 78,
+      "char_end": 79,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        20
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "race",
+      "source_text": "race",
+      "char_start": 80,
+      "char_end": 84,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        21
+      ],
+      "bert_tokens": [
+        "race"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 86,
+      "char_end": 89,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        23
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "then",
+      "source_text": "then",
+      "char_start": 90,
+      "char_end": 94,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        24
+      ],
+      "bert_tokens": [
+        "then"
+      ]
+    },
+    {
+      "word": "they",
+      "source_text": "they",
+      "char_start": 95,
+      "char_end": 99,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        25
+      ],
+      "bert_tokens": [
+        "they"
+      ]
+    },
+    {
+      "word": "just",
+      "source_text": "just",
+      "char_start": 100,
+      "char_end": 104,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        26
+      ],
+      "bert_tokens": [
+        "just"
+      ]
+    },
+    {
+      "word": "give",
+      "source_text": "give",
+      "char_start": 105,
+      "char_end": 109,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        27
+      ],
+      "bert_tokens": [
+        "give"
+      ]
+    },
+    {
+      "word": "up",
+      "source_text": "up",
+      "char_start": 110,
+      "char_end": 112,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        28
+      ],
+      "bert_tokens": [
+        "up"
+      ]
+    }
+  ],
+  "duration_s": 6.8666659999999995,
+  "container_declared_duration_s": 6.867,
+  "media_clock": {
+    "stem": "-s9qJ7ATP7w__0",
+    "sample_id": "-s9qJ7ATP7w$_$0",
+    "container_duration_s": 6.867,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 6.7105625,
+    "audio_end_s": 6.7105625,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 6.833333,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 6.8666659999999995,
+    "observed_end_s": 6.8666659999999995,
+    "empty_declared_tail_s": 0.00033400000000050056,
+    "original_video_frames": 204,
+    "source_sha256": "f2324dbc6debe0d1e4254e6f943523373e3cbb30d8d0555413ce3a7b370a4af5"
+  },
+  "decoded_audio_duration_s": 6.7105625,
+  "audio_start_s": 0.0,
+  "feature_sha256": "45f14f84f5e3f5d70824ea263ac72c7aaefe6d13fc4dd76d3b1a04ada11bfed2",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-s9qJ7ATP7w__0.json": "cd12254bf0115cba20ac6cf08e9348f9780681f72af483f6b21335b7d8e2ed6f",
+    "results/q1/samples/-s9qJ7ATP7w__0.npz": "156679898ed9bb397ed85c9120f012517b2d52c89d92374938f72f9491895080",
+    "results/q1_next/enhanced/-s9qJ7ATP7w__0.npz": "cb3aab9dfe65a8ecc7a2f830206d38b14bf5605fae099ee60e588e6917d502e4",
+    "results/q1_refinement_v1/faces/-s9qJ7ATP7w__0.npz": "cca237af99d3ce2370d22131066b91168b527d494eed38befd1942ec03ce5b95",
+    "results/q1_deep_v6/alignment/MMS_FA/-s9qJ7ATP7w__0/original.npz": "f30a71bb59e9c0e724673c61a07820d3748238a9910154890b052b2b5d4f5985",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

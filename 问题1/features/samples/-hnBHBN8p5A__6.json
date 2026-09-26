@@ -1,0 +1,209 @@
+{
+  "sample_id": "-hnBHBN8p5A$_$6",
+  "table_row_0based": 71,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-hnBHBN8p5A/6.mp4",
+  "source_sha256": "997f6808ac3973ddd71800e91c8e10755c10b5037186d84348a79e00d672fdc7",
+  "text_original": "Discussion, how to discuss ideas and opinions more effectively than a native speaker",
+  "words": [
+    {
+      "word": "discussion",
+      "source_text": "Discussion",
+      "char_start": 0,
+      "char_end": 10,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "discussion"
+      ]
+    },
+    {
+      "word": "how",
+      "source_text": "how",
+      "char_start": 12,
+      "char_end": 15,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "how"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 16,
+      "char_end": 18,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "discuss",
+      "source_text": "discuss",
+      "char_start": 19,
+      "char_end": 26,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "discuss"
+      ]
+    },
+    {
+      "word": "ideas",
+      "source_text": "ideas",
+      "char_start": 27,
+      "char_end": 32,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "ideas"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 33,
+      "char_end": 36,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "opinions",
+      "source_text": "opinions",
+      "char_start": 37,
+      "char_end": 45,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "opinions"
+      ]
+    },
+    {
+      "word": "more",
+      "source_text": "more",
+      "char_start": 46,
+      "char_end": 50,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "more"
+      ]
+    },
+    {
+      "word": "effectively",
+      "source_text": "effectively",
+      "char_start": 51,
+      "char_end": 62,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "effectively"
+      ]
+    },
+    {
+      "word": "than",
+      "source_text": "than",
+      "char_start": 63,
+      "char_end": 67,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "than"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 68,
+      "char_end": 69,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "native",
+      "source_text": "native",
+      "char_start": 70,
+      "char_end": 76,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "native"
+      ]
+    },
+    {
+      "word": "speaker",
+      "source_text": "speaker",
+      "char_start": 77,
+      "char_end": 84,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "speaker"
+      ]
+    }
+  ],
+  "duration_s": 6.381367,
+  "container_declared_duration_s": 11.429,
+  "media_clock": {
+    "stem": "-hnBHBN8p5A__6",
+    "sample_id": "-hnBHBN8p5A$_$6",
+    "container_duration_s": 11.429,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 6.3328125,
+    "audio_end_s": 6.3328125,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 6.339667,
+    "last_frame_duration_s": 0.0417,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 6.381367,
+    "observed_end_s": 6.381367,
+    "empty_declared_tail_s": 5.047633,
+    "original_video_frames": 153,
+    "source_sha256": "997f6808ac3973ddd71800e91c8e10755c10b5037186d84348a79e00d672fdc7"
+  },
+  "decoded_audio_duration_s": 6.3328125,
+  "audio_start_s": 0.0,
+  "feature_sha256": "8fde08085e903dc35cf8289db92e43b9f811bc6d1052aea5179597157beedcc9",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-hnBHBN8p5A__6.json": "11919f09abea6bb52959d8b03571350282bf573f62714260057747c32e334804",
+    "results/q1/samples/-hnBHBN8p5A__6.npz": "65000a7c004994ac3b721f091f288b8b7d8227e5fb6ec8fdc1f47533b1dd582c",
+    "results/q1_next/enhanced/-hnBHBN8p5A__6.npz": "733a3d42978da56c57db7b54ec9910f271ebddea9e4e987f4952f8a95a6fbb82",
+    "results/q1_refinement_v1/faces/-hnBHBN8p5A__6.npz": "5d2613d95b2f9c9dde0917c7e3c96b4daee0194ac1f41a0b78d295aad8401681",
+    "results/q1_deep_v6/alignment/MMS_FA/-hnBHBN8p5A__6/original.npz": "4680489f0f314d840f7b166cf29c876131be8cc2115cce0a0801880fc136344c",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

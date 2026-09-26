@@ -1,0 +1,187 @@
+{
+  "sample_id": "-9y-fZ3swSY$_$4",
+  "table_row_0based": 76,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-9y-fZ3swSY/4.mp4",
+  "source_sha256": "fe04a26710e85c58bdaad5a48618c7e0f742d82b0d920eb4a046c8f14a6921dc",
+  "text_original": "I’ve seen this in US or in the US",
+  "words": [
+    {
+      "word": "i've",
+      "source_text": "I've",
+      "char_start": 0,
+      "char_end": 4,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1,
+        2,
+        3
+      ],
+      "bert_tokens": [
+        "i",
+        "’",
+        "ve"
+      ]
+    },
+    {
+      "word": "seen",
+      "source_text": "seen",
+      "char_start": 5,
+      "char_end": 9,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "seen"
+      ]
+    },
+    {
+      "word": "this",
+      "source_text": "this",
+      "char_start": 10,
+      "char_end": 14,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "this"
+      ]
+    },
+    {
+      "word": "in",
+      "source_text": "in",
+      "char_start": 15,
+      "char_end": 17,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "in"
+      ]
+    },
+    {
+      "word": "u",
+      "source_text": "US",
+      "char_start": 18,
+      "char_end": 20,
+      "normalization": "initialism spelled as letters",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "us"
+      ]
+    },
+    {
+      "word": "s",
+      "source_text": "US",
+      "char_start": 18,
+      "char_end": 20,
+      "normalization": "initialism spelled as letters",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "us"
+      ]
+    },
+    {
+      "word": "or",
+      "source_text": "or",
+      "char_start": 21,
+      "char_end": 23,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "or"
+      ]
+    },
+    {
+      "word": "in",
+      "source_text": "in",
+      "char_start": 24,
+      "char_end": 26,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "in"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 27,
+      "char_end": 30,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "u",
+      "source_text": "US",
+      "char_start": 31,
+      "char_end": 33,
+      "normalization": "initialism spelled as letters",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "us"
+      ]
+    },
+    {
+      "word": "s",
+      "source_text": "US",
+      "char_start": 31,
+      "char_end": 33,
+      "normalization": "initialism spelled as letters",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "us"
+      ]
+    }
+  ],
+  "duration_s": 2.8,
+  "container_declared_duration_s": 9.334,
+  "media_clock": {
+    "stem": "-9y-fZ3swSY__4",
+    "sample_id": "-9y-fZ3swSY$_$4",
+    "container_duration_s": 9.334,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 2.6648125,
+    "audio_end_s": 2.6648125,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 2.766667,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 2.8,
+    "observed_end_s": 2.8,
+    "empty_declared_tail_s": 6.534,
+    "original_video_frames": 81,
+    "source_sha256": "fe04a26710e85c58bdaad5a48618c7e0f742d82b0d920eb4a046c8f14a6921dc"
+  },
+  "decoded_audio_duration_s": 2.6648125,
+  "audio_start_s": 0.0,
+  "feature_sha256": "4c2ea2c71fb59f2d3d467d5d4fdd3ae46f26c66a8707baec13916d8ccf53b2fb",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-9y-fZ3swSY__4.json": "d39788868dbdaf4c4eb0803bb6f70ee396e90df5ce06209b5b9892056abe57f3",
+    "results/q1/samples/-9y-fZ3swSY__4.npz": "d4e29164ccc325777a5e29ddbd9c8fcb1207a3e1cdf7a916360480255f5a5111",
+    "results/q1_next/enhanced/-9y-fZ3swSY__4.npz": "25b36c8cd2cc916c7043601fbdab5fa326bba4b430deccd2d9d588f82577d1a4",
+    "results/q1_refinement_v1/faces/-9y-fZ3swSY__4.npz": "adab63b26344fb835eff17e0ce884ca6f7740e46bc5018662553e9985343d3aa",
+    "results/q1_deep_v6/alignment/MMS_FA/-9y-fZ3swSY__4/original.npz": "f7a2759af3286639a3236b84d0f70976c439374f9ec7f9fa1242958196c987dc",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

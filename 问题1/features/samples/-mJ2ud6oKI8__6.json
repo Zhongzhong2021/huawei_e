@@ -1,0 +1,105 @@
+{
+  "sample_id": "-mJ2ud6oKI8$_$6",
+  "table_row_0based": 43,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-mJ2ud6oKI8/6.mp4",
+  "source_sha256": "134a3a4ebbc423760133b0da0e90cfe84d75ea85df3968000afd84153c5d828d",
+  "text_original": "They are all very safe",
+  "words": [
+    {
+      "word": "they",
+      "source_text": "They",
+      "char_start": 0,
+      "char_end": 4,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "they"
+      ]
+    },
+    {
+      "word": "are",
+      "source_text": "are",
+      "char_start": 5,
+      "char_end": 8,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "are"
+      ]
+    },
+    {
+      "word": "all",
+      "source_text": "all",
+      "char_start": 9,
+      "char_end": 12,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "all"
+      ]
+    },
+    {
+      "word": "very",
+      "source_text": "very",
+      "char_start": 13,
+      "char_end": 17,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "very"
+      ]
+    },
+    {
+      "word": "safe",
+      "source_text": "safe",
+      "char_start": 18,
+      "char_end": 22,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "safe"
+      ]
+    }
+  ],
+  "duration_s": 2.235567,
+  "container_declared_duration_s": 2.648,
+  "media_clock": {
+    "stem": "-mJ2ud6oKI8__6",
+    "sample_id": "-mJ2ud6oKI8$_$6",
+    "container_duration_s": 2.648,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 2.228125,
+    "audio_end_s": 2.228125,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 2.2022,
+    "last_frame_duration_s": 0.033367,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 2.235567,
+    "observed_end_s": 2.235567,
+    "empty_declared_tail_s": 0.41243300000000005,
+    "original_video_frames": 67,
+    "source_sha256": "134a3a4ebbc423760133b0da0e90cfe84d75ea85df3968000afd84153c5d828d"
+  },
+  "decoded_audio_duration_s": 2.228125,
+  "audio_start_s": 0.0,
+  "feature_sha256": "24db0782f80b80408ede2ffba0795bc462d5887cfff1683dd4763c44a94432e9",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-mJ2ud6oKI8__6.json": "e101c7b21a45a98d4ecb484480d675429d6ffc5d3966880c49767c2510f4e4ea",
+    "results/q1/samples/-mJ2ud6oKI8__6.npz": "58566c804b53080bba54ecca4bce853ef41071f60449156f0bc340a88ed62044",
+    "results/q1_next/enhanced/-mJ2ud6oKI8__6.npz": "c2f2a4d0afa057c0120c7fce70508c3de03cb651fde649f9879c42e16b08cd6d",
+    "results/q1_refinement_v1/faces/-mJ2ud6oKI8__6.npz": "932423e05e05afdb62fd278c5f2e17d734668c57a3ee7da086064a7cb9ee8265",
+    "results/q1_deep_v6/alignment/MMS_FA/-mJ2ud6oKI8__6/original.npz": "77199d0ddc71d7d5384ecb1701eac58507e963324052ee4037d0f2a1df19fd99",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

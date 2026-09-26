@@ -1,0 +1,78 @@
+{
+  "MMS_FA": {
+    "parameters": 315466396,
+    "labels": [
+      "-",
+      "a",
+      "i",
+      "e",
+      "n",
+      "o",
+      "u",
+      "t",
+      "s",
+      "r",
+      "m",
+      "k",
+      "l",
+      "d",
+      "g",
+      "h",
+      "y",
+      "b",
+      "p",
+      "w",
+      "c",
+      "v",
+      "j",
+      "z",
+      "f",
+      "'",
+      "q",
+      "x"
+    ],
+    "bundle_path": "https://dl.fbaipublicfiles.com/mms/torchaudio/ctc_alignment_mling_uroman/model.pt"
+  },
+  "WAV2VEC2_ASR_BASE_960H": {
+    "parameters": 94393245,
+    "labels": [
+      "-",
+      "|",
+      "E",
+      "T",
+      "A",
+      "O",
+      "N",
+      "I",
+      "H",
+      "S",
+      "R",
+      "D",
+      "L",
+      "U",
+      "M",
+      "W",
+      "C",
+      "F",
+      "G",
+      "Y",
+      "P",
+      "B",
+      "V",
+      "K",
+      "'",
+      "X",
+      "J",
+      "Q",
+      "Z"
+    ],
+    "bundle_path": "wav2vec2_fairseq_base_ls960_asr_ls960.pth"
+  },
+  "weight_files": {
+    "wav2vec2_fairseq_base_ls960_asr_ls960.pth": {
+      "bytes": 377664473,
+      "sha256": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d"
+    }
+  },
+  "mms_sha256": "20ef12963ab4924bef49ac4fc7f58ad5da2ee43b2c11bc8c853c9b90ecdbc680"
+}

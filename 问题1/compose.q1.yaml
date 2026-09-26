@@ -1,0 +1,10 @@
+services:
+  lab:
+    image: huawei-model-e:q1-v1
+    build:
+      context: .
+      dockerfile: Dockerfile.q1
+    environment:
+      TORCH_HOME: /cache/torch
+      MPLCONFIGDIR: /cache/matplotlib
+    command: [python, scripts/q1_doctor.py]

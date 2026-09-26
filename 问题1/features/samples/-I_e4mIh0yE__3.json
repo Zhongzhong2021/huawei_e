@@ -1,0 +1,336 @@
+{
+  "sample_id": "-I_e4mIh0yE$_$3",
+  "table_row_0based": 67,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-I_e4mIh0yE/3.mp4",
+  "source_sha256": "a015f02ae51d74c42ad27e2a0831263a303f0658ac8d984819e27ad61342b23e",
+  "text_original": "It's perceived that you have actually learned something, over the course of your carreer, and that you won't make the mistake twice.",
+  "words": [
+    {
+      "word": "it's",
+      "source_text": "It's",
+      "char_start": 0,
+      "char_end": 4,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1,
+        2,
+        3
+      ],
+      "bert_tokens": [
+        "it",
+        "'",
+        "s"
+      ]
+    },
+    {
+      "word": "perceived",
+      "source_text": "perceived",
+      "char_start": 5,
+      "char_end": 14,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "perceived"
+      ]
+    },
+    {
+      "word": "that",
+      "source_text": "that",
+      "char_start": 15,
+      "char_end": 19,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "that"
+      ]
+    },
+    {
+      "word": "you",
+      "source_text": "you",
+      "char_start": 20,
+      "char_end": 23,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "you"
+      ]
+    },
+    {
+      "word": "have",
+      "source_text": "have",
+      "char_start": 24,
+      "char_end": 28,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "have"
+      ]
+    },
+    {
+      "word": "actually",
+      "source_text": "actually",
+      "char_start": 29,
+      "char_end": 37,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "actually"
+      ]
+    },
+    {
+      "word": "learned",
+      "source_text": "learned",
+      "char_start": 38,
+      "char_end": 45,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "learned"
+      ]
+    },
+    {
+      "word": "something",
+      "source_text": "something",
+      "char_start": 46,
+      "char_end": 55,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "something"
+      ]
+    },
+    {
+      "word": "over",
+      "source_text": "over",
+      "char_start": 57,
+      "char_end": 61,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "over"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 62,
+      "char_end": 65,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "course",
+      "source_text": "course",
+      "char_start": 66,
+      "char_end": 72,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "course"
+      ]
+    },
+    {
+      "word": "of",
+      "source_text": "of",
+      "char_start": 73,
+      "char_end": 75,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "of"
+      ]
+    },
+    {
+      "word": "your",
+      "source_text": "your",
+      "char_start": 76,
+      "char_end": 80,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "your"
+      ]
+    },
+    {
+      "word": "carreer",
+      "source_text": "carreer",
+      "char_start": 81,
+      "char_end": 88,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17,
+        18
+      ],
+      "bert_tokens": [
+        "carr",
+        "##eer"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 90,
+      "char_end": 93,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        20
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "that",
+      "source_text": "that",
+      "char_start": 94,
+      "char_end": 98,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        21
+      ],
+      "bert_tokens": [
+        "that"
+      ]
+    },
+    {
+      "word": "you",
+      "source_text": "you",
+      "char_start": 99,
+      "char_end": 102,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        22
+      ],
+      "bert_tokens": [
+        "you"
+      ]
+    },
+    {
+      "word": "won't",
+      "source_text": "won't",
+      "char_start": 103,
+      "char_end": 108,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        23,
+        24,
+        25
+      ],
+      "bert_tokens": [
+        "won",
+        "'",
+        "t"
+      ]
+    },
+    {
+      "word": "make",
+      "source_text": "make",
+      "char_start": 109,
+      "char_end": 113,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        26
+      ],
+      "bert_tokens": [
+        "make"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 114,
+      "char_end": 117,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        27
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "mistake",
+      "source_text": "mistake",
+      "char_start": 118,
+      "char_end": 125,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        28
+      ],
+      "bert_tokens": [
+        "mistake"
+      ]
+    },
+    {
+      "word": "twice",
+      "source_text": "twice",
+      "char_start": 126,
+      "char_end": 131,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        29
+      ],
+      "bert_tokens": [
+        "twice"
+      ]
+    }
+  ],
+  "duration_s": 9.133333,
+  "container_declared_duration_s": 9.3,
+  "media_clock": {
+    "stem": "-I_e4mIh0yE__3",
+    "sample_id": "-I_e4mIh0yE$_$3",
+    "container_duration_s": 9.3,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 8.994375,
+    "audio_end_s": 8.994375,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 9.1,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 9.133333,
+    "observed_end_s": 9.133333,
+    "empty_declared_tail_s": 0.16666700000000034,
+    "original_video_frames": 271,
+    "source_sha256": "a015f02ae51d74c42ad27e2a0831263a303f0658ac8d984819e27ad61342b23e"
+  },
+  "decoded_audio_duration_s": 8.994375,
+  "audio_start_s": 0.0,
+  "feature_sha256": "02de012993e9689d8c370d9b92eeafdbb0ce86066cb048ed075c4b52c06083a7",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-I_e4mIh0yE__3.json": "6213a301159960124150446c89771ab81452aebb486a4673796c90121504a0f7",
+    "results/q1/samples/-I_e4mIh0yE__3.npz": "a189f9245c3f9e33eafe2584561a741568851a92beb83c27c8a53772436fb553",
+    "results/q1_next/enhanced/-I_e4mIh0yE__3.npz": "b547c0d747c5125e0dc9655d154c6c59b2745dfa3dceaaa7070d213ab2afce54",
+    "results/q1_refinement_v1/faces/-I_e4mIh0yE__3.npz": "c4ccec4e7ab3987accb194621994d726369ecc22a186bc1b506df7b5e92eb8c3",
+    "results/q1_deep_v6/alignment/MMS_FA/-I_e4mIh0yE__3/original.npz": "009d152010d234ac807e33ae84c007cbb9fab05664ac0238ce3a5d004e45b32c",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

@@ -1,0 +1,226 @@
+{
+  "sample_id": "-3g5yACwYnA$_$2",
+  "table_row_0based": 2,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-3g5yACwYnA/2.mp4",
+  "source_sha256": "0619c01f137d017c15c058176f18a575919189c7e81ebd2bfb993afdb86f3de7",
+  "text_original": "Key Polymer brings a technical aspect to our operation that we don't have internally.",
+  "words": [
+    {
+      "word": "key",
+      "source_text": "Key",
+      "char_start": 0,
+      "char_end": 3,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "key"
+      ]
+    },
+    {
+      "word": "polymer",
+      "source_text": "Polymer",
+      "char_start": 4,
+      "char_end": 11,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "polymer"
+      ]
+    },
+    {
+      "word": "brings",
+      "source_text": "brings",
+      "char_start": 12,
+      "char_end": 18,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "brings"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 19,
+      "char_end": 20,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "technical",
+      "source_text": "technical",
+      "char_start": 21,
+      "char_end": 30,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "technical"
+      ]
+    },
+    {
+      "word": "aspect",
+      "source_text": "aspect",
+      "char_start": 31,
+      "char_end": 37,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "aspect"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 38,
+      "char_end": 40,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "our",
+      "source_text": "our",
+      "char_start": 41,
+      "char_end": 44,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "our"
+      ]
+    },
+    {
+      "word": "operation",
+      "source_text": "operation",
+      "char_start": 45,
+      "char_end": 54,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "operation"
+      ]
+    },
+    {
+      "word": "that",
+      "source_text": "that",
+      "char_start": 55,
+      "char_end": 59,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "that"
+      ]
+    },
+    {
+      "word": "we",
+      "source_text": "we",
+      "char_start": 60,
+      "char_end": 62,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "we"
+      ]
+    },
+    {
+      "word": "don't",
+      "source_text": "don't",
+      "char_start": 63,
+      "char_end": 68,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12,
+        13,
+        14
+      ],
+      "bert_tokens": [
+        "don",
+        "'",
+        "t"
+      ]
+    },
+    {
+      "word": "have",
+      "source_text": "have",
+      "char_start": 69,
+      "char_end": 73,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "have"
+      ]
+    },
+    {
+      "word": "internally",
+      "source_text": "internally",
+      "char_start": 74,
+      "char_end": 84,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "internally"
+      ]
+    }
+  ],
+  "duration_s": 9.366666,
+  "container_declared_duration_s": 14.234,
+  "media_clock": {
+    "stem": "-3g5yACwYnA__2",
+    "sample_id": "-3g5yACwYnA$_$2",
+    "container_duration_s": 14.234,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 9.2313125,
+    "audio_end_s": 9.2313125,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 9.333333,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 9.366666,
+    "observed_end_s": 9.366666,
+    "empty_declared_tail_s": 4.867334,
+    "original_video_frames": 278,
+    "source_sha256": "0619c01f137d017c15c058176f18a575919189c7e81ebd2bfb993afdb86f3de7"
+  },
+  "decoded_audio_duration_s": 9.2313125,
+  "audio_start_s": 0.0,
+  "feature_sha256": "0af6258449e553e95d482ac5bc30a0b35d3433bb614920416f5ae5067b931784",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-3g5yACwYnA__2.json": "c0dd7ad2a35b90ce50f0f712a6aa39f3df97f4c84f647f622c60004ecd02c07a",
+    "results/q1/samples/-3g5yACwYnA__2.npz": "2c4340cfd8516bfa3f5a0eb923a51d33687635827473cf952cdb94883a3cd750",
+    "results/q1_next/enhanced/-3g5yACwYnA__2.npz": "4aa36274fcb2c115f19c8dda806f857d274f667c88aded93ad7b319cdca1e2e4",
+    "results/q1_refinement_v1/faces/-3g5yACwYnA__2.npz": "a0893887eb6260250ef227da784a65e02076ff33c3359ca471363f14bf6f9a68",
+    "results/q1_deep_v6/alignment/MMS_FA/-3g5yACwYnA__2/original.npz": "2291ffbc4c90d7f83947f203bd9863c1502fe0bf5149487441bd0a67aec60d4d",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

@@ -1,0 +1,278 @@
+{
+  "sample_id": "-UacrmKiTn4$_$10",
+  "table_row_0based": 68,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-UacrmKiTn4/10.mp4",
+  "source_sha256": "00312e0602dbeac970de5d7dd0e8a970e514fe45d7fe6625b4f454b299e36360",
+  "text_original": "Because, if they are not in any way held accountable for reading the material they won't do it.",
+  "words": [
+    {
+      "word": "because",
+      "source_text": "Because",
+      "char_start": 0,
+      "char_end": 7,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "because"
+      ]
+    },
+    {
+      "word": "if",
+      "source_text": "if",
+      "char_start": 9,
+      "char_end": 11,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "if"
+      ]
+    },
+    {
+      "word": "they",
+      "source_text": "they",
+      "char_start": 12,
+      "char_end": 16,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "they"
+      ]
+    },
+    {
+      "word": "are",
+      "source_text": "are",
+      "char_start": 17,
+      "char_end": 20,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "are"
+      ]
+    },
+    {
+      "word": "not",
+      "source_text": "not",
+      "char_start": 21,
+      "char_end": 24,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "not"
+      ]
+    },
+    {
+      "word": "in",
+      "source_text": "in",
+      "char_start": 25,
+      "char_end": 27,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "in"
+      ]
+    },
+    {
+      "word": "any",
+      "source_text": "any",
+      "char_start": 28,
+      "char_end": 31,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "any"
+      ]
+    },
+    {
+      "word": "way",
+      "source_text": "way",
+      "char_start": 32,
+      "char_end": 35,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "way"
+      ]
+    },
+    {
+      "word": "held",
+      "source_text": "held",
+      "char_start": 36,
+      "char_end": 40,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "held"
+      ]
+    },
+    {
+      "word": "accountable",
+      "source_text": "accountable",
+      "char_start": 41,
+      "char_end": 52,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "accountable"
+      ]
+    },
+    {
+      "word": "for",
+      "source_text": "for",
+      "char_start": 53,
+      "char_end": 56,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "for"
+      ]
+    },
+    {
+      "word": "reading",
+      "source_text": "reading",
+      "char_start": 57,
+      "char_end": 64,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "reading"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 65,
+      "char_end": 68,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "material",
+      "source_text": "material",
+      "char_start": 69,
+      "char_end": 77,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "material"
+      ]
+    },
+    {
+      "word": "they",
+      "source_text": "they",
+      "char_start": 78,
+      "char_end": 82,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "they"
+      ]
+    },
+    {
+      "word": "won't",
+      "source_text": "won't",
+      "char_start": 83,
+      "char_end": 88,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17,
+        18,
+        19
+      ],
+      "bert_tokens": [
+        "won",
+        "'",
+        "t"
+      ]
+    },
+    {
+      "word": "do",
+      "source_text": "do",
+      "char_start": 89,
+      "char_end": 91,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        20
+      ],
+      "bert_tokens": [
+        "do"
+      ]
+    },
+    {
+      "word": "it",
+      "source_text": "it",
+      "char_start": 92,
+      "char_end": 94,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        21
+      ],
+      "bert_tokens": [
+        "it"
+      ]
+    }
+  ],
+  "duration_s": 7.333333,
+  "container_declared_duration_s": 12.634,
+  "media_clock": {
+    "stem": "-UacrmKiTn4__10",
+    "sample_id": "-UacrmKiTn4$_$10",
+    "container_duration_s": 12.634,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 7.2420625,
+    "audio_end_s": 7.2420625,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 7.3,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 7.333333,
+    "observed_end_s": 7.333333,
+    "empty_declared_tail_s": 5.300667000000001,
+    "original_video_frames": 218,
+    "source_sha256": "00312e0602dbeac970de5d7dd0e8a970e514fe45d7fe6625b4f454b299e36360"
+  },
+  "decoded_audio_duration_s": 7.2420625,
+  "audio_start_s": 0.0,
+  "feature_sha256": "cb01a2acf018cdc1489097ad13e74e5d3b0cfe42d7b35fb9b3fdb0be537fbd5b",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-UacrmKiTn4__10.json": "535204d55ad7e1ca7b76c0685799ecded0314b7e5dee729d49708641f9012c72",
+    "results/q1/samples/-UacrmKiTn4__10.npz": "8ccbab3d48ae1192f989921cf7e89bbae8796b09a978aafd35ca94e29c4e3e8e",
+    "results/q1_next/enhanced/-UacrmKiTn4__10.npz": "00dc507947af75a41936e660dbe2a979cd8bac4c204d43f2aed87d2e1b3f9850",
+    "results/q1_refinement_v1/faces/-UacrmKiTn4__10.npz": "f9ea0c9a58dfce0475e88305fb1a64a67e4cbe1d2590a4e09500ed613f955e0f",
+    "results/q1_deep_v6/alignment/MMS_FA/-UacrmKiTn4__10/original.npz": "79b7121757565eedca4b6b612539a559a86e51de1a592550a7417c12f1d84da8",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

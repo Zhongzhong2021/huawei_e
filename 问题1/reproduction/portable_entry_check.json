@@ -1,0 +1,7 @@
+{
+  "samples": 100,
+  "arrays_equal": 300,
+  "rows": 77261,
+  "max_interval_beyond_observed_duration_s": 0.0,
+  "public_comparisons_identical": true
+}

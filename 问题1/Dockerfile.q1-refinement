@@ -1,0 +1,4 @@
+FROM huawei-model-e:q1-next-v1
+COPY models/face_detection_yunet_2023mar.onnx models/yunet.lock.json models/YuNet_LICENSE.txt /opt/q1_refinement_models/
+RUN python -c "import hashlib,json,pathlib; p=pathlib.Path('/opt/q1_refinement_models'); m=p/'face_detection_yunet_2023mar.onnx'; assert hashlib.sha256(m.read_bytes()).hexdigest()==json.loads((p/'yunet.lock.json').read_text())['sha256']"
+LABEL q1.refinement.version="v1"

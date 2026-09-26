@@ -1,0 +1,287 @@
+{
+  "sample_id": "-lzEya4AM_4$_$5",
+  "table_row_0based": 39,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-lzEya4AM_4/5.mp4",
+  "source_sha256": "3b74de8d0e66fd754594f05985e5af3480adcc03555f79225d3b727cb4bed043",
+  "text_original": "If it falls into oh any of those three categories, inducing nausea and vomiting would be your next step.",
+  "words": [
+    {
+      "word": "if",
+      "source_text": "If",
+      "char_start": 0,
+      "char_end": 2,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "if"
+      ]
+    },
+    {
+      "word": "it",
+      "source_text": "it",
+      "char_start": 3,
+      "char_end": 5,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "it"
+      ]
+    },
+    {
+      "word": "falls",
+      "source_text": "falls",
+      "char_start": 6,
+      "char_end": 11,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "falls"
+      ]
+    },
+    {
+      "word": "into",
+      "source_text": "into",
+      "char_start": 12,
+      "char_end": 16,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "into"
+      ]
+    },
+    {
+      "word": "oh",
+      "source_text": "oh",
+      "char_start": 17,
+      "char_end": 19,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "oh"
+      ]
+    },
+    {
+      "word": "any",
+      "source_text": "any",
+      "char_start": 20,
+      "char_end": 23,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "any"
+      ]
+    },
+    {
+      "word": "of",
+      "source_text": "of",
+      "char_start": 24,
+      "char_end": 26,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "of"
+      ]
+    },
+    {
+      "word": "those",
+      "source_text": "those",
+      "char_start": 27,
+      "char_end": 32,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "those"
+      ]
+    },
+    {
+      "word": "three",
+      "source_text": "three",
+      "char_start": 33,
+      "char_end": 38,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "three"
+      ]
+    },
+    {
+      "word": "categories",
+      "source_text": "categories",
+      "char_start": 39,
+      "char_end": 49,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "categories"
+      ]
+    },
+    {
+      "word": "inducing",
+      "source_text": "inducing",
+      "char_start": 51,
+      "char_end": 59,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "inducing"
+      ]
+    },
+    {
+      "word": "nausea",
+      "source_text": "nausea",
+      "char_start": 60,
+      "char_end": 66,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "nausea"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 67,
+      "char_end": 70,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "vomiting",
+      "source_text": "vomiting",
+      "char_start": 71,
+      "char_end": 79,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "vomiting"
+      ]
+    },
+    {
+      "word": "would",
+      "source_text": "would",
+      "char_start": 80,
+      "char_end": 85,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "would"
+      ]
+    },
+    {
+      "word": "be",
+      "source_text": "be",
+      "char_start": 86,
+      "char_end": 88,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17
+      ],
+      "bert_tokens": [
+        "be"
+      ]
+    },
+    {
+      "word": "your",
+      "source_text": "your",
+      "char_start": 89,
+      "char_end": 93,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        18
+      ],
+      "bert_tokens": [
+        "your"
+      ]
+    },
+    {
+      "word": "next",
+      "source_text": "next",
+      "char_start": 94,
+      "char_end": 98,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        19
+      ],
+      "bert_tokens": [
+        "next"
+      ]
+    },
+    {
+      "word": "step",
+      "source_text": "step",
+      "char_start": 99,
+      "char_end": 103,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        20
+      ],
+      "bert_tokens": [
+        "step"
+      ]
+    }
+  ],
+  "duration_s": 7.666666,
+  "container_declared_duration_s": 7.8,
+  "media_clock": {
+    "stem": "-lzEya4AM_4__5",
+    "sample_id": "-lzEya4AM_4$_$5",
+    "container_duration_s": 7.8,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 7.5696875,
+    "audio_end_s": 7.5696875,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 7.633333,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 7.666666,
+    "observed_end_s": 7.666666,
+    "empty_declared_tail_s": 0.13333399999999962,
+    "original_video_frames": 229,
+    "source_sha256": "3b74de8d0e66fd754594f05985e5af3480adcc03555f79225d3b727cb4bed043"
+  },
+  "decoded_audio_duration_s": 7.5696875,
+  "audio_start_s": 0.0,
+  "feature_sha256": "bb61d3b7d062e20986610f99eb8a5a6ad1e51421ce1b9f20b25ac7f85a591426",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-lzEya4AM_4__5.json": "6b1ab26e7f1ab5d7e47dff9accb282619968f7a25e147e0a0d6d41d47f60e80c",
+    "results/q1/samples/-lzEya4AM_4__5.npz": "b906c2d09bd5e0d788745e61a8f876dc59640756235c29389809df61535dd450",
+    "results/q1_next/enhanced/-lzEya4AM_4__5.npz": "f643703b596d94d441b69056c1287bc6dfccab217db779d1c911a4590a68290a",
+    "results/q1_refinement_v1/faces/-lzEya4AM_4__5.npz": "47611054b21d7acb338af881c1b6355ed7888006ad185d3df3b275ba67f0c5ab",
+    "results/q1_deep_v6/alignment/MMS_FA/-lzEya4AM_4__5/original.npz": "afb325329a66d636c82ea726888402013597c8361158a37a2f42b226b47cc8bb",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

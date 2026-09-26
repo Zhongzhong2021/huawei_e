@@ -1,0 +1,38 @@
+{
+  "samples": 100,
+  "words": 1948,
+  "languages": {
+    "en": 97,
+    "he": 3
+  },
+  "status_counts": {
+    "english_sentence_supported": 78,
+    "english_low_text_agreement": 15,
+    "no_vad_speech": 4,
+    "non_english_or_language_uncertain": 3
+  },
+  "baseline_supported_words": 1575,
+  "enhanced_supported_words": 1464,
+  "recovered_words": 3,
+  "withheld_words": 114,
+  "samples_with_enhanced_words": 80,
+  "boundary_width_quantiles_s": [
+    0.0,
+    0.16018767123287692,
+    0.573806314432986,
+    1.342819236727528
+  ],
+  "baseline_accepted_boundary_width_quantiles_s": [
+    0.0,
+    0.020056387579490086,
+    0.02008474123014059,
+    0.1254792545071841
+  ],
+  "checks": 1000,
+  "max_stored_membership_pool_relative_error": 1.52587890625e-05,
+  "hard_soft_cosine_distance_median": {
+    "audio": 6.258765772315655e-08,
+    "vision": 2.7135789282262124e-08,
+    "scene": 3.862058750581099e-08
+  }
+}

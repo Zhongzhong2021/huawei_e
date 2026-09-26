@@ -1,0 +1,133 @@
+{
+  "sample_id": "-HwX2H8Z4hY$_$6",
+  "table_row_0based": 7,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-HwX2H8Z4hY/6.mp4",
+  "source_sha256": "696576dcbd0dc42cb678fa40d8a0f0f419a3072bfa7662d653756ab29bba4c46",
+  "text_original": "And in part, Al Shanker did too",
+  "words": [
+    {
+      "word": "and",
+      "source_text": "And",
+      "char_start": 0,
+      "char_end": 3,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "in",
+      "source_text": "in",
+      "char_start": 4,
+      "char_end": 6,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "in"
+      ]
+    },
+    {
+      "word": "part",
+      "source_text": "part",
+      "char_start": 7,
+      "char_end": 11,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "part"
+      ]
+    },
+    {
+      "word": "al",
+      "source_text": "Al",
+      "char_start": 13,
+      "char_end": 15,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "al"
+      ]
+    },
+    {
+      "word": "shanker",
+      "source_text": "Shanker",
+      "char_start": 16,
+      "char_end": 23,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6,
+        7
+      ],
+      "bert_tokens": [
+        "shan",
+        "##ker"
+      ]
+    },
+    {
+      "word": "did",
+      "source_text": "did",
+      "char_start": 24,
+      "char_end": 27,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "did"
+      ]
+    },
+    {
+      "word": "too",
+      "source_text": "too",
+      "char_start": 28,
+      "char_end": 31,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "too"
+      ]
+    }
+  ],
+  "duration_s": 3.3333329999999997,
+  "container_declared_duration_s": 6.767,
+  "media_clock": {
+    "stem": "-HwX2H8Z4hY__6",
+    "sample_id": "-HwX2H8Z4hY$_$6",
+    "container_duration_s": 6.767,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 3.256,
+    "audio_end_s": 3.256,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 3.3,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 3.3333329999999997,
+    "observed_end_s": 3.3333329999999997,
+    "empty_declared_tail_s": 3.4336670000000007,
+    "original_video_frames": 99,
+    "source_sha256": "696576dcbd0dc42cb678fa40d8a0f0f419a3072bfa7662d653756ab29bba4c46"
+  },
+  "decoded_audio_duration_s": 3.256,
+  "audio_start_s": 0.0,
+  "feature_sha256": "53cdac6532b14e0b0f158e91b7e30f901bd5f6d0526addfe7805f835f08d4efd",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-HwX2H8Z4hY__6.json": "c2743deb6ab84fb6d894cfcac5c5d6981cb1f4766f7ece40449375617aef3720",
+    "results/q1/samples/-HwX2H8Z4hY__6.npz": "57228f16cd0dc4a83918463859e40b4a2dd13477878ef48fd8afd9c5b1a091a8",
+    "results/q1_next/enhanced/-HwX2H8Z4hY__6.npz": "fc25222aa67e0be40bd29a34868f491fce8c05d4ca2fdbe3c03f1a395dfaa8bc",
+    "results/q1_refinement_v1/faces/-HwX2H8Z4hY__6.npz": "e63d6130672ffa2b03a113dfdcf27b73765f1a4589bb55acd0870faa9f9416b1",
+    "results/q1_deep_v6/alignment/MMS_FA/-HwX2H8Z4hY__6/original.npz": "b181111eb3049a93390f9663f3c91681b2fc4027da43e4ecf82711d288b5ec4b",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

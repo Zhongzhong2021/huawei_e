@@ -1,0 +1,196 @@
+{
+  "all_eligible": {
+    "MMS_FA": {
+      "words": 1347,
+      "samples": 72,
+      "source_videos": 31,
+      "boundary_mae_s": 0.21290261935208982,
+      "boundary_median_s": 0.048660997700002206,
+      "boundary_p95_s": 1.2757398951250005,
+      "max_boundary_median_s": 0.06907475907000027,
+      "max_boundary_p95_s": 1.3283696853700009,
+      "within50ms": 0.3110616184112843,
+      "within100ms": 0.6837416481069042,
+      "within200ms": 0.8129175946547884,
+      "duration_mae_s": 0.09842367713307415,
+      "within100ms_cluster_bootstrap95": [
+        0.5669454994413864,
+        0.7778560107934098
+      ]
+    },
+    "WAV2VEC2": {
+      "words": 1347,
+      "samples": 72,
+      "source_videos": 31,
+      "boundary_mae_s": 0.18930855252531173,
+      "boundary_median_s": 0.06168636620999779,
+      "boundary_p95_s": 0.9330249858649985,
+      "max_boundary_median_s": 0.08584672619999978,
+      "max_boundary_p95_s": 1.0257858701600016,
+      "within50ms": 0.15070527097253156,
+      "within100ms": 0.5924276169265034,
+      "within200ms": 0.8017817371937639,
+      "duration_mae_s": 0.1196095290083971
+    },
+    "uniform": {
+      "words": 1347,
+      "samples": 72,
+      "source_videos": 31,
+      "boundary_mae_s": 0.5167770517456817,
+      "boundary_median_s": 0.40977373224090935,
+      "boundary_p95_s": 1.2550933330837175,
+      "max_boundary_median_s": 0.47720578230000044,
+      "max_boundary_p95_s": 1.319608100230357,
+      "within50ms": 0.007423904974016332,
+      "within100ms": 0.034892353377876766,
+      "within200ms": 0.13140311804008908,
+      "duration_mae_s": 0.1842235476218587
+    },
+    "equal_fusion": {
+      "words": 1347,
+      "samples": 72,
+      "source_videos": 31,
+      "boundary_mae_s": 0.18785918907294358,
+      "boundary_median_s": 0.05601225910000651,
+      "boundary_p95_s": 0.9596802013549987,
+      "max_boundary_median_s": 0.07719040530000165,
+      "max_boundary_p95_s": 1.0570958475400007,
+      "within50ms": 0.23162583518930957,
+      "within100ms": 0.6421677802524127,
+      "within200ms": 0.807720861172977,
+      "duration_mae_s": 0.10587002676921374
+    }
+  },
+  "current_supported": {
+    "MMS_FA": {
+      "words": 1036,
+      "samples": 58,
+      "source_videos": 25,
+      "boundary_mae_s": 0.06545035510273652,
+      "boundary_median_s": 0.039510629250000484,
+      "boundary_p95_s": 0.1522402636049973,
+      "max_boundary_median_s": 0.05955775230000793,
+      "max_boundary_p95_s": 0.20816904052500296,
+      "within50ms": 0.3745173745173745,
+      "within100ms": 0.8137065637065637,
+      "within200ms": 0.9459459459459459,
+      "duration_mae_s": 0.08009394233769214,
+      "within100ms_cluster_bootstrap95": [
+        0.7673493984158741,
+        0.8609920185563998
+      ]
+    },
+    "WAV2VEC2": {
+      "words": 1036,
+      "samples": 58,
+      "source_videos": 25,
+      "boundary_mae_s": 0.08393577763664568,
+      "boundary_median_s": 0.053243055550003415,
+      "boundary_p95_s": 0.18253492086499748,
+      "max_boundary_median_s": 0.07761089849999914,
+      "max_boundary_p95_s": 0.2620462018049985,
+      "within50ms": 0.17277992277992277,
+      "within100ms": 0.7017374517374517,
+      "within200ms": 0.9314671814671814,
+      "duration_mae_s": 0.10468542886985427
+    },
+    "uniform": {
+      "words": 1036,
+      "samples": 58,
+      "source_videos": 25,
+      "boundary_mae_s": 0.43290126729916595,
+      "boundary_median_s": 0.38835326696842065,
+      "boundary_p95_s": 1.0512944816390266,
+      "max_boundary_median_s": 0.47642361109999776,
+      "max_boundary_p95_s": 1.151174532333338,
+      "within50ms": 0.006756756756756757,
+      "within100ms": 0.03667953667953668,
+      "within200ms": 0.1438223938223938,
+      "duration_mae_s": 0.17218114266995485
+    },
+    "equal_fusion": {
+      "words": 1036,
+      "samples": 58,
+      "source_videos": 25,
+      "boundary_mae_s": 0.07394890530978286,
+      "boundary_median_s": 0.046223356025004936,
+      "boundary_p95_s": 0.16822394417149839,
+      "max_boundary_median_s": 0.0685588860500006,
+      "max_boundary_p95_s": 0.23714866782500005,
+      "within50ms": 0.2750965250965251,
+      "within100ms": 0.7654440154440154,
+      "within200ms": 0.9382239382239382,
+      "duration_mae_s": 0.09184748159350296
+    }
+  },
+  "current_unsupported": {
+    "MMS_FA": {
+      "words": 311,
+      "samples": 56,
+      "source_videos": 28,
+      "boundary_mae_s": 0.7040940848258198,
+      "boundary_median_s": 0.3960815617999922,
+      "boundary_p95_s": 2.625312570859501,
+      "max_boundary_median_s": 0.4523400651999996,
+      "max_boundary_p95_s": 2.74545769558,
+      "within50ms": 0.09967845659163987,
+      "within100ms": 0.2508038585209003,
+      "within200ms": 0.36977491961414793,
+      "duration_mae_s": 0.15948350108167783,
+      "within100ms_cluster_bootstrap95": [
+        0.13367494746966982,
+        0.45895025460242844
+      ]
+    },
+    "WAV2VEC2": {
+      "words": 311,
+      "samples": 56,
+      "source_videos": 28,
+      "boundary_mae_s": 0.5403252560129581,
+      "boundary_median_s": 0.32038881803500363,
+      "boundary_p95_s": 2.1190501771364976,
+      "max_boundary_median_s": 0.4069686082999997,
+      "max_boundary_p95_s": 2.30534126985,
+      "within50ms": 0.07717041800643087,
+      "within100ms": 0.2282958199356913,
+      "within200ms": 0.36977491961414793,
+      "duration_mae_s": 0.1693245378300382
+    },
+    "uniform": {
+      "words": 311,
+      "samples": 56,
+      "source_videos": 28,
+      "boundary_mae_s": 0.7961832018633357,
+      "boundary_median_s": 0.477071995444998,
+      "boundary_p95_s": 3.576282624742141,
+      "max_boundary_median_s": 0.5308629534999993,
+      "max_boundary_p95_s": 3.581798469384693,
+      "within50ms": 0.00964630225080386,
+      "within100ms": 0.028938906752411574,
+      "within200ms": 0.09003215434083602,
+      "duration_mae_s": 0.22433908308865091
+    },
+    "equal_fusion": {
+      "words": 311,
+      "samples": 56,
+      "source_videos": 28,
+      "boundary_mae_s": 0.5673159542775561,
+      "boundary_median_s": 0.3375214711050005,
+      "boundary_p95_s": 2.0454678500399983,
+      "max_boundary_median_s": 0.42267354019999814,
+      "max_boundary_p95_s": 2.3004886621499994,
+      "within50ms": 0.08681672025723473,
+      "within100ms": 0.2315112540192926,
+      "within200ms": 0.3729903536977492,
+      "duration_mae_s": 0.15258178497511848
+    }
+  },
+  "coverage": {
+    "total_samples": 100,
+    "total_words": 1948,
+    "unique_exact_transcript_samples": 75,
+    "anchor_accepted_samples": 97,
+    "cohort_samples": 72,
+    "out_of_audio_words": 1
+  }
+}

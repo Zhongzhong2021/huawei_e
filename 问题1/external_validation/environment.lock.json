@@ -1,0 +1,21 @@
+{
+  "image": "huawei-model-e:q1-external-validation",
+  "image_id": "sha256:dba15ff966a0957e8b5d7165b244517295d4c01d44c402e5dfb6dc419f6c3784",
+  "environment": {
+    "python": "3.11.13 | packaged by conda-forge | (main, Jun  4 2025, 14:48:23) [GCC 13.3.0]",
+    "packages": {
+      "numpy": "2.2.6",
+      "scipy": "1.15.3",
+      "h5py": "3.14.0",
+      "pandas": "2.2.3",
+      "pyarrow": "25.0.1",
+      "opensmile": "2.6.0",
+      "mediapipe": "0.10.32",
+      "torch": "2.7.1+cu126",
+      "transformers": "4.52.4"
+    }
+  },
+  "base_image_reused": true,
+  "pip_check_passed": true,
+  "delivered_recalculation_in_docker_passed": true
+}

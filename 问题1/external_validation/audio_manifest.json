@@ -1,0 +1,705 @@
+[
+  {
+    "video_id": "-UuX1xuaiiE",
+    "path": "-UuX1xuaiiE-Audio-WAV/-UuX1xuaiiE.wav",
+    "url": "https://audb-public.s3.dualstack.eu-north-1.amazonaws.com/cmu-mosei/media/1.2.4/2d5d67c8-6a49-cc54-94bc-91552c87d134.zip",
+    "bytes": 1900772,
+    "sha256": "6ae9e5183bf86a301ab71ac40a024b7e80c5aafd06f217d973ebb0fd59f8480d",
+    "reference": {
+      "archive": "2d5d67c8-6a49-cc54-94bc-91552c87d134",
+      "bit_depth": 16,
+      "channels": 1,
+      "checksum": "6790a26d25d6075366135d8904d0b755",
+      "duration": 59.3966875,
+      "format": "wav",
+      "removed": 0,
+      "sampling_rate": 16000,
+      "type": 1,
+      "version": "1.2.4"
+    }
+  },
+  {
+    "video_id": "-egA8-b7-3M",
+    "path": "-egA8-b7-3M-Audio-WAV/-egA8-b7-3M.wav",
+    "url": "https://audb-public.s3.dualstack.eu-north-1.amazonaws.com/cmu-mosei/media/1.2.4/50c19782-5276-b48b-e646-406cb2264c10.zip",
+    "bytes": 6248290,
+    "sha256": "c7f1ffd2e01c64fa574bd00f71986b2bf53e7631cb357af8dcf4733ecca67ebb",
+    "reference": {
+      "archive": "50c19782-5276-b48b-e646-406cb2264c10",
+      "bit_depth": 16,
+      "channels": 1,
+      "checksum": "99de5b76f883d2e839273e2af3a37aaf",
+      "duration": 195.256625,
+      "format": "wav",
+      "removed": 0,
+      "sampling_rate": 16000,
+      "type": 1,
+      "version": "1.2.4"
+    }
+  },
+  {
+    "video_id": "-vxjVxOeScU",
+    "path": "-egA8-b7-3M-Audio-WAV/-vxjVxOeScU.wav",
+    "url": "https://audb-public.s3.dualstack.eu-north-1.amazonaws.com/cmu-mosei/media/1.2.4/c5292236-b988-c648-79b3-a5347761ef29.zip",
+    "bytes": 2441702,
+    "sha256": "d28112253adb0a1485706f65cfb79874ae5c1b39d97babdcdcaf05f4bf17c794",
+    "reference": {
+      "archive": "c5292236-b988-c648-79b3-a5347761ef29",
+      "bit_depth": 16,
+      "channels": 1,
+      "checksum": "4f8689b4c4d3dcc06d87f3c6c885ac40",
+      "duration": 76.30075,
+      "format": "wav",
+      "removed": 0,
+      "sampling_rate": 16000,
+      "type": 1,
+      "version": "1.2.4"
+    }
+  },
+  {
+    "video_id": "-571d8cVauQ",
+    "path": "107456-Audio-WAV/-571d8cVauQ.wav",
+    "url": "https://audb-public.s3.dualstack.eu-north-1.amazonaws.com/cmu-mosei/media/1.2.4/f5060e51-9126-1f41-1ca8-f4e4fe596cff.zip",
+    "bytes": 2857062,
+    "sha256": "ab18dd06543b57f8bb9d257bb2107ff8789780f6ee9cb4cf45170f75b1ca4b5f",
+    "reference": {
+      "archive": "f5060e51-9126-1f41-1ca8-f4e4fe596cff",
+      "bit_depth": 16,
+      "channels": 1,
+      "checksum": "79c7b8827add56dda4e94d474ed7cca5",
+      "duration": 89.28075,
+      "format": "wav",
+      "removed": 0,
+      "sampling_rate": 16000,
+      "type": 1,
+      "version": "1.2.4"
+    }
+  },
+  {
+    "video_id": "-a55Q6RWvTA",
+    "path": "217395-Audio-WAV/-a55Q6RWvTA.wav",
+    "url": "https://audb-public.s3.dualstack.eu-north-1.amazonaws.com/cmu-mosei/media/1.2.4/b6c7e8e5-78ac-5cf3-8736-86ff7faea1f6.zip",
+    "bytes": 2461022,
+    "sha256": "9bacbd8a48ecb94e69ac795fd809984e2123c294c27f41121eedc61abff74f34",
+    "reference": {
+      "archive": "b6c7e8e5-78ac-5cf3-8736-86ff7faea1f6",
+      "bit_depth": 16,
+      "channels": 1,
+      "checksum": "779e87e9434dbfd9c2955e075e3a37ec",
+      "duration": 76.9045,
+      "format": "wav",
+      "removed": 0,
+      "sampling_rate": 16000,
+      "type": 1,
+      "version": "1.2.4"
+    }
+  },
+  {
+    "video_id": "-HwX2H8Z4hY",
+    "path": "224648-Audio-WAV/-HwX2H8Z4hY.wav",
+    "url": "https://audb-public.s3.dualstack.eu-north-1.amazonaws.com/cmu-mosei/media/1.2.4/22d292c9-3dbc-b87e-ee59-2f39ed96f6e6.zip",
+    "bytes": 1874766,
+    "sha256": "cb6c07d2cc8e6777244b00087e4b8a15e76535e2efdbbd4c09a2bd340e071f2e",
+    "reference": {
+      "archive": "22d292c9-3dbc-b87e-ee59-2f39ed96f6e6",
+      "bit_depth": 16,
+      "channels": 1,
+      "checksum": "d57be968d8c4f2adada012bf6a4bb9b3",
+      "duration": 58.584,
+      "format": "wav",
+      "removed": 0,
+      "sampling_rate": 16000,
+      "type": 1,
+      "version": "1.2.4"
+    }
+  },
+  {
+    "video_id": "-HeZS2-Prhc",
+    "path": "246216-Audio-WAV/-HeZS2-Prhc.wav",
+    "url": "https://audb-public.s3.dualstack.eu-north-1.amazonaws.com/cmu-mosei/media/1.2.4/4813491d-3258-f499-9708-82af11c32610.zip",
+    "bytes": 3252358,
+    "sha256": "7547ec471cf224046f7010e9c022c81ded46e7127fae2832b469e44aad650ac7",
+    "reference": {
+      "archive": "4813491d-3258-f499-9708-82af11c32610",
+      "bit_depth": 16,
+      "channels": 1,
+      "checksum": "e008d5aa1ff780a5d1fb44ee51941161",
+      "duration": 101.63375,
+      "format": "wav",
+      "removed": 0,
+      "sampling_rate": 16000,
+      "type": 1,
+      "version": "1.2.4"
+    }
+  },
+  {
+    "video_id": "-mJ2ud6oKI8",
+    "path": "246216-Audio-WAV/-mJ2ud6oKI8.wav",
+    "url": "https://audb-public.s3.dualstack.eu-north-1.amazonaws.com/cmu-mosei/media/1.2.4/ffac6f09-f5e9-732d-2523-aa41013a68f5.zip",
+    "bytes": 8851154,
+    "sha256": "947d1d34755e41c937170133d007e328c9af68ec60ef72a9438850e35d04a587",
+    "reference": {
+      "archive": "ffac6f09-f5e9-732d-2523-aa41013a68f5",
+      "bit_depth": 16,
+      "channels": 1,
+      "checksum": "926c21005389777485ecf651261e6ec5",
+      "duration": 276.596125,
+      "format": "wav",
+      "removed": 0,
+      "sampling_rate": 16000,
+      "type": 1,
+      "version": "1.2.4"
+    }
+  },
+  {
+    "video_id": "-NFrJFQijFE",
+    "path": "258654-Audio-WAV/-NFrJFQijFE.wav",
+    "url": "https://audb-public.s3.dualstack.eu-north-1.amazonaws.com/cmu-mosei/media/1.2.4/540c0f0a-df24-0cae-d914-bfcdc9d10b5c.zip",
+    "bytes": 18240190,
+    "sha256": "51830dc8f72e1317f91e5d2f953b4523c401e78b5deb19759ca2d617d0a457e2",
+    "reference": {
+      "archive": "540c0f0a-df24-0cae-d914-bfcdc9d10b5c",
+      "bit_depth": 16,
+      "channels": 1,
+      "checksum": "f6689ee1631219bb06df9809a6807933",
+      "duration": 570.0035,
+      "format": "wav",
+      "removed": 0,
+      "sampling_rate": 16000,
+      "type": 1,
+      "version": "1.2.4"
+    }
+  },
+  {
+    "video_id": "-wMB_hJL-3o",
+    "path": "258654-Audio-WAV/-wMB_hJL-3o.wav",
+    "url": "https://audb-public.s3.dualstack.eu-north-1.amazonaws.com/cmu-mosei/media/1.2.4/03847433-499c-2cd2-8243-584cc555f640.zip",
+    "bytes": 2766412,
+    "sha256": "c32c8062c132157a5795640b900321f7f17deb9611c3dd35c82bc786497207b6",
+    "reference": {
+      "archive": "03847433-499c-2cd2-8243-584cc555f640",
+      "bit_depth": 16,
+      "channels": 1,
+      "checksum": "4eef5f68aec6a6a8031ff0efe34b9371",
+      "duration": 86.4479375,
+      "format": "wav",
+      "removed": 0,
+      "sampling_rate": 16000,
+      "type": 1,
+      "version": "1.2.4"
+    }
+  },
+  {
+    "video_id": "-mqbVkbCndg",
+    "path": "272838-Audio-WAV/-mqbVkbCndg.wav",
+    "url": "https://audb-public.s3.dualstack.eu-north-1.amazonaws.com/cmu-mosei/media/1.2.4/5568d927-e7fc-055b-e290-e0c319e59d2f.zip",
+    "bytes": 1905230,
+    "sha256": "ebc933b59517cbfcd5df51117e8d841bf565e16ebebec09270503fd4f6c36bc5",
+    "reference": {
+      "archive": "5568d927-e7fc-055b-e290-e0c319e59d2f",
+      "bit_depth": 16,
+      "channels": 1,
+      "checksum": "7960512a1ee47f3d2008e307aa1d4b8b",
+      "duration": 59.536,
+      "format": "wav",
+      "removed": 0,
+      "sampling_rate": 16000,
+      "type": 1,
+      "version": "1.2.4"
+    }
+  },
+  {
+    "video_id": "-yRb-Jum7EQ",
+    "path": "3FpmKxZgihw-Audio-WAV/-yRb-Jum7EQ.wav",
+    "url": "https://audb-public.s3.dualstack.eu-north-1.amazonaws.com/cmu-mosei/media/1.2.4/8ebd3e5c-1f2a-46e5-b40f-d16fa2611a2f.zip",
+    "bytes": 2627464,
+    "sha256": "9e81640a9c242eb6024cb976cbed92208d6b4a83d5055d2b46a302bae806481c",
+    "reference": {
+      "archive": "8ebd3e5c-1f2a-46e5-b40f-d16fa2611a2f",
+      "bit_depth": 16,
+      "channels": 1,
+      "checksum": "a26d84e113c8ab5d8098a9919b4c3dd6",
+      "duration": 82.1058125,
+      "format": "wav",
+      "removed": 0,
+      "sampling_rate": 16000,
+      "type": 1,
+      "version": "1.2.4"
+    }
+  },
+  {
+    "video_id": "-ri04Z7vwnc",
+    "path": "3GyEnzE1NTQ-Audio-WAV/-ri04Z7vwnc.wav",
+    "url": "https://audb-public.s3.dualstack.eu-north-1.amazonaws.com/cmu-mosei/media/1.2.4/7563f6c3-4e5f-7dfc-221f-2b5c2c4adfdf.zip",
+    "bytes": 8600750,
+    "sha256": "f71ce4ea0cfba3d173895d54fb480cd5cc7702f1c7146c9940a4e14b45e1d6ae",
+    "reference": {
+      "archive": "7563f6c3-4e5f-7dfc-221f-2b5c2c4adfdf",
+      "bit_depth": 16,
+      "channels": 1,
+      "checksum": "059f32e140ff5ef179b9b87cb948d207",
+      "duration": 268.771,
+      "format": "wav",
+      "removed": 0,
+      "sampling_rate": 16000,
+      "type": 1,
+      "version": "1.2.4"
+    }
+  },
+  {
+    "video_id": "-tPCytz4rww",
+    "path": "3n44IP3tCVE-Audio-WAV/-tPCytz4rww.wav",
+    "url": "https://audb-public.s3.dualstack.eu-north-1.amazonaws.com/cmu-mosei/media/1.2.4/502a0e47-5c68-2490-890b-384d0b30ee7d.zip",
+    "bytes": 3496076,
+    "sha256": "4e78e17289520a970648ca1fd489e561400fe67444cfde42f4416482a7d3453f",
+    "reference": {
+      "archive": "502a0e47-5c68-2490-890b-384d0b30ee7d",
+      "bit_depth": 16,
+      "channels": 1,
+      "checksum": "17522eab56700596ad87b4d674890d4d",
+      "duration": 109.2499375,
+      "format": "wav",
+      "removed": 0,
+      "sampling_rate": 16000,
+      "type": 1,
+      "version": "1.2.4"
+    }
+  },
+  {
+    "video_id": "-dxfTGcXJoc",
+    "path": "41026-Audio-WAV/-dxfTGcXJoc.wav",
+    "url": "https://audb-public.s3.dualstack.eu-north-1.amazonaws.com/cmu-mosei/media/1.2.4/d64c4c2c-8304-3676-59e0-c68bc14a4703.zip",
+    "bytes": 4198246,
+    "sha256": "87413e87176df497068a06f5d84ccfc1603a8677d9eaf4372d76abb7c0a3ca9a",
+    "reference": {
+      "archive": "d64c4c2c-8304-3676-59e0-c68bc14a4703",
+      "bit_depth": 16,
+      "channels": 1,
+      "checksum": "cfa76485e538a30c78c2c1973c22b899",
+      "duration": 131.19275,
+      "format": "wav",
+      "removed": 0,
+      "sampling_rate": 16000,
+      "type": 1,
+      "version": "1.2.4"
+    }
+  },
+  {
+    "video_id": "-3nNcZdcdvU",
+    "path": "60402-Audio-WAV/-3nNcZdcdvU.wav",
+    "url": "https://audb-public.s3.dualstack.eu-north-1.amazonaws.com/cmu-mosei/media/1.2.4/5ac61f36-d8ce-c773-ef6c-a925eb8533ee.zip",
+    "bytes": 1419282,
+    "sha256": "9f8c6e660e47dd341830f47609e7c95fc6c398714cf8bc49994a9ee3e5516d89",
+    "reference": {
+      "archive": "5ac61f36-d8ce-c773-ef6c-a925eb8533ee",
+      "bit_depth": 16,
+      "channels": 1,
+      "checksum": "4b4ee1f36a94979719c1d54ccef7d23b",
+      "duration": 44.350125,
+      "format": "wav",
+      "removed": 0,
+      "sampling_rate": 16000,
+      "type": 1,
+      "version": "1.2.4"
+    }
+  },
+  {
+    "video_id": "-UacrmKiTn4",
+    "path": "87MsiC3E2-w-Audio-WAV/-UacrmKiTn4.wav",
+    "url": "https://audb-public.s3.dualstack.eu-north-1.amazonaws.com/cmu-mosei/media/1.2.4/48f96c1c-0609-a4dc-b7f0-64a590aa2172.zip",
+    "bytes": 2550930,
+    "sha256": "2ec6dc5f6962f366fda47d597ddcd4da29e51e83e2f7d475e10c3270165bb860",
+    "reference": {
+      "archive": "48f96c1c-0609-a4dc-b7f0-64a590aa2172",
+      "bit_depth": 16,
+      "channels": 1,
+      "checksum": "4701a373f2622fb75121cf17476df2d3",
+      "duration": 79.714125,
+      "format": "wav",
+      "removed": 0,
+      "sampling_rate": 16000,
+      "type": 1,
+      "version": "1.2.4"
+    }
+  },
+  {
+    "video_id": "-t217m2on-s",
+    "path": "87MsiC3E2-w-Audio-WAV/-t217m2on-s.wav",
+    "url": "https://audb-public.s3.dualstack.eu-north-1.amazonaws.com/cmu-mosei/media/1.2.4/720f4112-7976-0706-1d75-3d9c6fd77654.zip",
+    "bytes": 2221764,
+    "sha256": "b2b2638986b22d68154e17080998a53457588876d89d6b69912c5b80ba8dc86c",
+    "reference": {
+      "archive": "720f4112-7976-0706-1d75-3d9c6fd77654",
+      "bit_depth": 16,
+      "channels": 1,
+      "checksum": "d00baf3e0fb10109205e0ee4ffc5ff9c",
+      "duration": 69.4276875,
+      "format": "wav",
+      "removed": 0,
+      "sampling_rate": 16000,
+      "type": 1,
+      "version": "1.2.4"
+    }
+  },
+  {
+    "video_id": "-wny0OAz3g8",
+    "path": "DjcZrtcBZi4-Audio-WAV/-wny0OAz3g8.wav",
+    "url": "https://audb-public.s3.dualstack.eu-north-1.amazonaws.com/cmu-mosei/media/1.2.4/ceb5717f-32ae-8948-e057-9bc4a1ed60bc.zip",
+    "bytes": 1900772,
+    "sha256": "3daf418010b43c8f7d34bbd6366098a865a2783bcd85b60bf8797978efbd0a56",
+    "reference": {
+      "archive": "ceb5717f-32ae-8948-e057-9bc4a1ed60bc",
+      "bit_depth": 16,
+      "channels": 1,
+      "checksum": "22c3b5355d9fa5cad610a0cc02b4b76f",
+      "duration": 59.3966875,
+      "format": "wav",
+      "removed": 0,
+      "sampling_rate": 16000,
+      "type": 1,
+      "version": "1.2.4"
+    }
+  },
+  {
+    "video_id": "-lzEya4AM_4",
+    "path": "FylhSeozvG8-Audio-WAV/-lzEya4AM_4.wav",
+    "url": "https://audb-public.s3.dualstack.eu-north-1.amazonaws.com/cmu-mosei/media/1.2.4/690f5664-34f7-30b3-72b6-cb150e3353d1.zip",
+    "bytes": 3355642,
+    "sha256": "330b1fcaf8a0a357a3ce77bdba950c3c996cf701ffaba3e6bb6938de6bce9d9f",
+    "reference": {
+      "archive": "690f5664-34f7-30b3-72b6-cb150e3353d1",
+      "bit_depth": 16,
+      "channels": 1,
+      "checksum": "9d5a89f1d004f4362ac859b60fcffe59",
+      "duration": 104.861375,
+      "format": "wav",
+      "removed": 0,
+      "sampling_rate": 16000,
+      "type": 1,
+      "version": "1.2.4"
+    }
+  },
+  {
+    "video_id": "-qDkUB0GgYY",
+    "path": "FylhSeozvG8-Audio-WAV/-qDkUB0GgYY.wav",
+    "url": "https://audb-public.s3.dualstack.eu-north-1.amazonaws.com/cmu-mosei/media/1.2.4/f9f95f39-a140-22c9-6cd1-6a4e53f8db8e.zip",
+    "bytes": 2180154,
+    "sha256": "26f3a4dc1817804dbbc561377f10fa7cfa190213af419542723fc9140200b363",
+    "reference": {
+      "archive": "f9f95f39-a140-22c9-6cd1-6a4e53f8db8e",
+      "bit_depth": 16,
+      "channels": 1,
+      "checksum": "6015198fbebfaa001e3e907d0b84675b",
+      "duration": 68.127375,
+      "format": "wav",
+      "removed": 0,
+      "sampling_rate": 16000,
+      "type": 1,
+      "version": "1.2.4"
+    }
+  },
+  {
+    "video_id": "-6rXp3zJ3kc",
+    "path": "H_x5O9GdknI-Audio-WAV/-6rXp3zJ3kc.wav",
+    "url": "https://audb-public.s3.dualstack.eu-north-1.amazonaws.com/cmu-mosei/media/1.2.4/1a706fec-677f-058e-e285-e904c9dab95b.zip",
+    "bytes": 2407524,
+    "sha256": "a2f67a190b5c79e209b05484ae99f6d1aab8c265c7d1617b3ff9c201014e8868",
+    "reference": {
+      "archive": "1a706fec-677f-058e-e285-e904c9dab95b",
+      "bit_depth": 16,
+      "channels": 1,
+      "checksum": "5765e97d90fb57b8569952acda3e51ea",
+      "duration": 75.2326875,
+      "format": "wav",
+      "removed": 0,
+      "sampling_rate": 16000,
+      "type": 1,
+      "version": "1.2.4"
+    }
+  },
+  {
+    "video_id": "-uywlfIYOS8",
+    "path": "H_x5O9GdknI-Audio-WAV/-uywlfIYOS8.wav",
+    "url": "https://audb-public.s3.dualstack.eu-north-1.amazonaws.com/cmu-mosei/media/1.2.4/e30c847f-9019-a6ee-f84a-66062102a61f.zip",
+    "bytes": 1931980,
+    "sha256": "a954a2aa19002ae006e2a13d14fd03bf525bd0cd64399a640bd322fe417de88e",
+    "reference": {
+      "archive": "e30c847f-9019-a6ee-f84a-66062102a61f",
+      "bit_depth": 16,
+      "channels": 1,
+      "checksum": "8664935a74902285647c48dbc57446d4",
+      "duration": 60.3719375,
+      "format": "wav",
+      "removed": 0,
+      "sampling_rate": 16000,
+      "type": 1,
+      "version": "1.2.4"
+    }
+  },
+  {
+    "video_id": "-I_e4mIh0yE",
+    "path": "RqOgkJbqFXg-Audio-WAV/-I_e4mIh0yE.wav",
+    "url": "https://audb-public.s3.dualstack.eu-north-1.amazonaws.com/cmu-mosei/media/1.2.4/40aeb67a-8328-7d9a-8933-747997b8a403.zip",
+    "bytes": 1523308,
+    "sha256": "ddfab72499aa5865c605e43d06aa1de399eed0a563b43d428fd45b03e0c9401c",
+    "reference": {
+      "archive": "40aeb67a-8328-7d9a-8933-747997b8a403",
+      "bit_depth": 16,
+      "channels": 1,
+      "checksum": "c941028378c466538c10cd764c0228a1",
+      "duration": 47.6009375,
+      "format": "wav",
+      "removed": 0,
+      "sampling_rate": 16000,
+      "type": 1,
+      "version": "1.2.4"
+    }
+  },
+  {
+    "video_id": "-aqamKhZ1Ec",
+    "path": "VbV9S4svrTg-Audio-WAV/-aqamKhZ1Ec.wav",
+    "url": "https://audb-public.s3.dualstack.eu-north-1.amazonaws.com/cmu-mosei/media/1.2.4/bc5229de-d8ae-4e09-7e96-14637d5683ab.zip",
+    "bytes": 1343492,
+    "sha256": "36d0f019d6cc8a3f9937d2fd2ad67ea89bf6497fd8bff92dd173ce80079c04e2",
+    "reference": {
+      "archive": "bc5229de-d8ae-4e09-7e96-14637d5683ab",
+      "bit_depth": 16,
+      "channels": 1,
+      "checksum": "0d5a5dee998cf215154eafcad79e9756",
+      "duration": 41.9816875,
+      "format": "wav",
+      "removed": 0,
+      "sampling_rate": 16000,
+      "type": 1,
+      "version": "1.2.4"
+    }
+  },
+  {
+    "video_id": "-RfYyzHpjk4",
+    "path": "WxYb2x_irTM-Audio-WAV/-RfYyzHpjk4.wav",
+    "url": "https://audb-public.s3.dualstack.eu-north-1.amazonaws.com/cmu-mosei/media/1.2.4/adcda59b-3fb9-060b-df65-9a9a015a0f32.zip",
+    "bytes": 2335450,
+    "sha256": "f0c3fe928b2f727fcee1890911ad3f48a43e5ec1cf5b9a8ece392bf099b348fe",
+    "reference": {
+      "archive": "adcda59b-3fb9-060b-df65-9a9a015a0f32",
+      "bit_depth": 16,
+      "channels": 1,
+      "checksum": "257debaeacdfb3434b6ce04c133f02a2",
+      "duration": 72.980375,
+      "format": "wav",
+      "removed": 0,
+      "sampling_rate": 16000,
+      "type": 1,
+      "version": "1.2.4"
+    }
+  },
+  {
+    "video_id": "-UUCSKoHeMA",
+    "path": "WxYb2x_irTM-Audio-WAV/-UUCSKoHeMA.wav",
+    "url": "https://audb-public.s3.dualstack.eu-north-1.amazonaws.com/cmu-mosei/media/1.2.4/feb6c60b-725d-f35b-630c-bcdebd99095e.zip",
+    "bytes": 3230068,
+    "sha256": "c4d5c464802f239f18806267412b505105cacd6410e661d21ea0590e3732d0aa",
+    "reference": {
+      "archive": "feb6c60b-725d-f35b-630c-bcdebd99095e",
+      "bit_depth": 16,
+      "channels": 1,
+      "checksum": "8cf3c427b2a686b83175f4d9c6d4089f",
+      "duration": 100.9371875,
+      "format": "wav",
+      "removed": 0,
+      "sampling_rate": 16000,
+      "type": 1,
+      "version": "1.2.4"
+    }
+  },
+  {
+    "video_id": "-aNfi7CP8vM",
+    "path": "XzVapdEr_GY-Audio-WAV/-aNfi7CP8vM.wav",
+    "url": "https://audb-public.s3.dualstack.eu-north-1.amazonaws.com/cmu-mosei/media/1.2.4/74f1f2b3-a3c5-3d1d-137e-e2c9c8eaa78f.zip",
+    "bytes": 2212104,
+    "sha256": "18d44ffb5ad16a74814ec6aa4ab30c72a7451b1feeefd5b3552a673350b65a56",
+    "reference": {
+      "archive": "74f1f2b3-a3c5-3d1d-137e-e2c9c8eaa78f",
+      "bit_depth": 16,
+      "channels": 1,
+      "checksum": "801ecc7b8858186d2ca61fa958a5d51f",
+      "duration": 69.1258125,
+      "format": "wav",
+      "removed": 0,
+      "sampling_rate": 16000,
+      "type": 1,
+      "version": "1.2.4"
+    }
+  },
+  {
+    "video_id": "-tANM6ETl_M",
+    "path": "XzVapdEr_GY-Audio-WAV/-tANM6ETl_M.wav",
+    "url": "https://audb-public.s3.dualstack.eu-north-1.amazonaws.com/cmu-mosei/media/1.2.4/eabb1c58-2bec-9a2c-9d9d-4e77905de670.zip",
+    "bytes": 2320588,
+    "sha256": "88c9b2d4238550de21715a457e1e08b7305d470eeb49d1c816b22b1bbd56d1ab",
+    "reference": {
+      "archive": "eabb1c58-2bec-9a2c-9d9d-4e77905de670",
+      "bit_depth": 16,
+      "channels": 1,
+      "checksum": "e9918a401221b9bffbaa40854d0d06bc",
+      "duration": 72.5159375,
+      "format": "wav",
+      "removed": 0,
+      "sampling_rate": 16000,
+      "type": 1,
+      "version": "1.2.4"
+    }
+  },
+  {
+    "video_id": "-MeTTeMJBNc",
+    "path": "bEXCrGIOoWU-Audio-WAV/-MeTTeMJBNc.wav",
+    "url": "https://audb-public.s3.dualstack.eu-north-1.amazonaws.com/cmu-mosei/media/1.2.4/64f63efb-1496-6303-ed1c-22ec238b2cfa.zip",
+    "bytes": 2671302,
+    "sha256": "43dc9efb8b38590a63300e13288cd6bb63f16b9c10da56f8f398abb699f082ca",
+    "reference": {
+      "archive": "64f63efb-1496-6303-ed1c-22ec238b2cfa",
+      "bit_depth": 16,
+      "channels": 1,
+      "checksum": "507877df64b92b473df3b5015ab0bf85",
+      "duration": 83.47575,
+      "format": "wav",
+      "removed": 0,
+      "sampling_rate": 16000,
+      "type": 1,
+      "version": "1.2.4"
+    }
+  },
+  {
+    "video_id": "-AUZQgSxyPQ",
+    "path": "gcFECfN4BCU-Audio-WAV/-AUZQgSxyPQ.wav",
+    "url": "https://audb-public.s3.dualstack.eu-north-1.amazonaws.com/cmu-mosei/media/1.2.4/0a93a594-4dd5-72a4-9fe9-c12a8253d9ff.zip",
+    "bytes": 1536682,
+    "sha256": "e7c080661d449b3e7d69cc0daa5bcb3c83f5515302b705117e618db754e0bd05",
+    "reference": {
+      "archive": "0a93a594-4dd5-72a4-9fe9-c12a8253d9ff",
+      "bit_depth": 16,
+      "channels": 1,
+      "checksum": "b4f7f32b8b157aa3e03bd4acaa9b7198",
+      "duration": 48.018875,
+      "format": "wav",
+      "removed": 0,
+      "sampling_rate": 16000,
+      "type": 1,
+      "version": "1.2.4"
+    }
+  },
+  {
+    "video_id": "-s9qJ7ATP7w",
+    "path": "iMss8xBhFiI-Audio-WAV/-s9qJ7ATP7w.wav",
+    "url": "https://audb-public.s3.dualstack.eu-north-1.amazonaws.com/cmu-mosei/media/1.2.4/7c37a264-beae-cb99-6db0-112a3eee2fed.zip",
+    "bytes": 1919348,
+    "sha256": "dd2b956b52308a187b5100b4821ddaea3a1182c8b9ef954a780ecef8228d7238",
+    "reference": {
+      "archive": "7c37a264-beae-cb99-6db0-112a3eee2fed",
+      "bit_depth": 16,
+      "channels": 1,
+      "checksum": "1e8ffb5e0c4fb2fd2d05791ab762d989",
+      "duration": 59.9771875,
+      "format": "wav",
+      "removed": 0,
+      "sampling_rate": 16000,
+      "type": 1,
+      "version": "1.2.4"
+    }
+  },
+  {
+    "video_id": "-THoVjtIkeU",
+    "path": "iO34hER47xA-Audio-WAV/-THoVjtIkeU.wav",
+    "url": "https://audb-public.s3.dualstack.eu-north-1.amazonaws.com/cmu-mosei/media/1.2.4/0699fbda-046b-c02c-c388-879a179c9548.zip",
+    "bytes": 4540044,
+    "sha256": "aa88b5ccf370cedb82c32f5fea89d1a5ed7a16dec26ed804e93fc237b5d9b624",
+    "reference": {
+      "archive": "0699fbda-046b-c02c-c388-879a179c9548",
+      "bit_depth": 16,
+      "channels": 1,
+      "checksum": "d10a8646a5f352eb2ba7d1665b369291",
+      "duration": 141.8739375,
+      "format": "wav",
+      "removed": 0,
+      "sampling_rate": 16000,
+      "type": 1,
+      "version": "1.2.4"
+    }
+  },
+  {
+    "video_id": "-hnBHBN8p5A",
+    "path": "jjb1cWmkhI8-Audio-WAV/-hnBHBN8p5A.wav",
+    "url": "https://audb-public.s3.dualstack.eu-north-1.amazonaws.com/cmu-mosei/media/1.2.4/19d37665-c8c9-b966-f4a7-9b426a179e18.zip",
+    "bytes": 37125258,
+    "sha256": "c803d80a6d0984a7ee62189bdcb1d9c04a10a0e5d4d54e0742c8067707afc6b9",
+    "reference": {
+      "archive": "19d37665-c8c9-b966-f4a7-9b426a179e18",
+      "bit_depth": 16,
+      "channels": 1,
+      "checksum": "008a3dbe8edcc597b4c2410905e2d117",
+      "duration": 1160.161875,
+      "format": "wav",
+      "removed": 0,
+      "sampling_rate": 16000,
+      "type": 1,
+      "version": "1.2.4"
+    }
+  },
+  {
+    "video_id": "-9y-fZ3swSY",
+    "path": "mmg_eTDHjkk-Audio-WAV/-9y-fZ3swSY.wav",
+    "url": "https://audb-public.s3.dualstack.eu-north-1.amazonaws.com/cmu-mosei/media/1.2.4/47a5de9e-13e9-cc3d-464d-91f55401f174.zip",
+    "bytes": 1888140,
+    "sha256": "4383072bd88bb596d9e2bd84433ebeb68511255d44c750e1896daa192d19548d",
+    "reference": {
+      "archive": "47a5de9e-13e9-cc3d-464d-91f55401f174",
+      "bit_depth": 16,
+      "channels": 1,
+      "checksum": "1044ed9b4e100d266802d9d683dee3a2",
+      "duration": 59.0019375,
+      "format": "wav",
+      "removed": 0,
+      "sampling_rate": 16000,
+      "type": 1,
+      "version": "1.2.4"
+    }
+  },
+  {
+    "video_id": "-iRBcNs9oI8",
+    "path": "oGnKsroR0R0-Audio-WAV/-iRBcNs9oI8.wav",
+    "url": "https://audb-public.s3.dualstack.eu-north-1.amazonaws.com/cmu-mosei/media/1.2.4/ac05ac0d-db24-adf2-06cb-8947a039c1d2.zip",
+    "bytes": 11414638,
+    "sha256": "ee242d604e46a58ec9fcffb6793b93c534e4c91dd3f782717b89dedad9db8c14",
+    "reference": {
+      "archive": "ac05ac0d-db24-adf2-06cb-8947a039c1d2",
+      "bit_depth": 16,
+      "channels": 1,
+      "checksum": "fb4996693af5d6f5fd9955ebc0acae49",
+      "duration": 356.705,
+      "format": "wav",
+      "removed": 0,
+      "sampling_rate": 16000,
+      "type": 1,
+      "version": "1.2.4"
+    }
+  },
+  {
+    "video_id": "-3g5yACwYnA",
+    "path": "qFsGMA75-oQ-Audio-WAV/-3g5yACwYnA.wav",
+    "url": "https://audb-public.s3.dualstack.eu-north-1.amazonaws.com/cmu-mosei/media/1.2.4/20f3bb4b-2717-c84e-45bc-29e2723970bc.zip",
+    "bytes": 4632182,
+    "sha256": "f5bd639e5db665d3f1a75f58c8ddc4b89d26c136f16b93b51758865169afe1f5",
+    "reference": {
+      "archive": "20f3bb4b-2717-c84e-45bc-29e2723970bc",
+      "bit_depth": 16,
+      "channels": 1,
+      "checksum": "08af741354ee1f945f4a58a971f4740f",
+      "duration": 144.75325,
+      "format": "wav",
+      "removed": 0,
+      "sampling_rate": 16000,
+      "type": 1,
+      "version": "1.2.4"
+    }
+  }
+]

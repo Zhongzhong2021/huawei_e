@@ -1,0 +1,263 @@
+{
+  "sample_id": "-tPCytz4rww$_$11",
+  "table_row_0based": 50,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-tPCytz4rww/11.mp4",
+  "source_sha256": "6dc09d02467baaef67594ff32cffb01f8ed1565cda4c5abd161b8261a51e2e5d",
+  "text_original": "Make sure that your using comps that are not larger, no larger than twelve hundred square feet.",
+  "words": [
+    {
+      "word": "make",
+      "source_text": "Make",
+      "char_start": 0,
+      "char_end": 4,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "make"
+      ]
+    },
+    {
+      "word": "sure",
+      "source_text": "sure",
+      "char_start": 5,
+      "char_end": 9,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "sure"
+      ]
+    },
+    {
+      "word": "that",
+      "source_text": "that",
+      "char_start": 10,
+      "char_end": 14,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "that"
+      ]
+    },
+    {
+      "word": "your",
+      "source_text": "your",
+      "char_start": 15,
+      "char_end": 19,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "your"
+      ]
+    },
+    {
+      "word": "using",
+      "source_text": "using",
+      "char_start": 20,
+      "char_end": 25,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "using"
+      ]
+    },
+    {
+      "word": "comps",
+      "source_text": "comps",
+      "char_start": 26,
+      "char_end": 31,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6,
+        7
+      ],
+      "bert_tokens": [
+        "com",
+        "##ps"
+      ]
+    },
+    {
+      "word": "that",
+      "source_text": "that",
+      "char_start": 32,
+      "char_end": 36,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "that"
+      ]
+    },
+    {
+      "word": "are",
+      "source_text": "are",
+      "char_start": 37,
+      "char_end": 40,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "are"
+      ]
+    },
+    {
+      "word": "not",
+      "source_text": "not",
+      "char_start": 41,
+      "char_end": 44,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "not"
+      ]
+    },
+    {
+      "word": "larger",
+      "source_text": "larger",
+      "char_start": 45,
+      "char_end": 51,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "larger"
+      ]
+    },
+    {
+      "word": "no",
+      "source_text": "no",
+      "char_start": 53,
+      "char_end": 55,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "no"
+      ]
+    },
+    {
+      "word": "larger",
+      "source_text": "larger",
+      "char_start": 56,
+      "char_end": 62,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "larger"
+      ]
+    },
+    {
+      "word": "than",
+      "source_text": "than",
+      "char_start": 63,
+      "char_end": 67,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "than"
+      ]
+    },
+    {
+      "word": "twelve",
+      "source_text": "twelve",
+      "char_start": 68,
+      "char_end": 74,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "twelve"
+      ]
+    },
+    {
+      "word": "hundred",
+      "source_text": "hundred",
+      "char_start": 75,
+      "char_end": 82,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17
+      ],
+      "bert_tokens": [
+        "hundred"
+      ]
+    },
+    {
+      "word": "square",
+      "source_text": "square",
+      "char_start": 83,
+      "char_end": 89,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        18
+      ],
+      "bert_tokens": [
+        "square"
+      ]
+    },
+    {
+      "word": "feet",
+      "source_text": "feet",
+      "char_start": 90,
+      "char_end": 94,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        19
+      ],
+      "bert_tokens": [
+        "feet"
+      ]
+    }
+  ],
+  "duration_s": 5.466666,
+  "container_declared_duration_s": 8.0,
+  "media_clock": {
+    "stem": "-tPCytz4rww__11",
+    "sample_id": "-tPCytz4rww$_$11",
+    "container_duration_s": 8.0,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 5.3785625,
+    "audio_end_s": 5.3785625,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 5.433333,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 5.466666,
+    "observed_end_s": 5.466666,
+    "empty_declared_tail_s": 2.533334,
+    "original_video_frames": 164,
+    "source_sha256": "6dc09d02467baaef67594ff32cffb01f8ed1565cda4c5abd161b8261a51e2e5d"
+  },
+  "decoded_audio_duration_s": 5.3785625,
+  "audio_start_s": 0.0,
+  "feature_sha256": "60d33626f290977f63f8f7feaf2928a25383f636e5647205070135a879dc54c0",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-tPCytz4rww__11.json": "f8c1e1a9545c1e4c868dba128d85d62720789b1fa75bf00a6412b9b0b19ab5f7",
+    "results/q1/samples/-tPCytz4rww__11.npz": "75a8420cafa21c84fd45069ad56056df8f9acbbb2b6d9340e763b0a559e9a886",
+    "results/q1_next/enhanced/-tPCytz4rww__11.npz": "43bbaaf6b5fe60bd331113c20351d277f7323b8d8d0b965a58ef7487c3415a39",
+    "results/q1_refinement_v1/faces/-tPCytz4rww__11.npz": "d0079bc8a1f21627453ddc386a3deffb470f98415542fd64746670469a8867e7",
+    "results/q1_deep_v6/alignment/MMS_FA/-tPCytz4rww__11/original.npz": "10aec36b4fac092d81b441abb40ab917bc6a8473d6ec82e14399f0e04a6bd548",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

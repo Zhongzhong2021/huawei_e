@@ -1,0 +1,547 @@
+{
+  "sample_id": "-THoVjtIkeU$_$12",
+  "table_row_0based": 11,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-THoVjtIkeU/12.mp4",
+  "source_sha256": "e2f148f4f2e74724dc13b3ce870a0ce6a06740cfc224f5a9b3d0a870b196e7d4",
+  "text_original": "What ever we turn our attention to is what grows and so if we believe that anything is possible, if we believe that social justice can be achieved and if we believe in youth, they will believe in themselves.",
+  "words": [
+    {
+      "word": "what",
+      "source_text": "What",
+      "char_start": 0,
+      "char_end": 4,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "what"
+      ]
+    },
+    {
+      "word": "ever",
+      "source_text": "ever",
+      "char_start": 5,
+      "char_end": 9,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "ever"
+      ]
+    },
+    {
+      "word": "we",
+      "source_text": "we",
+      "char_start": 10,
+      "char_end": 12,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "we"
+      ]
+    },
+    {
+      "word": "turn",
+      "source_text": "turn",
+      "char_start": 13,
+      "char_end": 17,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "turn"
+      ]
+    },
+    {
+      "word": "our",
+      "source_text": "our",
+      "char_start": 18,
+      "char_end": 21,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "our"
+      ]
+    },
+    {
+      "word": "attention",
+      "source_text": "attention",
+      "char_start": 22,
+      "char_end": 31,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "attention"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 32,
+      "char_end": 34,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "is",
+      "source_text": "is",
+      "char_start": 35,
+      "char_end": 37,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "is"
+      ]
+    },
+    {
+      "word": "what",
+      "source_text": "what",
+      "char_start": 38,
+      "char_end": 42,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "what"
+      ]
+    },
+    {
+      "word": "grows",
+      "source_text": "grows",
+      "char_start": 43,
+      "char_end": 48,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "grows"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 49,
+      "char_end": 52,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "so",
+      "source_text": "so",
+      "char_start": 53,
+      "char_end": 55,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "so"
+      ]
+    },
+    {
+      "word": "if",
+      "source_text": "if",
+      "char_start": 56,
+      "char_end": 58,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "if"
+      ]
+    },
+    {
+      "word": "we",
+      "source_text": "we",
+      "char_start": 59,
+      "char_end": 61,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "we"
+      ]
+    },
+    {
+      "word": "believe",
+      "source_text": "believe",
+      "char_start": 62,
+      "char_end": 69,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "believe"
+      ]
+    },
+    {
+      "word": "that",
+      "source_text": "that",
+      "char_start": 70,
+      "char_end": 74,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "that"
+      ]
+    },
+    {
+      "word": "anything",
+      "source_text": "anything",
+      "char_start": 75,
+      "char_end": 83,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17
+      ],
+      "bert_tokens": [
+        "anything"
+      ]
+    },
+    {
+      "word": "is",
+      "source_text": "is",
+      "char_start": 84,
+      "char_end": 86,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        18
+      ],
+      "bert_tokens": [
+        "is"
+      ]
+    },
+    {
+      "word": "possible",
+      "source_text": "possible",
+      "char_start": 87,
+      "char_end": 95,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        19
+      ],
+      "bert_tokens": [
+        "possible"
+      ]
+    },
+    {
+      "word": "if",
+      "source_text": "if",
+      "char_start": 97,
+      "char_end": 99,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        21
+      ],
+      "bert_tokens": [
+        "if"
+      ]
+    },
+    {
+      "word": "we",
+      "source_text": "we",
+      "char_start": 100,
+      "char_end": 102,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        22
+      ],
+      "bert_tokens": [
+        "we"
+      ]
+    },
+    {
+      "word": "believe",
+      "source_text": "believe",
+      "char_start": 103,
+      "char_end": 110,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        23
+      ],
+      "bert_tokens": [
+        "believe"
+      ]
+    },
+    {
+      "word": "that",
+      "source_text": "that",
+      "char_start": 111,
+      "char_end": 115,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        24
+      ],
+      "bert_tokens": [
+        "that"
+      ]
+    },
+    {
+      "word": "social",
+      "source_text": "social",
+      "char_start": 116,
+      "char_end": 122,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        25
+      ],
+      "bert_tokens": [
+        "social"
+      ]
+    },
+    {
+      "word": "justice",
+      "source_text": "justice",
+      "char_start": 123,
+      "char_end": 130,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        26
+      ],
+      "bert_tokens": [
+        "justice"
+      ]
+    },
+    {
+      "word": "can",
+      "source_text": "can",
+      "char_start": 131,
+      "char_end": 134,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        27
+      ],
+      "bert_tokens": [
+        "can"
+      ]
+    },
+    {
+      "word": "be",
+      "source_text": "be",
+      "char_start": 135,
+      "char_end": 137,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        28
+      ],
+      "bert_tokens": [
+        "be"
+      ]
+    },
+    {
+      "word": "achieved",
+      "source_text": "achieved",
+      "char_start": 138,
+      "char_end": 146,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        29
+      ],
+      "bert_tokens": [
+        "achieved"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 147,
+      "char_end": 150,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        30
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "if",
+      "source_text": "if",
+      "char_start": 151,
+      "char_end": 153,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        31
+      ],
+      "bert_tokens": [
+        "if"
+      ]
+    },
+    {
+      "word": "we",
+      "source_text": "we",
+      "char_start": 154,
+      "char_end": 156,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        32
+      ],
+      "bert_tokens": [
+        "we"
+      ]
+    },
+    {
+      "word": "believe",
+      "source_text": "believe",
+      "char_start": 157,
+      "char_end": 164,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        33
+      ],
+      "bert_tokens": [
+        "believe"
+      ]
+    },
+    {
+      "word": "in",
+      "source_text": "in",
+      "char_start": 165,
+      "char_end": 167,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        34
+      ],
+      "bert_tokens": [
+        "in"
+      ]
+    },
+    {
+      "word": "youth",
+      "source_text": "youth",
+      "char_start": 168,
+      "char_end": 173,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        35
+      ],
+      "bert_tokens": [
+        "youth"
+      ]
+    },
+    {
+      "word": "they",
+      "source_text": "they",
+      "char_start": 175,
+      "char_end": 179,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        37
+      ],
+      "bert_tokens": [
+        "they"
+      ]
+    },
+    {
+      "word": "will",
+      "source_text": "will",
+      "char_start": 180,
+      "char_end": 184,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        38
+      ],
+      "bert_tokens": [
+        "will"
+      ]
+    },
+    {
+      "word": "believe",
+      "source_text": "believe",
+      "char_start": 185,
+      "char_end": 192,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        39
+      ],
+      "bert_tokens": [
+        "believe"
+      ]
+    },
+    {
+      "word": "in",
+      "source_text": "in",
+      "char_start": 193,
+      "char_end": 195,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        40
+      ],
+      "bert_tokens": [
+        "in"
+      ]
+    },
+    {
+      "word": "themselves",
+      "source_text": "themselves",
+      "char_start": 196,
+      "char_end": 206,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        41
+      ],
+      "bert_tokens": [
+        "themselves"
+      ]
+    }
+  ],
+  "duration_s": 14.866666,
+  "container_declared_duration_s": 18.8,
+  "media_clock": {
+    "stem": "-THoVjtIkeU__12",
+    "sample_id": "-THoVjtIkeU$_$12",
+    "container_duration_s": 18.8,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 14.8055625,
+    "audio_end_s": 14.8055625,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 14.833333,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 14.866666,
+    "observed_end_s": 14.866666,
+    "empty_declared_tail_s": 3.9333340000000003,
+    "original_video_frames": 445,
+    "source_sha256": "e2f148f4f2e74724dc13b3ce870a0ce6a06740cfc224f5a9b3d0a870b196e7d4"
+  },
+  "decoded_audio_duration_s": 14.8055625,
+  "audio_start_s": 0.0,
+  "feature_sha256": "ba84011aa49a51ee3cd9a2479ba6cd52a3955ae174a36e9e748f3ece0c7a1684",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-THoVjtIkeU__12.json": "42158b95d174f67c1f16999e274d812bc5508c40b5ef1aad5936f67004d4a4a1",
+    "results/q1/samples/-THoVjtIkeU__12.npz": "6fba920b8af237ac28bac529e893f0eea9c401695e49696ef4a929b3af0e12a6",
+    "results/q1_next/enhanced/-THoVjtIkeU__12.npz": "f54958e7a33a83e65bfafed6e1164205934850ed4e27fc1d364ae977231b9256",
+    "results/q1_refinement_v1/faces/-THoVjtIkeU__12.npz": "383ae19ab845ec87b78d0162f47f0df8b3e2019ece4945a30ac128e2c2018529",
+    "results/q1_deep_v6/alignment/MMS_FA/-THoVjtIkeU__12/original.npz": "cdd9862e4cd05e729f776657f9a0abe0cc3e978fbb1837d57d9781170e07ac43",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

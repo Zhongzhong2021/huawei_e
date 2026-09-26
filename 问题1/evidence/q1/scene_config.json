@@ -1,0 +1,14 @@
+{
+  "model": "torchvision.models.resnet18",
+  "weights": "IMAGENET1K_V1",
+  "torchvision": "0.22.1+cu126",
+  "weight_url": "https://download.pytorch.org/models/resnet18-f37072fd.pth",
+  "weight_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+  "layer": "global average pooling before fc",
+  "dimensions": 512,
+  "storage_dtype": "float16",
+  "max_observed_native_quantization_absolute_error": 0.003749847412109375,
+  "transform": "ImageClassification(\n    crop_size=[224]\n    resize_size=[256]\n    mean=[0.485, 0.456, 0.406]\n    std=[0.229, 0.224, 0.225]\n    interpolation=InterpolationMode.BILINEAR\n)",
+  "script_sha256": "29a1a9a0dc41dce7f560c03a34e6255aeb176bf1ea335f6880625afda16173dc",
+  "note": "Generic image appearance; not emotion or active-speaker prediction."
+}

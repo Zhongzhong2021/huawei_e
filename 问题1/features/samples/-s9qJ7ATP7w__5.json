@@ -1,0 +1,287 @@
+{
+  "sample_id": "-s9qJ7ATP7w$_$5",
+  "table_row_0based": 92,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-s9qJ7ATP7w/5.mp4",
+  "source_sha256": "bd35eb8de64ce1f8b27921294598f7cf5bb971255738f51d06458c7096c58eae",
+  "text_original": "I have been beat up and put down and everything that can go wrong, has gone wrong for me",
+  "words": [
+    {
+      "word": "i",
+      "source_text": "I",
+      "char_start": 0,
+      "char_end": 1,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "i"
+      ]
+    },
+    {
+      "word": "have",
+      "source_text": "have",
+      "char_start": 2,
+      "char_end": 6,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "have"
+      ]
+    },
+    {
+      "word": "been",
+      "source_text": "been",
+      "char_start": 7,
+      "char_end": 11,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "been"
+      ]
+    },
+    {
+      "word": "beat",
+      "source_text": "beat",
+      "char_start": 12,
+      "char_end": 16,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "beat"
+      ]
+    },
+    {
+      "word": "up",
+      "source_text": "up",
+      "char_start": 17,
+      "char_end": 19,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "up"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 20,
+      "char_end": 23,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "put",
+      "source_text": "put",
+      "char_start": 24,
+      "char_end": 27,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "put"
+      ]
+    },
+    {
+      "word": "down",
+      "source_text": "down",
+      "char_start": 28,
+      "char_end": 32,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "down"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 33,
+      "char_end": 36,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "everything",
+      "source_text": "everything",
+      "char_start": 37,
+      "char_end": 47,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "everything"
+      ]
+    },
+    {
+      "word": "that",
+      "source_text": "that",
+      "char_start": 48,
+      "char_end": 52,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "that"
+      ]
+    },
+    {
+      "word": "can",
+      "source_text": "can",
+      "char_start": 53,
+      "char_end": 56,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "can"
+      ]
+    },
+    {
+      "word": "go",
+      "source_text": "go",
+      "char_start": 57,
+      "char_end": 59,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "go"
+      ]
+    },
+    {
+      "word": "wrong",
+      "source_text": "wrong",
+      "char_start": 60,
+      "char_end": 65,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "wrong"
+      ]
+    },
+    {
+      "word": "has",
+      "source_text": "has",
+      "char_start": 67,
+      "char_end": 70,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "has"
+      ]
+    },
+    {
+      "word": "gone",
+      "source_text": "gone",
+      "char_start": 71,
+      "char_end": 75,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17
+      ],
+      "bert_tokens": [
+        "gone"
+      ]
+    },
+    {
+      "word": "wrong",
+      "source_text": "wrong",
+      "char_start": 76,
+      "char_end": 81,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        18
+      ],
+      "bert_tokens": [
+        "wrong"
+      ]
+    },
+    {
+      "word": "for",
+      "source_text": "for",
+      "char_start": 82,
+      "char_end": 85,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        19
+      ],
+      "bert_tokens": [
+        "for"
+      ]
+    },
+    {
+      "word": "me",
+      "source_text": "me",
+      "char_start": 86,
+      "char_end": 88,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        20
+      ],
+      "bert_tokens": [
+        "me"
+      ]
+    }
+  ],
+  "duration_s": 8.533333,
+  "container_declared_duration_s": 13.567,
+  "media_clock": {
+    "stem": "-s9qJ7ATP7w__5",
+    "sample_id": "-s9qJ7ATP7w$_$5",
+    "container_duration_s": 13.567,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 8.397875,
+    "audio_end_s": 8.397875,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 8.5,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 8.533333,
+    "observed_end_s": 8.533333,
+    "empty_declared_tail_s": 5.0336669999999994,
+    "original_video_frames": 253,
+    "source_sha256": "bd35eb8de64ce1f8b27921294598f7cf5bb971255738f51d06458c7096c58eae"
+  },
+  "decoded_audio_duration_s": 8.397875,
+  "audio_start_s": 0.0,
+  "feature_sha256": "3cabee3990ec00c22543ed062dcb6a337b2b38ebbb78d4b7f09c5cc3fd5dca5d",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-s9qJ7ATP7w__5.json": "0ea9d4fc5f3090a9e66710cf453598b9cb4b4082afc6a8233136a1e32a626058",
+    "results/q1/samples/-s9qJ7ATP7w__5.npz": "18fea8b29f61a1257e3e90e59999342c4298a21e0070cd84a7d3a1c00f5907ad",
+    "results/q1_next/enhanced/-s9qJ7ATP7w__5.npz": "a94a18d2a1ef24ee4ca5049ab55a4e2e94e9260e79534d1281d786ffae7cc7a6",
+    "results/q1_refinement_v1/faces/-s9qJ7ATP7w__5.npz": "e47415012b92b0c3fbd14c00f826d086f2f7809b81510ba5351605eff940ceac",
+    "results/q1_deep_v6/alignment/MMS_FA/-s9qJ7ATP7w__5/original.npz": "085946cfb46c113e776e337b2f79181d81744b7bd166981aa42b36d50b6782f2",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

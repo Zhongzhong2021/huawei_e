@@ -1,0 +1,157 @@
+{
+  "sample_id": "-HwX2H8Z4hY$_$5",
+  "table_row_0based": 6,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-HwX2H8Z4hY/5.mp4",
+  "source_sha256": "8d61b7f5840a8bd403d9bc6c3cd49029ffc4e304cf9c7834735c1a6bb5fd369d",
+  "text_original": "\" President Ronald Reagan blamed the professional bureaucracy of education",
+  "words": [
+    {
+      "word": "president",
+      "source_text": "President",
+      "char_start": 2,
+      "char_end": 11,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "president"
+      ]
+    },
+    {
+      "word": "ronald",
+      "source_text": "Ronald",
+      "char_start": 12,
+      "char_end": 18,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "ronald"
+      ]
+    },
+    {
+      "word": "reagan",
+      "source_text": "Reagan",
+      "char_start": 19,
+      "char_end": 25,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "reagan"
+      ]
+    },
+    {
+      "word": "blamed",
+      "source_text": "blamed",
+      "char_start": 26,
+      "char_end": 32,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "blamed"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 33,
+      "char_end": 36,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "professional",
+      "source_text": "professional",
+      "char_start": 37,
+      "char_end": 49,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "professional"
+      ]
+    },
+    {
+      "word": "bureaucracy",
+      "source_text": "bureaucracy",
+      "char_start": 50,
+      "char_end": 61,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "bureaucracy"
+      ]
+    },
+    {
+      "word": "of",
+      "source_text": "of",
+      "char_start": 62,
+      "char_end": 64,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "of"
+      ]
+    },
+    {
+      "word": "education",
+      "source_text": "education",
+      "char_start": 65,
+      "char_end": 74,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "education"
+      ]
+    }
+  ],
+  "duration_s": 5.6333329999999995,
+  "container_declared_duration_s": 11.467,
+  "media_clock": {
+    "stem": "-HwX2H8Z4hY__5",
+    "sample_id": "-HwX2H8Z4hY$_$5",
+    "container_duration_s": 11.467,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 5.5440625,
+    "audio_end_s": 5.5440625,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 5.6,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 5.6333329999999995,
+    "observed_end_s": 5.6333329999999995,
+    "empty_declared_tail_s": 5.833667000000001,
+    "original_video_frames": 168,
+    "source_sha256": "8d61b7f5840a8bd403d9bc6c3cd49029ffc4e304cf9c7834735c1a6bb5fd369d"
+  },
+  "decoded_audio_duration_s": 5.5440625,
+  "audio_start_s": 0.0,
+  "feature_sha256": "ce8553977d07d09a78f7817ff1a939936fe4012e123a3a1d8cc37473bed98f95",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-HwX2H8Z4hY__5.json": "778aa7a4d333ca0bf2b07d841d4dc321c4b0a42f1426b26acd23f682409afe90",
+    "results/q1/samples/-HwX2H8Z4hY__5.npz": "915b6de9deeecbfd119f49784c7be1e3682a933be141727d5f3ae2a596cc9d7d",
+    "results/q1_next/enhanced/-HwX2H8Z4hY__5.npz": "259f99ee3f8481554bc124ecd589c04873990c014126bf7b7862132830924540",
+    "results/q1_refinement_v1/faces/-HwX2H8Z4hY__5.npz": "eec2b7695516ac4ebb97cb3d251a6aa46858060b15c6b163334f77b9af959d41",
+    "results/q1_deep_v6/alignment/MMS_FA/-HwX2H8Z4hY__5/original.npz": "0238aa1464c896374c9d03cee4fe23f0244c67ddb5c4b7a0f8d4334d5fbaa560",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

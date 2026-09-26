@@ -1,0 +1,9 @@
+{
+  "max_subsequence_word_error": 0.25,
+  "min_ctc_word_score": 0.3,
+  "max_conditional_boundary_width_s": 0.2,
+  "max_asr_ctc_interval_gap_s": 0.2,
+  "min_asr_word_probability": 0.5,
+  "min_local_anchor_words": 3,
+  "note": "Prespecified diagnostic rules, not calibrated probability or accuracy; no sentiment labels."
+}

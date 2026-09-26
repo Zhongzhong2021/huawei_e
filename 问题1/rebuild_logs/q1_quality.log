@@ -1,0 +1,28 @@
+{
+  "samples": 100,
+  "word_alignment_usable_samples": 79,
+  "reliable_words": 1575,
+  "review_samples": [
+    "-NFrJFQijFE$_$1",
+    "-NFrJFQijFE$_$2",
+    "-hnBHBN8p5A$_$6",
+    "-hnBHBN8p5A$_$7",
+    "-iRBcNs9oI8$_$3",
+    "-iRBcNs9oI8$_$6",
+    "-iRBcNs9oI8$_$7",
+    "-iRBcNs9oI8$_$8",
+    "-iRBcNs9oI8$_$9",
+    "-mJ2ud6oKI8$_$1",
+    "-mJ2ud6oKI8$_$2",
+    "-mJ2ud6oKI8$_$6",
+    "-mJ2ud6oKI8$_$8",
+    "-mJ2ud6oKI8$_$9",
+    "-ri04Z7vwnc$_$0",
+    "-ri04Z7vwnc$_$2",
+    "-ri04Z7vwnc$_$5",
+    "-s9qJ7ATP7w$_$6",
+    "-yRb-Jum7EQ$_$1",
+    "-yRb-Jum7EQ$_$5",
+    "-yRb-Jum7EQ$_$6"
+  ]
+}

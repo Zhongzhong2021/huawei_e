@@ -1,0 +1,148 @@
+{
+  "sample_id": "-ri04Z7vwnc$_$5",
+  "table_row_0based": 89,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-ri04Z7vwnc/5.mp4",
+  "source_sha256": "2a5e4319bf592a18c8eb5117f7c7ec30c6c79528f9eac9fe4fb85bf70f277736",
+  "text_original": "\" So I think it's important to discuss finances",
+  "words": [
+    {
+      "word": "so",
+      "source_text": "So",
+      "char_start": 2,
+      "char_end": 4,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "so"
+      ]
+    },
+    {
+      "word": "i",
+      "source_text": "I",
+      "char_start": 5,
+      "char_end": 6,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "i"
+      ]
+    },
+    {
+      "word": "think",
+      "source_text": "think",
+      "char_start": 7,
+      "char_end": 12,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "think"
+      ]
+    },
+    {
+      "word": "it's",
+      "source_text": "it's",
+      "char_start": 13,
+      "char_end": 17,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5,
+        6,
+        7
+      ],
+      "bert_tokens": [
+        "it",
+        "'",
+        "s"
+      ]
+    },
+    {
+      "word": "important",
+      "source_text": "important",
+      "char_start": 18,
+      "char_end": 27,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "important"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 28,
+      "char_end": 30,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "discuss",
+      "source_text": "discuss",
+      "char_start": 31,
+      "char_end": 38,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "discuss"
+      ]
+    },
+    {
+      "word": "finances",
+      "source_text": "finances",
+      "char_start": 39,
+      "char_end": 47,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "finances"
+      ]
+    }
+  ],
+  "duration_s": 3.5035000000000003,
+  "container_declared_duration_s": 5.965,
+  "media_clock": {
+    "stem": "-ri04Z7vwnc__5",
+    "sample_id": "-ri04Z7vwnc$_$5",
+    "container_duration_s": 5.965,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 3.43975,
+    "audio_end_s": 3.43975,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 3.4618,
+    "last_frame_duration_s": 0.0417,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 3.5035000000000003,
+    "observed_end_s": 3.5035000000000003,
+    "empty_declared_tail_s": 2.4614999999999996,
+    "original_video_frames": 83,
+    "source_sha256": "2a5e4319bf592a18c8eb5117f7c7ec30c6c79528f9eac9fe4fb85bf70f277736"
+  },
+  "decoded_audio_duration_s": 3.43975,
+  "audio_start_s": 0.0,
+  "feature_sha256": "7660a3a267303bdbe69ecae7ff8f201d50f5c49ffd8bdb1fa477b92439ae95c8",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-ri04Z7vwnc__5.json": "17b8329b49d9b04ccfb0b8683ff2a6886096cc1b18645f0e8ed6099e8e2393cf",
+    "results/q1/samples/-ri04Z7vwnc__5.npz": "2e334d3bdbd18816ff2f6080ab8243dcf7ac2dfca721de801f87f3e6ee973dab",
+    "results/q1_next/enhanced/-ri04Z7vwnc__5.npz": "6a3fe3d25b3bc3878b26de5dcf2015e8e1f7e14314ecc3169599ee178b990142",
+    "results/q1_refinement_v1/faces/-ri04Z7vwnc__5.npz": "6f42105533bbcf6709062f6b2db7c7fcba115de4e3b7ec8b6fc973eecc06b086",
+    "results/q1_deep_v6/alignment/MMS_FA/-ri04Z7vwnc__5/original.npz": "10bda3f6bcd82ee3bd7f66037d6dc277ffa8b5ab99ff4308d4b5e83e7aeeac52",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

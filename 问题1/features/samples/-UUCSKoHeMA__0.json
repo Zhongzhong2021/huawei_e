@@ -1,0 +1,276 @@
+{
+  "sample_id": "-UUCSKoHeMA$_$0",
+  "table_row_0based": 86,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-UUCSKoHeMA/0.mp4",
+  "source_sha256": "3f9792888ec8e969f61cfb6cb4de7bdf7ef8944afe0a9d2a9d13586e1f13b898",
+  "text_original": "I mentioned a word in the last clip called 'monotone', and I want to talk about that briefly.",
+  "words": [
+    {
+      "word": "i",
+      "source_text": "I",
+      "char_start": 0,
+      "char_end": 1,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "i"
+      ]
+    },
+    {
+      "word": "mentioned",
+      "source_text": "mentioned",
+      "char_start": 2,
+      "char_end": 11,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "mentioned"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 12,
+      "char_end": 13,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "word",
+      "source_text": "word",
+      "char_start": 14,
+      "char_end": 18,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "word"
+      ]
+    },
+    {
+      "word": "in",
+      "source_text": "in",
+      "char_start": 19,
+      "char_end": 21,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "in"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 22,
+      "char_end": 25,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "last",
+      "source_text": "last",
+      "char_start": 26,
+      "char_end": 30,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "last"
+      ]
+    },
+    {
+      "word": "clip",
+      "source_text": "clip",
+      "char_start": 31,
+      "char_end": 35,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "clip"
+      ]
+    },
+    {
+      "word": "called",
+      "source_text": "called",
+      "char_start": 36,
+      "char_end": 42,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "called"
+      ]
+    },
+    {
+      "word": "monotone",
+      "source_text": "monotone",
+      "char_start": 44,
+      "char_end": 52,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11,
+        12
+      ],
+      "bert_tokens": [
+        "mono",
+        "##tone"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 55,
+      "char_end": 58,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "i",
+      "source_text": "I",
+      "char_start": 59,
+      "char_end": 60,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "i"
+      ]
+    },
+    {
+      "word": "want",
+      "source_text": "want",
+      "char_start": 61,
+      "char_end": 65,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17
+      ],
+      "bert_tokens": [
+        "want"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 66,
+      "char_end": 68,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        18
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "talk",
+      "source_text": "talk",
+      "char_start": 69,
+      "char_end": 73,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        19
+      ],
+      "bert_tokens": [
+        "talk"
+      ]
+    },
+    {
+      "word": "about",
+      "source_text": "about",
+      "char_start": 74,
+      "char_end": 79,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        20
+      ],
+      "bert_tokens": [
+        "about"
+      ]
+    },
+    {
+      "word": "that",
+      "source_text": "that",
+      "char_start": 80,
+      "char_end": 84,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        21
+      ],
+      "bert_tokens": [
+        "that"
+      ]
+    },
+    {
+      "word": "briefly",
+      "source_text": "briefly",
+      "char_start": 85,
+      "char_end": 92,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        22
+      ],
+      "bert_tokens": [
+        "briefly"
+      ]
+    }
+  ],
+  "duration_s": 7.8666659999999995,
+  "container_declared_duration_s": 7.867,
+  "media_clock": {
+    "stem": "-UUCSKoHeMA__0",
+    "sample_id": "-UUCSKoHeMA$_$0",
+    "container_duration_s": 7.867,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 7.73225,
+    "audio_end_s": 7.73225,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 7.833333,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 7.8666659999999995,
+    "observed_end_s": 7.8666659999999995,
+    "empty_declared_tail_s": 0.00033400000000050056,
+    "original_video_frames": 234,
+    "source_sha256": "3f9792888ec8e969f61cfb6cb4de7bdf7ef8944afe0a9d2a9d13586e1f13b898"
+  },
+  "decoded_audio_duration_s": 7.73225,
+  "audio_start_s": 0.0,
+  "feature_sha256": "3ce250fe657264d28c6b9fc81870252c3a5998662a24c145bbf755ad84b8948a",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-UUCSKoHeMA__0.json": "7132ce2af72abb333cd55a7ae0648dd73e86015838a16d291b8a37960c03371d",
+    "results/q1/samples/-UUCSKoHeMA__0.npz": "1675de345b45bf4ae5055e2efa88bb54ba94df767bdfa081c2b81ecfa06ab17e",
+    "results/q1_next/enhanced/-UUCSKoHeMA__0.npz": "3882d07e43b4e72ebd836c35c30e75e05090984c384ddd921c0f1f586bea7d5f",
+    "results/q1_refinement_v1/faces/-UUCSKoHeMA__0.npz": "9c94907b2bec2787396f370544d0a250b7ad57c349f73cae129877e6d2fcc7ae",
+    "results/q1_deep_v6/alignment/MMS_FA/-UUCSKoHeMA__0/original.npz": "af0058aa962668c9d6e11be722c2b2a593ebcde17eb36ce92acd07fec7dac1b9",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

@@ -1,0 +1,241 @@
+{
+  "sample_id": "-egA8-b7-3M$_$26",
+  "table_row_0based": 25,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-egA8-b7-3M/26.mp4",
+  "source_sha256": "11f78aed680ea9c5862a15e04ff6c1f8776c46d29c98b68d28773ff39d959685",
+  "text_original": "We're updating it all the time and looking forward to your comments on our videos.",
+  "words": [
+    {
+      "word": "we're",
+      "source_text": "We're",
+      "char_start": 0,
+      "char_end": 5,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1,
+        2,
+        3
+      ],
+      "bert_tokens": [
+        "we",
+        "'",
+        "re"
+      ]
+    },
+    {
+      "word": "updating",
+      "source_text": "updating",
+      "char_start": 6,
+      "char_end": 14,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4,
+        5
+      ],
+      "bert_tokens": [
+        "up",
+        "##dating"
+      ]
+    },
+    {
+      "word": "it",
+      "source_text": "it",
+      "char_start": 15,
+      "char_end": 17,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "it"
+      ]
+    },
+    {
+      "word": "all",
+      "source_text": "all",
+      "char_start": 18,
+      "char_end": 21,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "all"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 22,
+      "char_end": 25,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "time",
+      "source_text": "time",
+      "char_start": 26,
+      "char_end": 30,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "time"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 31,
+      "char_end": 34,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "looking",
+      "source_text": "looking",
+      "char_start": 35,
+      "char_end": 42,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "looking"
+      ]
+    },
+    {
+      "word": "forward",
+      "source_text": "forward",
+      "char_start": 43,
+      "char_end": 50,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "forward"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 51,
+      "char_end": 53,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "your",
+      "source_text": "your",
+      "char_start": 54,
+      "char_end": 58,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "your"
+      ]
+    },
+    {
+      "word": "comments",
+      "source_text": "comments",
+      "char_start": 59,
+      "char_end": 67,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "comments"
+      ]
+    },
+    {
+      "word": "on",
+      "source_text": "on",
+      "char_start": 68,
+      "char_end": 70,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "on"
+      ]
+    },
+    {
+      "word": "our",
+      "source_text": "our",
+      "char_start": 71,
+      "char_end": 74,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17
+      ],
+      "bert_tokens": [
+        "our"
+      ]
+    },
+    {
+      "word": "videos",
+      "source_text": "videos",
+      "char_start": 75,
+      "char_end": 81,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        18
+      ],
+      "bert_tokens": [
+        "videos"
+      ]
+    }
+  ],
+  "duration_s": 6.0,
+  "container_declared_duration_s": 11.5,
+  "media_clock": {
+    "stem": "-egA8-b7-3M__26",
+    "sample_id": "-egA8-b7-3M$_$26",
+    "container_duration_s": 11.5,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 5.9205625,
+    "audio_end_s": 5.9205625,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 5.966667,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 6.0,
+    "observed_end_s": 6.0,
+    "empty_declared_tail_s": 5.5,
+    "original_video_frames": 179,
+    "source_sha256": "11f78aed680ea9c5862a15e04ff6c1f8776c46d29c98b68d28773ff39d959685"
+  },
+  "decoded_audio_duration_s": 5.9205625,
+  "audio_start_s": 0.0,
+  "feature_sha256": "f3ef15396e777cbf602f0660f56fadd014c9a3fed64df032a7ce2222af3cc6fb",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-egA8-b7-3M__26.json": "ff79c75b6c325a19c3c20676a08fc688b30973b1282ec6d360860fbc293477ba",
+    "results/q1/samples/-egA8-b7-3M__26.npz": "e4fcfb9b0eca07cdf1398570aa5f719cc06523efa93d09da07491114e738da37",
+    "results/q1_next/enhanced/-egA8-b7-3M__26.npz": "d62ed5fb88e7233f51b4319c9d59825823fe0e61339764d20f27c2df7800bf68",
+    "results/q1_refinement_v1/faces/-egA8-b7-3M__26.npz": "dfdd762e7495a1606048eeafb4534e297fd522acf32e7f915f538a6bc884e086",
+    "results/q1_deep_v6/alignment/MMS_FA/-egA8-b7-3M__26/original.npz": "33e0b48e3d43aa1fb037c94260abd9e5dc8830989cb8ce1cef8671b0fdb11a35",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

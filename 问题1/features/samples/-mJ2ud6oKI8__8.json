@@ -1,0 +1,183 @@
+{
+  "sample_id": "-mJ2ud6oKI8$_$8",
+  "table_row_0based": 45,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-mJ2ud6oKI8/8.mp4",
+  "source_sha256": "6af6614c9838417a48c4817f4dd5bf1e6669eb5f78f983e9a68adc113fcdc7cc",
+  "text_original": "Sometimes we have to stretch that joint that is already irritated",
+  "words": [
+    {
+      "word": "sometimes",
+      "source_text": "Sometimes",
+      "char_start": 0,
+      "char_end": 9,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "sometimes"
+      ]
+    },
+    {
+      "word": "we",
+      "source_text": "we",
+      "char_start": 10,
+      "char_end": 12,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "we"
+      ]
+    },
+    {
+      "word": "have",
+      "source_text": "have",
+      "char_start": 13,
+      "char_end": 17,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "have"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 18,
+      "char_end": 20,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "stretch",
+      "source_text": "stretch",
+      "char_start": 21,
+      "char_end": 28,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "stretch"
+      ]
+    },
+    {
+      "word": "that",
+      "source_text": "that",
+      "char_start": 29,
+      "char_end": 33,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "that"
+      ]
+    },
+    {
+      "word": "joint",
+      "source_text": "joint",
+      "char_start": 34,
+      "char_end": 39,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "joint"
+      ]
+    },
+    {
+      "word": "that",
+      "source_text": "that",
+      "char_start": 40,
+      "char_end": 44,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "that"
+      ]
+    },
+    {
+      "word": "is",
+      "source_text": "is",
+      "char_start": 45,
+      "char_end": 47,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "is"
+      ]
+    },
+    {
+      "word": "already",
+      "source_text": "already",
+      "char_start": 48,
+      "char_end": 55,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "already"
+      ]
+    },
+    {
+      "word": "irritated",
+      "source_text": "irritated",
+      "char_start": 56,
+      "char_end": 65,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "irritated"
+      ]
+    }
+  ],
+  "duration_s": 4.171375,
+  "container_declared_duration_s": 8.662,
+  "media_clock": {
+    "stem": "-mJ2ud6oKI8__8",
+    "sample_id": "-mJ2ud6oKI8$_$8",
+    "container_duration_s": 8.662,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 4.171375,
+    "audio_end_s": 4.171375,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 4.137467,
+    "last_frame_duration_s": 0.033367,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 4.170834,
+    "observed_end_s": 4.171375,
+    "empty_declared_tail_s": 4.4906250000000005,
+    "original_video_frames": 125,
+    "source_sha256": "6af6614c9838417a48c4817f4dd5bf1e6669eb5f78f983e9a68adc113fcdc7cc"
+  },
+  "decoded_audio_duration_s": 4.171375,
+  "audio_start_s": 0.0,
+  "feature_sha256": "6a013971ad0a3dcb0d205c4bdf8dafb748a09df4d95686ad939550206b7fa577",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-mJ2ud6oKI8__8.json": "aaa027e3b7661ecfe5848aca375b824cdc92e913a08654975a2fdab9732fc3d5",
+    "results/q1/samples/-mJ2ud6oKI8__8.npz": "6b8a108d029ca830624419653eac3f068202ed87866b45f6dc59b448fac8eea8",
+    "results/q1_next/enhanced/-mJ2ud6oKI8__8.npz": "f01b098497b4da1be8f1aa190bce044baf8a46417a7cbdc417e4818598a887de",
+    "results/q1_refinement_v1/faces/-mJ2ud6oKI8__8.npz": "c427cf94b19045ad4aaa583b2512c9e5c176b2a81f597d9a5a7a2b5342eb951e",
+    "results/q1_deep_v6/alignment/MMS_FA/-mJ2ud6oKI8__8/original.npz": "0e4f233281d3fb08cfd2493d91382634a0e849e52cbd642959fca38af2b38cbe",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "sample_id": "-iRBcNs9oI8$_$3",
+  "table_row_0based": 34,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-iRBcNs9oI8/3.mp4",
+  "source_sha256": "39c547acd1a8da2ebc6c6ab008191a5676420398a974cd9611cad087f0ccec50",
+  "text_original": "Well, it is the secret of power pose",
+  "words": [
+    {
+      "word": "well",
+      "source_text": "Well",
+      "char_start": 0,
+      "char_end": 4,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "well"
+      ]
+    },
+    {
+      "word": "it",
+      "source_text": "it",
+      "char_start": 6,
+      "char_end": 8,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "it"
+      ]
+    },
+    {
+      "word": "is",
+      "source_text": "is",
+      "char_start": 9,
+      "char_end": 11,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "is"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 12,
+      "char_end": 15,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "secret",
+      "source_text": "secret",
+      "char_start": 16,
+      "char_end": 22,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "secret"
+      ]
+    },
+    {
+      "word": "of",
+      "source_text": "of",
+      "char_start": 23,
+      "char_end": 25,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "of"
+      ]
+    },
+    {
+      "word": "power",
+      "source_text": "power",
+      "char_start": 26,
+      "char_end": 31,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "power"
+      ]
+    },
+    {
+      "word": "pose",
+      "source_text": "pose",
+      "char_start": 32,
+      "char_end": 36,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "pose"
+      ]
+    }
+  ],
+  "duration_s": 5.6056,
+  "container_declared_duration_s": 5.84,
+  "media_clock": {
+    "stem": "-iRBcNs9oI8__3",
+    "sample_id": "-iRBcNs9oI8$_$3",
+    "container_duration_s": 5.84,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 5.53825,
+    "audio_end_s": 5.53825,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 5.572233,
+    "last_frame_duration_s": 0.033367,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 5.6056,
+    "observed_end_s": 5.6056,
+    "empty_declared_tail_s": 0.23439999999999994,
+    "original_video_frames": 167,
+    "source_sha256": "39c547acd1a8da2ebc6c6ab008191a5676420398a974cd9611cad087f0ccec50"
+  },
+  "decoded_audio_duration_s": 5.53825,
+  "audio_start_s": 0.0,
+  "feature_sha256": "cbd5fd8ee55ffbd31ce313a05d1e7f9ce9aa69b3f8fac874e9a26f00adfd0992",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-iRBcNs9oI8__3.json": "c886eb0b105ff138e3ad8f86bbc34f249ad572b6e4a9ab6cf2c5f4cadee18e20",
+    "results/q1/samples/-iRBcNs9oI8__3.npz": "e333b8efd2dad07857a5b27dc5c124f7b64042d6142332699ebb9c8e552f3384",
+    "results/q1_next/enhanced/-iRBcNs9oI8__3.npz": "7e3fec912669947379806dab35f2a8050f7dc7183a4496ec07e1976e6ef34ca4",
+    "results/q1_refinement_v1/faces/-iRBcNs9oI8__3.npz": "52bfa4a4ca78b4a9b9f697bbcf345b517e908193ea03bd36ecb9124ff0c791eb",
+    "results/q1_deep_v6/alignment/MMS_FA/-iRBcNs9oI8__3/original.npz": "fe592a188a454b2fc0e14a73b1c3b5d7f8d9d56b02b29ca7dd016e7a32460ac3",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

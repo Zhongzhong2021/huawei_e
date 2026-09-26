@@ -1,0 +1,187 @@
+{
+  "sample_id": "-egA8-b7-3M$_$13",
+  "table_row_0based": 29,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-egA8-b7-3M/13.mp4",
+  "source_sha256": "cbd627c225ebca37521ae238cb9ec254cad236822f4f37ebfbb039e6c56aea4c",
+  "text_original": "What are you doing that's different?\" They always want an answer.",
+  "words": [
+    {
+      "word": "what",
+      "source_text": "What",
+      "char_start": 0,
+      "char_end": 4,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "what"
+      ]
+    },
+    {
+      "word": "are",
+      "source_text": "are",
+      "char_start": 5,
+      "char_end": 8,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "are"
+      ]
+    },
+    {
+      "word": "you",
+      "source_text": "you",
+      "char_start": 9,
+      "char_end": 12,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "you"
+      ]
+    },
+    {
+      "word": "doing",
+      "source_text": "doing",
+      "char_start": 13,
+      "char_end": 18,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "doing"
+      ]
+    },
+    {
+      "word": "that's",
+      "source_text": "that's",
+      "char_start": 19,
+      "char_end": 25,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5,
+        6,
+        7
+      ],
+      "bert_tokens": [
+        "that",
+        "'",
+        "s"
+      ]
+    },
+    {
+      "word": "different",
+      "source_text": "different",
+      "char_start": 26,
+      "char_end": 35,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "different"
+      ]
+    },
+    {
+      "word": "they",
+      "source_text": "They",
+      "char_start": 38,
+      "char_end": 42,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "they"
+      ]
+    },
+    {
+      "word": "always",
+      "source_text": "always",
+      "char_start": 43,
+      "char_end": 49,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "always"
+      ]
+    },
+    {
+      "word": "want",
+      "source_text": "want",
+      "char_start": 50,
+      "char_end": 54,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "want"
+      ]
+    },
+    {
+      "word": "an",
+      "source_text": "an",
+      "char_start": 55,
+      "char_end": 57,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "an"
+      ]
+    },
+    {
+      "word": "answer",
+      "source_text": "answer",
+      "char_start": 58,
+      "char_end": 64,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "answer"
+      ]
+    }
+  ],
+  "duration_s": 4.166666,
+  "container_declared_duration_s": 6.967,
+  "media_clock": {
+    "stem": "-egA8-b7-3M__13",
+    "sample_id": "-egA8-b7-3M$_$13",
+    "container_duration_s": 6.967,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 4.023875,
+    "audio_end_s": 4.023875,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 4.133333,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 4.166666,
+    "observed_end_s": 4.166666,
+    "empty_declared_tail_s": 2.8003339999999994,
+    "original_video_frames": 123,
+    "source_sha256": "cbd627c225ebca37521ae238cb9ec254cad236822f4f37ebfbb039e6c56aea4c"
+  },
+  "decoded_audio_duration_s": 4.023875,
+  "audio_start_s": 0.0,
+  "feature_sha256": "b2f1f9201d38d53ceea18919ae530cbf236768edb89707d3e4237bc1e73c58fd",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-egA8-b7-3M__13.json": "349dd7f6b423c685cab115d6394130a3da47ffe83beef5e55a89a0486a748c32",
+    "results/q1/samples/-egA8-b7-3M__13.npz": "f7ffcca81e44a6448b8d478e68dff2551d0448b8c51af242d06456022a3d0312",
+    "results/q1_next/enhanced/-egA8-b7-3M__13.npz": "a73ea751a376be9ff62975459df460a03857f6a9eb540e4dd7889371fae90c3f",
+    "results/q1_refinement_v1/faces/-egA8-b7-3M__13.npz": "8148cb0cd22b0cc0619925c0e7b45fa6bc3eea3b9d50883bff83ab37ec149be7",
+    "results/q1_deep_v6/alignment/MMS_FA/-egA8-b7-3M__13/original.npz": "21decea88f0f8442901b67b5cf8398eb60e3d15a5dc7b4cc6de58dc752f6c6d6",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

@@ -1,0 +1,635 @@
+{
+  "sample_id": "-t217m2on-s$_$7",
+  "table_row_0based": 48,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-t217m2on-s/7.mp4",
+  "source_sha256": "41c76b8a733ecb780d56348f55d00f0ba0c07f44f46e93044e62d876710180b7",
+  "text_original": "If you find that your ears consistently do this and you can't pop them often, you'll definitely need to see a physician regarding those things, it could be something more of a nasal infection or a sinus infection that he would need to deal with.",
+  "words": [
+    {
+      "word": "if",
+      "source_text": "If",
+      "char_start": 0,
+      "char_end": 2,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "if"
+      ]
+    },
+    {
+      "word": "you",
+      "source_text": "you",
+      "char_start": 3,
+      "char_end": 6,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "you"
+      ]
+    },
+    {
+      "word": "find",
+      "source_text": "find",
+      "char_start": 7,
+      "char_end": 11,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "find"
+      ]
+    },
+    {
+      "word": "that",
+      "source_text": "that",
+      "char_start": 12,
+      "char_end": 16,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "that"
+      ]
+    },
+    {
+      "word": "your",
+      "source_text": "your",
+      "char_start": 17,
+      "char_end": 21,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "your"
+      ]
+    },
+    {
+      "word": "ears",
+      "source_text": "ears",
+      "char_start": 22,
+      "char_end": 26,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "ears"
+      ]
+    },
+    {
+      "word": "consistently",
+      "source_text": "consistently",
+      "char_start": 27,
+      "char_end": 39,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "consistently"
+      ]
+    },
+    {
+      "word": "do",
+      "source_text": "do",
+      "char_start": 40,
+      "char_end": 42,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "do"
+      ]
+    },
+    {
+      "word": "this",
+      "source_text": "this",
+      "char_start": 43,
+      "char_end": 47,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "this"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 48,
+      "char_end": 51,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "you",
+      "source_text": "you",
+      "char_start": 52,
+      "char_end": 55,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "you"
+      ]
+    },
+    {
+      "word": "can't",
+      "source_text": "can't",
+      "char_start": 56,
+      "char_end": 61,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12,
+        13,
+        14
+      ],
+      "bert_tokens": [
+        "can",
+        "'",
+        "t"
+      ]
+    },
+    {
+      "word": "pop",
+      "source_text": "pop",
+      "char_start": 62,
+      "char_end": 65,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "pop"
+      ]
+    },
+    {
+      "word": "them",
+      "source_text": "them",
+      "char_start": 66,
+      "char_end": 70,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "them"
+      ]
+    },
+    {
+      "word": "often",
+      "source_text": "often",
+      "char_start": 71,
+      "char_end": 76,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17
+      ],
+      "bert_tokens": [
+        "often"
+      ]
+    },
+    {
+      "word": "you'll",
+      "source_text": "you'll",
+      "char_start": 78,
+      "char_end": 84,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        19,
+        20,
+        21
+      ],
+      "bert_tokens": [
+        "you",
+        "'",
+        "ll"
+      ]
+    },
+    {
+      "word": "definitely",
+      "source_text": "definitely",
+      "char_start": 85,
+      "char_end": 95,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        22
+      ],
+      "bert_tokens": [
+        "definitely"
+      ]
+    },
+    {
+      "word": "need",
+      "source_text": "need",
+      "char_start": 96,
+      "char_end": 100,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        23
+      ],
+      "bert_tokens": [
+        "need"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 101,
+      "char_end": 103,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        24
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "see",
+      "source_text": "see",
+      "char_start": 104,
+      "char_end": 107,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        25
+      ],
+      "bert_tokens": [
+        "see"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 108,
+      "char_end": 109,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        26
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "physician",
+      "source_text": "physician",
+      "char_start": 110,
+      "char_end": 119,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        27
+      ],
+      "bert_tokens": [
+        "physician"
+      ]
+    },
+    {
+      "word": "regarding",
+      "source_text": "regarding",
+      "char_start": 120,
+      "char_end": 129,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        28
+      ],
+      "bert_tokens": [
+        "regarding"
+      ]
+    },
+    {
+      "word": "those",
+      "source_text": "those",
+      "char_start": 130,
+      "char_end": 135,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        29
+      ],
+      "bert_tokens": [
+        "those"
+      ]
+    },
+    {
+      "word": "things",
+      "source_text": "things",
+      "char_start": 136,
+      "char_end": 142,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        30
+      ],
+      "bert_tokens": [
+        "things"
+      ]
+    },
+    {
+      "word": "it",
+      "source_text": "it",
+      "char_start": 144,
+      "char_end": 146,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        32
+      ],
+      "bert_tokens": [
+        "it"
+      ]
+    },
+    {
+      "word": "could",
+      "source_text": "could",
+      "char_start": 147,
+      "char_end": 152,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        33
+      ],
+      "bert_tokens": [
+        "could"
+      ]
+    },
+    {
+      "word": "be",
+      "source_text": "be",
+      "char_start": 153,
+      "char_end": 155,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        34
+      ],
+      "bert_tokens": [
+        "be"
+      ]
+    },
+    {
+      "word": "something",
+      "source_text": "something",
+      "char_start": 156,
+      "char_end": 165,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        35
+      ],
+      "bert_tokens": [
+        "something"
+      ]
+    },
+    {
+      "word": "more",
+      "source_text": "more",
+      "char_start": 166,
+      "char_end": 170,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        36
+      ],
+      "bert_tokens": [
+        "more"
+      ]
+    },
+    {
+      "word": "of",
+      "source_text": "of",
+      "char_start": 171,
+      "char_end": 173,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        37
+      ],
+      "bert_tokens": [
+        "of"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 174,
+      "char_end": 175,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        38
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "nasal",
+      "source_text": "nasal",
+      "char_start": 176,
+      "char_end": 181,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        39
+      ],
+      "bert_tokens": [
+        "nasal"
+      ]
+    },
+    {
+      "word": "infection",
+      "source_text": "infection",
+      "char_start": 182,
+      "char_end": 191,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        40
+      ],
+      "bert_tokens": [
+        "infection"
+      ]
+    },
+    {
+      "word": "or",
+      "source_text": "or",
+      "char_start": 192,
+      "char_end": 194,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        41
+      ],
+      "bert_tokens": [
+        "or"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 195,
+      "char_end": 196,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        42
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "sinus",
+      "source_text": "sinus",
+      "char_start": 197,
+      "char_end": 202,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        43,
+        44
+      ],
+      "bert_tokens": [
+        "sin",
+        "##us"
+      ]
+    },
+    {
+      "word": "infection",
+      "source_text": "infection",
+      "char_start": 203,
+      "char_end": 212,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        45
+      ],
+      "bert_tokens": [
+        "infection"
+      ]
+    },
+    {
+      "word": "that",
+      "source_text": "that",
+      "char_start": 213,
+      "char_end": 217,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        46
+      ],
+      "bert_tokens": [
+        "that"
+      ]
+    },
+    {
+      "word": "he",
+      "source_text": "he",
+      "char_start": 218,
+      "char_end": 220,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        47
+      ],
+      "bert_tokens": [
+        "he"
+      ]
+    },
+    {
+      "word": "would",
+      "source_text": "would",
+      "char_start": 221,
+      "char_end": 226,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        48
+      ],
+      "bert_tokens": [
+        "would"
+      ]
+    },
+    {
+      "word": "need",
+      "source_text": "need",
+      "char_start": 227,
+      "char_end": 231,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        49
+      ],
+      "bert_tokens": [
+        "need"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 232,
+      "char_end": 234,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        50
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "deal",
+      "source_text": "deal",
+      "char_start": 235,
+      "char_end": 239,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        51
+      ],
+      "bert_tokens": [
+        "deal"
+      ]
+    },
+    {
+      "word": "with",
+      "source_text": "with",
+      "char_start": 240,
+      "char_end": 244,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        52
+      ],
+      "bert_tokens": [
+        "with"
+      ]
+    }
+  ],
+  "duration_s": 17.166666,
+  "container_declared_duration_s": 18.7,
+  "media_clock": {
+    "stem": "-t217m2on-s__7",
+    "sample_id": "-t217m2on-s$_$7",
+    "container_duration_s": 18.7,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 17.026375,
+    "audio_end_s": 17.026375,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 17.133333,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 17.166666,
+    "observed_end_s": 17.166666,
+    "empty_declared_tail_s": 1.533334,
+    "original_video_frames": 512,
+    "source_sha256": "41c76b8a733ecb780d56348f55d00f0ba0c07f44f46e93044e62d876710180b7"
+  },
+  "decoded_audio_duration_s": 17.026375,
+  "audio_start_s": 0.0,
+  "feature_sha256": "10093dc660d460a785d943bafa7ff32184d2e27a87b99c3fcd03e363ea2bf6ca",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-t217m2on-s__7.json": "16d451490b7787dc002d2fa33b157735ff89b2cfd73248b2725b77335fc040d3",
+    "results/q1/samples/-t217m2on-s__7.npz": "2cca961036caccd147e2f7f9b5eba81f524fd1d064aa7e22f121ae3a21d5efb5",
+    "results/q1_next/enhanced/-t217m2on-s__7.npz": "f701f623f498393b673235d52318d08ae20c9c2e4b063310858fff9d20bf013e",
+    "results/q1_refinement_v1/faces/-t217m2on-s__7.npz": "8aabf62422ab0477af2100149af4119cdf542a7fef69fbc823964510b8160370",
+    "results/q1_deep_v6/alignment/MMS_FA/-t217m2on-s__7/original.npz": "18e077744902ab4490d677da26e7d8e61e9ca27ac4c9a9e0141a74f2e4b91303",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "sample_id": "-ri04Z7vwnc$_$0",
+  "table_row_0based": 87,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-ri04Z7vwnc/0.mp4",
+  "source_sha256": "93021c70c8fad20ad3fded80e7fc790a2f9c96835de58a3b694c6906de42684b",
+  "text_original": "going to get married or are already married",
+  "words": [
+    {
+      "word": "going",
+      "source_text": "going",
+      "char_start": 0,
+      "char_end": 5,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "going"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 6,
+      "char_end": 8,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "get",
+      "source_text": "get",
+      "char_start": 9,
+      "char_end": 12,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "get"
+      ]
+    },
+    {
+      "word": "married",
+      "source_text": "married",
+      "char_start": 13,
+      "char_end": 20,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "married"
+      ]
+    },
+    {
+      "word": "or",
+      "source_text": "or",
+      "char_start": 21,
+      "char_end": 23,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "or"
+      ]
+    },
+    {
+      "word": "are",
+      "source_text": "are",
+      "char_start": 24,
+      "char_end": 27,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "are"
+      ]
+    },
+    {
+      "word": "already",
+      "source_text": "already",
+      "char_start": 28,
+      "char_end": 35,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "already"
+      ]
+    },
+    {
+      "word": "married",
+      "source_text": "married",
+      "char_start": 36,
+      "char_end": 43,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "married"
+      ]
+    }
+  ],
+  "duration_s": 2.7944560000000003,
+  "container_declared_duration_s": 3.295,
+  "media_clock": {
+    "stem": "-ri04Z7vwnc__0",
+    "sample_id": "-ri04Z7vwnc$_$0",
+    "container_duration_s": 3.295,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 2.76325,
+    "audio_end_s": 2.76325,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 2.752756,
+    "last_frame_duration_s": 0.0417,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 2.7944560000000003,
+    "observed_end_s": 2.7944560000000003,
+    "empty_declared_tail_s": 0.5005439999999997,
+    "original_video_frames": 67,
+    "source_sha256": "93021c70c8fad20ad3fded80e7fc790a2f9c96835de58a3b694c6906de42684b"
+  },
+  "decoded_audio_duration_s": 2.76325,
+  "audio_start_s": 0.0,
+  "feature_sha256": "03915708ac49ab73224aa6bff41353528b36219ceb5f58bb989fa12adb350210",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-ri04Z7vwnc__0.json": "a7534323c63a73bc9e89cbd83ad96155fcc79443acb587806136c611edb18dc2",
+    "results/q1/samples/-ri04Z7vwnc__0.npz": "73dff74ce5aaa7a57384916625d15f4ebac219b19fbba05c1c354ca3db4d81de",
+    "results/q1_next/enhanced/-ri04Z7vwnc__0.npz": "c85ca9a2a8add42ebe1e1d3792260d63c690b194405d3dc6cfaa99041b69fc15",
+    "results/q1_refinement_v1/faces/-ri04Z7vwnc__0.npz": "924bb73e055458d66083571c803aa0ce733fa156816283783ec8df46c2b3f3d6",
+    "results/q1_deep_v6/alignment/MMS_FA/-ri04Z7vwnc__0/original.npz": "4da92fc5b6ab03265153fc359d9a8828d66fbe8f2b705042e3996c3716070a25",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "sample_id": "-NFrJFQijFE$_$1",
+  "table_row_0based": 9,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-NFrJFQijFE/1.mp4",
+  "source_sha256": "d8fcf16c6eb51c56947ec3d0549c6f3bc7a0cf1fc5f5d89e8b38d4249a08db4f",
+  "text_original": "Structural mounts inside have to be properly stress analyzed so we make sure all that happens",
+  "words": [
+    {
+      "word": "structural",
+      "source_text": "Structural",
+      "char_start": 0,
+      "char_end": 10,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "structural"
+      ]
+    },
+    {
+      "word": "mounts",
+      "source_text": "mounts",
+      "char_start": 11,
+      "char_end": 17,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "mounts"
+      ]
+    },
+    {
+      "word": "inside",
+      "source_text": "inside",
+      "char_start": 18,
+      "char_end": 24,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "inside"
+      ]
+    },
+    {
+      "word": "have",
+      "source_text": "have",
+      "char_start": 25,
+      "char_end": 29,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "have"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 30,
+      "char_end": 32,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "be",
+      "source_text": "be",
+      "char_start": 33,
+      "char_end": 35,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "be"
+      ]
+    },
+    {
+      "word": "properly",
+      "source_text": "properly",
+      "char_start": 36,
+      "char_end": 44,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "properly"
+      ]
+    },
+    {
+      "word": "stress",
+      "source_text": "stress",
+      "char_start": 45,
+      "char_end": 51,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "stress"
+      ]
+    },
+    {
+      "word": "analyzed",
+      "source_text": "analyzed",
+      "char_start": 52,
+      "char_end": 60,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "analyzed"
+      ]
+    },
+    {
+      "word": "so",
+      "source_text": "so",
+      "char_start": 61,
+      "char_end": 63,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "so"
+      ]
+    },
+    {
+      "word": "we",
+      "source_text": "we",
+      "char_start": 64,
+      "char_end": 66,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "we"
+      ]
+    },
+    {
+      "word": "make",
+      "source_text": "make",
+      "char_start": 67,
+      "char_end": 71,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "make"
+      ]
+    },
+    {
+      "word": "sure",
+      "source_text": "sure",
+      "char_start": 72,
+      "char_end": 76,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "sure"
+      ]
+    },
+    {
+      "word": "all",
+      "source_text": "all",
+      "char_start": 77,
+      "char_end": 80,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "all"
+      ]
+    },
+    {
+      "word": "that",
+      "source_text": "that",
+      "char_start": 81,
+      "char_end": 85,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "that"
+      ]
+    },
+    {
+      "word": "happens",
+      "source_text": "happens",
+      "char_start": 86,
+      "char_end": 93,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "happens"
+      ]
+    }
+  ],
+  "duration_s": 5.72,
+  "container_declared_duration_s": 9.12,
+  "media_clock": {
+    "stem": "-NFrJFQijFE__1",
+    "sample_id": "-NFrJFQijFE$_$1",
+    "container_duration_s": 9.12,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 5.658875,
+    "audio_end_s": 5.658875,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 5.68,
+    "last_frame_duration_s": 0.04,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 5.72,
+    "observed_end_s": 5.72,
+    "empty_declared_tail_s": 3.3999999999999995,
+    "original_video_frames": 142,
+    "source_sha256": "d8fcf16c6eb51c56947ec3d0549c6f3bc7a0cf1fc5f5d89e8b38d4249a08db4f"
+  },
+  "decoded_audio_duration_s": 5.658875,
+  "audio_start_s": 0.0,
+  "feature_sha256": "cf38fe0520e102c3e6bfbd2aff618e1011a24dec4dadbf3350a3de84486bd955",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-NFrJFQijFE__1.json": "00a6e38f021f30936c0d9a1abb4b7e50f90fe1da62dc3bd5cfc7be841d0c17e2",
+    "results/q1/samples/-NFrJFQijFE__1.npz": "99e9aee9567da81a8a0c52f8009bd0ec73bd23ca5c6e8fe52579831b909c86df",
+    "results/q1_next/enhanced/-NFrJFQijFE__1.npz": "d4de4adafaf4e867f46dc38e6e618630479d68ed333386de9a36f4c563164e57",
+    "results/q1_refinement_v1/faces/-NFrJFQijFE__1.npz": "585545ed69093dc4fef8732abee7607b5c5e68b7b4ce45d67e17fa2461caf9cb",
+    "results/q1_deep_v6/alignment/MMS_FA/-NFrJFQijFE__1/original.npz": "336d97197253a3d84174f0dd7e6b438edced3c18593a3bd6d9c54ab6f85960a3",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

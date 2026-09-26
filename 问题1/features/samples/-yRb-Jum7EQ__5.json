@@ -1,0 +1,369 @@
+{
+  "sample_id": "-yRb-Jum7EQ$_$5",
+  "table_row_0based": 98,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-yRb-Jum7EQ/5.mp4",
+  "source_sha256": "6d6145293cf84d1fc8324dfa8d39465e2d7fc07affb67ff68deeabf6e3c410d9",
+  "text_original": "Yesterday Eliav Gelman lost his life in another terrorist attack, not by the students of terrorism, but by those who teach terrorism, a Palestinian teacher.",
+  "words": [
+    {
+      "word": "yesterday",
+      "source_text": "Yesterday",
+      "char_start": 0,
+      "char_end": 9,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "yesterday"
+      ]
+    },
+    {
+      "word": "eliav",
+      "source_text": "Eliav",
+      "char_start": 10,
+      "char_end": 15,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2,
+        3
+      ],
+      "bert_tokens": [
+        "eli",
+        "##av"
+      ]
+    },
+    {
+      "word": "gelman",
+      "source_text": "Gelman",
+      "char_start": 16,
+      "char_end": 22,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4,
+        5
+      ],
+      "bert_tokens": [
+        "gel",
+        "##man"
+      ]
+    },
+    {
+      "word": "lost",
+      "source_text": "lost",
+      "char_start": 23,
+      "char_end": 27,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "lost"
+      ]
+    },
+    {
+      "word": "his",
+      "source_text": "his",
+      "char_start": 28,
+      "char_end": 31,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "his"
+      ]
+    },
+    {
+      "word": "life",
+      "source_text": "life",
+      "char_start": 32,
+      "char_end": 36,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "life"
+      ]
+    },
+    {
+      "word": "in",
+      "source_text": "in",
+      "char_start": 37,
+      "char_end": 39,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "in"
+      ]
+    },
+    {
+      "word": "another",
+      "source_text": "another",
+      "char_start": 40,
+      "char_end": 47,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "another"
+      ]
+    },
+    {
+      "word": "terrorist",
+      "source_text": "terrorist",
+      "char_start": 48,
+      "char_end": 57,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "terrorist"
+      ]
+    },
+    {
+      "word": "attack",
+      "source_text": "attack",
+      "char_start": 58,
+      "char_end": 64,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "attack"
+      ]
+    },
+    {
+      "word": "not",
+      "source_text": "not",
+      "char_start": 66,
+      "char_end": 69,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "not"
+      ]
+    },
+    {
+      "word": "by",
+      "source_text": "by",
+      "char_start": 70,
+      "char_end": 72,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "by"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 73,
+      "char_end": 76,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "students",
+      "source_text": "students",
+      "char_start": 77,
+      "char_end": 85,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17
+      ],
+      "bert_tokens": [
+        "students"
+      ]
+    },
+    {
+      "word": "of",
+      "source_text": "of",
+      "char_start": 86,
+      "char_end": 88,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        18
+      ],
+      "bert_tokens": [
+        "of"
+      ]
+    },
+    {
+      "word": "terrorism",
+      "source_text": "terrorism",
+      "char_start": 89,
+      "char_end": 98,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        19
+      ],
+      "bert_tokens": [
+        "terrorism"
+      ]
+    },
+    {
+      "word": "but",
+      "source_text": "but",
+      "char_start": 100,
+      "char_end": 103,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        21
+      ],
+      "bert_tokens": [
+        "but"
+      ]
+    },
+    {
+      "word": "by",
+      "source_text": "by",
+      "char_start": 104,
+      "char_end": 106,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        22
+      ],
+      "bert_tokens": [
+        "by"
+      ]
+    },
+    {
+      "word": "those",
+      "source_text": "those",
+      "char_start": 107,
+      "char_end": 112,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        23
+      ],
+      "bert_tokens": [
+        "those"
+      ]
+    },
+    {
+      "word": "who",
+      "source_text": "who",
+      "char_start": 113,
+      "char_end": 116,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        24
+      ],
+      "bert_tokens": [
+        "who"
+      ]
+    },
+    {
+      "word": "teach",
+      "source_text": "teach",
+      "char_start": 117,
+      "char_end": 122,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        25
+      ],
+      "bert_tokens": [
+        "teach"
+      ]
+    },
+    {
+      "word": "terrorism",
+      "source_text": "terrorism",
+      "char_start": 123,
+      "char_end": 132,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        26
+      ],
+      "bert_tokens": [
+        "terrorism"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 134,
+      "char_end": 135,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        28
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "palestinian",
+      "source_text": "Palestinian",
+      "char_start": 136,
+      "char_end": 147,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        29
+      ],
+      "bert_tokens": [
+        "palestinian"
+      ]
+    },
+    {
+      "word": "teacher",
+      "source_text": "teacher",
+      "char_start": 148,
+      "char_end": 155,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        30
+      ],
+      "bert_tokens": [
+        "teacher"
+      ]
+    }
+  ],
+  "duration_s": 13.166666000000001,
+  "container_declared_duration_s": 13.634,
+  "media_clock": {
+    "stem": "-yRb-Jum7EQ__5",
+    "sample_id": "-yRb-Jum7EQ$_$5",
+    "container_duration_s": 13.634,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 13.0445625,
+    "audio_end_s": 13.0445625,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 13.133333,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 13.166666000000001,
+    "observed_end_s": 13.166666000000001,
+    "empty_declared_tail_s": 0.46733399999999925,
+    "original_video_frames": 394,
+    "source_sha256": "6d6145293cf84d1fc8324dfa8d39465e2d7fc07affb67ff68deeabf6e3c410d9"
+  },
+  "decoded_audio_duration_s": 13.0445625,
+  "audio_start_s": 0.0,
+  "feature_sha256": "165333fde3f8fff95286ba328db7577de4121a96409d94c0edeb212ab0c6a176",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-yRb-Jum7EQ__5.json": "2ddbcc5d45115bcb10e43612c8252b53765647cc697386c8d6e577e29de739a6",
+    "results/q1/samples/-yRb-Jum7EQ__5.npz": "89c41f4a0835a39c500b837a3df6e1bb3c68813c7d9478ca0228c4220acce67b",
+    "results/q1_next/enhanced/-yRb-Jum7EQ__5.npz": "812e88f59f2810774171e6a92e2bc3fa766be50dab40978c686b3af484660ed4",
+    "results/q1_refinement_v1/faces/-yRb-Jum7EQ__5.npz": "d6c2745aa415bae86c5ab74ee986f55fe80f3ef6a6d16d0845a71cd6aae74aa9",
+    "results/q1_deep_v6/alignment/MMS_FA/-yRb-Jum7EQ__5/original.npz": "6dc0e89659100766e6dd8639757731dbd05609f9ce0763b399c50714dea8496a",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

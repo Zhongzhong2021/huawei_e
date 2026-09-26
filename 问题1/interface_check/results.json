@@ -1,0 +1,12 @@
+{
+  "samples": 100,
+  "text_words": 1948,
+  "bert_subtokens": 2506,
+  "unknown_subtokens": 0,
+  "words_with_unknown_subtokens": 0,
+  "text_valid": 1948,
+  "unsupported_words_with_text": 484,
+  "no_word_alignment_samples": 20,
+  "all_samples_retain_native_audio_scene": true,
+  "scope": "Q1 original-video feature interface only; no Annex3 masks applied; no feature values changed."
+}

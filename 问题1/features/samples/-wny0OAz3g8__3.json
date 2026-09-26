@@ -1,0 +1,300 @@
+{
+  "sample_id": "-wny0OAz3g8$_$3",
+  "table_row_0based": 59,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-wny0OAz3g8/3.mp4",
+  "source_sha256": "ea917c506bc9fa39460f2b722f7c416f646312bb17cd74baa618905b54837bce",
+  "text_original": "Which then allowed the white workers and unions to justify their decision to not allow black workers into their union",
+  "words": [
+    {
+      "word": "which",
+      "source_text": "Which",
+      "char_start": 0,
+      "char_end": 5,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "which"
+      ]
+    },
+    {
+      "word": "then",
+      "source_text": "then",
+      "char_start": 6,
+      "char_end": 10,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "then"
+      ]
+    },
+    {
+      "word": "allowed",
+      "source_text": "allowed",
+      "char_start": 11,
+      "char_end": 18,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "allowed"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 19,
+      "char_end": 22,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "white",
+      "source_text": "white",
+      "char_start": 23,
+      "char_end": 28,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "white"
+      ]
+    },
+    {
+      "word": "workers",
+      "source_text": "workers",
+      "char_start": 29,
+      "char_end": 36,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "workers"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 37,
+      "char_end": 40,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "unions",
+      "source_text": "unions",
+      "char_start": 41,
+      "char_end": 47,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "unions"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 48,
+      "char_end": 50,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "justify",
+      "source_text": "justify",
+      "char_start": 51,
+      "char_end": 58,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "justify"
+      ]
+    },
+    {
+      "word": "their",
+      "source_text": "their",
+      "char_start": 59,
+      "char_end": 64,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "their"
+      ]
+    },
+    {
+      "word": "decision",
+      "source_text": "decision",
+      "char_start": 65,
+      "char_end": 73,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "decision"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 74,
+      "char_end": 76,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "not",
+      "source_text": "not",
+      "char_start": 77,
+      "char_end": 80,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "not"
+      ]
+    },
+    {
+      "word": "allow",
+      "source_text": "allow",
+      "char_start": 81,
+      "char_end": 86,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "allow"
+      ]
+    },
+    {
+      "word": "black",
+      "source_text": "black",
+      "char_start": 87,
+      "char_end": 92,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "black"
+      ]
+    },
+    {
+      "word": "workers",
+      "source_text": "workers",
+      "char_start": 93,
+      "char_end": 100,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17
+      ],
+      "bert_tokens": [
+        "workers"
+      ]
+    },
+    {
+      "word": "into",
+      "source_text": "into",
+      "char_start": 101,
+      "char_end": 105,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        18
+      ],
+      "bert_tokens": [
+        "into"
+      ]
+    },
+    {
+      "word": "their",
+      "source_text": "their",
+      "char_start": 106,
+      "char_end": 111,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        19
+      ],
+      "bert_tokens": [
+        "their"
+      ]
+    },
+    {
+      "word": "union",
+      "source_text": "union",
+      "char_start": 112,
+      "char_end": 117,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        20
+      ],
+      "bert_tokens": [
+        "union"
+      ]
+    }
+  ],
+  "duration_s": 6.1333329999999995,
+  "container_declared_duration_s": 11.169,
+  "media_clock": {
+    "stem": "-wny0OAz3g8__3",
+    "sample_id": "-wny0OAz3g8$_$3",
+    "container_duration_s": 11.169,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 6.099875,
+    "audio_end_s": 6.099875,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 6.1,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 6.1333329999999995,
+    "observed_end_s": 6.1333329999999995,
+    "empty_declared_tail_s": 5.035667000000001,
+    "original_video_frames": 184,
+    "source_sha256": "ea917c506bc9fa39460f2b722f7c416f646312bb17cd74baa618905b54837bce"
+  },
+  "decoded_audio_duration_s": 6.099875,
+  "audio_start_s": 0.0,
+  "feature_sha256": "378ca3480eae0c7803a24c2e0dde13cc7db3e119ed998e4ed2c5a8b9966cc7db",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-wny0OAz3g8__3.json": "2ba051eec141f342b27bc78d9d4407da235466322f2f41266557987f95dc2097",
+    "results/q1/samples/-wny0OAz3g8__3.npz": "3fea626337325bcdab1fe425ca33c98955631cd317b1a705cb1f10c86bd31a0c",
+    "results/q1_next/enhanced/-wny0OAz3g8__3.npz": "e14788615c6c4ca969acfb052215f874947f818042ed9b20f459677611315147",
+    "results/q1_refinement_v1/faces/-wny0OAz3g8__3.npz": "cef6723b6a7999af000c764613eebdca3e7c6ba5353654a9a3529765749367bc",
+    "results/q1_deep_v6/alignment/MMS_FA/-wny0OAz3g8__3/original.npz": "8c725561dc13146ed9016c6c67571c0f76fd3d208eb0989b6ba0137a9724fc88",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

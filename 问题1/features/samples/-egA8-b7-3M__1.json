@@ -1,0 +1,326 @@
+{
+  "sample_id": "-egA8-b7-3M$_$1",
+  "table_row_0based": 30,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-egA8-b7-3M/1.mp4",
+  "source_sha256": "589a7989b1b4888568c31614a2d6beefba88fb87289c85b94df2d8051500403b",
+  "text_original": "I started a successful Legal Nurse Consulting Business in 1989. I mentor nurses who want to become Legal Nurse Consultants.",
+  "words": [
+    {
+      "word": "i",
+      "source_text": "I",
+      "char_start": 0,
+      "char_end": 1,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "i"
+      ]
+    },
+    {
+      "word": "started",
+      "source_text": "started",
+      "char_start": 2,
+      "char_end": 9,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "started"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 10,
+      "char_end": 11,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "successful",
+      "source_text": "successful",
+      "char_start": 12,
+      "char_end": 22,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "successful"
+      ]
+    },
+    {
+      "word": "legal",
+      "source_text": "Legal",
+      "char_start": 23,
+      "char_end": 28,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "legal"
+      ]
+    },
+    {
+      "word": "nurse",
+      "source_text": "Nurse",
+      "char_start": 29,
+      "char_end": 34,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "nurse"
+      ]
+    },
+    {
+      "word": "consulting",
+      "source_text": "Consulting",
+      "char_start": 35,
+      "char_end": 45,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "consulting"
+      ]
+    },
+    {
+      "word": "business",
+      "source_text": "Business",
+      "char_start": 46,
+      "char_end": 54,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "business"
+      ]
+    },
+    {
+      "word": "in",
+      "source_text": "in",
+      "char_start": 55,
+      "char_end": 57,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "in"
+      ]
+    },
+    {
+      "word": "nineteen",
+      "source_text": "1989",
+      "char_start": 58,
+      "char_end": 62,
+      "normalization": "English number expansion",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "1989"
+      ]
+    },
+    {
+      "word": "eighty",
+      "source_text": "1989",
+      "char_start": 58,
+      "char_end": 62,
+      "normalization": "English number expansion",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "1989"
+      ]
+    },
+    {
+      "word": "nine",
+      "source_text": "1989",
+      "char_start": 58,
+      "char_end": 62,
+      "normalization": "English number expansion",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "1989"
+      ]
+    },
+    {
+      "word": "i",
+      "source_text": "I",
+      "char_start": 64,
+      "char_end": 65,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "i"
+      ]
+    },
+    {
+      "word": "mentor",
+      "source_text": "mentor",
+      "char_start": 66,
+      "char_end": 72,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "mentor"
+      ]
+    },
+    {
+      "word": "nurses",
+      "source_text": "nurses",
+      "char_start": 73,
+      "char_end": 79,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "nurses"
+      ]
+    },
+    {
+      "word": "who",
+      "source_text": "who",
+      "char_start": 80,
+      "char_end": 83,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "who"
+      ]
+    },
+    {
+      "word": "want",
+      "source_text": "want",
+      "char_start": 84,
+      "char_end": 88,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "want"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 89,
+      "char_end": 91,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "become",
+      "source_text": "become",
+      "char_start": 92,
+      "char_end": 98,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        18
+      ],
+      "bert_tokens": [
+        "become"
+      ]
+    },
+    {
+      "word": "legal",
+      "source_text": "Legal",
+      "char_start": 99,
+      "char_end": 104,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        19
+      ],
+      "bert_tokens": [
+        "legal"
+      ]
+    },
+    {
+      "word": "nurse",
+      "source_text": "Nurse",
+      "char_start": 105,
+      "char_end": 110,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        20
+      ],
+      "bert_tokens": [
+        "nurse"
+      ]
+    },
+    {
+      "word": "consultants",
+      "source_text": "Consultants",
+      "char_start": 111,
+      "char_end": 122,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        21
+      ],
+      "bert_tokens": [
+        "consultants"
+      ]
+    }
+  ],
+  "duration_s": 10.233333,
+  "container_declared_duration_s": 11.534,
+  "media_clock": {
+    "stem": "-egA8-b7-3M__1",
+    "sample_id": "-egA8-b7-3M$_$1",
+    "container_duration_s": 11.534,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 10.15625,
+    "audio_end_s": 10.15625,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 10.2,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 10.233333,
+    "observed_end_s": 10.233333,
+    "empty_declared_tail_s": 1.3006670000000007,
+    "original_video_frames": 306,
+    "source_sha256": "589a7989b1b4888568c31614a2d6beefba88fb87289c85b94df2d8051500403b"
+  },
+  "decoded_audio_duration_s": 10.15625,
+  "audio_start_s": 0.0,
+  "feature_sha256": "b577e78cc15dfea7f36ebce057b3452a3ba4ea6624a5f11d6261001e95e183df",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-egA8-b7-3M__1.json": "dd7007e07e7b4ff5e25b82ea5f2c5621331460921ace2b5e92fe74a9244aa0ae",
+    "results/q1/samples/-egA8-b7-3M__1.npz": "1f5c4617326d7b45af44dce72213e1695260a410639c6901f20b696796a5dc6d",
+    "results/q1_next/enhanced/-egA8-b7-3M__1.npz": "d3c64656f52687d0eedc4fafcfff52891f0129b427c869dd46eb4a4f5a3e9b64",
+    "results/q1_refinement_v1/faces/-egA8-b7-3M__1.npz": "cfdde4c6ed8af6691e5251a4f85af64a9e18022f43d5688cb46953db9a1c7e77",
+    "results/q1_deep_v6/alignment/MMS_FA/-egA8-b7-3M__1/original.npz": "c3352a8bde012e4f212ae5d3f66394defb8486c3036689eddf915ecd1f7a6648",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

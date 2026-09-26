@@ -1,0 +1,443 @@
+{
+  "sample_id": "-MeTTeMJBNc$_$7",
+  "table_row_0based": 82,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-MeTTeMJBNc/7.mp4",
+  "source_sha256": "40716dc7402fd6398038eded58ce939ec76be6afbeea346b968bf4c427088f3a",
+  "text_original": "Maybe you could find a picture of the couple from their wedding or sometime in their life, or maybe even a current picture and have it put in a beautiful frame.",
+  "words": [
+    {
+      "word": "maybe",
+      "source_text": "Maybe",
+      "char_start": 0,
+      "char_end": 5,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "maybe"
+      ]
+    },
+    {
+      "word": "you",
+      "source_text": "you",
+      "char_start": 6,
+      "char_end": 9,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "you"
+      ]
+    },
+    {
+      "word": "could",
+      "source_text": "could",
+      "char_start": 10,
+      "char_end": 15,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "could"
+      ]
+    },
+    {
+      "word": "find",
+      "source_text": "find",
+      "char_start": 16,
+      "char_end": 20,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "find"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 21,
+      "char_end": 22,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "picture",
+      "source_text": "picture",
+      "char_start": 23,
+      "char_end": 30,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "picture"
+      ]
+    },
+    {
+      "word": "of",
+      "source_text": "of",
+      "char_start": 31,
+      "char_end": 33,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "of"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 34,
+      "char_end": 37,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "couple",
+      "source_text": "couple",
+      "char_start": 38,
+      "char_end": 44,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "couple"
+      ]
+    },
+    {
+      "word": "from",
+      "source_text": "from",
+      "char_start": 45,
+      "char_end": 49,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "from"
+      ]
+    },
+    {
+      "word": "their",
+      "source_text": "their",
+      "char_start": 50,
+      "char_end": 55,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "their"
+      ]
+    },
+    {
+      "word": "wedding",
+      "source_text": "wedding",
+      "char_start": 56,
+      "char_end": 63,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "wedding"
+      ]
+    },
+    {
+      "word": "or",
+      "source_text": "or",
+      "char_start": 64,
+      "char_end": 66,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "or"
+      ]
+    },
+    {
+      "word": "sometime",
+      "source_text": "sometime",
+      "char_start": 67,
+      "char_end": 75,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "sometime"
+      ]
+    },
+    {
+      "word": "in",
+      "source_text": "in",
+      "char_start": 76,
+      "char_end": 78,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "in"
+      ]
+    },
+    {
+      "word": "their",
+      "source_text": "their",
+      "char_start": 79,
+      "char_end": 84,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "their"
+      ]
+    },
+    {
+      "word": "life",
+      "source_text": "life",
+      "char_start": 85,
+      "char_end": 89,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17
+      ],
+      "bert_tokens": [
+        "life"
+      ]
+    },
+    {
+      "word": "or",
+      "source_text": "or",
+      "char_start": 91,
+      "char_end": 93,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        19
+      ],
+      "bert_tokens": [
+        "or"
+      ]
+    },
+    {
+      "word": "maybe",
+      "source_text": "maybe",
+      "char_start": 94,
+      "char_end": 99,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        20
+      ],
+      "bert_tokens": [
+        "maybe"
+      ]
+    },
+    {
+      "word": "even",
+      "source_text": "even",
+      "char_start": 100,
+      "char_end": 104,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        21
+      ],
+      "bert_tokens": [
+        "even"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 105,
+      "char_end": 106,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        22
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "current",
+      "source_text": "current",
+      "char_start": 107,
+      "char_end": 114,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        23
+      ],
+      "bert_tokens": [
+        "current"
+      ]
+    },
+    {
+      "word": "picture",
+      "source_text": "picture",
+      "char_start": 115,
+      "char_end": 122,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        24
+      ],
+      "bert_tokens": [
+        "picture"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 123,
+      "char_end": 126,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        25
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "have",
+      "source_text": "have",
+      "char_start": 127,
+      "char_end": 131,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        26
+      ],
+      "bert_tokens": [
+        "have"
+      ]
+    },
+    {
+      "word": "it",
+      "source_text": "it",
+      "char_start": 132,
+      "char_end": 134,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        27
+      ],
+      "bert_tokens": [
+        "it"
+      ]
+    },
+    {
+      "word": "put",
+      "source_text": "put",
+      "char_start": 135,
+      "char_end": 138,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        28
+      ],
+      "bert_tokens": [
+        "put"
+      ]
+    },
+    {
+      "word": "in",
+      "source_text": "in",
+      "char_start": 139,
+      "char_end": 141,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        29
+      ],
+      "bert_tokens": [
+        "in"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 142,
+      "char_end": 143,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        30
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "beautiful",
+      "source_text": "beautiful",
+      "char_start": 144,
+      "char_end": 153,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        31
+      ],
+      "bert_tokens": [
+        "beautiful"
+      ]
+    },
+    {
+      "word": "frame",
+      "source_text": "frame",
+      "char_start": 154,
+      "char_end": 159,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        32
+      ],
+      "bert_tokens": [
+        "frame"
+      ]
+    }
+  ],
+  "duration_s": 10.5,
+  "container_declared_duration_s": 17.367,
+  "media_clock": {
+    "stem": "-MeTTeMJBNc__7",
+    "sample_id": "-MeTTeMJBNc$_$7",
+    "container_duration_s": 17.367,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 10.4113125,
+    "audio_end_s": 10.4113125,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 10.466667,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 10.5,
+    "observed_end_s": 10.5,
+    "empty_declared_tail_s": 6.867000000000001,
+    "original_video_frames": 314,
+    "source_sha256": "40716dc7402fd6398038eded58ce939ec76be6afbeea346b968bf4c427088f3a"
+  },
+  "decoded_audio_duration_s": 10.4113125,
+  "audio_start_s": 0.0,
+  "feature_sha256": "91aabfdaa2e6304c1abc68af814415ea4110802e780991ac7ef301a74e77f36d",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-MeTTeMJBNc__7.json": "5dab462b66cf074017eeb797d74f8088c10c4eb9783ee7d126a06e40e995843a",
+    "results/q1/samples/-MeTTeMJBNc__7.npz": "f899fd733b6609ef476f24a863bdfb2a901b8076dbfe838cf30decf591325db8",
+    "results/q1_next/enhanced/-MeTTeMJBNc__7.npz": "bbf0bdbd40b3d565b2cfd1540f34bfccfa8dd6042c80fd3e2a47f7d0ab6ad3b4",
+    "results/q1_refinement_v1/faces/-MeTTeMJBNc__7.npz": "66cdfc45fc33c20b7dd7fc6bd4cb5a09cfbbd5b8e5c1cc8549690c65405a6da6",
+    "results/q1_deep_v6/alignment/MMS_FA/-MeTTeMJBNc__7/original.npz": "a7584c8f30aa731e66d4a7a3a16a5390d37e76c2b96d72fbe3ecab5e2f0d428c",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

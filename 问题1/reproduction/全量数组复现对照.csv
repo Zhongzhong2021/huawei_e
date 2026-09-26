@@ -1,0 +1,3401 @@
+﻿sample,array,shape,exact,max_abs,max_scaled
+-3g5yACwYnA__13,text,"(15, 768)",True,0.0,0.0
+-3g5yACwYnA__13,text_mask,"(15,)",True,0.0,0.0
+-3g5yACwYnA__13,audio_native,"(270, 47)",True,0.0,0.0
+-3g5yACwYnA__13,audio_time,"(270,)",True,0.0,0.0
+-3g5yACwYnA__13,audio_cells,"(270, 2)",True,0.0,0.0
+-3g5yACwYnA__13,audio_voiced,"(270,)",True,0.0,0.0
+-3g5yACwYnA__13,bert_token_ids,"(20,)",True,0.0,0.0
+-3g5yACwYnA__13,bert_word_membership,"(15, 20)",True,0.0,0.0
+-3g5yACwYnA__13,bert_char_offsets,"(20, 2)",True,0.0,0.0
+-3g5yACwYnA__13,scene_native,"(55, 512)",True,0.0,0.0
+-3g5yACwYnA__13,expression_native,"(55, 52)",True,0.0,0.0
+-3g5yACwYnA__13,expression_valid,"(55,)",True,0.0,0.0
+-3g5yACwYnA__13,vision_time,"(55,)",True,0.0,0.0
+-3g5yACwYnA__13,vision_cells,"(55, 2)",True,0.0,0.0
+-3g5yACwYnA__13,vision_frame_index,"(55,)",True,0.0,0.0
+-3g5yACwYnA__13,vision_bbox,"(55, 4)",True,0.0,0.0
+-3g5yACwYnA__13,recovery_route,"(55,)",True,0.0,0.0
+-3g5yACwYnA__13,alignment_supported,"(15,)",True,0.0,0.0
+-3g5yACwYnA__13,ctc_cells,"(269, 2)",True,0.0,0.0
+-3g5yACwYnA__13,word_time_membership,"(15, 269)",True,0.0,0.0
+-3g5yACwYnA__13,word_start_quantiles,"(15, 3)",True,0.0,0.0
+-3g5yACwYnA__13,word_end_quantiles,"(15, 3)",True,0.0,0.0
+-3g5yACwYnA__13,word_audio,"(15, 97)",True,0.0,0.0
+-3g5yACwYnA__13,word_audio_dim_mask,"(15, 97)",True,0.0,0.0
+-3g5yACwYnA__13,word_audio_effective_seconds,"(15,)",True,0.0,0.0
+-3g5yACwYnA__13,word_voiced_effective_seconds,"(15,)",True,0.0,0.0
+-3g5yACwYnA__13,word_expression,"(15, 52)",True,0.0,0.0
+-3g5yACwYnA__13,word_expression_mask,"(15,)",True,0.0,0.0
+-3g5yACwYnA__13,word_scene,"(15, 512)",True,0.0,0.0
+-3g5yACwYnA__13,word_scene_mask,"(15,)",True,0.0,0.0
+-3g5yACwYnA__13,ctc_word_score,"(15,)",True,0.0,0.0
+-3g5yACwYnA__13,asr_exact_match,"(15,)",True,0.0,0.0
+-3g5yACwYnA__13,asr_time_gap_s,"(15,)",True,0.0,0.0
+-3g5yACwYnA__13,asr_word_probability,"(15,)",True,0.0,0.0
+-3g5yACwYnA__2,text,"(14, 768)",True,0.0,0.0
+-3g5yACwYnA__2,text_mask,"(14,)",True,0.0,0.0
+-3g5yACwYnA__2,audio_native,"(462, 47)",True,0.0,0.0
+-3g5yACwYnA__2,audio_time,"(462,)",True,0.0,0.0
+-3g5yACwYnA__2,audio_cells,"(462, 2)",True,0.0,0.0
+-3g5yACwYnA__2,audio_voiced,"(462,)",True,0.0,0.0
+-3g5yACwYnA__2,bert_token_ids,"(19,)",True,0.0,0.0
+-3g5yACwYnA__2,bert_word_membership,"(14, 19)",True,0.0,0.0
+-3g5yACwYnA__2,bert_char_offsets,"(19, 2)",True,0.0,0.0
+-3g5yACwYnA__2,scene_native,"(93, 512)",True,0.0,0.0
+-3g5yACwYnA__2,expression_native,"(93, 52)",True,0.0,0.0
+-3g5yACwYnA__2,expression_valid,"(93,)",True,0.0,0.0
+-3g5yACwYnA__2,vision_time,"(93,)",True,0.0,0.0
+-3g5yACwYnA__2,vision_cells,"(93, 2)",True,0.0,0.0
+-3g5yACwYnA__2,vision_frame_index,"(93,)",True,0.0,0.0
+-3g5yACwYnA__2,vision_bbox,"(93, 4)",True,0.0,0.0
+-3g5yACwYnA__2,recovery_route,"(93,)",True,0.0,0.0
+-3g5yACwYnA__2,alignment_supported,"(14,)",True,0.0,0.0
+-3g5yACwYnA__2,ctc_cells,"(461, 2)",True,0.0,0.0
+-3g5yACwYnA__2,word_time_membership,"(14, 461)",True,0.0,0.0
+-3g5yACwYnA__2,word_start_quantiles,"(14, 3)",True,0.0,0.0
+-3g5yACwYnA__2,word_end_quantiles,"(14, 3)",True,0.0,0.0
+-3g5yACwYnA__2,word_audio,"(14, 97)",True,0.0,0.0
+-3g5yACwYnA__2,word_audio_dim_mask,"(14, 97)",True,0.0,0.0
+-3g5yACwYnA__2,word_audio_effective_seconds,"(14,)",True,0.0,0.0
+-3g5yACwYnA__2,word_voiced_effective_seconds,"(14,)",True,0.0,0.0
+-3g5yACwYnA__2,word_expression,"(14, 52)",True,0.0,0.0
+-3g5yACwYnA__2,word_expression_mask,"(14,)",True,0.0,0.0
+-3g5yACwYnA__2,word_scene,"(14, 512)",True,0.0,0.0
+-3g5yACwYnA__2,word_scene_mask,"(14,)",True,0.0,0.0
+-3g5yACwYnA__2,ctc_word_score,"(14,)",True,0.0,0.0
+-3g5yACwYnA__2,asr_exact_match,"(14,)",True,0.0,0.0
+-3g5yACwYnA__2,asr_time_gap_s,"(14,)",True,0.0,0.0
+-3g5yACwYnA__2,asr_word_probability,"(14,)",True,0.0,0.0
+-3g5yACwYnA__3,text,"(29, 768)",True,0.0,0.0
+-3g5yACwYnA__3,text_mask,"(29,)",True,0.0,0.0
+-3g5yACwYnA__3,audio_native,"(717, 47)",True,0.0,0.0
+-3g5yACwYnA__3,audio_time,"(717,)",True,0.0,0.0
+-3g5yACwYnA__3,audio_cells,"(717, 2)",True,0.0,0.0
+-3g5yACwYnA__3,audio_voiced,"(717,)",True,0.0,0.0
+-3g5yACwYnA__3,bert_token_ids,"(42,)",True,0.0,0.0
+-3g5yACwYnA__3,bert_word_membership,"(29, 42)",True,0.0,0.0
+-3g5yACwYnA__3,bert_char_offsets,"(42, 2)",True,0.0,0.0
+-3g5yACwYnA__3,scene_native,"(144, 512)",True,0.0,0.0
+-3g5yACwYnA__3,expression_native,"(144, 52)",True,0.0,0.0
+-3g5yACwYnA__3,expression_valid,"(144,)",True,0.0,0.0
+-3g5yACwYnA__3,vision_time,"(144,)",True,0.0,0.0
+-3g5yACwYnA__3,vision_cells,"(144, 2)",True,0.0,0.0
+-3g5yACwYnA__3,vision_frame_index,"(144,)",True,0.0,0.0
+-3g5yACwYnA__3,vision_bbox,"(144, 4)",True,0.0,0.0
+-3g5yACwYnA__3,recovery_route,"(144,)",True,0.0,0.0
+-3g5yACwYnA__3,alignment_supported,"(29,)",True,0.0,0.0
+-3g5yACwYnA__3,ctc_cells,"(716, 2)",True,0.0,0.0
+-3g5yACwYnA__3,word_time_membership,"(29, 716)",True,0.0,0.0
+-3g5yACwYnA__3,word_start_quantiles,"(29, 3)",True,0.0,0.0
+-3g5yACwYnA__3,word_end_quantiles,"(29, 3)",True,0.0,0.0
+-3g5yACwYnA__3,word_audio,"(29, 97)",True,0.0,0.0
+-3g5yACwYnA__3,word_audio_dim_mask,"(29, 97)",True,0.0,0.0
+-3g5yACwYnA__3,word_audio_effective_seconds,"(29,)",True,0.0,0.0
+-3g5yACwYnA__3,word_voiced_effective_seconds,"(29,)",True,0.0,0.0
+-3g5yACwYnA__3,word_expression,"(29, 52)",True,0.0,0.0
+-3g5yACwYnA__3,word_expression_mask,"(29,)",True,0.0,0.0
+-3g5yACwYnA__3,word_scene,"(29, 512)",True,0.0,0.0
+-3g5yACwYnA__3,word_scene_mask,"(29,)",True,0.0,0.0
+-3g5yACwYnA__3,ctc_word_score,"(29,)",True,0.0,0.0
+-3g5yACwYnA__3,asr_exact_match,"(29,)",True,0.0,0.0
+-3g5yACwYnA__3,asr_time_gap_s,"(29,)",True,0.0,0.0
+-3g5yACwYnA__3,asr_word_probability,"(29,)",True,0.0,0.0
+-3g5yACwYnA__9,text,"(23, 768)",True,0.0,0.0
+-3g5yACwYnA__9,text_mask,"(23,)",True,0.0,0.0
+-3g5yACwYnA__9,audio_native,"(435, 47)",True,0.0,0.0
+-3g5yACwYnA__9,audio_time,"(435,)",True,0.0,0.0
+-3g5yACwYnA__9,audio_cells,"(435, 2)",True,0.0,0.0
+-3g5yACwYnA__9,audio_voiced,"(435,)",True,0.0,0.0
+-3g5yACwYnA__9,bert_token_ids,"(30,)",True,0.0,0.0
+-3g5yACwYnA__9,bert_word_membership,"(23, 30)",True,0.0,0.0
+-3g5yACwYnA__9,bert_char_offsets,"(30, 2)",True,0.0,0.0
+-3g5yACwYnA__9,scene_native,"(88, 512)",True,0.0,0.0
+-3g5yACwYnA__9,expression_native,"(88, 52)",True,0.0,0.0
+-3g5yACwYnA__9,expression_valid,"(88,)",True,0.0,0.0
+-3g5yACwYnA__9,vision_time,"(88,)",True,0.0,0.0
+-3g5yACwYnA__9,vision_cells,"(88, 2)",True,0.0,0.0
+-3g5yACwYnA__9,vision_frame_index,"(88,)",True,0.0,0.0
+-3g5yACwYnA__9,vision_bbox,"(88, 4)",True,0.0,0.0
+-3g5yACwYnA__9,recovery_route,"(88,)",True,0.0,0.0
+-3g5yACwYnA__9,alignment_supported,"(23,)",True,0.0,0.0
+-3g5yACwYnA__9,ctc_cells,"(434, 2)",True,0.0,0.0
+-3g5yACwYnA__9,word_time_membership,"(23, 434)",True,0.0,0.0
+-3g5yACwYnA__9,word_start_quantiles,"(23, 3)",True,0.0,0.0
+-3g5yACwYnA__9,word_end_quantiles,"(23, 3)",True,0.0,0.0
+-3g5yACwYnA__9,word_audio,"(23, 97)",True,0.0,0.0
+-3g5yACwYnA__9,word_audio_dim_mask,"(23, 97)",True,0.0,0.0
+-3g5yACwYnA__9,word_audio_effective_seconds,"(23,)",True,0.0,0.0
+-3g5yACwYnA__9,word_voiced_effective_seconds,"(23,)",True,0.0,0.0
+-3g5yACwYnA__9,word_expression,"(23, 52)",True,0.0,0.0
+-3g5yACwYnA__9,word_expression_mask,"(23,)",True,0.0,0.0
+-3g5yACwYnA__9,word_scene,"(23, 512)",True,0.0,0.0
+-3g5yACwYnA__9,word_scene_mask,"(23,)",True,0.0,0.0
+-3g5yACwYnA__9,ctc_word_score,"(23,)",True,0.0,0.0
+-3g5yACwYnA__9,asr_exact_match,"(23,)",True,0.0,0.0
+-3g5yACwYnA__9,asr_time_gap_s,"(23,)",True,0.0,0.0
+-3g5yACwYnA__9,asr_word_probability,"(23,)",True,0.0,0.0
+-3nNcZdcdvU__5,text,"(18, 768)",True,0.0,0.0
+-3nNcZdcdvU__5,text_mask,"(18,)",True,0.0,0.0
+-3nNcZdcdvU__5,audio_native,"(390, 47)",True,0.0,0.0
+-3nNcZdcdvU__5,audio_time,"(390,)",True,0.0,0.0
+-3nNcZdcdvU__5,audio_cells,"(390, 2)",True,0.0,0.0
+-3nNcZdcdvU__5,audio_voiced,"(390,)",True,0.0,0.0
+-3nNcZdcdvU__5,bert_token_ids,"(24,)",True,0.0,0.0
+-3nNcZdcdvU__5,bert_word_membership,"(18, 24)",True,0.0,0.0
+-3nNcZdcdvU__5,bert_char_offsets,"(24, 2)",True,0.0,0.0
+-3nNcZdcdvU__5,scene_native,"(79, 512)",True,0.0,0.0
+-3nNcZdcdvU__5,expression_native,"(79, 52)",True,0.0,0.0
+-3nNcZdcdvU__5,expression_valid,"(79,)",True,0.0,0.0
+-3nNcZdcdvU__5,vision_time,"(79,)",True,0.0,0.0
+-3nNcZdcdvU__5,vision_cells,"(79, 2)",True,0.0,0.0
+-3nNcZdcdvU__5,vision_frame_index,"(79,)",True,0.0,0.0
+-3nNcZdcdvU__5,vision_bbox,"(79, 4)",True,0.0,0.0
+-3nNcZdcdvU__5,recovery_route,"(79,)",True,0.0,0.0
+-3nNcZdcdvU__5,alignment_supported,"(18,)",True,0.0,0.0
+-3nNcZdcdvU__5,ctc_cells,"(389, 2)",True,0.0,0.0
+-3nNcZdcdvU__5,word_time_membership,"(18, 389)",True,0.0,0.0
+-3nNcZdcdvU__5,word_start_quantiles,"(18, 3)",True,0.0,0.0
+-3nNcZdcdvU__5,word_end_quantiles,"(18, 3)",True,0.0,0.0
+-3nNcZdcdvU__5,word_audio,"(18, 97)",True,0.0,0.0
+-3nNcZdcdvU__5,word_audio_dim_mask,"(18, 97)",True,0.0,0.0
+-3nNcZdcdvU__5,word_audio_effective_seconds,"(18,)",True,0.0,0.0
+-3nNcZdcdvU__5,word_voiced_effective_seconds,"(18,)",True,0.0,0.0
+-3nNcZdcdvU__5,word_expression,"(18, 52)",True,0.0,0.0
+-3nNcZdcdvU__5,word_expression_mask,"(18,)",True,0.0,0.0
+-3nNcZdcdvU__5,word_scene,"(18, 512)",True,0.0,0.0
+-3nNcZdcdvU__5,word_scene_mask,"(18,)",True,0.0,0.0
+-3nNcZdcdvU__5,ctc_word_score,"(18,)",True,0.0,0.0
+-3nNcZdcdvU__5,asr_exact_match,"(18,)",True,0.0,0.0
+-3nNcZdcdvU__5,asr_time_gap_s,"(18,)",True,0.0,0.0
+-3nNcZdcdvU__5,asr_word_probability,"(18,)",True,0.0,0.0
+-571d8cVauQ__0,text,"(12, 768)",True,0.0,0.0
+-571d8cVauQ__0,text_mask,"(12,)",True,0.0,0.0
+-571d8cVauQ__0,audio_native,"(250, 47)",True,0.0,0.0
+-571d8cVauQ__0,audio_time,"(250,)",True,0.0,0.0
+-571d8cVauQ__0,audio_cells,"(250, 2)",True,0.0,0.0
+-571d8cVauQ__0,audio_voiced,"(250,)",True,0.0,0.0
+-571d8cVauQ__0,bert_token_ids,"(18,)",True,0.0,0.0
+-571d8cVauQ__0,bert_word_membership,"(12, 18)",True,0.0,0.0
+-571d8cVauQ__0,bert_char_offsets,"(18, 2)",True,0.0,0.0
+-571d8cVauQ__0,scene_native,"(52, 512)",True,0.0,0.0
+-571d8cVauQ__0,expression_native,"(52, 52)",True,0.0,0.0
+-571d8cVauQ__0,expression_valid,"(52,)",True,0.0,0.0
+-571d8cVauQ__0,vision_time,"(52,)",True,0.0,0.0
+-571d8cVauQ__0,vision_cells,"(52, 2)",True,0.0,0.0
+-571d8cVauQ__0,vision_frame_index,"(52,)",True,0.0,0.0
+-571d8cVauQ__0,vision_bbox,"(52, 4)",True,0.0,0.0
+-571d8cVauQ__0,recovery_route,"(52,)",True,0.0,0.0
+-571d8cVauQ__0,alignment_supported,"(12,)",True,0.0,0.0
+-571d8cVauQ__0,ctc_cells,"(249, 2)",True,0.0,0.0
+-571d8cVauQ__0,word_time_membership,"(12, 249)",True,0.0,0.0
+-571d8cVauQ__0,word_start_quantiles,"(12, 3)",True,0.0,0.0
+-571d8cVauQ__0,word_end_quantiles,"(12, 3)",True,0.0,0.0
+-571d8cVauQ__0,word_audio,"(12, 97)",True,0.0,0.0
+-571d8cVauQ__0,word_audio_dim_mask,"(12, 97)",True,0.0,0.0
+-571d8cVauQ__0,word_audio_effective_seconds,"(12,)",True,0.0,0.0
+-571d8cVauQ__0,word_voiced_effective_seconds,"(12,)",True,0.0,0.0
+-571d8cVauQ__0,word_expression,"(12, 52)",True,0.0,0.0
+-571d8cVauQ__0,word_expression_mask,"(12,)",True,0.0,0.0
+-571d8cVauQ__0,word_scene,"(12, 512)",True,0.0,0.0
+-571d8cVauQ__0,word_scene_mask,"(12,)",True,0.0,0.0
+-571d8cVauQ__0,ctc_word_score,"(12,)",True,0.0,0.0
+-571d8cVauQ__0,asr_exact_match,"(12,)",True,0.0,0.0
+-571d8cVauQ__0,asr_time_gap_s,"(12,)",True,0.0,0.0
+-571d8cVauQ__0,asr_word_probability,"(12,)",True,0.0,0.0
+-571d8cVauQ__5,text,"(43, 768)",True,0.0,0.0
+-571d8cVauQ__5,text_mask,"(43,)",True,0.0,0.0
+-571d8cVauQ__5,audio_native,"(756, 47)",True,0.0,0.0
+-571d8cVauQ__5,audio_time,"(756,)",True,0.0,0.0
+-571d8cVauQ__5,audio_cells,"(756, 2)",True,0.0,0.0
+-571d8cVauQ__5,audio_voiced,"(756,)",True,0.0,0.0
+-571d8cVauQ__5,bert_token_ids,"(54,)",True,0.0,0.0
+-571d8cVauQ__5,bert_word_membership,"(43, 54)",True,0.0,0.0
+-571d8cVauQ__5,bert_char_offsets,"(54, 2)",True,0.0,0.0
+-571d8cVauQ__5,scene_native,"(152, 512)",True,0.0,0.0
+-571d8cVauQ__5,expression_native,"(152, 52)",True,0.0,0.0
+-571d8cVauQ__5,expression_valid,"(152,)",True,0.0,0.0
+-571d8cVauQ__5,vision_time,"(152,)",True,0.0,0.0
+-571d8cVauQ__5,vision_cells,"(152, 2)",True,0.0,0.0
+-571d8cVauQ__5,vision_frame_index,"(152,)",True,0.0,0.0
+-571d8cVauQ__5,vision_bbox,"(152, 4)",True,0.0,0.0
+-571d8cVauQ__5,recovery_route,"(152,)",True,0.0,0.0
+-571d8cVauQ__5,alignment_supported,"(43,)",True,0.0,0.0
+-571d8cVauQ__5,ctc_cells,"(755, 2)",True,0.0,0.0
+-571d8cVauQ__5,word_time_membership,"(43, 755)",True,0.0,0.0
+-571d8cVauQ__5,word_start_quantiles,"(43, 3)",True,0.0,0.0
+-571d8cVauQ__5,word_end_quantiles,"(43, 3)",True,0.0,0.0
+-571d8cVauQ__5,word_audio,"(43, 97)",True,0.0,0.0
+-571d8cVauQ__5,word_audio_dim_mask,"(43, 97)",True,0.0,0.0
+-571d8cVauQ__5,word_audio_effective_seconds,"(43,)",True,0.0,0.0
+-571d8cVauQ__5,word_voiced_effective_seconds,"(43,)",True,0.0,0.0
+-571d8cVauQ__5,word_expression,"(43, 52)",True,0.0,0.0
+-571d8cVauQ__5,word_expression_mask,"(43,)",True,0.0,0.0
+-571d8cVauQ__5,word_scene,"(43, 512)",True,0.0,0.0
+-571d8cVauQ__5,word_scene_mask,"(43,)",True,0.0,0.0
+-571d8cVauQ__5,ctc_word_score,"(43,)",True,0.0,0.0
+-571d8cVauQ__5,asr_exact_match,"(43,)",True,0.0,0.0
+-571d8cVauQ__5,asr_time_gap_s,"(43,)",True,0.0,0.0
+-571d8cVauQ__5,asr_word_probability,"(43,)",True,0.0,0.0
+-6rXp3zJ3kc__8,text,"(34, 768)",True,0.0,0.0
+-6rXp3zJ3kc__8,text_mask,"(34,)",True,0.0,0.0
+-6rXp3zJ3kc__8,audio_native,"(637, 47)",True,0.0,0.0
+-6rXp3zJ3kc__8,audio_time,"(637,)",True,0.0,0.0
+-6rXp3zJ3kc__8,audio_cells,"(637, 2)",True,0.0,0.0
+-6rXp3zJ3kc__8,audio_voiced,"(637,)",True,0.0,0.0
+-6rXp3zJ3kc__8,bert_token_ids,"(40,)",True,0.0,0.0
+-6rXp3zJ3kc__8,bert_word_membership,"(34, 40)",True,0.0,0.0
+-6rXp3zJ3kc__8,bert_char_offsets,"(40, 2)",True,0.0,0.0
+-6rXp3zJ3kc__8,scene_native,"(128, 512)",True,0.0,0.0
+-6rXp3zJ3kc__8,expression_native,"(128, 52)",True,0.0,0.0
+-6rXp3zJ3kc__8,expression_valid,"(128,)",True,0.0,0.0
+-6rXp3zJ3kc__8,vision_time,"(128,)",True,0.0,0.0
+-6rXp3zJ3kc__8,vision_cells,"(128, 2)",True,0.0,0.0
+-6rXp3zJ3kc__8,vision_frame_index,"(128,)",True,0.0,0.0
+-6rXp3zJ3kc__8,vision_bbox,"(128, 4)",True,0.0,0.0
+-6rXp3zJ3kc__8,recovery_route,"(128,)",True,0.0,0.0
+-6rXp3zJ3kc__8,alignment_supported,"(34,)",True,0.0,0.0
+-6rXp3zJ3kc__8,ctc_cells,"(636, 2)",True,0.0,0.0
+-6rXp3zJ3kc__8,word_time_membership,"(34, 636)",True,0.0,0.0
+-6rXp3zJ3kc__8,word_start_quantiles,"(34, 3)",True,0.0,0.0
+-6rXp3zJ3kc__8,word_end_quantiles,"(34, 3)",True,0.0,0.0
+-6rXp3zJ3kc__8,word_audio,"(34, 97)",True,0.0,0.0
+-6rXp3zJ3kc__8,word_audio_dim_mask,"(34, 97)",True,0.0,0.0
+-6rXp3zJ3kc__8,word_audio_effective_seconds,"(34,)",True,0.0,0.0
+-6rXp3zJ3kc__8,word_voiced_effective_seconds,"(34,)",True,0.0,0.0
+-6rXp3zJ3kc__8,word_expression,"(34, 52)",True,0.0,0.0
+-6rXp3zJ3kc__8,word_expression_mask,"(34,)",True,0.0,0.0
+-6rXp3zJ3kc__8,word_scene,"(34, 512)",True,0.0,0.0
+-6rXp3zJ3kc__8,word_scene_mask,"(34,)",True,0.0,0.0
+-6rXp3zJ3kc__8,ctc_word_score,"(34,)",True,0.0,0.0
+-6rXp3zJ3kc__8,asr_exact_match,"(34,)",True,0.0,0.0
+-6rXp3zJ3kc__8,asr_time_gap_s,"(34,)",True,0.0,0.0
+-6rXp3zJ3kc__8,asr_word_probability,"(34,)",True,0.0,0.0
+-9y-fZ3swSY__0,text,"(22, 768)",True,0.0,0.0
+-9y-fZ3swSY__0,text_mask,"(22,)",True,0.0,0.0
+-9y-fZ3swSY__0,audio_native,"(338, 47)",True,0.0,0.0
+-9y-fZ3swSY__0,audio_time,"(338,)",True,0.0,0.0
+-9y-fZ3swSY__0,audio_cells,"(338, 2)",True,0.0,0.0
+-9y-fZ3swSY__0,audio_voiced,"(338,)",True,0.0,0.0
+-9y-fZ3swSY__0,bert_token_ids,"(30,)",True,0.0,0.0
+-9y-fZ3swSY__0,bert_word_membership,"(22, 30)",True,0.0,0.0
+-9y-fZ3swSY__0,bert_char_offsets,"(30, 2)",True,0.0,0.0
+-9y-fZ3swSY__0,scene_native,"(69, 512)",True,0.0,0.0
+-9y-fZ3swSY__0,expression_native,"(69, 52)",True,0.0,0.0
+-9y-fZ3swSY__0,expression_valid,"(69,)",True,0.0,0.0
+-9y-fZ3swSY__0,vision_time,"(69,)",True,0.0,0.0
+-9y-fZ3swSY__0,vision_cells,"(69, 2)",True,0.0,0.0
+-9y-fZ3swSY__0,vision_frame_index,"(69,)",True,0.0,0.0
+-9y-fZ3swSY__0,vision_bbox,"(69, 4)",True,0.0,0.0
+-9y-fZ3swSY__0,recovery_route,"(69,)",True,0.0,0.0
+-9y-fZ3swSY__0,alignment_supported,"(22,)",True,0.0,0.0
+-9y-fZ3swSY__0,ctc_cells,"(337, 2)",True,0.0,0.0
+-9y-fZ3swSY__0,word_time_membership,"(22, 337)",True,0.0,0.0
+-9y-fZ3swSY__0,word_start_quantiles,"(22, 3)",True,0.0,0.0
+-9y-fZ3swSY__0,word_end_quantiles,"(22, 3)",True,0.0,0.0
+-9y-fZ3swSY__0,word_audio,"(22, 97)",True,0.0,0.0
+-9y-fZ3swSY__0,word_audio_dim_mask,"(22, 97)",True,0.0,0.0
+-9y-fZ3swSY__0,word_audio_effective_seconds,"(22,)",True,0.0,0.0
+-9y-fZ3swSY__0,word_voiced_effective_seconds,"(22,)",True,0.0,0.0
+-9y-fZ3swSY__0,word_expression,"(22, 52)",True,0.0,0.0
+-9y-fZ3swSY__0,word_expression_mask,"(22,)",True,0.0,0.0
+-9y-fZ3swSY__0,word_scene,"(22, 512)",True,0.0,0.0
+-9y-fZ3swSY__0,word_scene_mask,"(22,)",True,0.0,0.0
+-9y-fZ3swSY__0,ctc_word_score,"(22,)",True,0.0,0.0
+-9y-fZ3swSY__0,asr_exact_match,"(22,)",True,0.0,0.0
+-9y-fZ3swSY__0,asr_time_gap_s,"(22,)",True,0.0,0.0
+-9y-fZ3swSY__0,asr_word_probability,"(22,)",True,0.0,0.0
+-9y-fZ3swSY__4,text,"(11, 768)",True,0.0,0.0
+-9y-fZ3swSY__4,text_mask,"(11,)",True,0.0,0.0
+-9y-fZ3swSY__4,audio_native,"(134, 47)",True,0.0,0.0
+-9y-fZ3swSY__4,audio_time,"(134,)",True,0.0,0.0
+-9y-fZ3swSY__4,audio_cells,"(134, 2)",True,0.0,0.0
+-9y-fZ3swSY__4,audio_voiced,"(134,)",True,0.0,0.0
+-9y-fZ3swSY__4,bert_token_ids,"(13,)",True,0.0,0.0
+-9y-fZ3swSY__4,bert_word_membership,"(11, 13)",True,0.0,0.0
+-9y-fZ3swSY__4,bert_char_offsets,"(13, 2)",True,0.0,0.0
+-9y-fZ3swSY__4,scene_native,"(28, 512)",True,0.0,0.0
+-9y-fZ3swSY__4,expression_native,"(28, 52)",True,0.0,0.0
+-9y-fZ3swSY__4,expression_valid,"(28,)",True,0.0,0.0
+-9y-fZ3swSY__4,vision_time,"(28,)",True,0.0,0.0
+-9y-fZ3swSY__4,vision_cells,"(28, 2)",True,0.0,0.0
+-9y-fZ3swSY__4,vision_frame_index,"(28,)",True,0.0,0.0
+-9y-fZ3swSY__4,vision_bbox,"(28, 4)",True,0.0,0.0
+-9y-fZ3swSY__4,recovery_route,"(28,)",True,0.0,0.0
+-9y-fZ3swSY__4,alignment_supported,"(11,)",True,0.0,0.0
+-9y-fZ3swSY__4,ctc_cells,"(132, 2)",True,0.0,0.0
+-9y-fZ3swSY__4,word_time_membership,"(11, 132)",True,0.0,0.0
+-9y-fZ3swSY__4,word_start_quantiles,"(11, 3)",True,0.0,0.0
+-9y-fZ3swSY__4,word_end_quantiles,"(11, 3)",True,0.0,0.0
+-9y-fZ3swSY__4,word_audio,"(11, 97)",True,0.0,0.0
+-9y-fZ3swSY__4,word_audio_dim_mask,"(11, 97)",True,0.0,0.0
+-9y-fZ3swSY__4,word_audio_effective_seconds,"(11,)",True,0.0,0.0
+-9y-fZ3swSY__4,word_voiced_effective_seconds,"(11,)",True,0.0,0.0
+-9y-fZ3swSY__4,word_expression,"(11, 52)",True,0.0,0.0
+-9y-fZ3swSY__4,word_expression_mask,"(11,)",True,0.0,0.0
+-9y-fZ3swSY__4,word_scene,"(11, 512)",True,0.0,0.0
+-9y-fZ3swSY__4,word_scene_mask,"(11,)",True,0.0,0.0
+-9y-fZ3swSY__4,ctc_word_score,"(11,)",True,0.0,0.0
+-9y-fZ3swSY__4,asr_exact_match,"(11,)",True,0.0,0.0
+-9y-fZ3swSY__4,asr_time_gap_s,"(11,)",True,0.0,0.0
+-9y-fZ3swSY__4,asr_word_probability,"(11,)",True,0.0,0.0
+-9y-fZ3swSY__8,text,"(12, 768)",True,0.0,0.0
+-9y-fZ3swSY__8,text_mask,"(12,)",True,0.0,0.0
+-9y-fZ3swSY__8,audio_native,"(246, 47)",True,0.0,0.0
+-9y-fZ3swSY__8,audio_time,"(246,)",True,0.0,0.0
+-9y-fZ3swSY__8,audio_cells,"(246, 2)",True,0.0,0.0
+-9y-fZ3swSY__8,audio_voiced,"(246,)",True,0.0,0.0
+-9y-fZ3swSY__8,bert_token_ids,"(16,)",True,0.0,0.0
+-9y-fZ3swSY__8,bert_word_membership,"(12, 16)",True,0.0,0.0
+-9y-fZ3swSY__8,bert_char_offsets,"(16, 2)",True,0.0,0.0
+-9y-fZ3swSY__8,scene_native,"(50, 512)",True,0.0,0.0
+-9y-fZ3swSY__8,expression_native,"(50, 52)",True,0.0,0.0
+-9y-fZ3swSY__8,expression_valid,"(50,)",True,0.0,0.0
+-9y-fZ3swSY__8,vision_time,"(50,)",True,0.0,0.0
+-9y-fZ3swSY__8,vision_cells,"(50, 2)",True,0.0,0.0
+-9y-fZ3swSY__8,vision_frame_index,"(50,)",True,0.0,0.0
+-9y-fZ3swSY__8,vision_bbox,"(50, 4)",True,0.0,0.0
+-9y-fZ3swSY__8,recovery_route,"(50,)",True,0.0,0.0
+-9y-fZ3swSY__8,alignment_supported,"(12,)",True,0.0,0.0
+-9y-fZ3swSY__8,ctc_cells,"(245, 2)",True,0.0,0.0
+-9y-fZ3swSY__8,word_time_membership,"(12, 245)",True,0.0,0.0
+-9y-fZ3swSY__8,word_start_quantiles,"(12, 3)",True,0.0,0.0
+-9y-fZ3swSY__8,word_end_quantiles,"(12, 3)",True,0.0,0.0
+-9y-fZ3swSY__8,word_audio,"(12, 97)",True,0.0,0.0
+-9y-fZ3swSY__8,word_audio_dim_mask,"(12, 97)",True,0.0,0.0
+-9y-fZ3swSY__8,word_audio_effective_seconds,"(12,)",True,0.0,0.0
+-9y-fZ3swSY__8,word_voiced_effective_seconds,"(12,)",True,0.0,0.0
+-9y-fZ3swSY__8,word_expression,"(12, 52)",True,0.0,0.0
+-9y-fZ3swSY__8,word_expression_mask,"(12,)",True,0.0,0.0
+-9y-fZ3swSY__8,word_scene,"(12, 512)",True,0.0,0.0
+-9y-fZ3swSY__8,word_scene_mask,"(12,)",True,0.0,0.0
+-9y-fZ3swSY__8,ctc_word_score,"(12,)",True,0.0,0.0
+-9y-fZ3swSY__8,asr_exact_match,"(12,)",True,0.0,0.0
+-9y-fZ3swSY__8,asr_time_gap_s,"(12,)",True,0.0,0.0
+-9y-fZ3swSY__8,asr_word_probability,"(12,)",True,0.0,0.0
+-a55Q6RWvTA__3,text,"(65, 768)",True,0.0,0.0
+-a55Q6RWvTA__3,text_mask,"(65,)",True,0.0,0.0
+-a55Q6RWvTA__3,audio_native,"(1105, 47)",True,0.0,0.0
+-a55Q6RWvTA__3,audio_time,"(1105,)",True,0.0,0.0
+-a55Q6RWvTA__3,audio_cells,"(1105, 2)",True,0.0,0.0
+-a55Q6RWvTA__3,audio_voiced,"(1105,)",True,0.0,0.0
+-a55Q6RWvTA__3,bert_token_ids,"(84,)",True,0.0,0.0
+-a55Q6RWvTA__3,bert_word_membership,"(65, 84)",True,0.0,0.0
+-a55Q6RWvTA__3,bert_char_offsets,"(84, 2)",True,0.0,0.0
+-a55Q6RWvTA__3,scene_native,"(222, 512)",True,0.0,0.0
+-a55Q6RWvTA__3,expression_native,"(222, 52)",True,0.0,0.0
+-a55Q6RWvTA__3,expression_valid,"(222,)",True,0.0,0.0
+-a55Q6RWvTA__3,vision_time,"(222,)",True,0.0,0.0
+-a55Q6RWvTA__3,vision_cells,"(222, 2)",True,0.0,0.0
+-a55Q6RWvTA__3,vision_frame_index,"(222,)",True,0.0,0.0
+-a55Q6RWvTA__3,vision_bbox,"(222, 4)",True,0.0,0.0
+-a55Q6RWvTA__3,recovery_route,"(222,)",True,0.0,0.0
+-a55Q6RWvTA__3,alignment_supported,"(65,)",True,0.0,0.0
+-a55Q6RWvTA__3,ctc_cells,"(1103, 2)",True,0.0,0.0
+-a55Q6RWvTA__3,word_time_membership,"(65, 1103)",True,0.0,0.0
+-a55Q6RWvTA__3,word_start_quantiles,"(65, 3)",True,0.0,0.0
+-a55Q6RWvTA__3,word_end_quantiles,"(65, 3)",True,0.0,0.0
+-a55Q6RWvTA__3,word_audio,"(65, 97)",True,0.0,0.0
+-a55Q6RWvTA__3,word_audio_dim_mask,"(65, 97)",True,0.0,0.0
+-a55Q6RWvTA__3,word_audio_effective_seconds,"(65,)",True,0.0,0.0
+-a55Q6RWvTA__3,word_voiced_effective_seconds,"(65,)",True,0.0,0.0
+-a55Q6RWvTA__3,word_expression,"(65, 52)",True,0.0,0.0
+-a55Q6RWvTA__3,word_expression_mask,"(65,)",True,0.0,0.0
+-a55Q6RWvTA__3,word_scene,"(65, 512)",True,0.0,0.0
+-a55Q6RWvTA__3,word_scene_mask,"(65,)",True,0.0,0.0
+-a55Q6RWvTA__3,ctc_word_score,"(65,)",True,0.0,0.0
+-a55Q6RWvTA__3,asr_exact_match,"(65,)",True,0.0,0.0
+-a55Q6RWvTA__3,asr_time_gap_s,"(65,)",True,0.0,0.0
+-a55Q6RWvTA__3,asr_word_probability,"(65,)",True,0.0,0.0
+-aNfi7CP8vM__7,text,"(18, 768)",True,0.0,0.0
+-aNfi7CP8vM__7,text_mask,"(18,)",True,0.0,0.0
+-aNfi7CP8vM__7,audio_native,"(427, 47)",True,0.0,0.0
+-aNfi7CP8vM__7,audio_time,"(427,)",True,0.0,0.0
+-aNfi7CP8vM__7,audio_cells,"(427, 2)",True,0.0,0.0
+-aNfi7CP8vM__7,audio_voiced,"(427,)",True,0.0,0.0
+-aNfi7CP8vM__7,bert_token_ids,"(25,)",True,0.0,0.0
+-aNfi7CP8vM__7,bert_word_membership,"(18, 25)",True,0.0,0.0
+-aNfi7CP8vM__7,bert_char_offsets,"(25, 2)",True,0.0,0.0
+-aNfi7CP8vM__7,scene_native,"(87, 512)",True,0.0,0.0
+-aNfi7CP8vM__7,expression_native,"(87, 52)",True,0.0,0.0
+-aNfi7CP8vM__7,expression_valid,"(87,)",True,0.0,0.0
+-aNfi7CP8vM__7,vision_time,"(87,)",True,0.0,0.0
+-aNfi7CP8vM__7,vision_cells,"(87, 2)",True,0.0,0.0
+-aNfi7CP8vM__7,vision_frame_index,"(87,)",True,0.0,0.0
+-aNfi7CP8vM__7,vision_bbox,"(87, 4)",True,0.0,0.0
+-aNfi7CP8vM__7,recovery_route,"(87,)",True,0.0,0.0
+-aNfi7CP8vM__7,alignment_supported,"(18,)",True,0.0,0.0
+-aNfi7CP8vM__7,ctc_cells,"(426, 2)",True,0.0,0.0
+-aNfi7CP8vM__7,word_time_membership,"(18, 426)",True,0.0,0.0
+-aNfi7CP8vM__7,word_start_quantiles,"(18, 3)",True,0.0,0.0
+-aNfi7CP8vM__7,word_end_quantiles,"(18, 3)",True,0.0,0.0
+-aNfi7CP8vM__7,word_audio,"(18, 97)",True,0.0,0.0
+-aNfi7CP8vM__7,word_audio_dim_mask,"(18, 97)",True,0.0,0.0
+-aNfi7CP8vM__7,word_audio_effective_seconds,"(18,)",True,0.0,0.0
+-aNfi7CP8vM__7,word_voiced_effective_seconds,"(18,)",True,0.0,0.0
+-aNfi7CP8vM__7,word_expression,"(18, 52)",True,0.0,0.0
+-aNfi7CP8vM__7,word_expression_mask,"(18,)",True,0.0,0.0
+-aNfi7CP8vM__7,word_scene,"(18, 512)",True,0.0,0.0
+-aNfi7CP8vM__7,word_scene_mask,"(18,)",True,0.0,0.0
+-aNfi7CP8vM__7,ctc_word_score,"(18,)",True,0.0,0.0
+-aNfi7CP8vM__7,asr_exact_match,"(18,)",True,0.0,0.0
+-aNfi7CP8vM__7,asr_time_gap_s,"(18,)",True,0.0,0.0
+-aNfi7CP8vM__7,asr_word_probability,"(18,)",True,0.0,0.0
+-aqamKhZ1Ec__0,text,"(17, 768)",True,0.0,0.0
+-aqamKhZ1Ec__0,text_mask,"(17,)",True,0.0,0.0
+-aqamKhZ1Ec__0,audio_native,"(545, 47)",True,0.0,0.0
+-aqamKhZ1Ec__0,audio_time,"(545,)",True,0.0,0.0
+-aqamKhZ1Ec__0,audio_cells,"(545, 2)",True,0.0,0.0
+-aqamKhZ1Ec__0,audio_voiced,"(545,)",True,0.0,0.0
+-aqamKhZ1Ec__0,bert_token_ids,"(18,)",True,0.0,0.0
+-aqamKhZ1Ec__0,bert_word_membership,"(17, 18)",True,0.0,0.0
+-aqamKhZ1Ec__0,bert_char_offsets,"(18, 2)",True,0.0,0.0
+-aqamKhZ1Ec__0,scene_native,"(110, 512)",True,0.0,0.0
+-aqamKhZ1Ec__0,expression_native,"(110, 52)",True,0.0,0.0
+-aqamKhZ1Ec__0,expression_valid,"(110,)",True,0.0,0.0
+-aqamKhZ1Ec__0,vision_time,"(110,)",True,0.0,0.0
+-aqamKhZ1Ec__0,vision_cells,"(110, 2)",True,0.0,0.0
+-aqamKhZ1Ec__0,vision_frame_index,"(110,)",True,0.0,0.0
+-aqamKhZ1Ec__0,vision_bbox,"(110, 4)",True,0.0,0.0
+-aqamKhZ1Ec__0,recovery_route,"(110,)",True,0.0,0.0
+-aqamKhZ1Ec__0,alignment_supported,"(17,)",True,0.0,0.0
+-aqamKhZ1Ec__0,ctc_cells,"(544, 2)",True,0.0,0.0
+-aqamKhZ1Ec__0,word_time_membership,"(17, 544)",True,0.0,0.0
+-aqamKhZ1Ec__0,word_start_quantiles,"(17, 3)",True,0.0,0.0
+-aqamKhZ1Ec__0,word_end_quantiles,"(17, 3)",True,0.0,0.0
+-aqamKhZ1Ec__0,word_audio,"(17, 97)",True,0.0,0.0
+-aqamKhZ1Ec__0,word_audio_dim_mask,"(17, 97)",True,0.0,0.0
+-aqamKhZ1Ec__0,word_audio_effective_seconds,"(17,)",True,0.0,0.0
+-aqamKhZ1Ec__0,word_voiced_effective_seconds,"(17,)",True,0.0,0.0
+-aqamKhZ1Ec__0,word_expression,"(17, 52)",True,0.0,0.0
+-aqamKhZ1Ec__0,word_expression_mask,"(17,)",True,0.0,0.0
+-aqamKhZ1Ec__0,word_scene,"(17, 512)",True,0.0,0.0
+-aqamKhZ1Ec__0,word_scene_mask,"(17,)",True,0.0,0.0
+-aqamKhZ1Ec__0,ctc_word_score,"(17,)",True,0.0,0.0
+-aqamKhZ1Ec__0,asr_exact_match,"(17,)",True,0.0,0.0
+-aqamKhZ1Ec__0,asr_time_gap_s,"(17,)",True,0.0,0.0
+-aqamKhZ1Ec__0,asr_word_probability,"(17,)",True,0.0,0.0
+-AUZQgSxyPQ__2,text,"(41, 768)",True,0.0,0.0
+-AUZQgSxyPQ__2,text_mask,"(41,)",True,0.0,0.0
+-AUZQgSxyPQ__2,audio_native,"(1121, 47)",True,0.0,0.0
+-AUZQgSxyPQ__2,audio_time,"(1121,)",True,0.0,0.0
+-AUZQgSxyPQ__2,audio_cells,"(1121, 2)",True,0.0,0.0
+-AUZQgSxyPQ__2,audio_voiced,"(1121,)",True,0.0,0.0
+-AUZQgSxyPQ__2,bert_token_ids,"(58,)",True,0.0,0.0
+-AUZQgSxyPQ__2,bert_word_membership,"(41, 58)",True,0.0,0.0
+-AUZQgSxyPQ__2,bert_char_offsets,"(58, 2)",True,0.0,0.0
+-AUZQgSxyPQ__2,scene_native,"(225, 512)",True,0.0,0.0
+-AUZQgSxyPQ__2,expression_native,"(225, 52)",True,0.0,0.0
+-AUZQgSxyPQ__2,expression_valid,"(225,)",True,0.0,0.0
+-AUZQgSxyPQ__2,vision_time,"(225,)",True,0.0,0.0
+-AUZQgSxyPQ__2,vision_cells,"(225, 2)",True,0.0,0.0
+-AUZQgSxyPQ__2,vision_frame_index,"(225,)",True,0.0,0.0
+-AUZQgSxyPQ__2,vision_bbox,"(225, 4)",True,0.0,0.0
+-AUZQgSxyPQ__2,recovery_route,"(225,)",True,0.0,0.0
+-AUZQgSxyPQ__2,alignment_supported,"(41,)",True,0.0,0.0
+-AUZQgSxyPQ__2,ctc_cells,"(1119, 2)",True,0.0,0.0
+-AUZQgSxyPQ__2,word_time_membership,"(41, 1119)",True,0.0,0.0
+-AUZQgSxyPQ__2,word_start_quantiles,"(41, 3)",True,0.0,0.0
+-AUZQgSxyPQ__2,word_end_quantiles,"(41, 3)",True,0.0,0.0
+-AUZQgSxyPQ__2,word_audio,"(41, 97)",True,0.0,0.0
+-AUZQgSxyPQ__2,word_audio_dim_mask,"(41, 97)",True,0.0,0.0
+-AUZQgSxyPQ__2,word_audio_effective_seconds,"(41,)",True,0.0,0.0
+-AUZQgSxyPQ__2,word_voiced_effective_seconds,"(41,)",True,0.0,0.0
+-AUZQgSxyPQ__2,word_expression,"(41, 52)",True,0.0,0.0
+-AUZQgSxyPQ__2,word_expression_mask,"(41,)",True,0.0,0.0
+-AUZQgSxyPQ__2,word_scene,"(41, 512)",True,0.0,0.0
+-AUZQgSxyPQ__2,word_scene_mask,"(41,)",True,0.0,0.0
+-AUZQgSxyPQ__2,ctc_word_score,"(41,)",True,0.0,0.0
+-AUZQgSxyPQ__2,asr_exact_match,"(41,)",True,0.0,0.0
+-AUZQgSxyPQ__2,asr_time_gap_s,"(41,)",True,0.0,0.0
+-AUZQgSxyPQ__2,asr_word_probability,"(41,)",True,0.0,0.0
+-dxfTGcXJoc__0,text,"(45, 768)",True,0.0,0.0
+-dxfTGcXJoc__0,text_mask,"(45,)",True,0.0,0.0
+-dxfTGcXJoc__0,audio_native,"(1021, 47)",True,0.0,0.0
+-dxfTGcXJoc__0,audio_time,"(1021,)",True,0.0,0.0
+-dxfTGcXJoc__0,audio_cells,"(1021, 2)",True,0.0,0.0
+-dxfTGcXJoc__0,audio_voiced,"(1021,)",True,0.0,0.0
+-dxfTGcXJoc__0,bert_token_ids,"(62,)",True,0.0,0.0
+-dxfTGcXJoc__0,bert_word_membership,"(45, 62)",True,0.0,0.0
+-dxfTGcXJoc__0,bert_char_offsets,"(62, 2)",True,0.0,0.0
+-dxfTGcXJoc__0,scene_native,"(206, 512)",True,0.0,0.0
+-dxfTGcXJoc__0,expression_native,"(206, 52)",True,0.0,0.0
+-dxfTGcXJoc__0,expression_valid,"(206,)",True,0.0,0.0
+-dxfTGcXJoc__0,vision_time,"(206,)",True,0.0,0.0
+-dxfTGcXJoc__0,vision_cells,"(206, 2)",True,0.0,0.0
+-dxfTGcXJoc__0,vision_frame_index,"(206,)",True,0.0,0.0
+-dxfTGcXJoc__0,vision_bbox,"(206, 4)",True,0.0,0.0
+-dxfTGcXJoc__0,recovery_route,"(206,)",True,0.0,0.0
+-dxfTGcXJoc__0,alignment_supported,"(45,)",True,0.0,0.0
+-dxfTGcXJoc__0,ctc_cells,"(1020, 2)",True,0.0,0.0
+-dxfTGcXJoc__0,word_time_membership,"(45, 1020)",True,0.0,0.0
+-dxfTGcXJoc__0,word_start_quantiles,"(45, 3)",True,0.0,0.0
+-dxfTGcXJoc__0,word_end_quantiles,"(45, 3)",True,0.0,0.0
+-dxfTGcXJoc__0,word_audio,"(45, 97)",True,0.0,0.0
+-dxfTGcXJoc__0,word_audio_dim_mask,"(45, 97)",True,0.0,0.0
+-dxfTGcXJoc__0,word_audio_effective_seconds,"(45,)",True,0.0,0.0
+-dxfTGcXJoc__0,word_voiced_effective_seconds,"(45,)",True,0.0,0.0
+-dxfTGcXJoc__0,word_expression,"(45, 52)",True,0.0,0.0
+-dxfTGcXJoc__0,word_expression_mask,"(45,)",True,0.0,0.0
+-dxfTGcXJoc__0,word_scene,"(45, 512)",True,0.0,0.0
+-dxfTGcXJoc__0,word_scene_mask,"(45,)",True,0.0,0.0
+-dxfTGcXJoc__0,ctc_word_score,"(45,)",True,0.0,0.0
+-dxfTGcXJoc__0,asr_exact_match,"(45,)",True,0.0,0.0
+-dxfTGcXJoc__0,asr_time_gap_s,"(45,)",True,0.0,0.0
+-dxfTGcXJoc__0,asr_word_probability,"(45,)",True,0.0,0.0
+-dxfTGcXJoc__1,text,"(38, 768)",True,0.0,0.0
+-dxfTGcXJoc__1,text_mask,"(38,)",True,0.0,0.0
+-dxfTGcXJoc__1,audio_native,"(801, 47)",True,0.0,0.0
+-dxfTGcXJoc__1,audio_time,"(801,)",True,0.0,0.0
+-dxfTGcXJoc__1,audio_cells,"(801, 2)",True,0.0,0.0
+-dxfTGcXJoc__1,audio_voiced,"(801,)",True,0.0,0.0
+-dxfTGcXJoc__1,bert_token_ids,"(44,)",True,0.0,0.0
+-dxfTGcXJoc__1,bert_word_membership,"(38, 44)",True,0.0,0.0
+-dxfTGcXJoc__1,bert_char_offsets,"(44, 2)",True,0.0,0.0
+-dxfTGcXJoc__1,scene_native,"(162, 512)",True,0.0,0.0
+-dxfTGcXJoc__1,expression_native,"(162, 52)",True,0.0,0.0
+-dxfTGcXJoc__1,expression_valid,"(162,)",True,0.0,0.0
+-dxfTGcXJoc__1,vision_time,"(162,)",True,0.0,0.0
+-dxfTGcXJoc__1,vision_cells,"(162, 2)",True,0.0,0.0
+-dxfTGcXJoc__1,vision_frame_index,"(162,)",True,0.0,0.0
+-dxfTGcXJoc__1,vision_bbox,"(162, 4)",True,0.0,0.0
+-dxfTGcXJoc__1,recovery_route,"(162,)",True,0.0,0.0
+-dxfTGcXJoc__1,alignment_supported,"(38,)",True,0.0,0.0
+-dxfTGcXJoc__1,ctc_cells,"(800, 2)",True,0.0,0.0
+-dxfTGcXJoc__1,word_time_membership,"(38, 800)",True,0.0,0.0
+-dxfTGcXJoc__1,word_start_quantiles,"(38, 3)",True,0.0,0.0
+-dxfTGcXJoc__1,word_end_quantiles,"(38, 3)",True,0.0,0.0
+-dxfTGcXJoc__1,word_audio,"(38, 97)",True,0.0,0.0
+-dxfTGcXJoc__1,word_audio_dim_mask,"(38, 97)",True,0.0,0.0
+-dxfTGcXJoc__1,word_audio_effective_seconds,"(38,)",True,0.0,0.0
+-dxfTGcXJoc__1,word_voiced_effective_seconds,"(38,)",True,0.0,0.0
+-dxfTGcXJoc__1,word_expression,"(38, 52)",True,0.0,0.0
+-dxfTGcXJoc__1,word_expression_mask,"(38,)",True,0.0,0.0
+-dxfTGcXJoc__1,word_scene,"(38, 512)",True,0.0,0.0
+-dxfTGcXJoc__1,word_scene_mask,"(38,)",True,0.0,0.0
+-dxfTGcXJoc__1,ctc_word_score,"(38,)",True,0.0,0.0
+-dxfTGcXJoc__1,asr_exact_match,"(38,)",True,0.0,0.0
+-dxfTGcXJoc__1,asr_time_gap_s,"(38,)",True,0.0,0.0
+-dxfTGcXJoc__1,asr_word_probability,"(38,)",True,0.0,0.0
+-dxfTGcXJoc__2,text,"(37, 768)",True,0.0,0.0
+-dxfTGcXJoc__2,text_mask,"(37,)",True,0.0,0.0
+-dxfTGcXJoc__2,audio_native,"(832, 47)",True,0.0,0.0
+-dxfTGcXJoc__2,audio_time,"(832,)",True,0.0,0.0
+-dxfTGcXJoc__2,audio_cells,"(832, 2)",True,0.0,0.0
+-dxfTGcXJoc__2,audio_voiced,"(832,)",True,0.0,0.0
+-dxfTGcXJoc__2,bert_token_ids,"(42,)",True,0.0,0.0
+-dxfTGcXJoc__2,bert_word_membership,"(37, 42)",True,0.0,0.0
+-dxfTGcXJoc__2,bert_char_offsets,"(42, 2)",True,0.0,0.0
+-dxfTGcXJoc__2,scene_native,"(167, 512)",True,0.0,0.0
+-dxfTGcXJoc__2,expression_native,"(167, 52)",True,0.0,0.0
+-dxfTGcXJoc__2,expression_valid,"(167,)",True,0.0,0.0
+-dxfTGcXJoc__2,vision_time,"(167,)",True,0.0,0.0
+-dxfTGcXJoc__2,vision_cells,"(167, 2)",True,0.0,0.0
+-dxfTGcXJoc__2,vision_frame_index,"(167,)",True,0.0,0.0
+-dxfTGcXJoc__2,vision_bbox,"(167, 4)",True,0.0,0.0
+-dxfTGcXJoc__2,recovery_route,"(167,)",True,0.0,0.0
+-dxfTGcXJoc__2,alignment_supported,"(37,)",True,0.0,0.0
+-dxfTGcXJoc__2,ctc_cells,"(831, 2)",True,0.0,0.0
+-dxfTGcXJoc__2,word_time_membership,"(37, 831)",True,0.0,0.0
+-dxfTGcXJoc__2,word_start_quantiles,"(37, 3)",True,0.0,0.0
+-dxfTGcXJoc__2,word_end_quantiles,"(37, 3)",True,0.0,0.0
+-dxfTGcXJoc__2,word_audio,"(37, 97)",True,0.0,0.0
+-dxfTGcXJoc__2,word_audio_dim_mask,"(37, 97)",True,0.0,0.0
+-dxfTGcXJoc__2,word_audio_effective_seconds,"(37,)",True,0.0,0.0
+-dxfTGcXJoc__2,word_voiced_effective_seconds,"(37,)",True,0.0,0.0
+-dxfTGcXJoc__2,word_expression,"(37, 52)",True,0.0,0.0
+-dxfTGcXJoc__2,word_expression_mask,"(37,)",True,0.0,0.0
+-dxfTGcXJoc__2,word_scene,"(37, 512)",True,0.0,0.0
+-dxfTGcXJoc__2,word_scene_mask,"(37,)",True,0.0,0.0
+-dxfTGcXJoc__2,ctc_word_score,"(37,)",True,0.0,0.0
+-dxfTGcXJoc__2,asr_exact_match,"(37,)",True,0.0,0.0
+-dxfTGcXJoc__2,asr_time_gap_s,"(37,)",True,0.0,0.0
+-dxfTGcXJoc__2,asr_word_probability,"(37,)",True,0.0,0.0
+-dxfTGcXJoc__6,text,"(30, 768)",True,0.0,0.0
+-dxfTGcXJoc__6,text_mask,"(30,)",True,0.0,0.0
+-dxfTGcXJoc__6,audio_native,"(632, 47)",True,0.0,0.0
+-dxfTGcXJoc__6,audio_time,"(632,)",True,0.0,0.0
+-dxfTGcXJoc__6,audio_cells,"(632, 2)",True,0.0,0.0
+-dxfTGcXJoc__6,audio_voiced,"(632,)",True,0.0,0.0
+-dxfTGcXJoc__6,bert_token_ids,"(34,)",True,0.0,0.0
+-dxfTGcXJoc__6,bert_word_membership,"(30, 34)",True,0.0,0.0
+-dxfTGcXJoc__6,bert_char_offsets,"(34, 2)",True,0.0,0.0
+-dxfTGcXJoc__6,scene_native,"(127, 512)",True,0.0,0.0
+-dxfTGcXJoc__6,expression_native,"(127, 52)",True,0.0,0.0
+-dxfTGcXJoc__6,expression_valid,"(127,)",True,0.0,0.0
+-dxfTGcXJoc__6,vision_time,"(127,)",True,0.0,0.0
+-dxfTGcXJoc__6,vision_cells,"(127, 2)",True,0.0,0.0
+-dxfTGcXJoc__6,vision_frame_index,"(127,)",True,0.0,0.0
+-dxfTGcXJoc__6,vision_bbox,"(127, 4)",True,0.0,0.0
+-dxfTGcXJoc__6,recovery_route,"(127,)",True,0.0,0.0
+-dxfTGcXJoc__6,alignment_supported,"(30,)",True,0.0,0.0
+-dxfTGcXJoc__6,ctc_cells,"(631, 2)",True,0.0,0.0
+-dxfTGcXJoc__6,word_time_membership,"(30, 631)",True,0.0,0.0
+-dxfTGcXJoc__6,word_start_quantiles,"(30, 3)",True,0.0,0.0
+-dxfTGcXJoc__6,word_end_quantiles,"(30, 3)",True,0.0,0.0
+-dxfTGcXJoc__6,word_audio,"(30, 97)",True,0.0,0.0
+-dxfTGcXJoc__6,word_audio_dim_mask,"(30, 97)",True,0.0,0.0
+-dxfTGcXJoc__6,word_audio_effective_seconds,"(30,)",True,0.0,0.0
+-dxfTGcXJoc__6,word_voiced_effective_seconds,"(30,)",True,0.0,0.0
+-dxfTGcXJoc__6,word_expression,"(30, 52)",True,0.0,0.0
+-dxfTGcXJoc__6,word_expression_mask,"(30,)",True,0.0,0.0
+-dxfTGcXJoc__6,word_scene,"(30, 512)",True,0.0,0.0
+-dxfTGcXJoc__6,word_scene_mask,"(30,)",True,0.0,0.0
+-dxfTGcXJoc__6,ctc_word_score,"(30,)",True,0.0,0.0
+-dxfTGcXJoc__6,asr_exact_match,"(30,)",True,0.0,0.0
+-dxfTGcXJoc__6,asr_time_gap_s,"(30,)",True,0.0,0.0
+-dxfTGcXJoc__6,asr_word_probability,"(30,)",True,0.0,0.0
+-egA8-b7-3M__1,text,"(22, 768)",True,0.0,0.0
+-egA8-b7-3M__1,text_mask,"(22,)",True,0.0,0.0
+-egA8-b7-3M__1,audio_native,"(508, 47)",True,0.0,0.0
+-egA8-b7-3M__1,audio_time,"(508,)",True,0.0,0.0
+-egA8-b7-3M__1,audio_cells,"(508, 2)",True,0.0,0.0
+-egA8-b7-3M__1,audio_voiced,"(508,)",True,0.0,0.0
+-egA8-b7-3M__1,bert_token_ids,"(24,)",True,0.0,0.0
+-egA8-b7-3M__1,bert_word_membership,"(22, 24)",True,0.0,0.0
+-egA8-b7-3M__1,bert_char_offsets,"(24, 2)",True,0.0,0.0
+-egA8-b7-3M__1,scene_native,"(102, 512)",True,0.0,0.0
+-egA8-b7-3M__1,expression_native,"(102, 52)",True,0.0,0.0
+-egA8-b7-3M__1,expression_valid,"(102,)",True,0.0,0.0
+-egA8-b7-3M__1,vision_time,"(102,)",True,0.0,0.0
+-egA8-b7-3M__1,vision_cells,"(102, 2)",True,0.0,0.0
+-egA8-b7-3M__1,vision_frame_index,"(102,)",True,0.0,0.0
+-egA8-b7-3M__1,vision_bbox,"(102, 4)",True,0.0,0.0
+-egA8-b7-3M__1,recovery_route,"(102,)",True,0.0,0.0
+-egA8-b7-3M__1,alignment_supported,"(22,)",True,0.0,0.0
+-egA8-b7-3M__1,ctc_cells,"(507, 2)",True,0.0,0.0
+-egA8-b7-3M__1,word_time_membership,"(22, 507)",True,0.0,0.0
+-egA8-b7-3M__1,word_start_quantiles,"(22, 3)",True,0.0,0.0
+-egA8-b7-3M__1,word_end_quantiles,"(22, 3)",True,0.0,0.0
+-egA8-b7-3M__1,word_audio,"(22, 97)",True,0.0,0.0
+-egA8-b7-3M__1,word_audio_dim_mask,"(22, 97)",True,0.0,0.0
+-egA8-b7-3M__1,word_audio_effective_seconds,"(22,)",True,0.0,0.0
+-egA8-b7-3M__1,word_voiced_effective_seconds,"(22,)",True,0.0,0.0
+-egA8-b7-3M__1,word_expression,"(22, 52)",True,0.0,0.0
+-egA8-b7-3M__1,word_expression_mask,"(22,)",True,0.0,0.0
+-egA8-b7-3M__1,word_scene,"(22, 512)",True,0.0,0.0
+-egA8-b7-3M__1,word_scene_mask,"(22,)",True,0.0,0.0
+-egA8-b7-3M__1,ctc_word_score,"(22,)",True,0.0,0.0
+-egA8-b7-3M__1,asr_exact_match,"(22,)",True,0.0,0.0
+-egA8-b7-3M__1,asr_time_gap_s,"(22,)",True,0.0,0.0
+-egA8-b7-3M__1,asr_word_probability,"(22,)",True,0.0,0.0
+-egA8-b7-3M__13,text,"(11, 768)",True,0.0,0.0
+-egA8-b7-3M__13,text_mask,"(11,)",True,0.0,0.0
+-egA8-b7-3M__13,audio_native,"(202, 47)",True,0.0,0.0
+-egA8-b7-3M__13,audio_time,"(202,)",True,0.0,0.0
+-egA8-b7-3M__13,audio_cells,"(202, 2)",True,0.0,0.0
+-egA8-b7-3M__13,audio_voiced,"(202,)",True,0.0,0.0
+-egA8-b7-3M__13,bert_token_ids,"(18,)",True,0.0,0.0
+-egA8-b7-3M__13,bert_word_membership,"(11, 18)",True,0.0,0.0
+-egA8-b7-3M__13,bert_char_offsets,"(18, 2)",True,0.0,0.0
+-egA8-b7-3M__13,scene_native,"(42, 512)",True,0.0,0.0
+-egA8-b7-3M__13,expression_native,"(42, 52)",True,0.0,0.0
+-egA8-b7-3M__13,expression_valid,"(42,)",True,0.0,0.0
+-egA8-b7-3M__13,vision_time,"(42,)",True,0.0,0.0
+-egA8-b7-3M__13,vision_cells,"(42, 2)",True,0.0,0.0
+-egA8-b7-3M__13,vision_frame_index,"(42,)",True,0.0,0.0
+-egA8-b7-3M__13,vision_bbox,"(42, 4)",True,0.0,0.0
+-egA8-b7-3M__13,recovery_route,"(42,)",True,0.0,0.0
+-egA8-b7-3M__13,alignment_supported,"(11,)",True,0.0,0.0
+-egA8-b7-3M__13,ctc_cells,"(200, 2)",True,0.0,0.0
+-egA8-b7-3M__13,word_time_membership,"(11, 200)",True,0.0,0.0
+-egA8-b7-3M__13,word_start_quantiles,"(11, 3)",True,0.0,0.0
+-egA8-b7-3M__13,word_end_quantiles,"(11, 3)",True,0.0,0.0
+-egA8-b7-3M__13,word_audio,"(11, 97)",True,0.0,0.0
+-egA8-b7-3M__13,word_audio_dim_mask,"(11, 97)",True,0.0,0.0
+-egA8-b7-3M__13,word_audio_effective_seconds,"(11,)",True,0.0,0.0
+-egA8-b7-3M__13,word_voiced_effective_seconds,"(11,)",True,0.0,0.0
+-egA8-b7-3M__13,word_expression,"(11, 52)",True,0.0,0.0
+-egA8-b7-3M__13,word_expression_mask,"(11,)",True,0.0,0.0
+-egA8-b7-3M__13,word_scene,"(11, 512)",True,0.0,0.0
+-egA8-b7-3M__13,word_scene_mask,"(11,)",True,0.0,0.0
+-egA8-b7-3M__13,ctc_word_score,"(11,)",True,0.0,0.0
+-egA8-b7-3M__13,asr_exact_match,"(11,)",True,0.0,0.0
+-egA8-b7-3M__13,asr_time_gap_s,"(11,)",True,0.0,0.0
+-egA8-b7-3M__13,asr_word_probability,"(11,)",True,0.0,0.0
+-egA8-b7-3M__16,text,"(11, 768)",True,0.0,0.0
+-egA8-b7-3M__16,text_mask,"(11,)",True,0.0,0.0
+-egA8-b7-3M__16,audio_native,"(275, 47)",True,0.0,0.0
+-egA8-b7-3M__16,audio_time,"(275,)",True,0.0,0.0
+-egA8-b7-3M__16,audio_cells,"(275, 2)",True,0.0,0.0
+-egA8-b7-3M__16,audio_voiced,"(275,)",True,0.0,0.0
+-egA8-b7-3M__16,bert_token_ids,"(15,)",True,0.0,0.0
+-egA8-b7-3M__16,bert_word_membership,"(11, 15)",True,0.0,0.0
+-egA8-b7-3M__16,bert_char_offsets,"(15, 2)",True,0.0,0.0
+-egA8-b7-3M__16,scene_native,"(56, 512)",True,0.0,0.0
+-egA8-b7-3M__16,expression_native,"(56, 52)",True,0.0,0.0
+-egA8-b7-3M__16,expression_valid,"(56,)",True,0.0,0.0
+-egA8-b7-3M__16,vision_time,"(56,)",True,0.0,0.0
+-egA8-b7-3M__16,vision_cells,"(56, 2)",True,0.0,0.0
+-egA8-b7-3M__16,vision_frame_index,"(56,)",True,0.0,0.0
+-egA8-b7-3M__16,vision_bbox,"(56, 4)",True,0.0,0.0
+-egA8-b7-3M__16,recovery_route,"(56,)",True,0.0,0.0
+-egA8-b7-3M__16,alignment_supported,"(11,)",True,0.0,0.0
+-egA8-b7-3M__16,ctc_cells,"(273, 2)",True,0.0,0.0
+-egA8-b7-3M__16,word_time_membership,"(11, 273)",True,0.0,0.0
+-egA8-b7-3M__16,word_start_quantiles,"(11, 3)",True,0.0,0.0
+-egA8-b7-3M__16,word_end_quantiles,"(11, 3)",True,0.0,0.0
+-egA8-b7-3M__16,word_audio,"(11, 97)",True,0.0,0.0
+-egA8-b7-3M__16,word_audio_dim_mask,"(11, 97)",True,0.0,0.0
+-egA8-b7-3M__16,word_audio_effective_seconds,"(11,)",True,0.0,0.0
+-egA8-b7-3M__16,word_voiced_effective_seconds,"(11,)",True,0.0,0.0
+-egA8-b7-3M__16,word_expression,"(11, 52)",True,0.0,0.0
+-egA8-b7-3M__16,word_expression_mask,"(11,)",True,0.0,0.0
+-egA8-b7-3M__16,word_scene,"(11, 512)",True,0.0,0.0
+-egA8-b7-3M__16,word_scene_mask,"(11,)",True,0.0,0.0
+-egA8-b7-3M__16,ctc_word_score,"(11,)",True,0.0,0.0
+-egA8-b7-3M__16,asr_exact_match,"(11,)",True,0.0,0.0
+-egA8-b7-3M__16,asr_time_gap_s,"(11,)",True,0.0,0.0
+-egA8-b7-3M__16,asr_word_probability,"(11,)",True,0.0,0.0
+-egA8-b7-3M__17,text,"(16, 768)",True,0.0,0.0
+-egA8-b7-3M__17,text_mask,"(16,)",True,0.0,0.0
+-egA8-b7-3M__17,audio_native,"(355, 47)",True,0.0,0.0
+-egA8-b7-3M__17,audio_time,"(355,)",True,0.0,0.0
+-egA8-b7-3M__17,audio_cells,"(355, 2)",True,0.0,0.0
+-egA8-b7-3M__17,audio_voiced,"(355,)",True,0.0,0.0
+-egA8-b7-3M__17,bert_token_ids,"(21,)",True,0.0,0.0
+-egA8-b7-3M__17,bert_word_membership,"(16, 21)",True,0.0,0.0
+-egA8-b7-3M__17,bert_char_offsets,"(21, 2)",True,0.0,0.0
+-egA8-b7-3M__17,scene_native,"(72, 512)",True,0.0,0.0
+-egA8-b7-3M__17,expression_native,"(72, 52)",True,0.0,0.0
+-egA8-b7-3M__17,expression_valid,"(72,)",True,0.0,0.0
+-egA8-b7-3M__17,vision_time,"(72,)",True,0.0,0.0
+-egA8-b7-3M__17,vision_cells,"(72, 2)",True,0.0,0.0
+-egA8-b7-3M__17,vision_frame_index,"(72,)",True,0.0,0.0
+-egA8-b7-3M__17,vision_bbox,"(72, 4)",True,0.0,0.0
+-egA8-b7-3M__17,recovery_route,"(72,)",True,0.0,0.0
+-egA8-b7-3M__17,alignment_supported,"(16,)",True,0.0,0.0
+-egA8-b7-3M__17,ctc_cells,"(354, 2)",True,0.0,0.0
+-egA8-b7-3M__17,word_time_membership,"(16, 354)",True,0.0,0.0
+-egA8-b7-3M__17,word_start_quantiles,"(16, 3)",True,0.0,0.0
+-egA8-b7-3M__17,word_end_quantiles,"(16, 3)",True,0.0,0.0
+-egA8-b7-3M__17,word_audio,"(16, 97)",True,0.0,0.0
+-egA8-b7-3M__17,word_audio_dim_mask,"(16, 97)",True,0.0,0.0
+-egA8-b7-3M__17,word_audio_effective_seconds,"(16,)",True,0.0,0.0
+-egA8-b7-3M__17,word_voiced_effective_seconds,"(16,)",True,0.0,0.0
+-egA8-b7-3M__17,word_expression,"(16, 52)",True,0.0,0.0
+-egA8-b7-3M__17,word_expression_mask,"(16,)",True,0.0,0.0
+-egA8-b7-3M__17,word_scene,"(16, 512)",True,0.0,0.0
+-egA8-b7-3M__17,word_scene_mask,"(16,)",True,0.0,0.0
+-egA8-b7-3M__17,ctc_word_score,"(16,)",True,0.0,0.0
+-egA8-b7-3M__17,asr_exact_match,"(16,)",True,0.0,0.0
+-egA8-b7-3M__17,asr_time_gap_s,"(16,)",True,0.0,0.0
+-egA8-b7-3M__17,asr_word_probability,"(16,)",True,0.0,0.0
+-egA8-b7-3M__18,text,"(22, 768)",True,0.0,0.0
+-egA8-b7-3M__18,text_mask,"(22,)",True,0.0,0.0
+-egA8-b7-3M__18,audio_native,"(414, 47)",True,0.0,0.0
+-egA8-b7-3M__18,audio_time,"(414,)",True,0.0,0.0
+-egA8-b7-3M__18,audio_cells,"(414, 2)",True,0.0,0.0
+-egA8-b7-3M__18,audio_voiced,"(414,)",True,0.0,0.0
+-egA8-b7-3M__18,bert_token_ids,"(29,)",True,0.0,0.0
+-egA8-b7-3M__18,bert_word_membership,"(22, 29)",True,0.0,0.0
+-egA8-b7-3M__18,bert_char_offsets,"(29, 2)",True,0.0,0.0
+-egA8-b7-3M__18,scene_native,"(84, 512)",True,0.0,0.0
+-egA8-b7-3M__18,expression_native,"(84, 52)",True,0.0,0.0
+-egA8-b7-3M__18,expression_valid,"(84,)",True,0.0,0.0
+-egA8-b7-3M__18,vision_time,"(84,)",True,0.0,0.0
+-egA8-b7-3M__18,vision_cells,"(84, 2)",True,0.0,0.0
+-egA8-b7-3M__18,vision_frame_index,"(84,)",True,0.0,0.0
+-egA8-b7-3M__18,vision_bbox,"(84, 4)",True,0.0,0.0
+-egA8-b7-3M__18,recovery_route,"(84,)",True,0.0,0.0
+-egA8-b7-3M__18,alignment_supported,"(22,)",True,0.0,0.0
+-egA8-b7-3M__18,ctc_cells,"(413, 2)",True,0.0,0.0
+-egA8-b7-3M__18,word_time_membership,"(22, 413)",True,0.0,0.0
+-egA8-b7-3M__18,word_start_quantiles,"(22, 3)",True,0.0,0.0
+-egA8-b7-3M__18,word_end_quantiles,"(22, 3)",True,0.0,0.0
+-egA8-b7-3M__18,word_audio,"(22, 97)",True,0.0,0.0
+-egA8-b7-3M__18,word_audio_dim_mask,"(22, 97)",True,0.0,0.0
+-egA8-b7-3M__18,word_audio_effective_seconds,"(22,)",True,0.0,0.0
+-egA8-b7-3M__18,word_voiced_effective_seconds,"(22,)",True,0.0,0.0
+-egA8-b7-3M__18,word_expression,"(22, 52)",True,0.0,0.0
+-egA8-b7-3M__18,word_expression_mask,"(22,)",True,0.0,0.0
+-egA8-b7-3M__18,word_scene,"(22, 512)",True,0.0,0.0
+-egA8-b7-3M__18,word_scene_mask,"(22,)",True,0.0,0.0
+-egA8-b7-3M__18,ctc_word_score,"(22,)",True,0.0,0.0
+-egA8-b7-3M__18,asr_exact_match,"(22,)",True,0.0,0.0
+-egA8-b7-3M__18,asr_time_gap_s,"(22,)",True,0.0,0.0
+-egA8-b7-3M__18,asr_word_probability,"(22,)",True,0.0,0.0
+-egA8-b7-3M__20,text,"(20, 768)",True,0.0,0.0
+-egA8-b7-3M__20,text_mask,"(20,)",True,0.0,0.0
+-egA8-b7-3M__20,audio_native,"(324, 47)",True,0.0,0.0
+-egA8-b7-3M__20,audio_time,"(324,)",True,0.0,0.0
+-egA8-b7-3M__20,audio_cells,"(324, 2)",True,0.0,0.0
+-egA8-b7-3M__20,audio_voiced,"(324,)",True,0.0,0.0
+-egA8-b7-3M__20,bert_token_ids,"(26,)",True,0.0,0.0
+-egA8-b7-3M__20,bert_word_membership,"(20, 26)",True,0.0,0.0
+-egA8-b7-3M__20,bert_char_offsets,"(26, 2)",True,0.0,0.0
+-egA8-b7-3M__20,scene_native,"(66, 512)",True,0.0,0.0
+-egA8-b7-3M__20,expression_native,"(66, 52)",True,0.0,0.0
+-egA8-b7-3M__20,expression_valid,"(66,)",True,0.0,0.0
+-egA8-b7-3M__20,vision_time,"(66,)",True,0.0,0.0
+-egA8-b7-3M__20,vision_cells,"(66, 2)",True,0.0,0.0
+-egA8-b7-3M__20,vision_frame_index,"(66,)",True,0.0,0.0
+-egA8-b7-3M__20,vision_bbox,"(66, 4)",True,0.0,0.0
+-egA8-b7-3M__20,recovery_route,"(66,)",True,0.0,0.0
+-egA8-b7-3M__20,alignment_supported,"(20,)",True,0.0,0.0
+-egA8-b7-3M__20,ctc_cells,"(323, 2)",True,0.0,0.0
+-egA8-b7-3M__20,word_time_membership,"(20, 323)",True,0.0,0.0
+-egA8-b7-3M__20,word_start_quantiles,"(20, 3)",True,0.0,0.0
+-egA8-b7-3M__20,word_end_quantiles,"(20, 3)",True,0.0,0.0
+-egA8-b7-3M__20,word_audio,"(20, 97)",True,0.0,0.0
+-egA8-b7-3M__20,word_audio_dim_mask,"(20, 97)",True,0.0,0.0
+-egA8-b7-3M__20,word_audio_effective_seconds,"(20,)",True,0.0,0.0
+-egA8-b7-3M__20,word_voiced_effective_seconds,"(20,)",True,0.0,0.0
+-egA8-b7-3M__20,word_expression,"(20, 52)",True,0.0,0.0
+-egA8-b7-3M__20,word_expression_mask,"(20,)",True,0.0,0.0
+-egA8-b7-3M__20,word_scene,"(20, 512)",True,0.0,0.0
+-egA8-b7-3M__20,word_scene_mask,"(20,)",True,0.0,0.0
+-egA8-b7-3M__20,ctc_word_score,"(20,)",True,0.0,0.0
+-egA8-b7-3M__20,asr_exact_match,"(20,)",True,0.0,0.0
+-egA8-b7-3M__20,asr_time_gap_s,"(20,)",True,0.0,0.0
+-egA8-b7-3M__20,asr_word_probability,"(20,)",True,0.0,0.0
+-egA8-b7-3M__26,text,"(15, 768)",True,0.0,0.0
+-egA8-b7-3M__26,text_mask,"(15,)",True,0.0,0.0
+-egA8-b7-3M__26,audio_native,"(297, 47)",True,0.0,0.0
+-egA8-b7-3M__26,audio_time,"(297,)",True,0.0,0.0
+-egA8-b7-3M__26,audio_cells,"(297, 2)",True,0.0,0.0
+-egA8-b7-3M__26,audio_voiced,"(297,)",True,0.0,0.0
+-egA8-b7-3M__26,bert_token_ids,"(21,)",True,0.0,0.0
+-egA8-b7-3M__26,bert_word_membership,"(15, 21)",True,0.0,0.0
+-egA8-b7-3M__26,bert_char_offsets,"(21, 2)",True,0.0,0.0
+-egA8-b7-3M__26,scene_native,"(60, 512)",True,0.0,0.0
+-egA8-b7-3M__26,expression_native,"(60, 52)",True,0.0,0.0
+-egA8-b7-3M__26,expression_valid,"(60,)",True,0.0,0.0
+-egA8-b7-3M__26,vision_time,"(60,)",True,0.0,0.0
+-egA8-b7-3M__26,vision_cells,"(60, 2)",True,0.0,0.0
+-egA8-b7-3M__26,vision_frame_index,"(60,)",True,0.0,0.0
+-egA8-b7-3M__26,vision_bbox,"(60, 4)",True,0.0,0.0
+-egA8-b7-3M__26,recovery_route,"(60,)",True,0.0,0.0
+-egA8-b7-3M__26,alignment_supported,"(15,)",True,0.0,0.0
+-egA8-b7-3M__26,ctc_cells,"(295, 2)",True,0.0,0.0
+-egA8-b7-3M__26,word_time_membership,"(15, 295)",True,0.0,0.0
+-egA8-b7-3M__26,word_start_quantiles,"(15, 3)",True,0.0,0.0
+-egA8-b7-3M__26,word_end_quantiles,"(15, 3)",True,0.0,0.0
+-egA8-b7-3M__26,word_audio,"(15, 97)",True,0.0,0.0
+-egA8-b7-3M__26,word_audio_dim_mask,"(15, 97)",True,0.0,0.0
+-egA8-b7-3M__26,word_audio_effective_seconds,"(15,)",True,0.0,0.0
+-egA8-b7-3M__26,word_voiced_effective_seconds,"(15,)",True,0.0,0.0
+-egA8-b7-3M__26,word_expression,"(15, 52)",True,0.0,0.0
+-egA8-b7-3M__26,word_expression_mask,"(15,)",True,0.0,0.0
+-egA8-b7-3M__26,word_scene,"(15, 512)",True,0.0,0.0
+-egA8-b7-3M__26,word_scene_mask,"(15,)",True,0.0,0.0
+-egA8-b7-3M__26,ctc_word_score,"(15,)",True,0.0,0.0
+-egA8-b7-3M__26,asr_exact_match,"(15,)",True,0.0,0.0
+-egA8-b7-3M__26,asr_time_gap_s,"(15,)",True,0.0,0.0
+-egA8-b7-3M__26,asr_word_probability,"(15,)",True,0.0,0.0
+-egA8-b7-3M__6,text,"(12, 768)",True,0.0,0.0
+-egA8-b7-3M__6,text_mask,"(12,)",True,0.0,0.0
+-egA8-b7-3M__6,audio_native,"(310, 47)",True,0.0,0.0
+-egA8-b7-3M__6,audio_time,"(310,)",True,0.0,0.0
+-egA8-b7-3M__6,audio_cells,"(310, 2)",True,0.0,0.0
+-egA8-b7-3M__6,audio_voiced,"(310,)",True,0.0,0.0
+-egA8-b7-3M__6,bert_token_ids,"(15,)",True,0.0,0.0
+-egA8-b7-3M__6,bert_word_membership,"(12, 15)",True,0.0,0.0
+-egA8-b7-3M__6,bert_char_offsets,"(15, 2)",True,0.0,0.0
+-egA8-b7-3M__6,scene_native,"(63, 512)",True,0.0,0.0
+-egA8-b7-3M__6,expression_native,"(63, 52)",True,0.0,0.0
+-egA8-b7-3M__6,expression_valid,"(63,)",True,0.0,0.0
+-egA8-b7-3M__6,vision_time,"(63,)",True,0.0,0.0
+-egA8-b7-3M__6,vision_cells,"(63, 2)",True,0.0,0.0
+-egA8-b7-3M__6,vision_frame_index,"(63,)",True,0.0,0.0
+-egA8-b7-3M__6,vision_bbox,"(63, 4)",True,0.0,0.0
+-egA8-b7-3M__6,recovery_route,"(63,)",True,0.0,0.0
+-egA8-b7-3M__6,alignment_supported,"(12,)",True,0.0,0.0
+-egA8-b7-3M__6,ctc_cells,"(308, 2)",True,0.0,0.0
+-egA8-b7-3M__6,word_time_membership,"(12, 308)",True,0.0,0.0
+-egA8-b7-3M__6,word_start_quantiles,"(12, 3)",True,0.0,0.0
+-egA8-b7-3M__6,word_end_quantiles,"(12, 3)",True,0.0,0.0
+-egA8-b7-3M__6,word_audio,"(12, 97)",True,0.0,0.0
+-egA8-b7-3M__6,word_audio_dim_mask,"(12, 97)",True,0.0,0.0
+-egA8-b7-3M__6,word_audio_effective_seconds,"(12,)",True,0.0,0.0
+-egA8-b7-3M__6,word_voiced_effective_seconds,"(12,)",True,0.0,0.0
+-egA8-b7-3M__6,word_expression,"(12, 52)",True,0.0,0.0
+-egA8-b7-3M__6,word_expression_mask,"(12,)",True,0.0,0.0
+-egA8-b7-3M__6,word_scene,"(12, 512)",True,0.0,0.0
+-egA8-b7-3M__6,word_scene_mask,"(12,)",True,0.0,0.0
+-egA8-b7-3M__6,ctc_word_score,"(12,)",True,0.0,0.0
+-egA8-b7-3M__6,asr_exact_match,"(12,)",True,0.0,0.0
+-egA8-b7-3M__6,asr_time_gap_s,"(12,)",True,0.0,0.0
+-egA8-b7-3M__6,asr_word_probability,"(12,)",True,0.0,0.0
+-egA8-b7-3M__9,text,"(10, 768)",True,0.0,0.0
+-egA8-b7-3M__9,text_mask,"(10,)",True,0.0,0.0
+-egA8-b7-3M__9,audio_native,"(247, 47)",True,0.0,0.0
+-egA8-b7-3M__9,audio_time,"(247,)",True,0.0,0.0
+-egA8-b7-3M__9,audio_cells,"(247, 2)",True,0.0,0.0
+-egA8-b7-3M__9,audio_voiced,"(247,)",True,0.0,0.0
+-egA8-b7-3M__9,bert_token_ids,"(14,)",True,0.0,0.0
+-egA8-b7-3M__9,bert_word_membership,"(10, 14)",True,0.0,0.0
+-egA8-b7-3M__9,bert_char_offsets,"(14, 2)",True,0.0,0.0
+-egA8-b7-3M__9,scene_native,"(51, 512)",True,0.0,0.0
+-egA8-b7-3M__9,expression_native,"(51, 52)",True,0.0,0.0
+-egA8-b7-3M__9,expression_valid,"(51,)",True,0.0,0.0
+-egA8-b7-3M__9,vision_time,"(51,)",True,0.0,0.0
+-egA8-b7-3M__9,vision_cells,"(51, 2)",True,0.0,0.0
+-egA8-b7-3M__9,vision_frame_index,"(51,)",True,0.0,0.0
+-egA8-b7-3M__9,vision_bbox,"(51, 4)",True,0.0,0.0
+-egA8-b7-3M__9,recovery_route,"(51,)",True,0.0,0.0
+-egA8-b7-3M__9,alignment_supported,"(10,)",True,0.0,0.0
+-egA8-b7-3M__9,ctc_cells,"(246, 2)",True,0.0,0.0
+-egA8-b7-3M__9,word_time_membership,"(10, 246)",True,0.0,0.0
+-egA8-b7-3M__9,word_start_quantiles,"(10, 3)",True,0.0,0.0
+-egA8-b7-3M__9,word_end_quantiles,"(10, 3)",True,0.0,0.0
+-egA8-b7-3M__9,word_audio,"(10, 97)",True,0.0,0.0
+-egA8-b7-3M__9,word_audio_dim_mask,"(10, 97)",True,0.0,0.0
+-egA8-b7-3M__9,word_audio_effective_seconds,"(10,)",True,0.0,0.0
+-egA8-b7-3M__9,word_voiced_effective_seconds,"(10,)",True,0.0,0.0
+-egA8-b7-3M__9,word_expression,"(10, 52)",True,0.0,0.0
+-egA8-b7-3M__9,word_expression_mask,"(10,)",True,0.0,0.0
+-egA8-b7-3M__9,word_scene,"(10, 512)",True,0.0,0.0
+-egA8-b7-3M__9,word_scene_mask,"(10,)",True,0.0,0.0
+-egA8-b7-3M__9,ctc_word_score,"(10,)",True,0.0,0.0
+-egA8-b7-3M__9,asr_exact_match,"(10,)",True,0.0,0.0
+-egA8-b7-3M__9,asr_time_gap_s,"(10,)",True,0.0,0.0
+-egA8-b7-3M__9,asr_word_probability,"(10,)",True,0.0,0.0
+-HeZS2-Prhc__2,text,"(16, 768)",True,0.0,0.0
+-HeZS2-Prhc__2,text_mask,"(16,)",True,0.0,0.0
+-HeZS2-Prhc__2,audio_native,"(408, 47)",True,0.0,0.0
+-HeZS2-Prhc__2,audio_time,"(408,)",True,0.0,0.0
+-HeZS2-Prhc__2,audio_cells,"(408, 2)",True,0.0,0.0
+-HeZS2-Prhc__2,audio_voiced,"(408,)",True,0.0,0.0
+-HeZS2-Prhc__2,bert_token_ids,"(19,)",True,0.0,0.0
+-HeZS2-Prhc__2,bert_word_membership,"(16, 19)",True,0.0,0.0
+-HeZS2-Prhc__2,bert_char_offsets,"(19, 2)",True,0.0,0.0
+-HeZS2-Prhc__2,scene_native,"(82, 512)",True,0.0,0.0
+-HeZS2-Prhc__2,expression_native,"(82, 52)",True,0.0,0.0
+-HeZS2-Prhc__2,expression_valid,"(82,)",True,0.0,0.0
+-HeZS2-Prhc__2,vision_time,"(82,)",True,0.0,0.0
+-HeZS2-Prhc__2,vision_cells,"(82, 2)",True,0.0,0.0
+-HeZS2-Prhc__2,vision_frame_index,"(82,)",True,0.0,0.0
+-HeZS2-Prhc__2,vision_bbox,"(82, 4)",True,0.0,0.0
+-HeZS2-Prhc__2,recovery_route,"(82,)",True,0.0,0.0
+-HeZS2-Prhc__2,alignment_supported,"(16,)",True,0.0,0.0
+-HeZS2-Prhc__2,ctc_cells,"(407, 2)",True,0.0,0.0
+-HeZS2-Prhc__2,word_time_membership,"(16, 407)",True,0.0,0.0
+-HeZS2-Prhc__2,word_start_quantiles,"(16, 3)",True,0.0,0.0
+-HeZS2-Prhc__2,word_end_quantiles,"(16, 3)",True,0.0,0.0
+-HeZS2-Prhc__2,word_audio,"(16, 97)",True,0.0,0.0
+-HeZS2-Prhc__2,word_audio_dim_mask,"(16, 97)",True,0.0,0.0
+-HeZS2-Prhc__2,word_audio_effective_seconds,"(16,)",True,0.0,0.0
+-HeZS2-Prhc__2,word_voiced_effective_seconds,"(16,)",True,0.0,0.0
+-HeZS2-Prhc__2,word_expression,"(16, 52)",True,0.0,0.0
+-HeZS2-Prhc__2,word_expression_mask,"(16,)",True,0.0,0.0
+-HeZS2-Prhc__2,word_scene,"(16, 512)",True,0.0,0.0
+-HeZS2-Prhc__2,word_scene_mask,"(16,)",True,0.0,0.0
+-HeZS2-Prhc__2,ctc_word_score,"(16,)",True,0.0,0.0
+-HeZS2-Prhc__2,asr_exact_match,"(16,)",True,0.0,0.0
+-HeZS2-Prhc__2,asr_time_gap_s,"(16,)",True,0.0,0.0
+-HeZS2-Prhc__2,asr_word_probability,"(16,)",True,0.0,0.0
+-hnBHBN8p5A__6,text,"(13, 768)",True,0.0,0.0
+-hnBHBN8p5A__6,text_mask,"(13,)",True,0.0,0.0
+-hnBHBN8p5A__6,audio_native,"(317, 47)",True,0.0,0.0
+-hnBHBN8p5A__6,audio_time,"(317,)",True,0.0,0.0
+-hnBHBN8p5A__6,audio_cells,"(317, 2)",True,0.0,0.0
+-hnBHBN8p5A__6,audio_voiced,"(317,)",True,0.0,0.0
+-hnBHBN8p5A__6,bert_token_ids,"(16,)",True,0.0,0.0
+-hnBHBN8p5A__6,bert_word_membership,"(13, 16)",True,0.0,0.0
+-hnBHBN8p5A__6,bert_char_offsets,"(16, 2)",True,0.0,0.0
+-hnBHBN8p5A__6,scene_native,"(64, 512)",True,0.0,0.0
+-hnBHBN8p5A__6,expression_native,"(64, 52)",True,0.0,0.0
+-hnBHBN8p5A__6,expression_valid,"(64,)",True,0.0,0.0
+-hnBHBN8p5A__6,vision_time,"(64,)",True,0.0,0.0
+-hnBHBN8p5A__6,vision_cells,"(64, 2)",True,0.0,0.0
+-hnBHBN8p5A__6,vision_frame_index,"(64,)",True,0.0,0.0
+-hnBHBN8p5A__6,vision_bbox,"(64, 4)",True,0.0,0.0
+-hnBHBN8p5A__6,recovery_route,"(64,)",True,0.0,0.0
+-hnBHBN8p5A__6,alignment_supported,"(13,)",True,0.0,0.0
+-hnBHBN8p5A__6,ctc_cells,"(316, 2)",True,0.0,0.0
+-hnBHBN8p5A__6,word_time_membership,"(13, 316)",True,0.0,0.0
+-hnBHBN8p5A__6,word_start_quantiles,"(13, 3)",True,0.0,0.0
+-hnBHBN8p5A__6,word_end_quantiles,"(13, 3)",True,0.0,0.0
+-hnBHBN8p5A__6,word_audio,"(13, 97)",True,0.0,0.0
+-hnBHBN8p5A__6,word_audio_dim_mask,"(13, 97)",True,0.0,0.0
+-hnBHBN8p5A__6,word_audio_effective_seconds,"(13,)",True,0.0,0.0
+-hnBHBN8p5A__6,word_voiced_effective_seconds,"(13,)",True,0.0,0.0
+-hnBHBN8p5A__6,word_expression,"(13, 52)",True,0.0,0.0
+-hnBHBN8p5A__6,word_expression_mask,"(13,)",True,0.0,0.0
+-hnBHBN8p5A__6,word_scene,"(13, 512)",True,0.0,0.0
+-hnBHBN8p5A__6,word_scene_mask,"(13,)",True,0.0,0.0
+-hnBHBN8p5A__6,ctc_word_score,"(13,)",True,0.0,0.0
+-hnBHBN8p5A__6,asr_exact_match,"(13,)",True,0.0,0.0
+-hnBHBN8p5A__6,asr_time_gap_s,"(13,)",True,0.0,0.0
+-hnBHBN8p5A__6,asr_word_probability,"(13,)",True,0.0,0.0
+-hnBHBN8p5A__7,text,"(13, 768)",True,0.0,0.0
+-hnBHBN8p5A__7,text_mask,"(13,)",True,0.0,0.0
+-hnBHBN8p5A__7,audio_native,"(366, 47)",True,0.0,0.0
+-hnBHBN8p5A__7,audio_time,"(366,)",True,0.0,0.0
+-hnBHBN8p5A__7,audio_cells,"(366, 2)",True,0.0,0.0
+-hnBHBN8p5A__7,audio_voiced,"(366,)",True,0.0,0.0
+-hnBHBN8p5A__7,bert_token_ids,"(19,)",True,0.0,0.0
+-hnBHBN8p5A__7,bert_word_membership,"(13, 19)",True,0.0,0.0
+-hnBHBN8p5A__7,bert_char_offsets,"(19, 2)",True,0.0,0.0
+-hnBHBN8p5A__7,scene_native,"(73, 512)",True,0.0,0.0
+-hnBHBN8p5A__7,expression_native,"(73, 52)",True,0.0,0.0
+-hnBHBN8p5A__7,expression_valid,"(73,)",True,0.0,0.0
+-hnBHBN8p5A__7,vision_time,"(73,)",True,0.0,0.0
+-hnBHBN8p5A__7,vision_cells,"(73, 2)",True,0.0,0.0
+-hnBHBN8p5A__7,vision_frame_index,"(73,)",True,0.0,0.0
+-hnBHBN8p5A__7,vision_bbox,"(73, 4)",True,0.0,0.0
+-hnBHBN8p5A__7,recovery_route,"(73,)",True,0.0,0.0
+-hnBHBN8p5A__7,alignment_supported,"(13,)",True,0.0,0.0
+-hnBHBN8p5A__7,ctc_cells,"(365, 2)",True,0.0,0.0
+-hnBHBN8p5A__7,word_time_membership,"(13, 365)",True,0.0,0.0
+-hnBHBN8p5A__7,word_start_quantiles,"(13, 3)",True,0.0,0.0
+-hnBHBN8p5A__7,word_end_quantiles,"(13, 3)",True,0.0,0.0
+-hnBHBN8p5A__7,word_audio,"(13, 97)",True,0.0,0.0
+-hnBHBN8p5A__7,word_audio_dim_mask,"(13, 97)",True,0.0,0.0
+-hnBHBN8p5A__7,word_audio_effective_seconds,"(13,)",True,0.0,0.0
+-hnBHBN8p5A__7,word_voiced_effective_seconds,"(13,)",True,0.0,0.0
+-hnBHBN8p5A__7,word_expression,"(13, 52)",True,0.0,0.0
+-hnBHBN8p5A__7,word_expression_mask,"(13,)",True,0.0,0.0
+-hnBHBN8p5A__7,word_scene,"(13, 512)",True,0.0,0.0
+-hnBHBN8p5A__7,word_scene_mask,"(13,)",True,0.0,0.0
+-hnBHBN8p5A__7,ctc_word_score,"(13,)",True,0.0,0.0
+-hnBHBN8p5A__7,asr_exact_match,"(13,)",True,0.0,0.0
+-hnBHBN8p5A__7,asr_time_gap_s,"(13,)",True,0.0,0.0
+-hnBHBN8p5A__7,asr_word_probability,"(13,)",True,0.0,0.0
+-HwX2H8Z4hY__2,text,"(4, 768)",True,0.0,0.0
+-HwX2H8Z4hY__2,text_mask,"(4,)",True,0.0,0.0
+-HwX2H8Z4hY__2,audio_native,"(196, 47)",True,0.0,0.0
+-HwX2H8Z4hY__2,audio_time,"(196,)",True,0.0,0.0
+-HwX2H8Z4hY__2,audio_cells,"(196, 2)",True,0.0,0.0
+-HwX2H8Z4hY__2,audio_voiced,"(196,)",True,0.0,0.0
+-HwX2H8Z4hY__2,bert_token_ids,"(8,)",True,0.0,0.0
+-HwX2H8Z4hY__2,bert_word_membership,"(4, 8)",True,0.0,0.0
+-HwX2H8Z4hY__2,bert_char_offsets,"(8, 2)",True,0.0,0.0
+-HwX2H8Z4hY__2,scene_native,"(40, 512)",True,0.0,0.0
+-HwX2H8Z4hY__2,expression_native,"(40, 52)",True,0.0,0.0
+-HwX2H8Z4hY__2,expression_valid,"(40,)",True,0.0,0.0
+-HwX2H8Z4hY__2,vision_time,"(40,)",True,0.0,0.0
+-HwX2H8Z4hY__2,vision_cells,"(40, 2)",True,0.0,0.0
+-HwX2H8Z4hY__2,vision_frame_index,"(40,)",True,0.0,0.0
+-HwX2H8Z4hY__2,vision_bbox,"(40, 4)",True,0.0,0.0
+-HwX2H8Z4hY__2,recovery_route,"(40,)",True,0.0,0.0
+-HwX2H8Z4hY__2,alignment_supported,"(4,)",True,0.0,0.0
+-HwX2H8Z4hY__2,ctc_cells,"(195, 2)",True,0.0,0.0
+-HwX2H8Z4hY__2,word_time_membership,"(4, 195)",True,0.0,0.0
+-HwX2H8Z4hY__2,word_start_quantiles,"(4, 3)",True,0.0,0.0
+-HwX2H8Z4hY__2,word_end_quantiles,"(4, 3)",True,0.0,0.0
+-HwX2H8Z4hY__2,word_audio,"(4, 97)",True,0.0,0.0
+-HwX2H8Z4hY__2,word_audio_dim_mask,"(4, 97)",True,0.0,0.0
+-HwX2H8Z4hY__2,word_audio_effective_seconds,"(4,)",True,0.0,0.0
+-HwX2H8Z4hY__2,word_voiced_effective_seconds,"(4,)",True,0.0,0.0
+-HwX2H8Z4hY__2,word_expression,"(4, 52)",True,0.0,0.0
+-HwX2H8Z4hY__2,word_expression_mask,"(4,)",True,0.0,0.0
+-HwX2H8Z4hY__2,word_scene,"(4, 512)",True,0.0,0.0
+-HwX2H8Z4hY__2,word_scene_mask,"(4,)",True,0.0,0.0
+-HwX2H8Z4hY__2,ctc_word_score,"(4,)",True,0.0,0.0
+-HwX2H8Z4hY__2,asr_exact_match,"(4,)",True,0.0,0.0
+-HwX2H8Z4hY__2,asr_time_gap_s,"(4,)",True,0.0,0.0
+-HwX2H8Z4hY__2,asr_word_probability,"(4,)",True,0.0,0.0
+-HwX2H8Z4hY__5,text,"(9, 768)",True,0.0,0.0
+-HwX2H8Z4hY__5,text_mask,"(9,)",True,0.0,0.0
+-HwX2H8Z4hY__5,audio_native,"(278, 47)",True,0.0,0.0
+-HwX2H8Z4hY__5,audio_time,"(278,)",True,0.0,0.0
+-HwX2H8Z4hY__5,audio_cells,"(278, 2)",True,0.0,0.0
+-HwX2H8Z4hY__5,audio_voiced,"(278,)",True,0.0,0.0
+-HwX2H8Z4hY__5,bert_token_ids,"(12,)",True,0.0,0.0
+-HwX2H8Z4hY__5,bert_word_membership,"(9, 12)",True,0.0,0.0
+-HwX2H8Z4hY__5,bert_char_offsets,"(12, 2)",True,0.0,0.0
+-HwX2H8Z4hY__5,scene_native,"(56, 512)",True,0.0,0.0
+-HwX2H8Z4hY__5,expression_native,"(56, 52)",True,0.0,0.0
+-HwX2H8Z4hY__5,expression_valid,"(56,)",True,0.0,0.0
+-HwX2H8Z4hY__5,vision_time,"(56,)",True,0.0,0.0
+-HwX2H8Z4hY__5,vision_cells,"(56, 2)",True,0.0,0.0
+-HwX2H8Z4hY__5,vision_frame_index,"(56,)",True,0.0,0.0
+-HwX2H8Z4hY__5,vision_bbox,"(56, 4)",True,0.0,0.0
+-HwX2H8Z4hY__5,recovery_route,"(56,)",True,0.0,0.0
+-HwX2H8Z4hY__5,alignment_supported,"(9,)",True,0.0,0.0
+-HwX2H8Z4hY__5,ctc_cells,"(276, 2)",True,0.0,0.0
+-HwX2H8Z4hY__5,word_time_membership,"(9, 276)",True,0.0,0.0
+-HwX2H8Z4hY__5,word_start_quantiles,"(9, 3)",True,0.0,0.0
+-HwX2H8Z4hY__5,word_end_quantiles,"(9, 3)",True,0.0,0.0
+-HwX2H8Z4hY__5,word_audio,"(9, 97)",True,0.0,0.0
+-HwX2H8Z4hY__5,word_audio_dim_mask,"(9, 97)",True,0.0,0.0
+-HwX2H8Z4hY__5,word_audio_effective_seconds,"(9,)",True,0.0,0.0
+-HwX2H8Z4hY__5,word_voiced_effective_seconds,"(9,)",True,0.0,0.0
+-HwX2H8Z4hY__5,word_expression,"(9, 52)",True,0.0,0.0
+-HwX2H8Z4hY__5,word_expression_mask,"(9,)",True,0.0,0.0
+-HwX2H8Z4hY__5,word_scene,"(9, 512)",True,0.0,0.0
+-HwX2H8Z4hY__5,word_scene_mask,"(9,)",True,0.0,0.0
+-HwX2H8Z4hY__5,ctc_word_score,"(9,)",True,0.0,0.0
+-HwX2H8Z4hY__5,asr_exact_match,"(9,)",True,0.0,0.0
+-HwX2H8Z4hY__5,asr_time_gap_s,"(9,)",True,0.0,0.0
+-HwX2H8Z4hY__5,asr_word_probability,"(9,)",True,0.0,0.0
+-HwX2H8Z4hY__6,text,"(7, 768)",True,0.0,0.0
+-HwX2H8Z4hY__6,text_mask,"(7,)",True,0.0,0.0
+-HwX2H8Z4hY__6,audio_native,"(163, 47)",True,0.0,0.0
+-HwX2H8Z4hY__6,audio_time,"(163,)",True,0.0,0.0
+-HwX2H8Z4hY__6,audio_cells,"(163, 2)",True,0.0,0.0
+-HwX2H8Z4hY__6,audio_voiced,"(163,)",True,0.0,0.0
+-HwX2H8Z4hY__6,bert_token_ids,"(11,)",True,0.0,0.0
+-HwX2H8Z4hY__6,bert_word_membership,"(7, 11)",True,0.0,0.0
+-HwX2H8Z4hY__6,bert_char_offsets,"(11, 2)",True,0.0,0.0
+-HwX2H8Z4hY__6,scene_native,"(33, 512)",True,0.0,0.0
+-HwX2H8Z4hY__6,expression_native,"(33, 52)",True,0.0,0.0
+-HwX2H8Z4hY__6,expression_valid,"(33,)",True,0.0,0.0
+-HwX2H8Z4hY__6,vision_time,"(33,)",True,0.0,0.0
+-HwX2H8Z4hY__6,vision_cells,"(33, 2)",True,0.0,0.0
+-HwX2H8Z4hY__6,vision_frame_index,"(33,)",True,0.0,0.0
+-HwX2H8Z4hY__6,vision_bbox,"(33, 4)",True,0.0,0.0
+-HwX2H8Z4hY__6,recovery_route,"(33,)",True,0.0,0.0
+-HwX2H8Z4hY__6,alignment_supported,"(7,)",True,0.0,0.0
+-HwX2H8Z4hY__6,ctc_cells,"(162, 2)",True,0.0,0.0
+-HwX2H8Z4hY__6,word_time_membership,"(7, 162)",True,0.0,0.0
+-HwX2H8Z4hY__6,word_start_quantiles,"(7, 3)",True,0.0,0.0
+-HwX2H8Z4hY__6,word_end_quantiles,"(7, 3)",True,0.0,0.0
+-HwX2H8Z4hY__6,word_audio,"(7, 97)",True,0.0,0.0
+-HwX2H8Z4hY__6,word_audio_dim_mask,"(7, 97)",True,0.0,0.0
+-HwX2H8Z4hY__6,word_audio_effective_seconds,"(7,)",True,0.0,0.0
+-HwX2H8Z4hY__6,word_voiced_effective_seconds,"(7,)",True,0.0,0.0
+-HwX2H8Z4hY__6,word_expression,"(7, 52)",True,0.0,0.0
+-HwX2H8Z4hY__6,word_expression_mask,"(7,)",True,0.0,0.0
+-HwX2H8Z4hY__6,word_scene,"(7, 512)",True,0.0,0.0
+-HwX2H8Z4hY__6,word_scene_mask,"(7,)",True,0.0,0.0
+-HwX2H8Z4hY__6,ctc_word_score,"(7,)",True,0.0,0.0
+-HwX2H8Z4hY__6,asr_exact_match,"(7,)",True,0.0,0.0
+-HwX2H8Z4hY__6,asr_time_gap_s,"(7,)",True,0.0,0.0
+-HwX2H8Z4hY__6,asr_word_probability,"(7,)",True,0.0,0.0
+-HwX2H8Z4hY__9,text,"(22, 768)",True,0.0,0.0
+-HwX2H8Z4hY__9,text_mask,"(22,)",True,0.0,0.0
+-HwX2H8Z4hY__9,audio_native,"(382, 47)",True,0.0,0.0
+-HwX2H8Z4hY__9,audio_time,"(382,)",True,0.0,0.0
+-HwX2H8Z4hY__9,audio_cells,"(382, 2)",True,0.0,0.0
+-HwX2H8Z4hY__9,audio_voiced,"(382,)",True,0.0,0.0
+-HwX2H8Z4hY__9,bert_token_ids,"(26,)",True,0.0,0.0
+-HwX2H8Z4hY__9,bert_word_membership,"(22, 26)",True,0.0,0.0
+-HwX2H8Z4hY__9,bert_char_offsets,"(26, 2)",True,0.0,0.0
+-HwX2H8Z4hY__9,scene_native,"(78, 512)",True,0.0,0.0
+-HwX2H8Z4hY__9,expression_native,"(78, 52)",True,0.0,0.0
+-HwX2H8Z4hY__9,expression_valid,"(78,)",True,0.0,0.0
+-HwX2H8Z4hY__9,vision_time,"(78,)",True,0.0,0.0
+-HwX2H8Z4hY__9,vision_cells,"(78, 2)",True,0.0,0.0
+-HwX2H8Z4hY__9,vision_frame_index,"(78,)",True,0.0,0.0
+-HwX2H8Z4hY__9,vision_bbox,"(78, 4)",True,0.0,0.0
+-HwX2H8Z4hY__9,recovery_route,"(78,)",True,0.0,0.0
+-HwX2H8Z4hY__9,alignment_supported,"(22,)",True,0.0,0.0
+-HwX2H8Z4hY__9,ctc_cells,"(381, 2)",True,0.0,0.0
+-HwX2H8Z4hY__9,word_time_membership,"(22, 381)",True,0.0,0.0
+-HwX2H8Z4hY__9,word_start_quantiles,"(22, 3)",True,0.0,0.0
+-HwX2H8Z4hY__9,word_end_quantiles,"(22, 3)",True,0.0,0.0
+-HwX2H8Z4hY__9,word_audio,"(22, 97)",True,0.0,0.0
+-HwX2H8Z4hY__9,word_audio_dim_mask,"(22, 97)",True,0.0,0.0
+-HwX2H8Z4hY__9,word_audio_effective_seconds,"(22,)",True,0.0,0.0
+-HwX2H8Z4hY__9,word_voiced_effective_seconds,"(22,)",True,0.0,0.0
+-HwX2H8Z4hY__9,word_expression,"(22, 52)",True,0.0,0.0
+-HwX2H8Z4hY__9,word_expression_mask,"(22,)",True,0.0,0.0
+-HwX2H8Z4hY__9,word_scene,"(22, 512)",True,0.0,0.0
+-HwX2H8Z4hY__9,word_scene_mask,"(22,)",True,0.0,0.0
+-HwX2H8Z4hY__9,ctc_word_score,"(22,)",True,0.0,0.0
+-HwX2H8Z4hY__9,asr_exact_match,"(22,)",True,0.0,0.0
+-HwX2H8Z4hY__9,asr_time_gap_s,"(22,)",True,0.0,0.0
+-HwX2H8Z4hY__9,asr_word_probability,"(22,)",True,0.0,0.0
+-I_e4mIh0yE__1,text,"(18, 768)",True,0.0,0.0
+-I_e4mIh0yE__1,text_mask,"(18,)",True,0.0,0.0
+-I_e4mIh0yE__1,audio_native,"(373, 47)",True,0.0,0.0
+-I_e4mIh0yE__1,audio_time,"(373,)",True,0.0,0.0
+-I_e4mIh0yE__1,audio_cells,"(373, 2)",True,0.0,0.0
+-I_e4mIh0yE__1,audio_voiced,"(373,)",True,0.0,0.0
+-I_e4mIh0yE__1,bert_token_ids,"(23,)",True,0.0,0.0
+-I_e4mIh0yE__1,bert_word_membership,"(18, 23)",True,0.0,0.0
+-I_e4mIh0yE__1,bert_char_offsets,"(23, 2)",True,0.0,0.0
+-I_e4mIh0yE__1,scene_native,"(76, 512)",True,0.0,0.0
+-I_e4mIh0yE__1,expression_native,"(76, 52)",True,0.0,0.0
+-I_e4mIh0yE__1,expression_valid,"(76,)",True,0.0,0.0
+-I_e4mIh0yE__1,vision_time,"(76,)",True,0.0,0.0
+-I_e4mIh0yE__1,vision_cells,"(76, 2)",True,0.0,0.0
+-I_e4mIh0yE__1,vision_frame_index,"(76,)",True,0.0,0.0
+-I_e4mIh0yE__1,vision_bbox,"(76, 4)",True,0.0,0.0
+-I_e4mIh0yE__1,recovery_route,"(76,)",True,0.0,0.0
+-I_e4mIh0yE__1,alignment_supported,"(18,)",True,0.0,0.0
+-I_e4mIh0yE__1,ctc_cells,"(371, 2)",True,0.0,0.0
+-I_e4mIh0yE__1,word_time_membership,"(18, 371)",True,0.0,0.0
+-I_e4mIh0yE__1,word_start_quantiles,"(18, 3)",True,0.0,0.0
+-I_e4mIh0yE__1,word_end_quantiles,"(18, 3)",True,0.0,0.0
+-I_e4mIh0yE__1,word_audio,"(18, 97)",True,0.0,0.0
+-I_e4mIh0yE__1,word_audio_dim_mask,"(18, 97)",True,0.0,0.0
+-I_e4mIh0yE__1,word_audio_effective_seconds,"(18,)",True,0.0,0.0
+-I_e4mIh0yE__1,word_voiced_effective_seconds,"(18,)",True,0.0,0.0
+-I_e4mIh0yE__1,word_expression,"(18, 52)",True,0.0,0.0
+-I_e4mIh0yE__1,word_expression_mask,"(18,)",True,0.0,0.0
+-I_e4mIh0yE__1,word_scene,"(18, 512)",True,0.0,0.0
+-I_e4mIh0yE__1,word_scene_mask,"(18,)",True,0.0,0.0
+-I_e4mIh0yE__1,ctc_word_score,"(18,)",True,0.0,0.0
+-I_e4mIh0yE__1,asr_exact_match,"(18,)",True,0.0,0.0
+-I_e4mIh0yE__1,asr_time_gap_s,"(18,)",True,0.0,0.0
+-I_e4mIh0yE__1,asr_word_probability,"(18,)",True,0.0,0.0
+-I_e4mIh0yE__3,text,"(22, 768)",True,0.0,0.0
+-I_e4mIh0yE__3,text_mask,"(22,)",True,0.0,0.0
+-I_e4mIh0yE__3,audio_native,"(450, 47)",True,0.0,0.0
+-I_e4mIh0yE__3,audio_time,"(450,)",True,0.0,0.0
+-I_e4mIh0yE__3,audio_cells,"(450, 2)",True,0.0,0.0
+-I_e4mIh0yE__3,audio_voiced,"(450,)",True,0.0,0.0
+-I_e4mIh0yE__3,bert_token_ids,"(32,)",True,0.0,0.0
+-I_e4mIh0yE__3,bert_word_membership,"(22, 32)",True,0.0,0.0
+-I_e4mIh0yE__3,bert_char_offsets,"(32, 2)",True,0.0,0.0
+-I_e4mIh0yE__3,scene_native,"(91, 512)",True,0.0,0.0
+-I_e4mIh0yE__3,expression_native,"(91, 52)",True,0.0,0.0
+-I_e4mIh0yE__3,expression_valid,"(91,)",True,0.0,0.0
+-I_e4mIh0yE__3,vision_time,"(91,)",True,0.0,0.0
+-I_e4mIh0yE__3,vision_cells,"(91, 2)",True,0.0,0.0
+-I_e4mIh0yE__3,vision_frame_index,"(91,)",True,0.0,0.0
+-I_e4mIh0yE__3,vision_bbox,"(91, 4)",True,0.0,0.0
+-I_e4mIh0yE__3,recovery_route,"(91,)",True,0.0,0.0
+-I_e4mIh0yE__3,alignment_supported,"(22,)",True,0.0,0.0
+-I_e4mIh0yE__3,ctc_cells,"(449, 2)",True,0.0,0.0
+-I_e4mIh0yE__3,word_time_membership,"(22, 449)",True,0.0,0.0
+-I_e4mIh0yE__3,word_start_quantiles,"(22, 3)",True,0.0,0.0
+-I_e4mIh0yE__3,word_end_quantiles,"(22, 3)",True,0.0,0.0
+-I_e4mIh0yE__3,word_audio,"(22, 97)",True,0.0,0.0
+-I_e4mIh0yE__3,word_audio_dim_mask,"(22, 97)",True,0.0,0.0
+-I_e4mIh0yE__3,word_audio_effective_seconds,"(22,)",True,0.0,0.0
+-I_e4mIh0yE__3,word_voiced_effective_seconds,"(22,)",True,0.0,0.0
+-I_e4mIh0yE__3,word_expression,"(22, 52)",True,0.0,0.0
+-I_e4mIh0yE__3,word_expression_mask,"(22,)",True,0.0,0.0
+-I_e4mIh0yE__3,word_scene,"(22, 512)",True,0.0,0.0
+-I_e4mIh0yE__3,word_scene_mask,"(22,)",True,0.0,0.0
+-I_e4mIh0yE__3,ctc_word_score,"(22,)",True,0.0,0.0
+-I_e4mIh0yE__3,asr_exact_match,"(22,)",True,0.0,0.0
+-I_e4mIh0yE__3,asr_time_gap_s,"(22,)",True,0.0,0.0
+-I_e4mIh0yE__3,asr_word_probability,"(22,)",True,0.0,0.0
+-iRBcNs9oI8__3,text,"(8, 768)",True,0.0,0.0
+-iRBcNs9oI8__3,text_mask,"(8,)",True,0.0,0.0
+-iRBcNs9oI8__3,audio_native,"(277, 47)",True,0.0,0.0
+-iRBcNs9oI8__3,audio_time,"(277,)",True,0.0,0.0
+-iRBcNs9oI8__3,audio_cells,"(277, 2)",True,0.0,0.0
+-iRBcNs9oI8__3,audio_voiced,"(277,)",True,0.0,0.0
+-iRBcNs9oI8__3,bert_token_ids,"(11,)",True,0.0,0.0
+-iRBcNs9oI8__3,bert_word_membership,"(8, 11)",True,0.0,0.0
+-iRBcNs9oI8__3,bert_char_offsets,"(11, 2)",True,0.0,0.0
+-iRBcNs9oI8__3,scene_native,"(56, 512)",True,0.0,0.0
+-iRBcNs9oI8__3,expression_native,"(56, 52)",True,0.0,0.0
+-iRBcNs9oI8__3,expression_valid,"(56,)",True,0.0,0.0
+-iRBcNs9oI8__3,vision_time,"(56,)",True,0.0,0.0
+-iRBcNs9oI8__3,vision_cells,"(56, 2)",True,0.0,0.0
+-iRBcNs9oI8__3,vision_frame_index,"(56,)",True,0.0,0.0
+-iRBcNs9oI8__3,vision_bbox,"(56, 4)",True,0.0,0.0
+-iRBcNs9oI8__3,recovery_route,"(56,)",True,0.0,0.0
+-iRBcNs9oI8__3,alignment_supported,"(8,)",True,0.0,0.0
+-iRBcNs9oI8__3,ctc_cells,"(276, 2)",True,0.0,0.0
+-iRBcNs9oI8__3,word_time_membership,"(8, 276)",True,0.0,0.0
+-iRBcNs9oI8__3,word_start_quantiles,"(8, 3)",True,0.0,0.0
+-iRBcNs9oI8__3,word_end_quantiles,"(8, 3)",True,0.0,0.0
+-iRBcNs9oI8__3,word_audio,"(8, 97)",True,0.0,0.0
+-iRBcNs9oI8__3,word_audio_dim_mask,"(8, 97)",True,0.0,0.0
+-iRBcNs9oI8__3,word_audio_effective_seconds,"(8,)",True,0.0,0.0
+-iRBcNs9oI8__3,word_voiced_effective_seconds,"(8,)",True,0.0,0.0
+-iRBcNs9oI8__3,word_expression,"(8, 52)",True,0.0,0.0
+-iRBcNs9oI8__3,word_expression_mask,"(8,)",True,0.0,0.0
+-iRBcNs9oI8__3,word_scene,"(8, 512)",True,0.0,0.0
+-iRBcNs9oI8__3,word_scene_mask,"(8,)",True,0.0,0.0
+-iRBcNs9oI8__3,ctc_word_score,"(8,)",True,0.0,0.0
+-iRBcNs9oI8__3,asr_exact_match,"(8,)",True,0.0,0.0
+-iRBcNs9oI8__3,asr_time_gap_s,"(8,)",True,0.0,0.0
+-iRBcNs9oI8__3,asr_word_probability,"(8,)",True,0.0,0.0
+-iRBcNs9oI8__6,text,"(5, 768)",True,0.0,0.0
+-iRBcNs9oI8__6,text_mask,"(5,)",True,0.0,0.0
+-iRBcNs9oI8__6,audio_native,"(142, 47)",True,0.0,0.0
+-iRBcNs9oI8__6,audio_time,"(142,)",True,0.0,0.0
+-iRBcNs9oI8__6,audio_cells,"(142, 2)",True,0.0,0.0
+-iRBcNs9oI8__6,audio_voiced,"(142,)",True,0.0,0.0
+-iRBcNs9oI8__6,bert_token_ids,"(7,)",True,0.0,0.0
+-iRBcNs9oI8__6,bert_word_membership,"(5, 7)",True,0.0,0.0
+-iRBcNs9oI8__6,bert_char_offsets,"(7, 2)",True,0.0,0.0
+-iRBcNs9oI8__6,scene_native,"(29, 512)",True,0.0,0.0
+-iRBcNs9oI8__6,expression_native,"(29, 52)",True,0.0,0.0
+-iRBcNs9oI8__6,expression_valid,"(29,)",True,0.0,0.0
+-iRBcNs9oI8__6,vision_time,"(29,)",True,0.0,0.0
+-iRBcNs9oI8__6,vision_cells,"(29, 2)",True,0.0,0.0
+-iRBcNs9oI8__6,vision_frame_index,"(29,)",True,0.0,0.0
+-iRBcNs9oI8__6,vision_bbox,"(29, 4)",True,0.0,0.0
+-iRBcNs9oI8__6,recovery_route,"(29,)",True,0.0,0.0
+-iRBcNs9oI8__6,alignment_supported,"(5,)",True,0.0,0.0
+-iRBcNs9oI8__6,ctc_cells,"(140, 2)",True,0.0,0.0
+-iRBcNs9oI8__6,word_time_membership,"(5, 140)",True,0.0,0.0
+-iRBcNs9oI8__6,word_start_quantiles,"(5, 3)",True,0.0,0.0
+-iRBcNs9oI8__6,word_end_quantiles,"(5, 3)",True,0.0,0.0
+-iRBcNs9oI8__6,word_audio,"(5, 97)",True,0.0,0.0
+-iRBcNs9oI8__6,word_audio_dim_mask,"(5, 97)",True,0.0,0.0
+-iRBcNs9oI8__6,word_audio_effective_seconds,"(5,)",True,0.0,0.0
+-iRBcNs9oI8__6,word_voiced_effective_seconds,"(5,)",True,0.0,0.0
+-iRBcNs9oI8__6,word_expression,"(5, 52)",True,0.0,0.0
+-iRBcNs9oI8__6,word_expression_mask,"(5,)",True,0.0,0.0
+-iRBcNs9oI8__6,word_scene,"(5, 512)",True,0.0,0.0
+-iRBcNs9oI8__6,word_scene_mask,"(5,)",True,0.0,0.0
+-iRBcNs9oI8__6,ctc_word_score,"(5,)",True,0.0,0.0
+-iRBcNs9oI8__6,asr_exact_match,"(5,)",True,0.0,0.0
+-iRBcNs9oI8__6,asr_time_gap_s,"(5,)",True,0.0,0.0
+-iRBcNs9oI8__6,asr_word_probability,"(5,)",True,0.0,0.0
+-iRBcNs9oI8__7,text,"(9, 768)",True,0.0,0.0
+-iRBcNs9oI8__7,text_mask,"(9,)",True,0.0,0.0
+-iRBcNs9oI8__7,audio_native,"(201, 47)",True,0.0,0.0
+-iRBcNs9oI8__7,audio_time,"(201,)",True,0.0,0.0
+-iRBcNs9oI8__7,audio_cells,"(201, 2)",True,0.0,0.0
+-iRBcNs9oI8__7,audio_voiced,"(201,)",True,0.0,0.0
+-iRBcNs9oI8__7,bert_token_ids,"(17,)",True,0.0,0.0
+-iRBcNs9oI8__7,bert_word_membership,"(9, 17)",True,0.0,0.0
+-iRBcNs9oI8__7,bert_char_offsets,"(17, 2)",True,0.0,0.0
+-iRBcNs9oI8__7,scene_native,"(41, 512)",True,0.0,0.0
+-iRBcNs9oI8__7,expression_native,"(41, 52)",True,0.0,0.0
+-iRBcNs9oI8__7,expression_valid,"(41,)",True,0.0,0.0
+-iRBcNs9oI8__7,vision_time,"(41,)",True,0.0,0.0
+-iRBcNs9oI8__7,vision_cells,"(41, 2)",True,0.0,0.0
+-iRBcNs9oI8__7,vision_frame_index,"(41,)",True,0.0,0.0
+-iRBcNs9oI8__7,vision_bbox,"(41, 4)",True,0.0,0.0
+-iRBcNs9oI8__7,recovery_route,"(41,)",True,0.0,0.0
+-iRBcNs9oI8__7,alignment_supported,"(9,)",True,0.0,0.0
+-iRBcNs9oI8__7,ctc_cells,"(200, 2)",True,0.0,0.0
+-iRBcNs9oI8__7,word_time_membership,"(9, 200)",True,0.0,0.0
+-iRBcNs9oI8__7,word_start_quantiles,"(9, 3)",True,0.0,0.0
+-iRBcNs9oI8__7,word_end_quantiles,"(9, 3)",True,0.0,0.0
+-iRBcNs9oI8__7,word_audio,"(9, 97)",True,0.0,0.0
+-iRBcNs9oI8__7,word_audio_dim_mask,"(9, 97)",True,0.0,0.0
+-iRBcNs9oI8__7,word_audio_effective_seconds,"(9,)",True,0.0,0.0
+-iRBcNs9oI8__7,word_voiced_effective_seconds,"(9,)",True,0.0,0.0
+-iRBcNs9oI8__7,word_expression,"(9, 52)",True,0.0,0.0
+-iRBcNs9oI8__7,word_expression_mask,"(9,)",True,0.0,0.0
+-iRBcNs9oI8__7,word_scene,"(9, 512)",True,0.0,0.0
+-iRBcNs9oI8__7,word_scene_mask,"(9,)",True,0.0,0.0
+-iRBcNs9oI8__7,ctc_word_score,"(9,)",True,0.0,0.0
+-iRBcNs9oI8__7,asr_exact_match,"(9,)",True,0.0,0.0
+-iRBcNs9oI8__7,asr_time_gap_s,"(9,)",True,0.0,0.0
+-iRBcNs9oI8__7,asr_word_probability,"(9,)",True,0.0,0.0
+-iRBcNs9oI8__8,text,"(21, 768)",True,0.0,0.0
+-iRBcNs9oI8__8,text_mask,"(21,)",True,0.0,0.0
+-iRBcNs9oI8__8,audio_native,"(402, 47)",True,0.0,0.0
+-iRBcNs9oI8__8,audio_time,"(402,)",True,0.0,0.0
+-iRBcNs9oI8__8,audio_cells,"(402, 2)",True,0.0,0.0
+-iRBcNs9oI8__8,audio_voiced,"(402,)",True,0.0,0.0
+-iRBcNs9oI8__8,bert_token_ids,"(28,)",True,0.0,0.0
+-iRBcNs9oI8__8,bert_word_membership,"(21, 28)",True,0.0,0.0
+-iRBcNs9oI8__8,bert_char_offsets,"(28, 2)",True,0.0,0.0
+-iRBcNs9oI8__8,scene_native,"(81, 512)",True,0.0,0.0
+-iRBcNs9oI8__8,expression_native,"(81, 52)",True,0.0,0.0
+-iRBcNs9oI8__8,expression_valid,"(81,)",True,0.0,0.0
+-iRBcNs9oI8__8,vision_time,"(81,)",True,0.0,0.0
+-iRBcNs9oI8__8,vision_cells,"(81, 2)",True,0.0,0.0
+-iRBcNs9oI8__8,vision_frame_index,"(81,)",True,0.0,0.0
+-iRBcNs9oI8__8,vision_bbox,"(81, 4)",True,0.0,0.0
+-iRBcNs9oI8__8,recovery_route,"(81,)",True,0.0,0.0
+-iRBcNs9oI8__8,alignment_supported,"(21,)",True,0.0,0.0
+-iRBcNs9oI8__8,ctc_cells,"(401, 2)",True,0.0,0.0
+-iRBcNs9oI8__8,word_time_membership,"(21, 401)",True,0.0,0.0
+-iRBcNs9oI8__8,word_start_quantiles,"(21, 3)",True,0.0,0.0
+-iRBcNs9oI8__8,word_end_quantiles,"(21, 3)",True,0.0,0.0
+-iRBcNs9oI8__8,word_audio,"(21, 97)",True,0.0,0.0
+-iRBcNs9oI8__8,word_audio_dim_mask,"(21, 97)",True,0.0,0.0
+-iRBcNs9oI8__8,word_audio_effective_seconds,"(21,)",True,0.0,0.0
+-iRBcNs9oI8__8,word_voiced_effective_seconds,"(21,)",True,0.0,0.0
+-iRBcNs9oI8__8,word_expression,"(21, 52)",True,0.0,0.0
+-iRBcNs9oI8__8,word_expression_mask,"(21,)",True,0.0,0.0
+-iRBcNs9oI8__8,word_scene,"(21, 512)",True,0.0,0.0
+-iRBcNs9oI8__8,word_scene_mask,"(21,)",True,0.0,0.0
+-iRBcNs9oI8__8,ctc_word_score,"(21,)",True,0.0,0.0
+-iRBcNs9oI8__8,asr_exact_match,"(21,)",True,0.0,0.0
+-iRBcNs9oI8__8,asr_time_gap_s,"(21,)",True,0.0,0.0
+-iRBcNs9oI8__8,asr_word_probability,"(21,)",True,0.0,0.0
+-iRBcNs9oI8__9,text,"(5, 768)",True,0.0,0.0
+-iRBcNs9oI8__9,text_mask,"(5,)",True,0.0,0.0
+-iRBcNs9oI8__9,audio_native,"(169, 47)",True,0.0,0.0
+-iRBcNs9oI8__9,audio_time,"(169,)",True,0.0,0.0
+-iRBcNs9oI8__9,audio_cells,"(169, 2)",True,0.0,0.0
+-iRBcNs9oI8__9,audio_voiced,"(169,)",True,0.0,0.0
+-iRBcNs9oI8__9,bert_token_ids,"(7,)",True,0.0,0.0
+-iRBcNs9oI8__9,bert_word_membership,"(5, 7)",True,0.0,0.0
+-iRBcNs9oI8__9,bert_char_offsets,"(7, 2)",True,0.0,0.0
+-iRBcNs9oI8__9,scene_native,"(34, 512)",True,0.0,0.0
+-iRBcNs9oI8__9,expression_native,"(34, 52)",True,0.0,0.0
+-iRBcNs9oI8__9,expression_valid,"(34,)",True,0.0,0.0
+-iRBcNs9oI8__9,vision_time,"(34,)",True,0.0,0.0
+-iRBcNs9oI8__9,vision_cells,"(34, 2)",True,0.0,0.0
+-iRBcNs9oI8__9,vision_frame_index,"(34,)",True,0.0,0.0
+-iRBcNs9oI8__9,vision_bbox,"(34, 4)",True,0.0,0.0
+-iRBcNs9oI8__9,recovery_route,"(34,)",True,0.0,0.0
+-iRBcNs9oI8__9,alignment_supported,"(5,)",True,0.0,0.0
+-iRBcNs9oI8__9,ctc_cells,"(168, 2)",True,0.0,0.0
+-iRBcNs9oI8__9,word_time_membership,"(5, 168)",True,0.0,0.0
+-iRBcNs9oI8__9,word_start_quantiles,"(5, 3)",True,0.0,0.0
+-iRBcNs9oI8__9,word_end_quantiles,"(5, 3)",True,0.0,0.0
+-iRBcNs9oI8__9,word_audio,"(5, 97)",True,0.0,0.0
+-iRBcNs9oI8__9,word_audio_dim_mask,"(5, 97)",True,0.0,0.0
+-iRBcNs9oI8__9,word_audio_effective_seconds,"(5,)",True,0.0,0.0
+-iRBcNs9oI8__9,word_voiced_effective_seconds,"(5,)",True,0.0,0.0
+-iRBcNs9oI8__9,word_expression,"(5, 52)",True,0.0,0.0
+-iRBcNs9oI8__9,word_expression_mask,"(5,)",True,0.0,0.0
+-iRBcNs9oI8__9,word_scene,"(5, 512)",True,0.0,0.0
+-iRBcNs9oI8__9,word_scene_mask,"(5,)",True,0.0,0.0
+-iRBcNs9oI8__9,ctc_word_score,"(5,)",True,0.0,0.0
+-iRBcNs9oI8__9,asr_exact_match,"(5,)",True,0.0,0.0
+-iRBcNs9oI8__9,asr_time_gap_s,"(5,)",True,0.0,0.0
+-iRBcNs9oI8__9,asr_word_probability,"(5,)",True,0.0,0.0
+-lzEya4AM_4__5,text,"(19, 768)",True,0.0,0.0
+-lzEya4AM_4__5,text_mask,"(19,)",True,0.0,0.0
+-lzEya4AM_4__5,audio_native,"(379, 47)",True,0.0,0.0
+-lzEya4AM_4__5,audio_time,"(379,)",True,0.0,0.0
+-lzEya4AM_4__5,audio_cells,"(379, 2)",True,0.0,0.0
+-lzEya4AM_4__5,audio_voiced,"(379,)",True,0.0,0.0
+-lzEya4AM_4__5,bert_token_ids,"(23,)",True,0.0,0.0
+-lzEya4AM_4__5,bert_word_membership,"(19, 23)",True,0.0,0.0
+-lzEya4AM_4__5,bert_char_offsets,"(23, 2)",True,0.0,0.0
+-lzEya4AM_4__5,scene_native,"(77, 512)",True,0.0,0.0
+-lzEya4AM_4__5,expression_native,"(77, 52)",True,0.0,0.0
+-lzEya4AM_4__5,expression_valid,"(77,)",True,0.0,0.0
+-lzEya4AM_4__5,vision_time,"(77,)",True,0.0,0.0
+-lzEya4AM_4__5,vision_cells,"(77, 2)",True,0.0,0.0
+-lzEya4AM_4__5,vision_frame_index,"(77,)",True,0.0,0.0
+-lzEya4AM_4__5,vision_bbox,"(77, 4)",True,0.0,0.0
+-lzEya4AM_4__5,recovery_route,"(77,)",True,0.0,0.0
+-lzEya4AM_4__5,alignment_supported,"(19,)",True,0.0,0.0
+-lzEya4AM_4__5,ctc_cells,"(378, 2)",True,0.0,0.0
+-lzEya4AM_4__5,word_time_membership,"(19, 378)",True,0.0,0.0
+-lzEya4AM_4__5,word_start_quantiles,"(19, 3)",True,0.0,0.0
+-lzEya4AM_4__5,word_end_quantiles,"(19, 3)",True,0.0,0.0
+-lzEya4AM_4__5,word_audio,"(19, 97)",True,0.0,0.0
+-lzEya4AM_4__5,word_audio_dim_mask,"(19, 97)",True,0.0,0.0
+-lzEya4AM_4__5,word_audio_effective_seconds,"(19,)",True,0.0,0.0
+-lzEya4AM_4__5,word_voiced_effective_seconds,"(19,)",True,0.0,0.0
+-lzEya4AM_4__5,word_expression,"(19, 52)",True,0.0,0.0
+-lzEya4AM_4__5,word_expression_mask,"(19,)",True,0.0,0.0
+-lzEya4AM_4__5,word_scene,"(19, 512)",True,0.0,0.0
+-lzEya4AM_4__5,word_scene_mask,"(19,)",True,0.0,0.0
+-lzEya4AM_4__5,ctc_word_score,"(19,)",True,0.0,0.0
+-lzEya4AM_4__5,asr_exact_match,"(19,)",True,0.0,0.0
+-lzEya4AM_4__5,asr_time_gap_s,"(19,)",True,0.0,0.0
+-lzEya4AM_4__5,asr_word_probability,"(19,)",True,0.0,0.0
+-lzEya4AM_4__6,text,"(43, 768)",True,0.0,0.0
+-lzEya4AM_4__6,text_mask,"(43,)",True,0.0,0.0
+-lzEya4AM_4__6,audio_native,"(738, 47)",True,0.0,0.0
+-lzEya4AM_4__6,audio_time,"(738,)",True,0.0,0.0
+-lzEya4AM_4__6,audio_cells,"(738, 2)",True,0.0,0.0
+-lzEya4AM_4__6,audio_voiced,"(738,)",True,0.0,0.0
+-lzEya4AM_4__6,bert_token_ids,"(50,)",True,0.0,0.0
+-lzEya4AM_4__6,bert_word_membership,"(43, 50)",True,0.0,0.0
+-lzEya4AM_4__6,bert_char_offsets,"(50, 2)",True,0.0,0.0
+-lzEya4AM_4__6,scene_native,"(148, 512)",True,0.0,0.0
+-lzEya4AM_4__6,expression_native,"(148, 52)",True,0.0,0.0
+-lzEya4AM_4__6,expression_valid,"(148,)",True,0.0,0.0
+-lzEya4AM_4__6,vision_time,"(148,)",True,0.0,0.0
+-lzEya4AM_4__6,vision_cells,"(148, 2)",True,0.0,0.0
+-lzEya4AM_4__6,vision_frame_index,"(148,)",True,0.0,0.0
+-lzEya4AM_4__6,vision_bbox,"(148, 4)",True,0.0,0.0
+-lzEya4AM_4__6,recovery_route,"(148,)",True,0.0,0.0
+-lzEya4AM_4__6,alignment_supported,"(43,)",True,0.0,0.0
+-lzEya4AM_4__6,ctc_cells,"(736, 2)",True,0.0,0.0
+-lzEya4AM_4__6,word_time_membership,"(43, 736)",True,0.0,0.0
+-lzEya4AM_4__6,word_start_quantiles,"(43, 3)",True,0.0,0.0
+-lzEya4AM_4__6,word_end_quantiles,"(43, 3)",True,0.0,0.0
+-lzEya4AM_4__6,word_audio,"(43, 97)",True,0.0,0.0
+-lzEya4AM_4__6,word_audio_dim_mask,"(43, 97)",True,0.0,0.0
+-lzEya4AM_4__6,word_audio_effective_seconds,"(43,)",True,0.0,0.0
+-lzEya4AM_4__6,word_voiced_effective_seconds,"(43,)",True,0.0,0.0
+-lzEya4AM_4__6,word_expression,"(43, 52)",True,0.0,0.0
+-lzEya4AM_4__6,word_expression_mask,"(43,)",True,0.0,0.0
+-lzEya4AM_4__6,word_scene,"(43, 512)",True,0.0,0.0
+-lzEya4AM_4__6,word_scene_mask,"(43,)",True,0.0,0.0
+-lzEya4AM_4__6,ctc_word_score,"(43,)",True,0.0,0.0
+-lzEya4AM_4__6,asr_exact_match,"(43,)",True,0.0,0.0
+-lzEya4AM_4__6,asr_time_gap_s,"(43,)",True,0.0,0.0
+-lzEya4AM_4__6,asr_word_probability,"(43,)",True,0.0,0.0
+-MeTTeMJBNc__0,text,"(21, 768)",True,0.0,0.0
+-MeTTeMJBNc__0,text_mask,"(21,)",True,0.0,0.0
+-MeTTeMJBNc__0,audio_native,"(461, 47)",True,0.0,0.0
+-MeTTeMJBNc__0,audio_time,"(461,)",True,0.0,0.0
+-MeTTeMJBNc__0,audio_cells,"(461, 2)",True,0.0,0.0
+-MeTTeMJBNc__0,audio_voiced,"(461,)",True,0.0,0.0
+-MeTTeMJBNc__0,bert_token_ids,"(28,)",True,0.0,0.0
+-MeTTeMJBNc__0,bert_word_membership,"(21, 28)",True,0.0,0.0
+-MeTTeMJBNc__0,bert_char_offsets,"(28, 2)",True,0.0,0.0
+-MeTTeMJBNc__0,scene_native,"(94, 512)",True,0.0,0.0
+-MeTTeMJBNc__0,expression_native,"(94, 52)",True,0.0,0.0
+-MeTTeMJBNc__0,expression_valid,"(94,)",True,0.0,0.0
+-MeTTeMJBNc__0,vision_time,"(94,)",True,0.0,0.0
+-MeTTeMJBNc__0,vision_cells,"(94, 2)",True,0.0,0.0
+-MeTTeMJBNc__0,vision_frame_index,"(94,)",True,0.0,0.0
+-MeTTeMJBNc__0,vision_bbox,"(94, 4)",True,0.0,0.0
+-MeTTeMJBNc__0,recovery_route,"(94,)",True,0.0,0.0
+-MeTTeMJBNc__0,alignment_supported,"(21,)",True,0.0,0.0
+-MeTTeMJBNc__0,ctc_cells,"(460, 2)",True,0.0,0.0
+-MeTTeMJBNc__0,word_time_membership,"(21, 460)",True,0.0,0.0
+-MeTTeMJBNc__0,word_start_quantiles,"(21, 3)",True,0.0,0.0
+-MeTTeMJBNc__0,word_end_quantiles,"(21, 3)",True,0.0,0.0
+-MeTTeMJBNc__0,word_audio,"(21, 97)",True,0.0,0.0
+-MeTTeMJBNc__0,word_audio_dim_mask,"(21, 97)",True,0.0,0.0
+-MeTTeMJBNc__0,word_audio_effective_seconds,"(21,)",True,0.0,0.0
+-MeTTeMJBNc__0,word_voiced_effective_seconds,"(21,)",True,0.0,0.0
+-MeTTeMJBNc__0,word_expression,"(21, 52)",True,0.0,0.0
+-MeTTeMJBNc__0,word_expression_mask,"(21,)",True,0.0,0.0
+-MeTTeMJBNc__0,word_scene,"(21, 512)",True,0.0,0.0
+-MeTTeMJBNc__0,word_scene_mask,"(21,)",True,0.0,0.0
+-MeTTeMJBNc__0,ctc_word_score,"(21,)",True,0.0,0.0
+-MeTTeMJBNc__0,asr_exact_match,"(21,)",True,0.0,0.0
+-MeTTeMJBNc__0,asr_time_gap_s,"(21,)",True,0.0,0.0
+-MeTTeMJBNc__0,asr_word_probability,"(21,)",True,0.0,0.0
+-MeTTeMJBNc__13,text,"(14, 768)",True,0.0,0.0
+-MeTTeMJBNc__13,text_mask,"(14,)",True,0.0,0.0
+-MeTTeMJBNc__13,audio_native,"(263, 47)",True,0.0,0.0
+-MeTTeMJBNc__13,audio_time,"(263,)",True,0.0,0.0
+-MeTTeMJBNc__13,audio_cells,"(263, 2)",True,0.0,0.0
+-MeTTeMJBNc__13,audio_voiced,"(263,)",True,0.0,0.0
+-MeTTeMJBNc__13,bert_token_ids,"(18,)",True,0.0,0.0
+-MeTTeMJBNc__13,bert_word_membership,"(14, 18)",True,0.0,0.0
+-MeTTeMJBNc__13,bert_char_offsets,"(18, 2)",True,0.0,0.0
+-MeTTeMJBNc__13,scene_native,"(54, 512)",True,0.0,0.0
+-MeTTeMJBNc__13,expression_native,"(54, 52)",True,0.0,0.0
+-MeTTeMJBNc__13,expression_valid,"(54,)",True,0.0,0.0
+-MeTTeMJBNc__13,vision_time,"(54,)",True,0.0,0.0
+-MeTTeMJBNc__13,vision_cells,"(54, 2)",True,0.0,0.0
+-MeTTeMJBNc__13,vision_frame_index,"(54,)",True,0.0,0.0
+-MeTTeMJBNc__13,vision_bbox,"(54, 4)",True,0.0,0.0
+-MeTTeMJBNc__13,recovery_route,"(54,)",True,0.0,0.0
+-MeTTeMJBNc__13,alignment_supported,"(14,)",True,0.0,0.0
+-MeTTeMJBNc__13,ctc_cells,"(262, 2)",True,0.0,0.0
+-MeTTeMJBNc__13,word_time_membership,"(14, 262)",True,0.0,0.0
+-MeTTeMJBNc__13,word_start_quantiles,"(14, 3)",True,0.0,0.0
+-MeTTeMJBNc__13,word_end_quantiles,"(14, 3)",True,0.0,0.0
+-MeTTeMJBNc__13,word_audio,"(14, 97)",True,0.0,0.0
+-MeTTeMJBNc__13,word_audio_dim_mask,"(14, 97)",True,0.0,0.0
+-MeTTeMJBNc__13,word_audio_effective_seconds,"(14,)",True,0.0,0.0
+-MeTTeMJBNc__13,word_voiced_effective_seconds,"(14,)",True,0.0,0.0
+-MeTTeMJBNc__13,word_expression,"(14, 52)",True,0.0,0.0
+-MeTTeMJBNc__13,word_expression_mask,"(14,)",True,0.0,0.0
+-MeTTeMJBNc__13,word_scene,"(14, 512)",True,0.0,0.0
+-MeTTeMJBNc__13,word_scene_mask,"(14,)",True,0.0,0.0
+-MeTTeMJBNc__13,ctc_word_score,"(14,)",True,0.0,0.0
+-MeTTeMJBNc__13,asr_exact_match,"(14,)",True,0.0,0.0
+-MeTTeMJBNc__13,asr_time_gap_s,"(14,)",True,0.0,0.0
+-MeTTeMJBNc__13,asr_word_probability,"(14,)",True,0.0,0.0
+-MeTTeMJBNc__7,text,"(31, 768)",True,0.0,0.0
+-MeTTeMJBNc__7,text_mask,"(31,)",True,0.0,0.0
+-MeTTeMJBNc__7,audio_native,"(521, 47)",True,0.0,0.0
+-MeTTeMJBNc__7,audio_time,"(521,)",True,0.0,0.0
+-MeTTeMJBNc__7,audio_cells,"(521, 2)",True,0.0,0.0
+-MeTTeMJBNc__7,audio_voiced,"(521,)",True,0.0,0.0
+-MeTTeMJBNc__7,bert_token_ids,"(35,)",True,0.0,0.0
+-MeTTeMJBNc__7,bert_word_membership,"(31, 35)",True,0.0,0.0
+-MeTTeMJBNc__7,bert_char_offsets,"(35, 2)",True,0.0,0.0
+-MeTTeMJBNc__7,scene_native,"(105, 512)",True,0.0,0.0
+-MeTTeMJBNc__7,expression_native,"(105, 52)",True,0.0,0.0
+-MeTTeMJBNc__7,expression_valid,"(105,)",True,0.0,0.0
+-MeTTeMJBNc__7,vision_time,"(105,)",True,0.0,0.0
+-MeTTeMJBNc__7,vision_cells,"(105, 2)",True,0.0,0.0
+-MeTTeMJBNc__7,vision_frame_index,"(105,)",True,0.0,0.0
+-MeTTeMJBNc__7,vision_bbox,"(105, 4)",True,0.0,0.0
+-MeTTeMJBNc__7,recovery_route,"(105,)",True,0.0,0.0
+-MeTTeMJBNc__7,alignment_supported,"(31,)",True,0.0,0.0
+-MeTTeMJBNc__7,ctc_cells,"(520, 2)",True,0.0,0.0
+-MeTTeMJBNc__7,word_time_membership,"(31, 520)",True,0.0,0.0
+-MeTTeMJBNc__7,word_start_quantiles,"(31, 3)",True,0.0,0.0
+-MeTTeMJBNc__7,word_end_quantiles,"(31, 3)",True,0.0,0.0
+-MeTTeMJBNc__7,word_audio,"(31, 97)",True,0.0,0.0
+-MeTTeMJBNc__7,word_audio_dim_mask,"(31, 97)",True,0.0,0.0
+-MeTTeMJBNc__7,word_audio_effective_seconds,"(31,)",True,0.0,0.0
+-MeTTeMJBNc__7,word_voiced_effective_seconds,"(31,)",True,0.0,0.0
+-MeTTeMJBNc__7,word_expression,"(31, 52)",True,0.0,0.0
+-MeTTeMJBNc__7,word_expression_mask,"(31,)",True,0.0,0.0
+-MeTTeMJBNc__7,word_scene,"(31, 512)",True,0.0,0.0
+-MeTTeMJBNc__7,word_scene_mask,"(31,)",True,0.0,0.0
+-MeTTeMJBNc__7,ctc_word_score,"(31,)",True,0.0,0.0
+-MeTTeMJBNc__7,asr_exact_match,"(31,)",True,0.0,0.0
+-MeTTeMJBNc__7,asr_time_gap_s,"(31,)",True,0.0,0.0
+-MeTTeMJBNc__7,asr_word_probability,"(31,)",True,0.0,0.0
+-mJ2ud6oKI8__1,text,"(13, 768)",True,0.0,0.0
+-mJ2ud6oKI8__1,text_mask,"(13,)",True,0.0,0.0
+-mJ2ud6oKI8__1,audio_native,"(303, 47)",True,0.0,0.0
+-mJ2ud6oKI8__1,audio_time,"(303,)",True,0.0,0.0
+-mJ2ud6oKI8__1,audio_cells,"(303, 2)",True,0.0,0.0
+-mJ2ud6oKI8__1,audio_voiced,"(303,)",True,0.0,0.0
+-mJ2ud6oKI8__1,bert_token_ids,"(15,)",True,0.0,0.0
+-mJ2ud6oKI8__1,bert_word_membership,"(13, 15)",True,0.0,0.0
+-mJ2ud6oKI8__1,bert_char_offsets,"(15, 2)",True,0.0,0.0
+-mJ2ud6oKI8__1,scene_native,"(61, 512)",True,0.0,0.0
+-mJ2ud6oKI8__1,expression_native,"(61, 52)",True,0.0,0.0
+-mJ2ud6oKI8__1,expression_valid,"(61,)",True,0.0,0.0
+-mJ2ud6oKI8__1,vision_time,"(61,)",True,0.0,0.0
+-mJ2ud6oKI8__1,vision_cells,"(61, 2)",True,0.0,0.0
+-mJ2ud6oKI8__1,vision_frame_index,"(61,)",True,0.0,0.0
+-mJ2ud6oKI8__1,vision_bbox,"(61, 4)",True,0.0,0.0
+-mJ2ud6oKI8__1,recovery_route,"(61,)",True,0.0,0.0
+-mJ2ud6oKI8__1,alignment_supported,"(13,)",True,0.0,0.0
+-mJ2ud6oKI8__1,ctc_cells,"(302, 2)",True,0.0,0.0
+-mJ2ud6oKI8__1,word_time_membership,"(13, 302)",True,0.0,0.0
+-mJ2ud6oKI8__1,word_start_quantiles,"(13, 3)",True,0.0,0.0
+-mJ2ud6oKI8__1,word_end_quantiles,"(13, 3)",True,0.0,0.0
+-mJ2ud6oKI8__1,word_audio,"(13, 97)",True,0.0,0.0
+-mJ2ud6oKI8__1,word_audio_dim_mask,"(13, 97)",True,0.0,0.0
+-mJ2ud6oKI8__1,word_audio_effective_seconds,"(13,)",True,0.0,0.0
+-mJ2ud6oKI8__1,word_voiced_effective_seconds,"(13,)",True,0.0,0.0
+-mJ2ud6oKI8__1,word_expression,"(13, 52)",True,0.0,0.0
+-mJ2ud6oKI8__1,word_expression_mask,"(13,)",True,0.0,0.0
+-mJ2ud6oKI8__1,word_scene,"(13, 512)",True,0.0,0.0
+-mJ2ud6oKI8__1,word_scene_mask,"(13,)",True,0.0,0.0
+-mJ2ud6oKI8__1,ctc_word_score,"(13,)",True,0.0,0.0
+-mJ2ud6oKI8__1,asr_exact_match,"(13,)",True,0.0,0.0
+-mJ2ud6oKI8__1,asr_time_gap_s,"(13,)",True,0.0,0.0
+-mJ2ud6oKI8__1,asr_word_probability,"(13,)",True,0.0,0.0
+-mJ2ud6oKI8__2,text,"(11, 768)",True,0.0,0.0
+-mJ2ud6oKI8__2,text_mask,"(11,)",True,0.0,0.0
+-mJ2ud6oKI8__2,audio_native,"(286, 47)",True,0.0,0.0
+-mJ2ud6oKI8__2,audio_time,"(286,)",True,0.0,0.0
+-mJ2ud6oKI8__2,audio_cells,"(286, 2)",True,0.0,0.0
+-mJ2ud6oKI8__2,audio_voiced,"(286,)",True,0.0,0.0
+-mJ2ud6oKI8__2,bert_token_ids,"(19,)",True,0.0,0.0
+-mJ2ud6oKI8__2,bert_word_membership,"(11, 19)",True,0.0,0.0
+-mJ2ud6oKI8__2,bert_char_offsets,"(19, 2)",True,0.0,0.0
+-mJ2ud6oKI8__2,scene_native,"(57, 512)",True,0.0,0.0
+-mJ2ud6oKI8__2,expression_native,"(57, 52)",True,0.0,0.0
+-mJ2ud6oKI8__2,expression_valid,"(57,)",True,0.0,0.0
+-mJ2ud6oKI8__2,vision_time,"(57,)",True,0.0,0.0
+-mJ2ud6oKI8__2,vision_cells,"(57, 2)",True,0.0,0.0
+-mJ2ud6oKI8__2,vision_frame_index,"(57,)",True,0.0,0.0
+-mJ2ud6oKI8__2,vision_bbox,"(57, 4)",True,0.0,0.0
+-mJ2ud6oKI8__2,recovery_route,"(57,)",True,0.0,0.0
+-mJ2ud6oKI8__2,alignment_supported,"(11,)",True,0.0,0.0
+-mJ2ud6oKI8__2,ctc_cells,"(284, 2)",True,0.0,0.0
+-mJ2ud6oKI8__2,word_time_membership,"(11, 284)",True,0.0,0.0
+-mJ2ud6oKI8__2,word_start_quantiles,"(11, 3)",True,0.0,0.0
+-mJ2ud6oKI8__2,word_end_quantiles,"(11, 3)",True,0.0,0.0
+-mJ2ud6oKI8__2,word_audio,"(11, 97)",True,0.0,0.0
+-mJ2ud6oKI8__2,word_audio_dim_mask,"(11, 97)",True,0.0,0.0
+-mJ2ud6oKI8__2,word_audio_effective_seconds,"(11,)",True,0.0,0.0
+-mJ2ud6oKI8__2,word_voiced_effective_seconds,"(11,)",True,0.0,0.0
+-mJ2ud6oKI8__2,word_expression,"(11, 52)",True,0.0,0.0
+-mJ2ud6oKI8__2,word_expression_mask,"(11,)",True,0.0,0.0
+-mJ2ud6oKI8__2,word_scene,"(11, 512)",True,0.0,0.0
+-mJ2ud6oKI8__2,word_scene_mask,"(11,)",True,0.0,0.0
+-mJ2ud6oKI8__2,ctc_word_score,"(11,)",True,0.0,0.0
+-mJ2ud6oKI8__2,asr_exact_match,"(11,)",True,0.0,0.0
+-mJ2ud6oKI8__2,asr_time_gap_s,"(11,)",True,0.0,0.0
+-mJ2ud6oKI8__2,asr_word_probability,"(11,)",True,0.0,0.0
+-mJ2ud6oKI8__6,text,"(5, 768)",True,0.0,0.0
+-mJ2ud6oKI8__6,text_mask,"(5,)",True,0.0,0.0
+-mJ2ud6oKI8__6,audio_native,"(112, 47)",True,0.0,0.0
+-mJ2ud6oKI8__6,audio_time,"(112,)",True,0.0,0.0
+-mJ2ud6oKI8__6,audio_cells,"(112, 2)",True,0.0,0.0
+-mJ2ud6oKI8__6,audio_voiced,"(112,)",True,0.0,0.0
+-mJ2ud6oKI8__6,bert_token_ids,"(7,)",True,0.0,0.0
+-mJ2ud6oKI8__6,bert_word_membership,"(5, 7)",True,0.0,0.0
+-mJ2ud6oKI8__6,bert_char_offsets,"(7, 2)",True,0.0,0.0
+-mJ2ud6oKI8__6,scene_native,"(23, 512)",True,0.0,0.0
+-mJ2ud6oKI8__6,expression_native,"(23, 52)",True,0.0,0.0
+-mJ2ud6oKI8__6,expression_valid,"(23,)",True,0.0,0.0
+-mJ2ud6oKI8__6,vision_time,"(23,)",True,0.0,0.0
+-mJ2ud6oKI8__6,vision_cells,"(23, 2)",True,0.0,0.0
+-mJ2ud6oKI8__6,vision_frame_index,"(23,)",True,0.0,0.0
+-mJ2ud6oKI8__6,vision_bbox,"(23, 4)",True,0.0,0.0
+-mJ2ud6oKI8__6,recovery_route,"(23,)",True,0.0,0.0
+-mJ2ud6oKI8__6,alignment_supported,"(5,)",True,0.0,0.0
+-mJ2ud6oKI8__6,ctc_cells,"(111, 2)",True,0.0,0.0
+-mJ2ud6oKI8__6,word_time_membership,"(5, 111)",True,0.0,0.0
+-mJ2ud6oKI8__6,word_start_quantiles,"(5, 3)",True,0.0,0.0
+-mJ2ud6oKI8__6,word_end_quantiles,"(5, 3)",True,0.0,0.0
+-mJ2ud6oKI8__6,word_audio,"(5, 97)",True,0.0,0.0
+-mJ2ud6oKI8__6,word_audio_dim_mask,"(5, 97)",True,0.0,0.0
+-mJ2ud6oKI8__6,word_audio_effective_seconds,"(5,)",True,0.0,0.0
+-mJ2ud6oKI8__6,word_voiced_effective_seconds,"(5,)",True,0.0,0.0
+-mJ2ud6oKI8__6,word_expression,"(5, 52)",True,0.0,0.0
+-mJ2ud6oKI8__6,word_expression_mask,"(5,)",True,0.0,0.0
+-mJ2ud6oKI8__6,word_scene,"(5, 512)",True,0.0,0.0
+-mJ2ud6oKI8__6,word_scene_mask,"(5,)",True,0.0,0.0
+-mJ2ud6oKI8__6,ctc_word_score,"(5,)",True,0.0,0.0
+-mJ2ud6oKI8__6,asr_exact_match,"(5,)",True,0.0,0.0
+-mJ2ud6oKI8__6,asr_time_gap_s,"(5,)",True,0.0,0.0
+-mJ2ud6oKI8__6,asr_word_probability,"(5,)",True,0.0,0.0
+-mJ2ud6oKI8__8,text,"(11, 768)",True,0.0,0.0
+-mJ2ud6oKI8__8,text_mask,"(11,)",True,0.0,0.0
+-mJ2ud6oKI8__8,audio_native,"(209, 47)",True,0.0,0.0
+-mJ2ud6oKI8__8,audio_time,"(209,)",True,0.0,0.0
+-mJ2ud6oKI8__8,audio_cells,"(209, 2)",True,0.0,0.0
+-mJ2ud6oKI8__8,audio_voiced,"(209,)",True,0.0,0.0
+-mJ2ud6oKI8__8,bert_token_ids,"(13,)",True,0.0,0.0
+-mJ2ud6oKI8__8,bert_word_membership,"(11, 13)",True,0.0,0.0
+-mJ2ud6oKI8__8,bert_char_offsets,"(13, 2)",True,0.0,0.0
+-mJ2ud6oKI8__8,scene_native,"(42, 512)",True,0.0,0.0
+-mJ2ud6oKI8__8,expression_native,"(42, 52)",True,0.0,0.0
+-mJ2ud6oKI8__8,expression_valid,"(42,)",True,0.0,0.0
+-mJ2ud6oKI8__8,vision_time,"(42,)",True,0.0,0.0
+-mJ2ud6oKI8__8,vision_cells,"(42, 2)",True,0.0,0.0
+-mJ2ud6oKI8__8,vision_frame_index,"(42,)",True,0.0,0.0
+-mJ2ud6oKI8__8,vision_bbox,"(42, 4)",True,0.0,0.0
+-mJ2ud6oKI8__8,recovery_route,"(42,)",True,0.0,0.0
+-mJ2ud6oKI8__8,alignment_supported,"(11,)",True,0.0,0.0
+-mJ2ud6oKI8__8,ctc_cells,"(208, 2)",True,0.0,0.0
+-mJ2ud6oKI8__8,word_time_membership,"(11, 208)",True,0.0,0.0
+-mJ2ud6oKI8__8,word_start_quantiles,"(11, 3)",True,0.0,0.0
+-mJ2ud6oKI8__8,word_end_quantiles,"(11, 3)",True,0.0,0.0
+-mJ2ud6oKI8__8,word_audio,"(11, 97)",True,0.0,0.0
+-mJ2ud6oKI8__8,word_audio_dim_mask,"(11, 97)",True,0.0,0.0
+-mJ2ud6oKI8__8,word_audio_effective_seconds,"(11,)",True,0.0,0.0
+-mJ2ud6oKI8__8,word_voiced_effective_seconds,"(11,)",True,0.0,0.0
+-mJ2ud6oKI8__8,word_expression,"(11, 52)",True,0.0,0.0
+-mJ2ud6oKI8__8,word_expression_mask,"(11,)",True,0.0,0.0
+-mJ2ud6oKI8__8,word_scene,"(11, 512)",True,0.0,0.0
+-mJ2ud6oKI8__8,word_scene_mask,"(11,)",True,0.0,0.0
+-mJ2ud6oKI8__8,ctc_word_score,"(11,)",True,0.0,0.0
+-mJ2ud6oKI8__8,asr_exact_match,"(11,)",True,0.0,0.0
+-mJ2ud6oKI8__8,asr_time_gap_s,"(11,)",True,0.0,0.0
+-mJ2ud6oKI8__8,asr_word_probability,"(11,)",True,0.0,0.0
+-mJ2ud6oKI8__9,text,"(22, 768)",True,0.0,0.0
+-mJ2ud6oKI8__9,text_mask,"(22,)",True,0.0,0.0
+-mJ2ud6oKI8__9,audio_native,"(346, 47)",True,0.0,0.0
+-mJ2ud6oKI8__9,audio_time,"(346,)",True,0.0,0.0
+-mJ2ud6oKI8__9,audio_cells,"(346, 2)",True,0.0,0.0
+-mJ2ud6oKI8__9,audio_voiced,"(346,)",True,0.0,0.0
+-mJ2ud6oKI8__9,bert_token_ids,"(31,)",True,0.0,0.0
+-mJ2ud6oKI8__9,bert_word_membership,"(22, 31)",True,0.0,0.0
+-mJ2ud6oKI8__9,bert_char_offsets,"(31, 2)",True,0.0,0.0
+-mJ2ud6oKI8__9,scene_native,"(70, 512)",True,0.0,0.0
+-mJ2ud6oKI8__9,expression_native,"(70, 52)",True,0.0,0.0
+-mJ2ud6oKI8__9,expression_valid,"(70,)",True,0.0,0.0
+-mJ2ud6oKI8__9,vision_time,"(70,)",True,0.0,0.0
+-mJ2ud6oKI8__9,vision_cells,"(70, 2)",True,0.0,0.0
+-mJ2ud6oKI8__9,vision_frame_index,"(70,)",True,0.0,0.0
+-mJ2ud6oKI8__9,vision_bbox,"(70, 4)",True,0.0,0.0
+-mJ2ud6oKI8__9,recovery_route,"(70,)",True,0.0,0.0
+-mJ2ud6oKI8__9,alignment_supported,"(22,)",True,0.0,0.0
+-mJ2ud6oKI8__9,ctc_cells,"(345, 2)",True,0.0,0.0
+-mJ2ud6oKI8__9,word_time_membership,"(22, 345)",True,0.0,0.0
+-mJ2ud6oKI8__9,word_start_quantiles,"(22, 3)",True,0.0,0.0
+-mJ2ud6oKI8__9,word_end_quantiles,"(22, 3)",True,0.0,0.0
+-mJ2ud6oKI8__9,word_audio,"(22, 97)",True,0.0,0.0
+-mJ2ud6oKI8__9,word_audio_dim_mask,"(22, 97)",True,0.0,0.0
+-mJ2ud6oKI8__9,word_audio_effective_seconds,"(22,)",True,0.0,0.0
+-mJ2ud6oKI8__9,word_voiced_effective_seconds,"(22,)",True,0.0,0.0
+-mJ2ud6oKI8__9,word_expression,"(22, 52)",True,0.0,0.0
+-mJ2ud6oKI8__9,word_expression_mask,"(22,)",True,0.0,0.0
+-mJ2ud6oKI8__9,word_scene,"(22, 512)",True,0.0,0.0
+-mJ2ud6oKI8__9,word_scene_mask,"(22,)",True,0.0,0.0
+-mJ2ud6oKI8__9,ctc_word_score,"(22,)",True,0.0,0.0
+-mJ2ud6oKI8__9,asr_exact_match,"(22,)",True,0.0,0.0
+-mJ2ud6oKI8__9,asr_time_gap_s,"(22,)",True,0.0,0.0
+-mJ2ud6oKI8__9,asr_word_probability,"(22,)",True,0.0,0.0
+-mqbVkbCndg__0,text,"(14, 768)",True,0.0,0.0
+-mqbVkbCndg__0,text_mask,"(14,)",True,0.0,0.0
+-mqbVkbCndg__0,audio_native,"(320, 47)",True,0.0,0.0
+-mqbVkbCndg__0,audio_time,"(320,)",True,0.0,0.0
+-mqbVkbCndg__0,audio_cells,"(320, 2)",True,0.0,0.0
+-mqbVkbCndg__0,audio_voiced,"(320,)",True,0.0,0.0
+-mqbVkbCndg__0,bert_token_ids,"(19,)",True,0.0,0.0
+-mqbVkbCndg__0,bert_word_membership,"(14, 19)",True,0.0,0.0
+-mqbVkbCndg__0,bert_char_offsets,"(19, 2)",True,0.0,0.0
+-mqbVkbCndg__0,scene_native,"(65, 512)",True,0.0,0.0
+-mqbVkbCndg__0,expression_native,"(65, 52)",True,0.0,0.0
+-mqbVkbCndg__0,expression_valid,"(65,)",True,0.0,0.0
+-mqbVkbCndg__0,vision_time,"(65,)",True,0.0,0.0
+-mqbVkbCndg__0,vision_cells,"(65, 2)",True,0.0,0.0
+-mqbVkbCndg__0,vision_frame_index,"(65,)",True,0.0,0.0
+-mqbVkbCndg__0,vision_bbox,"(65, 4)",True,0.0,0.0
+-mqbVkbCndg__0,recovery_route,"(65,)",True,0.0,0.0
+-mqbVkbCndg__0,alignment_supported,"(14,)",True,0.0,0.0
+-mqbVkbCndg__0,ctc_cells,"(319, 2)",True,0.0,0.0
+-mqbVkbCndg__0,word_time_membership,"(14, 319)",True,0.0,0.0
+-mqbVkbCndg__0,word_start_quantiles,"(14, 3)",True,0.0,0.0
+-mqbVkbCndg__0,word_end_quantiles,"(14, 3)",True,0.0,0.0
+-mqbVkbCndg__0,word_audio,"(14, 97)",True,0.0,0.0
+-mqbVkbCndg__0,word_audio_dim_mask,"(14, 97)",True,0.0,0.0
+-mqbVkbCndg__0,word_audio_effective_seconds,"(14,)",True,0.0,0.0
+-mqbVkbCndg__0,word_voiced_effective_seconds,"(14,)",True,0.0,0.0
+-mqbVkbCndg__0,word_expression,"(14, 52)",True,0.0,0.0
+-mqbVkbCndg__0,word_expression_mask,"(14,)",True,0.0,0.0
+-mqbVkbCndg__0,word_scene,"(14, 512)",True,0.0,0.0
+-mqbVkbCndg__0,word_scene_mask,"(14,)",True,0.0,0.0
+-mqbVkbCndg__0,ctc_word_score,"(14,)",True,0.0,0.0
+-mqbVkbCndg__0,asr_exact_match,"(14,)",True,0.0,0.0
+-mqbVkbCndg__0,asr_time_gap_s,"(14,)",True,0.0,0.0
+-mqbVkbCndg__0,asr_word_probability,"(14,)",True,0.0,0.0
+-NFrJFQijFE__1,text,"(16, 768)",True,0.0,0.0
+-NFrJFQijFE__1,text_mask,"(16,)",True,0.0,0.0
+-NFrJFQijFE__1,audio_native,"(283, 47)",True,0.0,0.0
+-NFrJFQijFE__1,audio_time,"(283,)",True,0.0,0.0
+-NFrJFQijFE__1,audio_cells,"(283, 2)",True,0.0,0.0
+-NFrJFQijFE__1,audio_voiced,"(283,)",True,0.0,0.0
+-NFrJFQijFE__1,bert_token_ids,"(18,)",True,0.0,0.0
+-NFrJFQijFE__1,bert_word_membership,"(16, 18)",True,0.0,0.0
+-NFrJFQijFE__1,bert_char_offsets,"(18, 2)",True,0.0,0.0
+-NFrJFQijFE__1,scene_native,"(57, 512)",True,0.0,0.0
+-NFrJFQijFE__1,expression_native,"(57, 52)",True,0.0,0.0
+-NFrJFQijFE__1,expression_valid,"(57,)",True,0.0,0.0
+-NFrJFQijFE__1,vision_time,"(57,)",True,0.0,0.0
+-NFrJFQijFE__1,vision_cells,"(57, 2)",True,0.0,0.0
+-NFrJFQijFE__1,vision_frame_index,"(57,)",True,0.0,0.0
+-NFrJFQijFE__1,vision_bbox,"(57, 4)",True,0.0,0.0
+-NFrJFQijFE__1,recovery_route,"(57,)",True,0.0,0.0
+-NFrJFQijFE__1,alignment_supported,"(16,)",True,0.0,0.0
+-NFrJFQijFE__1,ctc_cells,"(282, 2)",True,0.0,0.0
+-NFrJFQijFE__1,word_time_membership,"(16, 282)",True,0.0,0.0
+-NFrJFQijFE__1,word_start_quantiles,"(16, 3)",True,0.0,0.0
+-NFrJFQijFE__1,word_end_quantiles,"(16, 3)",True,0.0,0.0
+-NFrJFQijFE__1,word_audio,"(16, 97)",True,0.0,0.0
+-NFrJFQijFE__1,word_audio_dim_mask,"(16, 97)",True,0.0,0.0
+-NFrJFQijFE__1,word_audio_effective_seconds,"(16,)",True,0.0,0.0
+-NFrJFQijFE__1,word_voiced_effective_seconds,"(16,)",True,0.0,0.0
+-NFrJFQijFE__1,word_expression,"(16, 52)",True,0.0,0.0
+-NFrJFQijFE__1,word_expression_mask,"(16,)",True,0.0,0.0
+-NFrJFQijFE__1,word_scene,"(16, 512)",True,0.0,0.0
+-NFrJFQijFE__1,word_scene_mask,"(16,)",True,0.0,0.0
+-NFrJFQijFE__1,ctc_word_score,"(16,)",True,0.0,0.0
+-NFrJFQijFE__1,asr_exact_match,"(16,)",True,0.0,0.0
+-NFrJFQijFE__1,asr_time_gap_s,"(16,)",True,0.0,0.0
+-NFrJFQijFE__1,asr_word_probability,"(16,)",True,0.0,0.0
+-NFrJFQijFE__2,text,"(18, 768)",True,0.0,0.0
+-NFrJFQijFE__2,text_mask,"(18,)",True,0.0,0.0
+-NFrJFQijFE__2,audio_native,"(335, 47)",True,0.0,0.0
+-NFrJFQijFE__2,audio_time,"(335,)",True,0.0,0.0
+-NFrJFQijFE__2,audio_cells,"(335, 2)",True,0.0,0.0
+-NFrJFQijFE__2,audio_voiced,"(335,)",True,0.0,0.0
+-NFrJFQijFE__2,bert_token_ids,"(20,)",True,0.0,0.0
+-NFrJFQijFE__2,bert_word_membership,"(18, 20)",True,0.0,0.0
+-NFrJFQijFE__2,bert_char_offsets,"(20, 2)",True,0.0,0.0
+-NFrJFQijFE__2,scene_native,"(68, 512)",True,0.0,0.0
+-NFrJFQijFE__2,expression_native,"(68, 52)",True,0.0,0.0
+-NFrJFQijFE__2,expression_valid,"(68,)",True,0.0,0.0
+-NFrJFQijFE__2,vision_time,"(68,)",True,0.0,0.0
+-NFrJFQijFE__2,vision_cells,"(68, 2)",True,0.0,0.0
+-NFrJFQijFE__2,vision_frame_index,"(68,)",True,0.0,0.0
+-NFrJFQijFE__2,vision_bbox,"(68, 4)",True,0.0,0.0
+-NFrJFQijFE__2,recovery_route,"(68,)",True,0.0,0.0
+-NFrJFQijFE__2,alignment_supported,"(18,)",True,0.0,0.0
+-NFrJFQijFE__2,ctc_cells,"(334, 2)",True,0.0,0.0
+-NFrJFQijFE__2,word_time_membership,"(18, 334)",True,0.0,0.0
+-NFrJFQijFE__2,word_start_quantiles,"(18, 3)",True,0.0,0.0
+-NFrJFQijFE__2,word_end_quantiles,"(18, 3)",True,0.0,0.0
+-NFrJFQijFE__2,word_audio,"(18, 97)",True,0.0,0.0
+-NFrJFQijFE__2,word_audio_dim_mask,"(18, 97)",True,0.0,0.0
+-NFrJFQijFE__2,word_audio_effective_seconds,"(18,)",True,0.0,0.0
+-NFrJFQijFE__2,word_voiced_effective_seconds,"(18,)",True,0.0,0.0
+-NFrJFQijFE__2,word_expression,"(18, 52)",True,0.0,0.0
+-NFrJFQijFE__2,word_expression_mask,"(18,)",True,0.0,0.0
+-NFrJFQijFE__2,word_scene,"(18, 512)",True,0.0,0.0
+-NFrJFQijFE__2,word_scene_mask,"(18,)",True,0.0,0.0
+-NFrJFQijFE__2,ctc_word_score,"(18,)",True,0.0,0.0
+-NFrJFQijFE__2,asr_exact_match,"(18,)",True,0.0,0.0
+-NFrJFQijFE__2,asr_time_gap_s,"(18,)",True,0.0,0.0
+-NFrJFQijFE__2,asr_word_probability,"(18,)",True,0.0,0.0
+-qDkUB0GgYY__6,text,"(16, 768)",True,0.0,0.0
+-qDkUB0GgYY__6,text_mask,"(16,)",True,0.0,0.0
+-qDkUB0GgYY__6,audio_native,"(231, 47)",True,0.0,0.0
+-qDkUB0GgYY__6,audio_time,"(231,)",True,0.0,0.0
+-qDkUB0GgYY__6,audio_cells,"(231, 2)",True,0.0,0.0
+-qDkUB0GgYY__6,audio_voiced,"(231,)",True,0.0,0.0
+-qDkUB0GgYY__6,bert_token_ids,"(20,)",True,0.0,0.0
+-qDkUB0GgYY__6,bert_word_membership,"(16, 20)",True,0.0,0.0
+-qDkUB0GgYY__6,bert_char_offsets,"(20, 2)",True,0.0,0.0
+-qDkUB0GgYY__6,scene_native,"(47, 512)",True,0.0,0.0
+-qDkUB0GgYY__6,expression_native,"(47, 52)",True,0.0,0.0
+-qDkUB0GgYY__6,expression_valid,"(47,)",True,0.0,0.0
+-qDkUB0GgYY__6,vision_time,"(47,)",True,0.0,0.0
+-qDkUB0GgYY__6,vision_cells,"(47, 2)",True,0.0,0.0
+-qDkUB0GgYY__6,vision_frame_index,"(47,)",True,0.0,0.0
+-qDkUB0GgYY__6,vision_bbox,"(47, 4)",True,0.0,0.0
+-qDkUB0GgYY__6,recovery_route,"(47,)",True,0.0,0.0
+-qDkUB0GgYY__6,alignment_supported,"(16,)",True,0.0,0.0
+-qDkUB0GgYY__6,ctc_cells,"(230, 2)",True,0.0,0.0
+-qDkUB0GgYY__6,word_time_membership,"(16, 230)",True,0.0,0.0
+-qDkUB0GgYY__6,word_start_quantiles,"(16, 3)",True,0.0,0.0
+-qDkUB0GgYY__6,word_end_quantiles,"(16, 3)",True,0.0,0.0
+-qDkUB0GgYY__6,word_audio,"(16, 97)",True,0.0,0.0
+-qDkUB0GgYY__6,word_audio_dim_mask,"(16, 97)",True,0.0,0.0
+-qDkUB0GgYY__6,word_audio_effective_seconds,"(16,)",True,0.0,0.0
+-qDkUB0GgYY__6,word_voiced_effective_seconds,"(16,)",True,0.0,0.0
+-qDkUB0GgYY__6,word_expression,"(16, 52)",True,0.0,0.0
+-qDkUB0GgYY__6,word_expression_mask,"(16,)",True,0.0,0.0
+-qDkUB0GgYY__6,word_scene,"(16, 512)",True,0.0,0.0
+-qDkUB0GgYY__6,word_scene_mask,"(16,)",True,0.0,0.0
+-qDkUB0GgYY__6,ctc_word_score,"(16,)",True,0.0,0.0
+-qDkUB0GgYY__6,asr_exact_match,"(16,)",True,0.0,0.0
+-qDkUB0GgYY__6,asr_time_gap_s,"(16,)",True,0.0,0.0
+-qDkUB0GgYY__6,asr_word_probability,"(16,)",True,0.0,0.0
+-RfYyzHpjk4__11,text,"(17, 768)",True,0.0,0.0
+-RfYyzHpjk4__11,text_mask,"(17,)",True,0.0,0.0
+-RfYyzHpjk4__11,audio_native,"(254, 47)",True,0.0,0.0
+-RfYyzHpjk4__11,audio_time,"(254,)",True,0.0,0.0
+-RfYyzHpjk4__11,audio_cells,"(254, 2)",True,0.0,0.0
+-RfYyzHpjk4__11,audio_voiced,"(254,)",True,0.0,0.0
+-RfYyzHpjk4__11,bert_token_ids,"(21,)",True,0.0,0.0
+-RfYyzHpjk4__11,bert_word_membership,"(17, 21)",True,0.0,0.0
+-RfYyzHpjk4__11,bert_char_offsets,"(21, 2)",True,0.0,0.0
+-RfYyzHpjk4__11,scene_native,"(52, 512)",True,0.0,0.0
+-RfYyzHpjk4__11,expression_native,"(52, 52)",True,0.0,0.0
+-RfYyzHpjk4__11,expression_valid,"(52,)",True,0.0,0.0
+-RfYyzHpjk4__11,vision_time,"(52,)",True,0.0,0.0
+-RfYyzHpjk4__11,vision_cells,"(52, 2)",True,0.0,0.0
+-RfYyzHpjk4__11,vision_frame_index,"(52,)",True,0.0,0.0
+-RfYyzHpjk4__11,vision_bbox,"(52, 4)",True,0.0,0.0
+-RfYyzHpjk4__11,recovery_route,"(52,)",True,0.0,0.0
+-RfYyzHpjk4__11,alignment_supported,"(17,)",True,0.0,0.0
+-RfYyzHpjk4__11,ctc_cells,"(253, 2)",True,0.0,0.0
+-RfYyzHpjk4__11,word_time_membership,"(17, 253)",True,0.0,0.0
+-RfYyzHpjk4__11,word_start_quantiles,"(17, 3)",True,0.0,0.0
+-RfYyzHpjk4__11,word_end_quantiles,"(17, 3)",True,0.0,0.0
+-RfYyzHpjk4__11,word_audio,"(17, 97)",True,0.0,0.0
+-RfYyzHpjk4__11,word_audio_dim_mask,"(17, 97)",True,0.0,0.0
+-RfYyzHpjk4__11,word_audio_effective_seconds,"(17,)",True,0.0,0.0
+-RfYyzHpjk4__11,word_voiced_effective_seconds,"(17,)",True,0.0,0.0
+-RfYyzHpjk4__11,word_expression,"(17, 52)",True,0.0,0.0
+-RfYyzHpjk4__11,word_expression_mask,"(17,)",True,0.0,0.0
+-RfYyzHpjk4__11,word_scene,"(17, 512)",True,0.0,0.0
+-RfYyzHpjk4__11,word_scene_mask,"(17,)",True,0.0,0.0
+-RfYyzHpjk4__11,ctc_word_score,"(17,)",True,0.0,0.0
+-RfYyzHpjk4__11,asr_exact_match,"(17,)",True,0.0,0.0
+-RfYyzHpjk4__11,asr_time_gap_s,"(17,)",True,0.0,0.0
+-RfYyzHpjk4__11,asr_word_probability,"(17,)",True,0.0,0.0
+-RfYyzHpjk4__2,text,"(25, 768)",True,0.0,0.0
+-RfYyzHpjk4__2,text_mask,"(25,)",True,0.0,0.0
+-RfYyzHpjk4__2,audio_native,"(270, 47)",True,0.0,0.0
+-RfYyzHpjk4__2,audio_time,"(270,)",True,0.0,0.0
+-RfYyzHpjk4__2,audio_cells,"(270, 2)",True,0.0,0.0
+-RfYyzHpjk4__2,audio_voiced,"(270,)",True,0.0,0.0
+-RfYyzHpjk4__2,bert_token_ids,"(31,)",True,0.0,0.0
+-RfYyzHpjk4__2,bert_word_membership,"(25, 31)",True,0.0,0.0
+-RfYyzHpjk4__2,bert_char_offsets,"(31, 2)",True,0.0,0.0
+-RfYyzHpjk4__2,scene_native,"(55, 512)",True,0.0,0.0
+-RfYyzHpjk4__2,expression_native,"(55, 52)",True,0.0,0.0
+-RfYyzHpjk4__2,expression_valid,"(55,)",True,0.0,0.0
+-RfYyzHpjk4__2,vision_time,"(55,)",True,0.0,0.0
+-RfYyzHpjk4__2,vision_cells,"(55, 2)",True,0.0,0.0
+-RfYyzHpjk4__2,vision_frame_index,"(55,)",True,0.0,0.0
+-RfYyzHpjk4__2,vision_bbox,"(55, 4)",True,0.0,0.0
+-RfYyzHpjk4__2,recovery_route,"(55,)",True,0.0,0.0
+-RfYyzHpjk4__2,alignment_supported,"(25,)",True,0.0,0.0
+-RfYyzHpjk4__2,ctc_cells,"(269, 2)",True,0.0,0.0
+-RfYyzHpjk4__2,word_time_membership,"(25, 269)",True,0.0,0.0
+-RfYyzHpjk4__2,word_start_quantiles,"(25, 3)",True,0.0,0.0
+-RfYyzHpjk4__2,word_end_quantiles,"(25, 3)",True,0.0,0.0
+-RfYyzHpjk4__2,word_audio,"(25, 97)",True,0.0,0.0
+-RfYyzHpjk4__2,word_audio_dim_mask,"(25, 97)",True,0.0,0.0
+-RfYyzHpjk4__2,word_audio_effective_seconds,"(25,)",True,0.0,0.0
+-RfYyzHpjk4__2,word_voiced_effective_seconds,"(25,)",True,0.0,0.0
+-RfYyzHpjk4__2,word_expression,"(25, 52)",True,0.0,0.0
+-RfYyzHpjk4__2,word_expression_mask,"(25,)",True,0.0,0.0
+-RfYyzHpjk4__2,word_scene,"(25, 512)",True,0.0,0.0
+-RfYyzHpjk4__2,word_scene_mask,"(25,)",True,0.0,0.0
+-RfYyzHpjk4__2,ctc_word_score,"(25,)",True,0.0,0.0
+-RfYyzHpjk4__2,asr_exact_match,"(25,)",True,0.0,0.0
+-RfYyzHpjk4__2,asr_time_gap_s,"(25,)",True,0.0,0.0
+-RfYyzHpjk4__2,asr_word_probability,"(25,)",True,0.0,0.0
+-RfYyzHpjk4__8,text,"(17, 768)",True,0.0,0.0
+-RfYyzHpjk4__8,text_mask,"(17,)",True,0.0,0.0
+-RfYyzHpjk4__8,audio_native,"(227, 47)",True,0.0,0.0
+-RfYyzHpjk4__8,audio_time,"(227,)",True,0.0,0.0
+-RfYyzHpjk4__8,audio_cells,"(227, 2)",True,0.0,0.0
+-RfYyzHpjk4__8,audio_voiced,"(227,)",True,0.0,0.0
+-RfYyzHpjk4__8,bert_token_ids,"(23,)",True,0.0,0.0
+-RfYyzHpjk4__8,bert_word_membership,"(17, 23)",True,0.0,0.0
+-RfYyzHpjk4__8,bert_char_offsets,"(23, 2)",True,0.0,0.0
+-RfYyzHpjk4__8,scene_native,"(46, 512)",True,0.0,0.0
+-RfYyzHpjk4__8,expression_native,"(46, 52)",True,0.0,0.0
+-RfYyzHpjk4__8,expression_valid,"(46,)",True,0.0,0.0
+-RfYyzHpjk4__8,vision_time,"(46,)",True,0.0,0.0
+-RfYyzHpjk4__8,vision_cells,"(46, 2)",True,0.0,0.0
+-RfYyzHpjk4__8,vision_frame_index,"(46,)",True,0.0,0.0
+-RfYyzHpjk4__8,vision_bbox,"(46, 4)",True,0.0,0.0
+-RfYyzHpjk4__8,recovery_route,"(46,)",True,0.0,0.0
+-RfYyzHpjk4__8,alignment_supported,"(17,)",True,0.0,0.0
+-RfYyzHpjk4__8,ctc_cells,"(226, 2)",True,0.0,0.0
+-RfYyzHpjk4__8,word_time_membership,"(17, 226)",True,0.0,0.0
+-RfYyzHpjk4__8,word_start_quantiles,"(17, 3)",True,0.0,0.0
+-RfYyzHpjk4__8,word_end_quantiles,"(17, 3)",True,0.0,0.0
+-RfYyzHpjk4__8,word_audio,"(17, 97)",True,0.0,0.0
+-RfYyzHpjk4__8,word_audio_dim_mask,"(17, 97)",True,0.0,0.0
+-RfYyzHpjk4__8,word_audio_effective_seconds,"(17,)",True,0.0,0.0
+-RfYyzHpjk4__8,word_voiced_effective_seconds,"(17,)",True,0.0,0.0
+-RfYyzHpjk4__8,word_expression,"(17, 52)",True,0.0,0.0
+-RfYyzHpjk4__8,word_expression_mask,"(17,)",True,0.0,0.0
+-RfYyzHpjk4__8,word_scene,"(17, 512)",True,0.0,0.0
+-RfYyzHpjk4__8,word_scene_mask,"(17,)",True,0.0,0.0
+-RfYyzHpjk4__8,ctc_word_score,"(17,)",True,0.0,0.0
+-RfYyzHpjk4__8,asr_exact_match,"(17,)",True,0.0,0.0
+-RfYyzHpjk4__8,asr_time_gap_s,"(17,)",True,0.0,0.0
+-RfYyzHpjk4__8,asr_word_probability,"(17,)",True,0.0,0.0
+-ri04Z7vwnc__0,text,"(8, 768)",True,0.0,0.0
+-ri04Z7vwnc__0,text_mask,"(8,)",True,0.0,0.0
+-ri04Z7vwnc__0,audio_native,"(139, 47)",True,0.0,0.0
+-ri04Z7vwnc__0,audio_time,"(139,)",True,0.0,0.0
+-ri04Z7vwnc__0,audio_cells,"(139, 2)",True,0.0,0.0
+-ri04Z7vwnc__0,audio_voiced,"(139,)",True,0.0,0.0
+-ri04Z7vwnc__0,bert_token_ids,"(10,)",True,0.0,0.0
+-ri04Z7vwnc__0,bert_word_membership,"(8, 10)",True,0.0,0.0
+-ri04Z7vwnc__0,bert_char_offsets,"(10, 2)",True,0.0,0.0
+-ri04Z7vwnc__0,scene_native,"(28, 512)",True,0.0,0.0
+-ri04Z7vwnc__0,expression_native,"(28, 52)",True,0.0,0.0
+-ri04Z7vwnc__0,expression_valid,"(28,)",True,0.0,0.0
+-ri04Z7vwnc__0,vision_time,"(28,)",True,0.0,0.0
+-ri04Z7vwnc__0,vision_cells,"(28, 2)",True,0.0,0.0
+-ri04Z7vwnc__0,vision_frame_index,"(28,)",True,0.0,0.0
+-ri04Z7vwnc__0,vision_bbox,"(28, 4)",True,0.0,0.0
+-ri04Z7vwnc__0,recovery_route,"(28,)",True,0.0,0.0
+-ri04Z7vwnc__0,alignment_supported,"(8,)",True,0.0,0.0
+-ri04Z7vwnc__0,ctc_cells,"(137, 2)",True,0.0,0.0
+-ri04Z7vwnc__0,word_time_membership,"(8, 137)",True,0.0,0.0
+-ri04Z7vwnc__0,word_start_quantiles,"(8, 3)",True,0.0,0.0
+-ri04Z7vwnc__0,word_end_quantiles,"(8, 3)",True,0.0,0.0
+-ri04Z7vwnc__0,word_audio,"(8, 97)",True,0.0,0.0
+-ri04Z7vwnc__0,word_audio_dim_mask,"(8, 97)",True,0.0,0.0
+-ri04Z7vwnc__0,word_audio_effective_seconds,"(8,)",True,0.0,0.0
+-ri04Z7vwnc__0,word_voiced_effective_seconds,"(8,)",True,0.0,0.0
+-ri04Z7vwnc__0,word_expression,"(8, 52)",True,0.0,0.0
+-ri04Z7vwnc__0,word_expression_mask,"(8,)",True,0.0,0.0
+-ri04Z7vwnc__0,word_scene,"(8, 512)",True,0.0,0.0
+-ri04Z7vwnc__0,word_scene_mask,"(8,)",True,0.0,0.0
+-ri04Z7vwnc__0,ctc_word_score,"(8,)",True,0.0,0.0
+-ri04Z7vwnc__0,asr_exact_match,"(8,)",True,0.0,0.0
+-ri04Z7vwnc__0,asr_time_gap_s,"(8,)",True,0.0,0.0
+-ri04Z7vwnc__0,asr_word_probability,"(8,)",True,0.0,0.0
+-ri04Z7vwnc__2,text,"(16, 768)",True,0.0,0.0
+-ri04Z7vwnc__2,text_mask,"(16,)",True,0.0,0.0
+-ri04Z7vwnc__2,audio_native,"(296, 47)",True,0.0,0.0
+-ri04Z7vwnc__2,audio_time,"(296,)",True,0.0,0.0
+-ri04Z7vwnc__2,audio_cells,"(296, 2)",True,0.0,0.0
+-ri04Z7vwnc__2,audio_voiced,"(296,)",True,0.0,0.0
+-ri04Z7vwnc__2,bert_token_ids,"(28,)",True,0.0,0.0
+-ri04Z7vwnc__2,bert_word_membership,"(16, 28)",True,0.0,0.0
+-ri04Z7vwnc__2,bert_char_offsets,"(28, 2)",True,0.0,0.0
+-ri04Z7vwnc__2,scene_native,"(60, 512)",True,0.0,0.0
+-ri04Z7vwnc__2,expression_native,"(60, 52)",True,0.0,0.0
+-ri04Z7vwnc__2,expression_valid,"(60,)",True,0.0,0.0
+-ri04Z7vwnc__2,vision_time,"(60,)",True,0.0,0.0
+-ri04Z7vwnc__2,vision_cells,"(60, 2)",True,0.0,0.0
+-ri04Z7vwnc__2,vision_frame_index,"(60,)",True,0.0,0.0
+-ri04Z7vwnc__2,vision_bbox,"(60, 4)",True,0.0,0.0
+-ri04Z7vwnc__2,recovery_route,"(60,)",True,0.0,0.0
+-ri04Z7vwnc__2,alignment_supported,"(16,)",True,0.0,0.0
+-ri04Z7vwnc__2,ctc_cells,"(295, 2)",True,0.0,0.0
+-ri04Z7vwnc__2,word_time_membership,"(16, 295)",True,0.0,0.0
+-ri04Z7vwnc__2,word_start_quantiles,"(16, 3)",True,0.0,0.0
+-ri04Z7vwnc__2,word_end_quantiles,"(16, 3)",True,0.0,0.0
+-ri04Z7vwnc__2,word_audio,"(16, 97)",True,0.0,0.0
+-ri04Z7vwnc__2,word_audio_dim_mask,"(16, 97)",True,0.0,0.0
+-ri04Z7vwnc__2,word_audio_effective_seconds,"(16,)",True,0.0,0.0
+-ri04Z7vwnc__2,word_voiced_effective_seconds,"(16,)",True,0.0,0.0
+-ri04Z7vwnc__2,word_expression,"(16, 52)",True,0.0,0.0
+-ri04Z7vwnc__2,word_expression_mask,"(16,)",True,0.0,0.0
+-ri04Z7vwnc__2,word_scene,"(16, 512)",True,0.0,0.0
+-ri04Z7vwnc__2,word_scene_mask,"(16,)",True,0.0,0.0
+-ri04Z7vwnc__2,ctc_word_score,"(16,)",True,0.0,0.0
+-ri04Z7vwnc__2,asr_exact_match,"(16,)",True,0.0,0.0
+-ri04Z7vwnc__2,asr_time_gap_s,"(16,)",True,0.0,0.0
+-ri04Z7vwnc__2,asr_word_probability,"(16,)",True,0.0,0.0
+-ri04Z7vwnc__5,text,"(8, 768)",True,0.0,0.0
+-ri04Z7vwnc__5,text_mask,"(8,)",True,0.0,0.0
+-ri04Z7vwnc__5,audio_native,"(172, 47)",True,0.0,0.0
+-ri04Z7vwnc__5,audio_time,"(172,)",True,0.0,0.0
+-ri04Z7vwnc__5,audio_cells,"(172, 2)",True,0.0,0.0
+-ri04Z7vwnc__5,audio_voiced,"(172,)",True,0.0,0.0
+-ri04Z7vwnc__5,bert_token_ids,"(13,)",True,0.0,0.0
+-ri04Z7vwnc__5,bert_word_membership,"(8, 13)",True,0.0,0.0
+-ri04Z7vwnc__5,bert_char_offsets,"(13, 2)",True,0.0,0.0
+-ri04Z7vwnc__5,scene_native,"(35, 512)",True,0.0,0.0
+-ri04Z7vwnc__5,expression_native,"(35, 52)",True,0.0,0.0
+-ri04Z7vwnc__5,expression_valid,"(35,)",True,0.0,0.0
+-ri04Z7vwnc__5,vision_time,"(35,)",True,0.0,0.0
+-ri04Z7vwnc__5,vision_cells,"(35, 2)",True,0.0,0.0
+-ri04Z7vwnc__5,vision_frame_index,"(35,)",True,0.0,0.0
+-ri04Z7vwnc__5,vision_bbox,"(35, 4)",True,0.0,0.0
+-ri04Z7vwnc__5,recovery_route,"(35,)",True,0.0,0.0
+-ri04Z7vwnc__5,alignment_supported,"(8,)",True,0.0,0.0
+-ri04Z7vwnc__5,ctc_cells,"(171, 2)",True,0.0,0.0
+-ri04Z7vwnc__5,word_time_membership,"(8, 171)",True,0.0,0.0
+-ri04Z7vwnc__5,word_start_quantiles,"(8, 3)",True,0.0,0.0
+-ri04Z7vwnc__5,word_end_quantiles,"(8, 3)",True,0.0,0.0
+-ri04Z7vwnc__5,word_audio,"(8, 97)",True,0.0,0.0
+-ri04Z7vwnc__5,word_audio_dim_mask,"(8, 97)",True,0.0,0.0
+-ri04Z7vwnc__5,word_audio_effective_seconds,"(8,)",True,0.0,0.0
+-ri04Z7vwnc__5,word_voiced_effective_seconds,"(8,)",True,0.0,0.0
+-ri04Z7vwnc__5,word_expression,"(8, 52)",True,0.0,0.0
+-ri04Z7vwnc__5,word_expression_mask,"(8,)",True,0.0,0.0
+-ri04Z7vwnc__5,word_scene,"(8, 512)",True,0.0,0.0
+-ri04Z7vwnc__5,word_scene_mask,"(8,)",True,0.0,0.0
+-ri04Z7vwnc__5,ctc_word_score,"(8,)",True,0.0,0.0
+-ri04Z7vwnc__5,asr_exact_match,"(8,)",True,0.0,0.0
+-ri04Z7vwnc__5,asr_time_gap_s,"(8,)",True,0.0,0.0
+-ri04Z7vwnc__5,asr_word_probability,"(8,)",True,0.0,0.0
+-s9qJ7ATP7w__0,text,"(24, 768)",True,0.0,0.0
+-s9qJ7ATP7w__0,text_mask,"(24,)",True,0.0,0.0
+-s9qJ7ATP7w__0,audio_native,"(336, 47)",True,0.0,0.0
+-s9qJ7ATP7w__0,audio_time,"(336,)",True,0.0,0.0
+-s9qJ7ATP7w__0,audio_cells,"(336, 2)",True,0.0,0.0
+-s9qJ7ATP7w__0,audio_voiced,"(336,)",True,0.0,0.0
+-s9qJ7ATP7w__0,bert_token_ids,"(30,)",True,0.0,0.0
+-s9qJ7ATP7w__0,bert_word_membership,"(24, 30)",True,0.0,0.0
+-s9qJ7ATP7w__0,bert_char_offsets,"(30, 2)",True,0.0,0.0
+-s9qJ7ATP7w__0,scene_native,"(69, 512)",True,0.0,0.0
+-s9qJ7ATP7w__0,expression_native,"(69, 52)",True,0.0,0.0
+-s9qJ7ATP7w__0,expression_valid,"(69,)",True,0.0,0.0
+-s9qJ7ATP7w__0,vision_time,"(69,)",True,0.0,0.0
+-s9qJ7ATP7w__0,vision_cells,"(69, 2)",True,0.0,0.0
+-s9qJ7ATP7w__0,vision_frame_index,"(69,)",True,0.0,0.0
+-s9qJ7ATP7w__0,vision_bbox,"(69, 4)",True,0.0,0.0
+-s9qJ7ATP7w__0,recovery_route,"(69,)",True,0.0,0.0
+-s9qJ7ATP7w__0,alignment_supported,"(24,)",True,0.0,0.0
+-s9qJ7ATP7w__0,ctc_cells,"(335, 2)",True,0.0,0.0
+-s9qJ7ATP7w__0,word_time_membership,"(24, 335)",True,0.0,0.0
+-s9qJ7ATP7w__0,word_start_quantiles,"(24, 3)",True,0.0,0.0
+-s9qJ7ATP7w__0,word_end_quantiles,"(24, 3)",True,0.0,0.0
+-s9qJ7ATP7w__0,word_audio,"(24, 97)",True,0.0,0.0
+-s9qJ7ATP7w__0,word_audio_dim_mask,"(24, 97)",True,0.0,0.0
+-s9qJ7ATP7w__0,word_audio_effective_seconds,"(24,)",True,0.0,0.0
+-s9qJ7ATP7w__0,word_voiced_effective_seconds,"(24,)",True,0.0,0.0
+-s9qJ7ATP7w__0,word_expression,"(24, 52)",True,0.0,0.0
+-s9qJ7ATP7w__0,word_expression_mask,"(24,)",True,0.0,0.0
+-s9qJ7ATP7w__0,word_scene,"(24, 512)",True,0.0,0.0
+-s9qJ7ATP7w__0,word_scene_mask,"(24,)",True,0.0,0.0
+-s9qJ7ATP7w__0,ctc_word_score,"(24,)",True,0.0,0.0
+-s9qJ7ATP7w__0,asr_exact_match,"(24,)",True,0.0,0.0
+-s9qJ7ATP7w__0,asr_time_gap_s,"(24,)",True,0.0,0.0
+-s9qJ7ATP7w__0,asr_word_probability,"(24,)",True,0.0,0.0
+-s9qJ7ATP7w__1,text,"(11, 768)",True,0.0,0.0
+-s9qJ7ATP7w__1,text_mask,"(11,)",True,0.0,0.0
+-s9qJ7ATP7w__1,audio_native,"(233, 47)",True,0.0,0.0
+-s9qJ7ATP7w__1,audio_time,"(233,)",True,0.0,0.0
+-s9qJ7ATP7w__1,audio_cells,"(233, 2)",True,0.0,0.0
+-s9qJ7ATP7w__1,audio_voiced,"(233,)",True,0.0,0.0
+-s9qJ7ATP7w__1,bert_token_ids,"(14,)",True,0.0,0.0
+-s9qJ7ATP7w__1,bert_word_membership,"(11, 14)",True,0.0,0.0
+-s9qJ7ATP7w__1,bert_char_offsets,"(14, 2)",True,0.0,0.0
+-s9qJ7ATP7w__1,scene_native,"(47, 512)",True,0.0,0.0
+-s9qJ7ATP7w__1,expression_native,"(47, 52)",True,0.0,0.0
+-s9qJ7ATP7w__1,expression_valid,"(47,)",True,0.0,0.0
+-s9qJ7ATP7w__1,vision_time,"(47,)",True,0.0,0.0
+-s9qJ7ATP7w__1,vision_cells,"(47, 2)",True,0.0,0.0
+-s9qJ7ATP7w__1,vision_frame_index,"(47,)",True,0.0,0.0
+-s9qJ7ATP7w__1,vision_bbox,"(47, 4)",True,0.0,0.0
+-s9qJ7ATP7w__1,recovery_route,"(47,)",True,0.0,0.0
+-s9qJ7ATP7w__1,alignment_supported,"(11,)",True,0.0,0.0
+-s9qJ7ATP7w__1,ctc_cells,"(231, 2)",True,0.0,0.0
+-s9qJ7ATP7w__1,word_time_membership,"(11, 231)",True,0.0,0.0
+-s9qJ7ATP7w__1,word_start_quantiles,"(11, 3)",True,0.0,0.0
+-s9qJ7ATP7w__1,word_end_quantiles,"(11, 3)",True,0.0,0.0
+-s9qJ7ATP7w__1,word_audio,"(11, 97)",True,0.0,0.0
+-s9qJ7ATP7w__1,word_audio_dim_mask,"(11, 97)",True,0.0,0.0
+-s9qJ7ATP7w__1,word_audio_effective_seconds,"(11,)",True,0.0,0.0
+-s9qJ7ATP7w__1,word_voiced_effective_seconds,"(11,)",True,0.0,0.0
+-s9qJ7ATP7w__1,word_expression,"(11, 52)",True,0.0,0.0
+-s9qJ7ATP7w__1,word_expression_mask,"(11,)",True,0.0,0.0
+-s9qJ7ATP7w__1,word_scene,"(11, 512)",True,0.0,0.0
+-s9qJ7ATP7w__1,word_scene_mask,"(11,)",True,0.0,0.0
+-s9qJ7ATP7w__1,ctc_word_score,"(11,)",True,0.0,0.0
+-s9qJ7ATP7w__1,asr_exact_match,"(11,)",True,0.0,0.0
+-s9qJ7ATP7w__1,asr_time_gap_s,"(11,)",True,0.0,0.0
+-s9qJ7ATP7w__1,asr_word_probability,"(11,)",True,0.0,0.0
+-s9qJ7ATP7w__4,text,"(9, 768)",True,0.0,0.0
+-s9qJ7ATP7w__4,text_mask,"(9,)",True,0.0,0.0
+-s9qJ7ATP7w__4,audio_native,"(213, 47)",True,0.0,0.0
+-s9qJ7ATP7w__4,audio_time,"(213,)",True,0.0,0.0
+-s9qJ7ATP7w__4,audio_cells,"(213, 2)",True,0.0,0.0
+-s9qJ7ATP7w__4,audio_voiced,"(213,)",True,0.0,0.0
+-s9qJ7ATP7w__4,bert_token_ids,"(12,)",True,0.0,0.0
+-s9qJ7ATP7w__4,bert_word_membership,"(9, 12)",True,0.0,0.0
+-s9qJ7ATP7w__4,bert_char_offsets,"(12, 2)",True,0.0,0.0
+-s9qJ7ATP7w__4,scene_native,"(44, 512)",True,0.0,0.0
+-s9qJ7ATP7w__4,expression_native,"(44, 52)",True,0.0,0.0
+-s9qJ7ATP7w__4,expression_valid,"(44,)",True,0.0,0.0
+-s9qJ7ATP7w__4,vision_time,"(44,)",True,0.0,0.0
+-s9qJ7ATP7w__4,vision_cells,"(44, 2)",True,0.0,0.0
+-s9qJ7ATP7w__4,vision_frame_index,"(44,)",True,0.0,0.0
+-s9qJ7ATP7w__4,vision_bbox,"(44, 4)",True,0.0,0.0
+-s9qJ7ATP7w__4,recovery_route,"(44,)",True,0.0,0.0
+-s9qJ7ATP7w__4,alignment_supported,"(9,)",True,0.0,0.0
+-s9qJ7ATP7w__4,ctc_cells,"(212, 2)",True,0.0,0.0
+-s9qJ7ATP7w__4,word_time_membership,"(9, 212)",True,0.0,0.0
+-s9qJ7ATP7w__4,word_start_quantiles,"(9, 3)",True,0.0,0.0
+-s9qJ7ATP7w__4,word_end_quantiles,"(9, 3)",True,0.0,0.0
+-s9qJ7ATP7w__4,word_audio,"(9, 97)",True,0.0,0.0
+-s9qJ7ATP7w__4,word_audio_dim_mask,"(9, 97)",True,0.0,0.0
+-s9qJ7ATP7w__4,word_audio_effective_seconds,"(9,)",True,0.0,0.0
+-s9qJ7ATP7w__4,word_voiced_effective_seconds,"(9,)",True,0.0,0.0
+-s9qJ7ATP7w__4,word_expression,"(9, 52)",True,0.0,0.0
+-s9qJ7ATP7w__4,word_expression_mask,"(9,)",True,0.0,0.0
+-s9qJ7ATP7w__4,word_scene,"(9, 512)",True,0.0,0.0
+-s9qJ7ATP7w__4,word_scene_mask,"(9,)",True,0.0,0.0
+-s9qJ7ATP7w__4,ctc_word_score,"(9,)",True,0.0,0.0
+-s9qJ7ATP7w__4,asr_exact_match,"(9,)",True,0.0,0.0
+-s9qJ7ATP7w__4,asr_time_gap_s,"(9,)",True,0.0,0.0
+-s9qJ7ATP7w__4,asr_word_probability,"(9,)",True,0.0,0.0
+-s9qJ7ATP7w__5,text,"(19, 768)",True,0.0,0.0
+-s9qJ7ATP7w__5,text_mask,"(19,)",True,0.0,0.0
+-s9qJ7ATP7w__5,audio_native,"(420, 47)",True,0.0,0.0
+-s9qJ7ATP7w__5,audio_time,"(420,)",True,0.0,0.0
+-s9qJ7ATP7w__5,audio_cells,"(420, 2)",True,0.0,0.0
+-s9qJ7ATP7w__5,audio_voiced,"(420,)",True,0.0,0.0
+-s9qJ7ATP7w__5,bert_token_ids,"(22,)",True,0.0,0.0
+-s9qJ7ATP7w__5,bert_word_membership,"(19, 22)",True,0.0,0.0
+-s9qJ7ATP7w__5,bert_char_offsets,"(22, 2)",True,0.0,0.0
+-s9qJ7ATP7w__5,scene_native,"(85, 512)",True,0.0,0.0
+-s9qJ7ATP7w__5,expression_native,"(85, 52)",True,0.0,0.0
+-s9qJ7ATP7w__5,expression_valid,"(85,)",True,0.0,0.0
+-s9qJ7ATP7w__5,vision_time,"(85,)",True,0.0,0.0
+-s9qJ7ATP7w__5,vision_cells,"(85, 2)",True,0.0,0.0
+-s9qJ7ATP7w__5,vision_frame_index,"(85,)",True,0.0,0.0
+-s9qJ7ATP7w__5,vision_bbox,"(85, 4)",True,0.0,0.0
+-s9qJ7ATP7w__5,recovery_route,"(85,)",True,0.0,0.0
+-s9qJ7ATP7w__5,alignment_supported,"(19,)",True,0.0,0.0
+-s9qJ7ATP7w__5,ctc_cells,"(419, 2)",True,0.0,0.0
+-s9qJ7ATP7w__5,word_time_membership,"(19, 419)",True,0.0,0.0
+-s9qJ7ATP7w__5,word_start_quantiles,"(19, 3)",True,0.0,0.0
+-s9qJ7ATP7w__5,word_end_quantiles,"(19, 3)",True,0.0,0.0
+-s9qJ7ATP7w__5,word_audio,"(19, 97)",True,0.0,0.0
+-s9qJ7ATP7w__5,word_audio_dim_mask,"(19, 97)",True,0.0,0.0
+-s9qJ7ATP7w__5,word_audio_effective_seconds,"(19,)",True,0.0,0.0
+-s9qJ7ATP7w__5,word_voiced_effective_seconds,"(19,)",True,0.0,0.0
+-s9qJ7ATP7w__5,word_expression,"(19, 52)",True,0.0,0.0
+-s9qJ7ATP7w__5,word_expression_mask,"(19,)",True,0.0,0.0
+-s9qJ7ATP7w__5,word_scene,"(19, 512)",True,0.0,0.0
+-s9qJ7ATP7w__5,word_scene_mask,"(19,)",True,0.0,0.0
+-s9qJ7ATP7w__5,ctc_word_score,"(19,)",True,0.0,0.0
+-s9qJ7ATP7w__5,asr_exact_match,"(19,)",True,0.0,0.0
+-s9qJ7ATP7w__5,asr_time_gap_s,"(19,)",True,0.0,0.0
+-s9qJ7ATP7w__5,asr_word_probability,"(19,)",True,0.0,0.0
+-s9qJ7ATP7w__6,text,"(5, 768)",True,0.0,0.0
+-s9qJ7ATP7w__6,text_mask,"(5,)",True,0.0,0.0
+-s9qJ7ATP7w__6,audio_native,"(116, 47)",True,0.0,0.0
+-s9qJ7ATP7w__6,audio_time,"(116,)",True,0.0,0.0
+-s9qJ7ATP7w__6,audio_cells,"(116, 2)",True,0.0,0.0
+-s9qJ7ATP7w__6,audio_voiced,"(116,)",True,0.0,0.0
+-s9qJ7ATP7w__6,bert_token_ids,"(7,)",True,0.0,0.0
+-s9qJ7ATP7w__6,bert_word_membership,"(5, 7)",True,0.0,0.0
+-s9qJ7ATP7w__6,bert_char_offsets,"(7, 2)",True,0.0,0.0
+-s9qJ7ATP7w__6,scene_native,"(24, 512)",True,0.0,0.0
+-s9qJ7ATP7w__6,expression_native,"(24, 52)",True,0.0,0.0
+-s9qJ7ATP7w__6,expression_valid,"(24,)",True,0.0,0.0
+-s9qJ7ATP7w__6,vision_time,"(24,)",True,0.0,0.0
+-s9qJ7ATP7w__6,vision_cells,"(24, 2)",True,0.0,0.0
+-s9qJ7ATP7w__6,vision_frame_index,"(24,)",True,0.0,0.0
+-s9qJ7ATP7w__6,vision_bbox,"(24, 4)",True,0.0,0.0
+-s9qJ7ATP7w__6,recovery_route,"(24,)",True,0.0,0.0
+-s9qJ7ATP7w__6,alignment_supported,"(5,)",True,0.0,0.0
+-s9qJ7ATP7w__6,ctc_cells,"(115, 2)",True,0.0,0.0
+-s9qJ7ATP7w__6,word_time_membership,"(5, 115)",True,0.0,0.0
+-s9qJ7ATP7w__6,word_start_quantiles,"(5, 3)",True,0.0,0.0
+-s9qJ7ATP7w__6,word_end_quantiles,"(5, 3)",True,0.0,0.0
+-s9qJ7ATP7w__6,word_audio,"(5, 97)",True,0.0,0.0
+-s9qJ7ATP7w__6,word_audio_dim_mask,"(5, 97)",True,0.0,0.0
+-s9qJ7ATP7w__6,word_audio_effective_seconds,"(5,)",True,0.0,0.0
+-s9qJ7ATP7w__6,word_voiced_effective_seconds,"(5,)",True,0.0,0.0
+-s9qJ7ATP7w__6,word_expression,"(5, 52)",True,0.0,0.0
+-s9qJ7ATP7w__6,word_expression_mask,"(5,)",True,0.0,0.0
+-s9qJ7ATP7w__6,word_scene,"(5, 512)",True,0.0,0.0
+-s9qJ7ATP7w__6,word_scene_mask,"(5,)",True,0.0,0.0
+-s9qJ7ATP7w__6,ctc_word_score,"(5,)",True,0.0,0.0
+-s9qJ7ATP7w__6,asr_exact_match,"(5,)",True,0.0,0.0
+-s9qJ7ATP7w__6,asr_time_gap_s,"(5,)",True,0.0,0.0
+-s9qJ7ATP7w__6,asr_word_probability,"(5,)",True,0.0,0.0
+-s9qJ7ATP7w__7,text,"(28, 768)",True,0.0,0.0
+-s9qJ7ATP7w__7,text_mask,"(28,)",True,0.0,0.0
+-s9qJ7ATP7w__7,audio_native,"(342, 47)",True,0.0,0.0
+-s9qJ7ATP7w__7,audio_time,"(342,)",True,0.0,0.0
+-s9qJ7ATP7w__7,audio_cells,"(342, 2)",True,0.0,0.0
+-s9qJ7ATP7w__7,audio_voiced,"(342,)",True,0.0,0.0
+-s9qJ7ATP7w__7,bert_token_ids,"(40,)",True,0.0,0.0
+-s9qJ7ATP7w__7,bert_word_membership,"(28, 40)",True,0.0,0.0
+-s9qJ7ATP7w__7,bert_char_offsets,"(40, 2)",True,0.0,0.0
+-s9qJ7ATP7w__7,scene_native,"(70, 512)",True,0.0,0.0
+-s9qJ7ATP7w__7,expression_native,"(70, 52)",True,0.0,0.0
+-s9qJ7ATP7w__7,expression_valid,"(70,)",True,0.0,0.0
+-s9qJ7ATP7w__7,vision_time,"(70,)",True,0.0,0.0
+-s9qJ7ATP7w__7,vision_cells,"(70, 2)",True,0.0,0.0
+-s9qJ7ATP7w__7,vision_frame_index,"(70,)",True,0.0,0.0
+-s9qJ7ATP7w__7,vision_bbox,"(70, 4)",True,0.0,0.0
+-s9qJ7ATP7w__7,recovery_route,"(70,)",True,0.0,0.0
+-s9qJ7ATP7w__7,alignment_supported,"(28,)",True,0.0,0.0
+-s9qJ7ATP7w__7,ctc_cells,"(341, 2)",True,0.0,0.0
+-s9qJ7ATP7w__7,word_time_membership,"(28, 341)",True,0.0,0.0
+-s9qJ7ATP7w__7,word_start_quantiles,"(28, 3)",True,0.0,0.0
+-s9qJ7ATP7w__7,word_end_quantiles,"(28, 3)",True,0.0,0.0
+-s9qJ7ATP7w__7,word_audio,"(28, 97)",True,0.0,0.0
+-s9qJ7ATP7w__7,word_audio_dim_mask,"(28, 97)",True,0.0,0.0
+-s9qJ7ATP7w__7,word_audio_effective_seconds,"(28,)",True,0.0,0.0
+-s9qJ7ATP7w__7,word_voiced_effective_seconds,"(28,)",True,0.0,0.0
+-s9qJ7ATP7w__7,word_expression,"(28, 52)",True,0.0,0.0
+-s9qJ7ATP7w__7,word_expression_mask,"(28,)",True,0.0,0.0
+-s9qJ7ATP7w__7,word_scene,"(28, 512)",True,0.0,0.0
+-s9qJ7ATP7w__7,word_scene_mask,"(28,)",True,0.0,0.0
+-s9qJ7ATP7w__7,ctc_word_score,"(28,)",True,0.0,0.0
+-s9qJ7ATP7w__7,asr_exact_match,"(28,)",True,0.0,0.0
+-s9qJ7ATP7w__7,asr_time_gap_s,"(28,)",True,0.0,0.0
+-s9qJ7ATP7w__7,asr_word_probability,"(28,)",True,0.0,0.0
+-s9qJ7ATP7w__8,text,"(12, 768)",True,0.0,0.0
+-s9qJ7ATP7w__8,text_mask,"(12,)",True,0.0,0.0
+-s9qJ7ATP7w__8,audio_native,"(160, 47)",True,0.0,0.0
+-s9qJ7ATP7w__8,audio_time,"(160,)",True,0.0,0.0
+-s9qJ7ATP7w__8,audio_cells,"(160, 2)",True,0.0,0.0
+-s9qJ7ATP7w__8,audio_voiced,"(160,)",True,0.0,0.0
+-s9qJ7ATP7w__8,bert_token_ids,"(19,)",True,0.0,0.0
+-s9qJ7ATP7w__8,bert_word_membership,"(12, 19)",True,0.0,0.0
+-s9qJ7ATP7w__8,bert_char_offsets,"(19, 2)",True,0.0,0.0
+-s9qJ7ATP7w__8,scene_native,"(33, 512)",True,0.0,0.0
+-s9qJ7ATP7w__8,expression_native,"(33, 52)",True,0.0,0.0
+-s9qJ7ATP7w__8,expression_valid,"(33,)",True,0.0,0.0
+-s9qJ7ATP7w__8,vision_time,"(33,)",True,0.0,0.0
+-s9qJ7ATP7w__8,vision_cells,"(33, 2)",True,0.0,0.0
+-s9qJ7ATP7w__8,vision_frame_index,"(33,)",True,0.0,0.0
+-s9qJ7ATP7w__8,vision_bbox,"(33, 4)",True,0.0,0.0
+-s9qJ7ATP7w__8,recovery_route,"(33,)",True,0.0,0.0
+-s9qJ7ATP7w__8,alignment_supported,"(12,)",True,0.0,0.0
+-s9qJ7ATP7w__8,ctc_cells,"(158, 2)",True,0.0,0.0
+-s9qJ7ATP7w__8,word_time_membership,"(12, 158)",True,0.0,0.0
+-s9qJ7ATP7w__8,word_start_quantiles,"(12, 3)",True,0.0,0.0
+-s9qJ7ATP7w__8,word_end_quantiles,"(12, 3)",True,0.0,0.0
+-s9qJ7ATP7w__8,word_audio,"(12, 97)",True,0.0,0.0
+-s9qJ7ATP7w__8,word_audio_dim_mask,"(12, 97)",True,0.0,0.0
+-s9qJ7ATP7w__8,word_audio_effective_seconds,"(12,)",True,0.0,0.0
+-s9qJ7ATP7w__8,word_voiced_effective_seconds,"(12,)",True,0.0,0.0
+-s9qJ7ATP7w__8,word_expression,"(12, 52)",True,0.0,0.0
+-s9qJ7ATP7w__8,word_expression_mask,"(12,)",True,0.0,0.0
+-s9qJ7ATP7w__8,word_scene,"(12, 512)",True,0.0,0.0
+-s9qJ7ATP7w__8,word_scene_mask,"(12,)",True,0.0,0.0
+-s9qJ7ATP7w__8,ctc_word_score,"(12,)",True,0.0,0.0
+-s9qJ7ATP7w__8,asr_exact_match,"(12,)",True,0.0,0.0
+-s9qJ7ATP7w__8,asr_time_gap_s,"(12,)",True,0.0,0.0
+-s9qJ7ATP7w__8,asr_word_probability,"(12,)",True,0.0,0.0
+-t217m2on-s__2,text,"(12, 768)",True,0.0,0.0
+-t217m2on-s__2,text_mask,"(12,)",True,0.0,0.0
+-t217m2on-s__2,audio_native,"(282, 47)",True,0.0,0.0
+-t217m2on-s__2,audio_time,"(282,)",True,0.0,0.0
+-t217m2on-s__2,audio_cells,"(282, 2)",True,0.0,0.0
+-t217m2on-s__2,audio_voiced,"(282,)",True,0.0,0.0
+-t217m2on-s__2,bert_token_ids,"(18,)",True,0.0,0.0
+-t217m2on-s__2,bert_word_membership,"(12, 18)",True,0.0,0.0
+-t217m2on-s__2,bert_char_offsets,"(18, 2)",True,0.0,0.0
+-t217m2on-s__2,scene_native,"(57, 512)",True,0.0,0.0
+-t217m2on-s__2,expression_native,"(57, 52)",True,0.0,0.0
+-t217m2on-s__2,expression_valid,"(57,)",True,0.0,0.0
+-t217m2on-s__2,vision_time,"(57,)",True,0.0,0.0
+-t217m2on-s__2,vision_cells,"(57, 2)",True,0.0,0.0
+-t217m2on-s__2,vision_frame_index,"(57,)",True,0.0,0.0
+-t217m2on-s__2,vision_bbox,"(57, 4)",True,0.0,0.0
+-t217m2on-s__2,recovery_route,"(57,)",True,0.0,0.0
+-t217m2on-s__2,alignment_supported,"(12,)",True,0.0,0.0
+-t217m2on-s__2,ctc_cells,"(281, 2)",True,0.0,0.0
+-t217m2on-s__2,word_time_membership,"(12, 281)",True,0.0,0.0
+-t217m2on-s__2,word_start_quantiles,"(12, 3)",True,0.0,0.0
+-t217m2on-s__2,word_end_quantiles,"(12, 3)",True,0.0,0.0
+-t217m2on-s__2,word_audio,"(12, 97)",True,0.0,0.0
+-t217m2on-s__2,word_audio_dim_mask,"(12, 97)",True,0.0,0.0
+-t217m2on-s__2,word_audio_effective_seconds,"(12,)",True,0.0,0.0
+-t217m2on-s__2,word_voiced_effective_seconds,"(12,)",True,0.0,0.0
+-t217m2on-s__2,word_expression,"(12, 52)",True,0.0,0.0
+-t217m2on-s__2,word_expression_mask,"(12,)",True,0.0,0.0
+-t217m2on-s__2,word_scene,"(12, 512)",True,0.0,0.0
+-t217m2on-s__2,word_scene_mask,"(12,)",True,0.0,0.0
+-t217m2on-s__2,ctc_word_score,"(12,)",True,0.0,0.0
+-t217m2on-s__2,asr_exact_match,"(12,)",True,0.0,0.0
+-t217m2on-s__2,asr_time_gap_s,"(12,)",True,0.0,0.0
+-t217m2on-s__2,asr_word_probability,"(12,)",True,0.0,0.0
+-t217m2on-s__7,text,"(45, 768)",True,0.0,0.0
+-t217m2on-s__7,text_mask,"(45,)",True,0.0,0.0
+-t217m2on-s__7,audio_native,"(852, 47)",True,0.0,0.0
+-t217m2on-s__7,audio_time,"(852,)",True,0.0,0.0
+-t217m2on-s__7,audio_cells,"(852, 2)",True,0.0,0.0
+-t217m2on-s__7,audio_voiced,"(852,)",True,0.0,0.0
+-t217m2on-s__7,bert_token_ids,"(55,)",True,0.0,0.0
+-t217m2on-s__7,bert_word_membership,"(45, 55)",True,0.0,0.0
+-t217m2on-s__7,bert_char_offsets,"(55, 2)",True,0.0,0.0
+-t217m2on-s__7,scene_native,"(172, 512)",True,0.0,0.0
+-t217m2on-s__7,expression_native,"(172, 52)",True,0.0,0.0
+-t217m2on-s__7,expression_valid,"(172,)",True,0.0,0.0
+-t217m2on-s__7,vision_time,"(172,)",True,0.0,0.0
+-t217m2on-s__7,vision_cells,"(172, 2)",True,0.0,0.0
+-t217m2on-s__7,vision_frame_index,"(172,)",True,0.0,0.0
+-t217m2on-s__7,vision_bbox,"(172, 4)",True,0.0,0.0
+-t217m2on-s__7,recovery_route,"(172,)",True,0.0,0.0
+-t217m2on-s__7,alignment_supported,"(45,)",True,0.0,0.0
+-t217m2on-s__7,ctc_cells,"(851, 2)",True,0.0,0.0
+-t217m2on-s__7,word_time_membership,"(45, 851)",True,0.0,0.0
+-t217m2on-s__7,word_start_quantiles,"(45, 3)",True,0.0,0.0
+-t217m2on-s__7,word_end_quantiles,"(45, 3)",True,0.0,0.0
+-t217m2on-s__7,word_audio,"(45, 97)",True,0.0,0.0
+-t217m2on-s__7,word_audio_dim_mask,"(45, 97)",True,0.0,0.0
+-t217m2on-s__7,word_audio_effective_seconds,"(45,)",True,0.0,0.0
+-t217m2on-s__7,word_voiced_effective_seconds,"(45,)",True,0.0,0.0
+-t217m2on-s__7,word_expression,"(45, 52)",True,0.0,0.0
+-t217m2on-s__7,word_expression_mask,"(45,)",True,0.0,0.0
+-t217m2on-s__7,word_scene,"(45, 512)",True,0.0,0.0
+-t217m2on-s__7,word_scene_mask,"(45,)",True,0.0,0.0
+-t217m2on-s__7,ctc_word_score,"(45,)",True,0.0,0.0
+-t217m2on-s__7,asr_exact_match,"(45,)",True,0.0,0.0
+-t217m2on-s__7,asr_time_gap_s,"(45,)",True,0.0,0.0
+-t217m2on-s__7,asr_word_probability,"(45,)",True,0.0,0.0
+-tANM6ETl_M__3,text,"(22, 768)",True,0.0,0.0
+-tANM6ETl_M__3,text_mask,"(22,)",True,0.0,0.0
+-tANM6ETl_M__3,audio_native,"(331, 47)",True,0.0,0.0
+-tANM6ETl_M__3,audio_time,"(331,)",True,0.0,0.0
+-tANM6ETl_M__3,audio_cells,"(331, 2)",True,0.0,0.0
+-tANM6ETl_M__3,audio_voiced,"(331,)",True,0.0,0.0
+-tANM6ETl_M__3,bert_token_ids,"(31,)",True,0.0,0.0
+-tANM6ETl_M__3,bert_word_membership,"(22, 31)",True,0.0,0.0
+-tANM6ETl_M__3,bert_char_offsets,"(31, 2)",True,0.0,0.0
+-tANM6ETl_M__3,scene_native,"(68, 512)",True,0.0,0.0
+-tANM6ETl_M__3,expression_native,"(68, 52)",True,0.0,0.0
+-tANM6ETl_M__3,expression_valid,"(68,)",True,0.0,0.0
+-tANM6ETl_M__3,vision_time,"(68,)",True,0.0,0.0
+-tANM6ETl_M__3,vision_cells,"(68, 2)",True,0.0,0.0
+-tANM6ETl_M__3,vision_frame_index,"(68,)",True,0.0,0.0
+-tANM6ETl_M__3,vision_bbox,"(68, 4)",True,0.0,0.0
+-tANM6ETl_M__3,recovery_route,"(68,)",True,0.0,0.0
+-tANM6ETl_M__3,alignment_supported,"(22,)",True,0.0,0.0
+-tANM6ETl_M__3,ctc_cells,"(329, 2)",True,0.0,0.0
+-tANM6ETl_M__3,word_time_membership,"(22, 329)",True,0.0,0.0
+-tANM6ETl_M__3,word_start_quantiles,"(22, 3)",True,0.0,0.0
+-tANM6ETl_M__3,word_end_quantiles,"(22, 3)",True,0.0,0.0
+-tANM6ETl_M__3,word_audio,"(22, 97)",True,0.0,0.0
+-tANM6ETl_M__3,word_audio_dim_mask,"(22, 97)",True,0.0,0.0
+-tANM6ETl_M__3,word_audio_effective_seconds,"(22,)",True,0.0,0.0
+-tANM6ETl_M__3,word_voiced_effective_seconds,"(22,)",True,0.0,0.0
+-tANM6ETl_M__3,word_expression,"(22, 52)",True,0.0,0.0
+-tANM6ETl_M__3,word_expression_mask,"(22,)",True,0.0,0.0
+-tANM6ETl_M__3,word_scene,"(22, 512)",True,0.0,0.0
+-tANM6ETl_M__3,word_scene_mask,"(22,)",True,0.0,0.0
+-tANM6ETl_M__3,ctc_word_score,"(22,)",True,0.0,0.0
+-tANM6ETl_M__3,asr_exact_match,"(22,)",True,0.0,0.0
+-tANM6ETl_M__3,asr_time_gap_s,"(22,)",True,0.0,0.0
+-tANM6ETl_M__3,asr_word_probability,"(22,)",True,0.0,0.0
+-THoVjtIkeU__12,text,"(39, 768)",True,0.0,0.0
+-THoVjtIkeU__12,text_mask,"(39,)",True,0.0,0.0
+-THoVjtIkeU__12,audio_native,"(741, 47)",True,0.0,0.0
+-THoVjtIkeU__12,audio_time,"(741,)",True,0.0,0.0
+-THoVjtIkeU__12,audio_cells,"(741, 2)",True,0.0,0.0
+-THoVjtIkeU__12,audio_voiced,"(741,)",True,0.0,0.0
+-THoVjtIkeU__12,bert_token_ids,"(44,)",True,0.0,0.0
+-THoVjtIkeU__12,bert_word_membership,"(39, 44)",True,0.0,0.0
+-THoVjtIkeU__12,bert_char_offsets,"(44, 2)",True,0.0,0.0
+-THoVjtIkeU__12,scene_native,"(149, 512)",True,0.0,0.0
+-THoVjtIkeU__12,expression_native,"(149, 52)",True,0.0,0.0
+-THoVjtIkeU__12,expression_valid,"(149,)",True,0.0,0.0
+-THoVjtIkeU__12,vision_time,"(149,)",True,0.0,0.0
+-THoVjtIkeU__12,vision_cells,"(149, 2)",True,0.0,0.0
+-THoVjtIkeU__12,vision_frame_index,"(149,)",True,0.0,0.0
+-THoVjtIkeU__12,vision_bbox,"(149, 4)",True,0.0,0.0
+-THoVjtIkeU__12,recovery_route,"(149,)",True,0.0,0.0
+-THoVjtIkeU__12,alignment_supported,"(39,)",True,0.0,0.0
+-THoVjtIkeU__12,ctc_cells,"(740, 2)",True,0.0,0.0
+-THoVjtIkeU__12,word_time_membership,"(39, 740)",True,0.0,0.0
+-THoVjtIkeU__12,word_start_quantiles,"(39, 3)",True,0.0,0.0
+-THoVjtIkeU__12,word_end_quantiles,"(39, 3)",True,0.0,0.0
+-THoVjtIkeU__12,word_audio,"(39, 97)",True,0.0,0.0
+-THoVjtIkeU__12,word_audio_dim_mask,"(39, 97)",True,0.0,0.0
+-THoVjtIkeU__12,word_audio_effective_seconds,"(39,)",True,0.0,0.0
+-THoVjtIkeU__12,word_voiced_effective_seconds,"(39,)",True,0.0,0.0
+-THoVjtIkeU__12,word_expression,"(39, 52)",True,0.0,0.0
+-THoVjtIkeU__12,word_expression_mask,"(39,)",True,0.0,0.0
+-THoVjtIkeU__12,word_scene,"(39, 512)",True,0.0,0.0
+-THoVjtIkeU__12,word_scene_mask,"(39,)",True,0.0,0.0
+-THoVjtIkeU__12,ctc_word_score,"(39,)",True,0.0,0.0
+-THoVjtIkeU__12,asr_exact_match,"(39,)",True,0.0,0.0
+-THoVjtIkeU__12,asr_time_gap_s,"(39,)",True,0.0,0.0
+-THoVjtIkeU__12,asr_word_probability,"(39,)",True,0.0,0.0
+-THoVjtIkeU__2,text,"(10, 768)",True,0.0,0.0
+-THoVjtIkeU__2,text_mask,"(10,)",True,0.0,0.0
+-THoVjtIkeU__2,audio_native,"(212, 47)",True,0.0,0.0
+-THoVjtIkeU__2,audio_time,"(212,)",True,0.0,0.0
+-THoVjtIkeU__2,audio_cells,"(212, 2)",True,0.0,0.0
+-THoVjtIkeU__2,audio_voiced,"(212,)",True,0.0,0.0
+-THoVjtIkeU__2,bert_token_ids,"(13,)",True,0.0,0.0
+-THoVjtIkeU__2,bert_word_membership,"(10, 13)",True,0.0,0.0
+-THoVjtIkeU__2,bert_char_offsets,"(13, 2)",True,0.0,0.0
+-THoVjtIkeU__2,scene_native,"(43, 512)",True,0.0,0.0
+-THoVjtIkeU__2,expression_native,"(43, 52)",True,0.0,0.0
+-THoVjtIkeU__2,expression_valid,"(43,)",True,0.0,0.0
+-THoVjtIkeU__2,vision_time,"(43,)",True,0.0,0.0
+-THoVjtIkeU__2,vision_cells,"(43, 2)",True,0.0,0.0
+-THoVjtIkeU__2,vision_frame_index,"(43,)",True,0.0,0.0
+-THoVjtIkeU__2,vision_bbox,"(43, 4)",True,0.0,0.0
+-THoVjtIkeU__2,recovery_route,"(43,)",True,0.0,0.0
+-THoVjtIkeU__2,alignment_supported,"(10,)",True,0.0,0.0
+-THoVjtIkeU__2,ctc_cells,"(211, 2)",True,0.0,0.0
+-THoVjtIkeU__2,word_time_membership,"(10, 211)",True,0.0,0.0
+-THoVjtIkeU__2,word_start_quantiles,"(10, 3)",True,0.0,0.0
+-THoVjtIkeU__2,word_end_quantiles,"(10, 3)",True,0.0,0.0
+-THoVjtIkeU__2,word_audio,"(10, 97)",True,0.0,0.0
+-THoVjtIkeU__2,word_audio_dim_mask,"(10, 97)",True,0.0,0.0
+-THoVjtIkeU__2,word_audio_effective_seconds,"(10,)",True,0.0,0.0
+-THoVjtIkeU__2,word_voiced_effective_seconds,"(10,)",True,0.0,0.0
+-THoVjtIkeU__2,word_expression,"(10, 52)",True,0.0,0.0
+-THoVjtIkeU__2,word_expression_mask,"(10,)",True,0.0,0.0
+-THoVjtIkeU__2,word_scene,"(10, 512)",True,0.0,0.0
+-THoVjtIkeU__2,word_scene_mask,"(10,)",True,0.0,0.0
+-THoVjtIkeU__2,ctc_word_score,"(10,)",True,0.0,0.0
+-THoVjtIkeU__2,asr_exact_match,"(10,)",True,0.0,0.0
+-THoVjtIkeU__2,asr_time_gap_s,"(10,)",True,0.0,0.0
+-THoVjtIkeU__2,asr_word_probability,"(10,)",True,0.0,0.0
+-THoVjtIkeU__6,text,"(30, 768)",True,0.0,0.0
+-THoVjtIkeU__6,text_mask,"(30,)",True,0.0,0.0
+-THoVjtIkeU__6,audio_native,"(400, 47)",True,0.0,0.0
+-THoVjtIkeU__6,audio_time,"(400,)",True,0.0,0.0
+-THoVjtIkeU__6,audio_cells,"(400, 2)",True,0.0,0.0
+-THoVjtIkeU__6,audio_voiced,"(400,)",True,0.0,0.0
+-THoVjtIkeU__6,bert_token_ids,"(34,)",True,0.0,0.0
+-THoVjtIkeU__6,bert_word_membership,"(30, 34)",True,0.0,0.0
+-THoVjtIkeU__6,bert_char_offsets,"(34, 2)",True,0.0,0.0
+-THoVjtIkeU__6,scene_native,"(81, 512)",True,0.0,0.0
+-THoVjtIkeU__6,expression_native,"(81, 52)",True,0.0,0.0
+-THoVjtIkeU__6,expression_valid,"(81,)",True,0.0,0.0
+-THoVjtIkeU__6,vision_time,"(81,)",True,0.0,0.0
+-THoVjtIkeU__6,vision_cells,"(81, 2)",True,0.0,0.0
+-THoVjtIkeU__6,vision_frame_index,"(81,)",True,0.0,0.0
+-THoVjtIkeU__6,vision_bbox,"(81, 4)",True,0.0,0.0
+-THoVjtIkeU__6,recovery_route,"(81,)",True,0.0,0.0
+-THoVjtIkeU__6,alignment_supported,"(30,)",True,0.0,0.0
+-THoVjtIkeU__6,ctc_cells,"(398, 2)",True,0.0,0.0
+-THoVjtIkeU__6,word_time_membership,"(30, 398)",True,0.0,0.0
+-THoVjtIkeU__6,word_start_quantiles,"(30, 3)",True,0.0,0.0
+-THoVjtIkeU__6,word_end_quantiles,"(30, 3)",True,0.0,0.0
+-THoVjtIkeU__6,word_audio,"(30, 97)",True,0.0,0.0
+-THoVjtIkeU__6,word_audio_dim_mask,"(30, 97)",True,0.0,0.0
+-THoVjtIkeU__6,word_audio_effective_seconds,"(30,)",True,0.0,0.0
+-THoVjtIkeU__6,word_voiced_effective_seconds,"(30,)",True,0.0,0.0
+-THoVjtIkeU__6,word_expression,"(30, 52)",True,0.0,0.0
+-THoVjtIkeU__6,word_expression_mask,"(30,)",True,0.0,0.0
+-THoVjtIkeU__6,word_scene,"(30, 512)",True,0.0,0.0
+-THoVjtIkeU__6,word_scene_mask,"(30,)",True,0.0,0.0
+-THoVjtIkeU__6,ctc_word_score,"(30,)",True,0.0,0.0
+-THoVjtIkeU__6,asr_exact_match,"(30,)",True,0.0,0.0
+-THoVjtIkeU__6,asr_time_gap_s,"(30,)",True,0.0,0.0
+-THoVjtIkeU__6,asr_word_probability,"(30,)",True,0.0,0.0
+-tPCytz4rww__10,text,"(12, 768)",True,0.0,0.0
+-tPCytz4rww__10,text_mask,"(12,)",True,0.0,0.0
+-tPCytz4rww__10,audio_native,"(234, 47)",True,0.0,0.0
+-tPCytz4rww__10,audio_time,"(234,)",True,0.0,0.0
+-tPCytz4rww__10,audio_cells,"(234, 2)",True,0.0,0.0
+-tPCytz4rww__10,audio_voiced,"(234,)",True,0.0,0.0
+-tPCytz4rww__10,bert_token_ids,"(17,)",True,0.0,0.0
+-tPCytz4rww__10,bert_word_membership,"(12, 17)",True,0.0,0.0
+-tPCytz4rww__10,bert_char_offsets,"(17, 2)",True,0.0,0.0
+-tPCytz4rww__10,scene_native,"(48, 512)",True,0.0,0.0
+-tPCytz4rww__10,expression_native,"(48, 52)",True,0.0,0.0
+-tPCytz4rww__10,expression_valid,"(48,)",True,0.0,0.0
+-tPCytz4rww__10,vision_time,"(48,)",True,0.0,0.0
+-tPCytz4rww__10,vision_cells,"(48, 2)",True,0.0,0.0
+-tPCytz4rww__10,vision_frame_index,"(48,)",True,0.0,0.0
+-tPCytz4rww__10,vision_bbox,"(48, 4)",True,0.0,0.0
+-tPCytz4rww__10,recovery_route,"(48,)",True,0.0,0.0
+-tPCytz4rww__10,alignment_supported,"(12,)",True,0.0,0.0
+-tPCytz4rww__10,ctc_cells,"(233, 2)",True,0.0,0.0
+-tPCytz4rww__10,word_time_membership,"(12, 233)",True,0.0,0.0
+-tPCytz4rww__10,word_start_quantiles,"(12, 3)",True,0.0,0.0
+-tPCytz4rww__10,word_end_quantiles,"(12, 3)",True,0.0,0.0
+-tPCytz4rww__10,word_audio,"(12, 97)",True,0.0,0.0
+-tPCytz4rww__10,word_audio_dim_mask,"(12, 97)",True,0.0,0.0
+-tPCytz4rww__10,word_audio_effective_seconds,"(12,)",True,0.0,0.0
+-tPCytz4rww__10,word_voiced_effective_seconds,"(12,)",True,0.0,0.0
+-tPCytz4rww__10,word_expression,"(12, 52)",True,0.0,0.0
+-tPCytz4rww__10,word_expression_mask,"(12,)",True,0.0,0.0
+-tPCytz4rww__10,word_scene,"(12, 512)",True,0.0,0.0
+-tPCytz4rww__10,word_scene_mask,"(12,)",True,0.0,0.0
+-tPCytz4rww__10,ctc_word_score,"(12,)",True,0.0,0.0
+-tPCytz4rww__10,asr_exact_match,"(12,)",True,0.0,0.0
+-tPCytz4rww__10,asr_time_gap_s,"(12,)",True,0.0,0.0
+-tPCytz4rww__10,asr_word_probability,"(12,)",True,0.0,0.0
+-tPCytz4rww__11,text,"(17, 768)",True,0.0,0.0
+-tPCytz4rww__11,text_mask,"(17,)",True,0.0,0.0
+-tPCytz4rww__11,audio_native,"(269, 47)",True,0.0,0.0
+-tPCytz4rww__11,audio_time,"(269,)",True,0.0,0.0
+-tPCytz4rww__11,audio_cells,"(269, 2)",True,0.0,0.0
+-tPCytz4rww__11,audio_voiced,"(269,)",True,0.0,0.0
+-tPCytz4rww__11,bert_token_ids,"(22,)",True,0.0,0.0
+-tPCytz4rww__11,bert_word_membership,"(17, 22)",True,0.0,0.0
+-tPCytz4rww__11,bert_char_offsets,"(22, 2)",True,0.0,0.0
+-tPCytz4rww__11,scene_native,"(55, 512)",True,0.0,0.0
+-tPCytz4rww__11,expression_native,"(55, 52)",True,0.0,0.0
+-tPCytz4rww__11,expression_valid,"(55,)",True,0.0,0.0
+-tPCytz4rww__11,vision_time,"(55,)",True,0.0,0.0
+-tPCytz4rww__11,vision_cells,"(55, 2)",True,0.0,0.0
+-tPCytz4rww__11,vision_frame_index,"(55,)",True,0.0,0.0
+-tPCytz4rww__11,vision_bbox,"(55, 4)",True,0.0,0.0
+-tPCytz4rww__11,recovery_route,"(55,)",True,0.0,0.0
+-tPCytz4rww__11,alignment_supported,"(17,)",True,0.0,0.0
+-tPCytz4rww__11,ctc_cells,"(268, 2)",True,0.0,0.0
+-tPCytz4rww__11,word_time_membership,"(17, 268)",True,0.0,0.0
+-tPCytz4rww__11,word_start_quantiles,"(17, 3)",True,0.0,0.0
+-tPCytz4rww__11,word_end_quantiles,"(17, 3)",True,0.0,0.0
+-tPCytz4rww__11,word_audio,"(17, 97)",True,0.0,0.0
+-tPCytz4rww__11,word_audio_dim_mask,"(17, 97)",True,0.0,0.0
+-tPCytz4rww__11,word_audio_effective_seconds,"(17,)",True,0.0,0.0
+-tPCytz4rww__11,word_voiced_effective_seconds,"(17,)",True,0.0,0.0
+-tPCytz4rww__11,word_expression,"(17, 52)",True,0.0,0.0
+-tPCytz4rww__11,word_expression_mask,"(17,)",True,0.0,0.0
+-tPCytz4rww__11,word_scene,"(17, 512)",True,0.0,0.0
+-tPCytz4rww__11,word_scene_mask,"(17,)",True,0.0,0.0
+-tPCytz4rww__11,ctc_word_score,"(17,)",True,0.0,0.0
+-tPCytz4rww__11,asr_exact_match,"(17,)",True,0.0,0.0
+-tPCytz4rww__11,asr_time_gap_s,"(17,)",True,0.0,0.0
+-tPCytz4rww__11,asr_word_probability,"(17,)",True,0.0,0.0
+-tPCytz4rww__12,text,"(26, 768)",True,0.0,0.0
+-tPCytz4rww__12,text_mask,"(26,)",True,0.0,0.0
+-tPCytz4rww__12,audio_native,"(587, 47)",True,0.0,0.0
+-tPCytz4rww__12,audio_time,"(587,)",True,0.0,0.0
+-tPCytz4rww__12,audio_cells,"(587, 2)",True,0.0,0.0
+-tPCytz4rww__12,audio_voiced,"(587,)",True,0.0,0.0
+-tPCytz4rww__12,bert_token_ids,"(30,)",True,0.0,0.0
+-tPCytz4rww__12,bert_word_membership,"(26, 30)",True,0.0,0.0
+-tPCytz4rww__12,bert_char_offsets,"(30, 2)",True,0.0,0.0
+-tPCytz4rww__12,scene_native,"(119, 512)",True,0.0,0.0
+-tPCytz4rww__12,expression_native,"(119, 52)",True,0.0,0.0
+-tPCytz4rww__12,expression_valid,"(119,)",True,0.0,0.0
+-tPCytz4rww__12,vision_time,"(119,)",True,0.0,0.0
+-tPCytz4rww__12,vision_cells,"(119, 2)",True,0.0,0.0
+-tPCytz4rww__12,vision_frame_index,"(119,)",True,0.0,0.0
+-tPCytz4rww__12,vision_bbox,"(119, 4)",True,0.0,0.0
+-tPCytz4rww__12,recovery_route,"(119,)",True,0.0,0.0
+-tPCytz4rww__12,alignment_supported,"(26,)",True,0.0,0.0
+-tPCytz4rww__12,ctc_cells,"(586, 2)",True,0.0,0.0
+-tPCytz4rww__12,word_time_membership,"(26, 586)",True,0.0,0.0
+-tPCytz4rww__12,word_start_quantiles,"(26, 3)",True,0.0,0.0
+-tPCytz4rww__12,word_end_quantiles,"(26, 3)",True,0.0,0.0
+-tPCytz4rww__12,word_audio,"(26, 97)",True,0.0,0.0
+-tPCytz4rww__12,word_audio_dim_mask,"(26, 97)",True,0.0,0.0
+-tPCytz4rww__12,word_audio_effective_seconds,"(26,)",True,0.0,0.0
+-tPCytz4rww__12,word_voiced_effective_seconds,"(26,)",True,0.0,0.0
+-tPCytz4rww__12,word_expression,"(26, 52)",True,0.0,0.0
+-tPCytz4rww__12,word_expression_mask,"(26,)",True,0.0,0.0
+-tPCytz4rww__12,word_scene,"(26, 512)",True,0.0,0.0
+-tPCytz4rww__12,word_scene_mask,"(26,)",True,0.0,0.0
+-tPCytz4rww__12,ctc_word_score,"(26,)",True,0.0,0.0
+-tPCytz4rww__12,asr_exact_match,"(26,)",True,0.0,0.0
+-tPCytz4rww__12,asr_time_gap_s,"(26,)",True,0.0,0.0
+-tPCytz4rww__12,asr_word_probability,"(26,)",True,0.0,0.0
+-tPCytz4rww__16,text,"(16, 768)",True,0.0,0.0
+-tPCytz4rww__16,text_mask,"(16,)",True,0.0,0.0
+-tPCytz4rww__16,audio_native,"(357, 47)",True,0.0,0.0
+-tPCytz4rww__16,audio_time,"(357,)",True,0.0,0.0
+-tPCytz4rww__16,audio_cells,"(357, 2)",True,0.0,0.0
+-tPCytz4rww__16,audio_voiced,"(357,)",True,0.0,0.0
+-tPCytz4rww__16,bert_token_ids,"(19,)",True,0.0,0.0
+-tPCytz4rww__16,bert_word_membership,"(16, 19)",True,0.0,0.0
+-tPCytz4rww__16,bert_char_offsets,"(19, 2)",True,0.0,0.0
+-tPCytz4rww__16,scene_native,"(72, 512)",True,0.0,0.0
+-tPCytz4rww__16,expression_native,"(72, 52)",True,0.0,0.0
+-tPCytz4rww__16,expression_valid,"(72,)",True,0.0,0.0
+-tPCytz4rww__16,vision_time,"(72,)",True,0.0,0.0
+-tPCytz4rww__16,vision_cells,"(72, 2)",True,0.0,0.0
+-tPCytz4rww__16,vision_frame_index,"(72,)",True,0.0,0.0
+-tPCytz4rww__16,vision_bbox,"(72, 4)",True,0.0,0.0
+-tPCytz4rww__16,recovery_route,"(72,)",True,0.0,0.0
+-tPCytz4rww__16,alignment_supported,"(16,)",True,0.0,0.0
+-tPCytz4rww__16,ctc_cells,"(356, 2)",True,0.0,0.0
+-tPCytz4rww__16,word_time_membership,"(16, 356)",True,0.0,0.0
+-tPCytz4rww__16,word_start_quantiles,"(16, 3)",True,0.0,0.0
+-tPCytz4rww__16,word_end_quantiles,"(16, 3)",True,0.0,0.0
+-tPCytz4rww__16,word_audio,"(16, 97)",True,0.0,0.0
+-tPCytz4rww__16,word_audio_dim_mask,"(16, 97)",True,0.0,0.0
+-tPCytz4rww__16,word_audio_effective_seconds,"(16,)",True,0.0,0.0
+-tPCytz4rww__16,word_voiced_effective_seconds,"(16,)",True,0.0,0.0
+-tPCytz4rww__16,word_expression,"(16, 52)",True,0.0,0.0
+-tPCytz4rww__16,word_expression_mask,"(16,)",True,0.0,0.0
+-tPCytz4rww__16,word_scene,"(16, 512)",True,0.0,0.0
+-tPCytz4rww__16,word_scene_mask,"(16,)",True,0.0,0.0
+-tPCytz4rww__16,ctc_word_score,"(16,)",True,0.0,0.0
+-tPCytz4rww__16,asr_exact_match,"(16,)",True,0.0,0.0
+-tPCytz4rww__16,asr_time_gap_s,"(16,)",True,0.0,0.0
+-tPCytz4rww__16,asr_word_probability,"(16,)",True,0.0,0.0
+-tPCytz4rww__18,text,"(16, 768)",True,0.0,0.0
+-tPCytz4rww__18,text_mask,"(16,)",True,0.0,0.0
+-tPCytz4rww__18,audio_native,"(329, 47)",True,0.0,0.0
+-tPCytz4rww__18,audio_time,"(329,)",True,0.0,0.0
+-tPCytz4rww__18,audio_cells,"(329, 2)",True,0.0,0.0
+-tPCytz4rww__18,audio_voiced,"(329,)",True,0.0,0.0
+-tPCytz4rww__18,bert_token_ids,"(24,)",True,0.0,0.0
+-tPCytz4rww__18,bert_word_membership,"(16, 24)",True,0.0,0.0
+-tPCytz4rww__18,bert_char_offsets,"(24, 2)",True,0.0,0.0
+-tPCytz4rww__18,scene_native,"(66, 512)",True,0.0,0.0
+-tPCytz4rww__18,expression_native,"(66, 52)",True,0.0,0.0
+-tPCytz4rww__18,expression_valid,"(66,)",True,0.0,0.0
+-tPCytz4rww__18,vision_time,"(66,)",True,0.0,0.0
+-tPCytz4rww__18,vision_cells,"(66, 2)",True,0.0,0.0
+-tPCytz4rww__18,vision_frame_index,"(66,)",True,0.0,0.0
+-tPCytz4rww__18,vision_bbox,"(66, 4)",True,0.0,0.0
+-tPCytz4rww__18,recovery_route,"(66,)",True,0.0,0.0
+-tPCytz4rww__18,alignment_supported,"(16,)",True,0.0,0.0
+-tPCytz4rww__18,ctc_cells,"(328, 2)",True,0.0,0.0
+-tPCytz4rww__18,word_time_membership,"(16, 328)",True,0.0,0.0
+-tPCytz4rww__18,word_start_quantiles,"(16, 3)",True,0.0,0.0
+-tPCytz4rww__18,word_end_quantiles,"(16, 3)",True,0.0,0.0
+-tPCytz4rww__18,word_audio,"(16, 97)",True,0.0,0.0
+-tPCytz4rww__18,word_audio_dim_mask,"(16, 97)",True,0.0,0.0
+-tPCytz4rww__18,word_audio_effective_seconds,"(16,)",True,0.0,0.0
+-tPCytz4rww__18,word_voiced_effective_seconds,"(16,)",True,0.0,0.0
+-tPCytz4rww__18,word_expression,"(16, 52)",True,0.0,0.0
+-tPCytz4rww__18,word_expression_mask,"(16,)",True,0.0,0.0
+-tPCytz4rww__18,word_scene,"(16, 512)",True,0.0,0.0
+-tPCytz4rww__18,word_scene_mask,"(16,)",True,0.0,0.0
+-tPCytz4rww__18,ctc_word_score,"(16,)",True,0.0,0.0
+-tPCytz4rww__18,asr_exact_match,"(16,)",True,0.0,0.0
+-tPCytz4rww__18,asr_time_gap_s,"(16,)",True,0.0,0.0
+-tPCytz4rww__18,asr_word_probability,"(16,)",True,0.0,0.0
+-UacrmKiTn4__10,text,"(18, 768)",True,0.0,0.0
+-UacrmKiTn4__10,text_mask,"(18,)",True,0.0,0.0
+-UacrmKiTn4__10,audio_native,"(363, 47)",True,0.0,0.0
+-UacrmKiTn4__10,audio_time,"(363,)",True,0.0,0.0
+-UacrmKiTn4__10,audio_cells,"(363, 2)",True,0.0,0.0
+-UacrmKiTn4__10,audio_voiced,"(363,)",True,0.0,0.0
+-UacrmKiTn4__10,bert_token_ids,"(24,)",True,0.0,0.0
+-UacrmKiTn4__10,bert_word_membership,"(18, 24)",True,0.0,0.0
+-UacrmKiTn4__10,bert_char_offsets,"(24, 2)",True,0.0,0.0
+-UacrmKiTn4__10,scene_native,"(73, 512)",True,0.0,0.0
+-UacrmKiTn4__10,expression_native,"(73, 52)",True,0.0,0.0
+-UacrmKiTn4__10,expression_valid,"(73,)",True,0.0,0.0
+-UacrmKiTn4__10,vision_time,"(73,)",True,0.0,0.0
+-UacrmKiTn4__10,vision_cells,"(73, 2)",True,0.0,0.0
+-UacrmKiTn4__10,vision_frame_index,"(73,)",True,0.0,0.0
+-UacrmKiTn4__10,vision_bbox,"(73, 4)",True,0.0,0.0
+-UacrmKiTn4__10,recovery_route,"(73,)",True,0.0,0.0
+-UacrmKiTn4__10,alignment_supported,"(18,)",True,0.0,0.0
+-UacrmKiTn4__10,ctc_cells,"(361, 2)",True,0.0,0.0
+-UacrmKiTn4__10,word_time_membership,"(18, 361)",True,0.0,0.0
+-UacrmKiTn4__10,word_start_quantiles,"(18, 3)",True,0.0,0.0
+-UacrmKiTn4__10,word_end_quantiles,"(18, 3)",True,0.0,0.0
+-UacrmKiTn4__10,word_audio,"(18, 97)",True,0.0,0.0
+-UacrmKiTn4__10,word_audio_dim_mask,"(18, 97)",True,0.0,0.0
+-UacrmKiTn4__10,word_audio_effective_seconds,"(18,)",True,0.0,0.0
+-UacrmKiTn4__10,word_voiced_effective_seconds,"(18,)",True,0.0,0.0
+-UacrmKiTn4__10,word_expression,"(18, 52)",True,0.0,0.0
+-UacrmKiTn4__10,word_expression_mask,"(18,)",True,0.0,0.0
+-UacrmKiTn4__10,word_scene,"(18, 512)",True,0.0,0.0
+-UacrmKiTn4__10,word_scene_mask,"(18,)",True,0.0,0.0
+-UacrmKiTn4__10,ctc_word_score,"(18,)",True,0.0,0.0
+-UacrmKiTn4__10,asr_exact_match,"(18,)",True,0.0,0.0
+-UacrmKiTn4__10,asr_time_gap_s,"(18,)",True,0.0,0.0
+-UacrmKiTn4__10,asr_word_probability,"(18,)",True,0.0,0.0
+-UacrmKiTn4__4,text,"(14, 768)",True,0.0,0.0
+-UacrmKiTn4__4,text_mask,"(14,)",True,0.0,0.0
+-UacrmKiTn4__4,audio_native,"(235, 47)",True,0.0,0.0
+-UacrmKiTn4__4,audio_time,"(235,)",True,0.0,0.0
+-UacrmKiTn4__4,audio_cells,"(235, 2)",True,0.0,0.0
+-UacrmKiTn4__4,audio_voiced,"(235,)",True,0.0,0.0
+-UacrmKiTn4__4,bert_token_ids,"(17,)",True,0.0,0.0
+-UacrmKiTn4__4,bert_word_membership,"(14, 17)",True,0.0,0.0
+-UacrmKiTn4__4,bert_char_offsets,"(17, 2)",True,0.0,0.0
+-UacrmKiTn4__4,scene_native,"(48, 512)",True,0.0,0.0
+-UacrmKiTn4__4,expression_native,"(48, 52)",True,0.0,0.0
+-UacrmKiTn4__4,expression_valid,"(48,)",True,0.0,0.0
+-UacrmKiTn4__4,vision_time,"(48,)",True,0.0,0.0
+-UacrmKiTn4__4,vision_cells,"(48, 2)",True,0.0,0.0
+-UacrmKiTn4__4,vision_frame_index,"(48,)",True,0.0,0.0
+-UacrmKiTn4__4,vision_bbox,"(48, 4)",True,0.0,0.0
+-UacrmKiTn4__4,recovery_route,"(48,)",True,0.0,0.0
+-UacrmKiTn4__4,alignment_supported,"(14,)",True,0.0,0.0
+-UacrmKiTn4__4,ctc_cells,"(233, 2)",True,0.0,0.0
+-UacrmKiTn4__4,word_time_membership,"(14, 233)",True,0.0,0.0
+-UacrmKiTn4__4,word_start_quantiles,"(14, 3)",True,0.0,0.0
+-UacrmKiTn4__4,word_end_quantiles,"(14, 3)",True,0.0,0.0
+-UacrmKiTn4__4,word_audio,"(14, 97)",True,0.0,0.0
+-UacrmKiTn4__4,word_audio_dim_mask,"(14, 97)",True,0.0,0.0
+-UacrmKiTn4__4,word_audio_effective_seconds,"(14,)",True,0.0,0.0
+-UacrmKiTn4__4,word_voiced_effective_seconds,"(14,)",True,0.0,0.0
+-UacrmKiTn4__4,word_expression,"(14, 52)",True,0.0,0.0
+-UacrmKiTn4__4,word_expression_mask,"(14,)",True,0.0,0.0
+-UacrmKiTn4__4,word_scene,"(14, 512)",True,0.0,0.0
+-UacrmKiTn4__4,word_scene_mask,"(14,)",True,0.0,0.0
+-UacrmKiTn4__4,ctc_word_score,"(14,)",True,0.0,0.0
+-UacrmKiTn4__4,asr_exact_match,"(14,)",True,0.0,0.0
+-UacrmKiTn4__4,asr_time_gap_s,"(14,)",True,0.0,0.0
+-UacrmKiTn4__4,asr_word_probability,"(14,)",True,0.0,0.0
+-UUCSKoHeMA__0,text,"(18, 768)",True,0.0,0.0
+-UUCSKoHeMA__0,text_mask,"(18,)",True,0.0,0.0
+-UUCSKoHeMA__0,audio_native,"(387, 47)",True,0.0,0.0
+-UUCSKoHeMA__0,audio_time,"(387,)",True,0.0,0.0
+-UUCSKoHeMA__0,audio_cells,"(387, 2)",True,0.0,0.0
+-UUCSKoHeMA__0,audio_voiced,"(387,)",True,0.0,0.0
+-UUCSKoHeMA__0,bert_token_ids,"(25,)",True,0.0,0.0
+-UUCSKoHeMA__0,bert_word_membership,"(18, 25)",True,0.0,0.0
+-UUCSKoHeMA__0,bert_char_offsets,"(25, 2)",True,0.0,0.0
+-UUCSKoHeMA__0,scene_native,"(79, 512)",True,0.0,0.0
+-UUCSKoHeMA__0,expression_native,"(79, 52)",True,0.0,0.0
+-UUCSKoHeMA__0,expression_valid,"(79,)",True,0.0,0.0
+-UUCSKoHeMA__0,vision_time,"(79,)",True,0.0,0.0
+-UUCSKoHeMA__0,vision_cells,"(79, 2)",True,0.0,0.0
+-UUCSKoHeMA__0,vision_frame_index,"(79,)",True,0.0,0.0
+-UUCSKoHeMA__0,vision_bbox,"(79, 4)",True,0.0,0.0
+-UUCSKoHeMA__0,recovery_route,"(79,)",True,0.0,0.0
+-UUCSKoHeMA__0,alignment_supported,"(18,)",True,0.0,0.0
+-UUCSKoHeMA__0,ctc_cells,"(386, 2)",True,0.0,0.0
+-UUCSKoHeMA__0,word_time_membership,"(18, 386)",True,0.0,0.0
+-UUCSKoHeMA__0,word_start_quantiles,"(18, 3)",True,0.0,0.0
+-UUCSKoHeMA__0,word_end_quantiles,"(18, 3)",True,0.0,0.0
+-UUCSKoHeMA__0,word_audio,"(18, 97)",True,0.0,0.0
+-UUCSKoHeMA__0,word_audio_dim_mask,"(18, 97)",True,0.0,0.0
+-UUCSKoHeMA__0,word_audio_effective_seconds,"(18,)",True,0.0,0.0
+-UUCSKoHeMA__0,word_voiced_effective_seconds,"(18,)",True,0.0,0.0
+-UUCSKoHeMA__0,word_expression,"(18, 52)",True,0.0,0.0
+-UUCSKoHeMA__0,word_expression_mask,"(18,)",True,0.0,0.0
+-UUCSKoHeMA__0,word_scene,"(18, 512)",True,0.0,0.0
+-UUCSKoHeMA__0,word_scene_mask,"(18,)",True,0.0,0.0
+-UUCSKoHeMA__0,ctc_word_score,"(18,)",True,0.0,0.0
+-UUCSKoHeMA__0,asr_exact_match,"(18,)",True,0.0,0.0
+-UUCSKoHeMA__0,asr_time_gap_s,"(18,)",True,0.0,0.0
+-UUCSKoHeMA__0,asr_word_probability,"(18,)",True,0.0,0.0
+-UuX1xuaiiE__0,text,"(9, 768)",True,0.0,0.0
+-UuX1xuaiiE__0,text_mask,"(9,)",True,0.0,0.0
+-UuX1xuaiiE__0,audio_native,"(179, 47)",True,0.0,0.0
+-UuX1xuaiiE__0,audio_time,"(179,)",True,0.0,0.0
+-UuX1xuaiiE__0,audio_cells,"(179, 2)",True,0.0,0.0
+-UuX1xuaiiE__0,audio_voiced,"(179,)",True,0.0,0.0
+-UuX1xuaiiE__0,bert_token_ids,"(13,)",True,0.0,0.0
+-UuX1xuaiiE__0,bert_word_membership,"(9, 13)",True,0.0,0.0
+-UuX1xuaiiE__0,bert_char_offsets,"(13, 2)",True,0.0,0.0
+-UuX1xuaiiE__0,scene_native,"(37, 512)",True,0.0,0.0
+-UuX1xuaiiE__0,expression_native,"(37, 52)",True,0.0,0.0
+-UuX1xuaiiE__0,expression_valid,"(37,)",True,0.0,0.0
+-UuX1xuaiiE__0,vision_time,"(37,)",True,0.0,0.0
+-UuX1xuaiiE__0,vision_cells,"(37, 2)",True,0.0,0.0
+-UuX1xuaiiE__0,vision_frame_index,"(37,)",True,0.0,0.0
+-UuX1xuaiiE__0,vision_bbox,"(37, 4)",True,0.0,0.0
+-UuX1xuaiiE__0,recovery_route,"(37,)",True,0.0,0.0
+-UuX1xuaiiE__0,alignment_supported,"(9,)",True,0.0,0.0
+-UuX1xuaiiE__0,ctc_cells,"(178, 2)",True,0.0,0.0
+-UuX1xuaiiE__0,word_time_membership,"(9, 178)",True,0.0,0.0
+-UuX1xuaiiE__0,word_start_quantiles,"(9, 3)",True,0.0,0.0
+-UuX1xuaiiE__0,word_end_quantiles,"(9, 3)",True,0.0,0.0
+-UuX1xuaiiE__0,word_audio,"(9, 97)",True,0.0,0.0
+-UuX1xuaiiE__0,word_audio_dim_mask,"(9, 97)",True,0.0,0.0
+-UuX1xuaiiE__0,word_audio_effective_seconds,"(9,)",True,0.0,0.0
+-UuX1xuaiiE__0,word_voiced_effective_seconds,"(9,)",True,0.0,0.0
+-UuX1xuaiiE__0,word_expression,"(9, 52)",True,0.0,0.0
+-UuX1xuaiiE__0,word_expression_mask,"(9,)",True,0.0,0.0
+-UuX1xuaiiE__0,word_scene,"(9, 512)",True,0.0,0.0
+-UuX1xuaiiE__0,word_scene_mask,"(9,)",True,0.0,0.0
+-UuX1xuaiiE__0,ctc_word_score,"(9,)",True,0.0,0.0
+-UuX1xuaiiE__0,asr_exact_match,"(9,)",True,0.0,0.0
+-UuX1xuaiiE__0,asr_time_gap_s,"(9,)",True,0.0,0.0
+-UuX1xuaiiE__0,asr_word_probability,"(9,)",True,0.0,0.0
+-UuX1xuaiiE__1,text,"(27, 768)",True,0.0,0.0
+-UuX1xuaiiE__1,text_mask,"(27,)",True,0.0,0.0
+-UuX1xuaiiE__1,audio_native,"(514, 47)",True,0.0,0.0
+-UuX1xuaiiE__1,audio_time,"(514,)",True,0.0,0.0
+-UuX1xuaiiE__1,audio_cells,"(514, 2)",True,0.0,0.0
+-UuX1xuaiiE__1,audio_voiced,"(514,)",True,0.0,0.0
+-UuX1xuaiiE__1,bert_token_ids,"(31,)",True,0.0,0.0
+-UuX1xuaiiE__1,bert_word_membership,"(27, 31)",True,0.0,0.0
+-UuX1xuaiiE__1,bert_char_offsets,"(31, 2)",True,0.0,0.0
+-UuX1xuaiiE__1,scene_native,"(104, 512)",True,0.0,0.0
+-UuX1xuaiiE__1,expression_native,"(104, 52)",True,0.0,0.0
+-UuX1xuaiiE__1,expression_valid,"(104,)",True,0.0,0.0
+-UuX1xuaiiE__1,vision_time,"(104,)",True,0.0,0.0
+-UuX1xuaiiE__1,vision_cells,"(104, 2)",True,0.0,0.0
+-UuX1xuaiiE__1,vision_frame_index,"(104,)",True,0.0,0.0
+-UuX1xuaiiE__1,vision_bbox,"(104, 4)",True,0.0,0.0
+-UuX1xuaiiE__1,recovery_route,"(104,)",True,0.0,0.0
+-UuX1xuaiiE__1,alignment_supported,"(27,)",True,0.0,0.0
+-UuX1xuaiiE__1,ctc_cells,"(513, 2)",True,0.0,0.0
+-UuX1xuaiiE__1,word_time_membership,"(27, 513)",True,0.0,0.0
+-UuX1xuaiiE__1,word_start_quantiles,"(27, 3)",True,0.0,0.0
+-UuX1xuaiiE__1,word_end_quantiles,"(27, 3)",True,0.0,0.0
+-UuX1xuaiiE__1,word_audio,"(27, 97)",True,0.0,0.0
+-UuX1xuaiiE__1,word_audio_dim_mask,"(27, 97)",True,0.0,0.0
+-UuX1xuaiiE__1,word_audio_effective_seconds,"(27,)",True,0.0,0.0
+-UuX1xuaiiE__1,word_voiced_effective_seconds,"(27,)",True,0.0,0.0
+-UuX1xuaiiE__1,word_expression,"(27, 52)",True,0.0,0.0
+-UuX1xuaiiE__1,word_expression_mask,"(27,)",True,0.0,0.0
+-UuX1xuaiiE__1,word_scene,"(27, 512)",True,0.0,0.0
+-UuX1xuaiiE__1,word_scene_mask,"(27,)",True,0.0,0.0
+-UuX1xuaiiE__1,ctc_word_score,"(27,)",True,0.0,0.0
+-UuX1xuaiiE__1,asr_exact_match,"(27,)",True,0.0,0.0
+-UuX1xuaiiE__1,asr_time_gap_s,"(27,)",True,0.0,0.0
+-UuX1xuaiiE__1,asr_word_probability,"(27,)",True,0.0,0.0
+-UuX1xuaiiE__3,text,"(9, 768)",True,0.0,0.0
+-UuX1xuaiiE__3,text_mask,"(9,)",True,0.0,0.0
+-UuX1xuaiiE__3,audio_native,"(202, 47)",True,0.0,0.0
+-UuX1xuaiiE__3,audio_time,"(202,)",True,0.0,0.0
+-UuX1xuaiiE__3,audio_cells,"(202, 2)",True,0.0,0.0
+-UuX1xuaiiE__3,audio_voiced,"(202,)",True,0.0,0.0
+-UuX1xuaiiE__3,bert_token_ids,"(11,)",True,0.0,0.0
+-UuX1xuaiiE__3,bert_word_membership,"(9, 11)",True,0.0,0.0
+-UuX1xuaiiE__3,bert_char_offsets,"(11, 2)",True,0.0,0.0
+-UuX1xuaiiE__3,scene_native,"(41, 512)",True,0.0,0.0
+-UuX1xuaiiE__3,expression_native,"(41, 52)",True,0.0,0.0
+-UuX1xuaiiE__3,expression_valid,"(41,)",True,0.0,0.0
+-UuX1xuaiiE__3,vision_time,"(41,)",True,0.0,0.0
+-UuX1xuaiiE__3,vision_cells,"(41, 2)",True,0.0,0.0
+-UuX1xuaiiE__3,vision_frame_index,"(41,)",True,0.0,0.0
+-UuX1xuaiiE__3,vision_bbox,"(41, 4)",True,0.0,0.0
+-UuX1xuaiiE__3,recovery_route,"(41,)",True,0.0,0.0
+-UuX1xuaiiE__3,alignment_supported,"(9,)",True,0.0,0.0
+-UuX1xuaiiE__3,ctc_cells,"(201, 2)",True,0.0,0.0
+-UuX1xuaiiE__3,word_time_membership,"(9, 201)",True,0.0,0.0
+-UuX1xuaiiE__3,word_start_quantiles,"(9, 3)",True,0.0,0.0
+-UuX1xuaiiE__3,word_end_quantiles,"(9, 3)",True,0.0,0.0
+-UuX1xuaiiE__3,word_audio,"(9, 97)",True,0.0,0.0
+-UuX1xuaiiE__3,word_audio_dim_mask,"(9, 97)",True,0.0,0.0
+-UuX1xuaiiE__3,word_audio_effective_seconds,"(9,)",True,0.0,0.0
+-UuX1xuaiiE__3,word_voiced_effective_seconds,"(9,)",True,0.0,0.0
+-UuX1xuaiiE__3,word_expression,"(9, 52)",True,0.0,0.0
+-UuX1xuaiiE__3,word_expression_mask,"(9,)",True,0.0,0.0
+-UuX1xuaiiE__3,word_scene,"(9, 512)",True,0.0,0.0
+-UuX1xuaiiE__3,word_scene_mask,"(9,)",True,0.0,0.0
+-UuX1xuaiiE__3,ctc_word_score,"(9,)",True,0.0,0.0
+-UuX1xuaiiE__3,asr_exact_match,"(9,)",True,0.0,0.0
+-UuX1xuaiiE__3,asr_time_gap_s,"(9,)",True,0.0,0.0
+-UuX1xuaiiE__3,asr_word_probability,"(9,)",True,0.0,0.0
+-UuX1xuaiiE__6,text,"(23, 768)",True,0.0,0.0
+-UuX1xuaiiE__6,text_mask,"(23,)",True,0.0,0.0
+-UuX1xuaiiE__6,audio_native,"(398, 47)",True,0.0,0.0
+-UuX1xuaiiE__6,audio_time,"(398,)",True,0.0,0.0
+-UuX1xuaiiE__6,audio_cells,"(398, 2)",True,0.0,0.0
+-UuX1xuaiiE__6,audio_voiced,"(398,)",True,0.0,0.0
+-UuX1xuaiiE__6,bert_token_ids,"(25,)",True,0.0,0.0
+-UuX1xuaiiE__6,bert_word_membership,"(23, 25)",True,0.0,0.0
+-UuX1xuaiiE__6,bert_char_offsets,"(25, 2)",True,0.0,0.0
+-UuX1xuaiiE__6,scene_native,"(81, 512)",True,0.0,0.0
+-UuX1xuaiiE__6,expression_native,"(81, 52)",True,0.0,0.0
+-UuX1xuaiiE__6,expression_valid,"(81,)",True,0.0,0.0
+-UuX1xuaiiE__6,vision_time,"(81,)",True,0.0,0.0
+-UuX1xuaiiE__6,vision_cells,"(81, 2)",True,0.0,0.0
+-UuX1xuaiiE__6,vision_frame_index,"(81,)",True,0.0,0.0
+-UuX1xuaiiE__6,vision_bbox,"(81, 4)",True,0.0,0.0
+-UuX1xuaiiE__6,recovery_route,"(81,)",True,0.0,0.0
+-UuX1xuaiiE__6,alignment_supported,"(23,)",True,0.0,0.0
+-UuX1xuaiiE__6,ctc_cells,"(396, 2)",True,0.0,0.0
+-UuX1xuaiiE__6,word_time_membership,"(23, 396)",True,0.0,0.0
+-UuX1xuaiiE__6,word_start_quantiles,"(23, 3)",True,0.0,0.0
+-UuX1xuaiiE__6,word_end_quantiles,"(23, 3)",True,0.0,0.0
+-UuX1xuaiiE__6,word_audio,"(23, 97)",True,0.0,0.0
+-UuX1xuaiiE__6,word_audio_dim_mask,"(23, 97)",True,0.0,0.0
+-UuX1xuaiiE__6,word_audio_effective_seconds,"(23,)",True,0.0,0.0
+-UuX1xuaiiE__6,word_voiced_effective_seconds,"(23,)",True,0.0,0.0
+-UuX1xuaiiE__6,word_expression,"(23, 52)",True,0.0,0.0
+-UuX1xuaiiE__6,word_expression_mask,"(23,)",True,0.0,0.0
+-UuX1xuaiiE__6,word_scene,"(23, 512)",True,0.0,0.0
+-UuX1xuaiiE__6,word_scene_mask,"(23,)",True,0.0,0.0
+-UuX1xuaiiE__6,ctc_word_score,"(23,)",True,0.0,0.0
+-UuX1xuaiiE__6,asr_exact_match,"(23,)",True,0.0,0.0
+-UuX1xuaiiE__6,asr_time_gap_s,"(23,)",True,0.0,0.0
+-UuX1xuaiiE__6,asr_word_probability,"(23,)",True,0.0,0.0
+-uywlfIYOS8__4,text,"(18, 768)",True,0.0,0.0
+-uywlfIYOS8__4,text_mask,"(18,)",True,0.0,0.0
+-uywlfIYOS8__4,audio_native,"(295, 47)",True,0.0,0.0
+-uywlfIYOS8__4,audio_time,"(295,)",True,0.0,0.0
+-uywlfIYOS8__4,audio_cells,"(295, 2)",True,0.0,0.0
+-uywlfIYOS8__4,audio_voiced,"(295,)",True,0.0,0.0
+-uywlfIYOS8__4,bert_token_ids,"(24,)",True,0.0,0.0
+-uywlfIYOS8__4,bert_word_membership,"(18, 24)",True,0.0,0.0
+-uywlfIYOS8__4,bert_char_offsets,"(24, 2)",True,0.0,0.0
+-uywlfIYOS8__4,scene_native,"(61, 512)",True,0.0,0.0
+-uywlfIYOS8__4,expression_native,"(61, 52)",True,0.0,0.0
+-uywlfIYOS8__4,expression_valid,"(61,)",True,0.0,0.0
+-uywlfIYOS8__4,vision_time,"(61,)",True,0.0,0.0
+-uywlfIYOS8__4,vision_cells,"(61, 2)",True,0.0,0.0
+-uywlfIYOS8__4,vision_frame_index,"(61,)",True,0.0,0.0
+-uywlfIYOS8__4,vision_bbox,"(61, 4)",True,0.0,0.0
+-uywlfIYOS8__4,recovery_route,"(61,)",True,0.0,0.0
+-uywlfIYOS8__4,alignment_supported,"(18,)",True,0.0,0.0
+-uywlfIYOS8__4,ctc_cells,"(293, 2)",True,0.0,0.0
+-uywlfIYOS8__4,word_time_membership,"(18, 293)",True,0.0,0.0
+-uywlfIYOS8__4,word_start_quantiles,"(18, 3)",True,0.0,0.0
+-uywlfIYOS8__4,word_end_quantiles,"(18, 3)",True,0.0,0.0
+-uywlfIYOS8__4,word_audio,"(18, 97)",True,0.0,0.0
+-uywlfIYOS8__4,word_audio_dim_mask,"(18, 97)",True,0.0,0.0
+-uywlfIYOS8__4,word_audio_effective_seconds,"(18,)",True,0.0,0.0
+-uywlfIYOS8__4,word_voiced_effective_seconds,"(18,)",True,0.0,0.0
+-uywlfIYOS8__4,word_expression,"(18, 52)",True,0.0,0.0
+-uywlfIYOS8__4,word_expression_mask,"(18,)",True,0.0,0.0
+-uywlfIYOS8__4,word_scene,"(18, 512)",True,0.0,0.0
+-uywlfIYOS8__4,word_scene_mask,"(18,)",True,0.0,0.0
+-uywlfIYOS8__4,ctc_word_score,"(18,)",True,0.0,0.0
+-uywlfIYOS8__4,asr_exact_match,"(18,)",True,0.0,0.0
+-uywlfIYOS8__4,asr_time_gap_s,"(18,)",True,0.0,0.0
+-uywlfIYOS8__4,asr_word_probability,"(18,)",True,0.0,0.0
+-vxjVxOeScU__4,text,"(21, 768)",True,0.0,0.0
+-vxjVxOeScU__4,text_mask,"(21,)",True,0.0,0.0
+-vxjVxOeScU__4,audio_native,"(452, 47)",True,0.0,0.0
+-vxjVxOeScU__4,audio_time,"(452,)",True,0.0,0.0
+-vxjVxOeScU__4,audio_cells,"(452, 2)",True,0.0,0.0
+-vxjVxOeScU__4,audio_voiced,"(452,)",True,0.0,0.0
+-vxjVxOeScU__4,bert_token_ids,"(29,)",True,0.0,0.0
+-vxjVxOeScU__4,bert_word_membership,"(21, 29)",True,0.0,0.0
+-vxjVxOeScU__4,bert_char_offsets,"(29, 2)",True,0.0,0.0
+-vxjVxOeScU__4,scene_native,"(91, 512)",True,0.0,0.0
+-vxjVxOeScU__4,expression_native,"(91, 52)",True,0.0,0.0
+-vxjVxOeScU__4,expression_valid,"(91,)",True,0.0,0.0
+-vxjVxOeScU__4,vision_time,"(91,)",True,0.0,0.0
+-vxjVxOeScU__4,vision_cells,"(91, 2)",True,0.0,0.0
+-vxjVxOeScU__4,vision_frame_index,"(91,)",True,0.0,0.0
+-vxjVxOeScU__4,vision_bbox,"(91, 4)",True,0.0,0.0
+-vxjVxOeScU__4,recovery_route,"(91,)",True,0.0,0.0
+-vxjVxOeScU__4,alignment_supported,"(21,)",True,0.0,0.0
+-vxjVxOeScU__4,ctc_cells,"(451, 2)",True,0.0,0.0
+-vxjVxOeScU__4,word_time_membership,"(21, 451)",True,0.0,0.0
+-vxjVxOeScU__4,word_start_quantiles,"(21, 3)",True,0.0,0.0
+-vxjVxOeScU__4,word_end_quantiles,"(21, 3)",True,0.0,0.0
+-vxjVxOeScU__4,word_audio,"(21, 97)",True,0.0,0.0
+-vxjVxOeScU__4,word_audio_dim_mask,"(21, 97)",True,0.0,0.0
+-vxjVxOeScU__4,word_audio_effective_seconds,"(21,)",True,0.0,0.0
+-vxjVxOeScU__4,word_voiced_effective_seconds,"(21,)",True,0.0,0.0
+-vxjVxOeScU__4,word_expression,"(21, 52)",True,0.0,0.0
+-vxjVxOeScU__4,word_expression_mask,"(21,)",True,0.0,0.0
+-vxjVxOeScU__4,word_scene,"(21, 512)",True,0.0,0.0
+-vxjVxOeScU__4,word_scene_mask,"(21,)",True,0.0,0.0
+-vxjVxOeScU__4,ctc_word_score,"(21,)",True,0.0,0.0
+-vxjVxOeScU__4,asr_exact_match,"(21,)",True,0.0,0.0
+-vxjVxOeScU__4,asr_time_gap_s,"(21,)",True,0.0,0.0
+-vxjVxOeScU__4,asr_word_probability,"(21,)",True,0.0,0.0
+-wMB_hJL-3o__7,text,"(22, 768)",True,0.0,0.0
+-wMB_hJL-3o__7,text_mask,"(22,)",True,0.0,0.0
+-wMB_hJL-3o__7,audio_native,"(299, 47)",True,0.0,0.0
+-wMB_hJL-3o__7,audio_time,"(299,)",True,0.0,0.0
+-wMB_hJL-3o__7,audio_cells,"(299, 2)",True,0.0,0.0
+-wMB_hJL-3o__7,audio_voiced,"(299,)",True,0.0,0.0
+-wMB_hJL-3o__7,bert_token_ids,"(25,)",True,0.0,0.0
+-wMB_hJL-3o__7,bert_word_membership,"(22, 25)",True,0.0,0.0
+-wMB_hJL-3o__7,bert_char_offsets,"(25, 2)",True,0.0,0.0
+-wMB_hJL-3o__7,scene_native,"(61, 512)",True,0.0,0.0
+-wMB_hJL-3o__7,expression_native,"(61, 52)",True,0.0,0.0
+-wMB_hJL-3o__7,expression_valid,"(61,)",True,0.0,0.0
+-wMB_hJL-3o__7,vision_time,"(61,)",True,0.0,0.0
+-wMB_hJL-3o__7,vision_cells,"(61, 2)",True,0.0,0.0
+-wMB_hJL-3o__7,vision_frame_index,"(61,)",True,0.0,0.0
+-wMB_hJL-3o__7,vision_bbox,"(61, 4)",True,0.0,0.0
+-wMB_hJL-3o__7,recovery_route,"(61,)",True,0.0,0.0
+-wMB_hJL-3o__7,alignment_supported,"(22,)",True,0.0,0.0
+-wMB_hJL-3o__7,ctc_cells,"(298, 2)",True,0.0,0.0
+-wMB_hJL-3o__7,word_time_membership,"(22, 298)",True,0.0,0.0
+-wMB_hJL-3o__7,word_start_quantiles,"(22, 3)",True,0.0,0.0
+-wMB_hJL-3o__7,word_end_quantiles,"(22, 3)",True,0.0,0.0
+-wMB_hJL-3o__7,word_audio,"(22, 97)",True,0.0,0.0
+-wMB_hJL-3o__7,word_audio_dim_mask,"(22, 97)",True,0.0,0.0
+-wMB_hJL-3o__7,word_audio_effective_seconds,"(22,)",True,0.0,0.0
+-wMB_hJL-3o__7,word_voiced_effective_seconds,"(22,)",True,0.0,0.0
+-wMB_hJL-3o__7,word_expression,"(22, 52)",True,0.0,0.0
+-wMB_hJL-3o__7,word_expression_mask,"(22,)",True,0.0,0.0
+-wMB_hJL-3o__7,word_scene,"(22, 512)",True,0.0,0.0
+-wMB_hJL-3o__7,word_scene_mask,"(22,)",True,0.0,0.0
+-wMB_hJL-3o__7,ctc_word_score,"(22,)",True,0.0,0.0
+-wMB_hJL-3o__7,asr_exact_match,"(22,)",True,0.0,0.0
+-wMB_hJL-3o__7,asr_time_gap_s,"(22,)",True,0.0,0.0
+-wMB_hJL-3o__7,asr_word_probability,"(22,)",True,0.0,0.0
+-wny0OAz3g8__0,text,"(9, 768)",True,0.0,0.0
+-wny0OAz3g8__0,text_mask,"(9,)",True,0.0,0.0
+-wny0OAz3g8__0,audio_native,"(164, 47)",True,0.0,0.0
+-wny0OAz3g8__0,audio_time,"(164,)",True,0.0,0.0
+-wny0OAz3g8__0,audio_cells,"(164, 2)",True,0.0,0.0
+-wny0OAz3g8__0,audio_voiced,"(164,)",True,0.0,0.0
+-wny0OAz3g8__0,bert_token_ids,"(13,)",True,0.0,0.0
+-wny0OAz3g8__0,bert_word_membership,"(9, 13)",True,0.0,0.0
+-wny0OAz3g8__0,bert_char_offsets,"(13, 2)",True,0.0,0.0
+-wny0OAz3g8__0,scene_native,"(33, 512)",True,0.0,0.0
+-wny0OAz3g8__0,expression_native,"(33, 52)",True,0.0,0.0
+-wny0OAz3g8__0,expression_valid,"(33,)",True,0.0,0.0
+-wny0OAz3g8__0,vision_time,"(33,)",True,0.0,0.0
+-wny0OAz3g8__0,vision_cells,"(33, 2)",True,0.0,0.0
+-wny0OAz3g8__0,vision_frame_index,"(33,)",True,0.0,0.0
+-wny0OAz3g8__0,vision_bbox,"(33, 4)",True,0.0,0.0
+-wny0OAz3g8__0,recovery_route,"(33,)",True,0.0,0.0
+-wny0OAz3g8__0,alignment_supported,"(9,)",True,0.0,0.0
+-wny0OAz3g8__0,ctc_cells,"(163, 2)",True,0.0,0.0
+-wny0OAz3g8__0,word_time_membership,"(9, 163)",True,0.0,0.0
+-wny0OAz3g8__0,word_start_quantiles,"(9, 3)",True,0.0,0.0
+-wny0OAz3g8__0,word_end_quantiles,"(9, 3)",True,0.0,0.0
+-wny0OAz3g8__0,word_audio,"(9, 97)",True,0.0,0.0
+-wny0OAz3g8__0,word_audio_dim_mask,"(9, 97)",True,0.0,0.0
+-wny0OAz3g8__0,word_audio_effective_seconds,"(9,)",True,0.0,0.0
+-wny0OAz3g8__0,word_voiced_effective_seconds,"(9,)",True,0.0,0.0
+-wny0OAz3g8__0,word_expression,"(9, 52)",True,0.0,0.0
+-wny0OAz3g8__0,word_expression_mask,"(9,)",True,0.0,0.0
+-wny0OAz3g8__0,word_scene,"(9, 512)",True,0.0,0.0
+-wny0OAz3g8__0,word_scene_mask,"(9,)",True,0.0,0.0
+-wny0OAz3g8__0,ctc_word_score,"(9,)",True,0.0,0.0
+-wny0OAz3g8__0,asr_exact_match,"(9,)",True,0.0,0.0
+-wny0OAz3g8__0,asr_time_gap_s,"(9,)",True,0.0,0.0
+-wny0OAz3g8__0,asr_word_probability,"(9,)",True,0.0,0.0
+-wny0OAz3g8__1,text,"(22, 768)",True,0.0,0.0
+-wny0OAz3g8__1,text_mask,"(22,)",True,0.0,0.0
+-wny0OAz3g8__1,audio_native,"(339, 47)",True,0.0,0.0
+-wny0OAz3g8__1,audio_time,"(339,)",True,0.0,0.0
+-wny0OAz3g8__1,audio_cells,"(339, 2)",True,0.0,0.0
+-wny0OAz3g8__1,audio_voiced,"(339,)",True,0.0,0.0
+-wny0OAz3g8__1,bert_token_ids,"(30,)",True,0.0,0.0
+-wny0OAz3g8__1,bert_word_membership,"(22, 30)",True,0.0,0.0
+-wny0OAz3g8__1,bert_char_offsets,"(30, 2)",True,0.0,0.0
+-wny0OAz3g8__1,scene_native,"(68, 512)",True,0.0,0.0
+-wny0OAz3g8__1,expression_native,"(68, 52)",True,0.0,0.0
+-wny0OAz3g8__1,expression_valid,"(68,)",True,0.0,0.0
+-wny0OAz3g8__1,vision_time,"(68,)",True,0.0,0.0
+-wny0OAz3g8__1,vision_cells,"(68, 2)",True,0.0,0.0
+-wny0OAz3g8__1,vision_frame_index,"(68,)",True,0.0,0.0
+-wny0OAz3g8__1,vision_bbox,"(68, 4)",True,0.0,0.0
+-wny0OAz3g8__1,recovery_route,"(68,)",True,0.0,0.0
+-wny0OAz3g8__1,alignment_supported,"(22,)",True,0.0,0.0
+-wny0OAz3g8__1,ctc_cells,"(338, 2)",True,0.0,0.0
+-wny0OAz3g8__1,word_time_membership,"(22, 338)",True,0.0,0.0
+-wny0OAz3g8__1,word_start_quantiles,"(22, 3)",True,0.0,0.0
+-wny0OAz3g8__1,word_end_quantiles,"(22, 3)",True,0.0,0.0
+-wny0OAz3g8__1,word_audio,"(22, 97)",True,0.0,0.0
+-wny0OAz3g8__1,word_audio_dim_mask,"(22, 97)",True,0.0,0.0
+-wny0OAz3g8__1,word_audio_effective_seconds,"(22,)",True,0.0,0.0
+-wny0OAz3g8__1,word_voiced_effective_seconds,"(22,)",True,0.0,0.0
+-wny0OAz3g8__1,word_expression,"(22, 52)",True,0.0,0.0
+-wny0OAz3g8__1,word_expression_mask,"(22,)",True,0.0,0.0
+-wny0OAz3g8__1,word_scene,"(22, 512)",True,0.0,0.0
+-wny0OAz3g8__1,word_scene_mask,"(22,)",True,0.0,0.0
+-wny0OAz3g8__1,ctc_word_score,"(22,)",True,0.0,0.0
+-wny0OAz3g8__1,asr_exact_match,"(22,)",True,0.0,0.0
+-wny0OAz3g8__1,asr_time_gap_s,"(22,)",True,0.0,0.0
+-wny0OAz3g8__1,asr_word_probability,"(22,)",True,0.0,0.0
+-wny0OAz3g8__2,text,"(23, 768)",True,0.0,0.0
+-wny0OAz3g8__2,text_mask,"(23,)",True,0.0,0.0
+-wny0OAz3g8__2,audio_native,"(327, 47)",True,0.0,0.0
+-wny0OAz3g8__2,audio_time,"(327,)",True,0.0,0.0
+-wny0OAz3g8__2,audio_cells,"(327, 2)",True,0.0,0.0
+-wny0OAz3g8__2,audio_voiced,"(327,)",True,0.0,0.0
+-wny0OAz3g8__2,bert_token_ids,"(30,)",True,0.0,0.0
+-wny0OAz3g8__2,bert_word_membership,"(23, 30)",True,0.0,0.0
+-wny0OAz3g8__2,bert_char_offsets,"(30, 2)",True,0.0,0.0
+-wny0OAz3g8__2,scene_native,"(67, 512)",True,0.0,0.0
+-wny0OAz3g8__2,expression_native,"(67, 52)",True,0.0,0.0
+-wny0OAz3g8__2,expression_valid,"(67,)",True,0.0,0.0
+-wny0OAz3g8__2,vision_time,"(67,)",True,0.0,0.0
+-wny0OAz3g8__2,vision_cells,"(67, 2)",True,0.0,0.0
+-wny0OAz3g8__2,vision_frame_index,"(67,)",True,0.0,0.0
+-wny0OAz3g8__2,vision_bbox,"(67, 4)",True,0.0,0.0
+-wny0OAz3g8__2,recovery_route,"(67,)",True,0.0,0.0
+-wny0OAz3g8__2,alignment_supported,"(23,)",True,0.0,0.0
+-wny0OAz3g8__2,ctc_cells,"(325, 2)",True,0.0,0.0
+-wny0OAz3g8__2,word_time_membership,"(23, 325)",True,0.0,0.0
+-wny0OAz3g8__2,word_start_quantiles,"(23, 3)",True,0.0,0.0
+-wny0OAz3g8__2,word_end_quantiles,"(23, 3)",True,0.0,0.0
+-wny0OAz3g8__2,word_audio,"(23, 97)",True,0.0,0.0
+-wny0OAz3g8__2,word_audio_dim_mask,"(23, 97)",True,0.0,0.0
+-wny0OAz3g8__2,word_audio_effective_seconds,"(23,)",True,0.0,0.0
+-wny0OAz3g8__2,word_voiced_effective_seconds,"(23,)",True,0.0,0.0
+-wny0OAz3g8__2,word_expression,"(23, 52)",True,0.0,0.0
+-wny0OAz3g8__2,word_expression_mask,"(23,)",True,0.0,0.0
+-wny0OAz3g8__2,word_scene,"(23, 512)",True,0.0,0.0
+-wny0OAz3g8__2,word_scene_mask,"(23,)",True,0.0,0.0
+-wny0OAz3g8__2,ctc_word_score,"(23,)",True,0.0,0.0
+-wny0OAz3g8__2,asr_exact_match,"(23,)",True,0.0,0.0
+-wny0OAz3g8__2,asr_time_gap_s,"(23,)",True,0.0,0.0
+-wny0OAz3g8__2,asr_word_probability,"(23,)",True,0.0,0.0
+-wny0OAz3g8__3,text,"(20, 768)",True,0.0,0.0
+-wny0OAz3g8__3,text_mask,"(20,)",True,0.0,0.0
+-wny0OAz3g8__3,audio_native,"(305, 47)",True,0.0,0.0
+-wny0OAz3g8__3,audio_time,"(305,)",True,0.0,0.0
+-wny0OAz3g8__3,audio_cells,"(305, 2)",True,0.0,0.0
+-wny0OAz3g8__3,audio_voiced,"(305,)",True,0.0,0.0
+-wny0OAz3g8__3,bert_token_ids,"(22,)",True,0.0,0.0
+-wny0OAz3g8__3,bert_word_membership,"(20, 22)",True,0.0,0.0
+-wny0OAz3g8__3,bert_char_offsets,"(22, 2)",True,0.0,0.0
+-wny0OAz3g8__3,scene_native,"(61, 512)",True,0.0,0.0
+-wny0OAz3g8__3,expression_native,"(61, 52)",True,0.0,0.0
+-wny0OAz3g8__3,expression_valid,"(61,)",True,0.0,0.0
+-wny0OAz3g8__3,vision_time,"(61,)",True,0.0,0.0
+-wny0OAz3g8__3,vision_cells,"(61, 2)",True,0.0,0.0
+-wny0OAz3g8__3,vision_frame_index,"(61,)",True,0.0,0.0
+-wny0OAz3g8__3,vision_bbox,"(61, 4)",True,0.0,0.0
+-wny0OAz3g8__3,recovery_route,"(61,)",True,0.0,0.0
+-wny0OAz3g8__3,alignment_supported,"(20,)",True,0.0,0.0
+-wny0OAz3g8__3,ctc_cells,"(304, 2)",True,0.0,0.0
+-wny0OAz3g8__3,word_time_membership,"(20, 304)",True,0.0,0.0
+-wny0OAz3g8__3,word_start_quantiles,"(20, 3)",True,0.0,0.0
+-wny0OAz3g8__3,word_end_quantiles,"(20, 3)",True,0.0,0.0
+-wny0OAz3g8__3,word_audio,"(20, 97)",True,0.0,0.0
+-wny0OAz3g8__3,word_audio_dim_mask,"(20, 97)",True,0.0,0.0
+-wny0OAz3g8__3,word_audio_effective_seconds,"(20,)",True,0.0,0.0
+-wny0OAz3g8__3,word_voiced_effective_seconds,"(20,)",True,0.0,0.0
+-wny0OAz3g8__3,word_expression,"(20, 52)",True,0.0,0.0
+-wny0OAz3g8__3,word_expression_mask,"(20,)",True,0.0,0.0
+-wny0OAz3g8__3,word_scene,"(20, 512)",True,0.0,0.0
+-wny0OAz3g8__3,word_scene_mask,"(20,)",True,0.0,0.0
+-wny0OAz3g8__3,ctc_word_score,"(20,)",True,0.0,0.0
+-wny0OAz3g8__3,asr_exact_match,"(20,)",True,0.0,0.0
+-wny0OAz3g8__3,asr_time_gap_s,"(20,)",True,0.0,0.0
+-wny0OAz3g8__3,asr_word_probability,"(20,)",True,0.0,0.0
+-wny0OAz3g8__5,text,"(20, 768)",True,0.0,0.0
+-wny0OAz3g8__5,text_mask,"(20,)",True,0.0,0.0
+-wny0OAz3g8__5,audio_native,"(338, 47)",True,0.0,0.0
+-wny0OAz3g8__5,audio_time,"(338,)",True,0.0,0.0
+-wny0OAz3g8__5,audio_cells,"(338, 2)",True,0.0,0.0
+-wny0OAz3g8__5,audio_voiced,"(338,)",True,0.0,0.0
+-wny0OAz3g8__5,bert_token_ids,"(29,)",True,0.0,0.0
+-wny0OAz3g8__5,bert_word_membership,"(20, 29)",True,0.0,0.0
+-wny0OAz3g8__5,bert_char_offsets,"(29, 2)",True,0.0,0.0
+-wny0OAz3g8__5,scene_native,"(69, 512)",True,0.0,0.0
+-wny0OAz3g8__5,expression_native,"(69, 52)",True,0.0,0.0
+-wny0OAz3g8__5,expression_valid,"(69,)",True,0.0,0.0
+-wny0OAz3g8__5,vision_time,"(69,)",True,0.0,0.0
+-wny0OAz3g8__5,vision_cells,"(69, 2)",True,0.0,0.0
+-wny0OAz3g8__5,vision_frame_index,"(69,)",True,0.0,0.0
+-wny0OAz3g8__5,vision_bbox,"(69, 4)",True,0.0,0.0
+-wny0OAz3g8__5,recovery_route,"(69,)",True,0.0,0.0
+-wny0OAz3g8__5,alignment_supported,"(20,)",True,0.0,0.0
+-wny0OAz3g8__5,ctc_cells,"(336, 2)",True,0.0,0.0
+-wny0OAz3g8__5,word_time_membership,"(20, 336)",True,0.0,0.0
+-wny0OAz3g8__5,word_start_quantiles,"(20, 3)",True,0.0,0.0
+-wny0OAz3g8__5,word_end_quantiles,"(20, 3)",True,0.0,0.0
+-wny0OAz3g8__5,word_audio,"(20, 97)",True,0.0,0.0
+-wny0OAz3g8__5,word_audio_dim_mask,"(20, 97)",True,0.0,0.0
+-wny0OAz3g8__5,word_audio_effective_seconds,"(20,)",True,0.0,0.0
+-wny0OAz3g8__5,word_voiced_effective_seconds,"(20,)",True,0.0,0.0
+-wny0OAz3g8__5,word_expression,"(20, 52)",True,0.0,0.0
+-wny0OAz3g8__5,word_expression_mask,"(20,)",True,0.0,0.0
+-wny0OAz3g8__5,word_scene,"(20, 512)",True,0.0,0.0
+-wny0OAz3g8__5,word_scene_mask,"(20,)",True,0.0,0.0
+-wny0OAz3g8__5,ctc_word_score,"(20,)",True,0.0,0.0
+-wny0OAz3g8__5,asr_exact_match,"(20,)",True,0.0,0.0
+-wny0OAz3g8__5,asr_time_gap_s,"(20,)",True,0.0,0.0
+-wny0OAz3g8__5,asr_word_probability,"(20,)",True,0.0,0.0
+-wny0OAz3g8__7,text,"(29, 768)",True,0.0,0.0
+-wny0OAz3g8__7,text_mask,"(29,)",True,0.0,0.0
+-wny0OAz3g8__7,audio_native,"(396, 47)",True,0.0,0.0
+-wny0OAz3g8__7,audio_time,"(396,)",True,0.0,0.0
+-wny0OAz3g8__7,audio_cells,"(396, 2)",True,0.0,0.0
+-wny0OAz3g8__7,audio_voiced,"(396,)",True,0.0,0.0
+-wny0OAz3g8__7,bert_token_ids,"(33,)",True,0.0,0.0
+-wny0OAz3g8__7,bert_word_membership,"(29, 33)",True,0.0,0.0
+-wny0OAz3g8__7,bert_char_offsets,"(33, 2)",True,0.0,0.0
+-wny0OAz3g8__7,scene_native,"(81, 512)",True,0.0,0.0
+-wny0OAz3g8__7,expression_native,"(81, 52)",True,0.0,0.0
+-wny0OAz3g8__7,expression_valid,"(81,)",True,0.0,0.0
+-wny0OAz3g8__7,vision_time,"(81,)",True,0.0,0.0
+-wny0OAz3g8__7,vision_cells,"(81, 2)",True,0.0,0.0
+-wny0OAz3g8__7,vision_frame_index,"(81,)",True,0.0,0.0
+-wny0OAz3g8__7,vision_bbox,"(81, 4)",True,0.0,0.0
+-wny0OAz3g8__7,recovery_route,"(81,)",True,0.0,0.0
+-wny0OAz3g8__7,alignment_supported,"(29,)",True,0.0,0.0
+-wny0OAz3g8__7,ctc_cells,"(395, 2)",True,0.0,0.0
+-wny0OAz3g8__7,word_time_membership,"(29, 395)",True,0.0,0.0
+-wny0OAz3g8__7,word_start_quantiles,"(29, 3)",True,0.0,0.0
+-wny0OAz3g8__7,word_end_quantiles,"(29, 3)",True,0.0,0.0
+-wny0OAz3g8__7,word_audio,"(29, 97)",True,0.0,0.0
+-wny0OAz3g8__7,word_audio_dim_mask,"(29, 97)",True,0.0,0.0
+-wny0OAz3g8__7,word_audio_effective_seconds,"(29,)",True,0.0,0.0
+-wny0OAz3g8__7,word_voiced_effective_seconds,"(29,)",True,0.0,0.0
+-wny0OAz3g8__7,word_expression,"(29, 52)",True,0.0,0.0
+-wny0OAz3g8__7,word_expression_mask,"(29,)",True,0.0,0.0
+-wny0OAz3g8__7,word_scene,"(29, 512)",True,0.0,0.0
+-wny0OAz3g8__7,word_scene_mask,"(29,)",True,0.0,0.0
+-wny0OAz3g8__7,ctc_word_score,"(29,)",True,0.0,0.0
+-wny0OAz3g8__7,asr_exact_match,"(29,)",True,0.0,0.0
+-wny0OAz3g8__7,asr_time_gap_s,"(29,)",True,0.0,0.0
+-wny0OAz3g8__7,asr_word_probability,"(29,)",True,0.0,0.0
+-wny0OAz3g8__9,text,"(20, 768)",True,0.0,0.0
+-wny0OAz3g8__9,text_mask,"(20,)",True,0.0,0.0
+-wny0OAz3g8__9,audio_native,"(303, 47)",True,0.0,0.0
+-wny0OAz3g8__9,audio_time,"(303,)",True,0.0,0.0
+-wny0OAz3g8__9,audio_cells,"(303, 2)",True,0.0,0.0
+-wny0OAz3g8__9,audio_voiced,"(303,)",True,0.0,0.0
+-wny0OAz3g8__9,bert_token_ids,"(24,)",True,0.0,0.0
+-wny0OAz3g8__9,bert_word_membership,"(20, 24)",True,0.0,0.0
+-wny0OAz3g8__9,bert_char_offsets,"(24, 2)",True,0.0,0.0
+-wny0OAz3g8__9,scene_native,"(62, 512)",True,0.0,0.0
+-wny0OAz3g8__9,expression_native,"(62, 52)",True,0.0,0.0
+-wny0OAz3g8__9,expression_valid,"(62,)",True,0.0,0.0
+-wny0OAz3g8__9,vision_time,"(62,)",True,0.0,0.0
+-wny0OAz3g8__9,vision_cells,"(62, 2)",True,0.0,0.0
+-wny0OAz3g8__9,vision_frame_index,"(62,)",True,0.0,0.0
+-wny0OAz3g8__9,vision_bbox,"(62, 4)",True,0.0,0.0
+-wny0OAz3g8__9,recovery_route,"(62,)",True,0.0,0.0
+-wny0OAz3g8__9,alignment_supported,"(20,)",True,0.0,0.0
+-wny0OAz3g8__9,ctc_cells,"(301, 2)",True,0.0,0.0
+-wny0OAz3g8__9,word_time_membership,"(20, 301)",True,0.0,0.0
+-wny0OAz3g8__9,word_start_quantiles,"(20, 3)",True,0.0,0.0
+-wny0OAz3g8__9,word_end_quantiles,"(20, 3)",True,0.0,0.0
+-wny0OAz3g8__9,word_audio,"(20, 97)",True,0.0,0.0
+-wny0OAz3g8__9,word_audio_dim_mask,"(20, 97)",True,0.0,0.0
+-wny0OAz3g8__9,word_audio_effective_seconds,"(20,)",True,0.0,0.0
+-wny0OAz3g8__9,word_voiced_effective_seconds,"(20,)",True,0.0,0.0
+-wny0OAz3g8__9,word_expression,"(20, 52)",True,0.0,0.0
+-wny0OAz3g8__9,word_expression_mask,"(20,)",True,0.0,0.0
+-wny0OAz3g8__9,word_scene,"(20, 512)",True,0.0,0.0
+-wny0OAz3g8__9,word_scene_mask,"(20,)",True,0.0,0.0
+-wny0OAz3g8__9,ctc_word_score,"(20,)",True,0.0,0.0
+-wny0OAz3g8__9,asr_exact_match,"(20,)",True,0.0,0.0
+-wny0OAz3g8__9,asr_time_gap_s,"(20,)",True,0.0,0.0
+-wny0OAz3g8__9,asr_word_probability,"(20,)",True,0.0,0.0
+-yRb-Jum7EQ__1,text,"(49, 768)",True,0.0,0.0
+-yRb-Jum7EQ__1,text_mask,"(49,)",True,0.0,0.0
+-yRb-Jum7EQ__1,audio_native,"(1456, 47)",True,0.0,0.0
+-yRb-Jum7EQ__1,audio_time,"(1456,)",True,0.0,0.0
+-yRb-Jum7EQ__1,audio_cells,"(1456, 2)",True,0.0,0.0
+-yRb-Jum7EQ__1,audio_voiced,"(1456,)",True,0.0,0.0
+-yRb-Jum7EQ__1,bert_token_ids,"(57,)",True,0.0,0.0
+-yRb-Jum7EQ__1,bert_word_membership,"(49, 57)",True,0.0,0.0
+-yRb-Jum7EQ__1,bert_char_offsets,"(57, 2)",True,0.0,0.0
+-yRb-Jum7EQ__1,scene_native,"(293, 512)",True,0.0,0.0
+-yRb-Jum7EQ__1,expression_native,"(293, 52)",True,0.0,0.0
+-yRb-Jum7EQ__1,expression_valid,"(293,)",True,0.0,0.0
+-yRb-Jum7EQ__1,vision_time,"(293,)",True,0.0,0.0
+-yRb-Jum7EQ__1,vision_cells,"(293, 2)",True,0.0,0.0
+-yRb-Jum7EQ__1,vision_frame_index,"(293,)",True,0.0,0.0
+-yRb-Jum7EQ__1,vision_bbox,"(293, 4)",True,0.0,0.0
+-yRb-Jum7EQ__1,recovery_route,"(293,)",True,0.0,0.0
+-yRb-Jum7EQ__1,alignment_supported,"(49,)",True,0.0,0.0
+-yRb-Jum7EQ__1,ctc_cells,"(1455, 2)",True,0.0,0.0
+-yRb-Jum7EQ__1,word_time_membership,"(49, 1455)",True,0.0,0.0
+-yRb-Jum7EQ__1,word_start_quantiles,"(49, 3)",True,0.0,0.0
+-yRb-Jum7EQ__1,word_end_quantiles,"(49, 3)",True,0.0,0.0
+-yRb-Jum7EQ__1,word_audio,"(49, 97)",True,0.0,0.0
+-yRb-Jum7EQ__1,word_audio_dim_mask,"(49, 97)",True,0.0,0.0
+-yRb-Jum7EQ__1,word_audio_effective_seconds,"(49,)",True,0.0,0.0
+-yRb-Jum7EQ__1,word_voiced_effective_seconds,"(49,)",True,0.0,0.0
+-yRb-Jum7EQ__1,word_expression,"(49, 52)",True,0.0,0.0
+-yRb-Jum7EQ__1,word_expression_mask,"(49,)",True,0.0,0.0
+-yRb-Jum7EQ__1,word_scene,"(49, 512)",True,0.0,0.0
+-yRb-Jum7EQ__1,word_scene_mask,"(49,)",True,0.0,0.0
+-yRb-Jum7EQ__1,ctc_word_score,"(49,)",True,0.0,0.0
+-yRb-Jum7EQ__1,asr_exact_match,"(49,)",True,0.0,0.0
+-yRb-Jum7EQ__1,asr_time_gap_s,"(49,)",True,0.0,0.0
+-yRb-Jum7EQ__1,asr_word_probability,"(49,)",True,0.0,0.0
+-yRb-Jum7EQ__5,text,"(25, 768)",True,0.0,0.0
+-yRb-Jum7EQ__5,text_mask,"(25,)",True,0.0,0.0
+-yRb-Jum7EQ__5,audio_native,"(653, 47)",True,0.0,0.0
+-yRb-Jum7EQ__5,audio_time,"(653,)",True,0.0,0.0
+-yRb-Jum7EQ__5,audio_cells,"(653, 2)",True,0.0,0.0
+-yRb-Jum7EQ__5,audio_voiced,"(653,)",True,0.0,0.0
+-yRb-Jum7EQ__5,bert_token_ids,"(33,)",True,0.0,0.0
+-yRb-Jum7EQ__5,bert_word_membership,"(25, 33)",True,0.0,0.0
+-yRb-Jum7EQ__5,bert_char_offsets,"(33, 2)",True,0.0,0.0
+-yRb-Jum7EQ__5,scene_native,"(132, 512)",True,0.0,0.0
+-yRb-Jum7EQ__5,expression_native,"(132, 52)",True,0.0,0.0
+-yRb-Jum7EQ__5,expression_valid,"(132,)",True,0.0,0.0
+-yRb-Jum7EQ__5,vision_time,"(132,)",True,0.0,0.0
+-yRb-Jum7EQ__5,vision_cells,"(132, 2)",True,0.0,0.0
+-yRb-Jum7EQ__5,vision_frame_index,"(132,)",True,0.0,0.0
+-yRb-Jum7EQ__5,vision_bbox,"(132, 4)",True,0.0,0.0
+-yRb-Jum7EQ__5,recovery_route,"(132,)",True,0.0,0.0
+-yRb-Jum7EQ__5,alignment_supported,"(25,)",True,0.0,0.0
+-yRb-Jum7EQ__5,ctc_cells,"(651, 2)",True,0.0,0.0
+-yRb-Jum7EQ__5,word_time_membership,"(25, 651)",True,0.0,0.0
+-yRb-Jum7EQ__5,word_start_quantiles,"(25, 3)",True,0.0,0.0
+-yRb-Jum7EQ__5,word_end_quantiles,"(25, 3)",True,0.0,0.0
+-yRb-Jum7EQ__5,word_audio,"(25, 97)",True,0.0,0.0
+-yRb-Jum7EQ__5,word_audio_dim_mask,"(25, 97)",True,0.0,0.0
+-yRb-Jum7EQ__5,word_audio_effective_seconds,"(25,)",True,0.0,0.0
+-yRb-Jum7EQ__5,word_voiced_effective_seconds,"(25,)",True,0.0,0.0
+-yRb-Jum7EQ__5,word_expression,"(25, 52)",True,0.0,0.0
+-yRb-Jum7EQ__5,word_expression_mask,"(25,)",True,0.0,0.0
+-yRb-Jum7EQ__5,word_scene,"(25, 512)",True,0.0,0.0
+-yRb-Jum7EQ__5,word_scene_mask,"(25,)",True,0.0,0.0
+-yRb-Jum7EQ__5,ctc_word_score,"(25,)",True,0.0,0.0
+-yRb-Jum7EQ__5,asr_exact_match,"(25,)",True,0.0,0.0
+-yRb-Jum7EQ__5,asr_time_gap_s,"(25,)",True,0.0,0.0
+-yRb-Jum7EQ__5,asr_word_probability,"(25,)",True,0.0,0.0
+-yRb-Jum7EQ__6,text,"(19, 768)",True,0.0,0.0
+-yRb-Jum7EQ__6,text_mask,"(19,)",True,0.0,0.0
+-yRb-Jum7EQ__6,audio_native,"(563, 47)",True,0.0,0.0
+-yRb-Jum7EQ__6,audio_time,"(563,)",True,0.0,0.0
+-yRb-Jum7EQ__6,audio_cells,"(563, 2)",True,0.0,0.0
+-yRb-Jum7EQ__6,audio_voiced,"(563,)",True,0.0,0.0
+-yRb-Jum7EQ__6,bert_token_ids,"(26,)",True,0.0,0.0
+-yRb-Jum7EQ__6,bert_word_membership,"(19, 26)",True,0.0,0.0
+-yRb-Jum7EQ__6,bert_char_offsets,"(26, 2)",True,0.0,0.0
+-yRb-Jum7EQ__6,scene_native,"(112, 512)",True,0.0,0.0
+-yRb-Jum7EQ__6,expression_native,"(112, 52)",True,0.0,0.0
+-yRb-Jum7EQ__6,expression_valid,"(112,)",True,0.0,0.0
+-yRb-Jum7EQ__6,vision_time,"(112,)",True,0.0,0.0
+-yRb-Jum7EQ__6,vision_cells,"(112, 2)",True,0.0,0.0
+-yRb-Jum7EQ__6,vision_frame_index,"(112,)",True,0.0,0.0
+-yRb-Jum7EQ__6,vision_bbox,"(112, 4)",True,0.0,0.0
+-yRb-Jum7EQ__6,recovery_route,"(112,)",True,0.0,0.0
+-yRb-Jum7EQ__6,alignment_supported,"(19,)",True,0.0,0.0
+-yRb-Jum7EQ__6,ctc_cells,"(561, 2)",True,0.0,0.0
+-yRb-Jum7EQ__6,word_time_membership,"(19, 561)",True,0.0,0.0
+-yRb-Jum7EQ__6,word_start_quantiles,"(19, 3)",True,0.0,0.0
+-yRb-Jum7EQ__6,word_end_quantiles,"(19, 3)",True,0.0,0.0
+-yRb-Jum7EQ__6,word_audio,"(19, 97)",True,0.0,0.0
+-yRb-Jum7EQ__6,word_audio_dim_mask,"(19, 97)",True,0.0,0.0
+-yRb-Jum7EQ__6,word_audio_effective_seconds,"(19,)",True,0.0,0.0
+-yRb-Jum7EQ__6,word_voiced_effective_seconds,"(19,)",True,0.0,0.0
+-yRb-Jum7EQ__6,word_expression,"(19, 52)",True,0.0,0.0
+-yRb-Jum7EQ__6,word_expression_mask,"(19,)",True,0.0,0.0
+-yRb-Jum7EQ__6,word_scene,"(19, 512)",True,0.0,0.0
+-yRb-Jum7EQ__6,word_scene_mask,"(19,)",True,0.0,0.0
+-yRb-Jum7EQ__6,ctc_word_score,"(19,)",True,0.0,0.0
+-yRb-Jum7EQ__6,asr_exact_match,"(19,)",True,0.0,0.0
+-yRb-Jum7EQ__6,asr_time_gap_s,"(19,)",True,0.0,0.0
+-yRb-Jum7EQ__6,asr_word_probability,"(19,)",True,0.0,0.0

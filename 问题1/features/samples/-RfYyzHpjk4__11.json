@@ -1,0 +1,261 @@
+{
+  "sample_id": "-RfYyzHpjk4$_$11",
+  "table_row_0based": 83,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-RfYyzHpjk4/11.mp4",
+  "source_sha256": "96e481cd732001239639c8cb4e7f94e570925e5a15940920ffab0cec1f13f904",
+  "text_original": "So get your friends lined up, get your business colleagues lined up and have a good time.",
+  "words": [
+    {
+      "word": "so",
+      "source_text": "So",
+      "char_start": 0,
+      "char_end": 2,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "so"
+      ]
+    },
+    {
+      "word": "get",
+      "source_text": "get",
+      "char_start": 3,
+      "char_end": 6,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "get"
+      ]
+    },
+    {
+      "word": "your",
+      "source_text": "your",
+      "char_start": 7,
+      "char_end": 11,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "your"
+      ]
+    },
+    {
+      "word": "friends",
+      "source_text": "friends",
+      "char_start": 12,
+      "char_end": 19,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "friends"
+      ]
+    },
+    {
+      "word": "lined",
+      "source_text": "lined",
+      "char_start": 20,
+      "char_end": 25,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "lined"
+      ]
+    },
+    {
+      "word": "up",
+      "source_text": "up",
+      "char_start": 26,
+      "char_end": 28,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "up"
+      ]
+    },
+    {
+      "word": "get",
+      "source_text": "get",
+      "char_start": 30,
+      "char_end": 33,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "get"
+      ]
+    },
+    {
+      "word": "your",
+      "source_text": "your",
+      "char_start": 34,
+      "char_end": 38,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "your"
+      ]
+    },
+    {
+      "word": "business",
+      "source_text": "business",
+      "char_start": 39,
+      "char_end": 47,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "business"
+      ]
+    },
+    {
+      "word": "colleagues",
+      "source_text": "colleagues",
+      "char_start": 48,
+      "char_end": 58,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "colleagues"
+      ]
+    },
+    {
+      "word": "lined",
+      "source_text": "lined",
+      "char_start": 59,
+      "char_end": 64,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "lined"
+      ]
+    },
+    {
+      "word": "up",
+      "source_text": "up",
+      "char_start": 65,
+      "char_end": 67,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "up"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 68,
+      "char_end": 71,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "have",
+      "source_text": "have",
+      "char_start": 72,
+      "char_end": 76,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "have"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 77,
+      "char_end": 78,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "good",
+      "source_text": "good",
+      "char_start": 79,
+      "char_end": 83,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17
+      ],
+      "bert_tokens": [
+        "good"
+      ]
+    },
+    {
+      "word": "time",
+      "source_text": "time",
+      "char_start": 84,
+      "char_end": 88,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        18
+      ],
+      "bert_tokens": [
+        "time"
+      ]
+    }
+  ],
+  "duration_s": 5.233333,
+  "container_declared_duration_s": 11.7,
+  "media_clock": {
+    "stem": "-RfYyzHpjk4__11",
+    "sample_id": "-RfYyzHpjk4$_$11",
+    "container_duration_s": 11.7,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 5.074875,
+    "audio_end_s": 5.074875,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 5.2,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 5.233333,
+    "observed_end_s": 5.233333,
+    "empty_declared_tail_s": 6.466666999999999,
+    "original_video_frames": 154,
+    "source_sha256": "96e481cd732001239639c8cb4e7f94e570925e5a15940920ffab0cec1f13f904"
+  },
+  "decoded_audio_duration_s": 5.074875,
+  "audio_start_s": 0.0,
+  "feature_sha256": "fbfbefde0941fa7be17562a3012ae63e047c4fe63629934cf5768a7aea8326ec",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-RfYyzHpjk4__11.json": "6556d6a231947e41381144c6fe4576045d614c6e69c4793510745289312e61b6",
+    "results/q1/samples/-RfYyzHpjk4__11.npz": "00e506d1515ee0b85b439aed0cfc2856169a69e0eae517af38bb8c6ae4929850",
+    "results/q1_next/enhanced/-RfYyzHpjk4__11.npz": "d8d00ebe7dc5f5f0efccbd0e172d7273daa4c90d19e8a04b35549e0256c2eb79",
+    "results/q1_refinement_v1/faces/-RfYyzHpjk4__11.npz": "028c8d63638fe086fdb94ca9bddd24c4459eee55a4190f444a6195b10e264a28",
+    "results/q1_deep_v6/alignment/MMS_FA/-RfYyzHpjk4__11/original.npz": "3d926ca2e97ac81b26b333dd1c9b370e528a51aae9680fe23c6494c4eacbd0d6",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

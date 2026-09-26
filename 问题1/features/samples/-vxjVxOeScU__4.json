@@ -1,0 +1,321 @@
+{
+  "sample_id": "-vxjVxOeScU$_$4",
+  "table_row_0based": 55,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-vxjVxOeScU/4.mp4",
+  "source_sha256": "00282df9a314394f19d616d561bd1916d1d30dca4c814dfb43630ca164f4c719",
+  "text_original": "You're going to talk about their life, their marriage and usually how amazing it is that they've stayed together this long.",
+  "words": [
+    {
+      "word": "you're",
+      "source_text": "You're",
+      "char_start": 0,
+      "char_end": 6,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1,
+        2,
+        3
+      ],
+      "bert_tokens": [
+        "you",
+        "'",
+        "re"
+      ]
+    },
+    {
+      "word": "going",
+      "source_text": "going",
+      "char_start": 7,
+      "char_end": 12,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "going"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 13,
+      "char_end": 15,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "talk",
+      "source_text": "talk",
+      "char_start": 16,
+      "char_end": 20,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "talk"
+      ]
+    },
+    {
+      "word": "about",
+      "source_text": "about",
+      "char_start": 21,
+      "char_end": 26,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "about"
+      ]
+    },
+    {
+      "word": "their",
+      "source_text": "their",
+      "char_start": 27,
+      "char_end": 32,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "their"
+      ]
+    },
+    {
+      "word": "life",
+      "source_text": "life",
+      "char_start": 33,
+      "char_end": 37,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "life"
+      ]
+    },
+    {
+      "word": "their",
+      "source_text": "their",
+      "char_start": 39,
+      "char_end": 44,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "their"
+      ]
+    },
+    {
+      "word": "marriage",
+      "source_text": "marriage",
+      "char_start": 45,
+      "char_end": 53,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "marriage"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 54,
+      "char_end": 57,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "usually",
+      "source_text": "usually",
+      "char_start": 58,
+      "char_end": 65,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "usually"
+      ]
+    },
+    {
+      "word": "how",
+      "source_text": "how",
+      "char_start": 66,
+      "char_end": 69,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "how"
+      ]
+    },
+    {
+      "word": "amazing",
+      "source_text": "amazing",
+      "char_start": 70,
+      "char_end": 77,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "amazing"
+      ]
+    },
+    {
+      "word": "it",
+      "source_text": "it",
+      "char_start": 78,
+      "char_end": 80,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17
+      ],
+      "bert_tokens": [
+        "it"
+      ]
+    },
+    {
+      "word": "is",
+      "source_text": "is",
+      "char_start": 81,
+      "char_end": 83,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        18
+      ],
+      "bert_tokens": [
+        "is"
+      ]
+    },
+    {
+      "word": "that",
+      "source_text": "that",
+      "char_start": 84,
+      "char_end": 88,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        19
+      ],
+      "bert_tokens": [
+        "that"
+      ]
+    },
+    {
+      "word": "they've",
+      "source_text": "they've",
+      "char_start": 89,
+      "char_end": 96,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        20,
+        21,
+        22
+      ],
+      "bert_tokens": [
+        "they",
+        "'",
+        "ve"
+      ]
+    },
+    {
+      "word": "stayed",
+      "source_text": "stayed",
+      "char_start": 97,
+      "char_end": 103,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        23
+      ],
+      "bert_tokens": [
+        "stayed"
+      ]
+    },
+    {
+      "word": "together",
+      "source_text": "together",
+      "char_start": 104,
+      "char_end": 112,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        24
+      ],
+      "bert_tokens": [
+        "together"
+      ]
+    },
+    {
+      "word": "this",
+      "source_text": "this",
+      "char_start": 113,
+      "char_end": 117,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        25
+      ],
+      "bert_tokens": [
+        "this"
+      ]
+    },
+    {
+      "word": "long",
+      "source_text": "long",
+      "char_start": 118,
+      "char_end": 122,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        26
+      ],
+      "bert_tokens": [
+        "long"
+      ]
+    }
+  ],
+  "duration_s": 9.100000000000001,
+  "container_declared_duration_s": 11.734,
+  "media_clock": {
+    "stem": "-vxjVxOeScU__4",
+    "sample_id": "-vxjVxOeScU$_$4",
+    "container_duration_s": 11.734,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 9.0370625,
+    "audio_end_s": 9.0370625,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 9.066667,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 9.100000000000001,
+    "observed_end_s": 9.100000000000001,
+    "empty_declared_tail_s": 2.6339999999999986,
+    "original_video_frames": 272,
+    "source_sha256": "00282df9a314394f19d616d561bd1916d1d30dca4c814dfb43630ca164f4c719"
+  },
+  "decoded_audio_duration_s": 9.0370625,
+  "audio_start_s": 0.0,
+  "feature_sha256": "5d7730cc0cf48f48f389c7c11a17b3b1c826a4a09928f6a866e3a2a7decd19f2",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-vxjVxOeScU__4.json": "034adbd678e834ed826bd65fbacdd5d10f7ca41271753021ac95278f7ddf1996",
+    "results/q1/samples/-vxjVxOeScU__4.npz": "30b7b31570c2ce62398198974de73ff1d595e81e6d63929b1513a78b7a70d556",
+    "results/q1_next/enhanced/-vxjVxOeScU__4.npz": "1d54c8eb241c492298a5de9fb573e1fc40f525d72ee876bd42ea892b51eba466",
+    "results/q1_refinement_v1/faces/-vxjVxOeScU__4.npz": "351608b515eb4e3e91f29b6b89d003fe921acec0673d3960c297298996375246",
+    "results/q1_deep_v6/alignment/MMS_FA/-vxjVxOeScU__4/original.npz": "30238d63119325c3a79c751f14802f5c6407cb4d52af7d53c51a88c83ad8f86a",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

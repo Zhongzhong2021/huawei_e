@@ -1,0 +1,161 @@
+{
+  "sample_id": "-UuX1xuaiiE$_$0",
+  "table_row_0based": 15,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-UuX1xuaiiE/0.mp4",
+  "source_sha256": "f578b305d53bc152702f5e771de0fcd12d1e9aaefc5cefce3d2082a417aab7c8",
+  "text_original": "^it's amazing to see their enthusiasm and their passion",
+  "words": [
+    {
+      "word": "it's",
+      "source_text": "it's",
+      "char_start": 1,
+      "char_end": 5,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1,
+        2,
+        3
+      ],
+      "bert_tokens": [
+        "it",
+        "'",
+        "s"
+      ]
+    },
+    {
+      "word": "amazing",
+      "source_text": "amazing",
+      "char_start": 6,
+      "char_end": 13,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "amazing"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 14,
+      "char_end": 16,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "see",
+      "source_text": "see",
+      "char_start": 17,
+      "char_end": 20,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "see"
+      ]
+    },
+    {
+      "word": "their",
+      "source_text": "their",
+      "char_start": 21,
+      "char_end": 26,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "their"
+      ]
+    },
+    {
+      "word": "enthusiasm",
+      "source_text": "enthusiasm",
+      "char_start": 27,
+      "char_end": 37,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "enthusiasm"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 38,
+      "char_end": 41,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "their",
+      "source_text": "their",
+      "char_start": 42,
+      "char_end": 47,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "their"
+      ]
+    },
+    {
+      "word": "passion",
+      "source_text": "passion",
+      "char_start": 48,
+      "char_end": 55,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "passion"
+      ]
+    }
+  ],
+  "duration_s": 3.6999999999999997,
+  "container_declared_duration_s": 3.7,
+  "media_clock": {
+    "stem": "-UuX1xuaiiE__0",
+    "sample_id": "-UuX1xuaiiE$_$0",
+    "container_duration_s": 3.7,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 3.575875,
+    "audio_end_s": 3.575875,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 3.666667,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 3.6999999999999997,
+    "observed_end_s": 3.6999999999999997,
+    "empty_declared_tail_s": 4.440892098500626e-16,
+    "original_video_frames": 109,
+    "source_sha256": "f578b305d53bc152702f5e771de0fcd12d1e9aaefc5cefce3d2082a417aab7c8"
+  },
+  "decoded_audio_duration_s": 3.575875,
+  "audio_start_s": 0.0,
+  "feature_sha256": "cd31940d8d91f5e4300c783502eea1471f76776a0478b42dd5fe9534b91f978f",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-UuX1xuaiiE__0.json": "d578c967d69b024722e697bc50aee14dd45c2fcd4ea59ce995a236cbda68123e",
+    "results/q1/samples/-UuX1xuaiiE__0.npz": "2d589a723b5d3b1b989145d33a83bd9c7d5ea2bceb31f43016aeaeab6d028f60",
+    "results/q1_next/enhanced/-UuX1xuaiiE__0.npz": "f8962c5cef22d63338d5b319bebbd280fd2e8cbc7caaf2d418f2fc7c97df7c71",
+    "results/q1_refinement_v1/faces/-UuX1xuaiiE__0.npz": "619c404fec43d93ba689f1417878eb78f127d7415cb43b93fe06ac17307eb6fe",
+    "results/q1_deep_v6/alignment/MMS_FA/-UuX1xuaiiE__0/original.npz": "53577f27d33ece00d2a8a66bd52cfbe72fd9e23496229c6f78bcd56e3954197d",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

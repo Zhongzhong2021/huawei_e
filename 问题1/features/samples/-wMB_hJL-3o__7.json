@@ -1,0 +1,326 @@
+{
+  "sample_id": "-wMB_hJL-3o$_$7",
+  "table_row_0based": 56,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-wMB_hJL-3o/7.mp4",
+  "source_sha256": "04a73d73fd150b07edab8e652fd14c9cb4a0f6e017ea97b17e8146e377b9fae7",
+  "text_original": "So if you have a loved one who is depressed those are some of the things that you should think about doing.",
+  "words": [
+    {
+      "word": "so",
+      "source_text": "So",
+      "char_start": 0,
+      "char_end": 2,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "so"
+      ]
+    },
+    {
+      "word": "if",
+      "source_text": "if",
+      "char_start": 3,
+      "char_end": 5,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "if"
+      ]
+    },
+    {
+      "word": "you",
+      "source_text": "you",
+      "char_start": 6,
+      "char_end": 9,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "you"
+      ]
+    },
+    {
+      "word": "have",
+      "source_text": "have",
+      "char_start": 10,
+      "char_end": 14,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "have"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 15,
+      "char_end": 16,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "loved",
+      "source_text": "loved",
+      "char_start": 17,
+      "char_end": 22,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "loved"
+      ]
+    },
+    {
+      "word": "one",
+      "source_text": "one",
+      "char_start": 23,
+      "char_end": 26,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "one"
+      ]
+    },
+    {
+      "word": "who",
+      "source_text": "who",
+      "char_start": 27,
+      "char_end": 30,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "who"
+      ]
+    },
+    {
+      "word": "is",
+      "source_text": "is",
+      "char_start": 31,
+      "char_end": 33,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "is"
+      ]
+    },
+    {
+      "word": "depressed",
+      "source_text": "depressed",
+      "char_start": 34,
+      "char_end": 43,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "depressed"
+      ]
+    },
+    {
+      "word": "those",
+      "source_text": "those",
+      "char_start": 44,
+      "char_end": 49,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "those"
+      ]
+    },
+    {
+      "word": "are",
+      "source_text": "are",
+      "char_start": 50,
+      "char_end": 53,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "are"
+      ]
+    },
+    {
+      "word": "some",
+      "source_text": "some",
+      "char_start": 54,
+      "char_end": 58,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "some"
+      ]
+    },
+    {
+      "word": "of",
+      "source_text": "of",
+      "char_start": 59,
+      "char_end": 61,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "of"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 62,
+      "char_end": 65,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "things",
+      "source_text": "things",
+      "char_start": 66,
+      "char_end": 72,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "things"
+      ]
+    },
+    {
+      "word": "that",
+      "source_text": "that",
+      "char_start": 73,
+      "char_end": 77,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17
+      ],
+      "bert_tokens": [
+        "that"
+      ]
+    },
+    {
+      "word": "you",
+      "source_text": "you",
+      "char_start": 78,
+      "char_end": 81,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        18
+      ],
+      "bert_tokens": [
+        "you"
+      ]
+    },
+    {
+      "word": "should",
+      "source_text": "should",
+      "char_start": 82,
+      "char_end": 88,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        19
+      ],
+      "bert_tokens": [
+        "should"
+      ]
+    },
+    {
+      "word": "think",
+      "source_text": "think",
+      "char_start": 89,
+      "char_end": 94,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        20
+      ],
+      "bert_tokens": [
+        "think"
+      ]
+    },
+    {
+      "word": "about",
+      "source_text": "about",
+      "char_start": 95,
+      "char_end": 100,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        21
+      ],
+      "bert_tokens": [
+        "about"
+      ]
+    },
+    {
+      "word": "doing",
+      "source_text": "doing",
+      "char_start": 101,
+      "char_end": 106,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        22
+      ],
+      "bert_tokens": [
+        "doing"
+      ]
+    }
+  ],
+  "duration_s": 6.033333,
+  "container_declared_duration_s": 7.315,
+  "media_clock": {
+    "stem": "-wMB_hJL-3o__7",
+    "sample_id": "-wMB_hJL-3o$_$7",
+    "container_duration_s": 7.315,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 5.9755625,
+    "audio_end_s": 5.9755625,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 6.0,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 6.033333,
+    "observed_end_s": 6.033333,
+    "empty_declared_tail_s": 1.2816670000000006,
+    "original_video_frames": 181,
+    "source_sha256": "04a73d73fd150b07edab8e652fd14c9cb4a0f6e017ea97b17e8146e377b9fae7"
+  },
+  "decoded_audio_duration_s": 5.9755625,
+  "audio_start_s": 0.0,
+  "feature_sha256": "49fe4df3262ff0f7ec61d7734d93fc6c5f41923f249f4d7eb1a7e1f216b87d99",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-wMB_hJL-3o__7.json": "e1e6df5c1692a33d9907e309e5df84662c11e9b47df8f60113cc1bf31874bb16",
+    "results/q1/samples/-wMB_hJL-3o__7.npz": "bbdcd8b573505f88070d857186851e2bbd6312fcf644738e0cad70ce1f7dcd2f",
+    "results/q1_next/enhanced/-wMB_hJL-3o__7.npz": "562e8d3119256fdcdb152f20efbe21d3ce0707a059ff037737825907717df066",
+    "results/q1_refinement_v1/faces/-wMB_hJL-3o__7.npz": "0caa9bce993c6866dc86e2c0d02451b84f817e9c1f6c52ba2646fa046da74916",
+    "results/q1_deep_v6/alignment/MMS_FA/-wMB_hJL-3o__7/original.npz": "c6d30e2a8196ba91d93f07c8792c8cfc04105051adffa574894c75a422b5ad9c",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

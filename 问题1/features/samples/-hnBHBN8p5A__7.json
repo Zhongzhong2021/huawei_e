@@ -1,0 +1,213 @@
+{
+  "sample_id": "-hnBHBN8p5A$_$7",
+  "table_row_0based": 70,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-hnBHBN8p5A/7.mp4",
+  "source_sha256": "0ec6fb76226315d3fafbb483e3500e60cc8a6729617b10e4b4b76163595080fb",
+  "text_original": "Picture this, before we actually start hacking, we’re in a room formal setting",
+  "words": [
+    {
+      "word": "picture",
+      "source_text": "Picture",
+      "char_start": 0,
+      "char_end": 7,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "picture"
+      ]
+    },
+    {
+      "word": "this",
+      "source_text": "this",
+      "char_start": 8,
+      "char_end": 12,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "this"
+      ]
+    },
+    {
+      "word": "before",
+      "source_text": "before",
+      "char_start": 14,
+      "char_end": 20,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "before"
+      ]
+    },
+    {
+      "word": "we",
+      "source_text": "we",
+      "char_start": 21,
+      "char_end": 23,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "we"
+      ]
+    },
+    {
+      "word": "actually",
+      "source_text": "actually",
+      "char_start": 24,
+      "char_end": 32,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "actually"
+      ]
+    },
+    {
+      "word": "start",
+      "source_text": "start",
+      "char_start": 33,
+      "char_end": 38,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "start"
+      ]
+    },
+    {
+      "word": "hacking",
+      "source_text": "hacking",
+      "char_start": 39,
+      "char_end": 46,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "hacking"
+      ]
+    },
+    {
+      "word": "we're",
+      "source_text": "we're",
+      "char_start": 48,
+      "char_end": 53,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10,
+        11,
+        12
+      ],
+      "bert_tokens": [
+        "we",
+        "’",
+        "re"
+      ]
+    },
+    {
+      "word": "in",
+      "source_text": "in",
+      "char_start": 54,
+      "char_end": 56,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "in"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 57,
+      "char_end": 58,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "room",
+      "source_text": "room",
+      "char_start": 59,
+      "char_end": 63,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "room"
+      ]
+    },
+    {
+      "word": "formal",
+      "source_text": "formal",
+      "char_start": 64,
+      "char_end": 70,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "formal"
+      ]
+    },
+    {
+      "word": "setting",
+      "source_text": "setting",
+      "char_start": 71,
+      "char_end": 78,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17
+      ],
+      "bert_tokens": [
+        "setting"
+      ]
+    }
+  ],
+  "duration_s": 7.340656,
+  "container_declared_duration_s": 9.176,
+  "media_clock": {
+    "stem": "-hnBHBN8p5A__7",
+    "sample_id": "-hnBHBN8p5A$_$7",
+    "container_duration_s": 9.176,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 7.3085625,
+    "audio_end_s": 7.3085625,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 7.298956,
+    "last_frame_duration_s": 0.0417,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 7.340656,
+    "observed_end_s": 7.340656,
+    "empty_declared_tail_s": 1.835344,
+    "original_video_frames": 176,
+    "source_sha256": "0ec6fb76226315d3fafbb483e3500e60cc8a6729617b10e4b4b76163595080fb"
+  },
+  "decoded_audio_duration_s": 7.3085625,
+  "audio_start_s": 0.0,
+  "feature_sha256": "6a35bf6dd884af000d262bc0690d713d10939b8890579bac34ee484ca3c49785",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-hnBHBN8p5A__7.json": "26108d64253efee5bc6da878af66e9444d42803657c055bdd65789201091c675",
+    "results/q1/samples/-hnBHBN8p5A__7.npz": "6ead2b8640b7608ff71127ff6cba14b67f1ebb48028bf0eb8b4770ee554808f4",
+    "results/q1_next/enhanced/-hnBHBN8p5A__7.npz": "e55b610f0ec63a05ace5438dbdb45d10a92291da219eb02fbe233488ae0d0cd8",
+    "results/q1_refinement_v1/faces/-hnBHBN8p5A__7.npz": "d4642f2a066feda1eb330252fd6e48b62d5377ca8caead15bb2155af4ff322e4",
+    "results/q1_deep_v6/alignment/MMS_FA/-hnBHBN8p5A__7/original.npz": "03d4a62594301ea93f5d03cb229e3d57b0ef4774f0dbae9ff0bc22917641d1ef",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

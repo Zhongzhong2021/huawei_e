@@ -1,0 +1,317 @@
+{
+  "sample_id": "-MeTTeMJBNc$_$0",
+  "table_row_0based": 80,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-MeTTeMJBNc/0.mp4",
+  "source_sha256": "54e2097f7bdb455d243e72254e5af7ed16160739f2f3cfd22f57d2729ec1acbe",
+  "text_original": "Okay, what happens at this point after we've taken this brief walk down memory lane, is the presentation of the gift.",
+  "words": [
+    {
+      "word": "okay",
+      "source_text": "Okay",
+      "char_start": 0,
+      "char_end": 4,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "okay"
+      ]
+    },
+    {
+      "word": "what",
+      "source_text": "what",
+      "char_start": 6,
+      "char_end": 10,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "what"
+      ]
+    },
+    {
+      "word": "happens",
+      "source_text": "happens",
+      "char_start": 11,
+      "char_end": 18,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "happens"
+      ]
+    },
+    {
+      "word": "at",
+      "source_text": "at",
+      "char_start": 19,
+      "char_end": 21,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "at"
+      ]
+    },
+    {
+      "word": "this",
+      "source_text": "this",
+      "char_start": 22,
+      "char_end": 26,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "this"
+      ]
+    },
+    {
+      "word": "point",
+      "source_text": "point",
+      "char_start": 27,
+      "char_end": 32,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "point"
+      ]
+    },
+    {
+      "word": "after",
+      "source_text": "after",
+      "char_start": 33,
+      "char_end": 38,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "after"
+      ]
+    },
+    {
+      "word": "we've",
+      "source_text": "we've",
+      "char_start": 39,
+      "char_end": 44,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9,
+        10,
+        11
+      ],
+      "bert_tokens": [
+        "we",
+        "'",
+        "ve"
+      ]
+    },
+    {
+      "word": "taken",
+      "source_text": "taken",
+      "char_start": 45,
+      "char_end": 50,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "taken"
+      ]
+    },
+    {
+      "word": "this",
+      "source_text": "this",
+      "char_start": 51,
+      "char_end": 55,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "this"
+      ]
+    },
+    {
+      "word": "brief",
+      "source_text": "brief",
+      "char_start": 56,
+      "char_end": 61,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "brief"
+      ]
+    },
+    {
+      "word": "walk",
+      "source_text": "walk",
+      "char_start": 62,
+      "char_end": 66,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "walk"
+      ]
+    },
+    {
+      "word": "down",
+      "source_text": "down",
+      "char_start": 67,
+      "char_end": 71,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "down"
+      ]
+    },
+    {
+      "word": "memory",
+      "source_text": "memory",
+      "char_start": 72,
+      "char_end": 78,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17
+      ],
+      "bert_tokens": [
+        "memory"
+      ]
+    },
+    {
+      "word": "lane",
+      "source_text": "lane",
+      "char_start": 79,
+      "char_end": 83,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        18
+      ],
+      "bert_tokens": [
+        "lane"
+      ]
+    },
+    {
+      "word": "is",
+      "source_text": "is",
+      "char_start": 85,
+      "char_end": 87,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        20
+      ],
+      "bert_tokens": [
+        "is"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 88,
+      "char_end": 91,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        21
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "presentation",
+      "source_text": "presentation",
+      "char_start": 92,
+      "char_end": 104,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        22
+      ],
+      "bert_tokens": [
+        "presentation"
+      ]
+    },
+    {
+      "word": "of",
+      "source_text": "of",
+      "char_start": 105,
+      "char_end": 107,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        23
+      ],
+      "bert_tokens": [
+        "of"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 108,
+      "char_end": 111,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        24
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "gift",
+      "source_text": "gift",
+      "char_start": 112,
+      "char_end": 116,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        25
+      ],
+      "bert_tokens": [
+        "gift"
+      ]
+    }
+  ],
+  "duration_s": 9.333333000000001,
+  "container_declared_duration_s": 9.334,
+  "media_clock": {
+    "stem": "-MeTTeMJBNc__0",
+    "sample_id": "-MeTTeMJBNc$_$0",
+    "container_duration_s": 9.334,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 9.2183125,
+    "audio_end_s": 9.2183125,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 9.3,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 9.333333000000001,
+    "observed_end_s": 9.333333000000001,
+    "empty_declared_tail_s": 0.0006669999999981968,
+    "original_video_frames": 279,
+    "source_sha256": "54e2097f7bdb455d243e72254e5af7ed16160739f2f3cfd22f57d2729ec1acbe"
+  },
+  "decoded_audio_duration_s": 9.2183125,
+  "audio_start_s": 0.0,
+  "feature_sha256": "8c1fd56218ce67e45994b4a74fcbcb09e0ba482b132bd857f6bbc6290a0954d8",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-MeTTeMJBNc__0.json": "b38dfebbc19fc5e5ed199a2b3e50ffd97c50506a8ea1b06155ca83763cdf5e00",
+    "results/q1/samples/-MeTTeMJBNc__0.npz": "811780cb0711baa54f6fde3e609a56ad42ff5ff03b2ed91cff1cd0a6d7446ef4",
+    "results/q1_next/enhanced/-MeTTeMJBNc__0.npz": "9745915feffb1b29387b9c78277649e9b2f7adaaf9c5f45979724695f1855e40",
+    "results/q1_refinement_v1/faces/-MeTTeMJBNc__0.npz": "84b13013d8cd077050a00065157bec6a1ec2e5867ce5f1fe976e9989b077494f",
+    "results/q1_deep_v6/alignment/MMS_FA/-MeTTeMJBNc__0/original.npz": "1a54efcc585d29568185c8e571a414da7106c014a47d457518fe68b674a31024",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

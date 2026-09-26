@@ -1,0 +1,22 @@
+{
+  "model": "torchaudio.pipelines.MMS_FA",
+  "model_sha256": "20ef12963ab4924bef49ac4fc7f58ad5da2ee43b2c11bc8c853c9b90ecdbc680",
+  "sample_rate": 16000,
+  "star_log_weight": 0,
+  "virtual_boundary_frames": 2,
+  "quantiles": [
+    0.05,
+    0.5,
+    0.95
+  ],
+  "dynamic_program_dtype": "float64",
+  "stored_membership_dtype": "float32",
+  "stored_candidate_dtype": "float32",
+  "occupancy_tail_cutoff": 0.0001,
+  "min_observed_effective_seconds": 0.005,
+  "min_observed_fraction": 0.05,
+  "torch_version": "2.7.1+cu126",
+  "torchaudio_version": "2.7.1+cu126",
+  "seed": 0,
+  "script_sha256": "9bd8097c5fed3f26fa0d98ae9e2d46e75a262154f36fd69a41f7963fe14e34ba"
+}

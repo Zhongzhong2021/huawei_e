@@ -1,0 +1,31 @@
+{
+  "initial": {
+    "frames": 7728,
+    "detected": 6450,
+    "agreement": 0.8766821946169773,
+    "local_only": 16,
+    "public_only": 937
+  },
+  "relaxed_fullframe": {
+    "frames": 7728,
+    "detected": 6509,
+    "agreement": 0.8825051759834368,
+    "local_only": 23,
+    "public_only": 885
+  },
+  "roi_hybrid": {
+    "frames": 7728,
+    "detected": 7253,
+    "agreement": 0.9795548654244306,
+    "local_only": 20,
+    "public_only": 138
+  },
+  "union": {
+    "frames": 7728,
+    "detected": 7264,
+    "agreement": 0.9791666666666666,
+    "local_only": 27,
+    "public_only": 134
+  },
+  "interpretation": "Previously executed detector variants compared on the same reference frames. Union is a coverage-only mask ablation; no new blendshape features or verified speaker identification are implied."
+}

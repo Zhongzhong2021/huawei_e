@@ -1,0 +1,10 @@
+{
+  "scope": "Only the same 100 Annex1 samples and their 37 source videos. No emotion values, extra training samples, fitting or threshold selection from public emotion labels.",
+  "frozen_outputs": "Q1 v6 primary arrays; evaluate before any proposed change",
+  "anchor": "independent waveform normalized cross-correlation: coarse 4000Hz, refine 16000Hz; no word timestamps used",
+  "anchor_acceptance": {"correlation_at_least": 0.8, "gap_to_peak_outside_half_second_at_least": 0.2, "three_window_offset_spread_at_most_s": 0.04},
+  "words": "Strict primary cohort: unique exact normalized transcript subsequence, verified waveform anchor, positive public word intervals wholly within decoded local audio. Report both every eligible word and current supported subset, plus all exclusions. Partial-text matches descriptive only.",
+  "word_metrics": ["absolute start/end difference median, MAE, p95", "max(start,end) difference within 50/100/200ms", "duration difference", "source-video clustered bootstrap 95% interval using seed 20260924 and 2000 repeats"],
+  "audio": "Same physical quantities only: pYIN F0 vs COVAREP F0 (Hz) and voicing, using independent waveform origin and nearest public frame within 15ms. Report pitch semitone differences on jointly voiced frames and denominator/voicing agreement. No direct equality claimed for different feature families.",
+  "interpretation": "P2FA/COVAREP are external processing references, not infallible truth; differences trigger source-signal investigation, not automatic replacement. Report masked failures and coverage, not just accepted cases."
+}

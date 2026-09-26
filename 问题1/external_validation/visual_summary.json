@@ -1,0 +1,35 @@
+{
+  "available_source_videos": 37,
+  "samples": 97,
+  "nearest_frame_tolerance_s": 0.04,
+  "clock_shift_sensitivity": {
+    "0": {
+      "frames": 7728,
+      "agreement": 0.9795548654244306,
+      "both": 7233,
+      "neither": 337,
+      "local_only": 20,
+      "public_only": 138,
+      "agreement_confidence05": 0.9795548654244306
+    },
+    "-0.04": {
+      "frames": 7718,
+      "agreement": 0.9781031355273387,
+      "both": 7221,
+      "neither": 328,
+      "local_only": 26,
+      "public_only": 143,
+      "agreement_confidence05": 0.9782327027727391
+    },
+    "0.04": {
+      "frames": 7727,
+      "agreement": 0.9800698848194642,
+      "both": 7236,
+      "neither": 337,
+      "local_only": 17,
+      "public_only": 137,
+      "agreement_confidence05": 0.9800698848194642
+    }
+  },
+  "interpretation": "Comparison of detection outputs only; OpenFace success is not ground-truth visibility, and AU vectors are not compared with MediaPipe blendshapes. Audio-derived source origin reused under shared media clock; +/-40ms sensitivity reported."
+}

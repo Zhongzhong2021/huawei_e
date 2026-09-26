@@ -1,0 +1,6 @@
+FROM huawei-model-e:q1-research-v8
+RUN python -m pip install --no-cache-dir --no-deps h5py==3.14.0 && python -m pip check
+ENV PYTHONUNBUFFERED=1
+WORKDIR /work
+ENTRYPOINT ["python"]
+CMD ["/work/verify_external.py", "/features/samples"]

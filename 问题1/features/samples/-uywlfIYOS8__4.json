@@ -1,0 +1,278 @@
+{
+  "sample_id": "-uywlfIYOS8$_$4",
+  "table_row_0based": 73,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-uywlfIYOS8/4.mp4",
+  "source_sha256": "fde46f5222cf5cfec7af9c93214c972ce2d686b0bf9c90a291021601968986f9",
+  "text_original": "And then from a brand point of view, we need to make sure we're driving the relevant insight.",
+  "words": [
+    {
+      "word": "and",
+      "source_text": "And",
+      "char_start": 0,
+      "char_end": 3,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "then",
+      "source_text": "then",
+      "char_start": 4,
+      "char_end": 8,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "then"
+      ]
+    },
+    {
+      "word": "from",
+      "source_text": "from",
+      "char_start": 9,
+      "char_end": 13,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "from"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 14,
+      "char_end": 15,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "brand",
+      "source_text": "brand",
+      "char_start": 16,
+      "char_end": 21,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "brand"
+      ]
+    },
+    {
+      "word": "point",
+      "source_text": "point",
+      "char_start": 22,
+      "char_end": 27,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "point"
+      ]
+    },
+    {
+      "word": "of",
+      "source_text": "of",
+      "char_start": 28,
+      "char_end": 30,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "of"
+      ]
+    },
+    {
+      "word": "view",
+      "source_text": "view",
+      "char_start": 31,
+      "char_end": 35,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "view"
+      ]
+    },
+    {
+      "word": "we",
+      "source_text": "we",
+      "char_start": 37,
+      "char_end": 39,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "we"
+      ]
+    },
+    {
+      "word": "need",
+      "source_text": "need",
+      "char_start": 40,
+      "char_end": 44,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "need"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 45,
+      "char_end": 47,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "make",
+      "source_text": "make",
+      "char_start": 48,
+      "char_end": 52,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "make"
+      ]
+    },
+    {
+      "word": "sure",
+      "source_text": "sure",
+      "char_start": 53,
+      "char_end": 57,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "sure"
+      ]
+    },
+    {
+      "word": "we're",
+      "source_text": "we're",
+      "char_start": 58,
+      "char_end": 63,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15,
+        16,
+        17
+      ],
+      "bert_tokens": [
+        "we",
+        "'",
+        "re"
+      ]
+    },
+    {
+      "word": "driving",
+      "source_text": "driving",
+      "char_start": 64,
+      "char_end": 71,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        18
+      ],
+      "bert_tokens": [
+        "driving"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 72,
+      "char_end": 75,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        19
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "relevant",
+      "source_text": "relevant",
+      "char_start": 76,
+      "char_end": 84,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        20
+      ],
+      "bert_tokens": [
+        "relevant"
+      ]
+    },
+    {
+      "word": "insight",
+      "source_text": "insight",
+      "char_start": 85,
+      "char_end": 92,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        21
+      ],
+      "bert_tokens": [
+        "insight"
+      ]
+    }
+  ],
+  "duration_s": 6.033333,
+  "container_declared_duration_s": 14.334,
+  "media_clock": {
+    "stem": "-uywlfIYOS8__4",
+    "sample_id": "-uywlfIYOS8$_$4",
+    "container_duration_s": 14.334,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 5.881125,
+    "audio_end_s": 5.881125,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 6.0,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 6.033333,
+    "observed_end_s": 6.033333,
+    "empty_declared_tail_s": 8.300667,
+    "original_video_frames": 179,
+    "source_sha256": "fde46f5222cf5cfec7af9c93214c972ce2d686b0bf9c90a291021601968986f9"
+  },
+  "decoded_audio_duration_s": 5.881125,
+  "audio_start_s": 0.0,
+  "feature_sha256": "5848b85c8a383344c1eb949ac112982f9e869fd34b678846dca5c7a48200449e",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-uywlfIYOS8__4.json": "ebe08c4c2c2613c545b3dd189e36970074289a6559c5cf992baa704b02350c98",
+    "results/q1/samples/-uywlfIYOS8__4.npz": "062bb6aea9652e40e98a87ce7dd81cd0e17ff118a73b2c704fda883f14bff69c",
+    "results/q1_next/enhanced/-uywlfIYOS8__4.npz": "0857f5f565104cfe97c7a72664b03082a947b7ff1bee5100cab547b86c5b4a4f",
+    "results/q1_refinement_v1/faces/-uywlfIYOS8__4.npz": "36c3c7bf8e3b52893a9bc3695f8b4c8c591b242e8abdf2192a11c7eb8ac1e8c6",
+    "results/q1_deep_v6/alignment/MMS_FA/-uywlfIYOS8__4/original.npz": "381652ff50e360aea1fc59de2ede8cd663a041ce37dc04d0a657bd9694c39e42",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

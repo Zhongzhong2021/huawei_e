@@ -1,0 +1,291 @@
+{
+  "sample_id": "-yRb-Jum7EQ$_$6",
+  "table_row_0based": 99,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-yRb-Jum7EQ/6.mp4",
+  "source_sha256": "b51eb9ad06de804934cb6a315de591ba9ff7f8aa71bffff7f8001ab29945d989",
+  "text_original": "Therefore, the world needs to stand with Israel against this incitement, which is the number one cause of terrorism.",
+  "words": [
+    {
+      "word": "therefore",
+      "source_text": "Therefore",
+      "char_start": 0,
+      "char_end": 9,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "therefore"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 11,
+      "char_end": 14,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "world",
+      "source_text": "world",
+      "char_start": 15,
+      "char_end": 20,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "world"
+      ]
+    },
+    {
+      "word": "needs",
+      "source_text": "needs",
+      "char_start": 21,
+      "char_end": 26,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "needs"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 27,
+      "char_end": 29,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "stand",
+      "source_text": "stand",
+      "char_start": 30,
+      "char_end": 35,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "stand"
+      ]
+    },
+    {
+      "word": "with",
+      "source_text": "with",
+      "char_start": 36,
+      "char_end": 40,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "with"
+      ]
+    },
+    {
+      "word": "israel",
+      "source_text": "Israel",
+      "char_start": 41,
+      "char_end": 47,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "israel"
+      ]
+    },
+    {
+      "word": "against",
+      "source_text": "against",
+      "char_start": 48,
+      "char_end": 55,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "against"
+      ]
+    },
+    {
+      "word": "this",
+      "source_text": "this",
+      "char_start": 56,
+      "char_end": 60,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "this"
+      ]
+    },
+    {
+      "word": "incitement",
+      "source_text": "incitement",
+      "char_start": 61,
+      "char_end": 71,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12,
+        13,
+        14
+      ],
+      "bert_tokens": [
+        "inc",
+        "##ite",
+        "##ment"
+      ]
+    },
+    {
+      "word": "which",
+      "source_text": "which",
+      "char_start": 73,
+      "char_end": 78,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "which"
+      ]
+    },
+    {
+      "word": "is",
+      "source_text": "is",
+      "char_start": 79,
+      "char_end": 81,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17
+      ],
+      "bert_tokens": [
+        "is"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 82,
+      "char_end": 85,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        18
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "number",
+      "source_text": "number",
+      "char_start": 86,
+      "char_end": 92,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        19
+      ],
+      "bert_tokens": [
+        "number"
+      ]
+    },
+    {
+      "word": "one",
+      "source_text": "one",
+      "char_start": 93,
+      "char_end": 96,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        20
+      ],
+      "bert_tokens": [
+        "one"
+      ]
+    },
+    {
+      "word": "cause",
+      "source_text": "cause",
+      "char_start": 97,
+      "char_end": 102,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        21
+      ],
+      "bert_tokens": [
+        "cause"
+      ]
+    },
+    {
+      "word": "of",
+      "source_text": "of",
+      "char_start": 103,
+      "char_end": 105,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        22
+      ],
+      "bert_tokens": [
+        "of"
+      ]
+    },
+    {
+      "word": "terrorism",
+      "source_text": "terrorism",
+      "char_start": 106,
+      "char_end": 115,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        23
+      ],
+      "bert_tokens": [
+        "terrorism"
+      ]
+    }
+  ],
+  "duration_s": 11.2425625,
+  "container_declared_duration_s": 15.488,
+  "media_clock": {
+    "stem": "-yRb-Jum7EQ__6",
+    "sample_id": "-yRb-Jum7EQ$_$6",
+    "container_duration_s": 15.488,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 11.2425625,
+    "audio_end_s": 11.2425625,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 11.166667,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 11.200000000000001,
+    "observed_end_s": 11.2425625,
+    "empty_declared_tail_s": 4.2454374999999995,
+    "original_video_frames": 336,
+    "source_sha256": "b51eb9ad06de804934cb6a315de591ba9ff7f8aa71bffff7f8001ab29945d989"
+  },
+  "decoded_audio_duration_s": 11.2425625,
+  "audio_start_s": 0.0,
+  "feature_sha256": "9228a148a30b267566abab6fcce5efb1e11241dd596139ca54975c2a27c2deb3",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-yRb-Jum7EQ__6.json": "f3e82d26212728798e86c0e5dce709f72efb64700764364ea6ea7ce6c6b3d0d2",
+    "results/q1/samples/-yRb-Jum7EQ__6.npz": "efc9ea5c1faaeb2bb9bb0527a3c94c164b07d61cc94aa395de992f68db1c837c",
+    "results/q1_next/enhanced/-yRb-Jum7EQ__6.npz": "07d144ae1968526d7345747bb0754e9e6a623b57f3b3ab783ca8593efd06ab5e",
+    "results/q1_refinement_v1/faces/-yRb-Jum7EQ__6.npz": "cd1a4e4fce3f9844397390a756e9b25f2691028535f09f69b71e7648e472eb52",
+    "results/q1_deep_v6/alignment/MMS_FA/-yRb-Jum7EQ__6/original.npz": "2540f8016ed1065d26a38cd81a6cc52a50fcb52ee72a4ad72796eaf6c6708445",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

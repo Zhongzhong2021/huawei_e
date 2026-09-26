@@ -1,0 +1,334 @@
+{
+  "sample_id": "-wny0OAz3g8$_$1",
+  "table_row_0based": 57,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-wny0OAz3g8/1.mp4",
+  "source_sha256": "c5535859f129ce04da5f5b5104d02d4168057b9d947a5349d423278ad4f3d8e8",
+  "text_original": "And because they couldn’t join unions, many Black workers couldn’t get manufacturing or trade work – which paid much better than service work",
+  "words": [
+    {
+      "word": "and",
+      "source_text": "And",
+      "char_start": 0,
+      "char_end": 3,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "because",
+      "source_text": "because",
+      "char_start": 4,
+      "char_end": 11,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "because"
+      ]
+    },
+    {
+      "word": "they",
+      "source_text": "they",
+      "char_start": 12,
+      "char_end": 16,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "they"
+      ]
+    },
+    {
+      "word": "couldn't",
+      "source_text": "couldn't",
+      "char_start": 17,
+      "char_end": 25,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4,
+        5,
+        6
+      ],
+      "bert_tokens": [
+        "couldn",
+        "’",
+        "t"
+      ]
+    },
+    {
+      "word": "join",
+      "source_text": "join",
+      "char_start": 26,
+      "char_end": 30,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "join"
+      ]
+    },
+    {
+      "word": "unions",
+      "source_text": "unions",
+      "char_start": 31,
+      "char_end": 37,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "unions"
+      ]
+    },
+    {
+      "word": "many",
+      "source_text": "many",
+      "char_start": 39,
+      "char_end": 43,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "many"
+      ]
+    },
+    {
+      "word": "black",
+      "source_text": "Black",
+      "char_start": 44,
+      "char_end": 49,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "black"
+      ]
+    },
+    {
+      "word": "workers",
+      "source_text": "workers",
+      "char_start": 50,
+      "char_end": 57,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "workers"
+      ]
+    },
+    {
+      "word": "couldn't",
+      "source_text": "couldn't",
+      "char_start": 58,
+      "char_end": 66,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13,
+        14,
+        15
+      ],
+      "bert_tokens": [
+        "couldn",
+        "’",
+        "t"
+      ]
+    },
+    {
+      "word": "get",
+      "source_text": "get",
+      "char_start": 67,
+      "char_end": 70,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "get"
+      ]
+    },
+    {
+      "word": "manufacturing",
+      "source_text": "manufacturing",
+      "char_start": 71,
+      "char_end": 84,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17
+      ],
+      "bert_tokens": [
+        "manufacturing"
+      ]
+    },
+    {
+      "word": "or",
+      "source_text": "or",
+      "char_start": 85,
+      "char_end": 87,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        18
+      ],
+      "bert_tokens": [
+        "or"
+      ]
+    },
+    {
+      "word": "trade",
+      "source_text": "trade",
+      "char_start": 88,
+      "char_end": 93,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        19
+      ],
+      "bert_tokens": [
+        "trade"
+      ]
+    },
+    {
+      "word": "work",
+      "source_text": "work",
+      "char_start": 94,
+      "char_end": 98,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        20
+      ],
+      "bert_tokens": [
+        "work"
+      ]
+    },
+    {
+      "word": "which",
+      "source_text": "which",
+      "char_start": 101,
+      "char_end": 106,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        22
+      ],
+      "bert_tokens": [
+        "which"
+      ]
+    },
+    {
+      "word": "paid",
+      "source_text": "paid",
+      "char_start": 107,
+      "char_end": 111,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        23
+      ],
+      "bert_tokens": [
+        "paid"
+      ]
+    },
+    {
+      "word": "much",
+      "source_text": "much",
+      "char_start": 112,
+      "char_end": 116,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        24
+      ],
+      "bert_tokens": [
+        "much"
+      ]
+    },
+    {
+      "word": "better",
+      "source_text": "better",
+      "char_start": 117,
+      "char_end": 123,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        25
+      ],
+      "bert_tokens": [
+        "better"
+      ]
+    },
+    {
+      "word": "than",
+      "source_text": "than",
+      "char_start": 124,
+      "char_end": 128,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        26
+      ],
+      "bert_tokens": [
+        "than"
+      ]
+    },
+    {
+      "word": "service",
+      "source_text": "service",
+      "char_start": 129,
+      "char_end": 136,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        27
+      ],
+      "bert_tokens": [
+        "service"
+      ]
+    },
+    {
+      "word": "work",
+      "source_text": "work",
+      "char_start": 137,
+      "char_end": 141,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        28
+      ],
+      "bert_tokens": [
+        "work"
+      ]
+    }
+  ],
+  "duration_s": 6.833333,
+  "container_declared_duration_s": 9.1,
+  "media_clock": {
+    "stem": "-wny0OAz3g8__1",
+    "sample_id": "-wny0OAz3g8$_$1",
+    "container_duration_s": 9.1,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 6.7765625,
+    "audio_end_s": 6.7765625,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 6.8,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 6.833333,
+    "observed_end_s": 6.833333,
+    "empty_declared_tail_s": 2.266667,
+    "original_video_frames": 205,
+    "source_sha256": "c5535859f129ce04da5f5b5104d02d4168057b9d947a5349d423278ad4f3d8e8"
+  },
+  "decoded_audio_duration_s": 6.7765625,
+  "audio_start_s": 0.0,
+  "feature_sha256": "f65a41678dd77b12d0165b2cd186062d67dafd6053143546ebee1414305f7e26",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-wny0OAz3g8__1.json": "bc220bd38e6803c0b2144ba038c77df0377edacc52237a92aebcc10e34fe4c7d",
+    "results/q1/samples/-wny0OAz3g8__1.npz": "c6fb5afc075b653724d5b1e093d8df75b058ff1f916a54fee137a71a05c6b970",
+    "results/q1_next/enhanced/-wny0OAz3g8__1.npz": "ce1346fea31dc0581f56df2599ee009c2effc9e828a6a44945355f3c1ccf7828",
+    "results/q1_refinement_v1/faces/-wny0OAz3g8__1.npz": "3231dbb3817a62092f2d7f73c5c9f1f94e32022eb61197d16aab55b9af8e4bb8",
+    "results/q1_deep_v6/alignment/MMS_FA/-wny0OAz3g8__1/original.npz": "ce113ecccce5af7e0e8bb2c9fd8e11d7536f22c05a7195957b1e609cf1ce4635",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

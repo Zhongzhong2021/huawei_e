@@ -1,0 +1,603 @@
+{
+  "sample_id": "-lzEya4AM_4$_$6",
+  "table_row_0based": 40,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-lzEya4AM_4/6.mp4",
+  "source_sha256": "ff5da5afb551001d58100ed2471caea51c741046d5396957efbf40082307ca18",
+  "text_original": "If the product or poison is some type of petroleum product or corrosive product, you would not attempt to induce vomiting and nausea, as as the product burned on the way down it could cause damage and burning on the way back up.",
+  "words": [
+    {
+      "word": "if",
+      "source_text": "If",
+      "char_start": 0,
+      "char_end": 2,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "if"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 3,
+      "char_end": 6,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "product",
+      "source_text": "product",
+      "char_start": 7,
+      "char_end": 14,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "product"
+      ]
+    },
+    {
+      "word": "or",
+      "source_text": "or",
+      "char_start": 15,
+      "char_end": 17,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "or"
+      ]
+    },
+    {
+      "word": "poison",
+      "source_text": "poison",
+      "char_start": 18,
+      "char_end": 24,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "poison"
+      ]
+    },
+    {
+      "word": "is",
+      "source_text": "is",
+      "char_start": 25,
+      "char_end": 27,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "is"
+      ]
+    },
+    {
+      "word": "some",
+      "source_text": "some",
+      "char_start": 28,
+      "char_end": 32,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "some"
+      ]
+    },
+    {
+      "word": "type",
+      "source_text": "type",
+      "char_start": 33,
+      "char_end": 37,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "type"
+      ]
+    },
+    {
+      "word": "of",
+      "source_text": "of",
+      "char_start": 38,
+      "char_end": 40,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "of"
+      ]
+    },
+    {
+      "word": "petroleum",
+      "source_text": "petroleum",
+      "char_start": 41,
+      "char_end": 50,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "petroleum"
+      ]
+    },
+    {
+      "word": "product",
+      "source_text": "product",
+      "char_start": 51,
+      "char_end": 58,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "product"
+      ]
+    },
+    {
+      "word": "or",
+      "source_text": "or",
+      "char_start": 59,
+      "char_end": 61,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "or"
+      ]
+    },
+    {
+      "word": "corrosive",
+      "source_text": "corrosive",
+      "char_start": 62,
+      "char_end": 71,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13,
+        14,
+        15
+      ],
+      "bert_tokens": [
+        "co",
+        "##rro",
+        "##sive"
+      ]
+    },
+    {
+      "word": "product",
+      "source_text": "product",
+      "char_start": 72,
+      "char_end": 79,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "product"
+      ]
+    },
+    {
+      "word": "you",
+      "source_text": "you",
+      "char_start": 81,
+      "char_end": 84,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        18
+      ],
+      "bert_tokens": [
+        "you"
+      ]
+    },
+    {
+      "word": "would",
+      "source_text": "would",
+      "char_start": 85,
+      "char_end": 90,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        19
+      ],
+      "bert_tokens": [
+        "would"
+      ]
+    },
+    {
+      "word": "not",
+      "source_text": "not",
+      "char_start": 91,
+      "char_end": 94,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        20
+      ],
+      "bert_tokens": [
+        "not"
+      ]
+    },
+    {
+      "word": "attempt",
+      "source_text": "attempt",
+      "char_start": 95,
+      "char_end": 102,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        21
+      ],
+      "bert_tokens": [
+        "attempt"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 103,
+      "char_end": 105,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        22
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "induce",
+      "source_text": "induce",
+      "char_start": 106,
+      "char_end": 112,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        23
+      ],
+      "bert_tokens": [
+        "induce"
+      ]
+    },
+    {
+      "word": "vomiting",
+      "source_text": "vomiting",
+      "char_start": 113,
+      "char_end": 121,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        24
+      ],
+      "bert_tokens": [
+        "vomiting"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 122,
+      "char_end": 125,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        25
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "nausea",
+      "source_text": "nausea",
+      "char_start": 126,
+      "char_end": 132,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        26
+      ],
+      "bert_tokens": [
+        "nausea"
+      ]
+    },
+    {
+      "word": "as",
+      "source_text": "as",
+      "char_start": 134,
+      "char_end": 136,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        28
+      ],
+      "bert_tokens": [
+        "as"
+      ]
+    },
+    {
+      "word": "as",
+      "source_text": "as",
+      "char_start": 137,
+      "char_end": 139,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        29
+      ],
+      "bert_tokens": [
+        "as"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 140,
+      "char_end": 143,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        30
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "product",
+      "source_text": "product",
+      "char_start": 144,
+      "char_end": 151,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        31
+      ],
+      "bert_tokens": [
+        "product"
+      ]
+    },
+    {
+      "word": "burned",
+      "source_text": "burned",
+      "char_start": 152,
+      "char_end": 158,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        32
+      ],
+      "bert_tokens": [
+        "burned"
+      ]
+    },
+    {
+      "word": "on",
+      "source_text": "on",
+      "char_start": 159,
+      "char_end": 161,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        33
+      ],
+      "bert_tokens": [
+        "on"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 162,
+      "char_end": 165,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        34
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "way",
+      "source_text": "way",
+      "char_start": 166,
+      "char_end": 169,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        35
+      ],
+      "bert_tokens": [
+        "way"
+      ]
+    },
+    {
+      "word": "down",
+      "source_text": "down",
+      "char_start": 170,
+      "char_end": 174,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        36
+      ],
+      "bert_tokens": [
+        "down"
+      ]
+    },
+    {
+      "word": "it",
+      "source_text": "it",
+      "char_start": 175,
+      "char_end": 177,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        37
+      ],
+      "bert_tokens": [
+        "it"
+      ]
+    },
+    {
+      "word": "could",
+      "source_text": "could",
+      "char_start": 178,
+      "char_end": 183,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        38
+      ],
+      "bert_tokens": [
+        "could"
+      ]
+    },
+    {
+      "word": "cause",
+      "source_text": "cause",
+      "char_start": 184,
+      "char_end": 189,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        39
+      ],
+      "bert_tokens": [
+        "cause"
+      ]
+    },
+    {
+      "word": "damage",
+      "source_text": "damage",
+      "char_start": 190,
+      "char_end": 196,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        40
+      ],
+      "bert_tokens": [
+        "damage"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 197,
+      "char_end": 200,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        41
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "burning",
+      "source_text": "burning",
+      "char_start": 201,
+      "char_end": 208,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        42
+      ],
+      "bert_tokens": [
+        "burning"
+      ]
+    },
+    {
+      "word": "on",
+      "source_text": "on",
+      "char_start": 209,
+      "char_end": 211,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        43
+      ],
+      "bert_tokens": [
+        "on"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 212,
+      "char_end": 215,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        44
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "way",
+      "source_text": "way",
+      "char_start": 216,
+      "char_end": 219,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        45
+      ],
+      "bert_tokens": [
+        "way"
+      ]
+    },
+    {
+      "word": "back",
+      "source_text": "back",
+      "char_start": 220,
+      "char_end": 224,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        46
+      ],
+      "bert_tokens": [
+        "back"
+      ]
+    },
+    {
+      "word": "up",
+      "source_text": "up",
+      "char_start": 225,
+      "char_end": 227,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        47
+      ],
+      "bert_tokens": [
+        "up"
+      ]
+    }
+  ],
+  "duration_s": 14.766666,
+  "container_declared_duration_s": 22.733,
+  "media_clock": {
+    "stem": "-lzEya4AM_4__6",
+    "sample_id": "-lzEya4AM_4$_$6",
+    "container_duration_s": 22.733,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 14.740375,
+    "audio_end_s": 14.740375,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 14.733333,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 14.766666,
+    "observed_end_s": 14.766666,
+    "empty_declared_tail_s": 7.966334,
+    "original_video_frames": 443,
+    "source_sha256": "ff5da5afb551001d58100ed2471caea51c741046d5396957efbf40082307ca18"
+  },
+  "decoded_audio_duration_s": 14.740375,
+  "audio_start_s": 0.0,
+  "feature_sha256": "2cdfdc6a19db07ce270d8f069e6dab1e715fdef79cfec4a75959e3b6ddbff659",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-lzEya4AM_4__6.json": "f2524ba12473eb2553fc1ebba4381bce22b4cca00e62158d61cf37135be40bcd",
+    "results/q1/samples/-lzEya4AM_4__6.npz": "094afaaa4a12980f1760337d1ffa654079e0f368e600c98eb536780b5a6cca5c",
+    "results/q1_next/enhanced/-lzEya4AM_4__6.npz": "a30cf096a4193b25752c388941002c955bfc1f51b0c4e1550148bfcdc9c81a94",
+    "results/q1_refinement_v1/faces/-lzEya4AM_4__6.npz": "a9ea1c775adfe5e4947d71cc29526b04c5b22a316f86e56111f7c24e8047afaf",
+    "results/q1_deep_v6/alignment/MMS_FA/-lzEya4AM_4__6/original.npz": "655eb30a4bf7086df160a6d81b1c4416a3a1d4236c48af38553f1afee32f5d51",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

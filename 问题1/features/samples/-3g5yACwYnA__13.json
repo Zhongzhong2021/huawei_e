@@ -1,0 +1,239 @@
+{
+  "sample_id": "-3g5yACwYnA$_$13",
+  "table_row_0based": 0,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-3g5yACwYnA/13.mp4",
+  "source_sha256": "aeb47627f59dce3d0a85a44ef35e4a3bc18211498e98c8c11cf60269646df24f",
+  "text_original": "They've been able to find solutions or at least bring some answers to the table.",
+  "words": [
+    {
+      "word": "they've",
+      "source_text": "They've",
+      "char_start": 0,
+      "char_end": 7,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1,
+        2,
+        3
+      ],
+      "bert_tokens": [
+        "they",
+        "'",
+        "ve"
+      ]
+    },
+    {
+      "word": "been",
+      "source_text": "been",
+      "char_start": 8,
+      "char_end": 12,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "been"
+      ]
+    },
+    {
+      "word": "able",
+      "source_text": "able",
+      "char_start": 13,
+      "char_end": 17,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "able"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 18,
+      "char_end": 20,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "find",
+      "source_text": "find",
+      "char_start": 21,
+      "char_end": 25,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "find"
+      ]
+    },
+    {
+      "word": "solutions",
+      "source_text": "solutions",
+      "char_start": 26,
+      "char_end": 35,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "solutions"
+      ]
+    },
+    {
+      "word": "or",
+      "source_text": "or",
+      "char_start": 36,
+      "char_end": 38,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "or"
+      ]
+    },
+    {
+      "word": "at",
+      "source_text": "at",
+      "char_start": 39,
+      "char_end": 41,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "at"
+      ]
+    },
+    {
+      "word": "least",
+      "source_text": "least",
+      "char_start": 42,
+      "char_end": 47,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "least"
+      ]
+    },
+    {
+      "word": "bring",
+      "source_text": "bring",
+      "char_start": 48,
+      "char_end": 53,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "bring"
+      ]
+    },
+    {
+      "word": "some",
+      "source_text": "some",
+      "char_start": 54,
+      "char_end": 58,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "some"
+      ]
+    },
+    {
+      "word": "answers",
+      "source_text": "answers",
+      "char_start": 59,
+      "char_end": 66,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "answers"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 67,
+      "char_end": 69,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 70,
+      "char_end": 73,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "table",
+      "source_text": "table",
+      "char_start": 74,
+      "char_end": 79,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17
+      ],
+      "bert_tokens": [
+        "table"
+      ]
+    }
+  ],
+  "duration_s": 5.5,
+  "container_declared_duration_s": 8.767,
+  "media_clock": {
+    "stem": "-3g5yACwYnA__13",
+    "sample_id": "-3g5yACwYnA$_$13",
+    "container_duration_s": 8.767,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 5.399125,
+    "audio_end_s": 5.399125,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 5.466667,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 5.5,
+    "observed_end_s": 5.5,
+    "empty_declared_tail_s": 3.2669999999999995,
+    "original_video_frames": 163,
+    "source_sha256": "aeb47627f59dce3d0a85a44ef35e4a3bc18211498e98c8c11cf60269646df24f"
+  },
+  "decoded_audio_duration_s": 5.399125,
+  "audio_start_s": 0.0,
+  "feature_sha256": "2805b3c708fe21f437021de86d014bcf92fd0d9b47804a35c7f9c4d26eb241eb",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-3g5yACwYnA__13.json": "f9294d9d3a70d3408cc334f1faa6be0f69791e3ddbec8fa4aad5e484bdc007f4",
+    "results/q1/samples/-3g5yACwYnA__13.npz": "9fa9e1f228e5492090df6bc9b40eec80fb21907896631b22509ad64762b6c0fc",
+    "results/q1_next/enhanced/-3g5yACwYnA__13.npz": "2f22b299c4746f2cfb7b8c85478678fbbecdc276271efe1583438f4a3e385f54",
+    "results/q1_refinement_v1/faces/-3g5yACwYnA__13.npz": "bcfdd5dea1fb6bdd21afc2579a2b1d34a62a705fc5390d26fcadda6dcfb3ca42",
+    "results/q1_deep_v6/alignment/MMS_FA/-3g5yACwYnA__13/original.npz": "0277e7e5c2eee5b8dd33046159236af642bc07659c2a93a71f97c41d1c43c089",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

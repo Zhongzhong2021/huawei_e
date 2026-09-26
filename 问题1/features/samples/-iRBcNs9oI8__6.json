@@ -1,0 +1,105 @@
+{
+  "sample_id": "-iRBcNs9oI8$_$6",
+  "table_row_0based": 36,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-iRBcNs9oI8/6.mp4",
+  "source_sha256": "030b0b8d8d4ae47799432ab71b66fcc881f077c5b0feef892c1f146dc0a592e3",
+  "text_original": "What is a power pose",
+  "words": [
+    {
+      "word": "what",
+      "source_text": "What",
+      "char_start": 0,
+      "char_end": 4,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "what"
+      ]
+    },
+    {
+      "word": "is",
+      "source_text": "is",
+      "char_start": 5,
+      "char_end": 7,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "is"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 8,
+      "char_end": 9,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "power",
+      "source_text": "power",
+      "char_start": 10,
+      "char_end": 15,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "power"
+      ]
+    },
+    {
+      "word": "pose",
+      "source_text": "pose",
+      "char_start": 16,
+      "char_end": 20,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "pose"
+      ]
+    }
+  ],
+  "duration_s": 2.8695340000000003,
+  "container_declared_duration_s": 7.475,
+  "media_clock": {
+    "stem": "-iRBcNs9oI8__6",
+    "sample_id": "-iRBcNs9oI8$_$6",
+    "container_duration_s": 7.475,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 2.8204375,
+    "audio_end_s": 2.8204375,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 2.836167,
+    "last_frame_duration_s": 0.033367,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 2.8695340000000003,
+    "observed_end_s": 2.8695340000000003,
+    "empty_declared_tail_s": 4.605466,
+    "original_video_frames": 85,
+    "source_sha256": "030b0b8d8d4ae47799432ab71b66fcc881f077c5b0feef892c1f146dc0a592e3"
+  },
+  "decoded_audio_duration_s": 2.8204375,
+  "audio_start_s": 0.0,
+  "feature_sha256": "33352137315a4daaa355345ba52c4575b6f282302f6742826f87cae285a4b636",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-iRBcNs9oI8__6.json": "16faef58f588f67fbfd1ab6755b3c94454ab16cd07ab179c2f964221c158d91f",
+    "results/q1/samples/-iRBcNs9oI8__6.npz": "8754fa178301366b8e5d9883a47830f4db8dac71a2e42cfe5cc9b7b02342e769",
+    "results/q1_next/enhanced/-iRBcNs9oI8__6.npz": "59a0dc218527785c1f143dd23b32fdc4872aeb9230180fbab7889e5256e8f28c",
+    "results/q1_refinement_v1/faces/-iRBcNs9oI8__6.npz": "4f08bc0283e7ca602cf2dbd99b0b81671702eab077bba049deb3be8888a65e10",
+    "results/q1_deep_v6/alignment/MMS_FA/-iRBcNs9oI8__6/original.npz": "022d0a4c2d0a37293bf141f7806e0fde7829a1b605cc1d8f096c0b02c542e430",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

@@ -1,0 +1,222 @@
+{
+  "sample_id": "-mqbVkbCndg$_$0",
+  "table_row_0based": 46,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-mqbVkbCndg/0.mp4",
+  "source_sha256": "cdeba953bba30907814acf72f3e35582dec263eaa25bdd922dad7fafe02e4dda",
+  "text_original": "How, at a particular moment in time—our moment in time—are they limited",
+  "words": [
+    {
+      "word": "how",
+      "source_text": "How",
+      "char_start": 0,
+      "char_end": 3,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "how"
+      ]
+    },
+    {
+      "word": "at",
+      "source_text": "at",
+      "char_start": 5,
+      "char_end": 7,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "at"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 8,
+      "char_end": 9,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "particular",
+      "source_text": "particular",
+      "char_start": 10,
+      "char_end": 20,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "particular"
+      ]
+    },
+    {
+      "word": "moment",
+      "source_text": "moment",
+      "char_start": 21,
+      "char_end": 27,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "moment"
+      ]
+    },
+    {
+      "word": "in",
+      "source_text": "in",
+      "char_start": 28,
+      "char_end": 30,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "in"
+      ]
+    },
+    {
+      "word": "time",
+      "source_text": "time",
+      "char_start": 31,
+      "char_end": 35,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "time"
+      ]
+    },
+    {
+      "word": "our",
+      "source_text": "our",
+      "char_start": 36,
+      "char_end": 39,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "our"
+      ]
+    },
+    {
+      "word": "moment",
+      "source_text": "moment",
+      "char_start": 40,
+      "char_end": 46,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "moment"
+      ]
+    },
+    {
+      "word": "in",
+      "source_text": "in",
+      "char_start": 47,
+      "char_end": 49,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "in"
+      ]
+    },
+    {
+      "word": "time",
+      "source_text": "time",
+      "char_start": 50,
+      "char_end": 54,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "time"
+      ]
+    },
+    {
+      "word": "are",
+      "source_text": "are",
+      "char_start": 55,
+      "char_end": 58,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "are"
+      ]
+    },
+    {
+      "word": "they",
+      "source_text": "they",
+      "char_start": 59,
+      "char_end": 63,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "they"
+      ]
+    },
+    {
+      "word": "limited",
+      "source_text": "limited",
+      "char_start": 64,
+      "char_end": 71,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17
+      ],
+      "bert_tokens": [
+        "limited"
+      ]
+    }
+  ],
+  "duration_s": 6.5,
+  "container_declared_duration_s": 6.5,
+  "media_clock": {
+    "stem": "-mqbVkbCndg__0",
+    "sample_id": "-mqbVkbCndg$_$0",
+    "container_duration_s": 6.5,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 6.3855,
+    "audio_end_s": 6.3855,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 6.466667,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 6.5,
+    "observed_end_s": 6.5,
+    "empty_declared_tail_s": 0,
+    "original_video_frames": 194,
+    "source_sha256": "cdeba953bba30907814acf72f3e35582dec263eaa25bdd922dad7fafe02e4dda"
+  },
+  "decoded_audio_duration_s": 6.3855,
+  "audio_start_s": 0.0,
+  "feature_sha256": "36c27bd2f01df6ae6d4326f6b92b1bc60e0437e9108951032b77a52e9eb92a7c",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-mqbVkbCndg__0.json": "0a70a1c4d759dddc7aac13dd44c31655b8c67263bc6e2eaf0f7f1159f2479eda",
+    "results/q1/samples/-mqbVkbCndg__0.npz": "5e547aba64d338de4befb55a96f3495713ebce2911aae298d0925b450ed5c505",
+    "results/q1_next/enhanced/-mqbVkbCndg__0.npz": "b4361d77d18dc83674fca528b4ea7ec5b6fc75c3ec20127af30bf3514bdc4923",
+    "results/q1_refinement_v1/faces/-mqbVkbCndg__0.npz": "b0303432b08e7f1f7e2ef1be3fe490bf9341285caa848e0ce60d3719ca8213fd",
+    "results/q1_deep_v6/alignment/MMS_FA/-mqbVkbCndg__0/original.npz": "bbbfe549f1bc3234c02be7a2bd7b6937a17ea084a9d30c06f6e0d1d42648aee8",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

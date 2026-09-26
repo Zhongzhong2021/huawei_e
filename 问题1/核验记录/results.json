@@ -1,0 +1,28 @@
+{
+  "samples": 100,
+  "source_word_spans_checked": 1948,
+  "unique_ids": true,
+  "source_character_and_token_correspondence": true,
+  "ordered_time_cells": true,
+  "masks_and_padding_consistent": true,
+  "words": 1948,
+  "word_audio_valid": 1464,
+  "word_pitch_valid": 1253,
+  "word_expression_valid": 1420,
+  "word_scene_valid": 1464,
+  "clips_with_grid_audio": 100,
+  "clips_with_grid_expression": 96,
+  "clips_with_grid_scene": 100,
+  "clips_no_supported_words": 20,
+  "no_word_support_diagnostic_counts": {
+    "no_vad_speech": 4,
+    "english_low_text_agreement": 13,
+    "non_english_or_language_uncertain": 3
+  },
+  "no_word_support_with_grid_audio": 20,
+  "no_word_support_with_grid_expression": 16,
+  "no_word_support_with_grid_scene": 20,
+  "note": "Diagnostics describe fixed model outputs, not ground-truth language or mismatch annotations. No feature values, source texts, masks or thresholds changed.",
+  "script_sha256": "e1aaa2358d208ec1b0199238689c5aa88a80ce29384ed6f37e746e71ebaf7e24",
+  "apostrophe_normalized_source_fragments": 11
+}

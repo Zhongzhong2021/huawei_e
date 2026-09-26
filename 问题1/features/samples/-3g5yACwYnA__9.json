@@ -1,0 +1,339 @@
+{
+  "sample_id": "-3g5yACwYnA$_$9",
+  "table_row_0based": 3,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-3g5yACwYnA/9.mp4",
+  "source_sha256": "b962573b12ed1f06d5533f6427c80dce2bae3a99dd332f6d3fcb32c579f3f016",
+  "text_original": "We have many new opportunities through the way things have changed through the years, looking for new niche high-end, value-added products.",
+  "words": [
+    {
+      "word": "we",
+      "source_text": "We",
+      "char_start": 0,
+      "char_end": 2,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "we"
+      ]
+    },
+    {
+      "word": "have",
+      "source_text": "have",
+      "char_start": 3,
+      "char_end": 7,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "have"
+      ]
+    },
+    {
+      "word": "many",
+      "source_text": "many",
+      "char_start": 8,
+      "char_end": 12,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "many"
+      ]
+    },
+    {
+      "word": "new",
+      "source_text": "new",
+      "char_start": 13,
+      "char_end": 16,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "new"
+      ]
+    },
+    {
+      "word": "opportunities",
+      "source_text": "opportunities",
+      "char_start": 17,
+      "char_end": 30,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "opportunities"
+      ]
+    },
+    {
+      "word": "through",
+      "source_text": "through",
+      "char_start": 31,
+      "char_end": 38,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "through"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 39,
+      "char_end": 42,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "way",
+      "source_text": "way",
+      "char_start": 43,
+      "char_end": 46,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "way"
+      ]
+    },
+    {
+      "word": "things",
+      "source_text": "things",
+      "char_start": 47,
+      "char_end": 53,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "things"
+      ]
+    },
+    {
+      "word": "have",
+      "source_text": "have",
+      "char_start": 54,
+      "char_end": 58,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "have"
+      ]
+    },
+    {
+      "word": "changed",
+      "source_text": "changed",
+      "char_start": 59,
+      "char_end": 66,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "changed"
+      ]
+    },
+    {
+      "word": "through",
+      "source_text": "through",
+      "char_start": 67,
+      "char_end": 74,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "through"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 75,
+      "char_end": 78,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "years",
+      "source_text": "years",
+      "char_start": 79,
+      "char_end": 84,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "years"
+      ]
+    },
+    {
+      "word": "looking",
+      "source_text": "looking",
+      "char_start": 86,
+      "char_end": 93,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "looking"
+      ]
+    },
+    {
+      "word": "for",
+      "source_text": "for",
+      "char_start": 94,
+      "char_end": 97,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17
+      ],
+      "bert_tokens": [
+        "for"
+      ]
+    },
+    {
+      "word": "new",
+      "source_text": "new",
+      "char_start": 98,
+      "char_end": 101,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        18
+      ],
+      "bert_tokens": [
+        "new"
+      ]
+    },
+    {
+      "word": "niche",
+      "source_text": "niche",
+      "char_start": 102,
+      "char_end": 107,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        19
+      ],
+      "bert_tokens": [
+        "niche"
+      ]
+    },
+    {
+      "word": "high",
+      "source_text": "high",
+      "char_start": 108,
+      "char_end": 112,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        20
+      ],
+      "bert_tokens": [
+        "high"
+      ]
+    },
+    {
+      "word": "end",
+      "source_text": "end",
+      "char_start": 113,
+      "char_end": 116,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        22
+      ],
+      "bert_tokens": [
+        "end"
+      ]
+    },
+    {
+      "word": "value",
+      "source_text": "value",
+      "char_start": 118,
+      "char_end": 123,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        24
+      ],
+      "bert_tokens": [
+        "value"
+      ]
+    },
+    {
+      "word": "added",
+      "source_text": "added",
+      "char_start": 124,
+      "char_end": 129,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        26
+      ],
+      "bert_tokens": [
+        "added"
+      ]
+    },
+    {
+      "word": "products",
+      "source_text": "products",
+      "char_start": 130,
+      "char_end": 138,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        27
+      ],
+      "bert_tokens": [
+        "products"
+      ]
+    }
+  ],
+  "duration_s": 8.8,
+  "container_declared_duration_s": 16.234,
+  "media_clock": {
+    "stem": "-3g5yACwYnA__9",
+    "sample_id": "-3g5yACwYnA$_$9",
+    "container_duration_s": 16.234,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 8.696125,
+    "audio_end_s": 8.696125,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 8.766667,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 8.8,
+    "observed_end_s": 8.8,
+    "empty_declared_tail_s": 7.434000000000001,
+    "original_video_frames": 263,
+    "source_sha256": "b962573b12ed1f06d5533f6427c80dce2bae3a99dd332f6d3fcb32c579f3f016"
+  },
+  "decoded_audio_duration_s": 8.696125,
+  "audio_start_s": 0.0,
+  "feature_sha256": "8ac45fc8b2f66523bc6c3d8fabbc589279b2463cc1e7ec3c366739171cdf9fab",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-3g5yACwYnA__9.json": "4c1cb94146fe5f9e7aef76d6fbac73e584d8f8c3a185254d0e4f6fffc7f03d01",
+    "results/q1/samples/-3g5yACwYnA__9.npz": "9882fd98711561d39c60d8588da5509eed47f754fad5a2269e3eea8cde7d5919",
+    "results/q1_next/enhanced/-3g5yACwYnA__9.npz": "84f4f25e4d04a30c34a09e138950385b6e2b88d44a078d19ed1609172a1962fc",
+    "results/q1_refinement_v1/faces/-3g5yACwYnA__9.npz": "13bdfd327d282528d07aa15ed3425991113d74e4635d2d35611496641689eecd",
+    "results/q1_deep_v6/alignment/MMS_FA/-3g5yACwYnA__9/original.npz": "3bf3a187fe464515e720acbf5ea1a80bd875c89403c6cacf789272b3278577b0",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

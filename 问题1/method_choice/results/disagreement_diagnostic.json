@@ -1,0 +1,128 @@
+{
+  "all": [
+    {
+      "disagreement_threshold_s": 0.02,
+      "words": 105,
+      "retained_fraction": 0.0779510022271715,
+      "MMS_within100ms": 0.9238095238095239,
+      "Qwen_within100ms": 0.9142857142857143,
+      "bounded40_within100ms": 0.9238095238095239
+    },
+    {
+      "disagreement_threshold_s": 0.04,
+      "words": 337,
+      "retained_fraction": 0.2501855976243504,
+      "MMS_within100ms": 0.913946587537092,
+      "Qwen_within100ms": 0.9169139465875371,
+      "bounded40_within100ms": 0.9258160237388724
+    },
+    {
+      "disagreement_threshold_s": 0.08,
+      "words": 828,
+      "retained_fraction": 0.6146993318485523,
+      "MMS_within100ms": 0.892512077294686,
+      "Qwen_within100ms": 0.9214975845410628,
+      "bounded40_within100ms": 0.928743961352657
+    },
+    {
+      "disagreement_threshold_s": 0.16,
+      "words": 1087,
+      "retained_fraction": 0.8069784706755754,
+      "MMS_within100ms": 0.8242870285188593,
+      "Qwen_within100ms": 0.9070837166513339,
+      "bounded40_within100ms": 0.9089236430542779
+    },
+    {
+      "disagreement_threshold_s": null,
+      "words": 1347,
+      "retained_fraction": 1.0,
+      "MMS_within100ms": 0.6837416481069042,
+      "Qwen_within100ms": 0.755011135857461,
+      "bounded40_within100ms": 0.7505567928730512
+    }
+  ],
+  "supported": [
+    {
+      "disagreement_threshold_s": 0.02,
+      "words": 98,
+      "retained_fraction": 0.0945945945945946,
+      "MMS_within100ms": 0.9285714285714286,
+      "Qwen_within100ms": 0.9285714285714286,
+      "bounded40_within100ms": 0.9285714285714286
+    },
+    {
+      "disagreement_threshold_s": 0.04,
+      "words": 310,
+      "retained_fraction": 0.29922779922779924,
+      "MMS_within100ms": 0.9193548387096774,
+      "Qwen_within100ms": 0.9290322580645162,
+      "bounded40_within100ms": 0.932258064516129
+    },
+    {
+      "disagreement_threshold_s": 0.08,
+      "words": 764,
+      "retained_fraction": 0.7374517374517374,
+      "MMS_within100ms": 0.9044502617801047,
+      "Qwen_within100ms": 0.9319371727748691,
+      "bounded40_within100ms": 0.9397905759162304
+    },
+    {
+      "disagreement_threshold_s": 0.16,
+      "words": 996,
+      "retained_fraction": 0.9613899613899614,
+      "MMS_within100ms": 0.8403614457831325,
+      "Qwen_within100ms": 0.9186746987951807,
+      "bounded40_within100ms": 0.9236947791164659
+    },
+    {
+      "disagreement_threshold_s": null,
+      "words": 1036,
+      "retained_fraction": 1.0,
+      "MMS_within100ms": 0.8137065637065637,
+      "Qwen_within100ms": 0.9025096525096525,
+      "bounded40_within100ms": 0.8976833976833977
+    }
+  ],
+  "unsupported": [
+    {
+      "disagreement_threshold_s": 0.02,
+      "words": 7,
+      "retained_fraction": 0.022508038585209004,
+      "MMS_within100ms": 0.8571428571428571,
+      "Qwen_within100ms": 0.7142857142857143,
+      "bounded40_within100ms": 0.8571428571428571
+    },
+    {
+      "disagreement_threshold_s": 0.04,
+      "words": 27,
+      "retained_fraction": 0.08681672025723473,
+      "MMS_within100ms": 0.8518518518518519,
+      "Qwen_within100ms": 0.7777777777777778,
+      "bounded40_within100ms": 0.8518518518518519
+    },
+    {
+      "disagreement_threshold_s": 0.08,
+      "words": 64,
+      "retained_fraction": 0.2057877813504823,
+      "MMS_within100ms": 0.75,
+      "Qwen_within100ms": 0.796875,
+      "bounded40_within100ms": 0.796875
+    },
+    {
+      "disagreement_threshold_s": 0.16,
+      "words": 91,
+      "retained_fraction": 0.29260450160771706,
+      "MMS_within100ms": 0.6483516483516484,
+      "Qwen_within100ms": 0.7802197802197802,
+      "bounded40_within100ms": 0.7472527472527473
+    },
+    {
+      "disagreement_threshold_s": null,
+      "words": 311,
+      "retained_fraction": 1.0,
+      "MMS_within100ms": 0.2508038585209003,
+      "Qwen_within100ms": 0.26366559485530544,
+      "bounded40_within100ms": 0.2604501607717042
+    }
+  ]
+}

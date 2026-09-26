@@ -1,0 +1,312 @@
+{
+  "sample_id": "-wny0OAz3g8$_$5",
+  "table_row_0based": 61,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-wny0OAz3g8/5.mp4",
+  "source_sha256": "6c6a8a4cba654b25190ab1793bfae81c3d2159ecd6cbc02d3fcbd598543acce0",
+  "text_original": "This is what’s now known as racial formation theory, a theory formalized by modern sociologists Michael Omi and Howard Winant",
+  "words": [
+    {
+      "word": "this",
+      "source_text": "This",
+      "char_start": 0,
+      "char_end": 4,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "this"
+      ]
+    },
+    {
+      "word": "is",
+      "source_text": "is",
+      "char_start": 5,
+      "char_end": 7,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "is"
+      ]
+    },
+    {
+      "word": "what's",
+      "source_text": "what's",
+      "char_start": 8,
+      "char_end": 14,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3,
+        4,
+        5
+      ],
+      "bert_tokens": [
+        "what",
+        "’",
+        "s"
+      ]
+    },
+    {
+      "word": "now",
+      "source_text": "now",
+      "char_start": 15,
+      "char_end": 18,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "now"
+      ]
+    },
+    {
+      "word": "known",
+      "source_text": "known",
+      "char_start": 19,
+      "char_end": 24,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "known"
+      ]
+    },
+    {
+      "word": "as",
+      "source_text": "as",
+      "char_start": 25,
+      "char_end": 27,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "as"
+      ]
+    },
+    {
+      "word": "racial",
+      "source_text": "racial",
+      "char_start": 28,
+      "char_end": 34,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "racial"
+      ]
+    },
+    {
+      "word": "formation",
+      "source_text": "formation",
+      "char_start": 35,
+      "char_end": 44,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "formation"
+      ]
+    },
+    {
+      "word": "theory",
+      "source_text": "theory",
+      "char_start": 45,
+      "char_end": 51,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "theory"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 53,
+      "char_end": 54,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "theory",
+      "source_text": "theory",
+      "char_start": 55,
+      "char_end": 61,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "theory"
+      ]
+    },
+    {
+      "word": "formalized",
+      "source_text": "formalized",
+      "char_start": 62,
+      "char_end": 72,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15,
+        16
+      ],
+      "bert_tokens": [
+        "formal",
+        "##ized"
+      ]
+    },
+    {
+      "word": "by",
+      "source_text": "by",
+      "char_start": 73,
+      "char_end": 75,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17
+      ],
+      "bert_tokens": [
+        "by"
+      ]
+    },
+    {
+      "word": "modern",
+      "source_text": "modern",
+      "char_start": 76,
+      "char_end": 82,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        18
+      ],
+      "bert_tokens": [
+        "modern"
+      ]
+    },
+    {
+      "word": "sociologists",
+      "source_text": "sociologists",
+      "char_start": 83,
+      "char_end": 95,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        19,
+        20
+      ],
+      "bert_tokens": [
+        "sociologist",
+        "##s"
+      ]
+    },
+    {
+      "word": "michael",
+      "source_text": "Michael",
+      "char_start": 96,
+      "char_end": 103,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        21
+      ],
+      "bert_tokens": [
+        "michael"
+      ]
+    },
+    {
+      "word": "omi",
+      "source_text": "Omi",
+      "char_start": 104,
+      "char_end": 107,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        22,
+        23
+      ],
+      "bert_tokens": [
+        "om",
+        "##i"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 108,
+      "char_end": 111,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        24
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "howard",
+      "source_text": "Howard",
+      "char_start": 112,
+      "char_end": 118,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        25
+      ],
+      "bert_tokens": [
+        "howard"
+      ]
+    },
+    {
+      "word": "winant",
+      "source_text": "Winant",
+      "char_start": 119,
+      "char_end": 125,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        26,
+        27
+      ],
+      "bert_tokens": [
+        "win",
+        "##ant"
+      ]
+    }
+  ],
+  "duration_s": 6.8999999999999995,
+  "container_declared_duration_s": 9.967,
+  "media_clock": {
+    "stem": "-wny0OAz3g8__5",
+    "sample_id": "-wny0OAz3g8$_$5",
+    "container_duration_s": 9.967,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 6.7414375,
+    "audio_end_s": 6.7414375,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 6.866667,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 6.8999999999999995,
+    "observed_end_s": 6.8999999999999995,
+    "empty_declared_tail_s": 3.067000000000001,
+    "original_video_frames": 204,
+    "source_sha256": "6c6a8a4cba654b25190ab1793bfae81c3d2159ecd6cbc02d3fcbd598543acce0"
+  },
+  "decoded_audio_duration_s": 6.7414375,
+  "audio_start_s": 0.0,
+  "feature_sha256": "31b56aa155ae5b7670dc3ed447e328550797b9e83d91a8ce6826316032576a9d",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-wny0OAz3g8__5.json": "77f0afea17bcb4648b907e93896ff47d1897fbe24358f1262ba380bf0f9ee4b1",
+    "results/q1/samples/-wny0OAz3g8__5.npz": "df4490e1f99dc6cd93b6f3e9eba36adb9b5ae526d97e7137adf2f6f11e76b358",
+    "results/q1_next/enhanced/-wny0OAz3g8__5.npz": "145aaa05d5cbc5fd122d89996772d3ce8561d3e60837cba88281c998b714e614",
+    "results/q1_refinement_v1/faces/-wny0OAz3g8__5.npz": "56418fa718d8b44f1efd68ecf7ebd3bc4e7f15e206b8bf34a40564e343753ca7",
+    "results/q1_deep_v6/alignment/MMS_FA/-wny0OAz3g8__5/original.npz": "4364517a87192fd86eec0c1abc6c1824aaf6a5d34402204a7bef35c95b07ca57",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

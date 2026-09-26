@@ -1,0 +1,25 @@
+{
+  "samples": 100,
+  "frames": 38902,
+  "joint_voiced": 17039,
+  "within_one_semitone": 15663,
+  "rule": "Optional diagnostic only: nearest eGeMAPS window midpoint <=15ms; both F0 outputs voiced and <=1 semitone apart. Public COVAREP is not used in this flag or any primary feature.",
+  "all_joint": {
+    "frames": 16393,
+    "median_semitones": 0.11234092712402344,
+    "p95_semitones": 0.794152891635894,
+    "within_one_semitone": 0.9604099310681389
+  },
+  "agreement": {
+    "frames": 15184,
+    "median_semitones": 0.10671670734882355,
+    "p95_semitones": 0.6067159175872803,
+    "within_one_semitone": 0.9722734457323499
+  },
+  "disagreement": {
+    "frames": 1209,
+    "median_semitones": 0.38427871465682983,
+    "p95_semitones": 18.291702651977385,
+    "within_one_semitone": 0.8114143920595533
+  }
+}

@@ -1,0 +1,395 @@
+{
+  "sample_id": "-UuX1xuaiiE$_$1",
+  "table_row_0based": 14,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-UuX1xuaiiE/1.mp4",
+  "source_sha256": "d5bbda38fcec15817d2b87bab5dcc559d6d425f7d28a82e6c32d13f14b48650c",
+  "text_original": "^And all of them are really being able to explore ^these different areas in depth ^in a way that really wasn't available ^before the center was here",
+  "words": [
+    {
+      "word": "and",
+      "source_text": "And",
+      "char_start": 1,
+      "char_end": 4,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "all",
+      "source_text": "all",
+      "char_start": 5,
+      "char_end": 8,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "all"
+      ]
+    },
+    {
+      "word": "of",
+      "source_text": "of",
+      "char_start": 9,
+      "char_end": 11,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "of"
+      ]
+    },
+    {
+      "word": "them",
+      "source_text": "them",
+      "char_start": 12,
+      "char_end": 16,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "them"
+      ]
+    },
+    {
+      "word": "are",
+      "source_text": "are",
+      "char_start": 17,
+      "char_end": 20,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "are"
+      ]
+    },
+    {
+      "word": "really",
+      "source_text": "really",
+      "char_start": 21,
+      "char_end": 27,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "really"
+      ]
+    },
+    {
+      "word": "being",
+      "source_text": "being",
+      "char_start": 28,
+      "char_end": 33,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "being"
+      ]
+    },
+    {
+      "word": "able",
+      "source_text": "able",
+      "char_start": 34,
+      "char_end": 38,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "able"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 39,
+      "char_end": 41,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "explore",
+      "source_text": "explore",
+      "char_start": 42,
+      "char_end": 49,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "explore"
+      ]
+    },
+    {
+      "word": "these",
+      "source_text": "these",
+      "char_start": 51,
+      "char_end": 56,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "these"
+      ]
+    },
+    {
+      "word": "different",
+      "source_text": "different",
+      "char_start": 57,
+      "char_end": 66,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "different"
+      ]
+    },
+    {
+      "word": "areas",
+      "source_text": "areas",
+      "char_start": 67,
+      "char_end": 72,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "areas"
+      ]
+    },
+    {
+      "word": "in",
+      "source_text": "in",
+      "char_start": 73,
+      "char_end": 75,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "in"
+      ]
+    },
+    {
+      "word": "depth",
+      "source_text": "depth",
+      "char_start": 76,
+      "char_end": 81,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "depth"
+      ]
+    },
+    {
+      "word": "in",
+      "source_text": "in",
+      "char_start": 83,
+      "char_end": 85,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "in"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 86,
+      "char_end": 87,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "way",
+      "source_text": "way",
+      "char_start": 88,
+      "char_end": 91,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        18
+      ],
+      "bert_tokens": [
+        "way"
+      ]
+    },
+    {
+      "word": "that",
+      "source_text": "that",
+      "char_start": 92,
+      "char_end": 96,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        19
+      ],
+      "bert_tokens": [
+        "that"
+      ]
+    },
+    {
+      "word": "really",
+      "source_text": "really",
+      "char_start": 97,
+      "char_end": 103,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        20
+      ],
+      "bert_tokens": [
+        "really"
+      ]
+    },
+    {
+      "word": "wasn't",
+      "source_text": "wasn't",
+      "char_start": 104,
+      "char_end": 110,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        21,
+        22,
+        23
+      ],
+      "bert_tokens": [
+        "wasn",
+        "'",
+        "t"
+      ]
+    },
+    {
+      "word": "available",
+      "source_text": "available",
+      "char_start": 111,
+      "char_end": 120,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        24
+      ],
+      "bert_tokens": [
+        "available"
+      ]
+    },
+    {
+      "word": "before",
+      "source_text": "before",
+      "char_start": 122,
+      "char_end": 128,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        25
+      ],
+      "bert_tokens": [
+        "before"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 129,
+      "char_end": 132,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        26
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "center",
+      "source_text": "center",
+      "char_start": 133,
+      "char_end": 139,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        27
+      ],
+      "bert_tokens": [
+        "center"
+      ]
+    },
+    {
+      "word": "was",
+      "source_text": "was",
+      "char_start": 140,
+      "char_end": 143,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        28
+      ],
+      "bert_tokens": [
+        "was"
+      ]
+    },
+    {
+      "word": "here",
+      "source_text": "here",
+      "char_start": 144,
+      "char_end": 148,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        29
+      ],
+      "bert_tokens": [
+        "here"
+      ]
+    }
+  ],
+  "duration_s": 10.333333000000001,
+  "container_declared_duration_s": 13.434,
+  "media_clock": {
+    "stem": "-UuX1xuaiiE__1",
+    "sample_id": "-UuX1xuaiiE$_$1",
+    "container_duration_s": 13.434,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 10.2675,
+    "audio_end_s": 10.2675,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 10.3,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 10.333333000000001,
+    "observed_end_s": 10.333333000000001,
+    "empty_declared_tail_s": 3.100666999999998,
+    "original_video_frames": 309,
+    "source_sha256": "d5bbda38fcec15817d2b87bab5dcc559d6d425f7d28a82e6c32d13f14b48650c"
+  },
+  "decoded_audio_duration_s": 10.2675,
+  "audio_start_s": 0.0,
+  "feature_sha256": "685c14035bf99fad91fb47ffd3ee62dbdbad13878009c8cf57372ec6c694698f",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-UuX1xuaiiE__1.json": "6990516c5a2747f986311e39fe28548571de05ffd4b885793dba1e0fce8d3348",
+    "results/q1/samples/-UuX1xuaiiE__1.npz": "83deddaa3907128138c4e94b15784cedbbcda112d27a0dde6cc7ac3876e2f826",
+    "results/q1_next/enhanced/-UuX1xuaiiE__1.npz": "ee011e978d26e624cd7bf6f4f7f6c502f116f5d06f4ef2856abcb63fec5ce149",
+    "results/q1_refinement_v1/faces/-UuX1xuaiiE__1.npz": "087e8c660bd26acde840cb0b5838516e3129a06ebf82b5edea60bdac12dc3683",
+    "results/q1_deep_v6/alignment/MMS_FA/-UuX1xuaiiE__1/original.npz": "22cb44d4b5611db291f24a88afd92cba873e52f3360c60925537a8ec7f2ed46f",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

@@ -1,0 +1,222 @@
+{
+  "sample_id": "-MeTTeMJBNc$_$13",
+  "table_row_0based": 81,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-MeTTeMJBNc/13.mp4",
+  "source_sha256": "80c5d996e5d7b61c58e1fe32d706efcaf80c8c8cddb5c37a5c66d527786c2a44",
+  "text_original": "It just needs to be a simple statement, and then you present the gift.",
+  "words": [
+    {
+      "word": "it",
+      "source_text": "It",
+      "char_start": 0,
+      "char_end": 2,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "it"
+      ]
+    },
+    {
+      "word": "just",
+      "source_text": "just",
+      "char_start": 3,
+      "char_end": 7,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "just"
+      ]
+    },
+    {
+      "word": "needs",
+      "source_text": "needs",
+      "char_start": 8,
+      "char_end": 13,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "needs"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 14,
+      "char_end": 16,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "be",
+      "source_text": "be",
+      "char_start": 17,
+      "char_end": 19,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "be"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 20,
+      "char_end": 21,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "simple",
+      "source_text": "simple",
+      "char_start": 22,
+      "char_end": 28,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "simple"
+      ]
+    },
+    {
+      "word": "statement",
+      "source_text": "statement",
+      "char_start": 29,
+      "char_end": 38,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "statement"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 40,
+      "char_end": 43,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "then",
+      "source_text": "then",
+      "char_start": 44,
+      "char_end": 48,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "then"
+      ]
+    },
+    {
+      "word": "you",
+      "source_text": "you",
+      "char_start": 49,
+      "char_end": 52,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "you"
+      ]
+    },
+    {
+      "word": "present",
+      "source_text": "present",
+      "char_start": 53,
+      "char_end": 60,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "present"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 61,
+      "char_end": 64,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "gift",
+      "source_text": "gift",
+      "char_start": 65,
+      "char_end": 69,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "gift"
+      ]
+    }
+  ],
+  "duration_s": 5.3999999999999995,
+  "container_declared_duration_s": 7.467,
+  "media_clock": {
+    "stem": "-MeTTeMJBNc__13",
+    "sample_id": "-MeTTeMJBNc$_$13",
+    "container_duration_s": 7.467,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 5.2555,
+    "audio_end_s": 5.2555,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 5.366667,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 5.3999999999999995,
+    "observed_end_s": 5.3999999999999995,
+    "empty_declared_tail_s": 2.067,
+    "original_video_frames": 159,
+    "source_sha256": "80c5d996e5d7b61c58e1fe32d706efcaf80c8c8cddb5c37a5c66d527786c2a44"
+  },
+  "decoded_audio_duration_s": 5.2555,
+  "audio_start_s": 0.0,
+  "feature_sha256": "29ffb995b8dd82f73c3891bbe8fe3c9474740048352e456aef09db009ce142da",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-MeTTeMJBNc__13.json": "95ca85f9a26a8566824c28a3f3635ce4b836c0deaf12bfef4573640b8af0f735",
+    "results/q1/samples/-MeTTeMJBNc__13.npz": "32272832d1590ec9ddb3b1859833b91cba33dfc7b7e9d45b7c7d293c3d94b233",
+    "results/q1_next/enhanced/-MeTTeMJBNc__13.npz": "db6279df039c4dd06203177fb99c714c9e14da5cbc7b868dbfeb175af48815c3",
+    "results/q1_refinement_v1/faces/-MeTTeMJBNc__13.npz": "4c4db230a80526c3f26f6b14403c1925e2201f357fe209e0f30132e0b3efb078",
+    "results/q1_deep_v6/alignment/MMS_FA/-MeTTeMJBNc__13/original.npz": "8320e738f51ff14c4838597968920f1ecbf4ff0d4ba0c269661e5f03939395eb",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

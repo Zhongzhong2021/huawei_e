@@ -1,0 +1,26 @@
+{
+  "pdf_pages": 7,
+  "pdf_all_pages_visually_reviewed": true,
+  "main_npz_and_json_byte_identical": 200,
+  "samples": 100,
+  "words": 1948,
+  "grid_positions": 7905,
+  "all_100_table_rows_checked_against_arrays": true,
+  "grid_scene_counts_independently_computed": true,
+  "padding_checked": true,
+  "all_main_python_files_compile": true,
+  "docker_compose_config_passed": true,
+  "reader_check_passed": true,
+  "interface_check": "interface_check/results.json",
+  "external_recalculation": {
+    "word_records_checked": 1348,
+    "word_summary_recomputed": true,
+    "audio_frames_checked": 38174,
+    "visual_frames_checked": 7728,
+    "pitch_diagnostic_samples": 100,
+    "passed": true
+  },
+  "new_model_inference": false,
+  "previous_full_rebuild": "reproduction/rebuild_run.json",
+  "historical_artifacts_changed": false
+}

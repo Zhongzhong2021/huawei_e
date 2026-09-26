@@ -1,0 +1,317 @@
+{
+  "sample_id": "-iRBcNs9oI8$_$8",
+  "table_row_0based": 38,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-iRBcNs9oI8/8.mp4",
+  "source_sha256": "72a49e3da2862addcde033bd2fbae957d086533664ca4dcbccd3a851bcd50412",
+  "text_original": "I've drawn this man here, and if you can tell, he has a lot of big muscles, he looks very strong",
+  "words": [
+    {
+      "word": "i've",
+      "source_text": "I've",
+      "char_start": 0,
+      "char_end": 4,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1,
+        2,
+        3
+      ],
+      "bert_tokens": [
+        "i",
+        "'",
+        "ve"
+      ]
+    },
+    {
+      "word": "drawn",
+      "source_text": "drawn",
+      "char_start": 5,
+      "char_end": 10,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "drawn"
+      ]
+    },
+    {
+      "word": "this",
+      "source_text": "this",
+      "char_start": 11,
+      "char_end": 15,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "this"
+      ]
+    },
+    {
+      "word": "man",
+      "source_text": "man",
+      "char_start": 16,
+      "char_end": 19,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "man"
+      ]
+    },
+    {
+      "word": "here",
+      "source_text": "here",
+      "char_start": 20,
+      "char_end": 24,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "here"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 26,
+      "char_end": 29,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "if",
+      "source_text": "if",
+      "char_start": 30,
+      "char_end": 32,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "if"
+      ]
+    },
+    {
+      "word": "you",
+      "source_text": "you",
+      "char_start": 33,
+      "char_end": 36,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "you"
+      ]
+    },
+    {
+      "word": "can",
+      "source_text": "can",
+      "char_start": 37,
+      "char_end": 40,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "can"
+      ]
+    },
+    {
+      "word": "tell",
+      "source_text": "tell",
+      "char_start": 41,
+      "char_end": 45,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "tell"
+      ]
+    },
+    {
+      "word": "he",
+      "source_text": "he",
+      "char_start": 47,
+      "char_end": 49,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "he"
+      ]
+    },
+    {
+      "word": "has",
+      "source_text": "has",
+      "char_start": 50,
+      "char_end": 53,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "has"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 54,
+      "char_end": 55,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "lot",
+      "source_text": "lot",
+      "char_start": 56,
+      "char_end": 59,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        18
+      ],
+      "bert_tokens": [
+        "lot"
+      ]
+    },
+    {
+      "word": "of",
+      "source_text": "of",
+      "char_start": 60,
+      "char_end": 62,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        19
+      ],
+      "bert_tokens": [
+        "of"
+      ]
+    },
+    {
+      "word": "big",
+      "source_text": "big",
+      "char_start": 63,
+      "char_end": 66,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        20
+      ],
+      "bert_tokens": [
+        "big"
+      ]
+    },
+    {
+      "word": "muscles",
+      "source_text": "muscles",
+      "char_start": 67,
+      "char_end": 74,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        21
+      ],
+      "bert_tokens": [
+        "muscles"
+      ]
+    },
+    {
+      "word": "he",
+      "source_text": "he",
+      "char_start": 76,
+      "char_end": 78,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        23
+      ],
+      "bert_tokens": [
+        "he"
+      ]
+    },
+    {
+      "word": "looks",
+      "source_text": "looks",
+      "char_start": 79,
+      "char_end": 84,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        24
+      ],
+      "bert_tokens": [
+        "looks"
+      ]
+    },
+    {
+      "word": "very",
+      "source_text": "very",
+      "char_start": 85,
+      "char_end": 89,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        25
+      ],
+      "bert_tokens": [
+        "very"
+      ]
+    },
+    {
+      "word": "strong",
+      "source_text": "strong",
+      "char_start": 90,
+      "char_end": 96,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        26
+      ],
+      "bert_tokens": [
+        "strong"
+      ]
+    }
+  ],
+  "duration_s": 8.074734,
+  "container_declared_duration_s": 8.642,
+  "media_clock": {
+    "stem": "-iRBcNs9oI8__8",
+    "sample_id": "-iRBcNs9oI8$_$8",
+    "container_duration_s": 8.642,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 8.0260625,
+    "audio_end_s": 8.0260625,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 8.041367,
+    "last_frame_duration_s": 0.033367,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 8.074734,
+    "observed_end_s": 8.074734,
+    "empty_declared_tail_s": 0.567266,
+    "original_video_frames": 241,
+    "source_sha256": "72a49e3da2862addcde033bd2fbae957d086533664ca4dcbccd3a851bcd50412"
+  },
+  "decoded_audio_duration_s": 8.0260625,
+  "audio_start_s": 0.0,
+  "feature_sha256": "744657a3ca61ebe6b7373e9032bddf3e257813eb66c008e8a8803144c4c9de6d",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-iRBcNs9oI8__8.json": "4818743819827eca229dc1a070999ace6445131ea73b324701b71f46a6a51bad",
+    "results/q1/samples/-iRBcNs9oI8__8.npz": "86b5265204f429fa1e26e7d3e8d16162d0976bd2029ad12ae392a7549e634191",
+    "results/q1_next/enhanced/-iRBcNs9oI8__8.npz": "45d64322897e109fcb67f4443e124daf5de26f22a39199d7a3823f25c14c7c12",
+    "results/q1_refinement_v1/faces/-iRBcNs9oI8__8.npz": "ad11caf6ebe94a1e6e680fdc1318608af05d8310a4f441fdbb7120293f5af976",
+    "results/q1_deep_v6/alignment/MMS_FA/-iRBcNs9oI8__8/original.npz": "98dae9f566fbe541e3e533c798b5db6b711db6373a8531c4ffc9f3cb20d66dec",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

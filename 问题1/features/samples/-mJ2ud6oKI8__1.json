@@ -1,0 +1,209 @@
+{
+  "sample_id": "-mJ2ud6oKI8$_$1",
+  "table_row_0based": 41,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-mJ2ud6oKI8/1.mp4",
+  "source_sha256": "c8e3acb4ca08679796c4c8cdfcd8c2b3cffc0465015efaffa1eccdb55ff4f45b",
+  "text_original": "There are a dozen or more hands on techniques that we can do",
+  "words": [
+    {
+      "word": "there",
+      "source_text": "There",
+      "char_start": 0,
+      "char_end": 5,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "there"
+      ]
+    },
+    {
+      "word": "are",
+      "source_text": "are",
+      "char_start": 6,
+      "char_end": 9,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "are"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 10,
+      "char_end": 11,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "dozen",
+      "source_text": "dozen",
+      "char_start": 12,
+      "char_end": 17,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "dozen"
+      ]
+    },
+    {
+      "word": "or",
+      "source_text": "or",
+      "char_start": 18,
+      "char_end": 20,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "or"
+      ]
+    },
+    {
+      "word": "more",
+      "source_text": "more",
+      "char_start": 21,
+      "char_end": 25,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "more"
+      ]
+    },
+    {
+      "word": "hands",
+      "source_text": "hands",
+      "char_start": 26,
+      "char_end": 31,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "hands"
+      ]
+    },
+    {
+      "word": "on",
+      "source_text": "on",
+      "char_start": 32,
+      "char_end": 34,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "on"
+      ]
+    },
+    {
+      "word": "techniques",
+      "source_text": "techniques",
+      "char_start": 35,
+      "char_end": 45,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "techniques"
+      ]
+    },
+    {
+      "word": "that",
+      "source_text": "that",
+      "char_start": 46,
+      "char_end": 50,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "that"
+      ]
+    },
+    {
+      "word": "we",
+      "source_text": "we",
+      "char_start": 51,
+      "char_end": 53,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "we"
+      ]
+    },
+    {
+      "word": "can",
+      "source_text": "can",
+      "char_start": 54,
+      "char_end": 57,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "can"
+      ]
+    },
+    {
+      "word": "do",
+      "source_text": "do",
+      "char_start": 58,
+      "char_end": 60,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "do"
+      ]
+    }
+  ],
+  "duration_s": 6.0727340000000005,
+  "container_declared_duration_s": 6.574,
+  "media_clock": {
+    "stem": "-mJ2ud6oKI8__1",
+    "sample_id": "-mJ2ud6oKI8$_$1",
+    "container_duration_s": 6.574,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 6.0545,
+    "audio_end_s": 6.0545,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 6.039367,
+    "last_frame_duration_s": 0.033367,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 6.0727340000000005,
+    "observed_end_s": 6.0727340000000005,
+    "empty_declared_tail_s": 0.5012659999999993,
+    "original_video_frames": 182,
+    "source_sha256": "c8e3acb4ca08679796c4c8cdfcd8c2b3cffc0465015efaffa1eccdb55ff4f45b"
+  },
+  "decoded_audio_duration_s": 6.0545,
+  "audio_start_s": 0.0,
+  "feature_sha256": "3a2b941c51288db2f24ae6383ff46f21103554424b02aa45225cc46c06e058af",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-mJ2ud6oKI8__1.json": "f8e5af35deb3edd1169bd809409ccbacf3615cd2b21d718a554695014fb6eddd",
+    "results/q1/samples/-mJ2ud6oKI8__1.npz": "5ef5f02083f80c2343489485d4a0e18d292644c136431d1cc11ae3bbfc2ea1f8",
+    "results/q1_next/enhanced/-mJ2ud6oKI8__1.npz": "a7160f02cdd9497077085d598c6d65764e5f01a3a0235198ca6d540ee57494f2",
+    "results/q1_refinement_v1/faces/-mJ2ud6oKI8__1.npz": "9da429d7be283eb188090047f4d9ae34de6c2a3b6326524c56290a78d033c63f",
+    "results/q1_deep_v6/alignment/MMS_FA/-mJ2ud6oKI8__1/original.npz": "a5587fe3f3d36143a127eb03c55d0f7649e0cf6acf9366b9876df196f6913312",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

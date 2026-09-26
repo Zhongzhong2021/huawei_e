@@ -1,0 +1,157 @@
+{
+  "sample_id": "-UuX1xuaiiE$_$3",
+  "table_row_0based": 16,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-UuX1xuaiiE/3.mp4",
+  "source_sha256": "eddb408f25bdc13e6de2fb74caeed709cb7a8f00640e7897135330437f66a2aa",
+  "text_original": "My goal is to become a human rights lawyer",
+  "words": [
+    {
+      "word": "my",
+      "source_text": "My",
+      "char_start": 0,
+      "char_end": 2,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "my"
+      ]
+    },
+    {
+      "word": "goal",
+      "source_text": "goal",
+      "char_start": 3,
+      "char_end": 7,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "goal"
+      ]
+    },
+    {
+      "word": "is",
+      "source_text": "is",
+      "char_start": 8,
+      "char_end": 10,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "is"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 11,
+      "char_end": 13,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "become",
+      "source_text": "become",
+      "char_start": 14,
+      "char_end": 20,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "become"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 21,
+      "char_end": 22,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "human",
+      "source_text": "human",
+      "char_start": 23,
+      "char_end": 28,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "human"
+      ]
+    },
+    {
+      "word": "rights",
+      "source_text": "rights",
+      "char_start": 29,
+      "char_end": 35,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "rights"
+      ]
+    },
+    {
+      "word": "lawyer",
+      "source_text": "lawyer",
+      "char_start": 36,
+      "char_end": 42,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "lawyer"
+      ]
+    }
+  ],
+  "duration_s": 4.1,
+  "container_declared_duration_s": 10.634,
+  "media_clock": {
+    "stem": "-UuX1xuaiiE__3",
+    "sample_id": "-UuX1xuaiiE$_$3",
+    "container_duration_s": 10.634,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 4.038375,
+    "audio_end_s": 4.038375,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 4.066667,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 4.1,
+    "observed_end_s": 4.1,
+    "empty_declared_tail_s": 6.534000000000001,
+    "original_video_frames": 123,
+    "source_sha256": "eddb408f25bdc13e6de2fb74caeed709cb7a8f00640e7897135330437f66a2aa"
+  },
+  "decoded_audio_duration_s": 4.038375,
+  "audio_start_s": 0.0,
+  "feature_sha256": "985822c8c5e435a03235457a29db282dd7b81064bbe54ce1b02054eddb6d953e",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-UuX1xuaiiE__3.json": "39b0d2e55b0e5bf03d9e9e53d99597eee6719ead8a9a6ae4c09590adf4280d0e",
+    "results/q1/samples/-UuX1xuaiiE__3.npz": "26d2afe373d960b7fee5c568ac03437167016036dcef1977aafc6fe2f1fbebec",
+    "results/q1_next/enhanced/-UuX1xuaiiE__3.npz": "101e5ae82ad7df045c4c4cdcc9edce3c74b3a049c13bd7b55c8f87c35ad33ec2",
+    "results/q1_refinement_v1/faces/-UuX1xuaiiE__3.npz": "e9457e0eb525ad2d52525c2a07b8353b85c2b537033a8c46b7951083cccc8050",
+    "results/q1_deep_v6/alignment/MMS_FA/-UuX1xuaiiE__3/original.npz": "d14074d7ca1364967d3f7fa0c5cdacd1c3c30189df450720ad57529a0f0e7f42",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

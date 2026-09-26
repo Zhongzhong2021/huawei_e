@@ -1,0 +1,9 @@
+{
+  "version": "q1-quality-v1",
+  "word_min_score": 0.3,
+  "sample_min_mean_score": 0.55,
+  "sample_max_low_score_fraction": 0.35,
+  "empty_greedy_rejected": true,
+  "interpretation": "heuristic acoustic support filter, not calibrated accuracy",
+  "script_sha256": "24774e6a70a8612835a04492f0077b61f167b79a9fa80832951d07de7ec5f6d4"
+}

@@ -1,0 +1,200 @@
+{
+  "sample_id": "-tPCytz4rww$_$10",
+  "table_row_0based": 51,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-tPCytz4rww/10.mp4",
+  "source_sha256": "758183192cbd5f0f20823d26ece3ddee40dec0aadec35247b2495510a53f52f8",
+  "text_original": "Say twenty percent so if you've got a thousand square foot condo.",
+  "words": [
+    {
+      "word": "say",
+      "source_text": "Say",
+      "char_start": 0,
+      "char_end": 3,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "say"
+      ]
+    },
+    {
+      "word": "twenty",
+      "source_text": "twenty",
+      "char_start": 4,
+      "char_end": 10,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "twenty"
+      ]
+    },
+    {
+      "word": "percent",
+      "source_text": "percent",
+      "char_start": 11,
+      "char_end": 18,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "percent"
+      ]
+    },
+    {
+      "word": "so",
+      "source_text": "so",
+      "char_start": 19,
+      "char_end": 21,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "so"
+      ]
+    },
+    {
+      "word": "if",
+      "source_text": "if",
+      "char_start": 22,
+      "char_end": 24,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "if"
+      ]
+    },
+    {
+      "word": "you've",
+      "source_text": "you've",
+      "char_start": 25,
+      "char_end": 31,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6,
+        7,
+        8
+      ],
+      "bert_tokens": [
+        "you",
+        "'",
+        "ve"
+      ]
+    },
+    {
+      "word": "got",
+      "source_text": "got",
+      "char_start": 32,
+      "char_end": 35,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "got"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 36,
+      "char_end": 37,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "thousand",
+      "source_text": "thousand",
+      "char_start": 38,
+      "char_end": 46,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "thousand"
+      ]
+    },
+    {
+      "word": "square",
+      "source_text": "square",
+      "char_start": 47,
+      "char_end": 53,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "square"
+      ]
+    },
+    {
+      "word": "foot",
+      "source_text": "foot",
+      "char_start": 54,
+      "char_end": 58,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "foot"
+      ]
+    },
+    {
+      "word": "condo",
+      "source_text": "condo",
+      "char_start": 59,
+      "char_end": 64,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "condo"
+      ]
+    }
+  ],
+  "duration_s": 4.766666,
+  "container_declared_duration_s": 11.734,
+  "media_clock": {
+    "stem": "-tPCytz4rww__10",
+    "sample_id": "-tPCytz4rww$_$10",
+    "container_duration_s": 11.734,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 4.6788125,
+    "audio_end_s": 4.6788125,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 4.733333,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 4.766666,
+    "observed_end_s": 4.766666,
+    "empty_declared_tail_s": 6.967334,
+    "original_video_frames": 142,
+    "source_sha256": "758183192cbd5f0f20823d26ece3ddee40dec0aadec35247b2495510a53f52f8"
+  },
+  "decoded_audio_duration_s": 4.6788125,
+  "audio_start_s": 0.0,
+  "feature_sha256": "6669dd8ca1878ab29d92df7b1b5bf35ce2010fdcfecb1f5ca6f5758557bf2c52",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-tPCytz4rww__10.json": "196cdfa9cab1c4924e1e683ac844a9ed03659c52f98853eab7f4f7b38a2847ef",
+    "results/q1/samples/-tPCytz4rww__10.npz": "94d90eb8436b4866753a093e1a3d8d090b0f24cbda9cc92196b9b226e7b8eac3",
+    "results/q1_next/enhanced/-tPCytz4rww__10.npz": "9833d0c5b4c13f8f7da9f19f3d55e6e0038a14265061e9c10b1e276d6aeabe74",
+    "results/q1_refinement_v1/faces/-tPCytz4rww__10.npz": "7845cadc57a25dbd4daa6f1d6abca416ea74ef3bad9053691f5d4beee3372f17",
+    "results/q1_deep_v6/alignment/MMS_FA/-tPCytz4rww__10/original.npz": "6cf2e9fcee5105959e665919d03bd8f5154bcf4dc8086b6ffb4a6d550cc37dec",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

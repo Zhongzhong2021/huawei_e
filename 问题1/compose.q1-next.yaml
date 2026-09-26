@@ -1,0 +1,11 @@
+services:
+  lab:
+    image: huawei-model-e:q1-next-v1
+    build:
+      context: .
+      dockerfile: Dockerfile.q1-next
+    environment:
+      TORCH_HOME: /cache/torch
+      HF_HUB_DISABLE_XET: '1'
+      LD_LIBRARY_PATH: /opt/conda/lib/python3.11/site-packages/nvidia/cudnn/lib:/opt/conda/lib/python3.11/site-packages/nvidia/cublas/lib:/opt/conda/lib/python3.11/site-packages/nvidia/cuda_runtime/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64
+    command: [python, scripts/q1_doctor.py]

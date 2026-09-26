@@ -1,0 +1,12 @@
+{
+  "package_bytes": 30315955,
+  "package_MB": 30.315955,
+  "sha256": "10927e5b29dbfb96901cc7a2ae11d43872811a52d6391506ba45b0fa73f03233",
+  "manifest_files": 679,
+  "archive_integrity_checked": true,
+  "fresh_extraction_reader_passed": true,
+  "fresh_extraction_external_recalculation_passed": true,
+  "pages": 7,
+  "previous_combined_bytes": 53123941,
+  "space_left_under_50_decimal_MB": 19684045
+}

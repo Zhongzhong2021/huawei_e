@@ -1,0 +1,1 @@
+{"gpu": "NVIDIA GeForce RTX 4060", "gpu_memory_bytes": 8585216000, "python": "3.11.13", "torch": "2.7.1+cu126", "logical_cpus": 32}

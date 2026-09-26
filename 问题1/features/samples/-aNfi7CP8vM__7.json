@@ -1,0 +1,278 @@
+{
+  "sample_id": "-aNfi7CP8vM$_$7",
+  "table_row_0based": 19,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-aNfi7CP8vM/7.mp4",
+  "source_sha256": "0b6389f45bb966113c65a11998c6e7facdd24c8c42acf2e8cf32e0f2139402e1",
+  "text_original": "Maybe they have no political party affiliation, they're not interested in politics, they could care less about politics.",
+  "words": [
+    {
+      "word": "maybe",
+      "source_text": "Maybe",
+      "char_start": 0,
+      "char_end": 5,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "maybe"
+      ]
+    },
+    {
+      "word": "they",
+      "source_text": "they",
+      "char_start": 6,
+      "char_end": 10,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "they"
+      ]
+    },
+    {
+      "word": "have",
+      "source_text": "have",
+      "char_start": 11,
+      "char_end": 15,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "have"
+      ]
+    },
+    {
+      "word": "no",
+      "source_text": "no",
+      "char_start": 16,
+      "char_end": 18,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "no"
+      ]
+    },
+    {
+      "word": "political",
+      "source_text": "political",
+      "char_start": 19,
+      "char_end": 28,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "political"
+      ]
+    },
+    {
+      "word": "party",
+      "source_text": "party",
+      "char_start": 29,
+      "char_end": 34,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "party"
+      ]
+    },
+    {
+      "word": "affiliation",
+      "source_text": "affiliation",
+      "char_start": 35,
+      "char_end": 46,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "affiliation"
+      ]
+    },
+    {
+      "word": "they're",
+      "source_text": "they're",
+      "char_start": 48,
+      "char_end": 55,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9,
+        10,
+        11
+      ],
+      "bert_tokens": [
+        "they",
+        "'",
+        "re"
+      ]
+    },
+    {
+      "word": "not",
+      "source_text": "not",
+      "char_start": 56,
+      "char_end": 59,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "not"
+      ]
+    },
+    {
+      "word": "interested",
+      "source_text": "interested",
+      "char_start": 60,
+      "char_end": 70,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "interested"
+      ]
+    },
+    {
+      "word": "in",
+      "source_text": "in",
+      "char_start": 71,
+      "char_end": 73,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "in"
+      ]
+    },
+    {
+      "word": "politics",
+      "source_text": "politics",
+      "char_start": 74,
+      "char_end": 82,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "politics"
+      ]
+    },
+    {
+      "word": "they",
+      "source_text": "they",
+      "char_start": 84,
+      "char_end": 88,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17
+      ],
+      "bert_tokens": [
+        "they"
+      ]
+    },
+    {
+      "word": "could",
+      "source_text": "could",
+      "char_start": 89,
+      "char_end": 94,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        18
+      ],
+      "bert_tokens": [
+        "could"
+      ]
+    },
+    {
+      "word": "care",
+      "source_text": "care",
+      "char_start": 95,
+      "char_end": 99,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        19
+      ],
+      "bert_tokens": [
+        "care"
+      ]
+    },
+    {
+      "word": "less",
+      "source_text": "less",
+      "char_start": 100,
+      "char_end": 104,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        20
+      ],
+      "bert_tokens": [
+        "less"
+      ]
+    },
+    {
+      "word": "about",
+      "source_text": "about",
+      "char_start": 105,
+      "char_end": 110,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        21
+      ],
+      "bert_tokens": [
+        "about"
+      ]
+    },
+    {
+      "word": "politics",
+      "source_text": "politics",
+      "char_start": 111,
+      "char_end": 119,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        22
+      ],
+      "bert_tokens": [
+        "politics"
+      ]
+    }
+  ],
+  "duration_s": 8.666666000000001,
+  "container_declared_duration_s": 11.334,
+  "media_clock": {
+    "stem": "-aNfi7CP8vM__7",
+    "sample_id": "-aNfi7CP8vM$_$7",
+    "container_duration_s": 11.334,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 8.5376875,
+    "audio_end_s": 8.5376875,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 8.633333,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 8.666666000000001,
+    "observed_end_s": 8.666666000000001,
+    "empty_declared_tail_s": 2.6673339999999985,
+    "original_video_frames": 257,
+    "source_sha256": "0b6389f45bb966113c65a11998c6e7facdd24c8c42acf2e8cf32e0f2139402e1"
+  },
+  "decoded_audio_duration_s": 8.5376875,
+  "audio_start_s": 0.0,
+  "feature_sha256": "421888d842e8eddce581a29d1dcd33df2850e28c892d5e4b4181f4829bfe3f8f",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-aNfi7CP8vM__7.json": "0373b1bd23ad8b2a99a1e3e3262debbc62cbd000a37e69dac3918ad9a8beef9b",
+    "results/q1/samples/-aNfi7CP8vM__7.npz": "bc9f24f97dbb5e954adbc09b6d68e5e4f74467f89d64998e96b0183db437d71d",
+    "results/q1_next/enhanced/-aNfi7CP8vM__7.npz": "4a421b67f8242b379d510caa02e7b739b21f2310168e8e54019880a152bde4a2",
+    "results/q1_refinement_v1/faces/-aNfi7CP8vM__7.npz": "08c60892923b7d9196a951ad2b320dce355e39241a4751d3ca6e15d6595106b6",
+    "results/q1_deep_v6/alignment/MMS_FA/-aNfi7CP8vM__7/original.npz": "3506d5bb92cc0ba1cd94919f8726947cc2104e027a209466df0769c1f0a1afb0",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

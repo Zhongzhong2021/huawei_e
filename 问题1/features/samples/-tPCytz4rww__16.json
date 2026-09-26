@@ -1,0 +1,248 @@
+{
+  "sample_id": "-tPCytz4rww$_$16",
+  "table_row_0based": 53,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-tPCytz4rww/16.mp4",
+  "source_sha256": "8b3f82f9628792eebaf8c227becc2ebeba59bb8abb668bcca86e07fb1a992a93",
+  "text_original": "So make sure to get a through or to do a through cleaning of the property.",
+  "words": [
+    {
+      "word": "so",
+      "source_text": "So",
+      "char_start": 0,
+      "char_end": 2,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "so"
+      ]
+    },
+    {
+      "word": "make",
+      "source_text": "make",
+      "char_start": 3,
+      "char_end": 7,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "make"
+      ]
+    },
+    {
+      "word": "sure",
+      "source_text": "sure",
+      "char_start": 8,
+      "char_end": 12,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "sure"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 13,
+      "char_end": 15,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "get",
+      "source_text": "get",
+      "char_start": 16,
+      "char_end": 19,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "get"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 20,
+      "char_end": 21,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "through",
+      "source_text": "through",
+      "char_start": 22,
+      "char_end": 29,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "through"
+      ]
+    },
+    {
+      "word": "or",
+      "source_text": "or",
+      "char_start": 30,
+      "char_end": 32,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "or"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 33,
+      "char_end": 35,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "do",
+      "source_text": "do",
+      "char_start": 36,
+      "char_end": 38,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "do"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 39,
+      "char_end": 40,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "through",
+      "source_text": "through",
+      "char_start": 41,
+      "char_end": 48,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "through"
+      ]
+    },
+    {
+      "word": "cleaning",
+      "source_text": "cleaning",
+      "char_start": 49,
+      "char_end": 57,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "cleaning"
+      ]
+    },
+    {
+      "word": "of",
+      "source_text": "of",
+      "char_start": 58,
+      "char_end": 60,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "of"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 61,
+      "char_end": 64,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "property",
+      "source_text": "property",
+      "char_start": 65,
+      "char_end": 73,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "property"
+      ]
+    }
+  ],
+  "duration_s": 7.2,
+  "container_declared_duration_s": 13.236,
+  "media_clock": {
+    "stem": "-tPCytz4rww__16",
+    "sample_id": "-tPCytz4rww$_$16",
+    "container_duration_s": 13.236,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 7.1391875,
+    "audio_end_s": 7.1391875,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 7.166667,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 7.2,
+    "observed_end_s": 7.2,
+    "empty_declared_tail_s": 6.0360000000000005,
+    "original_video_frames": 216,
+    "source_sha256": "8b3f82f9628792eebaf8c227becc2ebeba59bb8abb668bcca86e07fb1a992a93"
+  },
+  "decoded_audio_duration_s": 7.1391875,
+  "audio_start_s": 0.0,
+  "feature_sha256": "2453a6c657c2f533d572c01e49898af4d05570d459e21984e8c316b80ab91097",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-tPCytz4rww__16.json": "ee8200e75e7af17b2a965c213229be90b65893688ec7dcf8cb2f80ae0cfa419f",
+    "results/q1/samples/-tPCytz4rww__16.npz": "21df70602eb01ba298cac14989c6f91028709c0df978f6d9e8713851e8d079b5",
+    "results/q1_next/enhanced/-tPCytz4rww__16.npz": "5488102663115b9713f688fdbd78911525eb7908b67cdbede54439701886c675",
+    "results/q1_refinement_v1/faces/-tPCytz4rww__16.npz": "b76739b5bbabf9eec1867e3ae8630cdb155ce4918490f9189272ec66d225a609",
+    "results/q1_deep_v6/alignment/MMS_FA/-tPCytz4rww__16/original.npz": "87a44cef89fb3838d0d1baf77fa0a6cbf531573308c57a79dfb5149da7b2cb18",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

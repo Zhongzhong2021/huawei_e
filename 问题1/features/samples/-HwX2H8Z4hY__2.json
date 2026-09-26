@@ -1,0 +1,92 @@
+{
+  "sample_id": "-HwX2H8Z4hY$_$2",
+  "table_row_0based": 5,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-HwX2H8Z4hY/2.mp4",
+  "source_sha256": "920a1052c09ebd1eedba6dd1ccfecd80f56f6f0fdcdd1f6dd32b0d90bcb89358",
+  "text_original": "” [President Ronald Reagan:] \"Look at the record",
+  "words": [
+    {
+      "word": "look",
+      "source_text": "Look",
+      "char_start": 30,
+      "char_end": 34,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "look"
+      ]
+    },
+    {
+      "word": "at",
+      "source_text": "at",
+      "char_start": 35,
+      "char_end": 37,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "at"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 38,
+      "char_end": 41,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "record",
+      "source_text": "record",
+      "char_start": 42,
+      "char_end": 48,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "record"
+      ]
+    }
+  ],
+  "duration_s": 3.966666,
+  "container_declared_duration_s": 8.151,
+  "media_clock": {
+    "stem": "-HwX2H8Z4hY__2",
+    "sample_id": "-HwX2H8Z4hY$_$2",
+    "container_duration_s": 8.151,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 3.9158125,
+    "audio_end_s": 3.9158125,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 3.933333,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 3.966666,
+    "observed_end_s": 3.966666,
+    "empty_declared_tail_s": 4.184334,
+    "original_video_frames": 119,
+    "source_sha256": "920a1052c09ebd1eedba6dd1ccfecd80f56f6f0fdcdd1f6dd32b0d90bcb89358"
+  },
+  "decoded_audio_duration_s": 3.9158125,
+  "audio_start_s": 0.0,
+  "feature_sha256": "7194dae1750cba0ec9a2a76726ab23f07c3c283524858785f3776569f4feb9fe",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-HwX2H8Z4hY__2.json": "04a5d2c3bdde8116a0cb543bfa594dd692a464e8bf9503073709140c5416b18a",
+    "results/q1/samples/-HwX2H8Z4hY__2.npz": "62aa6315feb81688abc77ac509a5d1b6126768ddadc423ae73a8ce21c0f5bd07",
+    "results/q1_next/enhanced/-HwX2H8Z4hY__2.npz": "ce149524f35bc6307a7adf2badac7a49ef804cf1dd1e7d4dcb40298ceaba5799",
+    "results/q1_refinement_v1/faces/-HwX2H8Z4hY__2.npz": "8a667ad55b65bad0c4cccd27e7cc3162e998b5b52f0d92534520e3d8ecaf38b3",
+    "results/q1_deep_v6/alignment/MMS_FA/-HwX2H8Z4hY__2/original.npz": "ee84979c96e3611de712de999952eba9d1fb0be753f1175544129ff3eb7bc904",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

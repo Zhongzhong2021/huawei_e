@@ -1,0 +1,105 @@
+{
+  "sample_id": "-iRBcNs9oI8$_$9",
+  "table_row_0based": 37,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-iRBcNs9oI8/9.mp4",
+  "source_sha256": "352bdcc73d3622d6abac1b09f2039b211d15b9bf7acee66f0b07783c9b7a4c74",
+  "text_original": "Power is similar to strength",
+  "words": [
+    {
+      "word": "power",
+      "source_text": "Power",
+      "char_start": 0,
+      "char_end": 5,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "power"
+      ]
+    },
+    {
+      "word": "is",
+      "source_text": "is",
+      "char_start": 6,
+      "char_end": 8,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "is"
+      ]
+    },
+    {
+      "word": "similar",
+      "source_text": "similar",
+      "char_start": 9,
+      "char_end": 16,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "similar"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 17,
+      "char_end": 19,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "strength",
+      "source_text": "strength",
+      "char_start": 20,
+      "char_end": 28,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "strength"
+      ]
+    }
+  ],
+  "duration_s": 3.4034,
+  "container_declared_duration_s": 7.152,
+  "media_clock": {
+    "stem": "-iRBcNs9oI8__9",
+    "sample_id": "-iRBcNs9oI8$_$9",
+    "container_duration_s": 7.152,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 3.3740625,
+    "audio_end_s": 3.3740625,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 3.370033,
+    "last_frame_duration_s": 0.033367,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 3.4034,
+    "observed_end_s": 3.4034,
+    "empty_declared_tail_s": 3.7486,
+    "original_video_frames": 102,
+    "source_sha256": "352bdcc73d3622d6abac1b09f2039b211d15b9bf7acee66f0b07783c9b7a4c74"
+  },
+  "decoded_audio_duration_s": 3.3740625,
+  "audio_start_s": 0.0,
+  "feature_sha256": "dc2cb560f7370f0eeceba2d6be011ff2d330ae582e32309df9f6b34ea0819cd7",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-iRBcNs9oI8__9.json": "3ff6ebaa6598e258c4d1f1b70ee21d8ab3943d9bb677b98a8c8cd4f8f4efb78c",
+    "results/q1/samples/-iRBcNs9oI8__9.npz": "c1480219746810480c14cc530e0a202faf1534db0c9be51a7017dc4fd6699e2c",
+    "results/q1_next/enhanced/-iRBcNs9oI8__9.npz": "735decb7554c4369532bc7f58dce944ff1bd1c57eaa75282d6a8e4a277342492",
+    "results/q1_refinement_v1/faces/-iRBcNs9oI8__9.npz": "060ee647a09bfc34482fa3dfdfee0b1d543a66cd1868ee82d1da849a329206a3",
+    "results/q1_deep_v6/alignment/MMS_FA/-iRBcNs9oI8__9/original.npz": "9346591402fe4ec62fa4e115f1042993f3354f86df54f2515d2dd0d4b57ab317",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

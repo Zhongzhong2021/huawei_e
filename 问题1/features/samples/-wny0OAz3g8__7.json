@@ -1,0 +1,421 @@
+{
+  "sample_id": "-wny0OAz3g8$_$7",
+  "table_row_0based": 62,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-wny0OAz3g8/7.mp4",
+  "source_sha256": "cbf9cac1048ce191aef781d0c4563eb97f9f3ddd52eb1f9551fa78d31d70e7cd",
+  "text_original": "Omi and Winant argue that the concept of race came about as a tool to justify and maintain the economic and political power held by those of European descent",
+  "words": [
+    {
+      "word": "omi",
+      "source_text": "Omi",
+      "char_start": 0,
+      "char_end": 3,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1,
+        2
+      ],
+      "bert_tokens": [
+        "om",
+        "##i"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 4,
+      "char_end": 7,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "winant",
+      "source_text": "Winant",
+      "char_start": 8,
+      "char_end": 14,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4,
+        5
+      ],
+      "bert_tokens": [
+        "win",
+        "##ant"
+      ]
+    },
+    {
+      "word": "argue",
+      "source_text": "argue",
+      "char_start": 15,
+      "char_end": 20,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "argue"
+      ]
+    },
+    {
+      "word": "that",
+      "source_text": "that",
+      "char_start": 21,
+      "char_end": 25,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "that"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 26,
+      "char_end": 29,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "concept",
+      "source_text": "concept",
+      "char_start": 30,
+      "char_end": 37,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "concept"
+      ]
+    },
+    {
+      "word": "of",
+      "source_text": "of",
+      "char_start": 38,
+      "char_end": 40,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "of"
+      ]
+    },
+    {
+      "word": "race",
+      "source_text": "race",
+      "char_start": 41,
+      "char_end": 45,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "race"
+      ]
+    },
+    {
+      "word": "came",
+      "source_text": "came",
+      "char_start": 46,
+      "char_end": 50,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "came"
+      ]
+    },
+    {
+      "word": "about",
+      "source_text": "about",
+      "char_start": 51,
+      "char_end": 56,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "about"
+      ]
+    },
+    {
+      "word": "as",
+      "source_text": "as",
+      "char_start": 57,
+      "char_end": 59,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "as"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 60,
+      "char_end": 61,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "tool",
+      "source_text": "tool",
+      "char_start": 62,
+      "char_end": 66,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "tool"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 67,
+      "char_end": 69,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "justify",
+      "source_text": "justify",
+      "char_start": 70,
+      "char_end": 77,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        18
+      ],
+      "bert_tokens": [
+        "justify"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 78,
+      "char_end": 81,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        19
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "maintain",
+      "source_text": "maintain",
+      "char_start": 82,
+      "char_end": 90,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        20
+      ],
+      "bert_tokens": [
+        "maintain"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 91,
+      "char_end": 94,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        21
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "economic",
+      "source_text": "economic",
+      "char_start": 95,
+      "char_end": 103,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        22
+      ],
+      "bert_tokens": [
+        "economic"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 104,
+      "char_end": 107,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        23
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "political",
+      "source_text": "political",
+      "char_start": 108,
+      "char_end": 117,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        24
+      ],
+      "bert_tokens": [
+        "political"
+      ]
+    },
+    {
+      "word": "power",
+      "source_text": "power",
+      "char_start": 118,
+      "char_end": 123,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        25
+      ],
+      "bert_tokens": [
+        "power"
+      ]
+    },
+    {
+      "word": "held",
+      "source_text": "held",
+      "char_start": 124,
+      "char_end": 128,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        26
+      ],
+      "bert_tokens": [
+        "held"
+      ]
+    },
+    {
+      "word": "by",
+      "source_text": "by",
+      "char_start": 129,
+      "char_end": 131,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        27
+      ],
+      "bert_tokens": [
+        "by"
+      ]
+    },
+    {
+      "word": "those",
+      "source_text": "those",
+      "char_start": 132,
+      "char_end": 137,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        28
+      ],
+      "bert_tokens": [
+        "those"
+      ]
+    },
+    {
+      "word": "of",
+      "source_text": "of",
+      "char_start": 138,
+      "char_end": 140,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        29
+      ],
+      "bert_tokens": [
+        "of"
+      ]
+    },
+    {
+      "word": "european",
+      "source_text": "European",
+      "char_start": 141,
+      "char_end": 149,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        30
+      ],
+      "bert_tokens": [
+        "european"
+      ]
+    },
+    {
+      "word": "descent",
+      "source_text": "descent",
+      "char_start": 150,
+      "char_end": 157,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        31
+      ],
+      "bert_tokens": [
+        "descent"
+      ]
+    }
+  ],
+  "duration_s": 8.066666000000001,
+  "container_declared_duration_s": 9.5,
+  "media_clock": {
+    "stem": "-wny0OAz3g8__7",
+    "sample_id": "-wny0OAz3g8$_$7",
+    "container_duration_s": 9.5,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 7.9105,
+    "audio_end_s": 7.9105,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 8.033333,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 8.066666000000001,
+    "observed_end_s": 8.066666000000001,
+    "empty_declared_tail_s": 1.4333339999999986,
+    "original_video_frames": 240,
+    "source_sha256": "cbf9cac1048ce191aef781d0c4563eb97f9f3ddd52eb1f9551fa78d31d70e7cd"
+  },
+  "decoded_audio_duration_s": 7.9105,
+  "audio_start_s": 0.0,
+  "feature_sha256": "2397d763789f0629f0f9d26918983328e08d0379464487b120d2b14a41f3482f",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-wny0OAz3g8__7.json": "ab0e9bec84bcf9ecedfb4961f1467729d9dac955a091db16fee64e9a4e7a5024",
+    "results/q1/samples/-wny0OAz3g8__7.npz": "d828282cb33c2808cb9a986f64811294061695b933f73ae38f934ce302323f4e",
+    "results/q1_next/enhanced/-wny0OAz3g8__7.npz": "b58cb8e9cdc7d90b8cf658ad09e14e627ce5c5738a051823a9a78729791ee4d2",
+    "results/q1_refinement_v1/faces/-wny0OAz3g8__7.npz": "3a19d665d5e724d7ba5c740e6563131bea73d47f436910a6e5941362f42138e2",
+    "results/q1_deep_v6/alignment/MMS_FA/-wny0OAz3g8__7/original.npz": "973af16871ce71d7de622b7c2f947d6067b694a843f0462118ffa06c89ce577f",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

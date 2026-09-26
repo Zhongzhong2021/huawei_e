@@ -1,0 +1,196 @@
+{
+  "sample_id": "-egA8-b7-3M$_$6",
+  "table_row_0based": 31,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-egA8-b7-3M/6.mp4",
+  "source_sha256": "2e88a00d5e55863aa956b4b0949fc0e4f2975ccfd83b3194957f6fca86ecfce0",
+  "text_original": "First exhibiting is a wonderful opportunity to network with other legal vendors.",
+  "words": [
+    {
+      "word": "first",
+      "source_text": "First",
+      "char_start": 0,
+      "char_end": 5,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "first"
+      ]
+    },
+    {
+      "word": "exhibiting",
+      "source_text": "exhibiting",
+      "char_start": 6,
+      "char_end": 16,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "exhibiting"
+      ]
+    },
+    {
+      "word": "is",
+      "source_text": "is",
+      "char_start": 17,
+      "char_end": 19,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "is"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 20,
+      "char_end": 21,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "wonderful",
+      "source_text": "wonderful",
+      "char_start": 22,
+      "char_end": 31,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "wonderful"
+      ]
+    },
+    {
+      "word": "opportunity",
+      "source_text": "opportunity",
+      "char_start": 32,
+      "char_end": 43,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "opportunity"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 44,
+      "char_end": 46,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "network",
+      "source_text": "network",
+      "char_start": 47,
+      "char_end": 54,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "network"
+      ]
+    },
+    {
+      "word": "with",
+      "source_text": "with",
+      "char_start": 55,
+      "char_end": 59,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "with"
+      ]
+    },
+    {
+      "word": "other",
+      "source_text": "other",
+      "char_start": 60,
+      "char_end": 65,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "other"
+      ]
+    },
+    {
+      "word": "legal",
+      "source_text": "legal",
+      "char_start": 66,
+      "char_end": 71,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "legal"
+      ]
+    },
+    {
+      "word": "vendors",
+      "source_text": "vendors",
+      "char_start": 72,
+      "char_end": 79,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "vendors"
+      ]
+    }
+  ],
+  "duration_s": 6.233333,
+  "container_declared_duration_s": 8.035,
+  "media_clock": {
+    "stem": "-egA8-b7-3M__6",
+    "sample_id": "-egA8-b7-3M$_$6",
+    "container_duration_s": 8.035,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 6.183125,
+    "audio_end_s": 6.183125,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 6.2,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 6.233333,
+    "observed_end_s": 6.233333,
+    "empty_declared_tail_s": 1.8016670000000001,
+    "original_video_frames": 187,
+    "source_sha256": "2e88a00d5e55863aa956b4b0949fc0e4f2975ccfd83b3194957f6fca86ecfce0"
+  },
+  "decoded_audio_duration_s": 6.183125,
+  "audio_start_s": 0.0,
+  "feature_sha256": "b1cab9369c0d3edb2712b0d9fdd8316f702b0545579db734552d3264add7b701",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-egA8-b7-3M__6.json": "5626a2ffe8ff7ab1a11e92dc82b373e96b4c6b0253f4dde0f642b288806564e2",
+    "results/q1/samples/-egA8-b7-3M__6.npz": "4ef6ccc89d6d639121025d27f04ca6dbcaf5541f84ee5a6f2d25052df89138ed",
+    "results/q1_next/enhanced/-egA8-b7-3M__6.npz": "ead0ed379efbcd0499c2f5648d4872f1c5124401aede7a813d6cdd78c9fc9da8",
+    "results/q1_refinement_v1/faces/-egA8-b7-3M__6.npz": "bf4663542700cf0fdd88fdfeeab8967fb04a85541f74fe13c72fd1e8f1460284",
+    "results/q1_deep_v6/alignment/MMS_FA/-egA8-b7-3M__6/original.npz": "76e7c99cbdfcb5aca84796313ba6796b67c59319e4047cb6f96eddbf4a4b9752",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

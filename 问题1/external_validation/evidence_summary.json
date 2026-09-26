@@ -1,0 +1,112 @@
+{
+  "anchored_samples": 97,
+  "min_waveform_correlation": 0.8975559550067699,
+  "median_waveform_correlation": 0.9911097055240933,
+  "max_three_window_spread_s": 2.842170943040401e-14,
+  "rejected_anchors": [
+    {
+      "sample_id": "-mJ2ud6oKI8$_$1",
+      "source_video": "-mJ2ud6oKI8",
+      "source_offset_s": 0.0,
+      "waveform_offset_s": 0.0,
+      "correlation": 0.0,
+      "coarse_correlation": 0.0,
+      "alternative_peak": 0.0,
+      "peak_gap": 0.0,
+      "window_offset_spread_s": 0.1200000000000001,
+      "window_checks": [
+        {
+          "local_start_s": 0.0,
+          "offset_s": 0.0,
+          "correlation": 0.0
+        },
+        {
+          "local_start_s": 2.02725,
+          "offset_s": -0.1200000000000001,
+          "correlation": 0.0
+        },
+        {
+          "local_start_s": 4.0545,
+          "offset_s": -0.1200000000000001,
+          "correlation": 0.0
+        }
+      ],
+      "accepted": false,
+      "audio_length_s": 6.0545,
+      "source_audio_sha256": "947d1d34755e41c937170133d007e328c9af68ec60ef72a9438850e35d04a587",
+      "local_video_sha256": "c8e3acb4ca08679796c4c8cdfcd8c2b3cffc0465015efaffa1eccdb55ff4f45b"
+    },
+    {
+      "sample_id": "-mJ2ud6oKI8$_$2",
+      "source_video": "-mJ2ud6oKI8",
+      "source_offset_s": 0.0,
+      "waveform_offset_s": 0.0,
+      "correlation": 0.0,
+      "coarse_correlation": 0.0,
+      "alternative_peak": 0.0,
+      "peak_gap": 0.0,
+      "window_offset_spread_s": 0.12006249999999996,
+      "window_checks": [
+        {
+          "local_start_s": 0.0,
+          "offset_s": 0.0,
+          "correlation": 0.0
+        },
+        {
+          "local_start_s": 1.9005625,
+          "offset_s": -0.12006249999999996,
+          "correlation": 0.0
+        },
+        {
+          "local_start_s": 3.801125,
+          "offset_s": -0.12006249999999996,
+          "correlation": 0.0
+        }
+      ],
+      "accepted": false,
+      "audio_length_s": 5.7016875,
+      "source_audio_sha256": "947d1d34755e41c937170133d007e328c9af68ec60ef72a9438850e35d04a587",
+      "local_video_sha256": "c41790f8b75f886bd1f5d6d72cbab1985306d0b715e5ae47203f3d0c8a3e7b28"
+    },
+    {
+      "sample_id": "-ri04Z7vwnc$_$0",
+      "source_video": "-ri04Z7vwnc",
+      "source_offset_s": 0.4875,
+      "waveform_offset_s": 0.4875,
+      "correlation": 0.9979307052331289,
+      "coarse_correlation": 0.997932876907102,
+      "alternative_peak": 0.8570623729861933,
+      "peak_gap": 0.14087050392090872,
+      "window_offset_spread_s": 1.6653345369377348e-16,
+      "window_checks": [
+        {
+          "local_start_s": 0.0,
+          "offset_s": 0.4875,
+          "correlation": 0.9980713320759623
+        },
+        {
+          "local_start_s": 0.9210625,
+          "offset_s": 0.48749999999999993,
+          "correlation": 0.9976486709470344
+        },
+        {
+          "local_start_s": 1.8421875,
+          "offset_s": 0.4874999999999998,
+          "correlation": 0.9980083702733458
+        }
+      ],
+      "accepted": false,
+      "audio_length_s": 2.76325,
+      "source_audio_sha256": "f71ce4ea0cfba3d173895d54fb480cd5cc7702f1c7146c9940a4e14b45e1d6ae",
+      "local_video_sha256": "93021c70c8fad20ad3fded80e7fc790a2f9c96835de58a3b694c6906de42684b"
+    }
+  ],
+  "accepted_word_reference_coverage": 0.7076502732240437,
+  "all_word_reference_coverage": 0.6914784394250514,
+  "over200ms_supported_words": 56,
+  "paired_MMS_minus_wav2vec_within100ms_ci95": [
+    0.08820372184133202,
+    0.13685576447303313
+  ],
+  "fixed_fusion_note": "Equal averaging is an additional descriptive ablation proposed after the initial baseline comparison; no fitted combination or claimed held-out generalization."
+}

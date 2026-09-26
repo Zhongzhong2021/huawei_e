@@ -1,0 +1,161 @@
+{
+  "sample_id": "-wny0OAz3g8$_$0",
+  "table_row_0based": 58,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-wny0OAz3g8/0.mp4",
+  "source_sha256": "1cc21b4432e2f4b592284ee40558a18acc7d208019117aebdb2f6a1b67ea198d",
+  "text_original": "trade labor unions didn’t allow Black workers to join",
+  "words": [
+    {
+      "word": "trade",
+      "source_text": "trade",
+      "char_start": 0,
+      "char_end": 5,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "trade"
+      ]
+    },
+    {
+      "word": "labor",
+      "source_text": "labor",
+      "char_start": 6,
+      "char_end": 11,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "labor"
+      ]
+    },
+    {
+      "word": "unions",
+      "source_text": "unions",
+      "char_start": 12,
+      "char_end": 18,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "unions"
+      ]
+    },
+    {
+      "word": "didn't",
+      "source_text": "didn't",
+      "char_start": 19,
+      "char_end": 25,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4,
+        5,
+        6
+      ],
+      "bert_tokens": [
+        "didn",
+        "’",
+        "t"
+      ]
+    },
+    {
+      "word": "allow",
+      "source_text": "allow",
+      "char_start": 26,
+      "char_end": 31,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "allow"
+      ]
+    },
+    {
+      "word": "black",
+      "source_text": "Black",
+      "char_start": 32,
+      "char_end": 37,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "black"
+      ]
+    },
+    {
+      "word": "workers",
+      "source_text": "workers",
+      "char_start": 38,
+      "char_end": 45,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "workers"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 46,
+      "char_end": 48,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "join",
+      "source_text": "join",
+      "char_start": 49,
+      "char_end": 53,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "join"
+      ]
+    }
+  ],
+  "duration_s": 3.3333329999999997,
+  "container_declared_duration_s": 3.334,
+  "media_clock": {
+    "stem": "-wny0OAz3g8__0",
+    "sample_id": "-wny0OAz3g8$_$0",
+    "container_duration_s": 3.334,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 3.274,
+    "audio_end_s": 3.274,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 3.3,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 3.3333329999999997,
+    "observed_end_s": 3.3333329999999997,
+    "empty_declared_tail_s": 0.0006670000000004173,
+    "original_video_frames": 100,
+    "source_sha256": "1cc21b4432e2f4b592284ee40558a18acc7d208019117aebdb2f6a1b67ea198d"
+  },
+  "decoded_audio_duration_s": 3.274,
+  "audio_start_s": 0.0,
+  "feature_sha256": "2183cdcdea98ce70cf0689732b9445275862057b70bacfd93a0ae16b5c6b100d",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-wny0OAz3g8__0.json": "ca30979a3a6ae90bcf26a8654ce3a78440d98fe1e0a90bd78fc23c9fcb274119",
+    "results/q1/samples/-wny0OAz3g8__0.npz": "58df94b5211d8c7af8a49512db91fdb49fc1679c8f796b67a302fe8ca9700f9f",
+    "results/q1_next/enhanced/-wny0OAz3g8__0.npz": "f39270689dceb65f6ef4addfc3f0c33aecfa2be48b2cda12ad2e3d058041c2a6",
+    "results/q1_refinement_v1/faces/-wny0OAz3g8__0.npz": "568cbd9ccc234e616183aa906fd41eeb19a8a454bf9c8b4c927621f78b91f937",
+    "results/q1_deep_v6/alignment/MMS_FA/-wny0OAz3g8__0/original.npz": "9cf5ae3a50849b9b8e1b5f4d1a5221cf86d62fe81865833d78ad9235f3dd3a77",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

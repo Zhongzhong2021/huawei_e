@@ -1,0 +1,200 @@
+{
+  "sample_id": "-9y-fZ3swSY$_$8",
+  "table_row_0based": 77,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-9y-fZ3swSY/8.mp4",
+  "source_sha256": "6140d031e614b62a5d8df73346fef2417c28cee3501310aa95aa40d358b4b256",
+  "text_original": "That’s a more decent and more polite way to call a lady",
+  "words": [
+    {
+      "word": "that's",
+      "source_text": "That's",
+      "char_start": 0,
+      "char_end": 6,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1,
+        2,
+        3
+      ],
+      "bert_tokens": [
+        "that",
+        "’",
+        "s"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 7,
+      "char_end": 8,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "more",
+      "source_text": "more",
+      "char_start": 9,
+      "char_end": 13,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "more"
+      ]
+    },
+    {
+      "word": "decent",
+      "source_text": "decent",
+      "char_start": 14,
+      "char_end": 20,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "decent"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 21,
+      "char_end": 24,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "more",
+      "source_text": "more",
+      "char_start": 25,
+      "char_end": 29,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "more"
+      ]
+    },
+    {
+      "word": "polite",
+      "source_text": "polite",
+      "char_start": 30,
+      "char_end": 36,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "polite"
+      ]
+    },
+    {
+      "word": "way",
+      "source_text": "way",
+      "char_start": 37,
+      "char_end": 40,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "way"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 41,
+      "char_end": 43,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "call",
+      "source_text": "call",
+      "char_start": 44,
+      "char_end": 48,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "call"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 49,
+      "char_end": 50,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "lady",
+      "source_text": "lady",
+      "char_start": 51,
+      "char_end": 55,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "lady"
+      ]
+    }
+  ],
+  "duration_s": 4.966666,
+  "container_declared_duration_s": 10.775,
+  "media_clock": {
+    "stem": "-9y-fZ3swSY__8",
+    "sample_id": "-9y-fZ3swSY$_$8",
+    "container_duration_s": 10.775,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 4.917,
+    "audio_end_s": 4.917,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 4.933333,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 4.966666,
+    "observed_end_s": 4.966666,
+    "empty_declared_tail_s": 5.808334,
+    "original_video_frames": 149,
+    "source_sha256": "6140d031e614b62a5d8df73346fef2417c28cee3501310aa95aa40d358b4b256"
+  },
+  "decoded_audio_duration_s": 4.917,
+  "audio_start_s": 0.0,
+  "feature_sha256": "921378ef3cff8a6ca2a01d0b84313f87eb5f0917e46b45058ce58ce96ad38396",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-9y-fZ3swSY__8.json": "f663a309e6640b2cfa109e9b29436954c24af8a90a1f3dd5243160e9443c8b5a",
+    "results/q1/samples/-9y-fZ3swSY__8.npz": "4f77b26cdcc5288600768738a2fa85ee51f707ceb6839ad5e375bd9435660ac3",
+    "results/q1_next/enhanced/-9y-fZ3swSY__8.npz": "46d15b4b6f1833dbbe626a00e4c110b0705ada8d2db5b3c046d435bf15171d36",
+    "results/q1_refinement_v1/faces/-9y-fZ3swSY__8.npz": "08dd6bbc50e6ed52f6409345a16f4f5c2160cdd9121bfa098cfb1707414ae2f9",
+    "results/q1_deep_v6/alignment/MMS_FA/-9y-fZ3swSY__8/original.npz": "3cf466e024b6627fe18cde9196005aa6baf050451392f4d4feaeab5b38df42db",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

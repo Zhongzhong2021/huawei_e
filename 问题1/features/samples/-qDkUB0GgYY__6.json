@@ -1,0 +1,248 @@
+{
+  "sample_id": "-qDkUB0GgYY$_$6",
+  "table_row_0based": 72,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-qDkUB0GgYY/6.mp4",
+  "source_sha256": "ab19bf4a761d3919b7113b1104ccaadbbf0c4e7b45694904d094280a2c329c8b",
+  "text_original": "We always love to hear what you say, and like and share this video as well.",
+  "words": [
+    {
+      "word": "we",
+      "source_text": "We",
+      "char_start": 0,
+      "char_end": 2,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "we"
+      ]
+    },
+    {
+      "word": "always",
+      "source_text": "always",
+      "char_start": 3,
+      "char_end": 9,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "always"
+      ]
+    },
+    {
+      "word": "love",
+      "source_text": "love",
+      "char_start": 10,
+      "char_end": 14,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "love"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 15,
+      "char_end": 17,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "hear",
+      "source_text": "hear",
+      "char_start": 18,
+      "char_end": 22,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "hear"
+      ]
+    },
+    {
+      "word": "what",
+      "source_text": "what",
+      "char_start": 23,
+      "char_end": 27,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "what"
+      ]
+    },
+    {
+      "word": "you",
+      "source_text": "you",
+      "char_start": 28,
+      "char_end": 31,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "you"
+      ]
+    },
+    {
+      "word": "say",
+      "source_text": "say",
+      "char_start": 32,
+      "char_end": 35,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "say"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 37,
+      "char_end": 40,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "like",
+      "source_text": "like",
+      "char_start": 41,
+      "char_end": 45,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "like"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 46,
+      "char_end": 49,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "share",
+      "source_text": "share",
+      "char_start": 50,
+      "char_end": 55,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "share"
+      ]
+    },
+    {
+      "word": "this",
+      "source_text": "this",
+      "char_start": 56,
+      "char_end": 60,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "this"
+      ]
+    },
+    {
+      "word": "video",
+      "source_text": "video",
+      "char_start": 61,
+      "char_end": 66,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "video"
+      ]
+    },
+    {
+      "word": "as",
+      "source_text": "as",
+      "char_start": 67,
+      "char_end": 69,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "as"
+      ]
+    },
+    {
+      "word": "well",
+      "source_text": "well",
+      "char_start": 70,
+      "char_end": 74,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17
+      ],
+      "bert_tokens": [
+        "well"
+      ]
+    }
+  ],
+  "duration_s": 4.666666,
+  "container_declared_duration_s": 9.683,
+  "media_clock": {
+    "stem": "-qDkUB0GgYY__6",
+    "sample_id": "-qDkUB0GgYY$_$6",
+    "container_duration_s": 9.683,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 4.6146875,
+    "audio_end_s": 4.6146875,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 4.633333,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 4.666666,
+    "observed_end_s": 4.666666,
+    "empty_declared_tail_s": 5.016334,
+    "original_video_frames": 140,
+    "source_sha256": "ab19bf4a761d3919b7113b1104ccaadbbf0c4e7b45694904d094280a2c329c8b"
+  },
+  "decoded_audio_duration_s": 4.6146875,
+  "audio_start_s": 0.0,
+  "feature_sha256": "616da69f0aaf5f8a032a7cd7a171fb9ed6dd35ab635050425135c50f8b83e509",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-qDkUB0GgYY__6.json": "786e9d27251b6318d99fb3598a5dbb04820aee8bef987e65e4849c744094af40",
+    "results/q1/samples/-qDkUB0GgYY__6.npz": "bfba00424cd38520447a01fa86913fa583b0274c5d7dde1d56675e6ab8b6c556",
+    "results/q1_next/enhanced/-qDkUB0GgYY__6.npz": "50bb38080259bd10889d712dfdd2b5e27e549d6a85f4ee31a874c1b08a7d43e0",
+    "results/q1_refinement_v1/faces/-qDkUB0GgYY__6.npz": "db31d6304aa5f32fc00076be83f330ecfbfbc721ce93ea03501b889b69b2c84d",
+    "results/q1_deep_v6/alignment/MMS_FA/-qDkUB0GgYY__6/original.npz": "70f065c8ed3f8e2c0c99e275eaed614af19180eb4642085096a3a61e210f17a3",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

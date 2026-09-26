@@ -1,0 +1,200 @@
+{
+  "sample_id": "-571d8cVauQ$_$0",
+  "table_row_0based": 64,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-571d8cVauQ/0.mp4",
+  "source_sha256": "defc62e1530d9b0cd27f2acfe042b71dd84d7e8c85f1df261f04912091976088",
+  "text_original": "This is Rhett Reiger, White Caspian Studios on behalf of Expert Village.",
+  "words": [
+    {
+      "word": "this",
+      "source_text": "This",
+      "char_start": 0,
+      "char_end": 4,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "this"
+      ]
+    },
+    {
+      "word": "is",
+      "source_text": "is",
+      "char_start": 5,
+      "char_end": 7,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "is"
+      ]
+    },
+    {
+      "word": "rhett",
+      "source_text": "Rhett",
+      "char_start": 8,
+      "char_end": 13,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3,
+        4
+      ],
+      "bert_tokens": [
+        "r",
+        "##hett"
+      ]
+    },
+    {
+      "word": "reiger",
+      "source_text": "Reiger",
+      "char_start": 14,
+      "char_end": 20,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5,
+        6
+      ],
+      "bert_tokens": [
+        "rei",
+        "##ger"
+      ]
+    },
+    {
+      "word": "white",
+      "source_text": "White",
+      "char_start": 22,
+      "char_end": 27,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "white"
+      ]
+    },
+    {
+      "word": "caspian",
+      "source_text": "Caspian",
+      "char_start": 28,
+      "char_end": 35,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "caspian"
+      ]
+    },
+    {
+      "word": "studios",
+      "source_text": "Studios",
+      "char_start": 36,
+      "char_end": 43,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "studios"
+      ]
+    },
+    {
+      "word": "on",
+      "source_text": "on",
+      "char_start": 44,
+      "char_end": 46,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "on"
+      ]
+    },
+    {
+      "word": "behalf",
+      "source_text": "behalf",
+      "char_start": 47,
+      "char_end": 53,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "behalf"
+      ]
+    },
+    {
+      "word": "of",
+      "source_text": "of",
+      "char_start": 54,
+      "char_end": 56,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "of"
+      ]
+    },
+    {
+      "word": "expert",
+      "source_text": "Expert",
+      "char_start": 57,
+      "char_end": 63,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "expert"
+      ]
+    },
+    {
+      "word": "village",
+      "source_text": "Village",
+      "char_start": 64,
+      "char_end": 71,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "village"
+      ]
+    }
+  ],
+  "duration_s": 5.166666,
+  "container_declared_duration_s": 5.167,
+  "media_clock": {
+    "stem": "-571d8cVauQ__0",
+    "sample_id": "-571d8cVauQ$_$0",
+    "container_duration_s": 5.167,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 4.9923125,
+    "audio_end_s": 4.9923125,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 5.133333,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 5.166666,
+    "observed_end_s": 5.166666,
+    "empty_declared_tail_s": 0.0003339999999996124,
+    "original_video_frames": 152,
+    "source_sha256": "defc62e1530d9b0cd27f2acfe042b71dd84d7e8c85f1df261f04912091976088"
+  },
+  "decoded_audio_duration_s": 4.9923125,
+  "audio_start_s": 0.0,
+  "feature_sha256": "eb40d4d9bc1cdcd16b969a310696d0bc44e933c2f4a7389047bd3e301701f929",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-571d8cVauQ__0.json": "81f5578f3ec27d405d5c4b7e54650eca3898c297a7c0a9a0fbcb83f00599a5a3",
+    "results/q1/samples/-571d8cVauQ__0.npz": "cf02d6a5da3a26bf6147828dae8aaf467297fae6e53d1de4bae12ae7fd829002",
+    "results/q1_next/enhanced/-571d8cVauQ__0.npz": "7557d740a98b3a9e08e4f331f5b0e6ff3271a07ee3345908f1b716b9aa410018",
+    "results/q1_refinement_v1/faces/-571d8cVauQ__0.npz": "81875a561fb6749c3ffbf5bccda762828cdbdb2f20c10c823ac8501f975e1ae1",
+    "results/q1_deep_v6/alignment/MMS_FA/-571d8cVauQ__0/original.npz": "9aca34c217f05cb426d70fa03c9cc199f7fa94548f3dedeb3491e7033fd998c5",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

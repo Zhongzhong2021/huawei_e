@@ -1,0 +1,19 @@
+{
+  "available_source_videos": 37,
+  "samples": 97,
+  "frames": 38174,
+  "joint_voiced_frames": 19466,
+  "voicing_agreement": 0.7810289725991513,
+  "voicing_confusion": {
+    "both_voiced": 19466,
+    "both_unvoiced": 10349,
+    "local_only": 2832,
+    "public_only": 5527
+  },
+  "pitch_abs_semitone_median": 0.1283200979232788,
+  "pitch_abs_semitone_p95": 2.241983115673065,
+  "pitch_within_one_semitone": 0.9315729990753108,
+  "pitch_within_two_semitones": 0.9486797493064831,
+  "pitch_over_octave": 0.02553169629096887,
+  "video_grouping": "See per-sample rows; pooled frame figures are descriptive, not independent Bernoulli trials"
+}

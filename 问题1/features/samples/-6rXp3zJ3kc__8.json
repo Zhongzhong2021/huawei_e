@@ -1,0 +1,488 @@
+{
+  "sample_id": "-6rXp3zJ3kc$_$8",
+  "table_row_0based": 74,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-6rXp3zJ3kc/8.mp4",
+  "source_sha256": "59b77a0f873b7fa95e7327b93d64bb5a4bdae84039321988ef70bba8e63ee1ae",
+  "text_original": "Many people are not until they get to be a older age and they realize that gosh they wasted a lot of time and money in placing bets on stock that's ultimately lost value.",
+  "words": [
+    {
+      "word": "many",
+      "source_text": "Many",
+      "char_start": 0,
+      "char_end": 4,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "many"
+      ]
+    },
+    {
+      "word": "people",
+      "source_text": "people",
+      "char_start": 5,
+      "char_end": 11,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "people"
+      ]
+    },
+    {
+      "word": "are",
+      "source_text": "are",
+      "char_start": 12,
+      "char_end": 15,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "are"
+      ]
+    },
+    {
+      "word": "not",
+      "source_text": "not",
+      "char_start": 16,
+      "char_end": 19,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "not"
+      ]
+    },
+    {
+      "word": "until",
+      "source_text": "until",
+      "char_start": 20,
+      "char_end": 25,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "until"
+      ]
+    },
+    {
+      "word": "they",
+      "source_text": "they",
+      "char_start": 26,
+      "char_end": 30,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "they"
+      ]
+    },
+    {
+      "word": "get",
+      "source_text": "get",
+      "char_start": 31,
+      "char_end": 34,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "get"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 35,
+      "char_end": 37,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "be",
+      "source_text": "be",
+      "char_start": 38,
+      "char_end": 40,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "be"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 41,
+      "char_end": 42,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "older",
+      "source_text": "older",
+      "char_start": 43,
+      "char_end": 48,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "older"
+      ]
+    },
+    {
+      "word": "age",
+      "source_text": "age",
+      "char_start": 49,
+      "char_end": 52,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "age"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 53,
+      "char_end": 56,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "they",
+      "source_text": "they",
+      "char_start": 57,
+      "char_end": 61,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "they"
+      ]
+    },
+    {
+      "word": "realize",
+      "source_text": "realize",
+      "char_start": 62,
+      "char_end": 69,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "realize"
+      ]
+    },
+    {
+      "word": "that",
+      "source_text": "that",
+      "char_start": 70,
+      "char_end": 74,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "that"
+      ]
+    },
+    {
+      "word": "gosh",
+      "source_text": "gosh",
+      "char_start": 75,
+      "char_end": 79,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17,
+        18
+      ],
+      "bert_tokens": [
+        "go",
+        "##sh"
+      ]
+    },
+    {
+      "word": "they",
+      "source_text": "they",
+      "char_start": 80,
+      "char_end": 84,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        19
+      ],
+      "bert_tokens": [
+        "they"
+      ]
+    },
+    {
+      "word": "wasted",
+      "source_text": "wasted",
+      "char_start": 85,
+      "char_end": 91,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        20
+      ],
+      "bert_tokens": [
+        "wasted"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 92,
+      "char_end": 93,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        21
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "lot",
+      "source_text": "lot",
+      "char_start": 94,
+      "char_end": 97,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        22
+      ],
+      "bert_tokens": [
+        "lot"
+      ]
+    },
+    {
+      "word": "of",
+      "source_text": "of",
+      "char_start": 98,
+      "char_end": 100,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        23
+      ],
+      "bert_tokens": [
+        "of"
+      ]
+    },
+    {
+      "word": "time",
+      "source_text": "time",
+      "char_start": 101,
+      "char_end": 105,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        24
+      ],
+      "bert_tokens": [
+        "time"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 106,
+      "char_end": 109,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        25
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "money",
+      "source_text": "money",
+      "char_start": 110,
+      "char_end": 115,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        26
+      ],
+      "bert_tokens": [
+        "money"
+      ]
+    },
+    {
+      "word": "in",
+      "source_text": "in",
+      "char_start": 116,
+      "char_end": 118,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        27
+      ],
+      "bert_tokens": [
+        "in"
+      ]
+    },
+    {
+      "word": "placing",
+      "source_text": "placing",
+      "char_start": 119,
+      "char_end": 126,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        28
+      ],
+      "bert_tokens": [
+        "placing"
+      ]
+    },
+    {
+      "word": "bets",
+      "source_text": "bets",
+      "char_start": 127,
+      "char_end": 131,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        29
+      ],
+      "bert_tokens": [
+        "bets"
+      ]
+    },
+    {
+      "word": "on",
+      "source_text": "on",
+      "char_start": 132,
+      "char_end": 134,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        30
+      ],
+      "bert_tokens": [
+        "on"
+      ]
+    },
+    {
+      "word": "stock",
+      "source_text": "stock",
+      "char_start": 135,
+      "char_end": 140,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        31
+      ],
+      "bert_tokens": [
+        "stock"
+      ]
+    },
+    {
+      "word": "that's",
+      "source_text": "that's",
+      "char_start": 141,
+      "char_end": 147,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        32,
+        33,
+        34
+      ],
+      "bert_tokens": [
+        "that",
+        "'",
+        "s"
+      ]
+    },
+    {
+      "word": "ultimately",
+      "source_text": "ultimately",
+      "char_start": 148,
+      "char_end": 158,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        35
+      ],
+      "bert_tokens": [
+        "ultimately"
+      ]
+    },
+    {
+      "word": "lost",
+      "source_text": "lost",
+      "char_start": 159,
+      "char_end": 163,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        36
+      ],
+      "bert_tokens": [
+        "lost"
+      ]
+    },
+    {
+      "word": "value",
+      "source_text": "value",
+      "char_start": 164,
+      "char_end": 169,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        37
+      ],
+      "bert_tokens": [
+        "value"
+      ]
+    }
+  ],
+  "duration_s": 12.8,
+  "container_declared_duration_s": 16.58,
+  "media_clock": {
+    "stem": "-6rXp3zJ3kc__8",
+    "sample_id": "-6rXp3zJ3kc$_$8",
+    "container_duration_s": 16.58,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 12.738,
+    "audio_end_s": 12.738,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 12.766667,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 12.8,
+    "observed_end_s": 12.8,
+    "empty_declared_tail_s": 3.7799999999999976,
+    "original_video_frames": 384,
+    "source_sha256": "59b77a0f873b7fa95e7327b93d64bb5a4bdae84039321988ef70bba8e63ee1ae"
+  },
+  "decoded_audio_duration_s": 12.738,
+  "audio_start_s": 0.0,
+  "feature_sha256": "df0dba3534d6ab819477434e71a915f0ca330d513a5c635c0a58c43dcf052afe",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-6rXp3zJ3kc__8.json": "ffc65d8d205810df813286aa932e0fb2b9e895aff9738f1ef6c03254240ca7a7",
+    "results/q1/samples/-6rXp3zJ3kc__8.npz": "37d8cb8bc5a5f62b0848c3eca212aff65c7f96659d947c57284fe442f96d8617",
+    "results/q1_next/enhanced/-6rXp3zJ3kc__8.npz": "406936366eb80e449b7c6032761601aa0f8aa0b096299c4af4483dc4b350ac20",
+    "results/q1_refinement_v1/faces/-6rXp3zJ3kc__8.npz": "7ae086148c175260e99f8f1b977353795a92839a32bba2b02b28f48be10a7da5",
+    "results/q1_deep_v6/alignment/MMS_FA/-6rXp3zJ3kc__8/original.npz": "78eab7d164919fbc6bf9d63fbcfae6d632ffd5383589ce6bd0618d16821b69ba",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

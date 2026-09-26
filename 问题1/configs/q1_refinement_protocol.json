@@ -1,0 +1,40 @@
+{
+  "version": "q1-refinement-v1",
+  "design": "Retrospective method development after individual review; no independent accuracy claim.",
+  "scope": "All 100 attachment-1 samples; no emotion labels or external emotion data used.",
+  "face": {
+    "route": "Keep existing frame features; on previously missing frames use YuNet ROI then MediaPipe",
+    "yunet_model": "face_detection_yunet_2023mar.onnx",
+    "yunet_score_threshold": 0.9,
+    "yunet_nms_threshold": 0.3,
+    "yunet_top_k": 5000,
+    "yunet_max_width": 1280,
+    "max_roi_candidates": 3,
+    "roi_square_expansion": 1.8,
+    "roi_min_pixels": 12,
+    "roi_resize": 256,
+    "landmarker_detection_threshold": 0.5,
+    "landmarker_presence_threshold": 0.5,
+    "landmark_box_detector_iou_min": 0.3,
+    "ablation_relaxed_fullframe_threshold": 0.3,
+    "primary_output": "52 expression coefficients; ROI pose matrices excluded to avoid mixing camera coordinate estimates",
+    "selection": "largest valid proposal first; no active speaker identity claim"
+  },
+  "text": {
+    "method": "Span-preserving cardinal number equivalence, weighted semiglobal edit distance",
+    "normalizer": "transformers.models.whisper.english_normalizer.EnglishNumberNormalizer",
+    "sentence_threshold": 0.25,
+    "homophone_fuzzy_matching": false,
+    "word_time_masks": "unchanged; equivalent numeric groups do not create per-word timestamps",
+    "controls": "Reuse all fixed original/same-video/cross-video pairs from rigor audit"
+  },
+  "acceptance": {
+    "all_100_identity_and_time_axes": "required",
+    "old_valid_frame_features_preserved": "required",
+    "invalid_features_zero_with_mask": "required",
+    "new_word_time_support": "forbidden in this refinement",
+    "coverage": "descriptive, never accuracy",
+    "face_accuracy": "unavailable without independently checked frame boxes",
+    "selection_or_tuning_on_test": "attachment 3/4 untouched"
+  }
+}

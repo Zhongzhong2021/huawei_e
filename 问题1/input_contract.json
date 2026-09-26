@@ -1,0 +1,41 @@
+{
+  "task": "Q1",
+  "source": "Annex1: original video and supplied text; emotion labels not used for fitting or tuning",
+  "sample_id": "video_id$_$clip_id",
+  "text": {
+    "field": "text",
+    "unit": "normalized spoken word mapped to original character span and BERT subwords",
+    "dim": 768,
+    "variable_length": true
+  },
+  "audio": {
+    "native_dim": 47,
+    "pooled_dim": 97,
+    "pitch_validity": "per-dimension masks"
+  },
+  "vision": {
+    "expression_dim": 52,
+    "scene_dim": 512,
+    "independent_masks": true
+  },
+  "time": {
+    "reference": "container origin, decoded audio sample clock and video PTS",
+    "views": [
+      "native",
+      "word",
+      "100ms grid"
+    ]
+  },
+  "mask_meanings": {
+    "text_mask": "word representation available",
+    "alignment_supported": "word/audio relationship passes the fixed use rule; false does not erase text or native AV",
+    "expression_valid": "native face features available",
+    "word_expression_mask": "word association and valid face observation",
+    "word_scene_mask": "word association and valid scene observation",
+    "word_audio_dim_mask": "per-feature availability including voiced-only pitch columns"
+  },
+  "annex2_3_interface": "Separate supplied benchmark interface; same field name or embedding dimension does not establish row-wise equivalence",
+  "public_resources": "Independent waveform origin and quantitative same-source text, timestamp, F0/voicing and face-detection comparisons; references never replace the raw inputs or the primary features.",
+  "labels": "Annex1 includes labels; they are not needed for this fixed feature-extraction pipeline",
+  "optional_pitch_diagnostic": "external_validation/pitch_crosscheck: 100 samples; time, both F0 estimates, joint_voiced, absolute_semitone_gap, within_one_semitone; invalid gaps zero-filled under joint_voiced mask; no automatic deletion or prediction benefit claimed."
+}

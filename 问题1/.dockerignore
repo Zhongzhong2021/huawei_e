@@ -1,0 +1,11 @@
+**
+!Dockerfile
+!requirements.txt
+!scripts/
+!scripts/**
+
+!configs/
+!configs/**
+
+**/__pycache__
+**/*.pyc

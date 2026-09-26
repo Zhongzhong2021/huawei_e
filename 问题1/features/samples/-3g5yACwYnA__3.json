@@ -1,0 +1,433 @@
+{
+  "sample_id": "-3g5yACwYnA$_$3",
+  "table_row_0based": 1,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-3g5yACwYnA/3.mp4",
+  "source_sha256": "eff8cfefba2425155f2b72656829b34b23be8bfe1dcbece384154f56818aa26d",
+  "text_original": "We're a huge user of adhesives for our operation, called flocking, and we don't have the technical inside compounding or the technical expertise to do these types of things.",
+  "words": [
+    {
+      "word": "we're",
+      "source_text": "We're",
+      "char_start": 0,
+      "char_end": 5,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1,
+        2,
+        3
+      ],
+      "bert_tokens": [
+        "we",
+        "'",
+        "re"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 6,
+      "char_end": 7,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "huge",
+      "source_text": "huge",
+      "char_start": 8,
+      "char_end": 12,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "huge"
+      ]
+    },
+    {
+      "word": "user",
+      "source_text": "user",
+      "char_start": 13,
+      "char_end": 17,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "user"
+      ]
+    },
+    {
+      "word": "of",
+      "source_text": "of",
+      "char_start": 18,
+      "char_end": 20,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "of"
+      ]
+    },
+    {
+      "word": "adhesives",
+      "source_text": "adhesives",
+      "char_start": 21,
+      "char_end": 30,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8,
+        9,
+        10
+      ],
+      "bert_tokens": [
+        "ad",
+        "##hesive",
+        "##s"
+      ]
+    },
+    {
+      "word": "for",
+      "source_text": "for",
+      "char_start": 31,
+      "char_end": 34,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "for"
+      ]
+    },
+    {
+      "word": "our",
+      "source_text": "our",
+      "char_start": 35,
+      "char_end": 38,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "our"
+      ]
+    },
+    {
+      "word": "operation",
+      "source_text": "operation",
+      "char_start": 39,
+      "char_end": 48,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "operation"
+      ]
+    },
+    {
+      "word": "called",
+      "source_text": "called",
+      "char_start": 50,
+      "char_end": 56,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "called"
+      ]
+    },
+    {
+      "word": "flocking",
+      "source_text": "flocking",
+      "char_start": 57,
+      "char_end": 65,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16,
+        17
+      ],
+      "bert_tokens": [
+        "flock",
+        "##ing"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 67,
+      "char_end": 70,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        19
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "we",
+      "source_text": "we",
+      "char_start": 71,
+      "char_end": 73,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        20
+      ],
+      "bert_tokens": [
+        "we"
+      ]
+    },
+    {
+      "word": "don't",
+      "source_text": "don't",
+      "char_start": 74,
+      "char_end": 79,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        21,
+        22,
+        23
+      ],
+      "bert_tokens": [
+        "don",
+        "'",
+        "t"
+      ]
+    },
+    {
+      "word": "have",
+      "source_text": "have",
+      "char_start": 80,
+      "char_end": 84,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        24
+      ],
+      "bert_tokens": [
+        "have"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 85,
+      "char_end": 88,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        25
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "technical",
+      "source_text": "technical",
+      "char_start": 89,
+      "char_end": 98,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        26
+      ],
+      "bert_tokens": [
+        "technical"
+      ]
+    },
+    {
+      "word": "inside",
+      "source_text": "inside",
+      "char_start": 99,
+      "char_end": 105,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        27
+      ],
+      "bert_tokens": [
+        "inside"
+      ]
+    },
+    {
+      "word": "compounding",
+      "source_text": "compounding",
+      "char_start": 106,
+      "char_end": 117,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        28,
+        29
+      ],
+      "bert_tokens": [
+        "compound",
+        "##ing"
+      ]
+    },
+    {
+      "word": "or",
+      "source_text": "or",
+      "char_start": 118,
+      "char_end": 120,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        30
+      ],
+      "bert_tokens": [
+        "or"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 121,
+      "char_end": 124,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        31
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "technical",
+      "source_text": "technical",
+      "char_start": 125,
+      "char_end": 134,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        32
+      ],
+      "bert_tokens": [
+        "technical"
+      ]
+    },
+    {
+      "word": "expertise",
+      "source_text": "expertise",
+      "char_start": 135,
+      "char_end": 144,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        33
+      ],
+      "bert_tokens": [
+        "expertise"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 145,
+      "char_end": 147,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        34
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "do",
+      "source_text": "do",
+      "char_start": 148,
+      "char_end": 150,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        35
+      ],
+      "bert_tokens": [
+        "do"
+      ]
+    },
+    {
+      "word": "these",
+      "source_text": "these",
+      "char_start": 151,
+      "char_end": 156,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        36
+      ],
+      "bert_tokens": [
+        "these"
+      ]
+    },
+    {
+      "word": "types",
+      "source_text": "types",
+      "char_start": 157,
+      "char_end": 162,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        37
+      ],
+      "bert_tokens": [
+        "types"
+      ]
+    },
+    {
+      "word": "of",
+      "source_text": "of",
+      "char_start": 163,
+      "char_end": 165,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        38
+      ],
+      "bert_tokens": [
+        "of"
+      ]
+    },
+    {
+      "word": "things",
+      "source_text": "things",
+      "char_start": 166,
+      "char_end": 172,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        39
+      ],
+      "bert_tokens": [
+        "things"
+      ]
+    }
+  ],
+  "duration_s": 14.366666,
+  "container_declared_duration_s": 19.273,
+  "media_clock": {
+    "stem": "-3g5yACwYnA__3",
+    "sample_id": "-3g5yACwYnA$_$3",
+    "container_duration_s": 19.273,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 14.327875,
+    "audio_end_s": 14.327875,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 14.333333,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 14.366666,
+    "observed_end_s": 14.366666,
+    "empty_declared_tail_s": 4.906333999999999,
+    "original_video_frames": 431,
+    "source_sha256": "eff8cfefba2425155f2b72656829b34b23be8bfe1dcbece384154f56818aa26d"
+  },
+  "decoded_audio_duration_s": 14.327875,
+  "audio_start_s": 0.0,
+  "feature_sha256": "b362e9d968a902b92b6f2da83b6d0bdbca3d35e0d662d58810f480ed60d8d5e1",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-3g5yACwYnA__3.json": "65d6b293ff728413a57591ab637de14ef9da58cead9b9cced8bf2013a94b8e02",
+    "results/q1/samples/-3g5yACwYnA__3.npz": "a7e2f2a65ce3ae9a07d00c3bcf7c8eb4f56fa995397957a88c7d82e351e9caf2",
+    "results/q1_next/enhanced/-3g5yACwYnA__3.npz": "77a1bdabc426ff24ccbb9f6586d3a5b12a7793b74e6914d1161fcbb8682b45a5",
+    "results/q1_refinement_v1/faces/-3g5yACwYnA__3.npz": "c8795a041537f6a5ea8045101f8ea8b985ae7a84ccd900b4cbac9de3d0fa157f",
+    "results/q1_deep_v6/alignment/MMS_FA/-3g5yACwYnA__3/original.npz": "a6f587d8408fafa939b6805b608237a4f8bca10bf25ff67996e6f200e269cf57",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

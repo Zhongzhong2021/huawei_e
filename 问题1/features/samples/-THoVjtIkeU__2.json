@@ -1,0 +1,170 @@
+{
+  "sample_id": "-THoVjtIkeU$_$2",
+  "table_row_0based": 12,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-THoVjtIkeU/2.mp4",
+  "source_sha256": "35a6c2464ffd68dd96411edb5dc2763f0efb59f264c1d8b737e616fa6b0d1d5b",
+  "text_original": "I think social justice is extremely important for young people.",
+  "words": [
+    {
+      "word": "i",
+      "source_text": "I",
+      "char_start": 0,
+      "char_end": 1,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "i"
+      ]
+    },
+    {
+      "word": "think",
+      "source_text": "think",
+      "char_start": 2,
+      "char_end": 7,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "think"
+      ]
+    },
+    {
+      "word": "social",
+      "source_text": "social",
+      "char_start": 8,
+      "char_end": 14,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "social"
+      ]
+    },
+    {
+      "word": "justice",
+      "source_text": "justice",
+      "char_start": 15,
+      "char_end": 22,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "justice"
+      ]
+    },
+    {
+      "word": "is",
+      "source_text": "is",
+      "char_start": 23,
+      "char_end": 25,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "is"
+      ]
+    },
+    {
+      "word": "extremely",
+      "source_text": "extremely",
+      "char_start": 26,
+      "char_end": 35,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "extremely"
+      ]
+    },
+    {
+      "word": "important",
+      "source_text": "important",
+      "char_start": 36,
+      "char_end": 45,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "important"
+      ]
+    },
+    {
+      "word": "for",
+      "source_text": "for",
+      "char_start": 46,
+      "char_end": 49,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "for"
+      ]
+    },
+    {
+      "word": "young",
+      "source_text": "young",
+      "char_start": 50,
+      "char_end": 55,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "young"
+      ]
+    },
+    {
+      "word": "people",
+      "source_text": "people",
+      "char_start": 56,
+      "char_end": 62,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "people"
+      ]
+    }
+  ],
+  "duration_s": 4.266666,
+  "container_declared_duration_s": 4.644,
+  "media_clock": {
+    "stem": "-THoVjtIkeU__2",
+    "sample_id": "-THoVjtIkeU$_$2",
+    "container_duration_s": 4.644,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 4.230875,
+    "audio_end_s": 4.230875,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 4.233333,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 4.266666,
+    "observed_end_s": 4.266666,
+    "empty_declared_tail_s": 0.3773340000000003,
+    "original_video_frames": 128,
+    "source_sha256": "35a6c2464ffd68dd96411edb5dc2763f0efb59f264c1d8b737e616fa6b0d1d5b"
+  },
+  "decoded_audio_duration_s": 4.230875,
+  "audio_start_s": 0.0,
+  "feature_sha256": "fd75b9a6581b52cd761629efaedf37fac6669f308f5b8b9bfb6781ae62c03de1",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-THoVjtIkeU__2.json": "ba33088f48dab1ba22694c9b97dfd2a21323e95fb9517c372d4ac4c7794d0e82",
+    "results/q1/samples/-THoVjtIkeU__2.npz": "3e7f7ffa01965e72c423acbc407e16744766055aff55c6e4e429ece69097a83c",
+    "results/q1_next/enhanced/-THoVjtIkeU__2.npz": "bfa6f983e7b10a3fb322270a766bffd2d3179059f3f9017fee2b5f04d820a8ae",
+    "results/q1_refinement_v1/faces/-THoVjtIkeU__2.npz": "eac7d2adda9125f5f3b1ad8889d94c37a4fac9c5cdd3e7f8e508c6415e2f0f67",
+    "results/q1_deep_v6/alignment/MMS_FA/-THoVjtIkeU__2/original.npz": "f52e4d56613270afe460f3e3e8d2c38ea21ff4408649a7a1940907b1f2e645be",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

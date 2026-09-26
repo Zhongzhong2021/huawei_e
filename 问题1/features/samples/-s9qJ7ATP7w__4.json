@@ -1,0 +1,157 @@
+{
+  "sample_id": "-s9qJ7ATP7w$_$4",
+  "table_row_0based": 93,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-s9qJ7ATP7w/4.mp4",
+  "source_sha256": "76e0672ffce5857a789b41fb10606402f7da58c33579b1032a8282f86fb35bc9",
+  "text_original": "I have lost at everything you can imagine, seriously",
+  "words": [
+    {
+      "word": "i",
+      "source_text": "I",
+      "char_start": 0,
+      "char_end": 1,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "i"
+      ]
+    },
+    {
+      "word": "have",
+      "source_text": "have",
+      "char_start": 2,
+      "char_end": 6,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "have"
+      ]
+    },
+    {
+      "word": "lost",
+      "source_text": "lost",
+      "char_start": 7,
+      "char_end": 11,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "lost"
+      ]
+    },
+    {
+      "word": "at",
+      "source_text": "at",
+      "char_start": 12,
+      "char_end": 14,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "at"
+      ]
+    },
+    {
+      "word": "everything",
+      "source_text": "everything",
+      "char_start": 15,
+      "char_end": 25,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "everything"
+      ]
+    },
+    {
+      "word": "you",
+      "source_text": "you",
+      "char_start": 26,
+      "char_end": 29,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "you"
+      ]
+    },
+    {
+      "word": "can",
+      "source_text": "can",
+      "char_start": 30,
+      "char_end": 33,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "can"
+      ]
+    },
+    {
+      "word": "imagine",
+      "source_text": "imagine",
+      "char_start": 34,
+      "char_end": 41,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "imagine"
+      ]
+    },
+    {
+      "word": "seriously",
+      "source_text": "seriously",
+      "char_start": 43,
+      "char_end": 52,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "seriously"
+      ]
+    }
+  ],
+  "duration_s": 4.3999999999999995,
+  "container_declared_duration_s": 6.2,
+  "media_clock": {
+    "stem": "-s9qJ7ATP7w__4",
+    "sample_id": "-s9qJ7ATP7w$_$4",
+    "container_duration_s": 6.2,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 4.246875,
+    "audio_end_s": 4.246875,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 4.366667,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 4.3999999999999995,
+    "observed_end_s": 4.3999999999999995,
+    "empty_declared_tail_s": 1.8000000000000007,
+    "original_video_frames": 129,
+    "source_sha256": "76e0672ffce5857a789b41fb10606402f7da58c33579b1032a8282f86fb35bc9"
+  },
+  "decoded_audio_duration_s": 4.246875,
+  "audio_start_s": 0.0,
+  "feature_sha256": "e78cee09c96ce99d2b0c86539d02418c2adcea4cf3ef282d0626fc8571615680",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-s9qJ7ATP7w__4.json": "47141fcb5a2841438d4909c3902ce20747b4fb4de438937e3db7ded102416ef2",
+    "results/q1/samples/-s9qJ7ATP7w__4.npz": "557d61e17606e072005760480a128cf9f450f7fe946c47bc50a256dd3fcc5139",
+    "results/q1_next/enhanced/-s9qJ7ATP7w__4.npz": "322a3f63e94c59c5bd435312a66ce853a28ab0c23eba4cd47a823cf5bc3355e2",
+    "results/q1_refinement_v1/faces/-s9qJ7ATP7w__4.npz": "dfba1b668391c93a9e88f06eb15f40d98cb00a39e494fbfb55cfd50b146cb453",
+    "results/q1_deep_v6/alignment/MMS_FA/-s9qJ7ATP7w__4/original.npz": "062791fbb9f311c71ecfa46e5ce916b90f5ce4c5a7d9484e7a68c6d204a979ef",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

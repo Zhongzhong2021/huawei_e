@@ -1,0 +1,7 @@
+services:
+  lab:
+    image: huawei-model-e:q1-refinement-v1
+    build:
+      context: .
+      dockerfile: Dockerfile.q1-refinement
+    command: [python, scripts/q1f_validate.py]

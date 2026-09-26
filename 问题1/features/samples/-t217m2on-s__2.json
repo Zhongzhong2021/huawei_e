@@ -1,0 +1,200 @@
+{
+  "sample_id": "-t217m2on-s$_$2",
+  "table_row_0based": 47,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-t217m2on-s/2.mp4",
+  "source_sha256": "6713a983112173204502dc5adbb886bc6c38554b4627698611931420c47663a8",
+  "text_original": "But a good thing to do is yawning, chewing gum is effective.",
+  "words": [
+    {
+      "word": "but",
+      "source_text": "But",
+      "char_start": 0,
+      "char_end": 3,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "but"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 4,
+      "char_end": 5,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "good",
+      "source_text": "good",
+      "char_start": 6,
+      "char_end": 10,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "good"
+      ]
+    },
+    {
+      "word": "thing",
+      "source_text": "thing",
+      "char_start": 11,
+      "char_end": 16,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "thing"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 17,
+      "char_end": 19,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "do",
+      "source_text": "do",
+      "char_start": 20,
+      "char_end": 22,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "do"
+      ]
+    },
+    {
+      "word": "is",
+      "source_text": "is",
+      "char_start": 23,
+      "char_end": 25,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "is"
+      ]
+    },
+    {
+      "word": "yawning",
+      "source_text": "yawning",
+      "char_start": 26,
+      "char_end": 33,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8,
+        9,
+        10
+      ],
+      "bert_tokens": [
+        "ya",
+        "##wn",
+        "##ing"
+      ]
+    },
+    {
+      "word": "chewing",
+      "source_text": "chewing",
+      "char_start": 35,
+      "char_end": 42,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "chewing"
+      ]
+    },
+    {
+      "word": "gum",
+      "source_text": "gum",
+      "char_start": 43,
+      "char_end": 46,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "gum"
+      ]
+    },
+    {
+      "word": "is",
+      "source_text": "is",
+      "char_start": 47,
+      "char_end": 49,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "is"
+      ]
+    },
+    {
+      "word": "effective",
+      "source_text": "effective",
+      "char_start": 50,
+      "char_end": 59,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "effective"
+      ]
+    }
+  ],
+  "duration_s": 5.666666,
+  "container_declared_duration_s": 8.011,
+  "media_clock": {
+    "stem": "-t217m2on-s__2",
+    "sample_id": "-t217m2on-s$_$2",
+    "container_duration_s": 8.011,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 5.6301875,
+    "audio_end_s": 5.6301875,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 5.633333,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 5.666666,
+    "observed_end_s": 5.666666,
+    "empty_declared_tail_s": 2.344333999999999,
+    "original_video_frames": 170,
+    "source_sha256": "6713a983112173204502dc5adbb886bc6c38554b4627698611931420c47663a8"
+  },
+  "decoded_audio_duration_s": 5.6301875,
+  "audio_start_s": 0.0,
+  "feature_sha256": "bc0c84118418ce67adc19ac925d8a2b1d90c27707e94565180e355e6c93cc326",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-t217m2on-s__2.json": "c882c73763c80a0779061301a28d388d07794fd7bf93ef4fc136a6a8b2cdacef",
+    "results/q1/samples/-t217m2on-s__2.npz": "549b7839d60601cb09a11d3804ad7f2faa85d9568e84aa22f03e8dcfb426c938",
+    "results/q1_next/enhanced/-t217m2on-s__2.npz": "252fcbe3955a184fa2d0776591b9a349d6ee72d1d8c68020137e25c98963b623",
+    "results/q1_refinement_v1/faces/-t217m2on-s__2.npz": "338f5771afba911f1b00937808342cb58f6b9b4b69ba19c34854c393bb2c8cf8",
+    "results/q1_deep_v6/alignment/MMS_FA/-t217m2on-s__2/original.npz": "1df27289eef24bdbf082f8aaf3ce28b38c40e520e6f38bc07c95ee0d0754c60b",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

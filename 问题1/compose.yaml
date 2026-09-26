@@ -1,0 +1,30 @@
+name: huawei-model-q1-v6
+services:
+  lab:
+    image: huawei-model-e:torch2.7.1-cu126
+    build: .
+    working_dir: /app
+    shm_size: 2gb
+    environment:
+      DATA_ROOT: /data
+      HF_HOME: /cache/huggingface
+      OMP_NUM_THREADS: '8'
+      MKL_NUM_THREADS: '8'
+    volumes:
+      - type: bind
+        source: ${DATA_ROOT_HOST:?Set DATA_ROOT_HOST in .env}
+        target: /data
+        read_only: true
+      - ./scripts:/app/scripts:ro
+      - ./configs:/app/configs:ro
+      - ./results:/app/results
+      - ./cache:/cache
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    command: [python, scripts/doctor.py, --output, results/environment.json]
+

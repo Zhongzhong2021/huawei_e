@@ -1,0 +1,105 @@
+{
+  "sample_id": "-s9qJ7ATP7w$_$6",
+  "table_row_0based": 95,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-s9qJ7ATP7w/6.mp4",
+  "source_sha256": "40b684fd1b4559f0f82e72f9b47f4ce7c5e15059fe8d0d8ab112637cd3386451",
+  "text_original": "But I just kept going",
+  "words": [
+    {
+      "word": "but",
+      "source_text": "But",
+      "char_start": 0,
+      "char_end": 3,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "but"
+      ]
+    },
+    {
+      "word": "i",
+      "source_text": "I",
+      "char_start": 4,
+      "char_end": 5,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "i"
+      ]
+    },
+    {
+      "word": "just",
+      "source_text": "just",
+      "char_start": 6,
+      "char_end": 10,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "just"
+      ]
+    },
+    {
+      "word": "kept",
+      "source_text": "kept",
+      "char_start": 11,
+      "char_end": 15,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "kept"
+      ]
+    },
+    {
+      "word": "going",
+      "source_text": "going",
+      "char_start": 16,
+      "char_end": 21,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "going"
+      ]
+    }
+  ],
+  "duration_s": 2.466666,
+  "container_declared_duration_s": 6.6,
+  "media_clock": {
+    "stem": "-s9qJ7ATP7w__6",
+    "sample_id": "-s9qJ7ATP7w$_$6",
+    "container_duration_s": 6.6,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 2.3148125,
+    "audio_end_s": 2.3148125,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 2.433333,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 2.466666,
+    "observed_end_s": 2.466666,
+    "empty_declared_tail_s": 4.133334,
+    "original_video_frames": 71,
+    "source_sha256": "40b684fd1b4559f0f82e72f9b47f4ce7c5e15059fe8d0d8ab112637cd3386451"
+  },
+  "decoded_audio_duration_s": 2.3148125,
+  "audio_start_s": 0.0,
+  "feature_sha256": "0f29aade87af01ff619ec2924a143a057abd34456fa3483f2b3df4e178791bf9",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-s9qJ7ATP7w__6.json": "7c12e6dd8e53a6ca198ccfee97122957fd309915c87d96f663fbb261bd72bf1c",
+    "results/q1/samples/-s9qJ7ATP7w__6.npz": "44e0782e121753eb5cc840bcf0f28536192c21f7e735b402403c752bf3ae99ae",
+    "results/q1_next/enhanced/-s9qJ7ATP7w__6.npz": "2c0e57e610b3baa91581f31d75f8a7e344c840739b8587389e396b1bfe825320",
+    "results/q1_refinement_v1/faces/-s9qJ7ATP7w__6.npz": "b47ddc2c8240c9b27c07dbebfa4e7f9788284d7dcb4be7566ebe5e8877c4519f",
+    "results/q1_deep_v6/alignment/MMS_FA/-s9qJ7ATP7w__6/original.npz": "562e8f10afa59f1073dc4092ab9274b8dc4f69b8b5945ea5202be88aa1151f75",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

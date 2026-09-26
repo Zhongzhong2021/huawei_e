@@ -1,0 +1,402 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1790225617.871403     128 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+W0000 00:00:1790225617.882704     130 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225617.898402     144 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-3g5yACwYnA$_$13", "words": 15, "cer_proxy": 0.277, "low_score": 1, "face_coverage": 1.0, "seconds": 12.832}
+W0000 00:00:1790225620.232189     243 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225620.241642     244 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225620.252954     256 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-3g5yACwYnA$_$3", "words": 29, "cer_proxy": 0.183, "low_score": 0, "face_coverage": 1.0, "seconds": 3.246}
+W0000 00:00:1790225623.078606     327 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225623.095615     329 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225623.113262     341 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-3g5yACwYnA$_$2", "words": 14, "cer_proxy": 0.07, "low_score": 0, "face_coverage": 1.0, "seconds": 2.338}
+W0000 00:00:1790225625.414234     411 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225625.424405     413 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225625.437205     427 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-3g5yACwYnA$_$9", "words": 23, "cer_proxy": 0.123, "low_score": 1, "face_coverage": 1.0, "seconds": 2.307}
+W0000 00:00:1790225627.100855     495 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225627.110630     496 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225627.122692     509 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-3nNcZdcdvU$_$5", "words": 18, "cer_proxy": 0.047, "low_score": 0, "face_coverage": 0.9873417721518988, "seconds": 1.361}
+W0000 00:00:1790225628.445543     579 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225628.464572     581 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225628.480089     593 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-HwX2H8Z4hY$_$2", "words": 4, "cer_proxy": 0.133, "low_score": 0, "face_coverage": 0.225, "seconds": 0.904}
+W0000 00:00:1790225629.759958     663 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225629.771981     666 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225629.786301     677 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-HwX2H8Z4hY$_$5", "words": 9, "cer_proxy": 0.094, "low_score": 0, "face_coverage": 0.2857142857142857, "seconds": 1.604}
+W0000 00:00:1790225630.952700     747 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225630.961927     750 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225630.974424     750 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-HwX2H8Z4hY$_$6", "words": 7, "cer_proxy": 0.0, "low_score": 0, "face_coverage": 0.6060606060606061, "seconds": 0.949}
+W0000 00:00:1790225632.359497     831 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225632.369562     832 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225632.381457     845 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-HwX2H8Z4hY$_$9", "words": 22, "cer_proxy": 0.184, "low_score": 1, "face_coverage": 0.0, "seconds": 1.364}
+W0000 00:00:1790225633.390616     915 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225633.404268     918 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225633.416267     929 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-NFrJFQijFE$_$1", "words": 16, "cer_proxy": 1.0, "low_score": 16, "face_coverage": 0.0, "seconds": 0.954}
+W0000 00:00:1790225634.556478     999 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225634.581283    1001 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225634.593802    1017 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-NFrJFQijFE$_$2", "words": 18, "cer_proxy": 0.771, "low_score": 17, "face_coverage": 0.0, "seconds": 1.192}
+W0000 00:00:1790225636.379085    1083 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225636.390172    1085 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225636.403574    1097 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-THoVjtIkeU$_$12", "words": 39, "cer_proxy": 0.012, "low_score": 0, "face_coverage": 1.0, "seconds": 2.885}
+W0000 00:00:1790225638.351918    1167 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225638.362068    1170 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225638.374989    1170 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-THoVjtIkeU$_$2", "words": 10, "cer_proxy": 0.0, "low_score": 0, "face_coverage": 1.0, "seconds": 0.984}
+W0000 00:00:1790225639.497979    1251 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225639.508609    1252 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225639.530189    1265 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-THoVjtIkeU$_$6", "words": 30, "cer_proxy": 0.076, "low_score": 1, "face_coverage": 1.0, "seconds": 1.604}
+W0000 00:00:1790225641.676815    1335 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225641.688398    1337 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225641.703799    1349 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-UuX1xuaiiE$_$1", "words": 27, "cer_proxy": 0.034, "low_score": 0, "face_coverage": 0.04807692307692308, "seconds": 1.849}
+W0000 00:00:1790225642.783771    1419 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225642.793949    1422 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225642.807294    1433 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-UuX1xuaiiE$_$0", "words": 9, "cer_proxy": 0.13, "low_score": 1, "face_coverage": 0.4864864864864865, "seconds": 0.879}
+W0000 00:00:1790225643.921057    1503 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225643.931340    1504 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225643.943497    1518 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-UuX1xuaiiE$_$3", "words": 9, "cer_proxy": 0.324, "low_score": 0, "face_coverage": 1.0, "seconds": 1.257}
+W0000 00:00:1790225645.563908    1587 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225645.574057    1588 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225645.587068    1604 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-UuX1xuaiiE$_$6", "words": 23, "cer_proxy": 0.039, "low_score": 0, "face_coverage": 1.0, "seconds": 2.023}
+W0000 00:00:1790225648.139401    1671 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225648.149595    1673 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225648.162272    1685 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-a55Q6RWvTA$_$3", "words": 65, "cer_proxy": 0.057, "low_score": 3, "face_coverage": 0.8783783783783784, "seconds": 3.42}
+W0000 00:00:1790225650.825207    1755 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225650.837183    1757 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225650.854796    1757 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-aNfi7CP8vM$_$7", "words": 18, "cer_proxy": 0.19, "low_score": 1, "face_coverage": 1.0, "seconds": 1.78}
+W0000 00:00:1790225653.251210    1839 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225653.261970    1840 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225653.271377    1840 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-aqamKhZ1Ec$_$0", "words": 17, "cer_proxy": 0.276, "low_score": 4, "face_coverage": 1.0, "seconds": 2.701}
+W0000 00:00:1790225655.844268    1923 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225655.854763    1926 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225655.864251    1938 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-dxfTGcXJoc$_$1", "words": 38, "cer_proxy": 0.052, "low_score": 2, "face_coverage": 1.0, "seconds": 2.762}
+W0000 00:00:1790225658.816201    2007 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225658.829169    2008 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225658.845844    2008 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-dxfTGcXJoc$_$0", "words": 45, "cer_proxy": 0.169, "low_score": 5, "face_coverage": 0.7766990291262136, "seconds": 3.099}
+W0000 00:00:1790225661.737103    2091 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225661.746713    2092 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225661.760360    2105 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-dxfTGcXJoc$_$2", "words": 37, "cer_proxy": 0.097, "low_score": 3, "face_coverage": 1.0, "seconds": 2.892}
+W0000 00:00:1790225664.287776    2175 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225664.308538    2176 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225664.330783    2176 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-dxfTGcXJoc$_$6", "words": 30, "cer_proxy": 0.062, "low_score": 3, "face_coverage": 1.0, "seconds": 2.186}
+W0000 00:00:1790225666.137819    2259 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225666.147132    2260 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225666.158628    2273 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-egA8-b7-3M$_$26", "words": 15, "cer_proxy": 0.03, "low_score": 0, "face_coverage": 1.0, "seconds": 1.278}
+W0000 00:00:1790225667.540603    2343 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225667.551552    2344 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225667.561093    2358 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-egA8-b7-3M$_$17", "words": 16, "cer_proxy": 0.0, "low_score": 0, "face_coverage": 1.0, "seconds": 1.69}
+W0000 00:00:1790225669.269181    2427 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225669.285363    2429 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225669.294803    2442 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-egA8-b7-3M$_$18", "words": 22, "cer_proxy": 0.058, "low_score": 1, "face_coverage": 1.0, "seconds": 1.639}
+W0000 00:00:1790225670.640268    2511 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225670.652894    2512 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225670.666502    2525 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-egA8-b7-3M$_$16", "words": 11, "cer_proxy": 0.0, "low_score": 0, "face_coverage": 1.0, "seconds": 1.147}
+W0000 00:00:1790225671.759210    2595 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225671.769217    2597 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225671.778354    2609 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-egA8-b7-3M$_$13", "words": 11, "cer_proxy": 0.096, "low_score": 0, "face_coverage": 1.0, "seconds": 0.928}
+W0000 00:00:1790225673.119413    2679 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225673.130115    2681 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225673.139831    2693 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-egA8-b7-3M$_$1", "words": 22, "cer_proxy": 0.284, "low_score": 5, "face_coverage": 1.0, "seconds": 1.906}
+W0000 00:00:1790225674.698862    2763 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225674.708157    2765 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225674.720547    2777 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-egA8-b7-3M$_$6", "words": 12, "cer_proxy": 0.029, "low_score": 0, "face_coverage": 1.0, "seconds": 1.229}
+W0000 00:00:1790225675.947968    2847 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225675.969253    2848 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225675.982883    2848 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-egA8-b7-3M$_$9", "words": 10, "cer_proxy": 0.018, "low_score": 0, "face_coverage": 1.0, "seconds": 1.104}
+W0000 00:00:1790225677.329280    2931 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225677.341013    2933 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225677.352610    2945 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-egA8-b7-3M$_$20", "words": 20, "cer_proxy": 0.065, "low_score": 0, "face_coverage": 1.0, "seconds": 1.515}
+W0000 00:00:1790225678.719998    3015 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225678.729982    3017 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225678.742975    3017 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-iRBcNs9oI8$_$3", "words": 8, "cer_proxy": 1.536, "low_score": 3, "face_coverage": 0.0, "seconds": 0.992}
+W0000 00:00:1790225679.640624    3099 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225679.650450    3102 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225679.662821    3113 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-iRBcNs9oI8$_$7", "words": 9, "cer_proxy": 0.895, "low_score": 7, "face_coverage": 0.0, "seconds": 0.808}
+W0000 00:00:1790225680.436904    3183 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225680.446221    3185 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225680.457037    3197 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-iRBcNs9oI8$_$6", "words": 5, "cer_proxy": 1.875, "low_score": 4, "face_coverage": 0.0, "seconds": 0.765}
+W0000 00:00:1790225681.274320    3267 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225681.284265    3268 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225681.296106    3268 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-iRBcNs9oI8$_$9", "words": 5, "cer_proxy": 0.792, "low_score": 4, "face_coverage": 0.0, "seconds": 0.872}
+W0000 00:00:1790225682.512875    3351 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225682.530360    3354 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225682.547634    3365 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-iRBcNs9oI8$_$8", "words": 21, "cer_proxy": 0.932, "low_score": 13, "face_coverage": 0.0, "seconds": 1.391}
+W0000 00:00:1790225683.616905    3435 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225683.627096    3436 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225683.636918    3448 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-lzEya4AM_4$_$5", "words": 19, "cer_proxy": 0.06, "low_score": 1, "face_coverage": 1.0, "seconds": 1.402}
+W0000 00:00:1790225685.675686    3519 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225685.684845    3521 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225685.694170    3533 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-lzEya4AM_4$_$6", "words": 43, "cer_proxy": 0.071, "low_score": 1, "face_coverage": 0.9797297297297297, "seconds": 2.665}
+W0000 00:00:1790225687.851928    3603 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225687.862194    3604 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225687.875766    3604 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-mJ2ud6oKI8$_$1", "words": 13, "cer_proxy": 1.0, "low_score": 13, "face_coverage": 0.0, "seconds": 1.119}
+W0000 00:00:1790225688.816081    3687 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225688.824804    3689 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225688.834001    3701 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-mJ2ud6oKI8$_$2", "words": 11, "cer_proxy": 1.0, "low_score": 11, "face_coverage": 0.0, "seconds": 1.083}
+W0000 00:00:1790225689.665474    3771 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225689.675894    3774 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225689.686005    3785 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-mJ2ud6oKI8$_$6", "words": 5, "cer_proxy": 1.278, "low_score": 3, "face_coverage": 1.0, "seconds": 0.7}
+W0000 00:00:1790225690.944780    3855 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225690.953667    3857 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225690.965742    3869 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-mJ2ud6oKI8$_$9", "words": 22, "cer_proxy": 0.878, "low_score": 18, "face_coverage": 1.0, "seconds": 1.84}
+W0000 00:00:1790225692.582643    3939 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225692.591769    3941 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225692.600907    3953 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-mJ2ud6oKI8$_$8", "words": 11, "cer_proxy": 0.8, "low_score": 9, "face_coverage": 1.0, "seconds": 1.276}
+W0000 00:00:1790225693.865565    4023 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225693.884891    4026 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225693.902785    4037 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-mqbVkbCndg$_$0", "words": 14, "cer_proxy": 0.0, "low_score": 0, "face_coverage": 1.0, "seconds": 1.495}
+W0000 00:00:1790225695.229522    4107 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225695.240051    4109 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225695.250116    4121 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-t217m2on-s$_$2", "words": 12, "cer_proxy": 0.17, "low_score": 0, "face_coverage": 1.0, "seconds": 1.121}
+W0000 00:00:1790225697.067979    4191 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225697.082220    4193 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225697.102264    4193 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-t217m2on-s$_$7", "words": 45, "cer_proxy": 0.066, "low_score": 0, "face_coverage": 1.0, "seconds": 2.823}
+W0000 00:00:1790225699.581479    4275 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225699.591578    4277 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225699.600667    4288 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-tANM6ETl_M$_$3", "words": 22, "cer_proxy": 0.066, "low_score": 1, "face_coverage": 1.0, "seconds": 1.803}
+W0000 00:00:1790225701.008532    4359 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225701.018398    4362 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225701.028763    4362 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-tPCytz4rww$_$11", "words": 17, "cer_proxy": 0.39, "low_score": 4, "face_coverage": 1.0, "seconds": 1.139}
+W0000 00:00:1790225702.107524    4443 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225702.120321    4445 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225702.130754    4445 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-tPCytz4rww$_$10", "words": 12, "cer_proxy": 0.189, "low_score": 1, "face_coverage": 1.0, "seconds": 0.994}
+W0000 00:00:1790225703.662089    4527 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225703.672533    4531 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225703.687193    4541 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-tPCytz4rww$_$12", "words": 26, "cer_proxy": 0.28, "low_score": 5, "face_coverage": 1.0, "seconds": 2.216}
+W0000 00:00:1790225705.629585    4611 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225705.643717    4613 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225705.656674    4627 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-tPCytz4rww$_$16", "words": 16, "cer_proxy": 0.431, "low_score": 3, "face_coverage": 1.0, "seconds": 1.476}
+W0000 00:00:1790225706.980063    4695 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225706.991174    4697 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225707.005078    4709 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-tPCytz4rww$_$18", "words": 16, "cer_proxy": 0.2, "low_score": 0, "face_coverage": 1.0, "seconds": 1.399}
+W0000 00:00:1790225708.546350    4779 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225708.557105    4780 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225708.569767    4793 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-vxjVxOeScU$_$4", "words": 21, "cer_proxy": 0.178, "low_score": 2, "face_coverage": 1.0, "seconds": 1.692}
+W0000 00:00:1790225709.959060    4863 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225709.969108    4865 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225709.979309    4878 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-wMB_hJL-3o$_$7", "words": 22, "cer_proxy": 0.0, "low_score": 0, "face_coverage": 0.9672131147540983, "seconds": 1.096}
+W0000 00:00:1790225711.449810    4947 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225711.461829    4949 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225711.473171    4967 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-wny0OAz3g8$_$1", "words": 22, "cer_proxy": 0.077, "low_score": 0, "face_coverage": 0.16176470588235295, "seconds": 1.621}
+W0000 00:00:1790225712.698974    5031 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225712.710750    5033 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225712.720514    5045 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-wny0OAz3g8$_$0", "words": 9, "cer_proxy": 0.333, "low_score": 0, "face_coverage": 0.8484848484848485, "seconds": 0.916}
+W0000 00:00:1790225714.028607    5115 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225714.038201    5117 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225714.047111    5129 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-wny0OAz3g8$_$3", "words": 20, "cer_proxy": 0.051, "low_score": 1, "face_coverage": 0.16393442622950818, "seconds": 1.493}
+W0000 00:00:1790225715.565837    5199 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225715.576355    5201 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225715.586532    5213 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-wny0OAz3g8$_$2", "words": 23, "cer_proxy": 0.205, "low_score": 0, "face_coverage": 0.8208955223880597, "seconds": 1.701}
+W0000 00:00:1790225717.297494    5283 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225717.309059    5285 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225717.319745    5297 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-wny0OAz3g8$_$5", "words": 20, "cer_proxy": 0.067, "low_score": 0, "face_coverage": 0.17391304347826086, "seconds": 1.701}
+W0000 00:00:1790225718.911491    5367 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225718.921444    5369 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225718.932420    5381 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-wny0OAz3g8$_$7", "words": 29, "cer_proxy": 0.085, "low_score": 2, "face_coverage": 0.2222222222222222, "seconds": 1.542}
+W0000 00:00:1790225720.434907    5451 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225720.444412    5453 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225720.453221    5466 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-wny0OAz3g8$_$9", "words": 20, "cer_proxy": 0.134, "low_score": 1, "face_coverage": 0.8870967741935484, "seconds": 1.532}
+W0000 00:00:1790225721.664911    5535 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225721.675683    5537 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225721.685074    5549 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-571d8cVauQ$_$0", "words": 12, "cer_proxy": 0.169, "low_score": 0, "face_coverage": 0.9615384615384616, "seconds": 0.995}
+W0000 00:00:1790225723.475699    5619 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225723.487521    5620 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225723.499312    5633 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-571d8cVauQ$_$5", "words": 43, "cer_proxy": 0.127, "low_score": 1, "face_coverage": 1.0, "seconds": 2.749}
+W0000 00:00:1790225725.769509    5703 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225725.779852    5705 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225725.794657    5716 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-I_e4mIh0yE$_$1", "words": 18, "cer_proxy": 0.037, "low_score": 0, "face_coverage": 1.0, "seconds": 1.565}
+W0000 00:00:1790225727.239056    5787 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225727.254185    5789 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225727.266289    5789 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-I_e4mIh0yE$_$3", "words": 22, "cer_proxy": 0.046, "low_score": 0, "face_coverage": 1.0, "seconds": 1.677}
+W0000 00:00:1790225728.881739    5871 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225728.891432    5872 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225728.901318    5885 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-UacrmKiTn4$_$10", "words": 18, "cer_proxy": 0.118, "low_score": 0, "face_coverage": 1.0, "seconds": 1.424}
+W0000 00:00:1790225730.087332    5955 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225730.097688    5956 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225730.110525    5969 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-UacrmKiTn4$_$4", "words": 14, "cer_proxy": 0.0, "low_score": 0, "face_coverage": 1.0, "seconds": 0.919}
+W0000 00:00:1790225731.538671    6039 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225731.551637    6041 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225731.563121    6053 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-hnBHBN8p5A$_$7", "words": 13, "cer_proxy": 0.844, "low_score": 9, "face_coverage": 0.0, "seconds": 1.417}
+W0000 00:00:1790225732.843400    6123 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225732.853612    6125 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225732.867259    6137 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-hnBHBN8p5A$_$6", "words": 13, "cer_proxy": 0.775, "low_score": 11, "face_coverage": 0.0, "seconds": 1.208}
+W0000 00:00:1790225733.758119    6207 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225733.768572    6209 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225733.778767    6221 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-qDkUB0GgYY$_$6", "words": 16, "cer_proxy": 0.414, "low_score": 2, "face_coverage": 1.0, "seconds": 1.022}
+W0000 00:00:1790225734.830096    6291 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225734.839337    6292 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225734.847688    6305 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-uywlfIYOS8$_$4", "words": 18, "cer_proxy": 0.405, "low_score": 0, "face_coverage": 1.0, "seconds": 1.181}
+W0000 00:00:1790225736.451809    6375 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225736.473410    6379 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225736.486154    6389 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-6rXp3zJ3kc$_$8", "words": 34, "cer_proxy": 0.147, "low_score": 0, "face_coverage": 1.0, "seconds": 2.245}
+W0000 00:00:1790225738.641516    6459 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225738.651147    6462 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225738.659775    6462 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-9y-fZ3swSY$_$0", "words": 22, "cer_proxy": 0.416, "low_score": 4, "face_coverage": 0.9565217391304348, "seconds": 1.715}
+W0000 00:00:1790225740.013417    6543 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225740.022773    6545 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225740.031733    6557 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-9y-fZ3swSY$_$4", "words": 11, "cer_proxy": 0.08, "low_score": 0, "face_coverage": 0.9285714285714286, "seconds": 0.947}
+W0000 00:00:1790225741.191170    6627 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225741.201002    6628 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225741.209594    6642 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-9y-fZ3swSY$_$8", "words": 12, "cer_proxy": 0.273, "low_score": 2, "face_coverage": 0.36, "seconds": 1.385}
+W0000 00:00:1790225744.452892    6711 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225744.470391    6712 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225744.482297    6712 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-AUZQgSxyPQ$_$2", "words": 41, "cer_proxy": 0.147, "low_score": 1, "face_coverage": 1.0, "seconds": 5.089}
+W0000 00:00:1790225747.900603    6795 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225747.912069    6798 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225747.922184    6809 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-HeZS2-Prhc$_$2", "words": 16, "cer_proxy": 0.098, "low_score": 0, "face_coverage": 1.0, "seconds": 1.802}
+W0000 00:00:1790225749.459148    6879 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225749.469366    6881 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225749.485425    6893 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-MeTTeMJBNc$_$0", "words": 21, "cer_proxy": 0.053, "low_score": 0, "face_coverage": 0.9893617021276596, "seconds": 1.612}
+W0000 00:00:1790225750.866169    6963 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225750.875044    6964 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225750.884604    6976 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-MeTTeMJBNc$_$13", "words": 14, "cer_proxy": 0.091, "low_score": 0, "face_coverage": 1.0, "seconds": 1.023}
+W0000 00:00:1790225752.362357    7047 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225752.373767    7048 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225752.383561    7061 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-MeTTeMJBNc$_$7", "words": 31, "cer_proxy": 0.086, "low_score": 1, "face_coverage": 1.0, "seconds": 1.949}
+W0000 00:00:1790225754.397881    7131 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225754.418419    7132 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225754.437173    7146 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-RfYyzHpjk4$_$11", "words": 17, "cer_proxy": 0.169, "low_score": 0, "face_coverage": 1.0, "seconds": 1.721}
+W0000 00:00:1790225755.988754    7215 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225755.998547    7218 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225756.007502    7229 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-RfYyzHpjk4$_$8", "words": 17, "cer_proxy": 0.048, "low_score": 0, "face_coverage": 1.0, "seconds": 1.562}
+W0000 00:00:1790225757.452065    7299 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225757.463435    7301 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225757.473795    7314 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-RfYyzHpjk4$_$2", "words": 25, "cer_proxy": 0.28, "low_score": 5, "face_coverage": 0.7818181818181819, "seconds": 1.458}
+W0000 00:00:1790225758.828771    7383 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225758.837786    7384 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225758.848960    7397 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-UUCSKoHeMA$_$0", "words": 18, "cer_proxy": 0.181, "low_score": 0, "face_coverage": 0.9873417721518988, "seconds": 1.446}
+W0000 00:00:1790225759.972963    7467 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225759.983150    7468 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225759.996189    7481 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-ri04Z7vwnc$_$0", "words": 8, "cer_proxy": 1.0, "low_score": 8, "face_coverage": 0.0, "seconds": 0.536}
+W0000 00:00:1790225760.815302    7551 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225760.828569    7553 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225760.838094    7567 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-ri04Z7vwnc$_$2", "words": 16, "cer_proxy": 0.912, "low_score": 16, "face_coverage": 0.36666666666666664, "seconds": 1.069}
+W0000 00:00:1790225761.759904    7635 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225761.776708    7636 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225761.794382    7648 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-ri04Z7vwnc$_$5", "words": 8, "cer_proxy": 1.105, "low_score": 6, "face_coverage": 1.0, "seconds": 0.994}
+W0000 00:00:1790225763.025854    7719 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225763.034939    7721 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225763.043652    7735 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-s9qJ7ATP7w$_$1", "words": 11, "cer_proxy": 0.385, "low_score": 1, "face_coverage": 0.9574468085106383, "seconds": 1.375}
+W0000 00:00:1790225764.513278    7803 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225764.521958    7805 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225764.531113    7817 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-s9qJ7ATP7w$_$0", "words": 24, "cer_proxy": 0.165, "low_score": 1, "face_coverage": 0.9565217391304348, "seconds": 1.616}
+W0000 00:00:1790225766.310641    7887 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225766.326969    7889 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225766.339698    7901 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-s9qJ7ATP7w$_$5", "words": 19, "cer_proxy": 0.188, "low_score": 0, "face_coverage": 1.0, "seconds": 2.024}
+W0000 00:00:1790225767.944468    7971 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225767.955541    7972 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225767.966239    7988 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-s9qJ7ATP7w$_$4", "words": 9, "cer_proxy": 0.395, "low_score": 0, "face_coverage": 0.6818181818181818, "seconds": 1.109}
+W0000 00:00:1790225769.384262    8055 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225769.395093    8058 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225769.406424    8072 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-s9qJ7ATP7w$_$7", "words": 28, "cer_proxy": 0.184, "low_score": 1, "face_coverage": 0.5714285714285714, "seconds": 1.641}
+W0000 00:00:1790225770.535695    8139 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225770.546505    8140 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225770.556631    8152 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-s9qJ7ATP7w$_$6", "words": 5, "cer_proxy": 0.529, "low_score": 1, "face_coverage": 0.7916666666666666, "seconds": 0.775}
+W0000 00:00:1790225771.410987    8223 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225771.421956    8225 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225771.432732    8225 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-s9qJ7ATP7w$_$8", "words": 12, "cer_proxy": 0.419, "low_score": 0, "face_coverage": 1.0, "seconds": 1.014}
+W0000 00:00:1790225775.163873    8307 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225775.175032    8308 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225775.184353    8308 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-yRb-Jum7EQ$_$1", "words": 49, "cer_proxy": 0.768, "low_score": 31, "face_coverage": 0.9351535836177475, "seconds": 6.52}
+W0000 00:00:1790225780.064190    8391 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225780.076187    8393 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225780.088828    8405 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-yRb-Jum7EQ$_$5", "words": 25, "cer_proxy": 0.836, "low_score": 17, "face_coverage": 1.0, "seconds": 3.022}
+W0000 00:00:1790225782.897886    8475 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790225782.907862    8476 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790225782.917594    8476 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-yRb-Jum7EQ$_$6", "words": 19, "cer_proxy": 0.811, "low_score": 13, "face_coverage": 1.0, "seconds": 2.679}

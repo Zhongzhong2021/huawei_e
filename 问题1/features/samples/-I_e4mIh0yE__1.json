@@ -1,0 +1,278 @@
+{
+  "sample_id": "-I_e4mIh0yE$_$1",
+  "table_row_0based": 66,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-I_e4mIh0yE/1.mp4",
+  "source_sha256": "8453a966d4bd1f0179eb86a35cd34c0864a3a3bc2fa86f37783060cc0d14f5df",
+  "text_original": "In the United States we don't punish failure to the degree to which failure is punished in Europe.",
+  "words": [
+    {
+      "word": "in",
+      "source_text": "In",
+      "char_start": 0,
+      "char_end": 2,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "in"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 3,
+      "char_end": 6,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "united",
+      "source_text": "United",
+      "char_start": 7,
+      "char_end": 13,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "united"
+      ]
+    },
+    {
+      "word": "states",
+      "source_text": "States",
+      "char_start": 14,
+      "char_end": 20,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "states"
+      ]
+    },
+    {
+      "word": "we",
+      "source_text": "we",
+      "char_start": 21,
+      "char_end": 23,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "we"
+      ]
+    },
+    {
+      "word": "don't",
+      "source_text": "don't",
+      "char_start": 24,
+      "char_end": 29,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6,
+        7,
+        8
+      ],
+      "bert_tokens": [
+        "don",
+        "'",
+        "t"
+      ]
+    },
+    {
+      "word": "punish",
+      "source_text": "punish",
+      "char_start": 30,
+      "char_end": 36,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "punish"
+      ]
+    },
+    {
+      "word": "failure",
+      "source_text": "failure",
+      "char_start": 37,
+      "char_end": 44,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "failure"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 45,
+      "char_end": 47,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 48,
+      "char_end": 51,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "degree",
+      "source_text": "degree",
+      "char_start": 52,
+      "char_end": 58,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "degree"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 59,
+      "char_end": 61,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "which",
+      "source_text": "which",
+      "char_start": 62,
+      "char_end": 67,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "which"
+      ]
+    },
+    {
+      "word": "failure",
+      "source_text": "failure",
+      "char_start": 68,
+      "char_end": 75,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "failure"
+      ]
+    },
+    {
+      "word": "is",
+      "source_text": "is",
+      "char_start": 76,
+      "char_end": 78,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17
+      ],
+      "bert_tokens": [
+        "is"
+      ]
+    },
+    {
+      "word": "punished",
+      "source_text": "punished",
+      "char_start": 79,
+      "char_end": 87,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        18
+      ],
+      "bert_tokens": [
+        "punished"
+      ]
+    },
+    {
+      "word": "in",
+      "source_text": "in",
+      "char_start": 88,
+      "char_end": 90,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        19
+      ],
+      "bert_tokens": [
+        "in"
+      ]
+    },
+    {
+      "word": "europe",
+      "source_text": "Europe",
+      "char_start": 91,
+      "char_end": 97,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        20
+      ],
+      "bert_tokens": [
+        "europe"
+      ]
+    }
+  ],
+  "duration_s": 7.6,
+  "container_declared_duration_s": 10.767,
+  "media_clock": {
+    "stem": "-I_e4mIh0yE__1",
+    "sample_id": "-I_e4mIh0yE$_$1",
+    "container_duration_s": 10.767,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 7.4443125,
+    "audio_end_s": 7.4443125,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 7.566667,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 7.6,
+    "observed_end_s": 7.6,
+    "empty_declared_tail_s": 3.167,
+    "original_video_frames": 225,
+    "source_sha256": "8453a966d4bd1f0179eb86a35cd34c0864a3a3bc2fa86f37783060cc0d14f5df"
+  },
+  "decoded_audio_duration_s": 7.4443125,
+  "audio_start_s": 0.0,
+  "feature_sha256": "d89d00366763bae40fac1923ccc08abdeb2974524895eead771a43cada09ffc7",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-I_e4mIh0yE__1.json": "75dfc7da76f2cd947f0ea07c5b002816c9fe6280715e12ef61503f502f38e504",
+    "results/q1/samples/-I_e4mIh0yE__1.npz": "f44242a0543a367d6f21fa0b376fa8a2fc225a607e58ecbdc36df807bfba0d25",
+    "results/q1_next/enhanced/-I_e4mIh0yE__1.npz": "1e525d23c206d5e9c3f09da262b60fd8c21460a1ca100bf3dd4fb11143b2902f",
+    "results/q1_refinement_v1/faces/-I_e4mIh0yE__1.npz": "e87185bc764797459509c2d63af5142f99df1715fd3fbe389176f79639544fee",
+    "results/q1_deep_v6/alignment/MMS_FA/-I_e4mIh0yE__1/original.npz": "c105baa895bd31d9763b87cdafd9f6632b96bd56d7c19785dbd944be3afe549b",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

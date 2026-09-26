@@ -1,0 +1,304 @@
+{
+  "sample_id": "-egA8-b7-3M$_$20",
+  "table_row_0based": 33,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-egA8-b7-3M/20.mp4",
+  "source_sha256": "719ef133920e74b3ea33925d2bca0270b062199116867568f88ac83cadcd74e8",
+  "text_original": "Now you've got a face that you can connect with a voice, and that makes you closer to that client.",
+  "words": [
+    {
+      "word": "now",
+      "source_text": "Now",
+      "char_start": 0,
+      "char_end": 3,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "now"
+      ]
+    },
+    {
+      "word": "you've",
+      "source_text": "you've",
+      "char_start": 4,
+      "char_end": 10,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2,
+        3,
+        4
+      ],
+      "bert_tokens": [
+        "you",
+        "'",
+        "ve"
+      ]
+    },
+    {
+      "word": "got",
+      "source_text": "got",
+      "char_start": 11,
+      "char_end": 14,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "got"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 15,
+      "char_end": 16,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "face",
+      "source_text": "face",
+      "char_start": 17,
+      "char_end": 21,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "face"
+      ]
+    },
+    {
+      "word": "that",
+      "source_text": "that",
+      "char_start": 22,
+      "char_end": 26,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "that"
+      ]
+    },
+    {
+      "word": "you",
+      "source_text": "you",
+      "char_start": 27,
+      "char_end": 30,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "you"
+      ]
+    },
+    {
+      "word": "can",
+      "source_text": "can",
+      "char_start": 31,
+      "char_end": 34,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "can"
+      ]
+    },
+    {
+      "word": "connect",
+      "source_text": "connect",
+      "char_start": 35,
+      "char_end": 42,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "connect"
+      ]
+    },
+    {
+      "word": "with",
+      "source_text": "with",
+      "char_start": 43,
+      "char_end": 47,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "with"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 48,
+      "char_end": 49,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "voice",
+      "source_text": "voice",
+      "char_start": 50,
+      "char_end": 55,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "voice"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 57,
+      "char_end": 60,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "that",
+      "source_text": "that",
+      "char_start": 61,
+      "char_end": 65,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17
+      ],
+      "bert_tokens": [
+        "that"
+      ]
+    },
+    {
+      "word": "makes",
+      "source_text": "makes",
+      "char_start": 66,
+      "char_end": 71,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        18
+      ],
+      "bert_tokens": [
+        "makes"
+      ]
+    },
+    {
+      "word": "you",
+      "source_text": "you",
+      "char_start": 72,
+      "char_end": 75,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        19
+      ],
+      "bert_tokens": [
+        "you"
+      ]
+    },
+    {
+      "word": "closer",
+      "source_text": "closer",
+      "char_start": 76,
+      "char_end": 82,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        20
+      ],
+      "bert_tokens": [
+        "closer"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 83,
+      "char_end": 85,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        21
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "that",
+      "source_text": "that",
+      "char_start": 86,
+      "char_end": 90,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        22
+      ],
+      "bert_tokens": [
+        "that"
+      ]
+    },
+    {
+      "word": "client",
+      "source_text": "client",
+      "char_start": 91,
+      "char_end": 97,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        23
+      ],
+      "bert_tokens": [
+        "client"
+      ]
+    }
+  ],
+  "duration_s": 6.6333329999999995,
+  "container_declared_duration_s": 14.767,
+  "media_clock": {
+    "stem": "-egA8-b7-3M__20",
+    "sample_id": "-egA8-b7-3M$_$20",
+    "container_duration_s": 14.767,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 6.4744375,
+    "audio_end_s": 6.4744375,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 6.6,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 6.6333329999999995,
+    "observed_end_s": 6.6333329999999995,
+    "empty_declared_tail_s": 8.133666999999999,
+    "original_video_frames": 196,
+    "source_sha256": "719ef133920e74b3ea33925d2bca0270b062199116867568f88ac83cadcd74e8"
+  },
+  "decoded_audio_duration_s": 6.4744375,
+  "audio_start_s": 0.0,
+  "feature_sha256": "ef63ff8a649359ce15d86929aa5f491e80fc333babff589a1b0d7ae406c44911",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-egA8-b7-3M__20.json": "3997b9c33444e0a08a61df6de603567799b93a188aa8703957c265c29d639043",
+    "results/q1/samples/-egA8-b7-3M__20.npz": "49faed51b3004a415a392b9764f56bcc64624fcc6631f134719f2add24fdd48e",
+    "results/q1_next/enhanced/-egA8-b7-3M__20.npz": "7f4adef337f50382039deedff9c89d8234575abe24eacd213be1d6c387382f6a",
+    "results/q1_refinement_v1/faces/-egA8-b7-3M__20.npz": "94ad37194961cc8359cfcc7f6544f3c7be5c70b3007257d4efc6767dafdb6ca7",
+    "results/q1_deep_v6/alignment/MMS_FA/-egA8-b7-3M__20/original.npz": "7b37b433f6fc88d549d22e465215872e84e661079833c89530b7b506c3602448",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

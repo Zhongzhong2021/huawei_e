@@ -1,0 +1,412 @@
+{
+  "sample_id": "-s9qJ7ATP7w$_$7",
+  "table_row_0based": 94,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-s9qJ7ATP7w/7.mp4",
+  "source_sha256": "5301f4403cf7cd299cc525d2f443392ac70fd70c3c9cd4a09406f2ba4df6734d",
+  "text_original": "I used to work for Warren Avis, the guy who started Avis Rent a Car, and he said to me one day, \"Robert, \"what's the purpose of business",
+  "words": [
+    {
+      "word": "i",
+      "source_text": "I",
+      "char_start": 0,
+      "char_end": 1,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "i"
+      ]
+    },
+    {
+      "word": "used",
+      "source_text": "used",
+      "char_start": 2,
+      "char_end": 6,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "used"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 7,
+      "char_end": 9,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "work",
+      "source_text": "work",
+      "char_start": 10,
+      "char_end": 14,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "work"
+      ]
+    },
+    {
+      "word": "for",
+      "source_text": "for",
+      "char_start": 15,
+      "char_end": 18,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "for"
+      ]
+    },
+    {
+      "word": "warren",
+      "source_text": "Warren",
+      "char_start": 19,
+      "char_end": 25,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "warren"
+      ]
+    },
+    {
+      "word": "avis",
+      "source_text": "Avis",
+      "char_start": 26,
+      "char_end": 30,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7,
+        8
+      ],
+      "bert_tokens": [
+        "av",
+        "##is"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 32,
+      "char_end": 35,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "guy",
+      "source_text": "guy",
+      "char_start": 36,
+      "char_end": 39,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "guy"
+      ]
+    },
+    {
+      "word": "who",
+      "source_text": "who",
+      "char_start": 40,
+      "char_end": 43,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "who"
+      ]
+    },
+    {
+      "word": "started",
+      "source_text": "started",
+      "char_start": 44,
+      "char_end": 51,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "started"
+      ]
+    },
+    {
+      "word": "avis",
+      "source_text": "Avis",
+      "char_start": 52,
+      "char_end": 56,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14,
+        15
+      ],
+      "bert_tokens": [
+        "av",
+        "##is"
+      ]
+    },
+    {
+      "word": "rent",
+      "source_text": "Rent",
+      "char_start": 57,
+      "char_end": 61,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "rent"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 62,
+      "char_end": 63,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "car",
+      "source_text": "Car",
+      "char_start": 64,
+      "char_end": 67,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        18
+      ],
+      "bert_tokens": [
+        "car"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 69,
+      "char_end": 72,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        20
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "he",
+      "source_text": "he",
+      "char_start": 73,
+      "char_end": 75,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        21
+      ],
+      "bert_tokens": [
+        "he"
+      ]
+    },
+    {
+      "word": "said",
+      "source_text": "said",
+      "char_start": 76,
+      "char_end": 80,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        22
+      ],
+      "bert_tokens": [
+        "said"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 81,
+      "char_end": 83,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        23
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "me",
+      "source_text": "me",
+      "char_start": 84,
+      "char_end": 86,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        24
+      ],
+      "bert_tokens": [
+        "me"
+      ]
+    },
+    {
+      "word": "one",
+      "source_text": "one",
+      "char_start": 87,
+      "char_end": 90,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        25
+      ],
+      "bert_tokens": [
+        "one"
+      ]
+    },
+    {
+      "word": "day",
+      "source_text": "day",
+      "char_start": 91,
+      "char_end": 94,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        26
+      ],
+      "bert_tokens": [
+        "day"
+      ]
+    },
+    {
+      "word": "robert",
+      "source_text": "Robert",
+      "char_start": 97,
+      "char_end": 103,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        29
+      ],
+      "bert_tokens": [
+        "robert"
+      ]
+    },
+    {
+      "word": "what's",
+      "source_text": "what's",
+      "char_start": 106,
+      "char_end": 112,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        32,
+        33,
+        34
+      ],
+      "bert_tokens": [
+        "what",
+        "'",
+        "s"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 113,
+      "char_end": 116,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        35
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "purpose",
+      "source_text": "purpose",
+      "char_start": 117,
+      "char_end": 124,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        36
+      ],
+      "bert_tokens": [
+        "purpose"
+      ]
+    },
+    {
+      "word": "of",
+      "source_text": "of",
+      "char_start": 125,
+      "char_end": 127,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        37
+      ],
+      "bert_tokens": [
+        "of"
+      ]
+    },
+    {
+      "word": "business",
+      "source_text": "business",
+      "char_start": 128,
+      "char_end": 136,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        38
+      ],
+      "bert_tokens": [
+        "business"
+      ]
+    }
+  ],
+  "duration_s": 6.933333,
+  "container_declared_duration_s": 12.767,
+  "media_clock": {
+    "stem": "-s9qJ7ATP7w__7",
+    "sample_id": "-s9qJ7ATP7w$_$7",
+    "container_duration_s": 12.767,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 6.8385625,
+    "audio_end_s": 6.8385625,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 6.9,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 6.933333,
+    "observed_end_s": 6.933333,
+    "empty_declared_tail_s": 5.833666999999999,
+    "original_video_frames": 207,
+    "source_sha256": "5301f4403cf7cd299cc525d2f443392ac70fd70c3c9cd4a09406f2ba4df6734d"
+  },
+  "decoded_audio_duration_s": 6.8385625,
+  "audio_start_s": 0.0,
+  "feature_sha256": "427b825a56afed9284a2c9f06ca03457cc0ffe903b7ce5a73bd54a45d1c97f78",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-s9qJ7ATP7w__7.json": "f29d0d8e5b6217022cc947fe9accf520731b529efdcd53d04719a356de970edf",
+    "results/q1/samples/-s9qJ7ATP7w__7.npz": "9a2e562616f528f73c87b7c770978520e97d18af67b6e61d711c3a2ab8a23548",
+    "results/q1_next/enhanced/-s9qJ7ATP7w__7.npz": "a82a7404cb594451126057e9bdf04f946017c65e79fbc5dbd53c0411d990bb06",
+    "results/q1_refinement_v1/faces/-s9qJ7ATP7w__7.npz": "9af324a503829d05d0355aa36b25739c3cc7f8d94d2a4b45742e3537ac6ae554",
+    "results/q1_deep_v6/alignment/MMS_FA/-s9qJ7ATP7w__7/original.npz": "cd88c57a55e435e332ed560f8af27aead315d3efad0e1b7ebc885fa778c8aa90",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "model": "Systran/faster-whisper-small",
+  "revision": "536b0662742c02347bc0e980a01041f333bce120",
+  "beam_size": 5,
+  "temperature": 0,
+  "condition_on_previous_text": false,
+  "word_timestamps": true,
+  "vad_filter": true,
+  "vad_parameters": {
+    "threshold": 0.5,
+    "min_silence_duration_ms": 500,
+    "speech_pad_ms": 200
+  },
+  "official_transcript_used_as_prompt": false,
+  "labels_loaded": false,
+  "role": "auxiliary diagnostics only"
+}

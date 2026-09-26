@@ -1,0 +1,1 @@
+{"source_sha256": "ad01e3b4bd8f23c384db4ab9c25280dacb4f0b2e54db0945529ef2261019cf9d", "samples": 100, "declared_total_s": 1120.1440000000005, "observed_end_total_s": 786.2782104999999, "empty_tail_total_s": 333.86578949999995, "over500ms_tail_samples": 82, "last_packet_duration_present": 100, "seconds": 25.269633743999293}

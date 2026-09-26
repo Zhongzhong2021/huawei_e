@@ -1,0 +1,56 @@
+[
+  {
+    "condition": "white_noise_10dB_seed20260925",
+    "word_duration_group": "under80ms",
+    "words": 207,
+    "baseline_mean": 0.10175584211786924,
+    "bounded40_mean": 0.22519590252085944,
+    "baseline_p95": 0.4698917464663077,
+    "bounded40_p95": 0.6679828996174464
+  },
+  {
+    "condition": "white_noise_10dB_seed20260925",
+    "word_duration_group": "80to200ms",
+    "words": 599,
+    "baseline_mean": 0.06546623779803888,
+    "bounded40_mean": 0.17351576594487284,
+    "baseline_p95": 0.24514787655503897,
+    "bounded40_p95": 0.44806975920415176
+  },
+  {
+    "condition": "white_noise_10dB_seed20260925",
+    "word_duration_group": "atleast200ms",
+    "words": 658,
+    "baseline_mean": 0.036731458066681946,
+    "bounded40_mean": 0.12062647453549047,
+    "baseline_p95": 0.1251579614827518,
+    "bounded40_p95": 0.29115412539302993
+  },
+  {
+    "condition": "bandlimit_8k_roundtrip",
+    "word_duration_group": "under80ms",
+    "words": 207,
+    "baseline_mean": 0.047315867008766416,
+    "bounded40_mean": 0.1152556316833527,
+    "baseline_p95": 0.24748166952335937,
+    "bounded40_p95": 0.5383485469691338
+  },
+  {
+    "condition": "bandlimit_8k_roundtrip",
+    "word_duration_group": "80to200ms",
+    "words": 599,
+    "baseline_mean": 0.02241364919459529,
+    "bounded40_mean": 0.07914491383136092,
+    "baseline_p95": 0.16661101204373285,
+    "bounded40_p95": 0.3634295237073725
+  },
+  {
+    "condition": "bandlimit_8k_roundtrip",
+    "word_duration_group": "atleast200ms",
+    "words": 658,
+    "baseline_mean": 0.011265811558302375,
+    "bounded40_mean": 0.057895408160249705,
+    "baseline_p95": 0.0775344900210161,
+    "bounded40_p95": 0.21780213435067639
+  }
+]

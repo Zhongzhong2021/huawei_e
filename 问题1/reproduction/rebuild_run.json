@@ -1,0 +1,82 @@
+[
+  {
+    "step": "q1_prepare",
+    "seconds": 10.557943099993281,
+    "returncode": 0
+  },
+  {
+    "step": "q1_extract",
+    "seconds": 198.47746660001576,
+    "returncode": 0
+  },
+  {
+    "step": "q1_quality",
+    "seconds": 8.858433999994304,
+    "returncode": 0
+  },
+  {
+    "step": "q1_scene",
+    "seconds": 52.57084100000793,
+    "returncode": 0
+  },
+  {
+    "step": "q1n_prepare",
+    "seconds": 2.550803399994038,
+    "returncode": 0
+  },
+  {
+    "step": "q1n_asr",
+    "seconds": 43.63074459999916,
+    "returncode": 0
+  },
+  {
+    "step": "q1n_posterior",
+    "seconds": 30.80432120000478,
+    "returncode": 0
+  },
+  {
+    "step": "q1n_audit",
+    "seconds": 10.237982699996792,
+    "returncode": 0
+  },
+  {
+    "step": "q1f_prepare",
+    "seconds": 0.6888123999815434,
+    "returncode": 0
+  },
+  {
+    "step": "q1f_faces",
+    "seconds": 151.27924500001245,
+    "returncode": 0
+  },
+  {
+    "step": "q1v6_alignment",
+    "seconds": 82.97169459998258,
+    "returncode": 0
+  },
+  {
+    "step": "q1v6_media_clock",
+    "seconds": 26.026966000004904,
+    "returncode": 0
+  },
+  {
+    "step": "q1v6_features",
+    "seconds": 11.55359889997635,
+    "returncode": 0
+  },
+  {
+    "step": "q1v6_validate",
+    "seconds": 53.553046199987875,
+    "returncode": 0
+  },
+  {
+    "step": "q1v6_geometry",
+    "seconds": 9.61958530000993,
+    "returncode": 0
+  },
+  {
+    "step": "q1v6_visualize",
+    "seconds": 2.714383299986366,
+    "returncode": 0
+  }
+]

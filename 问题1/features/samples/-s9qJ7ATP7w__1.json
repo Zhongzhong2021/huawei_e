@@ -1,0 +1,183 @@
+{
+  "sample_id": "-s9qJ7ATP7w$_$1",
+  "table_row_0based": 90,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-s9qJ7ATP7w/1.mp4",
+  "source_sha256": "a33e8f82a185bcb7648b523927308cdc2142e3076479ba2b45cd0e828636fc09",
+  "text_original": "But the hardest thing in life to learn, is to lose",
+  "words": [
+    {
+      "word": "but",
+      "source_text": "But",
+      "char_start": 0,
+      "char_end": 3,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "but"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 4,
+      "char_end": 7,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "hardest",
+      "source_text": "hardest",
+      "char_start": 8,
+      "char_end": 15,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "hardest"
+      ]
+    },
+    {
+      "word": "thing",
+      "source_text": "thing",
+      "char_start": 16,
+      "char_end": 21,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "thing"
+      ]
+    },
+    {
+      "word": "in",
+      "source_text": "in",
+      "char_start": 22,
+      "char_end": 24,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "in"
+      ]
+    },
+    {
+      "word": "life",
+      "source_text": "life",
+      "char_start": 25,
+      "char_end": 29,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "life"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 30,
+      "char_end": 32,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "learn",
+      "source_text": "learn",
+      "char_start": 33,
+      "char_end": 38,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "learn"
+      ]
+    },
+    {
+      "word": "is",
+      "source_text": "is",
+      "char_start": 40,
+      "char_end": 42,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "is"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 43,
+      "char_end": 45,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "lose",
+      "source_text": "lose",
+      "char_start": 46,
+      "char_end": 50,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "lose"
+      ]
+    }
+  ],
+  "duration_s": 4.766666,
+  "container_declared_duration_s": 10.9,
+  "media_clock": {
+    "stem": "-s9qJ7ATP7w__1",
+    "sample_id": "-s9qJ7ATP7w$_$1",
+    "container_duration_s": 10.9,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 4.6438125,
+    "audio_end_s": 4.6438125,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 4.733333,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 4.766666,
+    "observed_end_s": 4.766666,
+    "empty_declared_tail_s": 6.1333340000000005,
+    "original_video_frames": 140,
+    "source_sha256": "a33e8f82a185bcb7648b523927308cdc2142e3076479ba2b45cd0e828636fc09"
+  },
+  "decoded_audio_duration_s": 4.6438125,
+  "audio_start_s": 0.0,
+  "feature_sha256": "718c659940fc23a974af07ce0c31ff3143bfe1076ef2cd717e1b567bea33779c",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-s9qJ7ATP7w__1.json": "8fbd6161448eda8db4391b37637d781d3bdccf74b076f5a7d1f8da584700d89c",
+    "results/q1/samples/-s9qJ7ATP7w__1.npz": "11e3f6ec7862eeb88ad1cc6a252587f18aee851353dd276230c7c17b3fbd5805",
+    "results/q1_next/enhanced/-s9qJ7ATP7w__1.npz": "cdbbd505e476c125f82e5be5ebb939bce61a002196ccf0128e3b5bb9369e9440",
+    "results/q1_refinement_v1/faces/-s9qJ7ATP7w__1.npz": "91ab32b5b9ab4dfa8616f724d63e46d36fa25aef10d6ff50b7212b257e7ac065",
+    "results/q1_deep_v6/alignment/MMS_FA/-s9qJ7ATP7w__1/original.npz": "0aaf85593136782ccefce4b53a72a48df67206278170ad39e6eaa5cfd43e97f9",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "samples": 100,
+  "words": 1948,
+  "supported_words": 1464,
+  "valid_pitch_words": 1253,
+  "word_audio_valid": 1464,
+  "word_expression_valid": 1420,
+  "clock_rows": 7905,
+  "median_F0_zero_fill_depression_hz": 4.809977431467246,
+  "median_pitch_voiced_fraction": 0.967188859988978,
+  "clips_without_supported_alignment": 20,
+  "such_clips_with_clock_audio": 20,
+  "such_clips_with_clock_expression": 16,
+  "pitch_identity_error": 5.684341886080802e-14,
+  "regenerated_membership_max_delta": 5.960464477539063e-08,
+  "feature_npz_bytes": 25766097,
+  "seconds": 9.839782462018775
+}

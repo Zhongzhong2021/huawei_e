@@ -1,0 +1,300 @@
+{
+  "sample_id": "-wny0OAz3g8$_$9",
+  "table_row_0based": 63,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-wny0OAz3g8/9.mp4",
+  "source_sha256": "b76f70fe783ee76bf1b637137226c98e67d13a6b15ec725894175b36cd76a136",
+  "text_original": "He explores why Black and White Americans tend to have such different outcomes in terms of income, education, and more",
+  "words": [
+    {
+      "word": "he",
+      "source_text": "He",
+      "char_start": 0,
+      "char_end": 2,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "he"
+      ]
+    },
+    {
+      "word": "explores",
+      "source_text": "explores",
+      "char_start": 3,
+      "char_end": 11,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "explores"
+      ]
+    },
+    {
+      "word": "why",
+      "source_text": "why",
+      "char_start": 12,
+      "char_end": 15,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "why"
+      ]
+    },
+    {
+      "word": "black",
+      "source_text": "Black",
+      "char_start": 16,
+      "char_end": 21,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "black"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 22,
+      "char_end": 25,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "white",
+      "source_text": "White",
+      "char_start": 26,
+      "char_end": 31,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "white"
+      ]
+    },
+    {
+      "word": "americans",
+      "source_text": "Americans",
+      "char_start": 32,
+      "char_end": 41,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "americans"
+      ]
+    },
+    {
+      "word": "tend",
+      "source_text": "tend",
+      "char_start": 42,
+      "char_end": 46,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "tend"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 47,
+      "char_end": 49,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "have",
+      "source_text": "have",
+      "char_start": 50,
+      "char_end": 54,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "have"
+      ]
+    },
+    {
+      "word": "such",
+      "source_text": "such",
+      "char_start": 55,
+      "char_end": 59,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "such"
+      ]
+    },
+    {
+      "word": "different",
+      "source_text": "different",
+      "char_start": 60,
+      "char_end": 69,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "different"
+      ]
+    },
+    {
+      "word": "outcomes",
+      "source_text": "outcomes",
+      "char_start": 70,
+      "char_end": 78,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "outcomes"
+      ]
+    },
+    {
+      "word": "in",
+      "source_text": "in",
+      "char_start": 79,
+      "char_end": 81,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "in"
+      ]
+    },
+    {
+      "word": "terms",
+      "source_text": "terms",
+      "char_start": 82,
+      "char_end": 87,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "terms"
+      ]
+    },
+    {
+      "word": "of",
+      "source_text": "of",
+      "char_start": 88,
+      "char_end": 90,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "of"
+      ]
+    },
+    {
+      "word": "income",
+      "source_text": "income",
+      "char_start": 91,
+      "char_end": 97,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17
+      ],
+      "bert_tokens": [
+        "income"
+      ]
+    },
+    {
+      "word": "education",
+      "source_text": "education",
+      "char_start": 99,
+      "char_end": 108,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        19
+      ],
+      "bert_tokens": [
+        "education"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 110,
+      "char_end": 113,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        21
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "more",
+      "source_text": "more",
+      "char_start": 114,
+      "char_end": 118,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        22
+      ],
+      "bert_tokens": [
+        "more"
+      ]
+    }
+  ],
+  "duration_s": 6.2,
+  "container_declared_duration_s": 9.867,
+  "media_clock": {
+    "stem": "-wny0OAz3g8__9",
+    "sample_id": "-wny0OAz3g8$_$9",
+    "container_duration_s": 9.867,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 6.0435,
+    "audio_end_s": 6.0435,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 6.166667,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 6.2,
+    "observed_end_s": 6.2,
+    "empty_declared_tail_s": 3.6670000000000007,
+    "original_video_frames": 183,
+    "source_sha256": "b76f70fe783ee76bf1b637137226c98e67d13a6b15ec725894175b36cd76a136"
+  },
+  "decoded_audio_duration_s": 6.0435,
+  "audio_start_s": 0.0,
+  "feature_sha256": "8956fbb3bb0a2acd2b86b4d3c022f0916590c278c01d284f1556df951d8a6952",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-wny0OAz3g8__9.json": "cf08eaa02bf49a3660a28e54ea061be473e91ad47f72597e6cde4177184f4da8",
+    "results/q1/samples/-wny0OAz3g8__9.npz": "8d7a2f078e4c71670a180d8d60d878108627b569a2610b5b68409c5ec0db1783",
+    "results/q1_next/enhanced/-wny0OAz3g8__9.npz": "6a4355273b35531ec278fad3683729c9d100c7675663a5d6633476679e36994f",
+    "results/q1_refinement_v1/faces/-wny0OAz3g8__9.npz": "6b0e631bd44170b2bc23311273508d5288f26a024267c3b4c0bb3d108bbd4770",
+    "results/q1_deep_v6/alignment/MMS_FA/-wny0OAz3g8__9/original.npz": "4b1db5a475f67f7a3d8772117cf03cf7fdc46e25e0bc6fae8e3ae914c2e1390b",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

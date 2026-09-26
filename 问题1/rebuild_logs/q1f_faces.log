@@ -1,0 +1,181 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1790226118.112068      23 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+W0000 00:00:1790226118.123561      26 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790226118.138117      26 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790226118.142200      56 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790226118.147286      60 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790226118.158343      68 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{"sample_id": "-3g5yACwYnA$_$13", "frames": 55, "baseline_valid": 55, "roi_hybrid_valid": 55, "recovered": 0, "seconds": 0.254}
+{"sample_id": "-3g5yACwYnA$_$3", "frames": 144, "baseline_valid": 144, "roi_hybrid_valid": 144, "recovered": 0, "seconds": 2.409}
+{"sample_id": "-3g5yACwYnA$_$2", "frames": 93, "baseline_valid": 93, "roi_hybrid_valid": 93, "recovered": 0, "seconds": 1.583}
+{"sample_id": "-3g5yACwYnA$_$9", "frames": 88, "baseline_valid": 88, "roi_hybrid_valid": 88, "recovered": 0, "seconds": 1.855}
+{"sample_id": "-3nNcZdcdvU$_$5", "frames": 79, "baseline_valid": 78, "roi_hybrid_valid": 78, "recovered": 0, "seconds": 0.19}
+{"sample_id": "-HwX2H8Z4hY$_$2", "frames": 40, "baseline_valid": 9, "roi_hybrid_valid": 12, "recovered": 3, "seconds": 1.185}
+{"sample_id": "-HwX2H8Z4hY$_$5", "frames": 56, "baseline_valid": 16, "roi_hybrid_valid": 16, "recovered": 0, "seconds": 1.908}
+{"sample_id": "-HwX2H8Z4hY$_$6", "frames": 33, "baseline_valid": 20, "roi_hybrid_valid": 20, "recovered": 0, "seconds": 0.747}
+{"sample_id": "-HwX2H8Z4hY$_$9", "frames": 78, "baseline_valid": 0, "roi_hybrid_valid": 6, "recovered": 6, "seconds": 3.808}
+{"sample_id": "-NFrJFQijFE$_$1", "frames": 57, "baseline_valid": 0, "roi_hybrid_valid": 0, "recovered": 0, "seconds": 2.114}
+{"sample_id": "-NFrJFQijFE$_$2", "frames": 68, "baseline_valid": 0, "roi_hybrid_valid": 0, "recovered": 0, "seconds": 2.72}
+{"sample_id": "-THoVjtIkeU$_$12", "frames": 149, "baseline_valid": 149, "roi_hybrid_valid": 149, "recovered": 0, "seconds": 2.25}
+{"sample_id": "-THoVjtIkeU$_$2", "frames": 43, "baseline_valid": 43, "roi_hybrid_valid": 43, "recovered": 0, "seconds": 0.125}
+{"sample_id": "-THoVjtIkeU$_$6", "frames": 81, "baseline_valid": 81, "roi_hybrid_valid": 81, "recovered": 0, "seconds": 1.453}
+{"sample_id": "-UuX1xuaiiE$_$1", "frames": 104, "baseline_valid": 5, "roi_hybrid_valid": 104, "recovered": 99, "seconds": 7.116}
+{"sample_id": "-UuX1xuaiiE$_$0", "frames": 37, "baseline_valid": 18, "roi_hybrid_valid": 37, "recovered": 19, "seconds": 1.099}
+{"sample_id": "-UuX1xuaiiE$_$3", "frames": 41, "baseline_valid": 41, "roi_hybrid_valid": 41, "recovered": 0, "seconds": 0.203}
+{"sample_id": "-UuX1xuaiiE$_$6", "frames": 81, "baseline_valid": 81, "roi_hybrid_valid": 81, "recovered": 0, "seconds": 1.364}
+{"sample_id": "-a55Q6RWvTA$_$3", "frames": 222, "baseline_valid": 195, "roi_hybrid_valid": 222, "recovered": 27, "seconds": 4.33}
+{"sample_id": "-aNfi7CP8vM$_$7", "frames": 87, "baseline_valid": 87, "roi_hybrid_valid": 87, "recovered": 0, "seconds": 1.27}
+{"sample_id": "-aqamKhZ1Ec$_$0", "frames": 110, "baseline_valid": 110, "roi_hybrid_valid": 110, "recovered": 0, "seconds": 1.761}
+{"sample_id": "-dxfTGcXJoc$_$1", "frames": 162, "baseline_valid": 162, "roi_hybrid_valid": 162, "recovered": 0, "seconds": 3.126}
+{"sample_id": "-dxfTGcXJoc$_$0", "frames": 206, "baseline_valid": 160, "roi_hybrid_valid": 160, "recovered": 0, "seconds": 3.751}
+{"sample_id": "-dxfTGcXJoc$_$2", "frames": 167, "baseline_valid": 167, "roi_hybrid_valid": 167, "recovered": 0, "seconds": 2.616}
+{"sample_id": "-dxfTGcXJoc$_$6", "frames": 127, "baseline_valid": 127, "roi_hybrid_valid": 127, "recovered": 0, "seconds": 1.82}
+{"sample_id": "-egA8-b7-3M$_$26", "frames": 60, "baseline_valid": 60, "roi_hybrid_valid": 60, "recovered": 0, "seconds": 0.177}
+{"sample_id": "-egA8-b7-3M$_$17", "frames": 72, "baseline_valid": 72, "roi_hybrid_valid": 72, "recovered": 0, "seconds": 0.195}
+{"sample_id": "-egA8-b7-3M$_$18", "frames": 84, "baseline_valid": 84, "roi_hybrid_valid": 84, "recovered": 0, "seconds": 1.605}
+{"sample_id": "-egA8-b7-3M$_$16", "frames": 56, "baseline_valid": 56, "roi_hybrid_valid": 56, "recovered": 0, "seconds": 0.172}
+{"sample_id": "-egA8-b7-3M$_$13", "frames": 42, "baseline_valid": 42, "roi_hybrid_valid": 42, "recovered": 0, "seconds": 0.141}
+{"sample_id": "-egA8-b7-3M$_$1", "frames": 102, "baseline_valid": 102, "roi_hybrid_valid": 102, "recovered": 0, "seconds": 1.552}
+{"sample_id": "-egA8-b7-3M$_$6", "frames": 63, "baseline_valid": 63, "roi_hybrid_valid": 63, "recovered": 0, "seconds": 0.163}
+{"sample_id": "-egA8-b7-3M$_$9", "frames": 51, "baseline_valid": 51, "roi_hybrid_valid": 51, "recovered": 0, "seconds": 0.149}
+{"sample_id": "-egA8-b7-3M$_$20", "frames": 66, "baseline_valid": 66, "roi_hybrid_valid": 66, "recovered": 0, "seconds": 0.192}
+{"sample_id": "-iRBcNs9oI8$_$3", "frames": 56, "baseline_valid": 0, "roi_hybrid_valid": 56, "recovered": 56, "seconds": 4.252}
+{"sample_id": "-iRBcNs9oI8$_$7", "frames": 41, "baseline_valid": 0, "roi_hybrid_valid": 41, "recovered": 41, "seconds": 1.695}
+{"sample_id": "-iRBcNs9oI8$_$6", "frames": 29, "baseline_valid": 0, "roi_hybrid_valid": 29, "recovered": 29, "seconds": 1.17}
+{"sample_id": "-iRBcNs9oI8$_$9", "frames": 34, "baseline_valid": 0, "roi_hybrid_valid": 24, "recovered": 24, "seconds": 1.372}
+{"sample_id": "-iRBcNs9oI8$_$8", "frames": 81, "baseline_valid": 0, "roi_hybrid_valid": 81, "recovered": 81, "seconds": 4.41}
+{"sample_id": "-lzEya4AM_4$_$5", "frames": 77, "baseline_valid": 77, "roi_hybrid_valid": 77, "recovered": 0, "seconds": 0.169}
+{"sample_id": "-lzEya4AM_4$_$6", "frames": 148, "baseline_valid": 145, "roi_hybrid_valid": 148, "recovered": 3, "seconds": 2.693}
+{"sample_id": "-mJ2ud6oKI8$_$1", "frames": 61, "baseline_valid": 0, "roi_hybrid_valid": 0, "recovered": 0, "seconds": 2.486}
+{"sample_id": "-mJ2ud6oKI8$_$2", "frames": 57, "baseline_valid": 0, "roi_hybrid_valid": 23, "recovered": 23, "seconds": 3.175}
+{"sample_id": "-mJ2ud6oKI8$_$6", "frames": 23, "baseline_valid": 23, "roi_hybrid_valid": 23, "recovered": 0, "seconds": 0.125}
+{"sample_id": "-mJ2ud6oKI8$_$9", "frames": 70, "baseline_valid": 70, "roi_hybrid_valid": 70, "recovered": 0, "seconds": 1.281}
+{"sample_id": "-mJ2ud6oKI8$_$8", "frames": 42, "baseline_valid": 42, "roi_hybrid_valid": 42, "recovered": 0, "seconds": 0.204}
+{"sample_id": "-mqbVkbCndg$_$0", "frames": 65, "baseline_valid": 65, "roi_hybrid_valid": 65, "recovered": 0, "seconds": 0.228}
+{"sample_id": "-t217m2on-s$_$2", "frames": 57, "baseline_valid": 57, "roi_hybrid_valid": 57, "recovered": 0, "seconds": 0.146}
+{"sample_id": "-t217m2on-s$_$7", "frames": 172, "baseline_valid": 172, "roi_hybrid_valid": 172, "recovered": 0, "seconds": 2.638}
+{"sample_id": "-tANM6ETl_M$_$3", "frames": 68, "baseline_valid": 68, "roi_hybrid_valid": 68, "recovered": 0, "seconds": 0.313}
+{"sample_id": "-tPCytz4rww$_$11", "frames": 55, "baseline_valid": 55, "roi_hybrid_valid": 55, "recovered": 0, "seconds": 0.156}
+{"sample_id": "-tPCytz4rww$_$10", "frames": 48, "baseline_valid": 48, "roi_hybrid_valid": 48, "recovered": 0, "seconds": 0.149}
+{"sample_id": "-tPCytz4rww$_$12", "frames": 119, "baseline_valid": 119, "roi_hybrid_valid": 119, "recovered": 0, "seconds": 2.164}
+{"sample_id": "-tPCytz4rww$_$16", "frames": 72, "baseline_valid": 72, "roi_hybrid_valid": 72, "recovered": 0, "seconds": 0.19}
+{"sample_id": "-tPCytz4rww$_$18", "frames": 66, "baseline_valid": 66, "roi_hybrid_valid": 66, "recovered": 0, "seconds": 0.177}
+{"sample_id": "-vxjVxOeScU$_$4", "frames": 91, "baseline_valid": 91, "roi_hybrid_valid": 91, "recovered": 0, "seconds": 1.48}
+{"sample_id": "-wMB_hJL-3o$_$7", "frames": 61, "baseline_valid": 59, "roi_hybrid_valid": 59, "recovered": 0, "seconds": 0.158}
+{"sample_id": "-wny0OAz3g8$_$1", "frames": 68, "baseline_valid": 11, "roi_hybrid_valid": 68, "recovered": 57, "seconds": 2.672}
+{"sample_id": "-wny0OAz3g8$_$0", "frames": 33, "baseline_valid": 28, "roi_hybrid_valid": 33, "recovered": 5, "seconds": 0.374}
+{"sample_id": "-wny0OAz3g8$_$3", "frames": 61, "baseline_valid": 10, "roi_hybrid_valid": 61, "recovered": 51, "seconds": 2.521}
+{"sample_id": "-wny0OAz3g8$_$2", "frames": 67, "baseline_valid": 55, "roi_hybrid_valid": 67, "recovered": 12, "seconds": 0.79}
+{"sample_id": "-wny0OAz3g8$_$5", "frames": 69, "baseline_valid": 12, "roi_hybrid_valid": 69, "recovered": 57, "seconds": 2.693}
+{"sample_id": "-wny0OAz3g8$_$7", "frames": 81, "baseline_valid": 18, "roi_hybrid_valid": 81, "recovered": 63, "seconds": 3.861}
+{"sample_id": "-wny0OAz3g8$_$9", "frames": 62, "baseline_valid": 55, "roi_hybrid_valid": 62, "recovered": 7, "seconds": 0.602}
+{"sample_id": "-571d8cVauQ$_$0", "frames": 52, "baseline_valid": 50, "roi_hybrid_valid": 50, "recovered": 0, "seconds": 0.196}
+{"sample_id": "-571d8cVauQ$_$5", "frames": 152, "baseline_valid": 152, "roi_hybrid_valid": 152, "recovered": 0, "seconds": 2.812}
+{"sample_id": "-I_e4mIh0yE$_$1", "frames": 76, "baseline_valid": 76, "roi_hybrid_valid": 76, "recovered": 0, "seconds": 0.193}
+{"sample_id": "-I_e4mIh0yE$_$3", "frames": 91, "baseline_valid": 91, "roi_hybrid_valid": 91, "recovered": 0, "seconds": 1.29}
+{"sample_id": "-UacrmKiTn4$_$10", "frames": 73, "baseline_valid": 73, "roi_hybrid_valid": 73, "recovered": 0, "seconds": 0.195}
+{"sample_id": "-UacrmKiTn4$_$4", "frames": 48, "baseline_valid": 48, "roi_hybrid_valid": 48, "recovered": 0, "seconds": 0.123}
+{"sample_id": "-hnBHBN8p5A$_$7", "frames": 73, "baseline_valid": 0, "roi_hybrid_valid": 48, "recovered": 48, "seconds": 4.594}
+{"sample_id": "-hnBHBN8p5A$_$6", "frames": 64, "baseline_valid": 0, "roi_hybrid_valid": 35, "recovered": 35, "seconds": 4.018}
+{"sample_id": "-qDkUB0GgYY$_$6", "frames": 47, "baseline_valid": 47, "roi_hybrid_valid": 47, "recovered": 0, "seconds": 0.162}
+{"sample_id": "-uywlfIYOS8$_$4", "frames": 61, "baseline_valid": 61, "roi_hybrid_valid": 61, "recovered": 0, "seconds": 0.19}
+{"sample_id": "-6rXp3zJ3kc$_$8", "frames": 128, "baseline_valid": 128, "roi_hybrid_valid": 128, "recovered": 0, "seconds": 2.053}
+{"sample_id": "-9y-fZ3swSY$_$0", "frames": 69, "baseline_valid": 66, "roi_hybrid_valid": 69, "recovered": 3, "seconds": 0.36}
+{"sample_id": "-9y-fZ3swSY$_$4", "frames": 28, "baseline_valid": 26, "roi_hybrid_valid": 28, "recovered": 2, "seconds": 0.284}
+{"sample_id": "-9y-fZ3swSY$_$8", "frames": 50, "baseline_valid": 18, "roi_hybrid_valid": 45, "recovered": 27, "seconds": 1.547}
+{"sample_id": "-AUZQgSxyPQ$_$2", "frames": 225, "baseline_valid": 225, "roi_hybrid_valid": 225, "recovered": 0, "seconds": 4.097}
+{"sample_id": "-HeZS2-Prhc$_$2", "frames": 82, "baseline_valid": 82, "roi_hybrid_valid": 82, "recovered": 0, "seconds": 0.208}
+{"sample_id": "-MeTTeMJBNc$_$0", "frames": 94, "baseline_valid": 93, "roi_hybrid_valid": 93, "recovered": 0, "seconds": 1.307}
+{"sample_id": "-MeTTeMJBNc$_$13", "frames": 54, "baseline_valid": 54, "roi_hybrid_valid": 54, "recovered": 0, "seconds": 0.167}
+{"sample_id": "-MeTTeMJBNc$_$7", "frames": 105, "baseline_valid": 105, "roi_hybrid_valid": 105, "recovered": 0, "seconds": 2.167}
+{"sample_id": "-RfYyzHpjk4$_$11", "frames": 52, "baseline_valid": 52, "roi_hybrid_valid": 52, "recovered": 0, "seconds": 0.243}
+{"sample_id": "-RfYyzHpjk4$_$8", "frames": 46, "baseline_valid": 46, "roi_hybrid_valid": 46, "recovered": 0, "seconds": 0.233}
+{"sample_id": "-RfYyzHpjk4$_$2", "frames": 55, "baseline_valid": 43, "roi_hybrid_valid": 55, "recovered": 12, "seconds": 0.671}
+{"sample_id": "-UUCSKoHeMA$_$0", "frames": 79, "baseline_valid": 78, "roi_hybrid_valid": 78, "recovered": 0, "seconds": 0.189}
+{"sample_id": "-ri04Z7vwnc$_$0", "frames": 28, "baseline_valid": 0, "roi_hybrid_valid": 0, "recovered": 0, "seconds": 0.819}
+{"sample_id": "-ri04Z7vwnc$_$2", "frames": 60, "baseline_valid": 22, "roi_hybrid_valid": 22, "recovered": 0, "seconds": 2.172}
+{"sample_id": "-ri04Z7vwnc$_$5", "frames": 35, "baseline_valid": 35, "roi_hybrid_valid": 35, "recovered": 0, "seconds": 0.155}
+{"sample_id": "-s9qJ7ATP7w$_$1", "frames": 47, "baseline_valid": 45, "roi_hybrid_valid": 47, "recovered": 2, "seconds": 0.352}
+{"sample_id": "-s9qJ7ATP7w$_$0", "frames": 69, "baseline_valid": 66, "roi_hybrid_valid": 69, "recovered": 3, "seconds": 0.368}
+{"sample_id": "-s9qJ7ATP7w$_$5", "frames": 85, "baseline_valid": 85, "roi_hybrid_valid": 85, "recovered": 0, "seconds": 1.545}
+{"sample_id": "-s9qJ7ATP7w$_$4", "frames": 44, "baseline_valid": 30, "roi_hybrid_valid": 30, "recovered": 0, "seconds": 0.62}
+{"sample_id": "-s9qJ7ATP7w$_$7", "frames": 70, "baseline_valid": 40, "roi_hybrid_valid": 52, "recovered": 12, "seconds": 1.317}
+{"sample_id": "-s9qJ7ATP7w$_$6", "frames": 24, "baseline_valid": 19, "roi_hybrid_valid": 19, "recovered": 0, "seconds": 0.277}
+{"sample_id": "-s9qJ7ATP7w$_$8", "frames": 33, "baseline_valid": 33, "roi_hybrid_valid": 33, "recovered": 0, "seconds": 0.156}
+{"sample_id": "-yRb-Jum7EQ$_$1", "frames": 293, "baseline_valid": 274, "roi_hybrid_valid": 293, "recovered": 19, "seconds": 8.232}
+{"sample_id": "-yRb-Jum7EQ$_$5", "frames": 132, "baseline_valid": 132, "roi_hybrid_valid": 132, "recovered": 0, "seconds": 2.119}
+{"sample_id": "-yRb-Jum7EQ$_$6", "frames": 112, "baseline_valid": 112, "roi_hybrid_valid": 112, "recovered": 0, "seconds": 1.762}
+{
+  "samples": 100,
+  "frames": 7874,
+  "baseline_valid": 6450,
+  "relaxed_fullframe_valid": 6509,
+  "roi_hybrid_valid": 7276,
+  "recovered": 826,
+  "zero_face_clips_before": 13,
+  "zero_face_clips_after": 4,
+  "baseline_word_visual": 1300,
+  "new_word_visual": 1420,
+  "unchanged_word_time_supported": 1464,
+  "pool_recomputations": 300,
+  "max_pool_error": 2.9733376982754578e-08,
+  "per_sample_checks": 700,
+  "decoder_comparison": [
+    {
+      "sample_id": "-iRBcNs9oI8$_$3",
+      "frame": 0,
+      "mae": 0.0,
+      "max_difference": 0.0
+    },
+    {
+      "sample_id": "-iRBcNs9oI8$_$3",
+      "frame": 84,
+      "mae": 0.0,
+      "max_difference": 0.0
+    },
+    {
+      "sample_id": "-iRBcNs9oI8$_$3",
+      "frame": 165,
+      "mae": 0.0,
+      "max_difference": 0.0
+    },
+    {
+      "sample_id": "-mJ2ud6oKI8$_$2",
+      "frame": 0,
+      "mae": 0.0,
+      "max_difference": 0.0
+    },
+    {
+      "sample_id": "-mJ2ud6oKI8$_$2",
+      "frame": 84,
+      "mae": 0.0,
+      "max_difference": 0.0
+    },
+    {
+      "sample_id": "-mJ2ud6oKI8$_$2",
+      "frame": 168,
+      "mae": 0.0,
+      "max_difference": 0.0
+    },
+    {
+      "sample_id": "-hnBHBN8p5A$_$7",
+      "frame": 0,
+      "mae": 0.9743540219907407,
+      "max_difference": 7.0
+    },
+    {
+      "sample_id": "-hnBHBN8p5A$_$7",
+      "frame": 87,
+      "mae": 1.3443475115740742,
+      "max_difference": 12.0
+    },
+    {
+      "sample_id": "-hnBHBN8p5A$_$7",
+      "frame": 173,
+      "mae": 1.4249562355324075,
+      "max_difference": 10.0
+    }
+  ],
+  "interpretation": "Coverage only; no independently annotated frame precision/recall or speaker identity."
+}

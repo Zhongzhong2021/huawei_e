@@ -1,0 +1,540 @@
+{
+  "sample_id": "-dxfTGcXJoc$_$1",
+  "table_row_0based": 21,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-dxfTGcXJoc/1.mp4",
+  "source_sha256": "b5ffdc98a4a98b8f0aae55dee5fed66a43bcb129f47a250a004c1cc74e572595",
+  "text_original": "For the 10th straight year, some of Kentucky’s best and most innovative biotech companies and technologies were on display at the annual BIO International Convention, which I and other state officials attended this week in Chicago.",
+  "words": [
+    {
+      "word": "for",
+      "source_text": "For",
+      "char_start": 0,
+      "char_end": 3,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "for"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 4,
+      "char_end": 7,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "tenth",
+      "source_text": "10th",
+      "char_start": 8,
+      "char_end": 12,
+      "normalization": "English number expansion",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "10th"
+      ]
+    },
+    {
+      "word": "straight",
+      "source_text": "straight",
+      "char_start": 13,
+      "char_end": 21,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "straight"
+      ]
+    },
+    {
+      "word": "year",
+      "source_text": "year",
+      "char_start": 22,
+      "char_end": 26,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "year"
+      ]
+    },
+    {
+      "word": "some",
+      "source_text": "some",
+      "char_start": 28,
+      "char_end": 32,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "some"
+      ]
+    },
+    {
+      "word": "of",
+      "source_text": "of",
+      "char_start": 33,
+      "char_end": 35,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "of"
+      ]
+    },
+    {
+      "word": "kentucky's",
+      "source_text": "Kentucky's",
+      "char_start": 36,
+      "char_end": 46,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9,
+        10,
+        11
+      ],
+      "bert_tokens": [
+        "kentucky",
+        "’",
+        "s"
+      ]
+    },
+    {
+      "word": "best",
+      "source_text": "best",
+      "char_start": 47,
+      "char_end": 51,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "best"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 52,
+      "char_end": 55,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "most",
+      "source_text": "most",
+      "char_start": 56,
+      "char_end": 60,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "most"
+      ]
+    },
+    {
+      "word": "innovative",
+      "source_text": "innovative",
+      "char_start": 61,
+      "char_end": 71,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "innovative"
+      ]
+    },
+    {
+      "word": "biotech",
+      "source_text": "biotech",
+      "char_start": 72,
+      "char_end": 79,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16,
+        17
+      ],
+      "bert_tokens": [
+        "bio",
+        "##tech"
+      ]
+    },
+    {
+      "word": "companies",
+      "source_text": "companies",
+      "char_start": 80,
+      "char_end": 89,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        18
+      ],
+      "bert_tokens": [
+        "companies"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 90,
+      "char_end": 93,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        19
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "technologies",
+      "source_text": "technologies",
+      "char_start": 94,
+      "char_end": 106,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        20
+      ],
+      "bert_tokens": [
+        "technologies"
+      ]
+    },
+    {
+      "word": "were",
+      "source_text": "were",
+      "char_start": 107,
+      "char_end": 111,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        21
+      ],
+      "bert_tokens": [
+        "were"
+      ]
+    },
+    {
+      "word": "on",
+      "source_text": "on",
+      "char_start": 112,
+      "char_end": 114,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        22
+      ],
+      "bert_tokens": [
+        "on"
+      ]
+    },
+    {
+      "word": "display",
+      "source_text": "display",
+      "char_start": 115,
+      "char_end": 122,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        23
+      ],
+      "bert_tokens": [
+        "display"
+      ]
+    },
+    {
+      "word": "at",
+      "source_text": "at",
+      "char_start": 123,
+      "char_end": 125,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        24
+      ],
+      "bert_tokens": [
+        "at"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 126,
+      "char_end": 129,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        25
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "annual",
+      "source_text": "annual",
+      "char_start": 130,
+      "char_end": 136,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        26
+      ],
+      "bert_tokens": [
+        "annual"
+      ]
+    },
+    {
+      "word": "b",
+      "source_text": "BIO",
+      "char_start": 137,
+      "char_end": 140,
+      "normalization": "initialism spelled as letters",
+      "bert_positions": [
+        27
+      ],
+      "bert_tokens": [
+        "bio"
+      ]
+    },
+    {
+      "word": "i",
+      "source_text": "BIO",
+      "char_start": 137,
+      "char_end": 140,
+      "normalization": "initialism spelled as letters",
+      "bert_positions": [
+        27
+      ],
+      "bert_tokens": [
+        "bio"
+      ]
+    },
+    {
+      "word": "o",
+      "source_text": "BIO",
+      "char_start": 137,
+      "char_end": 140,
+      "normalization": "initialism spelled as letters",
+      "bert_positions": [
+        27
+      ],
+      "bert_tokens": [
+        "bio"
+      ]
+    },
+    {
+      "word": "international",
+      "source_text": "International",
+      "char_start": 141,
+      "char_end": 154,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        28
+      ],
+      "bert_tokens": [
+        "international"
+      ]
+    },
+    {
+      "word": "convention",
+      "source_text": "Convention",
+      "char_start": 155,
+      "char_end": 165,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        29
+      ],
+      "bert_tokens": [
+        "convention"
+      ]
+    },
+    {
+      "word": "which",
+      "source_text": "which",
+      "char_start": 167,
+      "char_end": 172,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        31
+      ],
+      "bert_tokens": [
+        "which"
+      ]
+    },
+    {
+      "word": "i",
+      "source_text": "I",
+      "char_start": 173,
+      "char_end": 174,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        32
+      ],
+      "bert_tokens": [
+        "i"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 175,
+      "char_end": 178,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        33
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "other",
+      "source_text": "other",
+      "char_start": 179,
+      "char_end": 184,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        34
+      ],
+      "bert_tokens": [
+        "other"
+      ]
+    },
+    {
+      "word": "state",
+      "source_text": "state",
+      "char_start": 185,
+      "char_end": 190,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        35
+      ],
+      "bert_tokens": [
+        "state"
+      ]
+    },
+    {
+      "word": "officials",
+      "source_text": "officials",
+      "char_start": 191,
+      "char_end": 200,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        36
+      ],
+      "bert_tokens": [
+        "officials"
+      ]
+    },
+    {
+      "word": "attended",
+      "source_text": "attended",
+      "char_start": 201,
+      "char_end": 209,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        37
+      ],
+      "bert_tokens": [
+        "attended"
+      ]
+    },
+    {
+      "word": "this",
+      "source_text": "this",
+      "char_start": 210,
+      "char_end": 214,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        38
+      ],
+      "bert_tokens": [
+        "this"
+      ]
+    },
+    {
+      "word": "week",
+      "source_text": "week",
+      "char_start": 215,
+      "char_end": 219,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        39
+      ],
+      "bert_tokens": [
+        "week"
+      ]
+    },
+    {
+      "word": "in",
+      "source_text": "in",
+      "char_start": 220,
+      "char_end": 222,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        40
+      ],
+      "bert_tokens": [
+        "in"
+      ]
+    },
+    {
+      "word": "chicago",
+      "source_text": "Chicago",
+      "char_start": 223,
+      "char_end": 230,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        41
+      ],
+      "bert_tokens": [
+        "chicago"
+      ]
+    }
+  ],
+  "duration_s": 16.133333,
+  "container_declared_duration_s": 19.7,
+  "media_clock": {
+    "stem": "-dxfTGcXJoc__1",
+    "sample_id": "-dxfTGcXJoc$_$1",
+    "container_duration_s": 19.7,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 16.018125,
+    "audio_end_s": 16.018125,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 16.1,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 16.133333,
+    "observed_end_s": 16.133333,
+    "empty_declared_tail_s": 3.566666999999999,
+    "original_video_frames": 482,
+    "source_sha256": "b5ffdc98a4a98b8f0aae55dee5fed66a43bcb129f47a250a004c1cc74e572595"
+  },
+  "decoded_audio_duration_s": 16.018125,
+  "audio_start_s": 0.0,
+  "feature_sha256": "f24c6ba1342e1d3695180400b13d6ef4c920eb62f5b224fbff843671568c70c2",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-dxfTGcXJoc__1.json": "4ea67ec33f708e684893df3966f3945ae9db75a9b533553d0eb656246deec97e",
+    "results/q1/samples/-dxfTGcXJoc__1.npz": "c16a227f0d74ddffc3ba9b7fdafd3de12a2799c1f86ad5213c8fe880cb0f95da",
+    "results/q1_next/enhanced/-dxfTGcXJoc__1.npz": "c087a82cf73d081c3d51353a6e239be027e34116b6700f59751d5ebc8aed6790",
+    "results/q1_refinement_v1/faces/-dxfTGcXJoc__1.npz": "a24ea0a187e1a51a195e26714554da68b543bb1e5196fbd89ea29768b4ac86a4",
+    "results/q1_deep_v6/alignment/MMS_FA/-dxfTGcXJoc__1/original.npz": "db2b6f4adfaf9fdf3ecbc3c58cb003f2b9fa738c06e7bbaee3597d149d0bc4cf",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

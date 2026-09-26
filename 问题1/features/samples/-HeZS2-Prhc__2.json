@@ -1,0 +1,248 @@
+{
+  "sample_id": "-HeZS2-Prhc$_$2",
+  "table_row_0based": 79,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-HeZS2-Prhc/2.mp4",
+  "source_sha256": "edb0fa22fdfbd990c8174764af78670bd2ecad799240d35d96a1124a3cd9dc0c",
+  "text_original": "The August jobs report is out and it was seen overall as solid but not great.",
+  "words": [
+    {
+      "word": "the",
+      "source_text": "The",
+      "char_start": 0,
+      "char_end": 3,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "august",
+      "source_text": "August",
+      "char_start": 4,
+      "char_end": 10,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "august"
+      ]
+    },
+    {
+      "word": "jobs",
+      "source_text": "jobs",
+      "char_start": 11,
+      "char_end": 15,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "jobs"
+      ]
+    },
+    {
+      "word": "report",
+      "source_text": "report",
+      "char_start": 16,
+      "char_end": 22,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "report"
+      ]
+    },
+    {
+      "word": "is",
+      "source_text": "is",
+      "char_start": 23,
+      "char_end": 25,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "is"
+      ]
+    },
+    {
+      "word": "out",
+      "source_text": "out",
+      "char_start": 26,
+      "char_end": 29,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "out"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 30,
+      "char_end": 33,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "it",
+      "source_text": "it",
+      "char_start": 34,
+      "char_end": 36,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "it"
+      ]
+    },
+    {
+      "word": "was",
+      "source_text": "was",
+      "char_start": 37,
+      "char_end": 40,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "was"
+      ]
+    },
+    {
+      "word": "seen",
+      "source_text": "seen",
+      "char_start": 41,
+      "char_end": 45,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "seen"
+      ]
+    },
+    {
+      "word": "overall",
+      "source_text": "overall",
+      "char_start": 46,
+      "char_end": 53,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "overall"
+      ]
+    },
+    {
+      "word": "as",
+      "source_text": "as",
+      "char_start": 54,
+      "char_end": 56,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "as"
+      ]
+    },
+    {
+      "word": "solid",
+      "source_text": "solid",
+      "char_start": 57,
+      "char_end": 62,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "solid"
+      ]
+    },
+    {
+      "word": "but",
+      "source_text": "but",
+      "char_start": 63,
+      "char_end": 66,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "but"
+      ]
+    },
+    {
+      "word": "not",
+      "source_text": "not",
+      "char_start": 67,
+      "char_end": 70,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "not"
+      ]
+    },
+    {
+      "word": "great",
+      "source_text": "great",
+      "char_start": 71,
+      "char_end": 76,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "great"
+      ]
+    }
+  ],
+  "duration_s": 8.233333,
+  "container_declared_duration_s": 15.834,
+  "media_clock": {
+    "stem": "-HeZS2-Prhc__2",
+    "sample_id": "-HeZS2-Prhc$_$2",
+    "container_duration_s": 15.834,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 8.150875,
+    "audio_end_s": 8.150875,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 8.2,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 8.233333,
+    "observed_end_s": 8.233333,
+    "empty_declared_tail_s": 7.600667,
+    "original_video_frames": 246,
+    "source_sha256": "edb0fa22fdfbd990c8174764af78670bd2ecad799240d35d96a1124a3cd9dc0c"
+  },
+  "decoded_audio_duration_s": 8.150875,
+  "audio_start_s": 0.0,
+  "feature_sha256": "0b98faaebafbbaaab3b1395ea7531919f04917eca10c176bc11abbd5b8aad57d",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-HeZS2-Prhc__2.json": "5ab67bcf9816e919ddd59bf78d3e985aaee06f66f23bf94c0032376b1ac7e0d7",
+    "results/q1/samples/-HeZS2-Prhc__2.npz": "9fc16ecc23ce841dac4bfc5c4abf2864313a0c2f1c32a6492a712d94e8c102f7",
+    "results/q1_next/enhanced/-HeZS2-Prhc__2.npz": "39ef4eaa8613253e0b30704889130b7c15d99656f2749ac13650072be3570df3",
+    "results/q1_refinement_v1/faces/-HeZS2-Prhc__2.npz": "40247ed9c70654d840f2bd2a39fb4f79457bc535ab8b7ca337fc27d8b22d1130",
+    "results/q1_deep_v6/alignment/MMS_FA/-HeZS2-Prhc__2/original.npz": "3c948ccd4fc4a1d90d5cae4e2540e37895ac951f462b1ccf2efa6e41b57f6cf9",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

@@ -1,0 +1,899 @@
+{
+  "samples": 100,
+  "arrays": 3400,
+  "exact_arrays": 3400,
+  "changed_arrays": [],
+  "max_abs": 0.0,
+  "max_scaled": 0.0,
+  "source_equal": true,
+  "equal_metadata": 0,
+  "successful_steps": 16,
+  "successful_step_seconds": 696.095868299948,
+  "steps": [
+    {
+      "step": "q1_prepare",
+      "seconds": 10.557943099993281,
+      "returncode": 0
+    },
+    {
+      "step": "q1_extract",
+      "seconds": 198.47746660001576,
+      "returncode": 0
+    },
+    {
+      "step": "q1_quality",
+      "seconds": 8.858433999994304,
+      "returncode": 0
+    },
+    {
+      "step": "q1_scene",
+      "seconds": 52.57084100000793,
+      "returncode": 0
+    },
+    {
+      "step": "q1n_prepare",
+      "seconds": 2.550803399994038,
+      "returncode": 0
+    },
+    {
+      "step": "q1n_asr",
+      "seconds": 43.63074459999916,
+      "returncode": 0
+    },
+    {
+      "step": "q1n_posterior",
+      "seconds": 30.80432120000478,
+      "returncode": 0
+    },
+    {
+      "step": "q1n_audit",
+      "seconds": 10.237982699996792,
+      "returncode": 0
+    },
+    {
+      "step": "q1f_prepare",
+      "seconds": 0.6888123999815434,
+      "returncode": 0
+    },
+    {
+      "step": "q1f_faces",
+      "seconds": 151.27924500001245,
+      "returncode": 0
+    },
+    {
+      "step": "q1v6_alignment",
+      "seconds": 82.97169459998258,
+      "returncode": 0
+    },
+    {
+      "step": "q1v6_media_clock",
+      "seconds": 26.026966000004904,
+      "returncode": 0
+    },
+    {
+      "step": "q1v6_features",
+      "seconds": 11.55359889997635,
+      "returncode": 0
+    },
+    {
+      "step": "q1v6_validate",
+      "seconds": 53.553046199987875,
+      "returncode": 0
+    },
+    {
+      "step": "q1v6_geometry",
+      "seconds": 9.61958530000993,
+      "returncode": 0
+    },
+    {
+      "step": "q1v6_visualize",
+      "seconds": 2.714383299986366,
+      "returncode": 0
+    }
+  ],
+  "metadata_changes": [
+    {
+      "sample": "-3g5yACwYnA__13",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-3g5yACwYnA__2",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-3g5yACwYnA__3",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-3g5yACwYnA__9",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-3nNcZdcdvU__5",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-571d8cVauQ__0",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-571d8cVauQ__5",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-6rXp3zJ3kc__8",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-9y-fZ3swSY__0",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-9y-fZ3swSY__4",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-9y-fZ3swSY__8",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-a55Q6RWvTA__3",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-aNfi7CP8vM__7",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-aqamKhZ1Ec__0",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-AUZQgSxyPQ__2",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-dxfTGcXJoc__0",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-dxfTGcXJoc__1",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-dxfTGcXJoc__2",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-dxfTGcXJoc__6",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-egA8-b7-3M__1",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-egA8-b7-3M__13",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-egA8-b7-3M__16",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-egA8-b7-3M__17",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-egA8-b7-3M__18",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-egA8-b7-3M__20",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-egA8-b7-3M__26",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-egA8-b7-3M__6",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-egA8-b7-3M__9",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-HeZS2-Prhc__2",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-hnBHBN8p5A__6",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-hnBHBN8p5A__7",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-HwX2H8Z4hY__2",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-HwX2H8Z4hY__5",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-HwX2H8Z4hY__6",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-HwX2H8Z4hY__9",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-I_e4mIh0yE__1",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-I_e4mIh0yE__3",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-iRBcNs9oI8__3",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-iRBcNs9oI8__6",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-iRBcNs9oI8__7",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-iRBcNs9oI8__8",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-iRBcNs9oI8__9",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-lzEya4AM_4__5",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-lzEya4AM_4__6",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-MeTTeMJBNc__0",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-MeTTeMJBNc__13",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-MeTTeMJBNc__7",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-mJ2ud6oKI8__1",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-mJ2ud6oKI8__2",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-mJ2ud6oKI8__6",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-mJ2ud6oKI8__8",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-mJ2ud6oKI8__9",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-mqbVkbCndg__0",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-NFrJFQijFE__1",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-NFrJFQijFE__2",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-qDkUB0GgYY__6",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-RfYyzHpjk4__11",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-RfYyzHpjk4__2",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-RfYyzHpjk4__8",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-ri04Z7vwnc__0",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-ri04Z7vwnc__2",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-ri04Z7vwnc__5",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-s9qJ7ATP7w__0",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-s9qJ7ATP7w__1",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-s9qJ7ATP7w__4",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-s9qJ7ATP7w__5",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-s9qJ7ATP7w__6",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-s9qJ7ATP7w__7",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-s9qJ7ATP7w__8",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-t217m2on-s__2",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-t217m2on-s__7",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-tANM6ETl_M__3",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-THoVjtIkeU__12",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-THoVjtIkeU__2",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-THoVjtIkeU__6",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-tPCytz4rww__10",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-tPCytz4rww__11",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-tPCytz4rww__12",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-tPCytz4rww__16",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-tPCytz4rww__18",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-UacrmKiTn4__10",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-UacrmKiTn4__4",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-UUCSKoHeMA__0",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-UuX1xuaiiE__0",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-UuX1xuaiiE__1",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-UuX1xuaiiE__3",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-UuX1xuaiiE__6",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-uywlfIYOS8__4",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-vxjVxOeScU__4",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-wMB_hJL-3o__7",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-wny0OAz3g8__0",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-wny0OAz3g8__1",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-wny0OAz3g8__2",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-wny0OAz3g8__3",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-wny0OAz3g8__5",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-wny0OAz3g8__7",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-wny0OAz3g8__9",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-yRb-Jum7EQ__1",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-yRb-Jum7EQ__5",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    },
+    {
+      "sample": "-yRb-Jum7EQ__6",
+      "source_equal": true,
+      "metadata_equal": false,
+      "changed_keys": [
+        "dependencies"
+      ]
+    }
+  ],
+  "metadata_changed_keys": [
+    "dependencies"
+  ]
+}

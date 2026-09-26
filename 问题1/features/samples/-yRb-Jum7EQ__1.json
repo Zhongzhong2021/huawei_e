@@ -1,0 +1,677 @@
+{
+  "sample_id": "-yRb-Jum7EQ$_$1",
+  "table_row_0based": 97,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-yRb-Jum7EQ/1.mp4",
+  "source_sha256": "2f16da1baa8660e5bfc608f5237cdd59725d16e57a19bc02c4556cd2c7129a46",
+  "text_original": "it comes with the assistance and agitation of states and regimes, Yesterday Iran announced that it will finance the families of the terrorists and murderers this shows that Iran, even after the nuclear agreement, is continuing to aid terrorism, including Palestinian terrorism, Hezbollah terrorism and its assistance to Hamas.",
+  "words": [
+    {
+      "word": "it",
+      "source_text": "it",
+      "char_start": 0,
+      "char_end": 2,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "it"
+      ]
+    },
+    {
+      "word": "comes",
+      "source_text": "comes",
+      "char_start": 3,
+      "char_end": 8,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "comes"
+      ]
+    },
+    {
+      "word": "with",
+      "source_text": "with",
+      "char_start": 9,
+      "char_end": 13,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "with"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 14,
+      "char_end": 17,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "assistance",
+      "source_text": "assistance",
+      "char_start": 18,
+      "char_end": 28,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "assistance"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 29,
+      "char_end": 32,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "agitation",
+      "source_text": "agitation",
+      "char_start": 33,
+      "char_end": 42,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "agitation"
+      ]
+    },
+    {
+      "word": "of",
+      "source_text": "of",
+      "char_start": 43,
+      "char_end": 45,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "of"
+      ]
+    },
+    {
+      "word": "states",
+      "source_text": "states",
+      "char_start": 46,
+      "char_end": 52,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "states"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 53,
+      "char_end": 56,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "regimes",
+      "source_text": "regimes",
+      "char_start": 57,
+      "char_end": 64,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "regimes"
+      ]
+    },
+    {
+      "word": "yesterday",
+      "source_text": "Yesterday",
+      "char_start": 66,
+      "char_end": 75,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "yesterday"
+      ]
+    },
+    {
+      "word": "iran",
+      "source_text": "Iran",
+      "char_start": 76,
+      "char_end": 80,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "iran"
+      ]
+    },
+    {
+      "word": "announced",
+      "source_text": "announced",
+      "char_start": 81,
+      "char_end": 90,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "announced"
+      ]
+    },
+    {
+      "word": "that",
+      "source_text": "that",
+      "char_start": 91,
+      "char_end": 95,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "that"
+      ]
+    },
+    {
+      "word": "it",
+      "source_text": "it",
+      "char_start": 96,
+      "char_end": 98,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17
+      ],
+      "bert_tokens": [
+        "it"
+      ]
+    },
+    {
+      "word": "will",
+      "source_text": "will",
+      "char_start": 99,
+      "char_end": 103,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        18
+      ],
+      "bert_tokens": [
+        "will"
+      ]
+    },
+    {
+      "word": "finance",
+      "source_text": "finance",
+      "char_start": 104,
+      "char_end": 111,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        19
+      ],
+      "bert_tokens": [
+        "finance"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 112,
+      "char_end": 115,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        20
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "families",
+      "source_text": "families",
+      "char_start": 116,
+      "char_end": 124,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        21
+      ],
+      "bert_tokens": [
+        "families"
+      ]
+    },
+    {
+      "word": "of",
+      "source_text": "of",
+      "char_start": 125,
+      "char_end": 127,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        22
+      ],
+      "bert_tokens": [
+        "of"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 128,
+      "char_end": 131,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        23
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "terrorists",
+      "source_text": "terrorists",
+      "char_start": 132,
+      "char_end": 142,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        24
+      ],
+      "bert_tokens": [
+        "terrorists"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 143,
+      "char_end": 146,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        25
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "murderers",
+      "source_text": "murderers",
+      "char_start": 147,
+      "char_end": 156,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        26
+      ],
+      "bert_tokens": [
+        "murderers"
+      ]
+    },
+    {
+      "word": "this",
+      "source_text": "this",
+      "char_start": 157,
+      "char_end": 161,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        27
+      ],
+      "bert_tokens": [
+        "this"
+      ]
+    },
+    {
+      "word": "shows",
+      "source_text": "shows",
+      "char_start": 162,
+      "char_end": 167,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        28
+      ],
+      "bert_tokens": [
+        "shows"
+      ]
+    },
+    {
+      "word": "that",
+      "source_text": "that",
+      "char_start": 168,
+      "char_end": 172,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        29
+      ],
+      "bert_tokens": [
+        "that"
+      ]
+    },
+    {
+      "word": "iran",
+      "source_text": "Iran",
+      "char_start": 173,
+      "char_end": 177,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        30
+      ],
+      "bert_tokens": [
+        "iran"
+      ]
+    },
+    {
+      "word": "even",
+      "source_text": "even",
+      "char_start": 179,
+      "char_end": 183,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        32
+      ],
+      "bert_tokens": [
+        "even"
+      ]
+    },
+    {
+      "word": "after",
+      "source_text": "after",
+      "char_start": 184,
+      "char_end": 189,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        33
+      ],
+      "bert_tokens": [
+        "after"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 190,
+      "char_end": 193,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        34
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "nuclear",
+      "source_text": "nuclear",
+      "char_start": 194,
+      "char_end": 201,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        35
+      ],
+      "bert_tokens": [
+        "nuclear"
+      ]
+    },
+    {
+      "word": "agreement",
+      "source_text": "agreement",
+      "char_start": 202,
+      "char_end": 211,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        36
+      ],
+      "bert_tokens": [
+        "agreement"
+      ]
+    },
+    {
+      "word": "is",
+      "source_text": "is",
+      "char_start": 213,
+      "char_end": 215,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        38
+      ],
+      "bert_tokens": [
+        "is"
+      ]
+    },
+    {
+      "word": "continuing",
+      "source_text": "continuing",
+      "char_start": 216,
+      "char_end": 226,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        39
+      ],
+      "bert_tokens": [
+        "continuing"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 227,
+      "char_end": 229,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        40
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "aid",
+      "source_text": "aid",
+      "char_start": 230,
+      "char_end": 233,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        41
+      ],
+      "bert_tokens": [
+        "aid"
+      ]
+    },
+    {
+      "word": "terrorism",
+      "source_text": "terrorism",
+      "char_start": 234,
+      "char_end": 243,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        42
+      ],
+      "bert_tokens": [
+        "terrorism"
+      ]
+    },
+    {
+      "word": "including",
+      "source_text": "including",
+      "char_start": 245,
+      "char_end": 254,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        44
+      ],
+      "bert_tokens": [
+        "including"
+      ]
+    },
+    {
+      "word": "palestinian",
+      "source_text": "Palestinian",
+      "char_start": 255,
+      "char_end": 266,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        45
+      ],
+      "bert_tokens": [
+        "palestinian"
+      ]
+    },
+    {
+      "word": "terrorism",
+      "source_text": "terrorism",
+      "char_start": 267,
+      "char_end": 276,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        46
+      ],
+      "bert_tokens": [
+        "terrorism"
+      ]
+    },
+    {
+      "word": "hezbollah",
+      "source_text": "Hezbollah",
+      "char_start": 278,
+      "char_end": 287,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        48
+      ],
+      "bert_tokens": [
+        "hezbollah"
+      ]
+    },
+    {
+      "word": "terrorism",
+      "source_text": "terrorism",
+      "char_start": 288,
+      "char_end": 297,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        49
+      ],
+      "bert_tokens": [
+        "terrorism"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 298,
+      "char_end": 301,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        50
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "its",
+      "source_text": "its",
+      "char_start": 302,
+      "char_end": 305,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        51
+      ],
+      "bert_tokens": [
+        "its"
+      ]
+    },
+    {
+      "word": "assistance",
+      "source_text": "assistance",
+      "char_start": 306,
+      "char_end": 316,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        52
+      ],
+      "bert_tokens": [
+        "assistance"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 317,
+      "char_end": 319,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        53
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "hamas",
+      "source_text": "Hamas",
+      "char_start": 320,
+      "char_end": 325,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        54
+      ],
+      "bert_tokens": [
+        "hamas"
+      ]
+    }
+  ],
+  "duration_s": 29.266665999999997,
+  "container_declared_duration_s": 34.567,
+  "media_clock": {
+    "stem": "-yRb-Jum7EQ__1",
+    "sample_id": "-yRb-Jum7EQ$_$1",
+    "container_duration_s": 34.567,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 29.10975,
+    "audio_end_s": 29.10975,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 29.233333,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 29.266665999999997,
+    "observed_end_s": 29.266665999999997,
+    "empty_declared_tail_s": 5.300334000000003,
+    "original_video_frames": 875,
+    "source_sha256": "2f16da1baa8660e5bfc608f5237cdd59725d16e57a19bc02c4556cd2c7129a46"
+  },
+  "decoded_audio_duration_s": 29.10975,
+  "audio_start_s": 0.0,
+  "feature_sha256": "e41fd1cc917ab13d410183d7bf39305c015747fa68745a74d358e6904a0f22b6",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-yRb-Jum7EQ__1.json": "83ba09287544b6cc64ad3f340b6f8a6d4b25ca7e2791d2621a7a0f328884e634",
+    "results/q1/samples/-yRb-Jum7EQ__1.npz": "dba7df39e542b1abd1758b4fa3673b7567a26b6b6a85fd5c024d093b870b956f",
+    "results/q1_next/enhanced/-yRb-Jum7EQ__1.npz": "92336d3f1b18fb8ebcdff1bc4c6feb2de38cd985d1f979ba63d12c0009f6e791",
+    "results/q1_refinement_v1/faces/-yRb-Jum7EQ__1.npz": "c3744c577e5662c0eb2049fbecc7957b2ddf08f477edc2acdadea205f140dbca",
+    "results/q1_deep_v6/alignment/MMS_FA/-yRb-Jum7EQ__1/original.npz": "3f21cf19d58b2684cfab4f250066d67505d7d96132c7d4f747e6bdba9ffaebea",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

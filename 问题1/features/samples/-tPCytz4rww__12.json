@@ -1,0 +1,378 @@
+{
+  "sample_id": "-tPCytz4rww$_$12",
+  "table_row_0based": 52,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-tPCytz4rww/12.mp4",
+  "source_sha256": "e3c7f9cd67ad2d20fef997696dc278361f97f027db58762e22104e5720d509d5",
+  "text_original": "No less than eight hundred squire feet and going to similar in, similar with bedrooms and bathrooms as well and hopefully the complexes have similar amenities.",
+  "words": [
+    {
+      "word": "no",
+      "source_text": "No",
+      "char_start": 0,
+      "char_end": 2,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "no"
+      ]
+    },
+    {
+      "word": "less",
+      "source_text": "less",
+      "char_start": 3,
+      "char_end": 7,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "less"
+      ]
+    },
+    {
+      "word": "than",
+      "source_text": "than",
+      "char_start": 8,
+      "char_end": 12,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "than"
+      ]
+    },
+    {
+      "word": "eight",
+      "source_text": "eight",
+      "char_start": 13,
+      "char_end": 18,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "eight"
+      ]
+    },
+    {
+      "word": "hundred",
+      "source_text": "hundred",
+      "char_start": 19,
+      "char_end": 26,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "hundred"
+      ]
+    },
+    {
+      "word": "squire",
+      "source_text": "squire",
+      "char_start": 27,
+      "char_end": 33,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "squire"
+      ]
+    },
+    {
+      "word": "feet",
+      "source_text": "feet",
+      "char_start": 34,
+      "char_end": 38,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "feet"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 39,
+      "char_end": 42,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "going",
+      "source_text": "going",
+      "char_start": 43,
+      "char_end": 48,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "going"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 49,
+      "char_end": 51,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "similar",
+      "source_text": "similar",
+      "char_start": 52,
+      "char_end": 59,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "similar"
+      ]
+    },
+    {
+      "word": "in",
+      "source_text": "in",
+      "char_start": 60,
+      "char_end": 62,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "in"
+      ]
+    },
+    {
+      "word": "similar",
+      "source_text": "similar",
+      "char_start": 64,
+      "char_end": 71,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "similar"
+      ]
+    },
+    {
+      "word": "with",
+      "source_text": "with",
+      "char_start": 72,
+      "char_end": 76,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "with"
+      ]
+    },
+    {
+      "word": "bedrooms",
+      "source_text": "bedrooms",
+      "char_start": 77,
+      "char_end": 85,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "bedrooms"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 86,
+      "char_end": 89,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "bathrooms",
+      "source_text": "bathrooms",
+      "char_start": 90,
+      "char_end": 99,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        18
+      ],
+      "bert_tokens": [
+        "bathrooms"
+      ]
+    },
+    {
+      "word": "as",
+      "source_text": "as",
+      "char_start": 100,
+      "char_end": 102,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        19
+      ],
+      "bert_tokens": [
+        "as"
+      ]
+    },
+    {
+      "word": "well",
+      "source_text": "well",
+      "char_start": 103,
+      "char_end": 107,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        20
+      ],
+      "bert_tokens": [
+        "well"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 108,
+      "char_end": 111,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        21
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "hopefully",
+      "source_text": "hopefully",
+      "char_start": 112,
+      "char_end": 121,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        22
+      ],
+      "bert_tokens": [
+        "hopefully"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 122,
+      "char_end": 125,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        23
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "complexes",
+      "source_text": "complexes",
+      "char_start": 126,
+      "char_end": 135,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        24
+      ],
+      "bert_tokens": [
+        "complexes"
+      ]
+    },
+    {
+      "word": "have",
+      "source_text": "have",
+      "char_start": 136,
+      "char_end": 140,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        25
+      ],
+      "bert_tokens": [
+        "have"
+      ]
+    },
+    {
+      "word": "similar",
+      "source_text": "similar",
+      "char_start": 141,
+      "char_end": 148,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        26
+      ],
+      "bert_tokens": [
+        "similar"
+      ]
+    },
+    {
+      "word": "amenities",
+      "source_text": "amenities",
+      "char_start": 149,
+      "char_end": 158,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        27
+      ],
+      "bert_tokens": [
+        "amenities"
+      ]
+    }
+  ],
+  "duration_s": 11.833333000000001,
+  "container_declared_duration_s": 18.767,
+  "media_clock": {
+    "stem": "-tPCytz4rww__12",
+    "sample_id": "-tPCytz4rww$_$12",
+    "container_duration_s": 18.767,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 11.7361875,
+    "audio_end_s": 11.7361875,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 11.8,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 11.833333000000001,
+    "observed_end_s": 11.833333000000001,
+    "empty_declared_tail_s": 6.933666999999998,
+    "original_video_frames": 353,
+    "source_sha256": "e3c7f9cd67ad2d20fef997696dc278361f97f027db58762e22104e5720d509d5"
+  },
+  "decoded_audio_duration_s": 11.7361875,
+  "audio_start_s": 0.0,
+  "feature_sha256": "35dd7d80a37543afbaef3ed08b74d8b8475b9131b871ee0ccadbfc298f7146c2",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-tPCytz4rww__12.json": "0d86d940dea9b6229edfe35f483153d6099ecd0a8825ba1c0870dfc4dfd53f38",
+    "results/q1/samples/-tPCytz4rww__12.npz": "73ac88d0733fe4195de7e8cb4120e9f98814854e5940b2714841348bba664aa7",
+    "results/q1_next/enhanced/-tPCytz4rww__12.npz": "9e0bc037072efd229cbfe477a9fa685ab1ec53aaa590fc762733881a9f475b33",
+    "results/q1_refinement_v1/faces/-tPCytz4rww__12.npz": "7a88ca88a1c3ddeffa13af060c74af5bb5b77d83984cb64f3b74a3ae7a4ff097",
+    "results/q1_deep_v6/alignment/MMS_FA/-tPCytz4rww__12/original.npz": "bf0a98dc69efdeaaff52118280dce8e1dc3bdb81646b4f0d8031be90d449b93a",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

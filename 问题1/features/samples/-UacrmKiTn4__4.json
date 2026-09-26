@@ -1,0 +1,222 @@
+{
+  "sample_id": "-UacrmKiTn4$_$4",
+  "table_row_0based": 69,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-UacrmKiTn4/4.mp4",
+  "source_sha256": "a7f2ab0d6ee2e2a2d5cd4239f03e6cac67c618ddb744891323df3ff87e29af84",
+  "text_original": "Just given to their own devices they are not going to read the textbook.",
+  "words": [
+    {
+      "word": "just",
+      "source_text": "Just",
+      "char_start": 0,
+      "char_end": 4,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "just"
+      ]
+    },
+    {
+      "word": "given",
+      "source_text": "given",
+      "char_start": 5,
+      "char_end": 10,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "given"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 11,
+      "char_end": 13,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "their",
+      "source_text": "their",
+      "char_start": 14,
+      "char_end": 19,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "their"
+      ]
+    },
+    {
+      "word": "own",
+      "source_text": "own",
+      "char_start": 20,
+      "char_end": 23,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "own"
+      ]
+    },
+    {
+      "word": "devices",
+      "source_text": "devices",
+      "char_start": 24,
+      "char_end": 31,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "devices"
+      ]
+    },
+    {
+      "word": "they",
+      "source_text": "they",
+      "char_start": 32,
+      "char_end": 36,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "they"
+      ]
+    },
+    {
+      "word": "are",
+      "source_text": "are",
+      "char_start": 37,
+      "char_end": 40,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "are"
+      ]
+    },
+    {
+      "word": "not",
+      "source_text": "not",
+      "char_start": 41,
+      "char_end": 44,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "not"
+      ]
+    },
+    {
+      "word": "going",
+      "source_text": "going",
+      "char_start": 45,
+      "char_end": 50,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "going"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 51,
+      "char_end": 53,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "read",
+      "source_text": "read",
+      "char_start": 54,
+      "char_end": 58,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "read"
+      ]
+    },
+    {
+      "word": "the",
+      "source_text": "the",
+      "char_start": 59,
+      "char_end": 62,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "textbook",
+      "source_text": "textbook",
+      "char_start": 63,
+      "char_end": 71,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "textbook"
+      ]
+    }
+  ],
+  "duration_s": 4.733333,
+  "container_declared_duration_s": 6.223,
+  "media_clock": {
+    "stem": "-UacrmKiTn4__4",
+    "sample_id": "-UacrmKiTn4$_$4",
+    "container_duration_s": 6.223,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 4.6819375,
+    "audio_end_s": 4.6819375,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 4.7,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 4.733333,
+    "observed_end_s": 4.733333,
+    "empty_declared_tail_s": 1.4896669999999999,
+    "original_video_frames": 142,
+    "source_sha256": "a7f2ab0d6ee2e2a2d5cd4239f03e6cac67c618ddb744891323df3ff87e29af84"
+  },
+  "decoded_audio_duration_s": 4.6819375,
+  "audio_start_s": 0.0,
+  "feature_sha256": "fe05d112a0ad2b27622d12b969606a9f595e822954f95965e8fc4e497acf6be1",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-UacrmKiTn4__4.json": "3153f19508a5b384a6b84e9bcff183f04250d8757c339023cbed154ad9921bfd",
+    "results/q1/samples/-UacrmKiTn4__4.npz": "423a7d4c3b6f7e33c4fa6f458c31b2ae033f02c6d60082033a518292d6bbf5a7",
+    "results/q1_next/enhanced/-UacrmKiTn4__4.npz": "c59b4f286b2e0e84bc918b675e27f0a1cfb500d2e249cf6f36914a0f470fd15c",
+    "results/q1_refinement_v1/faces/-UacrmKiTn4__4.npz": "c1dfd127c4931af3429a31664d9fc10223d7c24249c525e0261c27856b23f827",
+    "results/q1_deep_v6/alignment/MMS_FA/-UacrmKiTn4__4/original.npz": "454c98dcd568da32896b500f0003146fc83b1b64a29b6e3acb9b0bb896ebd0f9",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

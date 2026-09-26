@@ -1,0 +1,248 @@
+{
+  "sample_id": "-egA8-b7-3M$_$17",
+  "table_row_0based": 26,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-egA8-b7-3M/17.mp4",
+  "source_sha256": "f967e81e0edd51c3700671721afb3fbecbbc32652f27d2db40ea444e8d80c68f",
+  "text_original": "As you have more experience, you have more times exhibiting, you get to know more people.",
+  "words": [
+    {
+      "word": "as",
+      "source_text": "As",
+      "char_start": 0,
+      "char_end": 2,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "as"
+      ]
+    },
+    {
+      "word": "you",
+      "source_text": "you",
+      "char_start": 3,
+      "char_end": 6,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "you"
+      ]
+    },
+    {
+      "word": "have",
+      "source_text": "have",
+      "char_start": 7,
+      "char_end": 11,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "have"
+      ]
+    },
+    {
+      "word": "more",
+      "source_text": "more",
+      "char_start": 12,
+      "char_end": 16,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "more"
+      ]
+    },
+    {
+      "word": "experience",
+      "source_text": "experience",
+      "char_start": 17,
+      "char_end": 27,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "experience"
+      ]
+    },
+    {
+      "word": "you",
+      "source_text": "you",
+      "char_start": 29,
+      "char_end": 32,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "you"
+      ]
+    },
+    {
+      "word": "have",
+      "source_text": "have",
+      "char_start": 33,
+      "char_end": 37,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "have"
+      ]
+    },
+    {
+      "word": "more",
+      "source_text": "more",
+      "char_start": 38,
+      "char_end": 42,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "more"
+      ]
+    },
+    {
+      "word": "times",
+      "source_text": "times",
+      "char_start": 43,
+      "char_end": 48,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        10
+      ],
+      "bert_tokens": [
+        "times"
+      ]
+    },
+    {
+      "word": "exhibiting",
+      "source_text": "exhibiting",
+      "char_start": 49,
+      "char_end": 59,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "exhibiting"
+      ]
+    },
+    {
+      "word": "you",
+      "source_text": "you",
+      "char_start": 61,
+      "char_end": 64,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "you"
+      ]
+    },
+    {
+      "word": "get",
+      "source_text": "get",
+      "char_start": 65,
+      "char_end": 68,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "get"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 69,
+      "char_end": 71,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "know",
+      "source_text": "know",
+      "char_start": 72,
+      "char_end": 76,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "know"
+      ]
+    },
+    {
+      "word": "more",
+      "source_text": "more",
+      "char_start": 77,
+      "char_end": 81,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17
+      ],
+      "bert_tokens": [
+        "more"
+      ]
+    },
+    {
+      "word": "people",
+      "source_text": "people",
+      "char_start": 82,
+      "char_end": 88,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        18
+      ],
+      "bert_tokens": [
+        "people"
+      ]
+    }
+  ],
+  "duration_s": 7.266666,
+  "container_declared_duration_s": 14.0,
+  "media_clock": {
+    "stem": "-egA8-b7-3M__17",
+    "sample_id": "-egA8-b7-3M$_$17",
+    "container_duration_s": 14.0,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 7.09525,
+    "audio_end_s": 7.09525,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 7.233333,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 7.266666,
+    "observed_end_s": 7.266666,
+    "empty_declared_tail_s": 6.733334,
+    "original_video_frames": 215,
+    "source_sha256": "f967e81e0edd51c3700671721afb3fbecbbc32652f27d2db40ea444e8d80c68f"
+  },
+  "decoded_audio_duration_s": 7.09525,
+  "audio_start_s": 0.0,
+  "feature_sha256": "378c46985f983f9ff4cbcc221e4984ff1894b8570387c7abf5db768a2c6abd90",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-egA8-b7-3M__17.json": "cb1790e7a001b41bb7f35f7bd9d467e0682c8e2fbf2f3fff3bb75f93d58b702a",
+    "results/q1/samples/-egA8-b7-3M__17.npz": "6fd0fc832f40f1dac057b27ae3967354154cff2e5a8d5b161ef79e8aa2ca49d7",
+    "results/q1_next/enhanced/-egA8-b7-3M__17.npz": "d05a1685b43dbfb8dce020c41796ce8ae9dbbb0fd5ce984719fefd0f93e4194f",
+    "results/q1_refinement_v1/faces/-egA8-b7-3M__17.npz": "738cc407862a9c2f6a34ade5eeb25dea16fa975dd38677121a1723a8000232b5",
+    "results/q1_deep_v6/alignment/MMS_FA/-egA8-b7-3M__17/original.npz": "55304f6f04db0335a58e219e4adea73752fa0f02f97e2ccf2339e7218d5a5a04",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

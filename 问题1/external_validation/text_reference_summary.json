@@ -1,0 +1,9 @@
+{
+  "samples": 100,
+  "same_id": 18,
+  "same_encoder_input": 14,
+  "words": 275,
+  "mae": 5.857436639964996e-07,
+  "max_abs": 0.0003452301025390625,
+  "meaning": "Annex2 supplied precomputed BERT representation compared after the exact same word-membership pooling; excludes different input contexts, truncation and unmatched IDs; no labels read"
+}

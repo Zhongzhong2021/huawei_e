@@ -1,0 +1,675 @@
+{
+  "sample_id": "-dxfTGcXJoc$_$0",
+  "table_row_0based": 22,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-dxfTGcXJoc/0.mp4",
+  "source_sha256": "04bd0be907fb46c613f926fe1b06bc2c3b30881c293156510baa34a4105ade55",
+  "text_original": "This is Governor Steve Beshear ... About Kentucky Our state is home to more than 1,500 bioscience and lifescience companies and more than 100,000 people who work for these firms, in areas from nutrigenomics and pharmaceuticals to nanotechnology and medical devices.",
+  "words": [
+    {
+      "word": "this",
+      "source_text": "This",
+      "char_start": 0,
+      "char_end": 4,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "this"
+      ]
+    },
+    {
+      "word": "is",
+      "source_text": "is",
+      "char_start": 5,
+      "char_end": 7,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "is"
+      ]
+    },
+    {
+      "word": "governor",
+      "source_text": "Governor",
+      "char_start": 8,
+      "char_end": 16,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "governor"
+      ]
+    },
+    {
+      "word": "steve",
+      "source_text": "Steve",
+      "char_start": 17,
+      "char_end": 22,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "steve"
+      ]
+    },
+    {
+      "word": "beshear",
+      "source_text": "Beshear",
+      "char_start": 23,
+      "char_end": 30,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5,
+        6,
+        7
+      ],
+      "bert_tokens": [
+        "be",
+        "##sh",
+        "##ear"
+      ]
+    },
+    {
+      "word": "about",
+      "source_text": "About",
+      "char_start": 35,
+      "char_end": 40,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "about"
+      ]
+    },
+    {
+      "word": "kentucky",
+      "source_text": "Kentucky",
+      "char_start": 41,
+      "char_end": 49,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "kentucky"
+      ]
+    },
+    {
+      "word": "our",
+      "source_text": "Our",
+      "char_start": 50,
+      "char_end": 53,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "our"
+      ]
+    },
+    {
+      "word": "state",
+      "source_text": "state",
+      "char_start": 54,
+      "char_end": 59,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14
+      ],
+      "bert_tokens": [
+        "state"
+      ]
+    },
+    {
+      "word": "is",
+      "source_text": "is",
+      "char_start": 60,
+      "char_end": 62,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        15
+      ],
+      "bert_tokens": [
+        "is"
+      ]
+    },
+    {
+      "word": "home",
+      "source_text": "home",
+      "char_start": 63,
+      "char_end": 67,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        16
+      ],
+      "bert_tokens": [
+        "home"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 68,
+      "char_end": 70,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "more",
+      "source_text": "more",
+      "char_start": 71,
+      "char_end": 75,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        18
+      ],
+      "bert_tokens": [
+        "more"
+      ]
+    },
+    {
+      "word": "than",
+      "source_text": "than",
+      "char_start": 76,
+      "char_end": 80,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        19
+      ],
+      "bert_tokens": [
+        "than"
+      ]
+    },
+    {
+      "word": "one",
+      "source_text": "1,500",
+      "char_start": 81,
+      "char_end": 86,
+      "normalization": "English number expansion",
+      "bert_positions": [
+        20,
+        21,
+        22
+      ],
+      "bert_tokens": [
+        "1",
+        ",",
+        "500"
+      ]
+    },
+    {
+      "word": "thousand",
+      "source_text": "1,500",
+      "char_start": 81,
+      "char_end": 86,
+      "normalization": "English number expansion",
+      "bert_positions": [
+        20,
+        21,
+        22
+      ],
+      "bert_tokens": [
+        "1",
+        ",",
+        "500"
+      ]
+    },
+    {
+      "word": "five",
+      "source_text": "1,500",
+      "char_start": 81,
+      "char_end": 86,
+      "normalization": "English number expansion",
+      "bert_positions": [
+        20,
+        21,
+        22
+      ],
+      "bert_tokens": [
+        "1",
+        ",",
+        "500"
+      ]
+    },
+    {
+      "word": "hundred",
+      "source_text": "1,500",
+      "char_start": 81,
+      "char_end": 86,
+      "normalization": "English number expansion",
+      "bert_positions": [
+        20,
+        21,
+        22
+      ],
+      "bert_tokens": [
+        "1",
+        ",",
+        "500"
+      ]
+    },
+    {
+      "word": "bioscience",
+      "source_text": "bioscience",
+      "char_start": 87,
+      "char_end": 97,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        23,
+        24,
+        25
+      ],
+      "bert_tokens": [
+        "bio",
+        "##sc",
+        "##ience"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 98,
+      "char_end": 101,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        26
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "lifescience",
+      "source_text": "lifescience",
+      "char_start": 102,
+      "char_end": 113,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        27,
+        28,
+        29
+      ],
+      "bert_tokens": [
+        "life",
+        "##sc",
+        "##ience"
+      ]
+    },
+    {
+      "word": "companies",
+      "source_text": "companies",
+      "char_start": 114,
+      "char_end": 123,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        30
+      ],
+      "bert_tokens": [
+        "companies"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 124,
+      "char_end": 127,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        31
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "more",
+      "source_text": "more",
+      "char_start": 128,
+      "char_end": 132,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        32
+      ],
+      "bert_tokens": [
+        "more"
+      ]
+    },
+    {
+      "word": "than",
+      "source_text": "than",
+      "char_start": 133,
+      "char_end": 137,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        33
+      ],
+      "bert_tokens": [
+        "than"
+      ]
+    },
+    {
+      "word": "one",
+      "source_text": "100,000",
+      "char_start": 138,
+      "char_end": 145,
+      "normalization": "English number expansion",
+      "bert_positions": [
+        34,
+        35,
+        36
+      ],
+      "bert_tokens": [
+        "100",
+        ",",
+        "000"
+      ]
+    },
+    {
+      "word": "hundred",
+      "source_text": "100,000",
+      "char_start": 138,
+      "char_end": 145,
+      "normalization": "English number expansion",
+      "bert_positions": [
+        34,
+        35,
+        36
+      ],
+      "bert_tokens": [
+        "100",
+        ",",
+        "000"
+      ]
+    },
+    {
+      "word": "thousand",
+      "source_text": "100,000",
+      "char_start": 138,
+      "char_end": 145,
+      "normalization": "English number expansion",
+      "bert_positions": [
+        34,
+        35,
+        36
+      ],
+      "bert_tokens": [
+        "100",
+        ",",
+        "000"
+      ]
+    },
+    {
+      "word": "people",
+      "source_text": "people",
+      "char_start": 146,
+      "char_end": 152,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        37
+      ],
+      "bert_tokens": [
+        "people"
+      ]
+    },
+    {
+      "word": "who",
+      "source_text": "who",
+      "char_start": 153,
+      "char_end": 156,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        38
+      ],
+      "bert_tokens": [
+        "who"
+      ]
+    },
+    {
+      "word": "work",
+      "source_text": "work",
+      "char_start": 157,
+      "char_end": 161,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        39
+      ],
+      "bert_tokens": [
+        "work"
+      ]
+    },
+    {
+      "word": "for",
+      "source_text": "for",
+      "char_start": 162,
+      "char_end": 165,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        40
+      ],
+      "bert_tokens": [
+        "for"
+      ]
+    },
+    {
+      "word": "these",
+      "source_text": "these",
+      "char_start": 166,
+      "char_end": 171,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        41
+      ],
+      "bert_tokens": [
+        "these"
+      ]
+    },
+    {
+      "word": "firms",
+      "source_text": "firms",
+      "char_start": 172,
+      "char_end": 177,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        42
+      ],
+      "bert_tokens": [
+        "firms"
+      ]
+    },
+    {
+      "word": "in",
+      "source_text": "in",
+      "char_start": 179,
+      "char_end": 181,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        44
+      ],
+      "bert_tokens": [
+        "in"
+      ]
+    },
+    {
+      "word": "areas",
+      "source_text": "areas",
+      "char_start": 182,
+      "char_end": 187,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        45
+      ],
+      "bert_tokens": [
+        "areas"
+      ]
+    },
+    {
+      "word": "from",
+      "source_text": "from",
+      "char_start": 188,
+      "char_end": 192,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        46
+      ],
+      "bert_tokens": [
+        "from"
+      ]
+    },
+    {
+      "word": "nutrigenomics",
+      "source_text": "nutrigenomics",
+      "char_start": 193,
+      "char_end": 206,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        47,
+        48,
+        49,
+        50
+      ],
+      "bert_tokens": [
+        "nut",
+        "##ri",
+        "##gen",
+        "##omics"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 207,
+      "char_end": 210,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        51
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "pharmaceuticals",
+      "source_text": "pharmaceuticals",
+      "char_start": 211,
+      "char_end": 226,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        52
+      ],
+      "bert_tokens": [
+        "pharmaceuticals"
+      ]
+    },
+    {
+      "word": "to",
+      "source_text": "to",
+      "char_start": 227,
+      "char_end": 229,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        53
+      ],
+      "bert_tokens": [
+        "to"
+      ]
+    },
+    {
+      "word": "nanotechnology",
+      "source_text": "nanotechnology",
+      "char_start": 230,
+      "char_end": 244,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        54,
+        55,
+        56
+      ],
+      "bert_tokens": [
+        "nano",
+        "##tech",
+        "##nology"
+      ]
+    },
+    {
+      "word": "and",
+      "source_text": "and",
+      "char_start": 245,
+      "char_end": 248,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        57
+      ],
+      "bert_tokens": [
+        "and"
+      ]
+    },
+    {
+      "word": "medical",
+      "source_text": "medical",
+      "char_start": 249,
+      "char_end": 256,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        58
+      ],
+      "bert_tokens": [
+        "medical"
+      ]
+    },
+    {
+      "word": "devices",
+      "source_text": "devices",
+      "char_start": 257,
+      "char_end": 264,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        59
+      ],
+      "bert_tokens": [
+        "devices"
+      ]
+    }
+  ],
+  "duration_s": 20.533333,
+  "container_declared_duration_s": 20.534,
+  "media_clock": {
+    "stem": "-dxfTGcXJoc__0",
+    "sample_id": "-dxfTGcXJoc$_$0",
+    "container_duration_s": 20.534,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 20.410375,
+    "audio_end_s": 20.410375,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 20.5,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 20.533333,
+    "observed_end_s": 20.533333,
+    "empty_declared_tail_s": 0.0006669999999999732,
+    "original_video_frames": 615,
+    "source_sha256": "04bd0be907fb46c613f926fe1b06bc2c3b30881c293156510baa34a4105ade55"
+  },
+  "decoded_audio_duration_s": 20.410375,
+  "audio_start_s": 0.0,
+  "feature_sha256": "df83500230ea03360876f98a2efb3a1e521db8a03ca08b4270fcb13f71961702",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-dxfTGcXJoc__0.json": "a1b5ee5e5e2e760b06b86f4f476077213e3a0411d31e17430b2c3684cb33f601",
+    "results/q1/samples/-dxfTGcXJoc__0.npz": "d0d87989ac63add5744c40e75e55246aef4ed6db981ab311263e696fb83d9f99",
+    "results/q1_next/enhanced/-dxfTGcXJoc__0.npz": "7a3b7cbab9a816147e38037e34eab33fcdf6463cbe15e7ccd65404af1a9cd0ca",
+    "results/q1_refinement_v1/faces/-dxfTGcXJoc__0.npz": "7ceaaccb81192509115547f084a7cc88eb475748fa2b0d9caa12d87b380a8b7b",
+    "results/q1_deep_v6/alignment/MMS_FA/-dxfTGcXJoc__0/original.npz": "9e62244c97bda8d74c4c353fcf2c192a8858a71286a3ca33466f24fcf104dc2d",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}

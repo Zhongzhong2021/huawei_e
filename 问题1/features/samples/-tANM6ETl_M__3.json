@@ -1,0 +1,334 @@
+{
+  "sample_id": "-tANM6ETl_M$_$3",
+  "table_row_0based": 49,
+  "source_path": "附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/-tANM6ETl_M/3.mp4",
+  "source_sha256": "6d3af064c060dad3816a9e1dfa00101faebd8b7da7d8ceea85b0bc0fca70abd6",
+  "text_original": "The first place is either you have a prospect, or a customer who's never done it before, or they've never tried it.",
+  "words": [
+    {
+      "word": "the",
+      "source_text": "The",
+      "char_start": 0,
+      "char_end": 3,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        1
+      ],
+      "bert_tokens": [
+        "the"
+      ]
+    },
+    {
+      "word": "first",
+      "source_text": "first",
+      "char_start": 4,
+      "char_end": 9,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        2
+      ],
+      "bert_tokens": [
+        "first"
+      ]
+    },
+    {
+      "word": "place",
+      "source_text": "place",
+      "char_start": 10,
+      "char_end": 15,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        3
+      ],
+      "bert_tokens": [
+        "place"
+      ]
+    },
+    {
+      "word": "is",
+      "source_text": "is",
+      "char_start": 16,
+      "char_end": 18,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        4
+      ],
+      "bert_tokens": [
+        "is"
+      ]
+    },
+    {
+      "word": "either",
+      "source_text": "either",
+      "char_start": 19,
+      "char_end": 25,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        5
+      ],
+      "bert_tokens": [
+        "either"
+      ]
+    },
+    {
+      "word": "you",
+      "source_text": "you",
+      "char_start": 26,
+      "char_end": 29,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        6
+      ],
+      "bert_tokens": [
+        "you"
+      ]
+    },
+    {
+      "word": "have",
+      "source_text": "have",
+      "char_start": 30,
+      "char_end": 34,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        7
+      ],
+      "bert_tokens": [
+        "have"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 35,
+      "char_end": 36,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        8
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "prospect",
+      "source_text": "prospect",
+      "char_start": 37,
+      "char_end": 45,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        9
+      ],
+      "bert_tokens": [
+        "prospect"
+      ]
+    },
+    {
+      "word": "or",
+      "source_text": "or",
+      "char_start": 47,
+      "char_end": 49,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        11
+      ],
+      "bert_tokens": [
+        "or"
+      ]
+    },
+    {
+      "word": "a",
+      "source_text": "a",
+      "char_start": 50,
+      "char_end": 51,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        12
+      ],
+      "bert_tokens": [
+        "a"
+      ]
+    },
+    {
+      "word": "customer",
+      "source_text": "customer",
+      "char_start": 52,
+      "char_end": 60,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        13
+      ],
+      "bert_tokens": [
+        "customer"
+      ]
+    },
+    {
+      "word": "who's",
+      "source_text": "who's",
+      "char_start": 61,
+      "char_end": 66,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        14,
+        15,
+        16
+      ],
+      "bert_tokens": [
+        "who",
+        "'",
+        "s"
+      ]
+    },
+    {
+      "word": "never",
+      "source_text": "never",
+      "char_start": 67,
+      "char_end": 72,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        17
+      ],
+      "bert_tokens": [
+        "never"
+      ]
+    },
+    {
+      "word": "done",
+      "source_text": "done",
+      "char_start": 73,
+      "char_end": 77,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        18
+      ],
+      "bert_tokens": [
+        "done"
+      ]
+    },
+    {
+      "word": "it",
+      "source_text": "it",
+      "char_start": 78,
+      "char_end": 80,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        19
+      ],
+      "bert_tokens": [
+        "it"
+      ]
+    },
+    {
+      "word": "before",
+      "source_text": "before",
+      "char_start": 81,
+      "char_end": 87,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        20
+      ],
+      "bert_tokens": [
+        "before"
+      ]
+    },
+    {
+      "word": "or",
+      "source_text": "or",
+      "char_start": 89,
+      "char_end": 91,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        22
+      ],
+      "bert_tokens": [
+        "or"
+      ]
+    },
+    {
+      "word": "they've",
+      "source_text": "they've",
+      "char_start": 92,
+      "char_end": 99,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        23,
+        24,
+        25
+      ],
+      "bert_tokens": [
+        "they",
+        "'",
+        "ve"
+      ]
+    },
+    {
+      "word": "never",
+      "source_text": "never",
+      "char_start": 100,
+      "char_end": 105,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        26
+      ],
+      "bert_tokens": [
+        "never"
+      ]
+    },
+    {
+      "word": "tried",
+      "source_text": "tried",
+      "char_start": 106,
+      "char_end": 111,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        27
+      ],
+      "bert_tokens": [
+        "tried"
+      ]
+    },
+    {
+      "word": "it",
+      "source_text": "it",
+      "char_start": 112,
+      "char_end": 114,
+      "normalization": "lowercase / apostrophe normalization",
+      "bert_positions": [
+        28
+      ],
+      "bert_tokens": [
+        "it"
+      ]
+    }
+  ],
+  "duration_s": 6.733333,
+  "container_declared_duration_s": 9.1,
+  "media_clock": {
+    "stem": "-tANM6ETl_M__3",
+    "sample_id": "-tANM6ETl_M$_$3",
+    "container_duration_s": 9.1,
+    "audio_start_s": 0.0,
+    "audio_decoded_duration_s": 6.603625,
+    "audio_end_s": 6.603625,
+    "video_first_pts_s": 0.0,
+    "video_last_pts_s": 6.7,
+    "last_frame_duration_s": 0.033333,
+    "last_frame_duration_source": "pkt_duration_time",
+    "video_presentation_end_s": 6.733333,
+    "observed_end_s": 6.733333,
+    "empty_declared_tail_s": 2.3666669999999996,
+    "original_video_frames": 200,
+    "source_sha256": "6d3af064c060dad3816a9e1dfa00101faebd8b7da7d8ceea85b0bc0fca70abd6"
+  },
+  "decoded_audio_duration_s": 6.603625,
+  "audio_start_s": 0.0,
+  "feature_sha256": "a33e2c8871f92e686ba429d90a68b3de68c31500ab8901fa36f62d2698788697",
+  "schema": "q1-v6-observed-clock",
+  "dependencies": {
+    "results/q1/samples/-tANM6ETl_M__3.json": "2fe19cbdf3ae0cb008d8e0f71874554269ceca072b7826c7239a5a35dc6000fd",
+    "results/q1/samples/-tANM6ETl_M__3.npz": "a76aebe289665592fa50361c14029a88c3703ce60f55bbebebd1e418d7cb0c76",
+    "results/q1_next/enhanced/-tANM6ETl_M__3.npz": "1e797b9aacc8c11e74597eb714dd83e056ca1a7a284afa342ec0e0ee7cb60bef",
+    "results/q1_refinement_v1/faces/-tANM6ETl_M__3.npz": "52d8f2e01883f5c4c8b2248e601ef5bfdffb1e97835764a7c793c738c6237860",
+    "results/q1_deep_v6/alignment/MMS_FA/-tANM6ETl_M__3/original.npz": "68bedf85c7996d6726b95ff13a2d80be017e967b2726096a018432bcf1f431f4",
+    "results/q1_deep_v6/media_clock/results.json": "576f83a5efb33a31f1efa606390ca5f9226f8e6317021a34f85dffe974db0e66"
+  }
+}
