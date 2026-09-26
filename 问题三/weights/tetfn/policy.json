@@ -1,0 +1,5 @@
+{
+  "decision_mode": "regression",
+  "tau_minus": 0.0,
+  "tau_plus": 0.55
+}

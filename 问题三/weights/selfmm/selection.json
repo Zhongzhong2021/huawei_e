@@ -1,0 +1,63 @@
+{
+  "run": "runs/q3b_all20/reference/selfmm_dropout_source_lr",
+  "family": "selfmm",
+  "seed": 17,
+  "scope": "no_native_attribution",
+  "bundle": "runs/q3b_all20/reference/selfmm_dropout_source_lr/best/macro_f1",
+  "epoch": 3,
+  "checkpoint": "checkpoints/epoch_003.pt",
+  "checkpoint_sha256": "f3666bf51e729796f1a7e908de8b4882ae488809d90ad5193d84896b7192e1d6",
+  "policy": {
+    "decision_mode": "regression",
+    "tau_minus": -0.05,
+    "tau_plus": 0.35
+  },
+  "metrics": {
+    "accuracy": 0.6456043956043956,
+    "macro_f1": 0.638996313157387,
+    "weighted_f1": 0.6559105603568691,
+    "mae": 0.5491108864003403,
+    "pearson": 0.6910476846588434,
+    "pearson_defined": true,
+    "per_class": {
+      "0": {
+        "precision": 0.7430167597765364,
+        "recall": 0.6456310679611651,
+        "f1": 0.6909090909090909,
+        "support": 206
+      },
+      "1": {
+        "precision": 0.4372623574144487,
+        "recall": 0.625,
+        "f1": 0.5145413870246085,
+        "support": 184
+      },
+      "2": {
+        "precision": 0.7762237762237763,
+        "recall": 0.6568047337278107,
+        "f1": 0.7115384615384617,
+        "support": 338
+      }
+    },
+    "confusion_matrix": [
+      [
+        133,
+        56,
+        17
+      ],
+      [
+        22,
+        115,
+        47
+      ],
+      [
+        24,
+        92,
+        222
+      ]
+    ]
+  },
+  "raw_mae": 0.5557428002357483,
+  "objective": "macro_f1",
+  "direction": "max"
+}

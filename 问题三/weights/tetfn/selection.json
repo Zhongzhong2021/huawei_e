@@ -1,0 +1,63 @@
+{
+  "run": "runs/q3b_all20/reference/tetfn_source50_lr2",
+  "family": "tetfn_source",
+  "seed": 17,
+  "scope": "none",
+  "bundle": "runs/q3b_all20/reference/tetfn_source50_lr2/best/macro_f1",
+  "epoch": 1,
+  "checkpoint": "checkpoints/epoch_001.pt",
+  "checkpoint_sha256": "494afe6e7de659de649d63e79c6108141741ca8ee3d4105190495ecab45046b3",
+  "policy": {
+    "decision_mode": "regression",
+    "tau_minus": 0.0,
+    "tau_plus": 0.55
+  },
+  "metrics": {
+    "accuracy": 0.6401098901098901,
+    "macro_f1": 0.6320940146756456,
+    "weighted_f1": 0.648805673416618,
+    "mae": 0.5730260702267105,
+    "pearson": 0.6568850012998086,
+    "pearson_defined": true,
+    "per_class": {
+      "0": {
+        "precision": 0.696078431372549,
+        "recall": 0.6893203883495146,
+        "f1": 0.6926829268292684,
+        "support": 206
+      },
+      "1": {
+        "precision": 0.43724696356275305,
+        "recall": 0.5869565217391305,
+        "f1": 0.5011600928074246,
+        "support": 184
+      },
+      "2": {
+        "precision": 0.779783393501805,
+        "recall": 0.6390532544378699,
+        "f1": 0.7024390243902439,
+        "support": 338
+      }
+    },
+    "confusion_matrix": [
+      [
+        142,
+        46,
+        18
+      ],
+      [
+        33,
+        108,
+        43
+      ],
+      [
+        29,
+        93,
+        216
+      ]
+    ]
+  },
+  "raw_mae": 0.5918880701065063,
+  "objective": "macro_f1",
+  "direction": "max"
+}

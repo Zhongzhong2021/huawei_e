@@ -1,0 +1,83 @@
+{
+  "schema_version": "q3b-1.1",
+  "data": {
+    "aligned_path": "data/aligned_50.pkl",
+    "special_dir": "data/attachment4_aligned",
+    "modalities": [
+      "T",
+      "A",
+      "V"
+    ],
+    "special_ids": [
+      0,
+      101,
+      102
+    ],
+    "zero_row_is_unobserved": true,
+    "normalization_epsilon": 1e-06
+  },
+  "model": {
+    "factory": "q3b.tetfn_source_adapter:build",
+    "kind": "tetfn_source",
+    "input_dims": {
+      "T": 768,
+      "A": 74,
+      "V": 35
+    },
+    "window_size": 1,
+    "dst_width": 50,
+    "heads": 5,
+    "dropout": 0.2,
+    "post_fusion_dim": 64,
+    "pretrained_name": "assets/bert-base-uncased"
+  },
+  "train": {
+    "seed": 17,
+    "batch_size": 32,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.01,
+    "max_epochs": 20,
+    "warmup_epochs": 0,
+    "patience": 4,
+    "min_delta": 1e-06,
+    "gradient_clip": 1.0,
+    "huber_delta": 1.0,
+    "classification_weight": 0.5,
+    "interaction_l1": 0.0,
+    "checkpoint_metric": "valid_calibrated_macro_f1",
+    "device": "cuda:3",
+    "num_workers": 0,
+    "amp": false,
+    "ordinal_weight": 0.1,
+    "encoder_learning_rate": 2e-05
+  },
+  "calibration": {
+    "negative_step_indices": [
+      -20,
+      0
+    ],
+    "positive_step_indices": [
+      0,
+      20
+    ],
+    "step_denominator": 20,
+    "max_mae_increase": 0.02,
+    "primary_metric": "macro_f1"
+  },
+  "explain": {
+    "reference": "train_standardized_zero_fixed_structure",
+    "top_k_windows": 3,
+    "contribution_epsilon": 1e-06,
+    "principal_tie_relative": 0.01,
+    "random_control_seed": 2026,
+    "random_controls_per_sample": 20,
+    "optional_coalition_check": false
+  },
+  "evidence": {
+    "tokenizer_candidate": "bert-base-uncased",
+    "require_token_id_match": true,
+    "forced_aligner_candidate": "torchaudio.pipelines.MMS_FA",
+    "audio_sample_rate": 16000,
+    "allow_equal_duration_mapping": false
+  }
+}

@@ -1,0 +1,215 @@
+{
+  "status": "complete",
+  "seed": 17,
+  "smoke": false,
+  "model": {
+    "factory": "q3b.selfmm_adapter:build",
+    "kind": "selfmm_adapter",
+    "pretrained_name": "bert-base-uncased",
+    "trainable_layers": 12,
+    "window_size": 1,
+    "a_lstm_hidden_size": 16,
+    "v_lstm_hidden_size": 32,
+    "audio_out": 16,
+    "video_out": 32,
+    "post_fusion_dim": 128,
+    "post_text_dim": 64,
+    "post_audio_dim": 16,
+    "post_video_dim": 32,
+    "post_fusion_dropout": 0.25,
+    "post_text_dropout": 0.0,
+    "post_audio_dropout": 0.0,
+    "post_video_dropout": 0.0,
+    "classification_weight": 0.5,
+    "H": 3.0
+  },
+  "native_explanation_scope": "no_native_attribution",
+  "epochs_run": 7,
+  "elapsed_seconds": 69.56685055606067,
+  "data_sha256": "66e867aa74bc70a844e806e5571e371c9abb4a35f9e2887ce9b4d97ff2cb8fcd",
+  "stats_sha256": "5f69218dd9a833cf92a16f7e4343328d871a3fe49945cb0feb77904166e60bc8",
+  "parameter_count": 109676039,
+  "trainable_parameters": 85248263,
+  "train_n": 3395,
+  "valid_n": 728,
+  "test_used": false,
+  "source_sha256": {
+    "experiment.py": "00e4641f90cbcae9bfa4a24765a3b77f270a70d086b83e0ed55acbbe7a644b31",
+    "multiobjective.py": "c46d9ca01ee1e05f7b8096680747a0adb568689ac85f8ecc4d2116c7b83a58d5"
+  },
+  "winners": {
+    "macro_f1": {
+      "epoch": 3,
+      "checkpoint": "checkpoints/epoch_003.pt",
+      "checkpoint_sha256": "f3666bf51e729796f1a7e908de8b4882ae488809d90ad5193d84896b7192e1d6",
+      "policy": {
+        "decision_mode": "regression",
+        "tau_minus": -0.05,
+        "tau_plus": 0.35
+      },
+      "metrics": {
+        "accuracy": 0.6456043956043956,
+        "macro_f1": 0.638996313157387,
+        "weighted_f1": 0.6559105603568691,
+        "mae": 0.5491108864003403,
+        "pearson": 0.6910476846588434,
+        "pearson_defined": true,
+        "per_class": {
+          "0": {
+            "precision": 0.7430167597765364,
+            "recall": 0.6456310679611651,
+            "f1": 0.6909090909090909,
+            "support": 206
+          },
+          "1": {
+            "precision": 0.4372623574144487,
+            "recall": 0.625,
+            "f1": 0.5145413870246085,
+            "support": 184
+          },
+          "2": {
+            "precision": 0.7762237762237763,
+            "recall": 0.6568047337278107,
+            "f1": 0.7115384615384617,
+            "support": 338
+          }
+        },
+        "confusion_matrix": [
+          [
+            133,
+            56,
+            17
+          ],
+          [
+            22,
+            115,
+            47
+          ],
+          [
+            24,
+            92,
+            222
+          ]
+        ]
+      },
+      "raw_mae": 0.5557428002357483,
+      "objective": "macro_f1",
+      "direction": "max"
+    },
+    "accuracy": {
+      "epoch": 2,
+      "checkpoint": "checkpoints/epoch_002.pt",
+      "checkpoint_sha256": "50d88a06bc09b75d32ee76031f124a36ebdf161603393ce6b44c788f2659c5d4",
+      "policy": {
+        "decision_mode": "classification",
+        "neutral_bias": -0.1
+      },
+      "metrics": {
+        "accuracy": 0.6634615384615384,
+        "macro_f1": 0.6140389767919068,
+        "weighted_f1": 0.6421591007724127,
+        "mae": 0.5662386815861932,
+        "pearson": 0.6841540884423651,
+        "pearson_defined": true,
+        "per_class": {
+          "0": {
+            "precision": 0.6625514403292181,
+            "recall": 0.7815533980582524,
+            "f1": 0.7171492204899778,
+            "support": 206
+          },
+          "1": {
+            "precision": 0.5934065934065934,
+            "recall": 0.29347826086956524,
+            "f1": 0.3927272727272727,
+            "support": 184
+          },
+          "2": {
+            "precision": 0.6802030456852792,
+            "recall": 0.7928994082840237,
+            "f1": 0.73224043715847,
+            "support": 338
+          }
+        },
+        "confusion_matrix": [
+          [
+            161,
+            8,
+            37
+          ],
+          [
+            41,
+            54,
+            89
+          ],
+          [
+            41,
+            29,
+            268
+          ]
+        ]
+      },
+      "raw_mae": 0.5692676305770874,
+      "objective": "accuracy",
+      "direction": "max"
+    },
+    "mae": {
+      "epoch": 3,
+      "checkpoint": "checkpoints/epoch_003.pt",
+      "checkpoint_sha256": "f3666bf51e729796f1a7e908de8b4882ae488809d90ad5193d84896b7192e1d6",
+      "policy": {
+        "decision_mode": "regression",
+        "tau_minus": -0.05,
+        "tau_plus": 0.35
+      },
+      "metrics": {
+        "accuracy": 0.6456043956043956,
+        "macro_f1": 0.638996313157387,
+        "weighted_f1": 0.6559105603568691,
+        "mae": 0.5491108864003403,
+        "pearson": 0.6910476846588434,
+        "pearson_defined": true,
+        "per_class": {
+          "0": {
+            "precision": 0.7430167597765364,
+            "recall": 0.6456310679611651,
+            "f1": 0.6909090909090909,
+            "support": 206
+          },
+          "1": {
+            "precision": 0.4372623574144487,
+            "recall": 0.625,
+            "f1": 0.5145413870246085,
+            "support": 184
+          },
+          "2": {
+            "precision": 0.7762237762237763,
+            "recall": 0.6568047337278107,
+            "f1": 0.7115384615384617,
+            "support": 338
+          }
+        },
+        "confusion_matrix": [
+          [
+            133,
+            56,
+            17
+          ],
+          [
+            22,
+            115,
+            47
+          ],
+          [
+            24,
+            92,
+            222
+          ]
+        ]
+      },
+      "raw_mae": 0.5557428002357483,
+      "objective": "mae",
+      "direction": "min"
+    }
+  }
+}

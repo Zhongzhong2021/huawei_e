@@ -1,0 +1,62 @@
+{
+  "run": "runs/q3b_all20/ordinal_uncertainty/uncertainty_s17",
+  "family": "uncertainty",
+  "seed": 17,
+  "scope": "dynamic_precision_weighted_contextual_readout",
+  "bundle": "runs/q3b_all20/ordinal_uncertainty/uncertainty_s17/best/macro_f1",
+  "epoch": 5,
+  "checkpoint": "checkpoints/epoch_005.pt",
+  "checkpoint_sha256": "fe9a0e879080c4145d2d2ac55326fce2668925c9afdd78557b3b0c90a5a3af79",
+  "policy": {
+    "decision_mode": "classification",
+    "neutral_bias": -0.4
+  },
+  "metrics": {
+    "accuracy": 0.6510989010989011,
+    "macro_f1": 0.6322642061414013,
+    "weighted_f1": 0.6546075487719364,
+    "mae": 0.5396734059204187,
+    "pearson": 0.6992588421704274,
+    "pearson_defined": true,
+    "per_class": {
+      "0": {
+        "precision": 0.7401129943502824,
+        "recall": 0.6359223300970874,
+        "f1": 0.6840731070496084,
+        "support": 206
+      },
+      "1": {
+        "precision": 0.4523809523809524,
+        "recall": 0.5163043478260869,
+        "f1": 0.4822335025380711,
+        "support": 184
+      },
+      "2": {
+        "precision": 0.7272727272727273,
+        "recall": 0.7337278106508875,
+        "f1": 0.7304860088365244,
+        "support": 338
+      }
+    },
+    "confusion_matrix": [
+      [
+        131,
+        48,
+        27
+      ],
+      [
+        23,
+        95,
+        66
+      ],
+      [
+        23,
+        67,
+        248
+      ]
+    ]
+  },
+  "raw_mae": 0.5500128865242004,
+  "objective": "macro_f1",
+  "direction": "max"
+}

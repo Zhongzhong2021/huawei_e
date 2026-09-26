@@ -1,0 +1,3743 @@
+{
+  "summary": {
+    "source_rows": 22856,
+    "source_splits": {
+      "train": 16326,
+      "valid": 1871,
+      "test": 4659
+    },
+    "attachment2_audit": {
+      "samples": 4850,
+      "source_id_found": 4850,
+      "verbatim_text_equal": 4850,
+      "labels_equal": 4850
+    },
+    "full_table_audit": {
+      "samples": 22856,
+      "source_id_found": 22856,
+      "verbatim_text_equal": 22856,
+      "labels_equal": 22856,
+      "split_equal": 22856
+    },
+    "full_feature_check": true,
+    "full_feature_splits": {
+      "train": 16326,
+      "valid": 1871,
+      "test": 4659
+    },
+    "recovered": 50,
+    "sdk_verified": 50,
+    "sdk_transcript_unique_best": 50,
+    "feature_verified": 50,
+    "overlaps_attachment2": 9,
+    "recovered_source_splits": {
+      "test": 50
+    },
+    "overlap_splits": {
+      "test": 9
+    },
+    "class_counts": {
+      "3": {
+        "负向": 5,
+        "中性": 9,
+        "正向": 16
+      },
+      "4": {
+        "正向": 13,
+        "负向": 7
+      }
+    }
+  },
+  "records": [
+    {
+      "attachment": 3,
+      "sample_id": "01",
+      "attachment_file": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_01.pkl",
+      "source_id": "221153$_$16",
+      "attachment_sha256": "b45b89a7eea55278abb130d44a6ee21128df5aa3239e68c968f9ac7743cfa0ea",
+      "video_id": "221153",
+      "clip_id": "16",
+      "source_split": "test",
+      "sentiment": -0.6666666865348816,
+      "class_id": 0,
+      "class_name": "负向",
+      "source_text": "But two out of five stars",
+      "token_candidates": 1,
+      "exact_text_candidates": null,
+      "final_candidates": 1,
+      "observed_content_tokens": 6,
+      "unknown_tokens": 0,
+      "attachment2_overlap_split": "test",
+      "sdk": {
+        "verified": true,
+        "row_index": 6,
+        "start_seconds": 85.8961451247,
+        "end_seconds": 88.3428571429,
+        "sentiment": -0.6666666865348816,
+        "all_video_labels_agree": true,
+        "transcript": "but two out of five stars",
+        "transcript_similarity": 1.0,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 599,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            1,
+            50,
+            74
+          ],
+          "checked_values": 408,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            1,
+            50,
+            35
+          ],
+          "checked_values": 210,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 3,
+      "sample_id": "02",
+      "attachment_file": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_02.pkl",
+      "source_id": "ZsLrKF7_Oos$_$1",
+      "attachment_sha256": "6a628897c4b8c5e94e37f23bce680aad500fa8545414234f3564a58577c1023b",
+      "video_id": "ZsLrKF7_Oos",
+      "clip_id": "1",
+      "source_split": "test",
+      "sentiment": 0.0,
+      "class_id": 1,
+      "class_name": "中性",
+      "source_text": "How was it going to – the content and the use of ODLs – going to be detected in the individual care of a patient?",
+      "token_candidates": 1,
+      "exact_text_candidates": null,
+      "final_candidates": 1,
+      "observed_content_tokens": 23,
+      "unknown_tokens": 5,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 1,
+        "start_seconds": 15.656,
+        "end_seconds": 22.862,
+        "sentiment": 0.0,
+        "all_video_labels_agree": true,
+        "transcript": "how was it going to the content and the use of going to be detected in the individual care of a patient so",
+        "transcript_similarity": 0.9565217391304348,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 3086,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            1,
+            50,
+            74
+          ],
+          "checked_values": 1541,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 337,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            1,
+            50,
+            35
+          ],
+          "checked_values": 805,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 175,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 3,
+      "sample_id": "03",
+      "attachment_file": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_03.pkl",
+      "source_id": "213327$_$5",
+      "attachment_sha256": "52bb6e11f4bba301e1bd90916dc9ad3a0d2d0885fec4598e3e737e2c4d100b6f",
+      "video_id": "213327",
+      "clip_id": "5",
+      "source_split": "test",
+      "sentiment": 0.0,
+      "class_id": 1,
+      "class_name": "中性",
+      "source_text": "As you can see, it's playing here in the background (umm) it features mostly high school kids so (umm) hence the audience is geared towards",
+      "token_candidates": 1,
+      "exact_text_candidates": null,
+      "final_candidates": 1,
+      "observed_content_tokens": 27,
+      "unknown_tokens": 5,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 6,
+        "start_seconds": 28.347,
+        "end_seconds": 38.127,
+        "sentiment": 0.0,
+        "all_video_labels_agree": true,
+        "transcript": "as you can see it's playing here in the background umm it features mostly high school kids so umm hence the audience is geared towards",
+        "transcript_similarity": 1.0,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 563,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            1,
+            50,
+            74
+          ],
+          "checked_values": 1804,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 336,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            1,
+            50,
+            35
+          ],
+          "checked_values": 805,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 175,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 3,
+      "sample_id": "04",
+      "attachment_file": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_04.pkl",
+      "source_id": "vJDDEuE-FlY$_$6",
+      "attachment_sha256": "ee1f4781ee7b7bc37e71a13e4bc53eedc8327d96a69c246964d0e84a8aa99f72",
+      "video_id": "vJDDEuE-FlY",
+      "clip_id": "6",
+      "source_split": "test",
+      "sentiment": 0.3333333432674408,
+      "class_id": 2,
+      "class_name": "正向",
+      "source_text": "I think conversely or in addition, what we need to make sure that we're doing is helping our consumers to understand that we do offer certain services.",
+      "token_candidates": 1,
+      "exact_text_candidates": null,
+      "final_candidates": 1,
+      "observed_content_tokens": 29,
+      "unknown_tokens": 2,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 1,
+        "start_seconds": 31.011,
+        "end_seconds": 43.146,
+        "sentiment": 0.3333333432674408,
+        "all_video_labels_agree": true,
+        "transcript": "have to say i think conversely or in addition what we need to make sure that we're doing is helping our consumers to understand that we do offer certain services",
+        "transcript_similarity": 0.9491525423728814,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 4357,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            1,
+            50,
+            74
+          ],
+          "checked_values": 1906,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 134,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            1,
+            50,
+            35
+          ],
+          "checked_values": 1015,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 70,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 3,
+      "sample_id": "05",
+      "attachment_file": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_05.pkl",
+      "source_id": "245582$_$6",
+      "attachment_sha256": "9f8e5bae8488d8ee1576b1686864b7d8fc9970cfa720758fb040b9293b7e3619",
+      "video_id": "245582",
+      "clip_id": "6",
+      "source_split": "test",
+      "sentiment": -0.6666666865348816,
+      "class_id": 0,
+      "class_name": "负向",
+      "source_text": "And I watched it because I had nothing else better to do",
+      "token_candidates": 1,
+      "exact_text_candidates": null,
+      "final_candidates": 1,
+      "observed_content_tokens": 12,
+      "unknown_tokens": 0,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 14,
+        "start_seconds": 31.43,
+        "end_seconds": 36.032,
+        "sentiment": -0.6666666865348816,
+        "all_video_labels_agree": true,
+        "transcript": "and i watched it because i had nothing else better to do",
+        "transcript_similarity": 1.0,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 924,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            1,
+            50,
+            74
+          ],
+          "checked_values": 744,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            1,
+            50,
+            35
+          ],
+          "checked_values": 420,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 3,
+      "sample_id": "06",
+      "attachment_file": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_06.pkl",
+      "source_id": "Qfa1fY_07bQ$_$0",
+      "attachment_sha256": "9e973621f141b1af24fc3686ac329a10b66ba2b84d18c21918e86bf0429f790d",
+      "video_id": "Qfa1fY_07bQ",
+      "clip_id": "0",
+      "source_split": "test",
+      "sentiment": 0.6666666865348816,
+      "class_id": 2,
+      "class_name": "正向",
+      "source_text": "Good morning, I am Adelina Vasileva and  this is the daily report from our newsroom in Varna.",
+      "token_candidates": 1,
+      "exact_text_candidates": null,
+      "final_candidates": 1,
+      "observed_content_tokens": 22,
+      "unknown_tokens": 3,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 0,
+        "start_seconds": 0.0,
+        "end_seconds": 4.483,
+        "sentiment": 0.6666666865348816,
+        "all_video_labels_agree": true,
+        "transcript": "good morning i am and this is the daily report from our newsroom in",
+        "transcript_similarity": 0.9032258064516129,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 2549,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            1,
+            50,
+            74
+          ],
+          "checked_values": 1436,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 194,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            1,
+            50,
+            35
+          ],
+          "checked_values": 770,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 105,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 3,
+      "sample_id": "07",
+      "attachment_file": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_07.pkl",
+      "source_id": "NVLPURuAVLU$_$4",
+      "attachment_sha256": "62dd394e23c80af2898e039d7eb6f47556d747887331fa2853dad72e13bb223b",
+      "video_id": "NVLPURuAVLU",
+      "clip_id": "4",
+      "source_split": "test",
+      "sentiment": 0.6666666865348816,
+      "class_id": 2,
+      "class_name": "正向",
+      "source_text": "Also exercise helps but remember to drink fluids when you're exercising to help sweat out that excess fluid.",
+      "token_candidates": 1,
+      "exact_text_candidates": null,
+      "final_candidates": 1,
+      "observed_content_tokens": 18,
+      "unknown_tokens": 3,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 1,
+        "start_seconds": 32.687,
+        "end_seconds": 41.719,
+        "sentiment": 0.6666666865348816,
+        "all_video_labels_agree": true,
+        "transcript": "also exercise helps but remember to drink fluids when you're exercising to help sweat out that excess fluid there",
+        "transcript_similarity": 0.9743589743589743,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 2374,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            1,
+            50,
+            74
+          ],
+          "checked_values": 1176,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 203,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            1,
+            50,
+            35
+          ],
+          "checked_values": 630,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 105,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 3,
+      "sample_id": "08",
+      "attachment_file": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_08.pkl",
+      "source_id": "102389$_$3",
+      "attachment_sha256": "e668faea97f9a338051c19ee66383df799b2e461d6d079df8c5f92b32bd6437e",
+      "video_id": "102389",
+      "clip_id": "3",
+      "source_split": "test",
+      "sentiment": 0.0,
+      "class_id": 1,
+      "class_name": "中性",
+      "source_text": "It was a cartoon, of course, but it was kinda like a commentary",
+      "token_candidates": 1,
+      "exact_text_candidates": null,
+      "final_candidates": 1,
+      "observed_content_tokens": 13,
+      "unknown_tokens": 2,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 8,
+        "start_seconds": 11.246,
+        "end_seconds": 15.858,
+        "sentiment": 0.0,
+        "all_video_labels_agree": true,
+        "transcript": "it was a cartoon of course but it was kinda like a commentary the",
+        "transcript_similarity": 0.9629629629629629,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 136,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            1,
+            50,
+            74
+          ],
+          "checked_values": 865,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 131,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            1,
+            50,
+            35
+          ],
+          "checked_values": 455,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 70,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 3,
+      "sample_id": "09",
+      "attachment_file": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_09.pkl",
+      "source_id": "Oa2xVjzAMFc$_$5",
+      "attachment_sha256": "ef57769eaa05f53a7d588948d565876356898658d9945202058ca763e53748b2",
+      "video_id": "Oa2xVjzAMFc",
+      "clip_id": "5",
+      "source_split": "test",
+      "sentiment": 1.6666666269302368,
+      "class_id": 2,
+      "class_name": "正向",
+      "source_text": "But a Sole Proprietorship is a great way to start your business.",
+      "token_candidates": 1,
+      "exact_text_candidates": null,
+      "final_candidates": 1,
+      "observed_content_tokens": 12,
+      "unknown_tokens": 2,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 2,
+        "start_seconds": 21.203,
+        "end_seconds": 25.895,
+        "sentiment": 1.6666666269302368,
+        "all_video_labels_agree": true,
+        "transcript": "but a sole proprietorship is a great way to start your business i",
+        "transcript_similarity": 0.96,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 2444,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            1,
+            50,
+            74
+          ],
+          "checked_values": 811,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 136,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            1,
+            50,
+            35
+          ],
+          "checked_values": 420,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 70,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 3,
+      "sample_id": "10",
+      "attachment_file": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_10.pkl",
+      "source_id": "61531$_$13",
+      "attachment_sha256": "7c87d84d69e0e68b9252c9839747558d07a91fd2d079a9a0850683d0d197241e",
+      "video_id": "61531",
+      "clip_id": "13",
+      "source_split": "test",
+      "sentiment": 0.0,
+      "class_id": 1,
+      "class_name": "中性",
+      "source_text": "Actually three versions of the film",
+      "token_candidates": 1,
+      "exact_text_candidates": null,
+      "final_candidates": 1,
+      "observed_content_tokens": 6,
+      "unknown_tokens": 0,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 5,
+        "start_seconds": 47.264,
+        "end_seconds": 50.12,
+        "sentiment": 0.0,
+        "all_video_labels_agree": true,
+        "transcript": "actually three versions of the film",
+        "transcript_similarity": 1.0,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 1509,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            1,
+            50,
+            74
+          ],
+          "checked_values": 394,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            1,
+            50,
+            35
+          ],
+          "checked_values": 210,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 3,
+      "sample_id": "11",
+      "attachment_file": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_11.pkl",
+      "source_id": "bdFCD-3BCRg$_$16",
+      "attachment_sha256": "10e9d5443cecf2de9170deaa56995de0cf9c52580a74cd334de8fea0e4a735f2",
+      "video_id": "bdFCD-3BCRg",
+      "clip_id": "16",
+      "source_split": "test",
+      "sentiment": 0.3333333432674408,
+      "class_id": 2,
+      "class_name": "正向",
+      "source_text": "Our live webinars are in the process of a makeover too",
+      "token_candidates": 1,
+      "exact_text_candidates": null,
+      "final_candidates": 1,
+      "observed_content_tokens": 10,
+      "unknown_tokens": 4,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 8,
+        "start_seconds": 103.456,
+        "end_seconds": 106.851,
+        "sentiment": 0.3333333432674408,
+        "all_video_labels_agree": true,
+        "transcript": "our live are in the process of a makeover too",
+        "transcript_similarity": 0.9523809523809523,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 3244,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            1,
+            50,
+            74
+          ],
+          "checked_values": 649,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 261,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            1,
+            50,
+            35
+          ],
+          "checked_values": 350,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 140,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 3,
+      "sample_id": "12",
+      "attachment_file": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_12.pkl",
+      "source_id": "UiurP5k-f1A$_$1",
+      "attachment_sha256": "d0342f4931a05e40fb0a3220010f1ac801a2f06d123bc4d9a7dc5355794347ba",
+      "video_id": "UiurP5k-f1A",
+      "clip_id": "1",
+      "source_split": "test",
+      "sentiment": 1.0,
+      "class_id": 2,
+      "class_name": "正向",
+      "source_text": "The organization has achieved a 30 percent reduction in administrative function costs.",
+      "token_candidates": 1,
+      "exact_text_candidates": null,
+      "final_candidates": 1,
+      "observed_content_tokens": 11,
+      "unknown_tokens": 2,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 0,
+        "start_seconds": 11.924,
+        "end_seconds": 17.175,
+        "sentiment": 1.0,
+        "all_video_labels_agree": true,
+        "transcript": "the organization has achieved a percent reduction in administrative function costs in",
+        "transcript_similarity": 0.9166666666666666,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 2771,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            1,
+            50,
+            74
+          ],
+          "checked_values": 706,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 129,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            1,
+            50,
+            35
+          ],
+          "checked_values": 385,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 70,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 3,
+      "sample_id": "13",
+      "attachment_file": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_13.pkl",
+      "source_id": "JKueLneBoik$_$3",
+      "attachment_sha256": "9e2144ab4385636b259d9e358c7e511be5242c89340f894473317b7757f218b7",
+      "video_id": "JKueLneBoik",
+      "clip_id": "3",
+      "source_split": "test",
+      "sentiment": 0.0,
+      "class_id": 1,
+      "class_name": "中性",
+      "source_text": "Not that running! But there will be campaign booths, question and answer and skits and speeches",
+      "token_candidates": 1,
+      "exact_text_candidates": null,
+      "final_candidates": 1,
+      "observed_content_tokens": 17,
+      "unknown_tokens": 2,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 3,
+        "start_seconds": 8.841,
+        "end_seconds": 15.678,
+        "sentiment": 0.0,
+        "all_video_labels_agree": true,
+        "transcript": "not that running but there will be campaign booths question and answer and skits and speeches",
+        "transcript_similarity": 1.0,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 2191,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            1,
+            50,
+            74
+          ],
+          "checked_values": 1082,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 127,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            1,
+            50,
+            35
+          ],
+          "checked_values": 595,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 70,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 3,
+      "sample_id": "14",
+      "attachment_file": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_14.pkl",
+      "source_id": "EO_5o9Gup6g$_$10",
+      "attachment_sha256": "f6d45e8fa882062f70fd48ee1f7584b0a75ea0ed1c85a9eb218684e954dc1b82",
+      "video_id": "EO_5o9Gup6g",
+      "clip_id": "10",
+      "source_split": "test",
+      "sentiment": -0.6666666865348816,
+      "class_id": 0,
+      "class_name": "负向",
+      "source_text": "Worse, will the government come up with fines or additional costs if businesses have to lay people off in the future?",
+      "token_candidates": 1,
+      "exact_text_candidates": null,
+      "final_candidates": 1,
+      "observed_content_tokens": 21,
+      "unknown_tokens": 2,
+      "attachment2_overlap_split": "test",
+      "sdk": {
+        "verified": true,
+        "row_index": 2,
+        "start_seconds": 104.484,
+        "end_seconds": 111.55,
+        "sentiment": -0.6666666865348816,
+        "all_video_labels_agree": true,
+        "transcript": "worse will the government come up with fines or additional costs if businesses have to lay people off in the future",
+        "transcript_similarity": 1.0,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 1977,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            1,
+            50,
+            74
+          ],
+          "checked_values": 1394,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 124,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            1,
+            50,
+            35
+          ],
+          "checked_values": 735,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 70,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 3,
+      "sample_id": "15",
+      "attachment_file": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_15.pkl",
+      "source_id": "9Lr4i7bIB6w$_$11",
+      "attachment_sha256": "263b960d4d66b25a3db447fb7a16aee7b7d735e8bee3fe55c7869ad3103bf9d4",
+      "video_id": "9Lr4i7bIB6w",
+      "clip_id": "11",
+      "source_split": "test",
+      "sentiment": 0.6666666865348816,
+      "class_id": 2,
+      "class_name": "正向",
+      "source_text": "Most importantly, you can learn more about how you fit into this important framework  and how it operates at both the Agency and Center levels.",
+      "token_candidates": 1,
+      "exact_text_candidates": null,
+      "final_candidates": 1,
+      "observed_content_tokens": 24,
+      "unknown_tokens": 3,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 1,
+        "start_seconds": 107.657823129,
+        "end_seconds": 116.128571429,
+        "sentiment": 0.6666666865348816,
+        "all_video_labels_agree": true,
+        "transcript": "most importantly you can learn more about how you fit into this important framework and how it operates at both the agency and center levels",
+        "transcript_similarity": 1.0,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 1780,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            1,
+            50,
+            74
+          ],
+          "checked_values": 1566,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 195,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            1,
+            50,
+            35
+          ],
+          "checked_values": 840,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 105,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 3,
+      "sample_id": "16",
+      "attachment_file": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_16.pkl",
+      "source_id": "7npCA0zoQ8Q$_$3",
+      "attachment_sha256": "df8b4c881e3fc971d532988bbd161d8d9bf8c5d16c3e7a559bb7a4045e96547f",
+      "video_id": "7npCA0zoQ8Q",
+      "clip_id": "3",
+      "source_split": "test",
+      "sentiment": 1.6666666269302368,
+      "class_id": 2,
+      "class_name": "正向",
+      "source_text": "The support as well that I've received around me, from my colleagues and my supervisory team has been excellent and I've had a really good experience so far.",
+      "token_candidates": 1,
+      "exact_text_candidates": null,
+      "final_candidates": 1,
+      "observed_content_tokens": 30,
+      "unknown_tokens": 4,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 2,
+        "start_seconds": 35.73,
+        "end_seconds": 47.745,
+        "sentiment": 1.6666666269302368,
+        "all_video_labels_agree": true,
+        "transcript": "the support as well that i've received around me from my colleagues and my supervisory team has been excellent and i've had a really good experience so far",
+        "transcript_similarity": 1.0,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 1636,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            1,
+            50,
+            74
+          ],
+          "checked_values": 1948,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 265,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            1,
+            50,
+            35
+          ],
+          "checked_values": 1050,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 140,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 3,
+      "sample_id": "17",
+      "attachment_file": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_17.pkl",
+      "source_id": "MYEyQUpMe3k$_$6",
+      "attachment_sha256": "b6c64a55fb8050cb9fda15b0245df8f16b20d2a25d9368485dd1229e213fdba5",
+      "video_id": "MYEyQUpMe3k",
+      "clip_id": "6",
+      "source_split": "test",
+      "sentiment": 0.0,
+      "class_id": 1,
+      "class_name": "中性",
+      "source_text": "Jin talked about her day, which included an exam that she believed that she at least did not do badly on",
+      "token_candidates": 1,
+      "exact_text_candidates": null,
+      "final_candidates": 1,
+      "observed_content_tokens": 14,
+      "unknown_tokens": 8,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 4,
+        "start_seconds": 24.9746031746,
+        "end_seconds": 34.9442176871,
+        "sentiment": 0.0,
+        "all_video_labels_agree": true,
+        "transcript": "jang talked about her day which included an exam that she believed that she at least did not do badly on asks",
+        "transcript_similarity": 0.9302325581395349,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 2354,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            1,
+            50,
+            74
+          ],
+          "checked_values": 922,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 527,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            1,
+            50,
+            35
+          ],
+          "checked_values": 490,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 280,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 3,
+      "sample_id": "18",
+      "attachment_file": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_18.pkl",
+      "source_id": "gcFECfN4BCU$_$6",
+      "attachment_sha256": "dc8eb37586b93bdd4debe895041275fdabb94c3392bde667b4e0ccdc6429fab1",
+      "video_id": "gcFECfN4BCU",
+      "clip_id": "6",
+      "source_split": "test",
+      "sentiment": 0.3333333432674408,
+      "class_id": 2,
+      "class_name": "正向",
+      "source_text": "So you probably heard this before, people actually relate to people and not businesses or companies",
+      "token_candidates": 1,
+      "exact_text_candidates": null,
+      "final_candidates": 1,
+      "observed_content_tokens": 14,
+      "unknown_tokens": 3,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 20,
+        "start_seconds": 25.1741496599,
+        "end_seconds": 33.9365079365,
+        "sentiment": 0.3333333432674408,
+        "all_video_labels_agree": true,
+        "transcript": "you so you probably heard this before people actually relate to people and not businesses or companies so",
+        "transcript_similarity": 0.9411764705882353,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 3562,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            1,
+            50,
+            74
+          ],
+          "checked_values": 956,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 216,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            1,
+            50,
+            35
+          ],
+          "checked_values": 490,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 105,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 3,
+      "sample_id": "19",
+      "attachment_file": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_19.pkl",
+      "source_id": "SKTyBOhDX6U$_$8",
+      "attachment_sha256": "d3a912bc3c70b60c1021babc521f28a6a34f9e916c164ad0191182e587c2385a",
+      "video_id": "SKTyBOhDX6U",
+      "clip_id": "8",
+      "source_split": "test",
+      "sentiment": -0.3333333432674408,
+      "class_id": 0,
+      "class_name": "负向",
+      "source_text": "Her father, the breadwinner, died when she was barely a year old putting the family in a dire financial position",
+      "token_candidates": 1,
+      "exact_text_candidates": null,
+      "final_candidates": 1,
+      "observed_content_tokens": 17,
+      "unknown_tokens": 7,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 8,
+        "start_seconds": 27.1097505669,
+        "end_seconds": 34.4752834467,
+        "sentiment": -0.3333333432674408,
+        "all_video_labels_agree": true,
+        "transcript": "in the her father the breadwinner died when she was barely a year old putting the family in a dire financial position",
+        "transcript_similarity": 0.9523809523809523,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 2644,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            1,
+            50,
+            74
+          ],
+          "checked_values": 1108,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 457,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            1,
+            50,
+            35
+          ],
+          "checked_values": 595,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 245,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 3,
+      "sample_id": "20",
+      "attachment_file": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_20.pkl",
+      "source_id": "255408$_$6",
+      "attachment_sha256": "bf24c7189bba3904e911dd452266078d8ff15768438a9069e6596ff73a4b925e",
+      "video_id": "255408",
+      "clip_id": "6",
+      "source_split": "test",
+      "sentiment": -0.3333333432674408,
+      "class_id": 0,
+      "class_name": "负向",
+      "source_text": "(umm) The name of the team was the Tropics and then (umm) and there was a competition if their team xxx xxx xxx that then their team would be totally (umm) like moshed into some other team",
+      "token_candidates": 1,
+      "exact_text_candidates": null,
+      "final_candidates": 1,
+      "observed_content_tokens": 34,
+      "unknown_tokens": 14,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 6,
+        "start_seconds": 35.7,
+        "end_seconds": 51.207,
+        "sentiment": -0.3333333432674408,
+        "all_video_labels_agree": true,
+        "transcript": "umm the name of the team was the tropics and then umm and there was a competition if their team that then their team would be totally umm like into some other team",
+        "transcript_similarity": 0.9428571428571428,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 962,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            1,
+            50,
+            74
+          ],
+          "checked_values": 2312,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 943,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            1,
+            50,
+            35
+          ],
+          "checked_values": 1190,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 490,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 3,
+      "sample_id": "21",
+      "attachment_file": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_21.pkl",
+      "source_id": "pIaEcqnzI-s$_$10",
+      "attachment_sha256": "c0605bd5757ff0c5dea345c96236ed7168ff976d37843572143efe11d6454600",
+      "video_id": "pIaEcqnzI-s",
+      "clip_id": "10",
+      "source_split": "test",
+      "sentiment": 0.3333333432674408,
+      "class_id": 2,
+      "class_name": "正向",
+      "source_text": "Are they available to students that wish to learn",
+      "token_candidates": 1,
+      "exact_text_candidates": null,
+      "final_candidates": 1,
+      "observed_content_tokens": 6,
+      "unknown_tokens": 3,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 2,
+        "start_seconds": 50.676,
+        "end_seconds": 54.051,
+        "sentiment": 0.3333333432674408,
+        "all_video_labels_agree": true,
+        "transcript": "them are they available to students that wish to learn",
+        "transcript_similarity": 0.9473684210526315,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 4053,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            1,
+            50,
+            74
+          ],
+          "checked_values": 393,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 197,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            1,
+            50,
+            35
+          ],
+          "checked_values": 210,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 105,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 3,
+      "sample_id": "22",
+      "attachment_file": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_22.pkl",
+      "source_id": "kXhJ3hHK9hQ$_$3",
+      "attachment_sha256": "6f9dc33f9d3e5680ee3a3b2b0c53b1bac51fb98f1d75375a2cb1224cd7bd4d43",
+      "video_id": "kXhJ3hHK9hQ",
+      "clip_id": "3",
+      "source_split": "test",
+      "sentiment": 0.0,
+      "class_id": 1,
+      "class_name": "中性",
+      "source_text": "Philosophy wouldn’t be any fun if the key to knowledge were that easy, right",
+      "token_candidates": 1,
+      "exact_text_candidates": null,
+      "final_candidates": 1,
+      "observed_content_tokens": 13,
+      "unknown_tokens": 4,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 2,
+        "start_seconds": 5.96780045351,
+        "end_seconds": 10.4099773243,
+        "sentiment": 0.0,
+        "all_video_labels_agree": true,
+        "transcript": "but philosophy be any fun if the key to knowledge were that easy right until",
+        "transcript_similarity": 0.8666666666666667,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 3747,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            1,
+            50,
+            74
+          ],
+          "checked_values": 860,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 265,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            1,
+            50,
+            35
+          ],
+          "checked_values": 455,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 140,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 3,
+      "sample_id": "23",
+      "attachment_file": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_23.pkl",
+      "source_id": "j1m6ctAgjsM$_$42",
+      "attachment_sha256": "5200bd05e2611777875eb1d88826bb56bb71dee4c708fec9d9f851222d243aae",
+      "video_id": "j1m6ctAgjsM",
+      "clip_id": "42",
+      "source_split": "test",
+      "sentiment": 0.3333333432674408,
+      "class_id": 2,
+      "class_name": "正向",
+      "source_text": "They will have a daily huddle that has everybody in the company",
+      "token_candidates": 1,
+      "exact_text_candidates": null,
+      "final_candidates": 1,
+      "observed_content_tokens": 9,
+      "unknown_tokens": 4,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 37,
+        "start_seconds": 180.322,
+        "end_seconds": 184.155,
+        "sentiment": 0.3333333432674408,
+        "all_video_labels_agree": true,
+        "transcript": "daily they will have a daily huddle that has everybody in the company",
+        "transcript_similarity": 0.96,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 3632,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            1,
+            50,
+            74
+          ],
+          "checked_values": 605,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 270,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            1,
+            50,
+            35
+          ],
+          "checked_values": 315,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 140,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 3,
+      "sample_id": "24",
+      "attachment_file": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_24.pkl",
+      "source_id": "zhNksSReaQk$_$27",
+      "attachment_sha256": "76b1c126e2043f90afd5af00d51299bc8f5bf1bee8148f5ff904ccbeb931a5e5",
+      "video_id": "zhNksSReaQk",
+      "clip_id": "27",
+      "source_split": "test",
+      "sentiment": 0.0,
+      "class_id": 1,
+      "class_name": "中性",
+      "source_text": "They could have a really high IQ\"",
+      "token_candidates": 1,
+      "exact_text_candidates": null,
+      "final_candidates": 1,
+      "observed_content_tokens": 6,
+      "unknown_tokens": 2,
+      "attachment2_overlap_split": "test",
+      "sdk": {
+        "verified": true,
+        "row_index": 16,
+        "start_seconds": 104.174603175,
+        "end_seconds": 107.389569161,
+        "sentiment": 0.0,
+        "all_video_labels_agree": true,
+        "transcript": "true they could have a really high",
+        "transcript_similarity": 0.8571428571428571,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 4621,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            1,
+            50,
+            74
+          ],
+          "checked_values": 394,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 131,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            1,
+            50,
+            35
+          ],
+          "checked_values": 210,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 70,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 3,
+      "sample_id": "25",
+      "attachment_file": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_25.pkl",
+      "source_id": "194299$_$14",
+      "attachment_sha256": "88d52e2d0b0229ad6ec638e6e7463f6852f127ae9308fbee1cbc2405d8ebc4c8",
+      "video_id": "194299",
+      "clip_id": "14",
+      "source_split": "test",
+      "sentiment": 0.0,
+      "class_id": 1,
+      "class_name": "中性",
+      "source_text": "So that's what the storyline is about",
+      "token_candidates": 1,
+      "exact_text_candidates": null,
+      "final_candidates": 1,
+      "observed_content_tokens": 7,
+      "unknown_tokens": 2,
+      "attachment2_overlap_split": "test",
+      "sdk": {
+        "verified": true,
+        "row_index": 6,
+        "start_seconds": 60.693,
+        "end_seconds": 63.34,
+        "sentiment": 0.0,
+        "all_video_labels_agree": true,
+        "transcript": "so that's what the storyline is about but i",
+        "transcript_similarity": 0.8888888888888888,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 376,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            1,
+            50,
+            74
+          ],
+          "checked_values": 457,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 132,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            1,
+            50,
+            35
+          ],
+          "checked_values": 245,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 70,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 3,
+      "sample_id": "26",
+      "attachment_file": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_26.pkl",
+      "source_id": "_aJghSQmxD8$_$12",
+      "attachment_sha256": "e483daa1391987552f9ee7f21bffec918dd61267af36885a9ae3073813193234",
+      "video_id": "_aJghSQmxD8",
+      "clip_id": "12",
+      "source_split": "test",
+      "sentiment": 0.6666666865348816,
+      "class_id": 2,
+      "class_name": "正向",
+      "source_text": "So you want to make sure as you're evaluating that everything in the speech makes sense and goes together.",
+      "token_candidates": 1,
+      "exact_text_candidates": null,
+      "final_candidates": 1,
+      "observed_content_tokens": 16,
+      "unknown_tokens": 6,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 0,
+        "start_seconds": 85.707,
+        "end_seconds": 95.167,
+        "sentiment": 0.6666666865348816,
+        "all_video_labels_agree": true,
+        "transcript": "so you want to make sure as you're evaluating that everything in the speech makes sense and goes together",
+        "transcript_similarity": 1.0,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 3131,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            1,
+            50,
+            74
+          ],
+          "checked_values": 1053,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 397,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            1,
+            50,
+            35
+          ],
+          "checked_values": 560,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 210,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 3,
+      "sample_id": "27",
+      "attachment_file": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_27.pkl",
+      "source_id": "VS7xSvno7NA$_$11",
+      "attachment_sha256": "27f16bbd4541196bb33f4caa36e038b2ff66fa72649f1b22f2328a5630de37ad",
+      "video_id": "VS7xSvno7NA",
+      "clip_id": "11",
+      "source_split": "test",
+      "sentiment": 1.0,
+      "class_id": 2,
+      "class_name": "正向",
+      "source_text": "Enforcement is fundamental to ASIC and our priorities of ensuring investors are confident and informed and market integrity maintained.",
+      "token_candidates": 1,
+      "exact_text_candidates": null,
+      "final_candidates": 1,
+      "observed_content_tokens": 13,
+      "unknown_tokens": 8,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 1,
+        "start_seconds": 105.342,
+        "end_seconds": 114.454,
+        "sentiment": 1.0,
+        "all_video_labels_agree": true,
+        "transcript": "enforcement is fundamental to asic and our priorities of ensuring investors are confident and informed and market integrity maintained for more info",
+        "transcript_similarity": 0.926829268292683,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 2831,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            1,
+            50,
+            74
+          ],
+          "checked_values": 878,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 544,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            1,
+            50,
+            35
+          ],
+          "checked_values": 455,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 280,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 3,
+      "sample_id": "28",
+      "attachment_file": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_28.pkl",
+      "source_id": "2ze94yo2aPo$_$4",
+      "attachment_sha256": "81def781fa8fa5aebb555631b59ce48ee71a10c9e4226f1a5b6d91a2078f8f32",
+      "video_id": "2ze94yo2aPo",
+      "clip_id": "4",
+      "source_split": "test",
+      "sentiment": 0.6666666865348816,
+      "class_id": 2,
+      "class_name": "正向",
+      "source_text": "The CIA in Arabic materials are available to purchase on our web site at www.hockinternational.com or from Al-Joman Consultancy in Amman.",
+      "token_candidates": 1,
+      "exact_text_candidates": null,
+      "final_candidates": 1,
+      "observed_content_tokens": 22,
+      "unknown_tokens": 11,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 2,
+        "start_seconds": 42.585,
+        "end_seconds": 51.357,
+        "sentiment": 0.6666666865348816,
+        "all_video_labels_agree": true,
+        "transcript": "the cia in arabic materials are available to purchase on our web site at or from al consultancy in amman",
+        "transcript_similarity": 0.9090909090909091,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 1266,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            1,
+            50,
+            74
+          ],
+          "checked_values": 1425,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 712,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            1,
+            50,
+            35
+          ],
+          "checked_values": 770,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 385,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 3,
+      "sample_id": "29",
+      "attachment_file": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_29.pkl",
+      "source_id": "f-VdKweez2U$_$2",
+      "attachment_sha256": "8caf12e71117bd7334be12aba5af6322fb02a2397f8e2402e75391f4f9ef3686",
+      "video_id": "f-VdKweez2U",
+      "clip_id": "2",
+      "source_split": "test",
+      "sentiment": 0.6666666865348816,
+      "class_id": 2,
+      "class_name": "正向",
+      "source_text": "The freedom to follow your dreams, to work with people that you like to work with.",
+      "token_candidates": 1,
+      "exact_text_candidates": null,
+      "final_candidates": 1,
+      "observed_content_tokens": 10,
+      "unknown_tokens": 8,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 1,
+        "start_seconds": 19.228,
+        "end_seconds": 23.76,
+        "sentiment": 0.6666666865348816,
+        "all_video_labels_agree": true,
+        "transcript": "what the freedom to follow your dreams to work with people that you like to work with to me it",
+        "transcript_similarity": 0.8888888888888888,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 3446,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            1,
+            50,
+            74
+          ],
+          "checked_values": 681,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 545,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            1,
+            50,
+            35
+          ],
+          "checked_values": 350,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 280,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 3,
+      "sample_id": "30",
+      "attachment_file": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_30.pkl",
+      "source_id": "1HS2HcN2LDo$_$4",
+      "attachment_sha256": "a6b272abb5d083804b6902054d4180d55d3c1d5822c483967e70e6a9657546d3",
+      "video_id": "1HS2HcN2LDo",
+      "clip_id": "4",
+      "source_split": "test",
+      "sentiment": 0.3333333432674408,
+      "class_id": 2,
+      "class_name": "正向",
+      "source_text": "Whatever the case may be, treat this as you would for an in-person interview – be ready around 10 minutes early",
+      "token_candidates": 1,
+      "exact_text_candidates": null,
+      "final_candidates": 1,
+      "observed_content_tokens": 12,
+      "unknown_tokens": 12,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 3,
+        "start_seconds": 22.6,
+        "end_seconds": 28.758276644,
+        "sentiment": 0.3333333432674408,
+        "all_video_labels_agree": true,
+        "transcript": "whatever the case may be treat this as you would for an in person interview be ready around minutes early this will ensure",
+        "transcript_similarity": 0.9090909090909091,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 407,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            1,
+            50,
+            74
+          ],
+          "checked_values": 752,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 740,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            1,
+            50,
+            35
+          ],
+          "checked_values": 420,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 420,
+          "all_values_exact": false,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 4,
+      "sample_id": "01",
+      "attachment_file": "E题数据/附件4-可解释专项视频样本与特征文件/附件4-可解释专项视频样本与特征文件/对齐版本/01.pkl",
+      "source_id": "PexNiFbPTYM$_$12",
+      "attachment_sha256": "5a08410ee779863238edcf349556a2f8e10490a70e02fc95001a64f6c8d17452",
+      "video_id": "PexNiFbPTYM",
+      "clip_id": "12",
+      "source_split": "test",
+      "sentiment": 0.3333333432674408,
+      "class_id": 2,
+      "class_name": "正向",
+      "source_text": "Replacing these wear components when replacing the timing belt is essential to ensuring the new belt performs to its mileage requirements",
+      "token_candidates": 1,
+      "exact_text_candidates": 1,
+      "final_candidates": 1,
+      "observed_content_tokens": 22,
+      "unknown_tokens": 0,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 3,
+        "start_seconds": 85.2675736961,
+        "end_seconds": 94.2494331066,
+        "sentiment": 0.3333333432674408,
+        "all_video_labels_agree": true,
+        "transcript": "pump replacing these wear components when replacing the timing belt is essential to ensuring the new belt performs to its mileage requirements",
+        "transcript_similarity": 0.9767441860465116,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 2496,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            50,
+            74
+          ],
+          "checked_values": 3700,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            50,
+            35
+          ],
+          "checked_values": 1750,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "text": {
+          "shape": [
+            50,
+            768
+          ],
+          "checked_values": 38400,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 4,
+      "sample_id": "02",
+      "attachment_file": "E题数据/附件4-可解释专项视频样本与特征文件/附件4-可解释专项视频样本与特征文件/对齐版本/02.pkl",
+      "source_id": "YCEllKyaCrc$_$6",
+      "attachment_sha256": "88ed34a500bd7f11027ffc97205e23fdcde162b32bee9c447367b026b41608ac",
+      "video_id": "YCEllKyaCrc",
+      "clip_id": "6",
+      "source_split": "test",
+      "sentiment": 0.3333333432674408,
+      "class_id": 2,
+      "class_name": "正向",
+      "source_text": "We want to live by each other’s happiness - not by each other’s misery.",
+      "token_candidates": 1,
+      "exact_text_candidates": 1,
+      "final_candidates": 1,
+      "observed_content_tokens": 19,
+      "unknown_tokens": 0,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 2,
+        "start_seconds": 16.873,
+        "end_seconds": 20.188,
+        "sentiment": 0.3333333432674408,
+        "all_video_labels_agree": true,
+        "transcript": "we want to live by each happiness not by each misery",
+        "transcript_similarity": 0.8461538461538461,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 3017,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            50,
+            74
+          ],
+          "checked_values": 3700,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            50,
+            35
+          ],
+          "checked_values": 1750,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "text": {
+          "shape": [
+            50,
+            768
+          ],
+          "checked_values": 38400,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 4,
+      "sample_id": "03",
+      "attachment_file": "E题数据/附件4-可解释专项视频样本与特征文件/附件4-可解释专项视频样本与特征文件/对齐版本/03.pkl",
+      "source_id": "GAVpYuhMZAw$_$6",
+      "attachment_sha256": "237a657ffb78b451b4e504ab8021e6072de404afd83d3b08be1560e98ca62860",
+      "video_id": "GAVpYuhMZAw",
+      "clip_id": "6",
+      "source_split": "test",
+      "sentiment": -0.3333333432674408,
+      "class_id": 0,
+      "class_name": "负向",
+      "source_text": "There's one lender at the moment which I think is just Bankwest who don't take rental income into account, they take rental yield into account.",
+      "token_candidates": 1,
+      "exact_text_candidates": 1,
+      "final_candidates": 1,
+      "observed_content_tokens": 33,
+      "unknown_tokens": 0,
+      "attachment2_overlap_split": "test",
+      "sdk": {
+        "verified": true,
+        "row_index": 7,
+        "start_seconds": 48.002,
+        "end_seconds": 57.583,
+        "sentiment": -0.3333333432674408,
+        "all_video_labels_agree": true,
+        "transcript": "there's one lender at the moment which i think is just who don't take rental income into account they take rental yield into account so",
+        "transcript_similarity": 0.9629629629629629,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 2046,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            50,
+            74
+          ],
+          "checked_values": 3700,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            50,
+            35
+          ],
+          "checked_values": 1750,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "text": {
+          "shape": [
+            50,
+            768
+          ],
+          "checked_values": 38400,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 4,
+      "sample_id": "04",
+      "attachment_file": "E题数据/附件4-可解释专项视频样本与特征文件/附件4-可解释专项视频样本与特征文件/对齐版本/04.pkl",
+      "source_id": "unOeTDc2rlY$_$30",
+      "attachment_sha256": "f7d7291b6ed0050ad3fd439bd3f85ce6fafb230a6399366a76e0b52f017bf4a7",
+      "video_id": "unOeTDc2rlY",
+      "clip_id": "30",
+      "source_split": "test",
+      "sentiment": 0.6666666865348816,
+      "class_id": 2,
+      "class_name": "正向",
+      "source_text": "If I blow it at the team exercise, should I kiss my chances of cheering \"GO BLUE\" goodbye?] Absolutely not.",
+      "token_candidates": 1,
+      "exact_text_candidates": 1,
+      "final_candidates": 1,
+      "observed_content_tokens": 26,
+      "unknown_tokens": 0,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 12,
+        "start_seconds": 179.005,
+        "end_seconds": 185.851,
+        "sentiment": 0.6666666865348816,
+        "all_video_labels_agree": true,
+        "transcript": "if i blow it at the team exercise should i kiss my chances of cheering go blue absolutely not",
+        "transcript_similarity": 0.9743589743589743,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 4309,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            50,
+            74
+          ],
+          "checked_values": 3700,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            50,
+            35
+          ],
+          "checked_values": 1750,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "text": {
+          "shape": [
+            50,
+            768
+          ],
+          "checked_values": 38400,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 4,
+      "sample_id": "05",
+      "attachment_file": "E题数据/附件4-可解释专项视频样本与特征文件/附件4-可解释专项视频样本与特征文件/对齐版本/05.pkl",
+      "source_id": "an_GzG40hcE$_$0",
+      "attachment_sha256": "c6948e101e25656832290edf03daaf400b9a566e912775193d5f3ecdf9388eec",
+      "video_id": "an_GzG40hcE",
+      "clip_id": "0",
+      "source_split": "test",
+      "sentiment": 0.6666666865348816,
+      "class_id": 2,
+      "class_name": "正向",
+      "source_text": "Hi, my name is Chloe, video marketer for Red Wagon Marketing.",
+      "token_candidates": 1,
+      "exact_text_candidates": 1,
+      "final_candidates": 1,
+      "observed_content_tokens": 15,
+      "unknown_tokens": 0,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 0,
+        "start_seconds": 0.0,
+        "end_seconds": 6.01,
+        "sentiment": 0.6666666865348816,
+        "all_video_labels_agree": true,
+        "transcript": "hi my name is chloe video marketer for red wagon marketing",
+        "transcript_similarity": 1.0,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 3196,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            50,
+            74
+          ],
+          "checked_values": 3700,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            50,
+            35
+          ],
+          "checked_values": 1750,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "text": {
+          "shape": [
+            50,
+            768
+          ],
+          "checked_values": 38400,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 4,
+      "sample_id": "06",
+      "attachment_file": "E题数据/附件4-可解释专项视频样本与特征文件/附件4-可解释专项视频样本与特征文件/对齐版本/06.pkl",
+      "source_id": "257277$_$7",
+      "attachment_sha256": "8c432420054ac28bfcacbbee18d0e8397bc87fa0c7e8cbb11f525d6e366fdd57",
+      "video_id": "257277",
+      "clip_id": "7",
+      "source_split": "test",
+      "sentiment": 0.6666666865348816,
+      "class_id": 2,
+      "class_name": "正向",
+      "source_text": "If you're a fan of dancing in that sense, just like to watch people dance, see impressive dance moves then you might want to check out this movie solely for that",
+      "token_candidates": 1,
+      "exact_text_candidates": 1,
+      "final_candidates": 1,
+      "observed_content_tokens": 35,
+      "unknown_tokens": 0,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 14,
+        "start_seconds": 51.494,
+        "end_seconds": 59.638,
+        "sentiment": 0.6666666865348816,
+        "all_video_labels_agree": true,
+        "transcript": "if you're a fan of dancing in that sense just like to watch people dance see impressive dance moves then you might want to check out this movie solely for that",
+        "transcript_similarity": 1.0,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 987,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            50,
+            74
+          ],
+          "checked_values": 3700,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            50,
+            35
+          ],
+          "checked_values": 1750,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "text": {
+          "shape": [
+            50,
+            768
+          ],
+          "checked_values": 38400,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 4,
+      "sample_id": "07",
+      "attachment_file": "E题数据/附件4-可解释专项视频样本与特征文件/附件4-可解释专项视频样本与特征文件/对齐版本/07.pkl",
+      "source_id": "ChhZna-aBK4$_$8",
+      "attachment_sha256": "f16e44523bd82862435489552910ef3b801dd5b7501d67b84b83ee1496b0c5a0",
+      "video_id": "ChhZna-aBK4",
+      "clip_id": "8",
+      "source_split": "test",
+      "sentiment": 0.6666666865348816,
+      "class_id": 2,
+      "class_name": "正向",
+      "source_text": "As Linn’s associate editor Michael Baadke reports in our November 28 issue, attendees “enthusiastically discussed the topics of growing the hobby, the future of stamp shows, and dealers and philatelic partnerships, along with ways the leading organizations involved in the stamp hobby can work together to make it succeed and grow",
+      "token_candidates": 1,
+      "exact_text_candidates": 1,
+      "final_candidates": 1,
+      "observed_content_tokens": 48,
+      "unknown_tokens": 0,
+      "attachment2_overlap_split": "test",
+      "sdk": {
+        "verified": true,
+        "row_index": 14,
+        "start_seconds": 50.7859410431,
+        "end_seconds": 72.0498866213,
+        "sentiment": 0.6666666865348816,
+        "all_video_labels_agree": true,
+        "transcript": "as associate editor michael reports in our november issue attendees discussed the topics of growing the hobby the future of stamp shows and dealers and partnerships along with ways the leading organizations involved in the stamp hobby can work together to make it succeed and throughout",
+        "transcript_similarity": 0.9183673469387755,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 1925,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            50,
+            74
+          ],
+          "checked_values": 3700,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            50,
+            35
+          ],
+          "checked_values": 1750,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "text": {
+          "shape": [
+            50,
+            768
+          ],
+          "checked_values": 38400,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 4,
+      "sample_id": "08",
+      "attachment_file": "E题数据/附件4-可解释专项视频样本与特征文件/附件4-可解释专项视频样本与特征文件/对齐版本/08.pkl",
+      "source_id": "2m58ShI1QSI$_$2",
+      "attachment_sha256": "a1cccd885234d22478f30d0a3b253277e0567abaecc6ac683734b7e3dfc255c4",
+      "video_id": "2m58ShI1QSI",
+      "clip_id": "2",
+      "source_split": "test",
+      "sentiment": 0.3333333432674408,
+      "class_id": 2,
+      "class_name": "正向",
+      "source_text": "That brings us to tonight, the Universal Design Grand Challenge",
+      "token_candidates": 1,
+      "exact_text_candidates": 1,
+      "final_candidates": 1,
+      "observed_content_tokens": 11,
+      "unknown_tokens": 0,
+      "attachment2_overlap_split": "test",
+      "sdk": {
+        "verified": true,
+        "row_index": 1,
+        "start_seconds": 39.581,
+        "end_seconds": 44.483,
+        "sentiment": 0.3333333432674408,
+        "all_video_labels_agree": true,
+        "transcript": "that brings us to tonight the universal design grand challenge",
+        "transcript_similarity": 1.0,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 1255,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            50,
+            74
+          ],
+          "checked_values": 3700,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            50,
+            35
+          ],
+          "checked_values": 1750,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "text": {
+          "shape": [
+            50,
+            768
+          ],
+          "checked_values": 38400,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 4,
+      "sample_id": "09",
+      "attachment_file": "E题数据/附件4-可解释专项视频样本与特征文件/附件4-可解释专项视频样本与特征文件/对齐版本/09.pkl",
+      "source_id": "121400$_$1",
+      "attachment_sha256": "f00ad50bdc14a4c9fe58fb4e421d6c8ee052d281d917766314f2846e48af8ff7",
+      "video_id": "121400",
+      "clip_id": "1",
+      "source_split": "test",
+      "sentiment": -2.3333332538604736,
+      "class_id": 0,
+      "class_name": "负向",
+      "source_text": "(uhh) I did not like this movie at all, I would not recommend it",
+      "token_candidates": 1,
+      "exact_text_candidates": 1,
+      "final_candidates": 1,
+      "observed_content_tokens": 18,
+      "unknown_tokens": 0,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 1,
+        "start_seconds": 6.257,
+        "end_seconds": 11.208,
+        "sentiment": -2.3333332538604736,
+        "all_video_labels_agree": true,
+        "transcript": "uhh i did not like this movie at all i would not recommend it i only",
+        "transcript_similarity": 0.9333333333333333,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 254,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            50,
+            74
+          ],
+          "checked_values": 3700,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            50,
+            35
+          ],
+          "checked_values": 1750,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "text": {
+          "shape": [
+            50,
+            768
+          ],
+          "checked_values": 38400,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 4,
+      "sample_id": "10",
+      "attachment_file": "E题数据/附件4-可解释专项视频样本与特征文件/附件4-可解释专项视频样本与特征文件/对齐版本/10.pkl",
+      "source_id": "286943$_$7",
+      "attachment_sha256": "693326817b8253fc907a3c1df1b05dd1f10c7bc756a86ce125bb903b01eaf571",
+      "video_id": "286943",
+      "clip_id": "7",
+      "source_split": "test",
+      "sentiment": -1.6666666269302368,
+      "class_id": 0,
+      "class_name": "负向",
+      "source_text": "(umm) And you know I really do like to see fluffy chick flicks sometimes so I'm not against that but this one was pretty terrible",
+      "token_candidates": 1,
+      "exact_text_candidates": 1,
+      "final_candidates": 1,
+      "observed_content_tokens": 30,
+      "unknown_tokens": 0,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 9,
+        "start_seconds": 59.327,
+        "end_seconds": 69.087,
+        "sentiment": -1.6666666269302368,
+        "all_video_labels_agree": true,
+        "transcript": "umm and you know i really do like to see fluffy chick flicks sometimes so i'm not against that but this one was pretty terrible and i",
+        "transcript_similarity": 0.9629629629629629,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 1208,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            50,
+            74
+          ],
+          "checked_values": 3700,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            50,
+            35
+          ],
+          "checked_values": 1750,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "text": {
+          "shape": [
+            50,
+            768
+          ],
+          "checked_values": 38400,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 4,
+      "sample_id": "11",
+      "attachment_file": "E题数据/附件4-可解释专项视频样本与特征文件/附件4-可解释专项视频样本与特征文件/对齐版本/11.pkl",
+      "source_id": "224263$_$16",
+      "attachment_sha256": "6e4c4b2fe76d6bbc56d1d21447ec9dff5309adb1227de8adab116ff703f42ffb",
+      "video_id": "224263",
+      "clip_id": "16",
+      "source_split": "test",
+      "sentiment": -2.3333332538604736,
+      "class_id": 0,
+      "class_name": "负向",
+      "source_text": "I would be ashamed to have made this film if I was a director",
+      "token_candidates": 1,
+      "exact_text_candidates": 1,
+      "final_candidates": 1,
+      "observed_content_tokens": 14,
+      "unknown_tokens": 0,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 8,
+        "start_seconds": 88.929,
+        "end_seconds": 94.659,
+        "sentiment": -2.3333332538604736,
+        "all_video_labels_agree": true,
+        "transcript": "i would be ashamed to have made this film if i was a director",
+        "transcript_similarity": 1.0,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 656,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            50,
+            74
+          ],
+          "checked_values": 3700,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            50,
+            35
+          ],
+          "checked_values": 1750,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "text": {
+          "shape": [
+            50,
+            768
+          ],
+          "checked_values": 38400,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 4,
+      "sample_id": "12",
+      "attachment_file": "E题数据/附件4-可解释专项视频样本与特征文件/附件4-可解释专项视频样本与特征文件/对齐版本/12.pkl",
+      "source_id": "gE7kUqMqQ9g$_$2",
+      "attachment_sha256": "5d003f471f20ac8d51553c3b217fc594075067a4c806fc07139839d681a97032",
+      "video_id": "gE7kUqMqQ9g",
+      "clip_id": "2",
+      "source_split": "test",
+      "sentiment": -0.6666666865348816,
+      "class_id": 0,
+      "class_name": "负向",
+      "source_text": "Or worse, an individual previously had good credit, but usually by no fault of their own, or perhaps by fault of their own, they have let their credit sag, and credit scores is very low.",
+      "token_candidates": 1,
+      "exact_text_candidates": 1,
+      "final_candidates": 1,
+      "observed_content_tokens": 42,
+      "unknown_tokens": 0,
+      "attachment2_overlap_split": "test",
+      "sdk": {
+        "verified": true,
+        "row_index": 0,
+        "start_seconds": 15.686,
+        "end_seconds": 28.559,
+        "sentiment": -0.6666666865348816,
+        "all_video_labels_agree": true,
+        "transcript": "or worse an individual previously had good credit but usually by no fault of their own or perhaps by fault of their own they have let their credit sag and credit scores is very low",
+        "transcript_similarity": 1.0,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 3513,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            50,
+            74
+          ],
+          "checked_values": 3700,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            50,
+            35
+          ],
+          "checked_values": 1750,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "text": {
+          "shape": [
+            50,
+            768
+          ],
+          "checked_values": 38400,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 4,
+      "sample_id": "13",
+      "attachment_file": "E题数据/附件4-可解释专项视频样本与特征文件/附件4-可解释专项视频样本与特征文件/对齐版本/13.pkl",
+      "source_id": "kg-W6-hP2Do$_$10",
+      "attachment_sha256": "e2d3d3c55bc52e7178e6e7f9b28e677018f14c76966d9ec5ac486d8fbbfd8281",
+      "video_id": "kg-W6-hP2Do",
+      "clip_id": "10",
+      "source_split": "test",
+      "sentiment": 0.3333333432674408,
+      "class_id": 2,
+      "class_name": "正向",
+      "source_text": "For example, I could take a set of data and from that data, I can find a relationship between any two of the given factors or more.",
+      "token_candidates": 1,
+      "exact_text_candidates": 1,
+      "final_candidates": 1,
+      "observed_content_tokens": 30,
+      "unknown_tokens": 0,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 0,
+        "start_seconds": 46.9557823129,
+        "end_seconds": 55.6260770975,
+        "sentiment": 0.3333333432674408,
+        "all_video_labels_agree": true,
+        "transcript": "for example i could take a set of data and from that data i can find a relationship between any two of the given factors or more",
+        "transcript_similarity": 1.0,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 3762,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            50,
+            74
+          ],
+          "checked_values": 3700,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            50,
+            35
+          ],
+          "checked_values": 1750,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "text": {
+          "shape": [
+            50,
+            768
+          ],
+          "checked_values": 38400,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 4,
+      "sample_id": "14",
+      "attachment_file": "E题数据/附件4-可解释专项视频样本与特征文件/附件4-可解释专项视频样本与特征文件/对齐版本/14.pkl",
+      "source_id": "_0efYOjQYRc$_$3",
+      "attachment_sha256": "5a07719d0610e979be9cc58f4137c951259048fe6ab9918cafd9e27d62f0b5dd",
+      "video_id": "_0efYOjQYRc",
+      "clip_id": "3",
+      "source_split": "test",
+      "sentiment": 0.3333333432674408,
+      "class_id": 2,
+      "class_name": "正向",
+      "source_text": "He is the co-founder of Rossen and Vettese Limited and the former Executive Director of Uniform Final Examination (UFE) courses at Toronto's York University.",
+      "token_candidates": 1,
+      "exact_text_candidates": 1,
+      "final_candidates": 1,
+      "observed_content_tokens": 35,
+      "unknown_tokens": 0,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 0,
+        "start_seconds": 20.215,
+        "end_seconds": 30.424,
+        "sentiment": 0.3333333432674408,
+        "all_video_labels_agree": true,
+        "transcript": "he is the co founder of rossen and limited and the former executive director of uniform final examination courses at toronto's york university",
+        "transcript_similarity": 0.96,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 3111,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            50,
+            74
+          ],
+          "checked_values": 3700,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            50,
+            35
+          ],
+          "checked_values": 1750,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "text": {
+          "shape": [
+            50,
+            768
+          ],
+          "checked_values": 38400,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 4,
+      "sample_id": "15",
+      "attachment_file": "E题数据/附件4-可解释专项视频样本与特征文件/附件4-可解释专项视频样本与特征文件/对齐版本/15.pkl",
+      "source_id": "SKTyBOhDX6U$_$9",
+      "attachment_sha256": "1fd8521f61b769038a991088f11a9693e0ad9f05ad92f9924d502cc147a7cd1f",
+      "video_id": "SKTyBOhDX6U",
+      "clip_id": "9",
+      "source_split": "test",
+      "sentiment": 1.0,
+      "class_id": 2,
+      "class_name": "正向",
+      "source_text": "However, despite their poverty, the family prioritize education because they believed in its power to transform lives",
+      "token_candidates": 1,
+      "exact_text_candidates": 1,
+      "final_candidates": 1,
+      "observed_content_tokens": 21,
+      "unknown_tokens": 0,
+      "attachment2_overlap_split": "test",
+      "sdk": {
+        "verified": true,
+        "row_index": 9,
+        "start_seconds": 33.8244897959,
+        "end_seconds": 41.1102040816,
+        "sentiment": 1.0,
+        "all_video_labels_agree": true,
+        "transcript": "however despite their poverty the family prioritize education because they believed in its power to transform lives",
+        "transcript_similarity": 1.0,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 2643,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            50,
+            74
+          ],
+          "checked_values": 3700,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            50,
+            35
+          ],
+          "checked_values": 1750,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "text": {
+          "shape": [
+            50,
+            768
+          ],
+          "checked_values": 38400,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 4,
+      "sample_id": "16",
+      "attachment_file": "E题数据/附件4-可解释专项视频样本与特征文件/附件4-可解释专项视频样本与特征文件/对齐版本/16.pkl",
+      "source_id": "63951$_$6",
+      "attachment_sha256": "5528f121c021c3648f41e013e829c0a73870eafbbde73415147a074be81d722f",
+      "video_id": "63951",
+      "clip_id": "6",
+      "source_split": "test",
+      "sentiment": -3.0,
+      "class_id": 0,
+      "class_name": "负向",
+      "source_text": "It's a terrible, this is a terrible movie",
+      "token_candidates": 1,
+      "exact_text_candidates": 1,
+      "final_candidates": 1,
+      "observed_content_tokens": 11,
+      "unknown_tokens": 0,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 12,
+        "start_seconds": 52.452,
+        "end_seconds": 55.478,
+        "sentiment": -3.0,
+        "all_video_labels_agree": true,
+        "transcript": "it's a terrible this is a terrible movie i do not",
+        "transcript_similarity": 0.8571428571428571,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 1537,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            50,
+            74
+          ],
+          "checked_values": 3700,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            50,
+            35
+          ],
+          "checked_values": 1750,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "text": {
+          "shape": [
+            50,
+            768
+          ],
+          "checked_values": 38400,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 4,
+      "sample_id": "17",
+      "attachment_file": "E题数据/附件4-可解释专项视频样本与特征文件/附件4-可解释专项视频样本与特征文件/对齐版本/17.pkl",
+      "source_id": "LtlL-03S79Q$_$6",
+      "attachment_sha256": "7b841ea3fdea42ef7d0ba607d90ea61a86a44066eb4ee3d1a70e8180a7b47796",
+      "video_id": "LtlL-03S79Q",
+      "clip_id": "6",
+      "source_split": "test",
+      "sentiment": 1.0,
+      "class_id": 2,
+      "class_name": "正向",
+      "source_text": "Applying these four design concepts to your presentations is simple, easy and will make people think you turned into a design guru.",
+      "token_candidates": 1,
+      "exact_text_candidates": 1,
+      "final_candidates": 1,
+      "observed_content_tokens": 24,
+      "unknown_tokens": 0,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 3,
+        "start_seconds": 37.666,
+        "end_seconds": 47.226,
+        "sentiment": 1.0,
+        "all_video_labels_agree": true,
+        "transcript": "applying these four design concepts to your presentations is simple easy and will make people think you turned into a design guru",
+        "transcript_similarity": 1.0,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 2321,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            50,
+            74
+          ],
+          "checked_values": 3700,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            50,
+            35
+          ],
+          "checked_values": 1750,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "text": {
+          "shape": [
+            50,
+            768
+          ],
+          "checked_values": 38400,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 4,
+      "sample_id": "18",
+      "attachment_file": "E题数据/附件4-可解释专项视频样本与特征文件/附件4-可解释专项视频样本与特征文件/对齐版本/18.pkl",
+      "source_id": "RVC8l5hf2Eg$_$6",
+      "attachment_sha256": "1fc0a00c832183dceeae626937716da6c4c096f621a7706c9268b76dedfa7f06",
+      "video_id": "RVC8l5hf2Eg",
+      "clip_id": "6",
+      "source_split": "test",
+      "sentiment": -0.3333333432674408,
+      "class_id": 0,
+      "class_name": "负向",
+      "source_text": "-And in Denmark - the first Baltic Cod fishery has been MSC – certified -Meanwhile, the Faeroese Mackerel Fishery has been denied MSC certification based on the fact that the fishery has failed to reach an agreement on mackerel quotas with Norway and the European Union.",
+      "token_candidates": 1,
+      "exact_text_candidates": 1,
+      "final_candidates": 1,
+      "observed_content_tokens": 48,
+      "unknown_tokens": 0,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 12,
+        "start_seconds": 54.158,
+        "end_seconds": 72.778,
+        "sentiment": -0.3333333432674408,
+        "all_video_labels_agree": true,
+        "transcript": "in denmark the first baltic cod fishery has been certified the mackerel fishery has been denied certification based on the fact that the fishery has failed to reach an agreement on mackerel quotas with norway and the european union",
+        "transcript_similarity": 0.9397590361445783,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 2607,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            50,
+            74
+          ],
+          "checked_values": 3700,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            50,
+            35
+          ],
+          "checked_values": 1750,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "text": {
+          "shape": [
+            50,
+            768
+          ],
+          "checked_values": 38400,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 4,
+      "sample_id": "19",
+      "attachment_file": "E题数据/附件4-可解释专项视频样本与特征文件/附件4-可解释专项视频样本与特征文件/对齐版本/19.pkl",
+      "source_id": "P0UHzR4CmYg$_$20",
+      "attachment_sha256": "ef099682c44a9e6ba5135a74d4babf12a91ba5ee2895b32d191679244dd1c221",
+      "video_id": "P0UHzR4CmYg",
+      "clip_id": "20",
+      "source_split": "test",
+      "sentiment": 0.3333333432674408,
+      "class_id": 2,
+      "class_name": "正向",
+      "source_text": "People are surprisingly forgiving brands when they own up to mistakes, and unfortunately some haters out there love to point fingers and jump all over imperfections, but for the most part, people understand",
+      "token_candidates": 1,
+      "exact_text_candidates": 1,
+      "final_candidates": 1,
+      "observed_content_tokens": 39,
+      "unknown_tokens": 0,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 13,
+        "start_seconds": 170.384126984,
+        "end_seconds": 183.985487528,
+        "sentiment": 0.3333333432674408,
+        "all_video_labels_agree": true,
+        "transcript": "people are surprisingly forgiving brands when they own up to mistakes and unfortunately some haters out there love to point fingers and jump all over imperfections but for the most part people understand",
+        "transcript_similarity": 1.0,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 2463,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            50,
+            74
+          ],
+          "checked_values": 3700,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            50,
+            35
+          ],
+          "checked_values": 1750,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "text": {
+          "shape": [
+            50,
+            768
+          ],
+          "checked_values": 38400,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    },
+    {
+      "attachment": 4,
+      "sample_id": "20",
+      "attachment_file": "E题数据/附件4-可解释专项视频样本与特征文件/附件4-可解释专项视频样本与特征文件/对齐版本/20.pkl",
+      "source_id": "absh1hsZeF0$_$7",
+      "attachment_sha256": "c9aed197e075fa99518e71cbb2ed17406178d9237d40c785409eacf1fa7f1a68",
+      "video_id": "absh1hsZeF0",
+      "clip_id": "7",
+      "source_split": "test",
+      "sentiment": 0.6666666865348816,
+      "class_id": 2,
+      "class_name": "正向",
+      "source_text": "And of course, click in the link of the description of this video for more, and we'll have more live updates and a stock market video (wrap-up) at the end of the day today.",
+      "token_candidates": 1,
+      "exact_text_candidates": 1,
+      "final_candidates": 1,
+      "observed_content_tokens": 43,
+      "unknown_tokens": 0,
+      "attachment2_overlap_split": null,
+      "sdk": {
+        "verified": true,
+        "row_index": 4,
+        "start_seconds": 82.813,
+        "end_seconds": 93.621,
+        "sentiment": 0.6666666865348816,
+        "all_video_labels_agree": true,
+        "transcript": "and of course click in the link of the description of this video for more and we'll have more live updates and a stock market video wrap up at the end of the day today don't",
+        "transcript_similarity": 0.972972972972973,
+        "transcript_unique_best": true
+      },
+      "feature_verified": true,
+      "feature_split": "test",
+      "feature_row_index": 3190,
+      "feature_label_equal": true,
+      "feature_text_equal": true,
+      "feature_bert_equal": true,
+      "features": {
+        "audio": {
+          "shape": [
+            50,
+            74
+          ],
+          "checked_values": 3700,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "vision": {
+          "shape": [
+            50,
+            35
+          ],
+          "checked_values": 1750,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        },
+        "text": {
+          "shape": [
+            50,
+            768
+          ],
+          "checked_values": 38400,
+          "exact_mismatches": 0,
+          "tolerance_mismatches": 0,
+          "newly_zeroed_values": 0,
+          "all_values_exact": true,
+          "retained_values_exact": true,
+          "retained_values_close": true,
+          "evidence_available": true
+        }
+      }
+    }
+  ]
+}

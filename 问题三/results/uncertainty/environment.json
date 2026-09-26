@@ -1,0 +1,8 @@
+{
+  "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]",
+  "platform": "Linux-5.4.0-216-generic-x86_64-with-glibc2.31",
+  "torch": "2.5.1+cu124",
+  "numpy": "2.4.6",
+  "device": "cuda:0",
+  "gpu": "NVIDIA GeForce RTX 3090 Ti"
+}

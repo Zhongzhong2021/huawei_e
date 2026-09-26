@@ -1,0 +1,21 @@
+attachment,sample_id,source_id,source_split,sentiment,class_id,class_name,final_candidates,token_candidates,exact_text_candidates,observed_content_tokens,unknown_tokens,attachment2_overlap_split,feature_verified,source_text
+4,01,PexNiFbPTYM$_$12,test,0.3333333432674408,2,正向,1,1,1,22,0,,True,Replacing these wear components when replacing the timing belt is essential to ensuring the new belt performs to its mileage requirements
+4,02,YCEllKyaCrc$_$6,test,0.3333333432674408,2,正向,1,1,1,19,0,,True,We want to live by each other’s happiness - not by each other’s misery.
+4,03,GAVpYuhMZAw$_$6,test,-0.3333333432674408,0,负向,1,1,1,33,0,test,True,"There's one lender at the moment which I think is just Bankwest who don't take rental income into account, they take rental yield into account."
+4,04,unOeTDc2rlY$_$30,test,0.6666666865348816,2,正向,1,1,1,26,0,,True,"If I blow it at the team exercise, should I kiss my chances of cheering ""GO BLUE"" goodbye?] Absolutely not."
+4,05,an_GzG40hcE$_$0,test,0.6666666865348816,2,正向,1,1,1,15,0,,True,"Hi, my name is Chloe, video marketer for Red Wagon Marketing."
+4,06,257277$_$7,test,0.6666666865348816,2,正向,1,1,1,35,0,,True,"If you're a fan of dancing in that sense, just like to watch people dance, see impressive dance moves then you might want to check out this movie solely for that"
+4,07,ChhZna-aBK4$_$8,test,0.6666666865348816,2,正向,1,1,1,48,0,test,True,"As Linn’s associate editor Michael Baadke reports in our November 28 issue, attendees “enthusiastically discussed the topics of growing the hobby, the future of stamp shows, and dealers and philatelic partnerships, along with ways the leading organizations involved in the stamp hobby can work together to make it succeed and grow"
+4,08,2m58ShI1QSI$_$2,test,0.3333333432674408,2,正向,1,1,1,11,0,test,True,"That brings us to tonight, the Universal Design Grand Challenge"
+4,09,121400$_$1,test,-2.3333332538604736,0,负向,1,1,1,18,0,,True,"(uhh) I did not like this movie at all, I would not recommend it"
+4,10,286943$_$7,test,-1.6666666269302368,0,负向,1,1,1,30,0,,True,(umm) And you know I really do like to see fluffy chick flicks sometimes so I'm not against that but this one was pretty terrible
+4,11,224263$_$16,test,-2.3333332538604736,0,负向,1,1,1,14,0,,True,I would be ashamed to have made this film if I was a director
+4,12,gE7kUqMqQ9g$_$2,test,-0.6666666865348816,0,负向,1,1,1,42,0,test,True,"Or worse, an individual previously had good credit, but usually by no fault of their own, or perhaps by fault of their own, they have let their credit sag, and credit scores is very low."
+4,13,kg-W6-hP2Do$_$10,test,0.3333333432674408,2,正向,1,1,1,30,0,,True,"For example, I could take a set of data and from that data, I can find a relationship between any two of the given factors or more."
+4,14,_0efYOjQYRc$_$3,test,0.3333333432674408,2,正向,1,1,1,35,0,,True,He is the co-founder of Rossen and Vettese Limited and the former Executive Director of Uniform Final Examination (UFE) courses at Toronto's York University.
+4,15,SKTyBOhDX6U$_$9,test,1.0,2,正向,1,1,1,21,0,test,True,"However, despite their poverty, the family prioritize education because they believed in its power to transform lives"
+4,16,63951$_$6,test,-3.0,0,负向,1,1,1,11,0,,True,"It's a terrible, this is a terrible movie"
+4,17,LtlL-03S79Q$_$6,test,1.0,2,正向,1,1,1,24,0,,True,"Applying these four design concepts to your presentations is simple, easy and will make people think you turned into a design guru."
+4,18,RVC8l5hf2Eg$_$6,test,-0.3333333432674408,0,负向,1,1,1,48,0,,True,"-And in Denmark - the first Baltic Cod fishery has been MSC – certified -Meanwhile, the Faeroese Mackerel Fishery has been denied MSC certification based on the fact that the fishery has failed to reach an agreement on mackerel quotas with Norway and the European Union."
+4,19,P0UHzR4CmYg$_$20,test,0.3333333432674408,2,正向,1,1,1,39,0,,True,"People are surprisingly forgiving brands when they own up to mistakes, and unfortunately some haters out there love to point fingers and jump all over imperfections, but for the most part, people understand"
+4,20,absh1hsZeF0$_$7,test,0.6666666865348816,2,正向,1,1,1,43,0,,True,"And of course, click in the link of the description of this video for more, and we'll have more live updates and a stock market video (wrap-up) at the end of the day today."

@@ -1,0 +1,16 @@
+{
+  "recovered_samples": 50,
+  "csv_counts": {
+    "attachment3": 30,
+    "attachment4": 20
+  },
+  "sdk_label_agreement": 50,
+  "full_feature_agreement": 50,
+  "exact_feature_mismatches": 0,
+  "output_sha256": {
+    "CMU-MOSEI_\u9644\u4ef6\u4e09\u56db\u6807\u7b7e\u5339\u914d\u62a5\u544a.md": "aceca3e9e797fb3551e7c44fa90d682c4369a5ed6eea0cbf79f5e2540e3f3496",
+    "public_source_label_matches.json": "59b8d8b3dbd9e4b084b1d3aedb41cc7dc27c4bf426a59f5f916161720214856d",
+    "attachment3_public_labels.csv": "4f5ff0aafc10e03948a85afd9499a654cb9ff5329056a81ce368070f1bd42c82",
+    "attachment4_public_labels.csv": "899d69cf3a27467e190c3a83265a014c458a0cfa769afc6089334b5ca9c5e065"
+  }
+}

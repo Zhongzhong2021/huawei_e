@@ -1,0 +1,31 @@
+attachment,sample_id,source_id,source_split,sentiment,class_id,class_name,final_candidates,token_candidates,exact_text_candidates,observed_content_tokens,unknown_tokens,attachment2_overlap_split,feature_verified,source_text
+3,01,221153$_$16,test,-0.6666666865348816,0,负向,1,1,,6,0,test,True,But two out of five stars
+3,02,ZsLrKF7_Oos$_$1,test,0.0,1,中性,1,1,,23,5,,True,How was it going to – the content and the use of ODLs – going to be detected in the individual care of a patient?
+3,03,213327$_$5,test,0.0,1,中性,1,1,,27,5,,True,"As you can see, it's playing here in the background (umm) it features mostly high school kids so (umm) hence the audience is geared towards"
+3,04,vJDDEuE-FlY$_$6,test,0.3333333432674408,2,正向,1,1,,29,2,,True,"I think conversely or in addition, what we need to make sure that we're doing is helping our consumers to understand that we do offer certain services."
+3,05,245582$_$6,test,-0.6666666865348816,0,负向,1,1,,12,0,,True,And I watched it because I had nothing else better to do
+3,06,Qfa1fY_07bQ$_$0,test,0.6666666865348816,2,正向,1,1,,22,3,,True,"Good morning, I am Adelina Vasileva and  this is the daily report from our newsroom in Varna."
+3,07,NVLPURuAVLU$_$4,test,0.6666666865348816,2,正向,1,1,,18,3,,True,Also exercise helps but remember to drink fluids when you're exercising to help sweat out that excess fluid.
+3,08,102389$_$3,test,0.0,1,中性,1,1,,13,2,,True,"It was a cartoon, of course, but it was kinda like a commentary"
+3,09,Oa2xVjzAMFc$_$5,test,1.6666666269302368,2,正向,1,1,,12,2,,True,But a Sole Proprietorship is a great way to start your business.
+3,10,61531$_$13,test,0.0,1,中性,1,1,,6,0,,True,Actually three versions of the film
+3,11,bdFCD-3BCRg$_$16,test,0.3333333432674408,2,正向,1,1,,10,4,,True,Our live webinars are in the process of a makeover too
+3,12,UiurP5k-f1A$_$1,test,1.0,2,正向,1,1,,11,2,,True,The organization has achieved a 30 percent reduction in administrative function costs.
+3,13,JKueLneBoik$_$3,test,0.0,1,中性,1,1,,17,2,,True,"Not that running! But there will be campaign booths, question and answer and skits and speeches"
+3,14,EO_5o9Gup6g$_$10,test,-0.6666666865348816,0,负向,1,1,,21,2,test,True,"Worse, will the government come up with fines or additional costs if businesses have to lay people off in the future?"
+3,15,9Lr4i7bIB6w$_$11,test,0.6666666865348816,2,正向,1,1,,24,3,,True,"Most importantly, you can learn more about how you fit into this important framework  and how it operates at both the Agency and Center levels."
+3,16,7npCA0zoQ8Q$_$3,test,1.6666666269302368,2,正向,1,1,,30,4,,True,"The support as well that I've received around me, from my colleagues and my supervisory team has been excellent and I've had a really good experience so far."
+3,17,MYEyQUpMe3k$_$6,test,0.0,1,中性,1,1,,14,8,,True,"Jin talked about her day, which included an exam that she believed that she at least did not do badly on"
+3,18,gcFECfN4BCU$_$6,test,0.3333333432674408,2,正向,1,1,,14,3,,True,"So you probably heard this before, people actually relate to people and not businesses or companies"
+3,19,SKTyBOhDX6U$_$8,test,-0.3333333432674408,0,负向,1,1,,17,7,,True,"Her father, the breadwinner, died when she was barely a year old putting the family in a dire financial position"
+3,20,255408$_$6,test,-0.3333333432674408,0,负向,1,1,,34,14,,True,(umm) The name of the team was the Tropics and then (umm) and there was a competition if their team xxx xxx xxx that then their team would be totally (umm) like moshed into some other team
+3,21,pIaEcqnzI-s$_$10,test,0.3333333432674408,2,正向,1,1,,6,3,,True,Are they available to students that wish to learn
+3,22,kXhJ3hHK9hQ$_$3,test,0.0,1,中性,1,1,,13,4,,True,"Philosophy wouldn’t be any fun if the key to knowledge were that easy, right"
+3,23,j1m6ctAgjsM$_$42,test,0.3333333432674408,2,正向,1,1,,9,4,,True,They will have a daily huddle that has everybody in the company
+3,24,zhNksSReaQk$_$27,test,0.0,1,中性,1,1,,6,2,test,True,"They could have a really high IQ"""
+3,25,194299$_$14,test,0.0,1,中性,1,1,,7,2,test,True,So that's what the storyline is about
+3,26,_aJghSQmxD8$_$12,test,0.6666666865348816,2,正向,1,1,,16,6,,True,So you want to make sure as you're evaluating that everything in the speech makes sense and goes together.
+3,27,VS7xSvno7NA$_$11,test,1.0,2,正向,1,1,,13,8,,True,Enforcement is fundamental to ASIC and our priorities of ensuring investors are confident and informed and market integrity maintained.
+3,28,2ze94yo2aPo$_$4,test,0.6666666865348816,2,正向,1,1,,22,11,,True,The CIA in Arabic materials are available to purchase on our web site at www.hockinternational.com or from Al-Joman Consultancy in Amman.
+3,29,f-VdKweez2U$_$2,test,0.6666666865348816,2,正向,1,1,,10,8,,True,"The freedom to follow your dreams, to work with people that you like to work with."
+3,30,1HS2HcN2LDo$_$4,test,0.3333333432674408,2,正向,1,1,,12,12,,True,"Whatever the case may be, treat this as you would for an in-person interview – be ready around 10 minutes early"
