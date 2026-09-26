@@ -17,7 +17,7 @@
   "raw_competition_data_included": false,
   "fits_50mb_competition_limit": false,
   "hash_algorithm": "SHA256",
-  "total_bytes": 1339059558,
+  "total_bytes": 1340294218,
   "files": [
     {
       "path": ".gitignore",
@@ -26,13 +26,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 2764,
-      "sha256": "d12917f069dc3680691ad5d887c6b09ce32aeb969be702ef3c00cf74d7255e40"
+      "bytes": 3113,
+      "sha256": "2efdc543dcbdbe48863904781d2fc609c0ff306c92d9b0edfe98a1898030c4ca"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
-      "bytes": 2800,
-      "sha256": "4c66fb7a9a982aa9022a0a176f3cd1b7fc741eae197e8c318f8e1f6e5cb49d7c"
+      "bytes": 3113,
+      "sha256": "dc15d98a6f2082b99585cfea35c43cbabeb8a55fdf2206a501ad358a3e76b35e"
     },
     {
       "path": "assets/bert-base-uncased/config.json",
@@ -41,8 +41,8 @@
     },
     {
       "path": "docs/交付验证报告.md",
-      "bytes": 3824,
-      "sha256": "19b414b1f8c1775fdab647afa34101d50ccc25b8247650983475a3a623361614"
+      "bytes": 4877,
+      "sha256": "d6a72765832e43a15d27410a477e60ce7e396d6ac487d5bc50d207b212cee0b6"
     },
     {
       "path": "docs/模块说明.md",
@@ -58,6 +58,11 @@
       "path": "docs/环境配置.md",
       "bytes": 3301,
       "sha256": "68344f25625af4026723e3fe342a72ddbd55db836f726d7bdd3f0022fefa5532"
+    },
+    {
+      "path": "docs/论文写作参考与修订说明.md",
+      "bytes": 4914,
+      "sha256": "9fcc4348be9160f5f2d76de875f3b62ffcc55f92534ae1417139bab86730d456"
     },
     {
       "path": "docs/详细使用指南.md",
@@ -85,99 +90,119 @@
       "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9"
     },
     {
+      "path": "paper/assets/Q3PaperSans.otf",
+      "bytes": 265492,
+      "sha256": "105816d973162216ec5af57ccfc36a9d2cf8cb3f352573102150b41c03bec962"
+    },
+    {
+      "path": "paper/assets/README.md",
+      "bytes": 652,
+      "sha256": "ea47e73ddb8b197031baac86c77ed4e3724c5d5f320fdb205ca6aa637650ff74"
+    },
+    {
       "path": "paper/build_paper.py",
-      "bytes": 34210,
-      "sha256": "a335b94bd1edee8940335b392b7a570ecb12d0e50bf9223db41e7b0ce993cb1d"
+      "bytes": 57059,
+      "sha256": "248a5e4c1d76ee06a9f2095f5f0c00b30771df0e00dd8d2c174e4e2a7c50d7e6"
+    },
+    {
+      "path": "paper/figures/00_workflow.png",
+      "bytes": 118443,
+      "sha256": "f9c3bb9f43878d27cf9cec406b44939149b9476ec94f53c1fc708848a54fcce4"
+    },
+    {
+      "path": "paper/figures/00_workflow.svg",
+      "bytes": 91298,
+      "sha256": "0adee5fece7c3d8ac56be136082017a72123e59ead84098ca88bfee2c3877474"
     },
     {
       "path": "paper/figures/01_network.png",
-      "bytes": 213581,
-      "sha256": "0deafd9f0ffc4ced49364afa66f34eb3294063e901520d8b26959b9893bcb534"
+      "bytes": 242411,
+      "sha256": "f4ca14cae5b4419d3fe341a88811b3e800b8df29e92eed3309cd542ab79fa17f"
     },
     {
       "path": "paper/figures/01_network.svg",
-      "bytes": 19389,
-      "sha256": "218b140246ba0d80572b8c401625929d6f2740c390f394733ce93a8949b775e4"
+      "bytes": 174121,
+      "sha256": "2750e1ea621c186c33857a329986d9cc78007e050106ed5b6f58f5350c380c3b"
     },
     {
       "path": "paper/figures/02_training.png",
-      "bytes": 100562,
-      "sha256": "79e7318b549cb1705c4c8b4dcea8ce9ec7ea86a8502ca25b3be03ff78c9913f2"
+      "bytes": 116962,
+      "sha256": "abb561a1346c98dfab062850ac4cea13729ded06b02dc388c303e6966f9fb6fb"
     },
     {
       "path": "paper/figures/02_training.svg",
-      "bytes": 27856,
-      "sha256": "3edf5c16a3073d80d5c2f34297033caea008643e45ece1a8154a2582a9a81733"
+      "bytes": 54878,
+      "sha256": "9db92bd86c15da200732e2bf73960b8ea6e6974d201e7bc476e8e2c93e256077"
     },
     {
       "path": "paper/figures/03_confusion.png",
-      "bytes": 81523,
-      "sha256": "01ae91af8ba4a03fb6759b0550a8d23d91be93dbfd1d90c90f664d1c7222683f"
+      "bytes": 72832,
+      "sha256": "0ba8284cb4f5eeb28c85a9493f1887ea7a738de7716322f4a76b8834a2a96005"
     },
     {
       "path": "paper/figures/03_confusion.svg",
-      "bytes": 15993,
-      "sha256": "5c710b39bab725d83ce47374787997b3d59a30769fc7ad5c267df85efd86367b"
+      "bytes": 40196,
+      "sha256": "a6c0e29a5a662f288a47f05b9f3728b9f546bdb3565faa50b619ffe5f5d5b5cb"
     },
     {
       "path": "paper/figures/04_regression.png",
-      "bytes": 128008,
-      "sha256": "9d03ce25b1b4e9bc10011510a7df12556c969c763c2d817e791eca45be76fae6"
+      "bytes": 130548,
+      "sha256": "706b33c23f3e151babfd806750193ef1d75fbaa3f8988cec9d4d3d3372a9f783"
     },
     {
       "path": "paper/figures/04_regression.svg",
-      "bytes": 130833,
-      "sha256": "9014d378d2d25be03d01a3458a2a24900eac673643e694e5ac500eba5a6ec1e3"
+      "bytes": 147989,
+      "sha256": "520f92c604333cf8e02610ab0551c936621c6fd16afc9f1bdc1f1efced30489c"
     },
     {
       "path": "paper/figures/05_contributions.png",
-      "bytes": 132029,
-      "sha256": "bc7de54d5382dd19d95582554603dda8d6dee5f65f6967d942ea4b30fe737bb1"
+      "bytes": 128803,
+      "sha256": "9eea8487f52d16ad72d3b8d20a06ef24a780bba30d92440279a5f71fd52c157e"
     },
     {
       "path": "paper/figures/05_contributions.svg",
-      "bytes": 31101,
-      "sha256": "f681dff506f3f3ce16ca5936287bed3eab9a4e9bcdd48d5f08b7874fc1808afe"
+      "bytes": 73097,
+      "sha256": "1327b1af9a099da4918de46bb51af4b676aeb44102a017d4748af3f9b45b3243"
     },
     {
       "path": "paper/figures/06_local_02.png",
-      "bytes": 66695,
-      "sha256": "457fa8870699ddf0b2576e64279748d066694c044f7e7f42b488bb8ae17692b3"
+      "bytes": 83603,
+      "sha256": "47e8a76c1a7aad2810b1e570ae26f7b175ee75cb2aa3540da3a483c626ce95b0"
     },
     {
       "path": "paper/figures/06_local_02.svg",
-      "bytes": 16384,
-      "sha256": "4128c6f28ca96da32f2e46531621477d514dd0d187a9990d4a1cc67cb6c2b26c"
+      "bytes": 66639,
+      "sha256": "4b88592639273aaef978b7de7231eb0972bf4fa59afb70303bb8e624e9c1fd8e"
     },
     {
       "path": "paper/figures/06_local_14.png",
-      "bytes": 111278,
-      "sha256": "cf3a0f9fc9832b478f052e9e569413e4089618148f90571dbfe1338a480f9217"
+      "bytes": 141239,
+      "sha256": "4db40893ce300c791bff32992ddaf51768d547634c413f4d18f7fb8422452899"
     },
     {
       "path": "paper/figures/06_local_14.svg",
-      "bytes": 26667,
-      "sha256": "7da6ccd87c763991785087deb353e6293ba1a374d0be5d0de5629b59027fec4b"
+      "bytes": 90397,
+      "sha256": "643499666fa364365dfc3f4b8428bc009b407a86bbcb64a7f956027d0485ae98"
     },
     {
       "path": "paper/figures/06_local_16.png",
-      "bytes": 49431,
-      "sha256": "bbbb0ee83d9e597c42597521ab2c5bff8d55dcde4f3f50eabfce4347fca8f9a5"
+      "bytes": 59513,
+      "sha256": "438496b930d679f8fd2eb7a06b94c34b62471aad4f7d8e1e956e8c862830e429"
     },
     {
       "path": "paper/figures/06_local_16.svg",
-      "bytes": 11430,
-      "sha256": "0924c90510e90db91cfb219c5ad8af12c21721bdb922a97ae507c94fce4cc00d"
+      "bytes": 53410,
+      "sha256": "99b29799a13c386dfaaf5c31815e950b6138f1e6fe88a7773cc7ba1473db21de"
     },
     {
       "path": "paper/问题三_不确定性融合论文.docx",
-      "bytes": 742516,
-      "sha256": "b595f29cc16433c868f6dd09aaaf750bf6b7c118338aa2ae7aca548c591106dc"
+      "bytes": 918047,
+      "sha256": "56716ba41f9c01ec06c572f48a5d610435a410d427444362fe175b509d55cecb"
     },
     {
       "path": "paper/问题三_不确定性融合论文.md",
-      "bytes": 26635,
-      "sha256": "1038d9293962ee8c9f0b5c1f5eb091a2d57d8c8d7724c31086d63466e1f1fa33"
+      "bytes": 35581,
+      "sha256": "b7d2a2db2eb75012e02e2fcd92ce63c0e555e6fa28a6107d3331fe7d1753778a"
     },
     {
       "path": "q3b/__init__.py",
@@ -251,8 +276,8 @@
     },
     {
       "path": "requirements-report.txt",
-      "bytes": 58,
-      "sha256": "9974d64af98eb48c5f9fe11f257b57edcd09b83e21d297fc7504c1de83fb89d3"
+      "bytes": 79,
+      "sha256": "af8e8c441567eba29da00d229e6d713ee83c625b968fe2724f58412ef7b65855"
     },
     {
       "path": "requirements.txt",
@@ -466,8 +491,13 @@
     },
     {
       "path": "results/附件4_全20条解释卡.md",
-      "bytes": 23504,
-      "sha256": "44db474eb88fb275c1b06bd04e4b7b547a15b58e182f7eca95b97addde5db50c"
+      "bytes": 27103,
+      "sha256": "caa7e1416c1ace2a5b4bfa3ca9e285c210bf244eb62968f9dc0eb4039259adf5"
+    },
+    {
+      "path": "results/附件4_预测与解释汇总.csv",
+      "bytes": 27322,
+      "sha256": "c039e15ced0193805596a54dc4190bcc7d3a641e2eee1c08980d25a0a4b634d2"
     },
     {
       "path": "run.py",

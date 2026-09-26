@@ -13,3 +13,5 @@
 | 媒体定位结果 | torchaudio.pipelines.MMS_FA，torchaudio 2.5.1+cu124 | results/media_mapping.jsonl为历史MMS强制对齐与词元核验结果，仅复用数据定位，非情感预测；本包不含MMS权重，不在主模型运行时调用 | MMS对齐权重上游CC-BY-NC 4.0，https://github.com/facebookresearch/fairseq/tree/100cd91db19bb27277a06a25eb4154c805b10189/examples/mms#license |
 
 源仓库：https://github.com/thuiar/MMSA 、https://github.com/pliang279/MultiBench 、https://github.com/google-research/google-research 。权重的SHA256及来源轮次见weights/*/selection.json与manifest.json。比赛原始特征、视频及完整公开数据未随交付分发。
+
+图表使用基于Noto Sans CJK SC制作并改名的Q3 Paper Sans字体子集，来源、字符用途及SIL OFL许可见[字体说明](paper/assets/README.md)。三篇数学建模论文仅作为写作结构参考，未分发其全文；来源见[写作参考说明](docs/论文写作参考与修订说明.md)。
