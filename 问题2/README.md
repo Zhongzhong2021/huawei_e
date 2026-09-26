@@ -8,7 +8,7 @@
 
 ## 目录
 
-- `docs/`：[论文文档与当前进展](docs/README.md)，包含第一至四轮Word与Markdown、第三及第四轮科研图、公式源码、表格证据，以及第五轮未完成探索的状态说明。
+- `docs/`：[论文文档与当前进展](docs/README.md)，优先阅读20页统一论文稿；同时保留历轮Word、Markdown、科研图、公式源码、表格证据和第五、六轮负面研究记录。
 - `src/q2/`：原始数据接口、掩码、轻量基线、指标与通用训练推理。
 - `src/q2v2/`：预训练文本模型、训练器、蒸馏及离线部署；量化模块仅用于兼容历史模型，第三轮最终模型未量化。
 - `src/q2v3/`：统一入口、分组统计分析和科研绘图。
@@ -92,7 +92,7 @@ python -m q2v3 --root /你的路径/round4 figures
 python -m q2v3 --root /你的路径/round4 paper
 ```
 
-第四轮`analyze`包括2000次视频分组配对Bootstrap与全部类别的权衡诊断；`figures`输出4组新增图。`paper`在WSL无Word依赖时生成Markdown和结构化表格；Windows原生可编辑公式Word需要python-docx、lxml与Office数学样式表。交付Word已经过逐页检查。第三轮完整方法正文和第四轮补充应共同使用，不将旧模型成绩误写为当前模型成绩。
+第四轮`analyze`包括2000次视频分组配对Bootstrap与全部类别的权衡诊断；`figures`输出4组新增图。`paper`在WSL无Word依赖时生成Markdown和结构化表格；Windows原生可编辑公式Word需要python-docx、lxml与Office数学样式表。交付Word已经过逐页检查。当前论文写作优先使用[统一论文稿](docs/paper_current/reports/E题问题2统一论文素材与当前模型结果.md)：它已经整合方法与第六轮之前的证据，更新当前模型图表、案例及附件3表，不再需要手工拼接第三轮和第四轮正文。其独立生成和核验步骤见[说明](docs/paper_current/README.md)，不改变原有各轮`paper`接口。
 
 重新计算冻结模型的46种验证场景，需要官方预处理数据和训练集标准化参数：
 

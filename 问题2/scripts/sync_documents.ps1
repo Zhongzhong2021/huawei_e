@@ -74,6 +74,28 @@ if (Test-Path -LiteralPath (Join-Path $source 'round6/reports')) {
     Copy-Tree 'round6/study' 'round6/study' @('.json')
     Copy-Tree 'round6/audit' 'round6/audit' @('.json')
 }
+if (Test-Path -LiteralPath (Join-Path $source 'paper_current/reports')) {
+    $currentQa = Get-Content -LiteralPath (Join-Path $source 'paper_current/audit/document_qa.json') -Raw | ConvertFrom-Json
+    $currentAudit = Get-Content -LiteralPath (Join-Path $source 'paper_current/audit/manuscript_checks.json') -Raw | ConvertFrom-Json
+    if ($currentQa.pages -ne $currentQa.visually_reviewed_pages.Count -or $currentAudit.model_changed) {
+        throw 'Integrated manuscript needs complete page review and frozen-model evidence'
+    }
+    foreach ($extension in @('docx','md')) {
+        $file = @(Get-ChildItem -LiteralPath (Join-Path $source 'paper_current/reports') -Filter "*.$extension")
+        $key = if ($extension -eq 'docx') { 'docx_sha256' } else { 'markdown_sha256' }
+        if ($file.Count -ne 1 -or (Get-FileHash -LiteralPath $file[0].FullName).Hash.ToLowerInvariant() -ne $currentQa.$key) {
+            throw 'Integrated manuscript differs from the visually accepted artifact'
+        }
+    }
+    $contentHash = (Get-FileHash -LiteralPath (Join-Path $source 'paper_current/reports/current_content.json')).Hash.ToLowerInvariant()
+    if ($contentHash -ne $currentAudit.manuscript_sha256 -or $contentHash -ne $currentQa.structured_content_sha256) {
+        throw 'Integrated manuscript evidence and rendered content differ'
+    }
+    Copy-Tree 'paper_current/reports' 'paper_current/reports' @('.docx','.md','.json','.tex')
+    Copy-Tree 'paper_current/figures' 'paper_current/figures' @('.png','.svg','.pdf','.json')
+    Copy-Tree 'paper_current/analysis' 'paper_current/analysis' @('.json')
+    Copy-Tree 'paper_current/audit' 'paper_current/evidence' @('.json')
+}
 
 # A byte-identical copy retains the prior rendered-document QA, not a new QA claim.
 $r3qa = Get-Content -LiteralPath (Join-Path $target 'round3/evidence/document_qa.json') -Raw | ConvertFrom-Json
@@ -117,7 +139,7 @@ $rows = foreach ($name in @('accuracy','macro_f1','mae','neutral_f1','positive_f
         })
         $mean = Mean $v
         $ss = ($v | ForEach-Object { [Math]::Pow($_-$mean,2) } | Measure-Object -Sum).Sum
-        $values[$model] = @{mean=$mean; sample_std=[Math]::Sqrt($ss/($v.Count-1)); seeds=$v}
+        $values[$model] = [ordered]@{mean=$mean; sample_std=[Math]::Sqrt($ss/($v.Count-1)); seeds=$v}
     }
     [ordered]@{metric=$name; round3=$values.reference; round4=$values.metrics; delta=$values.metrics.mean-$values.reference.mean}
 }
@@ -129,11 +151,11 @@ $summary = [ordered]@{
     metrics=@($rows); paired_confirmation=$confirmed.pairs
 }
 $summaryPath = Join-Path $target 'iteration_metrics.json'
-[IO.File]::WriteAllText($summaryPath, ($summary | ConvertTo-Json -Depth 12)+"`n", [Text.UTF8Encoding]::new($false))
+[IO.File]::WriteAllText($summaryPath, ($summary | ConvertTo-Json -Depth 12).Replace("`r`n","`n")+"`n", [Text.UTF8Encoding]::new($false))
 $manifestPath = Join-Path $target 'sync_manifest.json'
 [IO.File]::WriteAllText($manifestPath, ([ordered]@{
     synchronized_utc=[DateTime]::UtcNow.ToString('o'); files=@($manifest.ToArray())
     prior_document_qa_hashes_verified=@('round3','round4','round5')
     note='Documents and figures copied without edits. Historical first/second rounds are not the current model. No raw PKL data, weights, or full prediction archives included.'
-} | ConvertTo-Json -Depth 6)+"`n", [Text.UTF8Encoding]::new($false))
+} | ConvertTo-Json -Depth 6).Replace("`r`n","`n")+"`n", [Text.UTF8Encoding]::new($false))
 Write-Output "Verified $($manifest.Count) copied files; recomputed three-seed comparison."

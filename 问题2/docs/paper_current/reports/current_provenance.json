@@ -1,0 +1,1109 @@
+{
+  "generated_utc": "2026-09-26T14:06:17.895324+00:00",
+  "current_model_sha256": "56c8e2267dfa31f29929af9c68940d169ebe7fac3f1020cd05d697db0ea86e2e",
+  "source_documents": {
+    "r3": {
+      "path": "D:\\Downloads\\第二十三届中国研究生数学建模竞赛 - 中文题目\\中文题目\\output\\huawei_e\\问题2\\docs\\round3\\reports\\paper_content.json",
+      "sha256": "6a56e79479403dea548e25db99695fce4ecf971dc13377729f241cffaca20b24"
+    },
+    "r4": {
+      "path": "D:\\Downloads\\第二十三届中国研究生数学建模竞赛 - 中文题目\\中文题目\\output\\huawei_e\\问题2\\docs\\round4\\reports\\round4_content.json",
+      "sha256": "1d639a4f855b4465a72402e594c8f424d84559a099465d5a7e133d07961f1955"
+    }
+  },
+  "source_studies": {
+    "r5": {
+      "path": "D:\\Downloads\\第二十三届中国研究生数学建模竞赛 - 中文题目\\中文题目\\output\\huawei_e\\问题2\\docs\\round5_snapshot\\study\\development.json",
+      "sha256": "0c6e2550243be04243e3ba38a3d1b82ffede59e0cb5bf84823d495778d8708f3"
+    },
+    "r6": {
+      "path": "D:\\Downloads\\第二十三届中国研究生数学建模竞赛 - 中文题目\\中文题目\\output\\huawei_e\\问题2\\docs\\round6\\study\\confirmed.json",
+      "sha256": "70458d34454d3dccd017ae61027020d814d010082c52df0f2903148599c13b96"
+    }
+  },
+  "word_builder_sha256": "701ebbdce21999342374e265b1551e357b21eab162f73b727539fa3484d1c8a5",
+  "evidence_sha256": "5c3e240e32f0205050f9321aae3e13bbdead4274a4a62fe6884d99ad5fec1659",
+  "script_sha256": "62a4a92baf3f29a3b4b2249b036330108fd234b954c599c5d66591d10c148a11",
+  "copied_figure_sources": {
+    "figures\\r3_fig01_architecture.png": {
+      "source": "D:\\Downloads\\第二十三届中国研究生数学建模竞赛 - 中文题目\\中文题目\\output\\huawei_e\\问题2\\docs\\round3\\figures\\fig01_architecture.png",
+      "sha256": "5cb90ebb3a01b4a7c1f77d34101d993f2781e81bd76ac64eda8aa84cbe87ef03"
+    },
+    "figures\\r3_fig01_architecture.svg": {
+      "source": "D:\\Downloads\\第二十三届中国研究生数学建模竞赛 - 中文题目\\中文题目\\output\\huawei_e\\问题2\\docs\\round3\\figures\\fig01_architecture.svg",
+      "sha256": "32606d4da8e3ef15eec0dba1f3b794014f3ef336b5d79d8876e44a78e0254639"
+    },
+    "figures\\r3_fig01_architecture.pdf": {
+      "source": "D:\\Downloads\\第二十三届中国研究生数学建模竞赛 - 中文题目\\中文题目\\output\\huawei_e\\问题2\\docs\\round3\\figures\\fig01_architecture.pdf",
+      "sha256": "e2f2b461dc5095bcd8564b2f954b47b6462dc19d7fb17eb17ca6c981f2cc748f"
+    },
+    "figures\\r3_fig05_ablation.png": {
+      "source": "D:\\Downloads\\第二十三届中国研究生数学建模竞赛 - 中文题目\\中文题目\\output\\huawei_e\\问题2\\docs\\round3\\figures\\fig05_ablation.png",
+      "sha256": "664beb38ee4a3d8ed9a71c41df7e00a684192450b40175e22c5cab87a2189659"
+    },
+    "figures\\r3_fig05_ablation.svg": {
+      "source": "D:\\Downloads\\第二十三届中国研究生数学建模竞赛 - 中文题目\\中文题目\\output\\huawei_e\\问题2\\docs\\round3\\figures\\fig05_ablation.svg",
+      "sha256": "ff0099d88c69ea9efab3c668958a64c9711fa7adb4f612fc6633d10837f6dd41"
+    },
+    "figures\\r3_fig05_ablation.pdf": {
+      "source": "D:\\Downloads\\第二十三届中国研究生数学建模竞赛 - 中文题目\\中文题目\\output\\huawei_e\\问题2\\docs\\round3\\figures\\fig05_ablation.pdf",
+      "sha256": "ac8a491081b088b833783f5b6a69bee9acb37f7e1636973eba0a61ef5680783e"
+    },
+    "figures\\r4_r4_01_internal.png": {
+      "source": "D:\\Downloads\\第二十三届中国研究生数学建模竞赛 - 中文题目\\中文题目\\output\\huawei_e\\问题2\\docs\\round4\\figures\\r4_01_internal.png",
+      "sha256": "015edcb3410a5c258fcc2e6441f67c639e346724701286e57951ddf9a5b0e6fc"
+    },
+    "figures\\r4_r4_01_internal.svg": {
+      "source": "D:\\Downloads\\第二十三届中国研究生数学建模竞赛 - 中文题目\\中文题目\\output\\huawei_e\\问题2\\docs\\round4\\figures\\r4_01_internal.svg",
+      "sha256": "5b6dd937f6fc4a4611a7add77f750c60038b9ec88cd56407c61c4f330b3a1ee0"
+    },
+    "figures\\r4_r4_01_internal.pdf": {
+      "source": "D:\\Downloads\\第二十三届中国研究生数学建模竞赛 - 中文题目\\中文题目\\output\\huawei_e\\问题2\\docs\\round4\\figures\\r4_01_internal.pdf",
+      "sha256": "5710dc0db520532b1df0f35c8053f467c35f89c924d9fe2563456d30b1d61dd4"
+    },
+    "figures\\r4_r4_02_seeds.png": {
+      "source": "D:\\Downloads\\第二十三届中国研究生数学建模竞赛 - 中文题目\\中文题目\\output\\huawei_e\\问题2\\docs\\round4\\figures\\r4_02_seeds.png",
+      "sha256": "ba01f01d5a59ff9b6bf2b81cd18dff5c0043cd4c3562a4d057c840a98d689190"
+    },
+    "figures\\r4_r4_02_seeds.svg": {
+      "source": "D:\\Downloads\\第二十三届中国研究生数学建模竞赛 - 中文题目\\中文题目\\output\\huawei_e\\问题2\\docs\\round4\\figures\\r4_02_seeds.svg",
+      "sha256": "b263eab7849058429e7a313a42a96558f5548014616bd4fe59ec858a09925a30"
+    },
+    "figures\\r4_r4_02_seeds.pdf": {
+      "source": "D:\\Downloads\\第二十三届中国研究生数学建模竞赛 - 中文题目\\中文题目\\output\\huawei_e\\问题2\\docs\\round4\\figures\\r4_02_seeds.pdf",
+      "sha256": "5ddff41b4e6ceae6fca6b523a29f3ee532e4d2ecbb1f1d3ee791b2b93157e4d9"
+    },
+    "figures\\r4_r4_04_missing.png": {
+      "source": "D:\\Downloads\\第二十三届中国研究生数学建模竞赛 - 中文题目\\中文题目\\output\\huawei_e\\问题2\\docs\\round4\\figures\\r4_04_missing.png",
+      "sha256": "9ceff971ab93b43eb957030c0b070477f22ad0964c794ae1bec7786da3e1ff32"
+    },
+    "figures\\r4_r4_04_missing.svg": {
+      "source": "D:\\Downloads\\第二十三届中国研究生数学建模竞赛 - 中文题目\\中文题目\\output\\huawei_e\\问题2\\docs\\round4\\figures\\r4_04_missing.svg",
+      "sha256": "0a0d9e5c87bf076a277a9dfacedec711f5c43d6bf6c50c5e72e8f305e5b025be"
+    },
+    "figures\\r4_r4_04_missing.pdf": {
+      "source": "D:\\Downloads\\第二十三届中国研究生数学建模竞赛 - 中文题目\\中文题目\\output\\huawei_e\\问题2\\docs\\round4\\figures\\r4_04_missing.pdf",
+      "sha256": "93a1eab2dd9978ecc7cdd2f779e7c1d19b468af3be6dd609fd6fc85dfe1ea3f4"
+    },
+    "figures\\r4_r4_03_confusion.png": {
+      "source": "D:\\Downloads\\第二十三届中国研究生数学建模竞赛 - 中文题目\\中文题目\\output\\huawei_e\\问题2\\docs\\round4\\figures\\r4_03_confusion.png",
+      "sha256": "f655f4da9cca589fff565d110710e8dff02795df6a36531ac60e532a9928af91"
+    },
+    "figures\\r4_r4_03_confusion.svg": {
+      "source": "D:\\Downloads\\第二十三届中国研究生数学建模竞赛 - 中文题目\\中文题目\\output\\huawei_e\\问题2\\docs\\round4\\figures\\r4_03_confusion.svg",
+      "sha256": "b41e456d78c4f2f49bd6bb05b0257cae9a099a36abaed6f4973beb7ac0d4580d"
+    },
+    "figures\\r4_r4_03_confusion.pdf": {
+      "source": "D:\\Downloads\\第二十三届中国研究生数学建模竞赛 - 中文题目\\中文题目\\output\\huawei_e\\问题2\\docs\\round4\\figures\\r4_03_confusion.pdf",
+      "sha256": "936a584d24334fb5f25dcb9c77f3ba4bce3951689915b0016645dcf94f5fb691"
+    }
+  },
+  "blocks": [
+    {
+      "block": 0,
+      "type": "title",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 1,
+      "type": "heading",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 2,
+      "type": "paragraph",
+      "origin": "r3",
+      "source_index": 2
+    },
+    {
+      "block": 3,
+      "type": "paragraph",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 4,
+      "type": "paragraph",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 5,
+      "type": "paragraph",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 6,
+      "type": "paragraph",
+      "origin": "r3",
+      "source_index": 5
+    },
+    {
+      "block": 7,
+      "type": "heading",
+      "origin": "r3",
+      "source_index": 6
+    },
+    {
+      "block": 8,
+      "type": "paragraph",
+      "origin": "r3",
+      "source_index": 7
+    },
+    {
+      "block": 9,
+      "type": "paragraph",
+      "origin": "r3",
+      "source_index": 8
+    },
+    {
+      "block": 10,
+      "type": "paragraph",
+      "origin": "r3",
+      "source_index": 9
+    },
+    {
+      "block": 11,
+      "type": "paragraph",
+      "origin": "r3",
+      "source_index": 10
+    },
+    {
+      "block": 12,
+      "type": "heading",
+      "origin": "r3",
+      "source_index": 11
+    },
+    {
+      "block": 13,
+      "type": "table",
+      "origin": "r3",
+      "source_index": 12
+    },
+    {
+      "block": 14,
+      "type": "paragraph",
+      "origin": "r3",
+      "source_index": 13
+    },
+    {
+      "block": 15,
+      "type": "equation",
+      "origin": "r3",
+      "source_index": 14
+    },
+    {
+      "block": 16,
+      "type": "table",
+      "origin": "r3",
+      "source_index": 15
+    },
+    {
+      "block": 17,
+      "type": "paragraph",
+      "origin": "r3",
+      "source_index": 16
+    },
+    {
+      "block": 18,
+      "type": "equation",
+      "origin": "r3",
+      "source_index": 17
+    },
+    {
+      "block": 19,
+      "type": "paragraph",
+      "origin": "r3",
+      "source_index": 18
+    },
+    {
+      "block": 20,
+      "type": "heading",
+      "origin": "r3",
+      "source_index": 19
+    },
+    {
+      "block": 21,
+      "type": "heading",
+      "origin": "r3",
+      "source_index": 20
+    },
+    {
+      "block": 22,
+      "type": "paragraph",
+      "origin": "r3",
+      "source_index": 21
+    },
+    {
+      "block": 23,
+      "type": "equation",
+      "origin": "r3",
+      "source_index": 22
+    },
+    {
+      "block": 24,
+      "type": "equation",
+      "origin": "r3",
+      "source_index": 23
+    },
+    {
+      "block": 25,
+      "type": "equation",
+      "origin": "r3",
+      "source_index": 24
+    },
+    {
+      "block": 26,
+      "type": "paragraph",
+      "origin": "r3",
+      "source_index": 25
+    },
+    {
+      "block": 27,
+      "type": "heading",
+      "origin": "r3",
+      "source_index": 26
+    },
+    {
+      "block": 28,
+      "type": "paragraph",
+      "origin": "r3",
+      "source_index": 27
+    },
+    {
+      "block": 29,
+      "type": "paragraph",
+      "origin": "r3",
+      "source_index": 28
+    },
+    {
+      "block": 30,
+      "type": "equation",
+      "origin": "r3",
+      "source_index": 29
+    },
+    {
+      "block": 31,
+      "type": "paragraph",
+      "origin": "r3",
+      "source_index": 30
+    },
+    {
+      "block": 32,
+      "type": "equation",
+      "origin": "r3",
+      "source_index": 31
+    },
+    {
+      "block": 33,
+      "type": "paragraph",
+      "origin": "r3",
+      "source_index": 32
+    },
+    {
+      "block": 34,
+      "type": "heading",
+      "origin": "r3",
+      "source_index": 33
+    },
+    {
+      "block": 35,
+      "type": "equation",
+      "origin": "r3",
+      "source_index": 34
+    },
+    {
+      "block": 36,
+      "type": "paragraph",
+      "origin": "r3",
+      "source_index": 35
+    },
+    {
+      "block": 37,
+      "type": "equation",
+      "origin": "r3",
+      "source_index": 36
+    },
+    {
+      "block": 38,
+      "type": "paragraph",
+      "origin": "r3",
+      "source_index": 37
+    },
+    {
+      "block": 39,
+      "type": "equation",
+      "origin": "r3",
+      "source_index": 38
+    },
+    {
+      "block": 40,
+      "type": "figure",
+      "origin": "r3",
+      "source_index": 39
+    },
+    {
+      "block": 41,
+      "type": "paragraph",
+      "origin": "r3",
+      "source_index": 40
+    },
+    {
+      "block": 42,
+      "type": "heading",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 43,
+      "type": "paragraph",
+      "origin": "r4",
+      "source_index": 6
+    },
+    {
+      "block": 44,
+      "type": "paragraph",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 45,
+      "type": "equation",
+      "origin": "r4",
+      "source_index": 11
+    },
+    {
+      "block": 46,
+      "type": "paragraph",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 47,
+      "type": "equation",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 48,
+      "type": "equation",
+      "origin": "r3",
+      "source_index": 43
+    },
+    {
+      "block": 49,
+      "type": "paragraph",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 50,
+      "type": "heading",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 51,
+      "type": "equation",
+      "origin": "r3",
+      "source_index": 45
+    },
+    {
+      "block": 52,
+      "type": "paragraph",
+      "origin": "r3",
+      "source_index": 46
+    },
+    {
+      "block": 53,
+      "type": "heading",
+      "origin": "r3",
+      "source_index": 47
+    },
+    {
+      "block": 54,
+      "type": "table",
+      "origin": "r3",
+      "source_index": 48
+    },
+    {
+      "block": 55,
+      "type": "table",
+      "origin": "r3",
+      "source_index": 49
+    },
+    {
+      "block": 56,
+      "type": "paragraph",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 57,
+      "type": "equation",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 58,
+      "type": "equation",
+      "origin": "r3",
+      "source_index": 51
+    },
+    {
+      "block": 59,
+      "type": "equation",
+      "origin": "r3",
+      "source_index": 52
+    },
+    {
+      "block": 60,
+      "type": "paragraph",
+      "origin": "r3",
+      "source_index": 53
+    },
+    {
+      "block": 61,
+      "type": "paragraph",
+      "origin": "r3",
+      "source_index": 54
+    },
+    {
+      "block": 62,
+      "type": "paragraph",
+      "origin": "r3",
+      "source_index": 55
+    },
+    {
+      "block": 63,
+      "type": "paragraph",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 64,
+      "type": "paragraph",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 65,
+      "type": "heading",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 66,
+      "type": "heading",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 67,
+      "type": "table",
+      "origin": "r3",
+      "source_index": 58
+    },
+    {
+      "block": 68,
+      "type": "paragraph",
+      "origin": "r3",
+      "source_index": 59
+    },
+    {
+      "block": 69,
+      "type": "paragraph",
+      "origin": "r3",
+      "source_index": 60
+    },
+    {
+      "block": 70,
+      "type": "paragraph",
+      "origin": "r3",
+      "source_index": 61
+    },
+    {
+      "block": 71,
+      "type": "paragraph",
+      "origin": "r3",
+      "source_index": 63
+    },
+    {
+      "block": 72,
+      "type": "figure",
+      "origin": "r3",
+      "source_index": 62
+    },
+    {
+      "block": 73,
+      "type": "paragraph",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 74,
+      "type": "heading",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 75,
+      "type": "paragraph",
+      "origin": "r4",
+      "source_index": 21
+    },
+    {
+      "block": 76,
+      "type": "paragraph",
+      "origin": "r4",
+      "source_index": 24
+    },
+    {
+      "block": 77,
+      "type": "table",
+      "origin": "r4",
+      "source_index": 26
+    },
+    {
+      "block": 78,
+      "type": "paragraph",
+      "origin": "r4",
+      "source_index": 27
+    },
+    {
+      "block": 79,
+      "type": "paragraph",
+      "origin": "r4",
+      "source_index": 28
+    },
+    {
+      "block": 80,
+      "type": "figure",
+      "origin": "r4",
+      "source_index": 29
+    },
+    {
+      "block": 81,
+      "type": "heading",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 82,
+      "type": "table",
+      "origin": "r3",
+      "source_index": 65
+    },
+    {
+      "block": 83,
+      "type": "table",
+      "origin": "r4",
+      "source_index": 31
+    },
+    {
+      "block": 84,
+      "type": "table",
+      "origin": "r4",
+      "source_index": 32
+    },
+    {
+      "block": 85,
+      "type": "paragraph",
+      "origin": "r4",
+      "source_index": 33
+    },
+    {
+      "block": 86,
+      "type": "figure",
+      "origin": "r4",
+      "source_index": 34
+    },
+    {
+      "block": 87,
+      "type": "paragraph",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 88,
+      "type": "heading",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 89,
+      "type": "paragraph",
+      "origin": "r3",
+      "source_index": 69
+    },
+    {
+      "block": 90,
+      "type": "table",
+      "origin": "r4",
+      "source_index": 35
+    },
+    {
+      "block": 91,
+      "type": "paragraph",
+      "origin": "r4",
+      "source_index": 36
+    },
+    {
+      "block": 92,
+      "type": "heading",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 93,
+      "type": "heading",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 94,
+      "type": "figure",
+      "origin": "r4",
+      "source_index": 44
+    },
+    {
+      "block": 95,
+      "type": "table",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 96,
+      "type": "paragraph",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 97,
+      "type": "paragraph",
+      "origin": "r3",
+      "source_index": 74
+    },
+    {
+      "block": 98,
+      "type": "heading",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 99,
+      "type": "paragraph",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 100,
+      "type": "paragraph",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 101,
+      "type": "paragraph",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 102,
+      "type": "figure",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 103,
+      "type": "table",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 104,
+      "type": "heading",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 105,
+      "type": "figure",
+      "origin": "r4",
+      "source_index": 38
+    },
+    {
+      "block": 106,
+      "type": "table",
+      "origin": "r4",
+      "source_index": 39
+    },
+    {
+      "block": 107,
+      "type": "paragraph",
+      "origin": "r4",
+      "source_index": 40
+    },
+    {
+      "block": 108,
+      "type": "paragraph",
+      "origin": "r4",
+      "source_index": 41
+    },
+    {
+      "block": 109,
+      "type": "table",
+      "origin": "r4",
+      "source_index": 42
+    },
+    {
+      "block": 110,
+      "type": "paragraph",
+      "origin": "r4",
+      "source_index": 43
+    },
+    {
+      "block": 111,
+      "type": "paragraph",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 112,
+      "type": "table",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 113,
+      "type": "paragraph",
+      "origin": "r3",
+      "source_index": 88
+    },
+    {
+      "block": 114,
+      "type": "figure",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 115,
+      "type": "heading",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 116,
+      "type": "paragraph",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 117,
+      "type": "paragraph",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 118,
+      "type": "table",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 119,
+      "type": "paragraph",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 120,
+      "type": "paragraph",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 121,
+      "type": "table",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 122,
+      "type": "paragraph",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 123,
+      "type": "heading",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 124,
+      "type": "table",
+      "origin": "r3",
+      "source_index": 90
+    },
+    {
+      "block": 125,
+      "type": "table",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 126,
+      "type": "paragraph",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 127,
+      "type": "paragraph",
+      "origin": "r3",
+      "source_index": 94
+    },
+    {
+      "block": 128,
+      "type": "paragraph",
+      "origin": "r3",
+      "source_index": 95
+    },
+    {
+      "block": 129,
+      "type": "heading",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 130,
+      "type": "paragraph",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 131,
+      "type": "paragraph",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 132,
+      "type": "paragraph",
+      "origin": "r3",
+      "source_index": 96
+    },
+    {
+      "block": 133,
+      "type": "paragraph",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 134,
+      "type": "heading",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 135,
+      "type": "paragraph",
+      "origin": "r3",
+      "source_index": 107
+    },
+    {
+      "block": 136,
+      "type": "equation",
+      "origin": "r3",
+      "source_index": 42
+    },
+    {
+      "block": 137,
+      "type": "equation",
+      "origin": "r3",
+      "source_index": 108
+    },
+    {
+      "block": 138,
+      "type": "paragraph",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 139,
+      "type": "figure",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 140,
+      "type": "paragraph",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 141,
+      "type": "heading",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 142,
+      "type": "table",
+      "origin": "r4",
+      "source_index": 51
+    },
+    {
+      "block": 143,
+      "type": "paragraph",
+      "origin": "r4",
+      "source_index": 52
+    },
+    {
+      "block": 144,
+      "type": "heading",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 145,
+      "type": "paragraph",
+      "origin": "r3",
+      "source_index": 116
+    },
+    {
+      "block": 146,
+      "type": "paragraph",
+      "origin": "r4",
+      "source_index": 53
+    },
+    {
+      "block": 147,
+      "type": "paragraph",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 148,
+      "type": "paragraph",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 149,
+      "type": "heading",
+      "origin": "new",
+      "source_index": null
+    },
+    {
+      "block": 150,
+      "type": "paragraph",
+      "origin": "r3",
+      "source_index": 101
+    },
+    {
+      "block": 151,
+      "type": "paragraph",
+      "origin": "r3",
+      "source_index": 102
+    },
+    {
+      "block": 152,
+      "type": "paragraph",
+      "origin": "r3",
+      "source_index": 103
+    },
+    {
+      "block": 153,
+      "type": "paragraph",
+      "origin": "r3",
+      "source_index": 104
+    },
+    {
+      "block": 154,
+      "type": "paragraph",
+      "origin": "r3",
+      "source_index": 105
+    },
+    {
+      "block": 155,
+      "type": "paragraph",
+      "origin": "r4",
+      "source_index": 56
+    },
+    {
+      "block": 156,
+      "type": "paragraph",
+      "origin": "r4",
+      "source_index": 57
+    },
+    {
+      "block": 157,
+      "type": "paragraph",
+      "origin": "new",
+      "source_index": null
+    }
+  ],
+  "numbering": {
+    "r3:table:1": 1,
+    "r3:equation:1": 1,
+    "r3:table:2": 2,
+    "r3:equation:2": 2,
+    "r3:equation:3": 3,
+    "r3:equation:4": 4,
+    "r3:equation:5": 5,
+    "r3:equation:6": 6,
+    "r3:equation:7": 7,
+    "r3:equation:8": 8,
+    "r3:equation:9": 9,
+    "r3:equation:10": 10,
+    "r3:figure:1": 1,
+    "r4:equation:1": 11,
+    "weighted_loss": 12,
+    "r3:equation:12": 13,
+    "r3:equation:13": 14,
+    "r3:algorithm:1": 1,
+    "r3:table:3": 3,
+    "accumulation": 15,
+    "r3:equation:14": 16,
+    "r3:equation:15": 17,
+    "r3:table:4": 4,
+    "r3:figure:2": 2,
+    "r4:table:2": 5,
+    "r4:figure:1": 3,
+    "r3:table:5": 6,
+    "r4:table:3": 7,
+    "r4:table:4": 8,
+    "r4:figure:2": 4,
+    "r4:table:5": 9,
+    "r4:figure:4": 5,
+    "current_main": 10,
+    "current_missing_shapes": 6,
+    "current_shapes": 11,
+    "r4:figure:3": 7,
+    "r4:table:6": 12,
+    "r4:table:7": 13,
+    "current_cases": 14,
+    "current_regression": 8,
+    "defer": 15,
+    "blend": 16,
+    "r3:algorithm:2": 2,
+    "current_special": 17,
+    "r3:equation:11": 18,
+    "unweighted_base": 18,
+    "r3:equation:16": 19,
+    "current_learning": 9,
+    "r4:table:8": 18
+  },
+  "counts": {
+    "equation": 19,
+    "figure": 9,
+    "table": 18,
+    "algorithm": 2
+  },
+  "note": "Historical documents and model records were not overwritten; this is an integrated publication, not a new model round."
+}

@@ -1,0 +1,75 @@
+\begin{equation}
+X_i^a\in\mathbb{R}^{T\times74},\quad X_i^v\in\mathbb{R}^{T\times35},\quad T=50\tag{1}
+\end{equation}
+
+\begin{equation}
+\widetilde{o}_{ij}^{m}=v_{ij}o_{ij}^{m}(1-d_{ij}^{m})\tag{2}
+\end{equation}
+
+\begin{equation}
+\mu_k^m={\sum_{i,j}o_{ij}^m x_{ijk}^m\over\sum_{i,j}o_{ij}^m}\tag{3}
+\end{equation}
+
+\begin{equation}
+\sigma_k^m=\max\left(\sqrt{{\sum_{i,j}o_{ij}^m(x_{ijk}^m-\mu_k^m)^2\over\sum_{i,j}o_{ij}^m}},10^{-5}\right)\tag{4}
+\end{equation}
+
+\begin{equation}
+\widetilde{x}_{ijk}^{m}=\widetilde{o}_{ij}^{m}\,\operatorname{clip}((x_{ijk}^{m}-\mu_k^m)/\sigma_k^m,-10,10)\tag{5}
+\end{equation}
+
+\begin{equation}
+\operatorname{Attn}(Q,K,V)=\operatorname{softmax}(QK^{\mathsf T}/\sqrt{64}+B)V\tag{6}
+\end{equation}
+
+\begin{equation}
+\bar h_i^t={\sum_{j=1}^T\widetilde{o}_{ij}^t H_{ij}\over\max(1,\sum_{j=1}^T\widetilde{o}_{ij}^t)}\tag{7}
+\end{equation}
+
+\begin{equation}
+\bar x_i^m={\sum_{j=1}^T\widetilde{o}_{ij}^m\widetilde{x}_{ij}^m\over\max(1,\sum_{j=1}^T\widetilde{o}_{ij}^m)},\quad m\in\{a,v\}\tag{8}
+\end{equation}
+
+\begin{equation}
+a_i^m={\sum_j\widetilde{o}_{ij}^m\over\max(1,\sum_jv_{ij})},\quad z_i=\operatorname{GELU}(W_f[h_i^t;h_i^a;h_i^v;a_i]+b_f)\tag{9}
+\end{equation}
+
+\begin{equation}
+p_i=\operatorname{softmax}(W_cz_i+b_c),\quad\hat c_i=\arg\max_kp_{ik},\quad\hat y_i=3\tanh(w_r^{\mathsf T}z_i+b_r)\tag{10}
+\end{equation}
+
+\begin{equation}
+u_c=(N/(C n_c))^\alpha,\quad w_c=u_c/(C^{-1}\sum_{k=0}^{C-1}u_k),\quad\alpha\in\{0,0.5,1\}\tag{11}
+\end{equation}
+
+\begin{equation}
+\mathcal L_B=-\frac{\sum_{i\in B}w_{c_i}\log p_{i,c_i}}{\sum_{i\in B}w_{c_i}}+\frac{1}{|B|}\sum_{i\in B}H_1(\hat y_i-y_i)\tag{12}
+\end{equation}
+
+\begin{equation}
+H_1(e)=\begin{cases}e^2/2,&|e|\le1,\\|e|-1/2,&|e|>1.\end{cases}\tag{13}
+\end{equation}
+
+\begin{equation}
+k_i=\min(n_i,\max(1,\lfloor r n_i+0.5\rfloor)),\quad n_i=\sum_jv_{ij}\tag{14}
+\end{equation}
+
+\begin{equation}
+\mathcal L_B=\sum_j\left[-\frac{\sum_{i\in B_j}w_{c_i}\log p_{i,c_i}}{\sum_{i\in B}w_{c_i}}+\frac{\sum_{i\in B_j}H_1(\hat y_i-y_i)}{|B|}\right]\tag{15}
+\end{equation}
+
+\begin{equation}
+\operatorname{MacroF1}={1\over3}\sum_{c=0}^2{2TP_c\over2TP_c+FP_c+FN_c}\tag{16}
+\end{equation}
+
+\begin{equation}
+\operatorname{MAE}={1\over N}\sum_i|\hat y_i-y_i|,\quad S={1\over2}\overline{F1}_{miss}+{1\over2}(1-\overline{MAE}_{miss}/6)\tag{17}
+\end{equation}
+
+\begin{equation}
+\mathcal L={1\over N}\sum_{i=1}^N[-\log p_{i,c_i}+H_1(\hat y_i-y_i)]\tag{18}
+\end{equation}
+
+\begin{equation}
+\mathcal L_{student}=\mathcal L+0.5T_d^2D_{KL}(p_T^{(T_d)}\Vert p_S^{(T_d)})+0.25\mathcal L_{reg}+0.1\mathcal L_{feat}\tag{19}
+\end{equation}

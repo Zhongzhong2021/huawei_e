@@ -1,0 +1,2156 @@
+[
+  {
+    "type": "title",
+    "text": "局部模态缺失下的情感预测与类别平衡",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "heading",
+    "level": 1,
+    "text": "摘要",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "paragraph",
+    "text": "针对文本、语音与视觉在局部连续区间不可用的情感预测任务，我们建立了编码前缺失屏蔽、预训练文本表示与观测感知汇总相结合的多任务模型。方法将有效位置与模态观测状态分别建模，使用训练集统计量标准化音视频特征，并通过同一网络联合预测负向、中性、正向类别及连续情感强度。训练仅使用赛题附件2，专项推理保持与训练相同的对齐特征接口。",
+    "_origin": "r3",
+    "_source_index": 2
+  },
+  {
+    "type": "paragraph",
+    "text": "在预训练编码与多模态融合的基础上，我们采用仅由拟合样本估计的逆频率分类权重，与Huber回归损失联合求解。按视频分组的内部三折用于开发，三个固定种子用于官方验证确认。当前正式模型为第四轮完整词表12层多模态模型，不采用后续未通过确认的延后加权或预测融合方案。",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "paragraph",
+    "text": "官方验证集上，最终方案的完整Macro-F1为0.6163 ± 0.0040，中性F1为0.4808 ± 0.0062，九类缺失场景平均Macro-F1为0.6026 ± 0.0013，完整MAE为0.5790 ± 0.0099；波动表示三种子样本标准差。相对不加权12层方案，中性与宏平均分类性能改善，但Accuracy与正向F1下降，回归基本持平。",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "paragraph",
+    "text": "我们通过固定缺失位置与形状、视频分组配对Bootstrap、分类错误与回归残差分析界定结论。连续缺失增强的既有消融未显示稳定优势，延后加权及固定概率融合也未产生符合预定条件的替代模型。附件3全部30条预测已完成，未知标签准确率不能由覆盖率推断。",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "paragraph",
+    "text": "关键词：多模态情感预测；局部模态缺失；预训练语言模型；多任务学习；配对分组评估",
+    "_origin": "r3",
+    "_source_index": 5
+  },
+  {
+    "type": "heading",
+    "level": 1,
+    "text": "1 问题分析与建模假设",
+    "_origin": "r3",
+    "_source_index": 6
+  },
+  {
+    "type": "paragraph",
+    "text": "问题2的核心不是在三模态齐全时追求最高分，而是在一个或多个模态的局部连续区间信息不可用时，仍利用其余可见线索输出情感极性和强度，并解释缺失类型、位置及长度变化与性能的关系。局部缺失与整个模态完全不存在不同；本研究的主实验围绕局部缺失展开，全缺失仅用于验证数值与接口安全性。",
+    "_origin": "r3",
+    "_source_index": 7
+  },
+  {
+    "type": "paragraph",
+    "text": "在赛题限定的输入条件下，我们采用附件2与附件3的aligned_50版本。对齐意味着不同模态以相同序列位置组织，不能据此认定各位置具有相同持续秒数。附件2未提供逐词时间戳，因此缺失长度以有效特征位置数及比例表述，且不将位置号伪装为原始视频时间。",
+    "_origin": "r3",
+    "_source_index": 8
+  },
+  {
+    "type": "paragraph",
+    "text": "建模采用以下可检验假设。第一，字段内相同样本索引与相同对齐位置具有一致的组织含义。第二，依题意，有效区域内音视频整条特征向量为零表示不可观测，单个坐标为零仍是合法观测。第三，在未提供可靠时间戳的条件下，可用固定位置规则研究局部缺失敏感性，但不能宣称完整模拟了真实设备故障。第四，监督标签遵循负值、零值、正值分别对应负向、中性、正向的定义。",
+    "_origin": "r3",
+    "_source_index": 9
+  },
+  {
+    "type": "paragraph",
+    "text": "这些假设存在边界：尾部各模态同时为零且缺少分隔词元时，无法可靠区分真实缺失与填充；我们保留审计标记而不猜测原始长度。模型得到的softmax概率未经校准，不能直接解释为真实正确概率。后文同时报告算法构造、实验发现及其限制。",
+    "_origin": "r3",
+    "_source_index": 10
+  },
+  {
+    "type": "heading",
+    "level": 1,
+    "text": "2 数据组织与数学定义",
+    "_origin": "r3",
+    "_source_index": 11
+  },
+  {
+    "type": "table",
+    "caption": "表1 数据划分与使用规则",
+    "header": [
+      "数据部分",
+      "样本数",
+      "作用"
+    ],
+    "rows": [
+      [
+        "训练集",
+        "3395",
+        "拟合模型与预处理统计量；内部三折开发"
+      ],
+      [
+        "验证集",
+        "728",
+        "固定候选的三种子确认和规律分析"
+      ],
+      [
+        "测试集",
+        "727",
+        "模型冻结后的描述性评价"
+      ],
+      [
+        "附件3",
+        "30",
+        "无标签专项最终预测"
+      ]
+    ],
+    "widths": [
+      0.2,
+      0.12,
+      0.68
+    ],
+    "_origin": "r3",
+    "_source_index": 12,
+    "keep_together": true
+  },
+  {
+    "type": "paragraph",
+    "text": "训练数据包含text_bert、audio、vision及标签。文本统一使用text_bert中的词元编号；不在训练中使用768维连续text特征后又于专项推理临时更换输入。训练、验证与测试共4850条样本已完成本地BERT分词编号核验。附件3的text_bert虽为浮点存储，读取时先验证数值有限且为整数，再转为整型编号。",
+    "_origin": "r3",
+    "_source_index": 13
+  },
+  {
+    "type": "equation",
+    "number": 1,
+    "latex": "X_i^a\\in\\mathbb{R}^{T\\times74},\\quad X_i^v\\in\\mathbb{R}^{T\\times35},\\quad T=50",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msubsup><mi>X</mi><mi>i</mi><mi>a</mi></msubsup><mo>∈</mo><msup><mi>ℝ</mi><mrow><mi>T</mi><mo>×</mo><mn>74</mn></mrow></msup><mo>,</mo><msubsup><mi>X</mi><mi>i</mi><mi>v</mi></msubsup><mo>∈</mo><msup><mi>ℝ</mi><mrow><mi>T</mi><mo>×</mo><mn>35</mn></mrow></msup><mo>,</mo><mi>T</mi><mo>=</mo><mn>50</mn></mrow></math>",
+    "_origin": "r3",
+    "_source_index": 14
+  },
+  {
+    "type": "table",
+    "caption": "表2 主要符号与维度",
+    "header": [
+      "符号",
+      "含义",
+      "维度或范围"
+    ],
+    "rows": [
+      [
+        "i，j，m",
+        "样本、位置、模态索引",
+        "m∈{t,a,v}"
+      ],
+      [
+        "tᵢ",
+        "文本词元编号",
+        "50；编号0至30521"
+      ],
+      [
+        "Xᵢᵃ，Xᵢᵛ",
+        "语音与视觉输入",
+        "50×74，50×35"
+      ],
+      [
+        "vᵢⱼ",
+        "有效位置标记",
+        "0或1"
+      ],
+      [
+        "oᵢⱼᵐ，dᵢⱼᵐ",
+        "原观测标记与人工缺失标记",
+        "0或1"
+      ],
+      [
+        "õᵢⱼᵐ",
+        "施加缺失后的可用标记",
+        "0或1"
+      ],
+      [
+        "cᵢ，yᵢ",
+        "极性标签与强度标签",
+        "{0,1,2}；[−3,3]"
+      ],
+      [
+        "pᵢ，ŷᵢ",
+        "三类概率与预测强度",
+        "概率单纯形；[−3,3]"
+      ],
+      [
+        "hᵢᵗ，hᵢᵃ，hᵢᵛ",
+        "三模态投影表示",
+        "128，64，64"
+      ],
+      [
+        "aᵢ，zᵢ",
+        "三模态可用比例与融合表示",
+        "3，128"
+      ]
+    ],
+    "widths": [
+      0.23,
+      0.47,
+      0.3
+    ],
+    "_origin": "r3",
+    "_source_index": 15,
+    "keep_together": true
+  },
+  {
+    "type": "paragraph",
+    "text": "有效位置通过文本注意力、词元编号及音视频非零观测的并集确定可辨识边界，排除位置0与CLS、SEP特殊词元。区域内部连续全零仍保留其位置，而不压缩序列。观测掩码则分别判断文本注意力与编号有效性、音视频有限性和整向量全零情况。两类掩码分离，使填充、特殊词元与真实缺失具有不同语义。",
+    "_origin": "r3",
+    "_source_index": 16
+  },
+  {
+    "type": "equation",
+    "number": 2,
+    "latex": "\\widetilde{o}_{ij}^{m}=v_{ij}o_{ij}^{m}(1-d_{ij}^{m})",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msubsup><mi>õ</mi><mi>ij</mi><mi>m</mi></msubsup><mo>=</mo><msub><mi>v</mi><mi>ij</mi></msub><msubsup><mi>o</mi><mi>ij</mi><mi>m</mi></msubsup><mrow><mo>(</mo><mn>1</mn><mo>−</mo><msubsup><mi>d</mi><mi>ij</mi><mi>m</mi></msubsup><mo>)</mo></mrow></mrow></math>",
+    "_origin": "r3",
+    "_source_index": 17
+  },
+  {
+    "type": "paragraph",
+    "text": "式（2）中的d=1表示人工移除信息，õ=1表示模型实际可使用该模态位置。人工缺失操作在编码之前生效。原观测掩码在标准化前确定并保存，不能因为标准化后某些数值恰好为零而重新判为缺失。",
+    "_origin": "r3",
+    "_source_index": 18
+  },
+  {
+    "type": "heading",
+    "level": 1,
+    "text": "3 鲁棒多模态预测模型",
+    "_origin": "r3",
+    "_source_index": 19
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "训练集统计量与输入处理",
+    "_origin": "r3",
+    "_source_index": 20
+  },
+  {
+    "type": "paragraph",
+    "text": "不同模态的数值尺度差异会影响优化。我们仅使用当前拟合子集内可观测位置估计每个音视频坐标的均值与总体标准差；内部三折各自重新估计，官方完整训练后固定一份统计量用于验证、测试与附件3。",
+    "_origin": "r3",
+    "_source_index": 21
+  },
+  {
+    "type": "equation",
+    "number": 3,
+    "latex": "\\mu_k^m={\\sum_{i,j}o_{ij}^m x_{ijk}^m\\over\\sum_{i,j}o_{ij}^m}",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msubsup><mi>μ</mi><mi>k</mi><mi>m</mi></msubsup><mo>=</mo><mfrac><mrow><msub><mo>∑</mo><mi>i,j</mi></msub><msubsup><mi>o</mi><mi>ij</mi><mi>m</mi></msubsup><msubsup><mi>x</mi><mi>ijk</mi><mi>m</mi></msubsup></mrow><mrow><msub><mo>∑</mo><mi>i,j</mi></msub><msubsup><mi>o</mi><mi>ij</mi><mi>m</mi></msubsup></mrow></mfrac></mrow></math>",
+    "_origin": "r3",
+    "_source_index": 22
+  },
+  {
+    "type": "equation",
+    "number": 4,
+    "latex": "\\sigma_k^m=\\max\\left(\\sqrt{{\\sum_{i,j}o_{ij}^m(x_{ijk}^m-\\mu_k^m)^2\\over\\sum_{i,j}o_{ij}^m}},10^{-5}\\right)",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msubsup><mi>σ</mi><mi>k</mi><mi>m</mi></msubsup><mo>=</mo><mi>max</mi><mrow><mo>(</mo><msqrt><mfrac><mrow><msub><mo>∑</mo><mi>i,j</mi></msub><msubsup><mi>o</mi><mi>ij</mi><mi>m</mi></msubsup><msup><mrow><mo>(</mo><msubsup><mi>x</mi><mi>ijk</mi><mi>m</mi></msubsup><mo>−</mo><msubsup><mi>μ</mi><mi>k</mi><mi>m</mi></msubsup><mo>)</mo></mrow><mn>2</mn></msup></mrow><mrow><msub><mo>∑</mo><mi>i,j</mi></msub><msubsup><mi>o</mi><mi>ij</mi><mi>m</mi></msubsup></mrow></mfrac></msqrt><mo>,</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>5</mn></mrow></msup><mo>)</mo></mrow></mrow></math>",
+    "_origin": "r3",
+    "_source_index": 23
+  },
+  {
+    "type": "equation",
+    "number": 5,
+    "latex": "\\widetilde{x}_{ijk}^{m}=\\widetilde{o}_{ij}^{m}\\,\\operatorname{clip}((x_{ijk}^{m}-\\mu_k^m)/\\sigma_k^m,-10,10)",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msubsup><mi>x̃</mi><mi>ijk</mi><mi>m</mi></msubsup><mo>=</mo><msubsup><mi>õ</mi><mi>ij</mi><mi>m</mi></msubsup><mi>clip</mi><mrow><mo>(</mo><mfrac><mrow><msubsup><mi>x</mi><mi>ijk</mi><mi>m</mi></msubsup><mo>−</mo><msubsup><mi>μ</mi><mi>k</mi><mi>m</mi></msubsup></mrow><msubsup><mi>σ</mi><mi>k</mi><mi>m</mi></msubsup></mfrac><mo>,</mo><mo>−</mo><mn>10</mn><mo>,</mo><mn>10</mn><mo>)</mo></mrow></mrow></math>",
+    "_origin": "r3",
+    "_source_index": 24
+  },
+  {
+    "type": "paragraph",
+    "text": "式（3）与式（4）的求和仅覆盖拟合子集，m取语音或视觉。标准差下界为10⁻⁵，标准化后固定裁剪至[−10,10]以限制极端数值的影响；该规则在实验前已固定，不依据验证结果改变。不可观测向量置零但另保留掩码，因此模型不会把占位零当成正常测量。",
+    "_origin": "r3",
+    "_source_index": 25
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "编码前屏蔽与文本上下文表示",
+    "_origin": "r3",
+    "_source_index": 26
+  },
+  {
+    "type": "paragraph",
+    "text": "文本编码器采用本地bert-base-uncased通用预训练权重初始化[1,2]。词元、位置及全零segment嵌入经LayerNorm与dropout送入Transformer；每层为12个注意力头、768维隐状态和3072维前馈层。只保留前50个位置嵌入以匹配赛题输入。词表裁剪版将拟合子集未出现的编号映射为UNK；完整词表版保留预训练模型原有30522个编号，未读取专项样本建立词表。",
+    "_origin": "r3",
+    "_source_index": 27
+  },
+  {
+    "type": "paragraph",
+    "text": "对于缺失的普通词元，先将编号置为占位值并从注意力键中屏蔽，再进行上下文编码；CLS与可辨认的SEP保留为结构边界，CLS位置始终开启以避免全屏蔽注意力的数值问题。汇总仅使用实际观测词元，特殊词元与缺失位置不进入均值。位置与边界信息仍然可见，因此本文没有宣称模型对缺失长度本身完全不知情。",
+    "_origin": "r3",
+    "_source_index": 28
+  },
+  {
+    "type": "equation",
+    "number": 6,
+    "latex": "\\operatorname{Attn}(Q,K,V)=\\operatorname{softmax}(QK^{\\mathsf T}/\\sqrt{64}+B)V",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mi>Attn</mi><mrow><mo>(</mo><mi>Q</mi><mo>,</mo><mi>K</mi><mo>,</mo><mi>V</mi><mo>)</mo></mrow><mo>=</mo><mi>softmax</mi><mrow><mo>(</mo><mfrac><mrow><mi>Q</mi><msup><mi>K</mi><mi>T</mi></msup></mrow><msqrt><mn>64</mn></msqrt></mfrac><mo>+</mo><mi>B</mi><mo>)</mo></mrow><mi>V</mi></mrow></math>",
+    "_origin": "r3",
+    "_source_index": 29
+  },
+  {
+    "type": "paragraph",
+    "text": "式（6）给出单个注意力头的核心计算。Q、K、V为线性投影，头宽为64；B在不可用键位置取−10000，其余位置取0。实现使用残差连接、后置LayerNorm和GELU前馈变换。对于缺失位置形成的查询隐状态，不在后续池化中采用，也不允许其作为有效键传递给其他位置。",
+    "_origin": "r3",
+    "_source_index": 30
+  },
+  {
+    "type": "equation",
+    "number": 7,
+    "latex": "\\bar h_i^t={\\sum_{j=1}^T\\widetilde{o}_{ij}^t H_{ij}\\over\\max(1,\\sum_{j=1}^T\\widetilde{o}_{ij}^t)}",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msubsup><mover accent=\"true\"><mi>h</mi><mo>¯</mo></mover><mi>i</mi><mi>t</mi></msubsup><mo>=</mo><mfrac><mrow><munderover><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>T</mi></munderover><msubsup><mi>õ</mi><mi>ij</mi><mi>t</mi></msubsup><msub><mi>H</mi><mi>ij</mi></msub></mrow><mrow><mi>max</mi><mrow><mo>(</mo><mn>1</mn><mo>,</mo><munderover><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>T</mi></munderover><msubsup><mi>õ</mi><mi>ij</mi><mi>t</mi></msubsup><mo>)</mo></mrow></mrow></mfrac></mrow></math>",
+    "_origin": "r3",
+    "_source_index": 31
+  },
+  {
+    "type": "paragraph",
+    "text": "H为最终文本隐状态。式（7）的分母截为至少1避免空序列除零，池化结果经768→128线性层、LayerNorm与GELU；若文本完全不可用，投影后的表示再次乘以可用性指示，使其严格为零。BERT是已有方法，本文的具体实现与缓存原模型在核验样例上的最大绝对差为8.11×10⁻⁶，该检查用于验证实现兼容性，并非预测性能证据。",
+    "_origin": "r3",
+    "_source_index": 32
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "音视频汇总与多模态融合",
+    "_origin": "r3",
+    "_source_index": 33
+  },
+  {
+    "type": "equation",
+    "number": 8,
+    "latex": "\\bar x_i^m={\\sum_{j=1}^T\\widetilde{o}_{ij}^m\\widetilde{x}_{ij}^m\\over\\max(1,\\sum_{j=1}^T\\widetilde{o}_{ij}^m)},\\quad m\\in\\{a,v\\}",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msubsup><mover accent=\"true\"><mi>x</mi><mo>¯</mo></mover><mi>i</mi><mi>m</mi></msubsup><mo>=</mo><mfrac><mrow><munderover><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>T</mi></munderover><msubsup><mi>õ</mi><mi>ij</mi><mi>m</mi></msubsup><msubsup><mi>x̃</mi><mi>ij</mi><mi>m</mi></msubsup></mrow><mrow><mi>max</mi><mrow><mo>(</mo><mn>1</mn><mo>,</mo><munderover><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>T</mi></munderover><msubsup><mi>õ</mi><mi>ij</mi><mi>m</mi></msubsup><mo>)</mo></mrow></mrow></mfrac><mo>,</mo><mi>m</mi><mo>∈</mo><mo>{</mo><mi>a</mi><mo>,</mo><mi>v</mi><mo>}</mo></mrow></math>",
+    "_origin": "r3",
+    "_source_index": 34
+  },
+  {
+    "type": "paragraph",
+    "text": "语音和视觉采用观测掩码均值汇总，再分别通过74→64与35→64的线性层、LayerNorm和GELU。均值编码在小样本条件下参数量较低、实现稳定，但不显式区分可见片段内部的细粒度顺序，不能将其描述为精细时序建模。完全缺失的模态输出置零。",
+    "_origin": "r3",
+    "_source_index": 35
+  },
+  {
+    "type": "equation",
+    "number": 9,
+    "latex": "a_i^m={\\sum_j\\widetilde{o}_{ij}^m\\over\\max(1,\\sum_jv_{ij})},\\quad z_i=\\operatorname{GELU}(W_f[h_i^t;h_i^a;h_i^v;a_i]+b_f)",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msubsup><mi>a</mi><mi>i</mi><mi>m</mi></msubsup><mo>=</mo><mfrac><mrow><msub><mo>∑</mo><mi>j</mi></msub><msubsup><mi>õ</mi><mi>ij</mi><mi>m</mi></msubsup></mrow><mrow><mi>max</mi><mrow><mo>(</mo><mn>1</mn><mo>,</mo><msub><mo>∑</mo><mi>j</mi></msub><msub><mi>v</mi><mi>ij</mi></msub><mo>)</mo></mrow></mrow></mfrac><mo>,</mo><msub><mi>z</mi><mi>i</mi></msub><mo>=</mo><mi>GELU</mi><mrow><mo>(</mo><msub><mi>W</mi><mi>f</mi></msub><mo>[</mo><msubsup><mi>h</mi><mi>i</mi><mi>t</mi></msubsup><mo>;</mo><msubsup><mi>h</mi><mi>i</mi><mi>a</mi></msubsup><mo>;</mo><msubsup><mi>h</mi><mi>i</mi><mi>v</mi></msubsup><mo>;</mo><msub><mi>a</mi><mi>i</mi></msub><mo>]</mo><mo>+</mo><msub><mi>b</mi><mi>f</mi></msub><mo>)</mo></mrow></mrow></math>",
+    "_origin": "r3",
+    "_source_index": 36
+  },
+  {
+    "type": "paragraph",
+    "text": "式（9）将128维文本、64维语音、64维视觉和3维可用比例拼接为259维向量，再映射为128维融合表示，训练时使用0.2的dropout。可用比例告知融合层各模态剩余观测量，但此结构是带可用信息的拼接融合，不是显式门控或动态专家模型，也不构成模态重要性的因果解释。",
+    "_origin": "r3",
+    "_source_index": 37
+  },
+  {
+    "type": "equation",
+    "number": 10,
+    "latex": "p_i=\\operatorname{softmax}(W_cz_i+b_c),\\quad\\hat c_i=\\arg\\max_kp_{ik},\\quad\\hat y_i=3\\tanh(w_r^{\\mathsf T}z_i+b_r)",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msub><mi>p</mi><mi>i</mi></msub><mo>=</mo><mi>softmax</mi><mrow><mo>(</mo><msub><mi>W</mi><mi>c</mi></msub><msub><mi>z</mi><mi>i</mi></msub><mo>+</mo><msub><mi>b</mi><mi>c</mi></msub><mo>)</mo></mrow><mo>,</mo><msub><mover accent=\"true\"><mi>c</mi><mo>^</mo></mover><mi>i</mi></msub><mo>=</mo><msub><mi>argmax</mi><mi>k</mi></msub><msub><mi>p</mi><mi>ik</mi></msub><mo>,</mo><msub><mover accent=\"true\"><mi>y</mi><mo>^</mo></mover><mi>i</mi></msub><mo>=</mo><mn>3</mn><mi>tanh</mi><mrow><mo>(</mo><msubsup><mi>w</mi><mi>r</mi><mi>T</mi></msubsup><msub><mi>z</mi><mi>i</mi></msub><mo>+</mo><msub><mi>b</mi><mi>r</mi></msub><mo>)</mo></mrow></mrow></math>",
+    "_origin": "r3",
+    "_source_index": 38
+  },
+  {
+    "type": "figure",
+    "paper_number": 1,
+    "source_id": "fig01_architecture",
+    "path": "../figures/r3_fig01_architecture.png",
+    "caption": "图1 模型结构与编码前缺失处理。长度50为特征位置上限，不代表50秒。融合为拼接与可用比例输入，不包含动态门控。",
+    "_origin": "r3",
+    "_source_index": 39
+  },
+  {
+    "type": "paragraph",
+    "text": "分类头输出三类softmax概率，回归头通过3tanh限制强度范围。标签约定0、1、2分别为负向、中性、正向。两头共享融合表示但分别监督，因而可能出现类别与强度符号不一致；本研究原样保存两头输出，不以事后阈值修饰预测。",
+    "_origin": "r3",
+    "_source_index": 40
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "类别平衡目标函数",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "paragraph",
+    "text": "既有模型在三类任务上整体表现并不均衡。训练集负向、中性、正向样本量分别为967、758、1670，最多与最少类别之比约为2.20。该分布偏斜为检验类别平衡策略提供了动机，但不足以证明中性类别错误完全由样本数量造成；语义边界、表示能力和优化过程同样可能影响结果。",
+    "_origin": "r4",
+    "_source_index": 6
+  },
+  {
+    "type": "paragraph",
+    "text": "以类别频率调整经验风险是已有方法[6,7]。我们只比较不加权、平方根逆频率与逆频率三个强度，不把类别均衡的动机等同于有效性的证明。设当前拟合子集含N条样本，第c类样本量为n_c，C=3。每个内部折独立计数；官方验证、测试和附件3不参与估计。",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "equation",
+    "number": 11,
+    "latex": "u_c=(N/(C n_c))^\\alpha,\\quad w_c=u_c/(C^{-1}\\sum_{k=0}^{C-1}u_k),\\quad\\alpha\\in\\{0,0.5,1\\}",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><msub><mi>u</mi><mi>c</mi></msub><mo>=</mo><msup><mrow><mo>(</mo><mfrac><mi>N</mi><mrow><mi>C</mi><msub><mi>n</mi><mi>c</mi></msub></mrow></mfrac><mo>)</mo></mrow><mi>α</mi></msup><mo>,</mo><msub><mi>w</mi><mi>c</mi></msub><mo>=</mo><mfrac><msub><mi>u</mi><mi>c</mi></msub><mrow><mfrac><mn>1</mn><mi>C</mi></mfrac><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>C</mi><mo>−</mo><mn>1</mn></mrow></munderover><msub><mi>u</mi><mi>k</mi></msub></mrow></mfrac><mo>,</mo><mi>α</mi><mo>∈</mo><mo>{</mo><mn>0</mn><mo>,</mo><mn>0.5</mn><mo>,</mo><mn>1</mn><mo>}</mo></mrow></math>",
+    "_origin": "r4",
+    "_source_index": 11
+  },
+  {
+    "type": "paragraph",
+    "text": "α=0、0.5、1分别对应不加权、平方根逆频率和逆频率。最终采用α=1，权重从第1轮开始作用。公共缩放在加权交叉熵的分子分母中相互抵消，因此将类别权重的算术均值规范为1不改变目标；若当前拟合子集缺少某类，程序明确报错而不生成无穷权重。",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "equation",
+    "key": "weighted_loss",
+    "latex": "\\mathcal L_B=-\\frac{\\sum_{i\\in B}w_{c_i}\\log p_{i,c_i}}{\\sum_{i\\in B}w_{c_i}}+\\frac{1}{|B|}\\sum_{i\\in B}H_1(\\hat y_i-y_i)",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msub><mi>ℒ</mi><mi>B</mi></msub><mo>=</mo><mo>−</mo><mfrac><mrow><msub><mo>∑</mo><mrow><mi>i</mi><mo>∈</mo><mi>B</mi></mrow></msub><mrow><msub><mi>w</mi><msub><mi>c</mi><mi>i</mi></msub></msub><mrow><mi>log</mi><msub><mi>p</mi><mrow><mi>i</mi><mo>,</mo><msub><mi>c</mi><mi>i</mi></msub></mrow></msub></mrow></mrow></mrow><mrow><msub><mo>∑</mo><mrow><mi>i</mi><mo>∈</mo><mi>B</mi></mrow></msub><msub><mi>w</mi><msub><mi>c</mi><mi>i</mi></msub></msub></mrow></mfrac><mo>+</mo><mfrac><mn>1</mn><mrow><mo>|</mo><mi>B</mi><mo>|</mo></mrow></mfrac><mrow><msub><mo>∑</mo><mrow><mi>i</mi><mo>∈</mo><mi>B</mi></mrow></msub><mrow><msub><mi>H</mi><mn>1</mn></msub><mrow><mo>(</mo><msub><mover accent=\"true\"><mi>y</mi><mo>^</mo></mover><mi>i</mi></msub><mo>−</mo><msub><mi>y</mi><mi>i</mi></msub><mo>)</mo></mrow></mrow></mrow></mrow></math>",
+    "_origin": "new",
+    "_source_index": null,
+    "number": 12
+  },
+  {
+    "type": "equation",
+    "number": 13,
+    "latex": "H_1(e)=\\begin{cases}e^2/2,&|e|\\le1,\\\\|e|-1/2,&|e|>1.\\end{cases}",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msub><mi>H</mi><mi>1</mi></msub><mrow><mo>(</mo><mi>e</mi><mo>)</mo></mrow><mo>=</mo><mfenced open=\"{\" close=\"\"><mtable><mtr><mtd><mfrac><msup><mi>e</mi><mn>2</mn></msup><mn>2</mn></mfrac></mtd><mtd><mrow><mo>|</mo><mi>e</mi><mo>|</mo><mo>≤</mo><mn>1</mn></mrow></mtd></mtr><mtr><mtd><mrow><mo>|</mo><mi>e</mi><mo>|</mo><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></mtd><mtd><mrow><mo>|</mo><mi>e</mi><mo>|</mo><mo>&gt;</mo><mn>1</mn></mrow></mtd></mtr></mtable></mfenced></mrow></math>",
+    "_origin": "r3",
+    "_source_index": 43
+  },
+  {
+    "type": "paragraph",
+    "text": "c_i始终表示离散类别，y_i始终表示连续强度，B表示有效批量；分类概率p的第二下标选择真实类别。加权交叉熵强调较少类别的分类误差，Huber阈值固定为1，对较大回归残差采用线性增长。两任务系数为1∶1。类别权重不增加推理参数，也不将softmax概率自动校准为正确率。",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "连续缺失训练",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "equation",
+    "number": 14,
+    "latex": "k_i=\\min(n_i,\\max(1,\\lfloor r n_i+0.5\\rfloor)),\\quad n_i=\\sum_jv_{ij}",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msub><mi>k</mi><mi>i</mi></msub><mo>=</mo><mi>min</mi><mrow><mo>(</mo><msub><mi>n</mi><mi>i</mi></msub><mo>,</mo><mi>max</mi><mrow><mo>(</mo><mn>1</mn><mo>,</mo><mo>⌊</mo><mi>r</mi><msub><mi>n</mi><mi>i</mi></msub><mo>+</mo><mn>0.5</mn><mo>⌋</mo><mo>)</mo></mrow><mo>)</mo></mrow><mo>,</mo><msub><mi>n</mi><mi>i</mi></msub><mo>=</mo><msub><mo>∑</mo><mi>j</mi></msub><msub><mi>v</mi><mi>ij</mi></msub></mrow></math>",
+    "_origin": "r3",
+    "_source_index": 45
+  },
+  {
+    "type": "paragraph",
+    "text": "对每个训练样本，以0.7概率选取一个模态施加连续缺失，模态均匀抽样，比例r从0.1、0.3、0.5中均匀抽样。式（14）适用于有效长度nᵢ>0；空序列不额外移除位置。连续性按有效位置的顺序定义，随机起点保证所选片段在边界内。该增强使优化目标包含人工缺失下的监督风险，但不能保证所有缺失条件都改善，其作用由消融实验判断。",
+    "_origin": "r3",
+    "_source_index": 46
+  },
+  {
+    "type": "heading",
+    "level": 1,
+    "text": "4 求解流程与实验协议",
+    "_origin": "r3",
+    "_source_index": 47
+  },
+  {
+    "type": "table",
+    "caption": "算法1 模型训练与选择",
+    "header": [
+      "步骤",
+      "操作"
+    ],
+    "rows": [
+      [
+        "1",
+        "固定官方划分；在训练集内按原视频标识生成三折，各折视频组不重叠。"
+      ],
+      [
+        "2",
+        "各折只以拟合样本估计标准化参数和类别频率；按阶段协议固定预训练词表。"
+      ],
+      [
+        "3",
+        "初始化预训练编码器和预测头；每个批量在编码前按规则生成局部缺失掩码。"
+      ],
+      [
+        "4",
+        "计算加权交叉熵与Huber损失，按有效批量累积梯度，裁剪后以AdamW更新。"
+      ],
+      [
+        "5",
+        "内部每轮评价完整输入和九类固定缺失场景；按预定分数保存最佳轮次并早停。"
+      ],
+      [
+        "6",
+        "对完成三折且满足保护条件的候选排序；以最佳轮数中位数固定正式训练轮数。"
+      ],
+      [
+        "7",
+        "仅在官方训练集重新拟合，完成三个种子的验证确认；冻结模型后才开展描述性测试。"
+      ]
+    ],
+    "widths": [
+      0.08,
+      0.92
+    ],
+    "_origin": "r3",
+    "_source_index": 48,
+    "keep_together": true
+  },
+  {
+    "type": "table",
+    "caption": "表3 固定训练参数",
+    "header": [
+      "项目",
+      "取值"
+    ],
+    "rows": [
+      [
+        "编码器学习率",
+        "2×10⁻⁵"
+      ],
+      [
+        "投影与预测头学习率",
+        "5×10⁻⁴"
+      ],
+      [
+        "优化器与权重衰减",
+        "AdamW；0.01；偏置和归一化参数不衰减"
+      ],
+      [
+        "有效批量与梯度裁剪",
+        "32；梯度范数上限1"
+      ],
+      [
+        "学习率计划",
+        "前10%更新线性预热，其后线性衰减"
+      ],
+      [
+        "内部训练预算",
+        "12层模型最多6轮；连续3轮无改善早停"
+      ],
+      [
+        "训练与推理精度",
+        "CUDA BF16自动混合精度训练；FP32评价；关闭TF32"
+      ],
+      [
+        "随机种子",
+        "三折分组240924；确认42、2026、3407"
+      ],
+      [
+        "连续缺失增强",
+        "概率0.7；三模态与三个比例均匀抽样"
+      ],
+      [
+        "损失权重",
+        "加权交叉熵∶Huber=1∶1"
+      ]
+    ],
+    "widths": [
+      0.35,
+      0.65
+    ],
+    "_origin": "r3",
+    "_source_index": 49,
+    "keep_together": true
+  },
+  {
+    "type": "paragraph",
+    "text": "AdamW采用解耦权重衰减[3]。有效批量固定为32；显存不足时允许微批量缩至16或8并累计贡献，不能对类别组成不同的微批量加权均值简单平均。对B的互不相交分块B_j，分类分母始终使用完整B的权重和，回归分母始终使用|B|。固定轮数确认阶段在训练结束后一次评价，不逐轮利用官方验证选检查点。",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "equation",
+    "key": "accumulation",
+    "latex": "\\mathcal L_B=\\sum_j\\left[-\\frac{\\sum_{i\\in B_j}w_{c_i}\\log p_{i,c_i}}{\\sum_{i\\in B}w_{c_i}}+\\frac{\\sum_{i\\in B_j}H_1(\\hat y_i-y_i)}{|B|}\\right]",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msub><mi>ℒ</mi><mi>B</mi></msub><mo>=</mo><msub><mo>∑</mo><mi>j</mi></msub><mo>[</mo><mo>−</mo><mfrac><mrow><msub><mo>∑</mo><mrow><mi>i</mi><mo>∈</mo><mi>Bⱼ</mi></mrow></msub><mrow><msub><mi>w</mi><msub><mi>c</mi><mi>i</mi></msub></msub><mrow><mi>log</mi><msub><mi>p</mi><mrow><mi>i</mi><mo>,</mo><msub><mi>c</mi><mi>i</mi></msub></mrow></msub></mrow></mrow></mrow><mrow><msub><mo>∑</mo><mrow><mi>i</mi><mo>∈</mo><mi>B</mi></mrow></msub><msub><mi>w</mi><msub><mi>c</mi><mi>i</mi></msub></msub></mrow></mfrac><mo>+</mo><mfrac><mrow><msub><mo>∑</mo><mrow><mi>i</mi><mo>∈</mo><mi>Bⱼ</mi></mrow></msub><mrow><msub><mi>H</mi><mn>1</mn></msub><mrow><mo>(</mo><msub><mover accent=\"true\"><mi>y</mi><mo>^</mo></mover><mi>i</mi></msub><mo>−</mo><msub><mi>y</mi><mi>i</mi></msub><mo>)</mo></mrow></mrow></mrow><mrow><mo>|</mo><mi>B</mi><mo>|</mo></mrow></mfrac><mo>]</mo></mrow></math>",
+    "_origin": "new",
+    "_source_index": null,
+    "number": 15
+  },
+  {
+    "type": "equation",
+    "number": 16,
+    "latex": "\\operatorname{MacroF1}={1\\over3}\\sum_{c=0}^2{2TP_c\\over2TP_c+FP_c+FN_c}",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mi>MacroF1</mi><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><munderover><mo>∑</mo><mrow><mi>c</mi><mo>=</mo><mn>0</mn></mrow><mn>2</mn></munderover><mfrac><mrow><mn>2</mn><msub><mi>TP</mi><mi>c</mi></msub></mrow><mrow><mn>2</mn><msub><mi>TP</mi><mi>c</mi></msub><mo>+</mo><msub><mi>FP</mi><mi>c</mi></msub><mo>+</mo><msub><mi>FN</mi><mi>c</mi></msub></mrow></mfrac></mrow></math>",
+    "_origin": "r3",
+    "_source_index": 51
+  },
+  {
+    "type": "equation",
+    "number": 17,
+    "latex": "\\operatorname{MAE}={1\\over N}\\sum_i|\\hat y_i-y_i|,\\quad S={1\\over2}\\overline{F1}_{miss}+{1\\over2}(1-\\overline{MAE}_{miss}/6)",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mi>MAE</mi><mo>=</mo><mfrac><mn>1</mn><mi>N</mi></mfrac><msub><mo>∑</mo><mi>i</mi></msub><mo>|</mo><msub><mover accent=\"true\"><mi>y</mi><mo>^</mo></mover><mi>i</mi></msub><mo>−</mo><msub><mi>y</mi><mi>i</mi></msub><mo>|</mo><mo>,</mo><mi>S</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mover accent=\"true\"><mi>F1</mi><mo>¯</mo></mover><mi>miss</mi></msub><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mrow><mo>(</mo><mn>1</mn><mo>−</mo><mfrac><msub><mover accent=\"true\"><mi>MAE</mi><mo>¯</mo></mover><mi>miss</mi></msub><mn>6</mn></mfrac><mo>)</mo></mrow></mrow></math>",
+    "_origin": "r3",
+    "_source_index": 52
+  },
+  {
+    "type": "paragraph",
+    "text": "除式（16）与式（17）外，同时报告Accuracy、各类别F1和Pearson相关系数。F1对三类等权求平均，分母为零的类别按0计；Pearson在样本不足或真值、预测恒定时记为未定义并说明原因，不填造数值。内部选择分数S仅是团队预先固定的比较准则，不是比赛官方评分公式。",
+    "_origin": "r3",
+    "_source_index": 53
+  },
+  {
+    "type": "paragraph",
+    "text": "验证主场景为文本、语音、视觉分别缺失10%、30%、50%，共9类；每个样本的随机起点由固定种子、样本ID和场景名称的SHA256确定。补充场景采用前部、中部、后部以及分成最多三段的多个短区间，共36类。多个短片段不保证彼此间隔非零，极短样本中可能合并，报告按实际移除位置统计而非假定严格分离。",
+    "_origin": "r3",
+    "_source_index": 54
+  },
+  {
+    "type": "paragraph",
+    "text": "所有候选共享场景定义与样本顺序。S取九场景指标的算术平均，不是将场景样本拼接后计算一次F1。完整输入clean表示没有额外人工缺失，仍可能包含原始自然缺失。人工选择的位置若原本不可观测，不会产生额外的信息移除；因此同时记录所选位置数和新增不可观测位置数。",
+    "_origin": "r3",
+    "_source_index": 55
+  },
+  {
+    "type": "paragraph",
+    "text": "模型开发按轮次顺序进行。第三轮以第二轮两层蒸馏FP32为参照，第四轮以第三轮不加权12层为参照。候选至少在两个内部折提高S，完整输入三折平均Macro-F1下降不超过0.01、MAE增加不超过0.03；合格者仅选择均值S最高者进入三个同种子确认。至少两组配对及均值均提高S并通过完整输入保护条件才允许替换。第四轮确认长度固定为内部最佳轮数中位数4轮。",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "paragraph",
+    "text": "第五、六轮在开始前增加Accuracy、中性F1和正向F1条件，用于限制继续牺牲类别性能；这些新条件不追溯改写第四轮的选择过程。内部交叉验证已用于选择，官方验证也已多轮使用，均不应表述为从未参与开发的独立验证。既有测试结果仅作冻结后的描述，不用来挑选本文方案。",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "heading",
+    "level": 1,
+    "text": "5 模型开发与主结果",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "预训练方案与缺失增强对照",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "table",
+    "caption": "表4 内部三折平均结果",
+    "header": [
+      "模型",
+      "完整F1",
+      "完整MAE",
+      "缺失F1",
+      "缺失MAE",
+      "S"
+    ],
+    "rows": [
+      [
+        "第二轮两层蒸馏FP32",
+        "0.5575",
+        "0.6938",
+        "0.5475",
+        "0.7073",
+        "0.7148"
+      ],
+      [
+        "12层裁剪词表＋缺失训练",
+        "0.6025",
+        "0.6094",
+        "0.5857",
+        "0.6301",
+        "0.7403"
+      ],
+      [
+        "12层完整词表＋缺失训练",
+        "0.6218",
+        "0.6050",
+        "0.6038",
+        "0.6241",
+        "0.7499"
+      ],
+      [
+        "12层完整词表 无缺失增强",
+        "0.6231",
+        "0.6031",
+        "0.6044",
+        "0.6227",
+        "0.7503"
+      ]
+    ],
+    "widths": [
+      0.34,
+      0.132,
+      0.132,
+      0.132,
+      0.132,
+      0.132
+    ],
+    "_origin": "r3",
+    "_source_index": 58,
+    "keep_together": true
+  },
+  {
+    "type": "paragraph",
+    "text": "表4中的F1为Macro-F1，各数值为三折指标的算术平均。裁剪词表12层模型复用已完成的相同六轮协议记录；完整词表方案与关闭增强方案均在三折上训练。关闭增强方案预先指定为消融，不因其结果改变主候选集合。三折分别包含1205、1093、1097条验证样本，折间难度差异通过逐折配对展示。",
+    "_origin": "r3",
+    "_source_index": 59
+  },
+  {
+    "type": "paragraph",
+    "text": "完整词表相对于裁剪词表12层模型，三折平均S变化为+0.0096，完整F1变化为+0.0193，完整MAE变化为-0.0044。该比较提供词表保留策略的经验依据；由于词表维度变化也会影响同种子下后续随机初始化序列，且开发阶段只使用一个训练种子，不能将差异完全归因为未见词元本身。",
+    "_origin": "r3",
+    "_source_index": 60
+  },
+  {
+    "type": "paragraph",
+    "text": "连续缺失训练相对于不增强方案的三折平均S变化为-0.0004，缺失平均F1变化为-0.0006，缺失平均MAE变化为+0.0015。该结果未显示连续缺失训练在本配置下具有更高的综合得分，不能把缺失增强描述为已被充分证明有效的创新点。 两组模型均按自己的内部验证分数选最佳轮次，因此这里比较的是包含早停的训练策略，而非同一固定轮数的纯损失扰动。",
+    "_origin": "r3",
+    "_source_index": 61
+  },
+  {
+    "type": "paragraph",
+    "text": "保留的两层实验分别检验文本单模态、多模态输入、连续缺失增强、蒸馏与随机初始化；四层实验检验另一种编码深度。蒸馏模型与四层模型的内部S差距很小，不能仅凭排序宣称其具有显著优势。两层与12层模型训练轮数及训练目标可能不同，跨结构的总差异不应包装成严格的单因素消融。",
+    "_origin": "r3",
+    "_source_index": 63
+  },
+  {
+    "type": "figure",
+    "paper_number": 2,
+    "source_id": "fig05_ablation",
+    "path": "../figures/r3_fig05_ablation.png",
+    "caption": "图2 内部三折对照。蓝点为各折，橙色菱形为三折算术平均；右图灰线连接同一折。左图与右图训练预算不同，不能将其差异解释为单一因素的因果效应。",
+    "_origin": "r3",
+    "_source_index": 62
+  },
+  {
+    "type": "paragraph",
+    "text": "上述缺失增强消融属于第三轮不加权12层结构。当前加权模型沿用该训练设置，尚无同协议加权模型的关闭增强对照，因此不能将第三轮结果推广为当前模型增强收益的证明。采用增强是预定训练流程的选择，不作为已经证实的独立创新结论。",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "类别权重的内部配对比较",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "paragraph",
+    "text": "内部开发继续使用第三轮按视频分组的三折。每个候选仅改变分类权重强度，随机种子42，最多6轮、早停耐心3轮；标准化、原始预训练权重、完整词表、连续缺失训练概率0.7和AdamW参数保持一致。以九类主要缺失场景上的既有综合分数S选择最佳轮次，再用最佳轮数中位数确定官方训练确认的固定轮数。",
+    "_origin": "r4",
+    "_source_index": 21
+  },
+  {
+    "type": "paragraph",
+    "text": "为确认软件修改没有改变对照条件，先重跑不加权配置的第1折。重跑与第三轮对应模型的217个参数张量逐项完全一致，最大绝对差为0.0，选择分数差为0.0。该检查支持在同环境与同配方下复用旧对照；不能推广为跨硬件逐位一致保证。",
+    "_origin": "r4",
+    "_source_index": 24
+  },
+  {
+    "type": "table",
+    "caption": "表5 内部三折算术均值",
+    "header": [
+      "配置",
+      "完整F1",
+      "完整MAE",
+      "缺失F1",
+      "缺失MAE",
+      "S"
+    ],
+    "rows": [
+      [
+        "不加权参照",
+        "0.6218",
+        "0.6050",
+        "0.6038",
+        "0.6241",
+        "0.7499"
+      ],
+      [
+        "balanced_sqrt",
+        "0.6294",
+        "0.6059",
+        "0.6092",
+        "0.6250",
+        "0.7525"
+      ],
+      [
+        "balanced_inverse",
+        "0.6327",
+        "0.6147",
+        "0.6124",
+        "0.6325",
+        "0.7535"
+      ]
+    ],
+    "widths": [
+      0.24,
+      0.152,
+      0.152,
+      0.152,
+      0.152,
+      0.152
+    ],
+    "_origin": "r4",
+    "_source_index": 26,
+    "keep_together": true
+  },
+  {
+    "type": "paragraph",
+    "text": "balanced_sqrt在2/3折提高S，平均差为+0.00263；中性F1均值为0.4611。其内部保护条件判定为通过。该比较使用各配置在内部验证上选定的最佳轮次，反映受同一预算约束的整体训练方案差异，不是未经选择的泛化性能估计。",
+    "_origin": "r4",
+    "_source_index": 27
+  },
+  {
+    "type": "paragraph",
+    "text": "balanced_inverse在2/3折提高S，平均差为+0.00360；中性F1均值为0.4646。其内部保护条件判定为通过。该比较使用各配置在内部验证上选定的最佳轮次，反映受同一预算约束的整体训练方案差异，不是未经选择的泛化性能估计。",
+    "_origin": "r4",
+    "_source_index": 28
+  },
+  {
+    "type": "figure",
+    "path": "../figures/r4_r4_01_internal.png",
+    "caption": "图3 内部三折配对比较，折验证样本量依次为1205、1093、1097。每个彩色点代表一折，灰线连接同一折，黑色短线为三折算术均值；这些点不是独立重复实验或置信区间。分数与F1均越高越好。",
+    "_origin": "r4",
+    "_source_index": 29
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "三种子主结果与性能取舍",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "table",
+    "caption": "表6 官方验证集种子均值与样本标准差",
+    "header": [
+      "模型",
+      "完整F1",
+      "完整MAE",
+      "缺失F1",
+      "缺失MAE"
+    ],
+    "rows": [
+      [
+        "第二轮FP32基准",
+        "0.5409 ± 0.0050",
+        "0.6534 ± 0.0012",
+        "0.5291 ± 0.0043",
+        "0.6621 ± 0.0013"
+      ],
+      [
+        "第三轮不加权12层",
+        "0.5959 ± 0.0059",
+        "0.5783 ± 0.0060",
+        "0.5862 ± 0.0018",
+        "0.5906 ± 0.0067"
+      ]
+    ],
+    "widths": [
+      0.24,
+      0.19,
+      0.19,
+      0.19,
+      0.19
+    ],
+    "_origin": "r3",
+    "_source_index": 65,
+    "keep_together": true
+  },
+  {
+    "type": "table",
+    "caption": "表7 官方验证集三种子确认均值与样本标准差",
+    "header": [
+      "指标",
+      "第三轮参照",
+      "第四轮最终模型",
+      "均值差"
+    ],
+    "rows": [
+      [
+        "完整Accuracy",
+        "0.6369 ± 0.0042",
+        "0.6277 ± 0.0060",
+        "-0.0092"
+      ],
+      [
+        "完整Macro-F1",
+        "0.5959 ± 0.0059",
+        "0.6163 ± 0.0040",
+        "+0.0204"
+      ],
+      [
+        "完整MAE",
+        "0.5783 ± 0.0060",
+        "0.5790 ± 0.0099",
+        "+0.0006"
+      ],
+      [
+        "完整Pearson",
+        "0.6815 ± 0.0063",
+        "0.6816 ± 0.0086",
+        "+0.0001"
+      ],
+      [
+        "负向类别F1",
+        "0.6770 ± 0.0109",
+        "0.6728 ± 0.0070",
+        "-0.0042"
+      ],
+      [
+        "中性类别F1",
+        "0.3871 ± 0.0133",
+        "0.4808 ± 0.0062",
+        "+0.0937"
+      ],
+      [
+        "正向类别F1",
+        "0.7238 ± 0.0020",
+        "0.6954 ± 0.0140",
+        "-0.0284"
+      ],
+      [
+        "缺失平均Macro-F1",
+        "0.5862 ± 0.0018",
+        "0.6026 ± 0.0013",
+        "+0.0164"
+      ],
+      [
+        "缺失平均MAE",
+        "0.5906 ± 0.0067",
+        "0.5909 ± 0.0101",
+        "+0.0002"
+      ],
+      [
+        "内部选择分数S",
+        "0.7439 ± 0.0009",
+        "0.7521 ± 0.0008",
+        "+0.0082"
+      ]
+    ],
+    "widths": [
+      0.25,
+      0.29,
+      0.29,
+      0.17
+    ],
+    "_origin": "r4",
+    "_source_index": 31,
+    "keep_together": true
+  },
+  {
+    "type": "table",
+    "caption": "表8 同种子配对的预定保护条件",
+    "header": [
+      "种子",
+      "ΔS",
+      "Δ完整F1",
+      "Δ完整MAE",
+      "通过"
+    ],
+    "rows": [
+      [
+        "42",
+        "+0.00858",
+        "+0.0220",
+        "-0.0005",
+        "是"
+      ],
+      [
+        "2026",
+        "+0.00789",
+        "+0.0215",
+        "+0.0050",
+        "是"
+      ],
+      [
+        "3407",
+        "+0.00814",
+        "+0.0175",
+        "-0.0027",
+        "是"
+      ]
+    ],
+    "widths": [
+      0.15,
+      0.23,
+      0.23,
+      0.24,
+      0.15
+    ],
+    "_origin": "r4",
+    "_source_index": 32,
+    "keep_together": true
+  },
+  {
+    "type": "paragraph",
+    "text": "三种子确认使用固定4轮训练，不在官方验证上再次挑选轮次、阈值或候选。最终判定为通过，替换正式模型。三种子标准差只刻画本次种子波动；样本量较少，不宜把它表述为充分的随机性保证。",
+    "_origin": "r4",
+    "_source_index": 33
+  },
+  {
+    "type": "figure",
+    "path": "../figures/r4_r4_02_seeds.png",
+    "caption": "图4 官方验证集728条样本的三种子确认。圆点与方点为逐种子结果，连线保持相同种子配对，菱形与误差线为均值±样本标准差；标准差不是Bootstrap置信区间。F1越高越好，MAE越低越好。",
+    "_origin": "r4",
+    "_source_index": 34
+  },
+  {
+    "type": "paragraph",
+    "text": "第二轮到第三轮的改善涉及编码深度、词表及训练方案变化，不能归为单一因素。第四轮保持编码结构并调整分类损失，三种子完整Macro-F1均改善，但Accuracy和正向F1的均值下降。当前取舍由此前固定的目标与保护条件决定，不代表所有应用场景都会优先选择该模型。",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "固定模型的不确定性分析",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "paragraph",
+    "text": "区间估计以原视频为重采样单位，在验证集239个视频组中有放回抽取相同数量的组，保留组内全部片段及重复次数，共进行2000次。每次对两个模型和所有场景使用完全相同的抽样组，然后重新计算F1与MAE的差值。该配对设计保留组内相关性和模型比较的样本配对。95%区间取差值分布的2.5%与97.5%分位点，不是三个种子均值的置信区间，也未校正此前模型搜索带来的选择偏差。",
+    "_origin": "r3",
+    "_source_index": 69
+  },
+  {
+    "type": "table",
+    "caption": "表9 种子42模型差异的95%视频分组配对Bootstrap区间",
+    "header": [
+      "场景",
+      "指标",
+      "差值",
+      "区间"
+    ],
+    "rows": [
+      [
+        "clean",
+        "macro_f1",
+        "+0.0220",
+        "[-0.0079, +0.0525]"
+      ],
+      [
+        "clean",
+        "mae",
+        "-0.0005",
+        "[-0.0058, +0.0050]"
+      ],
+      [
+        "missing_average",
+        "macro_f1",
+        "+0.0170",
+        "[-0.0052, +0.0397]"
+      ],
+      [
+        "missing_average",
+        "mae",
+        "-0.0007",
+        "[-0.0053, +0.0040]"
+      ]
+    ],
+    "widths": [
+      0.24,
+      0.22,
+      0.17,
+      0.37
+    ],
+    "_origin": "r4",
+    "_source_index": 35,
+    "keep_together": true
+  },
+  {
+    "type": "paragraph",
+    "text": "表9采用相同视频分组抽样同时作用于两个模型和各场景，共2000次重采样。区间跨零的指标不能据此声称方向明确；区间未跨零也只是在固定预测与该划分条件下的证据，不能消除前几轮研究及第四轮候选选择造成的偏差。",
+    "_origin": "r4",
+    "_source_index": 36
+  },
+  {
+    "type": "heading",
+    "level": 1,
+    "text": "6 局部缺失规律",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "模态类型与缺失比例",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "figure",
+    "path": "../figures/r4_r4_04_missing.png",
+    "caption": "图5 官方验证集连续缺失比例响应。线为三种子均值，阴影为±一个样本标准差，0%为完整输入；横轴是名义特征位置比例，非秒数。各行共用纵轴，保留非单调变化。Macro-F1越高越好，MAE越低越好。",
+    "_origin": "r4",
+    "_source_index": 44
+  },
+  {
+    "type": "table",
+    "key": "current_main",
+    "caption": "表10 最终模型种子42的主缺失场景",
+    "header": [
+      "模态",
+      "比例",
+      "Macro-F1",
+      "ΔF1",
+      "MAE",
+      "ΔMAE"
+    ],
+    "rows": [
+      [
+        "文本",
+        "10%",
+        "0.5936",
+        "-0.0181",
+        "0.5863",
+        "+0.0109"
+      ],
+      [
+        "文本",
+        "30%",
+        "0.5643",
+        "-0.0474",
+        "0.6091",
+        "+0.0338"
+      ],
+      [
+        "文本",
+        "50%",
+        "0.5515",
+        "-0.0603",
+        "0.6367",
+        "+0.0614"
+      ],
+      [
+        "语音",
+        "10%",
+        "0.6085",
+        "-0.0033",
+        "0.5752",
+        "-0.0001"
+      ],
+      [
+        "语音",
+        "30%",
+        "0.6160",
+        "+0.0042",
+        "0.5764",
+        "+0.0011"
+      ],
+      [
+        "语音",
+        "50%",
+        "0.6227",
+        "+0.0110",
+        "0.5760",
+        "+0.0007"
+      ],
+      [
+        "视觉",
+        "10%",
+        "0.6178",
+        "+0.0061",
+        "0.5746",
+        "-0.0007"
+      ],
+      [
+        "视觉",
+        "30%",
+        "0.6158",
+        "+0.0041",
+        "0.5732",
+        "-0.0021"
+      ],
+      [
+        "视觉",
+        "50%",
+        "0.6202",
+        "+0.0085",
+        "0.5749",
+        "-0.0005"
+      ]
+    ],
+    "widths": [
+      0.13,
+      0.12,
+      0.19,
+      0.18,
+      0.19,
+      0.19
+    ],
+    "_origin": "new",
+    "_source_index": null,
+    "keep_together": true
+  },
+  {
+    "type": "paragraph",
+    "text": "种子42在文本连续缺失50%时Macro-F1为0.5515，相对完整输入变化为-0.0603；MAE变化为+0.0614。音视频响应较小且存在非单调变化，可能与当前均值表示、文本主导或噪声移除有关，但本实验不能单独识别这些机制。三种子曲线的阴影只刻画训练种子波动，不覆盖缺失起点重复抽样的不确定性。",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "paragraph",
+    "text": "曲线中的局部非单调变化予以保留。移除信息后某一分类指标小幅上升并不自动构成错误，也不等于缺失有益；可能涉及错误边界变化、被移除的噪声与有限样本波动。本文以所有预定场景和两个任务的联合结果判断鲁棒性，不仅选择符合预期的曲线。",
+    "_origin": "r3",
+    "_source_index": 74
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "text": "缺失位置与片段形状",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "paragraph",
+    "text": "固定文本缺失比例50%时，前部、中部、后部的Macro-F1分别为0.5586、0.5313、0.5152。该模型在这一固定划分和实现下对后部缺失更敏感；位置以有效特征顺序定义，没有依据将其解释为特定秒数、情绪转折或结尾词的因果作用。补充热图保留全部36类场景和不利结果。",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "paragraph",
+    "text": "下列片段形状比较的差值均为多个短片段减单长片段。当前模型文本缺失10%和30%时，多段F1较高但MAE也略高；50%时多段F1反而较低而MAE略低。不同评价任务的变化并不一致，不能得出多段缺失普遍更容易或更困难的结论。此处使用第四轮预测，不沿用第三轮方向不同的历史结果。",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "paragraph",
+    "text": "名义比例10%、30%、50%对应的样本平均实际位置比例依次为11.20%、30.74%、51.64%。差异源于按有效长度取整及至少移除一个位置；若所选位置原已不可观测，新增信息损失少于所选位置数。这两类数量分别保留在实验档案中。",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "figure",
+    "key": "current_missing_shapes",
+    "path": "../figures/current_missing_shapes.png",
+    "caption": "图6 第四轮最终模型种子42在官方验证集728条样本的36类补充缺失场景。数值为相对同模型完整输入的变化；上排ΔMacro-F1越负越差，下排ΔMAE越正越差。同一指标共用色标，位置比例不是时间。",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "table",
+    "key": "current_shapes",
+    "caption": "表11 同等比例下多个短片段相对单长片段",
+    "header": [
+      "模态",
+      "比例",
+      "单段F1",
+      "多段F1",
+      "ΔF1",
+      "ΔMAE"
+    ],
+    "rows": [
+      [
+        "文本",
+        "10%",
+        "0.5936",
+        "0.5979",
+        "+0.0043",
+        "+0.0012"
+      ],
+      [
+        "文本",
+        "30%",
+        "0.5643",
+        "0.5823",
+        "+0.0180",
+        "+0.0043"
+      ],
+      [
+        "文本",
+        "50%",
+        "0.5515",
+        "0.5277",
+        "-0.0237",
+        "-0.0013"
+      ],
+      [
+        "语音",
+        "10%",
+        "0.6085",
+        "0.6162",
+        "+0.0077",
+        "+0.0009"
+      ],
+      [
+        "语音",
+        "30%",
+        "0.6160",
+        "0.6129",
+        "-0.0030",
+        "+0.0012"
+      ],
+      [
+        "语音",
+        "50%",
+        "0.6227",
+        "0.6112",
+        "-0.0115",
+        "+0.0016"
+      ],
+      [
+        "视觉",
+        "10%",
+        "0.6178",
+        "0.6161",
+        "-0.0017",
+        "+0.0004"
+      ],
+      [
+        "视觉",
+        "30%",
+        "0.6158",
+        "0.6152",
+        "-0.0006",
+        "+0.0017"
+      ],
+      [
+        "视觉",
+        "50%",
+        "0.6202",
+        "0.6112",
+        "-0.0090",
+        "+0.0003"
+      ]
+    ],
+    "widths": [
+      0.13,
+      0.12,
+      0.19,
+      0.19,
+      0.19,
+      0.18
+    ],
+    "_origin": "new",
+    "_source_index": null,
+    "keep_together": true
+  },
+  {
+    "type": "heading",
+    "level": 1,
+    "text": "7 分类错误与回归诊断",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "figure",
+    "path": "../figures/r4_r4_03_confusion.png",
+    "caption": "图7 固定种子42的完整官方验证集混淆矩阵，两个模型均使用相同728条样本。格内同时给出计数与真实类别内比例，两图使用共同色标。",
+    "_origin": "r4",
+    "_source_index": 38
+  },
+  {
+    "type": "table",
+    "caption": "表12 类别权衡的补充分组Bootstrap诊断",
+    "header": [
+      "指标",
+      "第三轮",
+      "第四轮",
+      "差值及95%区间"
+    ],
+    "rows": [
+      [
+        "accuracy",
+        "0.6332",
+        "0.6209",
+        "-0.0124 [-0.0427, +0.0176]"
+      ],
+      [
+        "negative_f1",
+        "0.6650",
+        "0.6750",
+        "+0.0100 [-0.0083, +0.0300]"
+      ],
+      [
+        "neutral_f1",
+        "0.3810",
+        "0.4810",
+        "+0.1000 [+0.0395, +0.1617]"
+      ],
+      [
+        "positive_f1",
+        "0.7231",
+        "0.6792",
+        "-0.0439 [-0.0806, -0.0108]"
+      ]
+    ],
+    "widths": [
+      0.25,
+      0.15,
+      0.15,
+      0.45
+    ],
+    "_origin": "r4",
+    "_source_index": 39,
+    "keep_together": true
+  },
+  {
+    "type": "paragraph",
+    "text": "类别权重改变了不同类别之间的错误代价，不能将宏平均F1提升表述为全面胜出。种子42的结果显示，中性识别改善伴随正向类别F1和整体Accuracy下降；表7保留其余种子的同类指标，表12同时报告全部类别与Accuracy，避免只展示有利类别。这些区间属于固定模型的次级描述分析，未用于选择，也未作多重比较校正。",
+    "_origin": "r4",
+    "_source_index": 40
+  },
+  {
+    "type": "paragraph",
+    "text": "三分类与强度回归是不同损失下的两个输出。若将所有非零回归值直接按符号分为正负，而只有精确零对应中性，则预测为中性的样本几乎都会被计入“类别与回归不一致”。这一严格定义容易把接近零的正常连续输出混入真正的正负方向冲突。因此，应分解统计，而不能把总不一致率直接称为模型自相矛盾率。",
+    "_origin": "r4",
+    "_source_index": 41
+  },
+  {
+    "type": "table",
+    "caption": "表13 完整验证集的严格符号不一致分解",
+    "header": [
+      "模型",
+      "总不一致",
+      "中性类且回归非零",
+      "非中性正负相反",
+      "非中性且回归为零"
+    ],
+    "rows": [
+      [
+        "第三轮",
+        "140",
+        "131",
+        "9",
+        "0"
+      ],
+      [
+        "最终冻结模型",
+        "249",
+        "236",
+        "13",
+        "0"
+      ]
+    ],
+    "widths": [
+      0.18,
+      0.16,
+      0.25,
+      0.23,
+      0.18
+    ],
+    "_origin": "r4",
+    "_source_index": 42,
+    "keep_together": true
+  },
+  {
+    "type": "paragraph",
+    "text": "该分解仅用于解释现有诊断指标，没有据官方验证重新设定回归阈值或改写预测。中性类别的精确率、召回率和F1仍按官方离散标签计算，强度误差仍按原连续标签计算。模型没有承诺两个任务在每条样本上满足确定性的符号约束。",
+    "_origin": "r4",
+    "_source_index": 43
+  },
+  {
+    "type": "paragraph",
+    "text": "当前种子42模型中，中性样本184条，正确识别101条，误判负向29条、正向54条。该计数对应第四轮完整输入结果，不能与第三轮混淆矩阵混用。",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "table",
+    "key": "current_cases",
+    "caption": "表14 按固定规则选取的当前模型验证案例",
+    "header": [
+      "样本标识",
+      "选取规则",
+      "真类→预测",
+      "真实强度",
+      "预测强度"
+    ],
+    "rows": [
+      [
+        "266791$_$23",
+        "错误最大MAE",
+        "0→2",
+        "-2.6667",
+        "0.3074"
+      ],
+      [
+        "Baz0VVQ-E9E$_$10",
+        "正确中位MAE",
+        "0→0",
+        "-0.3333",
+        "-0.8299"
+      ],
+      [
+        "x2lOwQaAn4g$_$4",
+        "错误最大MAE",
+        "1→2",
+        "0.0000",
+        "1.8270"
+      ],
+      [
+        "KDjl2exStlI$_$4",
+        "正确中位MAE",
+        "1→1",
+        "0.0000",
+        "0.1902"
+      ],
+      [
+        "f_ZJ7L14oYQ$_$21",
+        "错误最大MAE",
+        "2→0",
+        "2.0000",
+        "-1.8048"
+      ],
+      [
+        "rojyUp4FPSg$_$12",
+        "正确中位MAE",
+        "2→2",
+        "0.6667",
+        "1.0691"
+      ]
+    ],
+    "widths": [
+      0.3,
+      0.24,
+      0.16,
+      0.15,
+      0.15
+    ],
+    "_origin": "new",
+    "_source_index": null,
+    "keep_together": true
+  },
+  {
+    "type": "paragraph",
+    "text": "案例按每个真实类别分别选择最大MAE的误分类样本与MAE居中的分类正确样本。分类正确不代表强度误差小；反之，轻微跨越零点的预测也可能造成极性错误。此处只根据已有数值证据讨论错误类型，不在缺乏原始视频核查时断言讽刺、语气、否定范围或特定面部表情是原因。",
+    "_origin": "r3",
+    "_source_index": 88
+  },
+  {
+    "type": "figure",
+    "key": "current_regression",
+    "path": "../figures/current_regression.png",
+    "caption": "图8 第四轮最终模型种子42的完整官方验证集回归诊断，n=728。左图为实际二维计数，虚线为理想预测；右图为各真实类别的残差箱线图，保留离群点。箱体表示第25至75百分位，线为中位数，须线采用1.5倍四分位距规则，不是置信区间。",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "heading",
+    "level": 1,
+    "text": "8 后续优化的负面证据",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "paragraph",
+    "text": "为减少第四轮的类别性能代价，第五轮预定检验延后启用权重，第六轮预定检验两个固定概率融合比例。两轮均要求相对第四轮平均S和正向F1严格提高，完整Macro-F1下降不超过0.01、MAE增加不超过0.03、Accuracy下降不超过0.005、中性F1下降不超过0.01，并要求至少两折改善S；确认还要求至少两个配对种子与均值均通过。",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "paragraph",
+    "text": "延后加权借鉴Cao等的分阶段思想[8]，但保持交叉熵、逆频率权重和原学习率计划，不采用LDAM损失，也不宣称复现其完整算法。前1轮不加权方案完成三折；前2轮方案因检查点保存中断而没有完整折结果，原预算结束后以中断状态关闭，不将故障推断为策略无效。",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "table",
+    "key": "defer",
+    "caption": "表15 前1轮延后加权的内部结果差值",
+    "header": [
+      "比较",
+      "ΔS",
+      "Δ完整F1",
+      "ΔMAE",
+      "ΔAccuracy",
+      "Δ正向F1",
+      "提高S折数"
+    ],
+    "rows": [
+      [
+        "延后1轮−立即",
+        "-0.000747",
+        "-0.002755",
+        "-0.003555",
+        "-0.005033",
+        "-0.005831",
+        "1/3"
+      ]
+    ],
+    "widths": [
+      0.16,
+      0.14,
+      0.14,
+      0.14,
+      0.14,
+      0.14,
+      0.14
+    ],
+    "_origin": "new",
+    "_source_index": null,
+    "keep_together": true
+  },
+  {
+    "type": "paragraph",
+    "text": "前1轮延后方案未通过内部筛选，没有开展官方验证确认。其回归误差略低伴随分类表现下降；前2轮未完成方案不进入均值或排名。该分支未产生正式替代模型。",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "paragraph",
+    "text": "第六轮将相同折或种子的第三轮与第四轮分类概率、回归输出作同一固定权重的凸组合，第四轮占比预先限定为0.90或0.75。不拟合融合器、温度或阈值，也不重新训练组件。两个比例均通过内部三折筛选，仅内部均值S较高的90/10进入官方验证确认。",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "table",
+    "key": "blend",
+    "caption": "表16 90比10固定融合相对第四轮的官方验证确认",
+    "header": [
+      "种子",
+      "ΔS",
+      "Δ完整F1",
+      "ΔMAE",
+      "Δ中性F1",
+      "Δ正向F1",
+      "全部条件"
+    ],
+    "rows": [
+      [
+        "42",
+        "-0.000504",
+        "+0.005207",
+        "-0.000031",
+        "+0.001974",
+        "+0.015328",
+        "未通过"
+      ],
+      [
+        "2026",
+        "-0.000871",
+        "-0.003229",
+        "-0.000736",
+        "-0.015129",
+        "+0.005442",
+        "未通过"
+      ],
+      [
+        "3407",
+        "+0.000844",
+        "+0.003158",
+        "+0.000103",
+        "+0.003473",
+        "+0.006001",
+        "通过"
+      ],
+      [
+        "均值",
+        "-0.000177",
+        "+0.001712",
+        "-0.000222",
+        "-0.003227",
+        "+0.008924",
+        "未通过"
+      ]
+    ],
+    "widths": [
+      0.12,
+      0.15,
+      0.15,
+      0.15,
+      0.15,
+      0.15,
+      0.13
+    ],
+    "_origin": "new",
+    "_source_index": null,
+    "keep_together": true
+  },
+  {
+    "type": "paragraph",
+    "text": "90/10只有1/3配对种子通过全部条件，平均S也下降，因此不替换第四轮。确认后没有再对未选中的75/25使用官方验证，也没有放宽条件。内部小幅收益未能稳定保持，属于有限搜索下的负面实证；不能推广为所有融合方法无效。两组件和官方验证均已被使用多轮，确认不是独立盲测。",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "heading",
+    "level": 1,
+    "text": "9 专项预测与模型复杂度",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "table",
+    "caption": "算法2 附件3统一推理",
+    "header": [
+      "步骤",
+      "操作"
+    ],
+    "rows": [
+      [
+        "1",
+        "按文件名排序读取全部PKL；以文件名和文件内序号构造稳定样本标识。"
+      ],
+      [
+        "2",
+        "执行与训练相同的整数性、形状、有限性和掩码规则检查。"
+      ],
+      [
+        "3",
+        "加载冻结的训练集标准化参数及FP32模型；不在线下载或调用教师。"
+      ],
+      [
+        "4",
+        "按统一接口输出类别、强度和三类概率；核对30条覆盖率与唯一性。"
+      ],
+      [
+        "5",
+        "重载、单条与批量、CPU与GPU结果对照；保存校验记录和摘要。"
+      ]
+    ],
+    "widths": [
+      0.08,
+      0.92
+    ],
+    "_origin": "r3",
+    "_source_index": 90,
+    "keep_together": true
+  },
+  {
+    "type": "table",
+    "key": "current_special",
+    "caption": "表17 附件3全部30条当前模型预测",
+    "header": [
+      "文件编号",
+      "预测类别",
+      "情感强度",
+      "最大类概率"
+    ],
+    "rows": [
+      [
+        "附件3_01",
+        "负向",
+        "-0.9664",
+        "0.9351"
+      ],
+      [
+        "附件3_02",
+        "中性",
+        "-0.0240",
+        "0.8249"
+      ],
+      [
+        "附件3_03",
+        "中性",
+        "0.2880",
+        "0.6327"
+      ],
+      [
+        "附件3_04",
+        "中性",
+        "0.4002",
+        "0.5492"
+      ],
+      [
+        "附件3_05",
+        "负向",
+        "-1.4878",
+        "0.9620"
+      ],
+      [
+        "附件3_06",
+        "正向",
+        "0.7274",
+        "0.7612"
+      ],
+      [
+        "附件3_07",
+        "中性",
+        "0.3212",
+        "0.4591"
+      ],
+      [
+        "附件3_08",
+        "负向",
+        "-0.1221",
+        "0.4424"
+      ],
+      [
+        "附件3_09",
+        "正向",
+        "1.1522",
+        "0.9127"
+      ],
+      [
+        "附件3_10",
+        "中性",
+        "-0.0761",
+        "0.8693"
+      ],
+      [
+        "附件3_11",
+        "正向",
+        "0.4640",
+        "0.5397"
+      ],
+      [
+        "附件3_12",
+        "正向",
+        "0.4631",
+        "0.4775"
+      ],
+      [
+        "附件3_13",
+        "正向",
+        "0.3951",
+        "0.5546"
+      ],
+      [
+        "附件3_14",
+        "负向",
+        "-0.8660",
+        "0.9331"
+      ],
+      [
+        "附件3_15",
+        "正向",
+        "0.4315",
+        "0.6484"
+      ],
+      [
+        "附件3_16",
+        "正向",
+        "1.4899",
+        "0.9466"
+      ],
+      [
+        "附件3_17",
+        "中性",
+        "0.2033",
+        "0.6264"
+      ],
+      [
+        "附件3_18",
+        "中性",
+        "0.4165",
+        "0.5085"
+      ],
+      [
+        "附件3_19",
+        "中性",
+        "-0.0275",
+        "0.4710"
+      ],
+      [
+        "附件3_20",
+        "中性",
+        "0.0469",
+        "0.7418"
+      ],
+      [
+        "附件3_21",
+        "正向",
+        "0.3067",
+        "0.5091"
+      ],
+      [
+        "附件3_22",
+        "正向",
+        "0.4599",
+        "0.5061"
+      ],
+      [
+        "附件3_23",
+        "中性",
+        "0.2963",
+        "0.6255"
+      ],
+      [
+        "附件3_24",
+        "负向",
+        "-0.1566",
+        "0.4829"
+      ],
+      [
+        "附件3_25",
+        "中性",
+        "0.3507",
+        "0.7080"
+      ],
+      [
+        "附件3_26",
+        "正向",
+        "0.6527",
+        "0.7230"
+      ],
+      [
+        "附件3_27",
+        "正向",
+        "0.4871",
+        "0.5590"
+      ],
+      [
+        "附件3_28",
+        "中性",
+        "0.4902",
+        "0.5805"
+      ],
+      [
+        "附件3_29",
+        "正向",
+        "0.6848",
+        "0.6238"
+      ],
+      [
+        "附件3_30",
+        "中性",
+        "0.3920",
+        "0.7424"
+      ]
+    ],
+    "widths": [
+      0.34,
+      0.2,
+      0.23,
+      0.23
+    ],
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "paragraph",
+    "text": "专项CSV保留sample_id、scenario、class_id、sentiment、intensity和三类概率，表内数值为显示而舍入，CSV保留原计算精度。稳定标识使用文件名和文件内序号，不能伪装为原始视频ID。附件3没有标签，其预测分布不用于调参，最大类概率也不是已校准的置信度。",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "paragraph",
+    "text": "设序列长T、隐宽d、前馈宽d_ff、层数L。忽略常数与批量因子，文本编码主要计算量为O(L(Td²+T²d+Td·d_ff))；标准注意力实现保存的注意力矩阵规模为O(LhT²)。词表嵌入参数量为Vd，完整词表增加嵌入存储及优化器状态，但不直接增加长度为T的注意力矩阵规模。音视频汇总计算量分别为O(T·74)与O(T·35)，相对于文本编码较小。",
+    "_origin": "r3",
+    "_source_index": 94
+  },
+  {
+    "type": "paragraph",
+    "text": "第三轮取消文件体积筛选，仅保存FP32研究模型，不据权重压缩推断速度或显存收益。实际耗时受显卡共享占用、批量和数据加载影响，日志中的进程累计峰值不能归因于单一模型。本阶段未开展统一硬件隔离条件下的效率基准，因此不作推理加速结论。",
+    "_origin": "r3",
+    "_source_index": 95
+  },
+  {
+    "type": "heading",
+    "level": 1,
+    "text": "10 结论与适用边界",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "paragraph",
+    "text": "本研究建立了与赛题对齐特征接口一致的局部缺失多任务预测流程。预训练模型、加权交叉熵与Huber损失均为已有方法；任务适配主要体现在编码前移除缺失信息、有效位置与观测状态分离、仅拟合训练集预处理统计量，以及固定场景和视频分组下的配对评价。没有提出新的预训练理论或证明最优性。",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "paragraph",
+    "text": "正式选择的第四轮模型较不加权参照提高中性识别与宏平均分类性能，同时承担Accuracy和正向F1下降的代价。固定模型Bootstrap的总体F1差区间跨零，因此不能称为所有指标显著提升。缺失形状的影响依赖具体模型、模态、比例与任务；连续缺失增强、延后加权和概率融合的未获收益结果均完整保留。",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "paragraph",
+    "text": "模型仍有四项重要局限。第一，音视频均值表示忽略细粒度时序，文本缺失较重时可能难以充分补偿。第二，主要场景一次只移除一个模态，尚未系统覆盖多模态同步局部故障。第三，模拟机制是预定位置遮蔽，不代表真实噪声、分布偏移和设备故障的全部形式。第四，样本规模与重复使用验证集限制了泛化证据强度。三种子改善不能保证未知专项样本或比赛排名。",
+    "_origin": "r3",
+    "_source_index": 96
+  },
+  {
+    "type": "paragraph",
+    "text": "当前正式输出固定来自第四轮种子42模型，而三种子均值用于描述方案稳定性；不能将均值误写为某一部署模型的实际输出指标。附件3全量预测及复现校验已形成记录，真实缺失分布下的效果仍需独立数据评价。问题3要求的音视频原因解释不属于本文数值结果能够证明的范围。",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "heading",
+    "level": 1,
+    "text": "附录A 蒸馏对照与训练诊断",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "paragraph",
+    "text": "第二轮基准抽取预训练BERT第0和第11层构成两层文本编码器，其他汇总与融合结构保持一致。教师为相同拟合子集训练的12层模型；教师和学生接收完全相同的缺失输入，防止教师利用完整文本绕过缺失条件。蒸馏思想参考[4,5]，本实现只使用类别分布、回归输出与最终文本池化表示，不宣称复现逐层Patient Knowledge Distillation。",
+    "_origin": "r3",
+    "_source_index": 107
+  },
+  {
+    "type": "equation",
+    "number": 18,
+    "latex": "\\mathcal L={1\\over N}\\sum_{i=1}^N[-\\log p_{i,c_i}+H_1(\\hat y_i-y_i)]",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mi>ℒ</mi><mo>=</mo><mfrac><mn>1</mn><mi>N</mi></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mo>[</mo><mo>−</mo><mi>log</mi><msub><mi>p</mi><mi>i,cᵢ</mi></msub><mo>+</mo><msub><mi>H</mi><mi>1</mi></msub><mrow><mo>(</mo><msub><mover accent=\"true\"><mi>y</mi><mo>^</mo></mover><mi>i</mi></msub><mo>−</mo><msub><mi>y</mi><mi>i</mi></msub><mo>)</mo></mrow><mo>]</mo></mrow></math>",
+    "_origin": "r3",
+    "_source_index": 42,
+    "key": "unweighted_base"
+  },
+  {
+    "type": "equation",
+    "number": 19,
+    "latex": "\\mathcal L_{student}=\\mathcal L+0.5T_d^2D_{KL}(p_T^{(T_d)}\\Vert p_S^{(T_d)})+0.25\\mathcal L_{reg}+0.1\\mathcal L_{feat}",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msub><mi>ℒ</mi><mi>student</mi></msub><mo>=</mo><mi>ℒ</mi><mo>+</mo><mn>0.5</mn><msubsup><mi>T</mi><mi>d</mi><mn>2</mn></msubsup><msub><mi>D</mi><mi>KL</mi></msub><mrow><mo>(</mo><msubsup><mi>p</mi><mi>T</mi><mi>(Td)</mi></msubsup><mo>∥</mo><msubsup><mi>p</mi><mi>S</mi><mi>(Td)</mi></msubsup><mo>)</mo></mrow><mo>+</mo><mn>0.25</mn><msub><mi>ℒ</mi><mi>reg</mi></msub><mo>+</mo><mn>0.1</mn><msub><mi>ℒ</mi><mi>feat</mi></msub></mrow></math>",
+    "_origin": "r3",
+    "_source_index": 108
+  },
+  {
+    "type": "paragraph",
+    "text": "附录中的基础损失是未加权交叉熵加Huber，不能用正文当前模型的加权损失替代第二轮实际目标。蒸馏温度T_d=2，KL按类别求和后对样本平均；回归蒸馏为教师与学生强度均方差，特征项为768维池化表示经无仿射LayerNorm后的均方差。教师停止梯度。该基准正式训练7轮，与当前固定4轮方案的差异属于完整配方比较。",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "figure",
+    "key": "current_learning",
+    "path": "../figures/current_learning.png",
+    "caption": "图9 第四轮逆频率加权方案的内部三折学习曲线。左图为日志中的训练损失，右图为九类固定缺失场景选择分数；各点来自实际运行轮次。三条曲线代表不同视频分组折，不是三个独立随机种子。",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "paragraph",
+    "text": "训练损失持续下降而内部选择分数可能波动或回落，因此训练轮数由预定验证规则确定，不以最后一轮训练损失最小作为模型最好证据。微批量梯度等价性、空输入有限性和检查点保存保护均有自动测试；这类工程检查证明实现约束，不直接证明预测能力。",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "heading",
+    "level": 1,
+    "text": "附录B 冻结后的描述性测试",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "table",
+    "caption": "表18 冻结后的完整测试集描述性结果",
+    "header": [
+      "模型",
+      "Accuracy",
+      "Macro-F1",
+      "MAE",
+      "Pearson"
+    ],
+    "rows": [
+      [
+        "第三轮",
+        "0.6988",
+        "0.6321",
+        "0.6130",
+        "0.7064"
+      ],
+      [
+        "第四轮",
+        "0.6933",
+        "0.6701",
+        "0.6133",
+        "0.7073"
+      ]
+    ],
+    "widths": [
+      0.24,
+      0.19,
+      0.19,
+      0.19,
+      0.19
+    ],
+    "_origin": "r4",
+    "_source_index": 51,
+    "keep_together": true
+  },
+  {
+    "type": "paragraph",
+    "text": "表18使用727条测试样本，仅在第四轮冻结后计算，不参与权重强度、训练轮数或种子选择。该划分在此前研究中已经被观察，不是未触碰留出集的无偏评价；不能用表18替代内部开发与官方验证确认的完整说明。",
+    "_origin": "r4",
+    "_source_index": 52
+  },
+  {
+    "type": "heading",
+    "level": 1,
+    "text": "附录C 复现与来源",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "paragraph",
+    "text": "实验在WSL2 Ubuntu 22.04及RTX 5070上完成。核心环境为Python 3.10.18、PyTorch 2.8.0+CUDA 12.8、NumPy 2.2.6、scikit-learn 1.7.2。原始题目数据未修改，预训练权重来源与SHA256、数据划分、种子、参数、逐轮日志和冻结摘要均保存。推理只需冻结模型、标准化参数与三模态输入，不依赖教师或网络连接。",
+    "_origin": "r3",
+    "_source_index": 116
+  },
+  {
+    "type": "paragraph",
+    "text": "固定种子42的配方重训得到与冻结模型逐项相同的217个参数张量，最大绝对差为0.0。该结果是本机同环境复现证据，不承诺跨设备或跨数值库版本逐位一致。完整模型、标准化参数和附件3预测分别保存在final/model.pt、final/scaler.npz与final/attachment3_predictions.csv。",
+    "_origin": "r4",
+    "_source_index": 53
+  },
+  {
+    "type": "paragraph",
+    "text": "第四轮冻结模型SHA256为56c8e2267dfa31f29929af9c68940d169ebe7fac3f1020cd05d697db0ea86e2e。推理加载对应的model.pt与scaler.npz，不依赖在线下载或教师。第五轮原始记录与残缺检查点保留，后续保存器改造及复现作为单独工程证据，不将其写成原故障原因已经查明。",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "paragraph",
+    "text": "本文表格与图形由已冻结逐样本预测、开发记录和确认记录生成。第三轮结构定义、历史消融、第四轮当前成绩、第五六轮负面研究在来源清单中分别标识；表号、图号与公式号在本文范围内连续编号。正式参赛前仍需与整队总稿统一格式、摘要和附件限制。",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "heading",
+    "level": 1,
+    "text": "参考文献",
+    "_origin": "new",
+    "_source_index": null
+  },
+  {
+    "type": "paragraph",
+    "text": "[1] Devlin J, Chang M W, Lee K, Toutanova K. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding[C]. NAACL-HLT, 2019: 4171–4186. DOI: 10.18653/v1/N19-1423. https://aclanthology.org/N19-1423/",
+    "_origin": "r3",
+    "_source_index": 101
+  },
+  {
+    "type": "paragraph",
+    "text": "[2] Google. bert-base-uncased model card[EB/OL]. https://huggingface.co/google-bert/bert-base-uncased. 使用本地固定快照86b5e0934494bd15c9632b12f734a8a67f723594，Apache-2.0许可，访问核验日期2026-09-24。",
+    "_origin": "r3",
+    "_source_index": 102
+  },
+  {
+    "type": "paragraph",
+    "text": "[3] Loshchilov I, Hutter F. Decoupled Weight Decay Regularization[C]. ICLR, 2019. https://arxiv.org/abs/1711.05101.",
+    "_origin": "r3",
+    "_source_index": 103
+  },
+  {
+    "type": "paragraph",
+    "text": "[4] Hinton G, Vinyals O, Dean J. Distilling the Knowledge in a Neural Network[EB/OL]. arXiv:1503.02531, 2015. https://arxiv.org/abs/1503.02531.",
+    "_origin": "r3",
+    "_source_index": 104
+  },
+  {
+    "type": "paragraph",
+    "text": "[5] Sun S, Cheng Y, Gan Z, Liu J. Patient Knowledge Distillation for BERT Model Compression[C]. EMNLP-IJCNLP, 2019: 4323–4332. DOI: 10.18653/v1/D19-1441. https://aclanthology.org/D19-1441/",
+    "_origin": "r3",
+    "_source_index": 105
+  },
+  {
+    "type": "paragraph",
+    "text": "[6] scikit-learn developers. compute_class_weight, scikit-learn 1.7.2 documentation[EB/OL]. https://scikit-learn.org/1.7/modules/generated/sklearn.utils.class_weight.compute_class_weight.html，访问日期2026-09-25。",
+    "_origin": "r4",
+    "_source_index": 56
+  },
+  {
+    "type": "paragraph",
+    "text": "[7] PyTorch contributors. CrossEntropyLoss, PyTorch 2.8 documentation[EB/OL]. https://docs.pytorch.org/docs/2.8/generated/torch.nn.CrossEntropyLoss.html，访问日期2026-09-25。",
+    "_origin": "r4",
+    "_source_index": 57
+  },
+  {
+    "type": "paragraph",
+    "text": "[8] Cao K, Wei C, Gaidon A, Arechiga N, Ma T. Learning Imbalanced Datasets with Label-Distribution-Aware Margin Loss[C]. Advances in Neural Information Processing Systems 32, 2019. https://papers.neurips.cc/paper_files/paper/2019/hash/621461af90cadfdaf0e8d4cc25129f91-Abstract.html",
+    "_origin": "new",
+    "_source_index": null
+  }
+]

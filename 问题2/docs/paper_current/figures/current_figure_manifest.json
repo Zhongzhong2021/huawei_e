@@ -1,0 +1,44 @@
+[
+  {
+    "id": "current_missing_shapes",
+    "caption": "第四轮最终模型种子42在官方验证集728条样本的36类补充缺失场景。数值为相对同模型完整输入的变化；上排ΔMacro-F1越负越差，下排ΔMAE越正越差。同一指标共用色标，位置比例不是时间。",
+    "model_sha256": "56c8e2267dfa31f29929af9c68940d169ebe7fac3f1020cd05d697db0ea86e2e",
+    "source": "analysis/current_evidence.json",
+    "source_sha256": "5c3e240e32f0205050f9321aae3e13bbdead4274a4a62fe6884d99ad5fec1659",
+    "script_sha256": "275e3ba221934a64e26bb71340361a561f6de31de61b2d3dacef1f304f4eb535",
+    "formats": [
+      "svg",
+      "pdf",
+      "png"
+    ],
+    "png_dpi": 600
+  },
+  {
+    "id": "current_regression",
+    "caption": "第四轮最终模型种子42的完整官方验证集回归诊断，n=728。左图为实际二维计数，虚线为理想预测；右图为各真实类别的残差箱线图，保留离群点。箱体表示第25至75百分位，线为中位数，须线采用1.5倍四分位距规则，不是置信区间。",
+    "model_sha256": "56c8e2267dfa31f29929af9c68940d169ebe7fac3f1020cd05d697db0ea86e2e",
+    "source": "analysis/current_evidence.json",
+    "source_sha256": "5c3e240e32f0205050f9321aae3e13bbdead4274a4a62fe6884d99ad5fec1659",
+    "script_sha256": "275e3ba221934a64e26bb71340361a561f6de31de61b2d3dacef1f304f4eb535",
+    "formats": [
+      "svg",
+      "pdf",
+      "png"
+    ],
+    "png_dpi": 600
+  },
+  {
+    "id": "current_learning",
+    "caption": "第四轮逆频率加权方案的内部三折学习曲线。左图为日志中的训练损失，右图为九类固定缺失场景选择分数；各点来自实际运行轮次。三条曲线代表不同视频分组折，不是三个独立随机种子。",
+    "model_sha256": "56c8e2267dfa31f29929af9c68940d169ebe7fac3f1020cd05d697db0ea86e2e",
+    "source": "analysis/current_evidence.json",
+    "source_sha256": "5c3e240e32f0205050f9321aae3e13bbdead4274a4a62fe6884d99ad5fec1659",
+    "script_sha256": "275e3ba221934a64e26bb71340361a561f6de31de61b2d3dacef1f304f4eb535",
+    "formats": [
+      "svg",
+      "pdf",
+      "png"
+    ],
+    "png_dpi": 600
+  }
+]

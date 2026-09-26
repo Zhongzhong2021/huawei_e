@@ -14,16 +14,16 @@ def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def main(root, qa, reviewed):
+def main(root, qa, reviewed, pdf_name='round5.pdf', page_padding=0):
     reports = root/'reports'
     docx, = reports.glob('*.docx')
     md = docx.with_suffix('.md')
     content, = reports.glob('*_content.json')
     blocks = json.loads(content.read_text(encoding='utf-8'))
     doc = Document(docx)
-    pages = len(PdfReader(qa/'round5.pdf').pages)
+    pages = len(PdfReader(qa/pdf_name).pages)
     assert reviewed == list(range(1, pages+1)), 'Every page must be visually reviewed'
-    images = [qa/f'page-{page}.png' for page in reviewed]
+    images = [qa/f'page-{page:0{page_padding}d}.png' for page in reviewed]
     assert all(p.exists() for p in images)
     text = [p.text for p in doc.paragraphs]
     for block in blocks:
@@ -39,6 +39,7 @@ def main(root, qa, reviewed):
     markdown = md.read_text(encoding='utf-8')
     for eq in equations:
         assert eq['latex'] in markdown
+    assert [eq['number'] for eq in equations] == list(range(1, len(equations)+1))
     figures = [b for b in blocks if b['type'] == 'figure']
     assert len(figures) == len(doc.inline_shapes)
     for fig in figures:
@@ -54,7 +55,7 @@ def main(root, qa, reviewed):
               'table_cells_match_structured_source': True, 'paragraphs_match_structured_source': True,
               'editable_equations_and_captions_visually_checked': True,
               'render_method': 'Canonical render_docx.py failed: bundled soffice.exe unavailable; hidden read-only Word COM PDF export and bundled Poppler rasterization used',
-              'render_pdf_sha256': digest(qa/'round5.pdf'), 'page_png_sha256': {p.name: digest(p) for p in images}}
+              'render_pdf_sha256': digest(qa/pdf_name), 'page_png_sha256': {p.name: digest(p) for p in images}}
     output.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding='utf-8')
     print(json.dumps(report, ensure_ascii=False))
 
@@ -64,5 +65,7 @@ if __name__ == '__main__':
     p.add_argument('root', type=Path)
     p.add_argument('qa', type=Path)
     p.add_argument('--reviewed-pages', type=int, nargs='+', required=True)
+    p.add_argument('--pdf-name', default='round5.pdf')
+    p.add_argument('--page-padding', type=int, default=0)
     a = p.parse_args()
-    main(a.root, a.qa, a.reviewed_pages)
+    main(a.root, a.qa, a.reviewed_pages, a.pdf_name, a.page_padding)

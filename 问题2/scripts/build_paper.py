@@ -306,7 +306,7 @@ def build_docx(root,blocks):
                         e=OxmlElement('w:'+side);e.set(qn('w:w'),'65');e.set(qn('w:type'),'dxa');margins.append(e)
                     props.append(margins)
                     p=cell.paragraphs[0];p.paragraph_format.first_line_indent=Pt(0);p.paragraph_format.space_before=p.paragraph_format.space_after=Pt(2);p.paragraph_format.line_spacing=1.08
-                    p.paragraph_format.keep_with_next=i==0 or (len(data)<=8 and i<len(data)-1)
+                    p.paragraph_format.keep_with_next=i==0 or ((len(data)<=8 or b.get('keep_together')) and i<len(data)-1)
                     p.alignment=WD_ALIGN_PARAGRAPH.LEFT if j==0 or len(str(value))>26 else WD_ALIGN_PARAGRAPH.CENTER
                     run=p.add_run(str(value));run.bold=i==0;run.font.size=Pt(9)
             paragraph('').paragraph_format.space_after=Pt(1)

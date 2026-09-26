@@ -1,0 +1,20 @@
+{
+  "current_model_sha256": "56c8e2267dfa31f29929af9c68940d169ebe7fac3f1020cd05d697db0ea86e2e",
+  "model_changed": false,
+  "original_source_hashes_rechecked": 102,
+  "current_tables_verified": [
+    "current_main",
+    "current_shapes",
+    "current_cases",
+    "current_special",
+    "defer",
+    "blend",
+    "three_seed_headline"
+  ],
+  "historical_numeric_tables_preserved": true,
+  "sequential_numbering_verified": true,
+  "figure_sources_verified": true,
+  "manuscript_sha256": "b0bfb7bb87704a2e501c0ce7d1bf83b489244609bfbe4ccd757dcd7b0b8358ef",
+  "auditor_sha256": "444d76cda282bac30447a5679e3fed92b4f4c4a20c33c28aeb21b44504705ad8",
+  "note": "Publication audit; does not rerun model selection or infer new predictive improvement."
+}
