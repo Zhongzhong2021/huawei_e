@@ -1,0 +1,20 @@
+[
+  {
+    "source": "问题2/docs/paper_current/figures/r4_r4_03_confusion.svg",
+    "source_sha256": "b41e456d78c4f2f49bd6bb05b0257cae9a099a36abaed6f4973beb7ac0d4580d",
+    "svg": "assets/q2_confusion.svg",
+    "svg_sha256": "86e8315cc4006e70f24d45b666e8ff74ef683a8f34ebc8ace7eeac47f09cb0eb",
+    "pdf": "assets/q2_confusion.pdf",
+    "pdf_sha256": "d264d2bfdbf4527b44495c45c753c460f1935f4c712918abef6525bbe1d50f60",
+    "change": "round labels only; numeric text, paths and chart geometry preserved"
+  },
+  {
+    "source": "问题2/docs/paper_current/figures/r4_r4_04_missing.svg",
+    "source_sha256": "0a0d9e5c87bf076a277a9dfacedec711f5c43d6bf6c50c5e72e8f305e5b025be",
+    "svg": "assets/q2_missing.svg",
+    "svg_sha256": "56bb83df31bebbc374e06d7088dcfd749f0a29e2f84a6732a16340da6a884381",
+    "pdf": "assets/q2_missing.pdf",
+    "pdf_sha256": "ea4ce306fd5f8276b8eaf0065287ece46735ee53f9038fe20916df762531b398",
+    "change": "round labels only; numeric text, paths and chart geometry preserved"
+  }
+]

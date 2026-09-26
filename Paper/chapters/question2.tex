@@ -1,0 +1,1384 @@
+% Generated from Paper/manuscript; edit Markdown source.
+\section{问题二：局部缺失下的情感预测}
+\hypertarget{q2-ux95eeux9898ux5206ux6790ux4e0eux5efaux6a21ux5047ux8bbe}{%
+\subsection{问题分析与建模假设}\label{q2-ux95eeux9898ux5206ux6790ux4e0eux5efaux6a21ux5047ux8bbe}}
+
+本问在三模态局部连续区间不可用时，利用其余观测预测情感极性与强度，比较缺失模态、位置和长度对结果的影响。
+
+采用附件2与附件3的aligned\_50版本。对齐意味着不同模态以相同序列位置组织，不能据此认定各位置具有相同持续秒数。附件2未提供逐词时间戳，因此缺失长度以有效特征位置数及比例表述，以原特征索引保留位置。
+
+建模采用以下可检验假设。第一，字段内相同样本索引与相同对齐位置具有一致的组织含义。第二，依题意，有效区域内音视频整条特征向量为零表示不可观测，单个坐标为零仍是合法观测。第三，在未提供可靠时间戳的条件下，可用固定位置规则研究局部缺失敏感性，其结果用于解释所构造缺失模式的敏感性。第四，监督标签遵循负值、零值、正值分别对应负向、中性、正向的定义。
+
+尾部各模态同时为零且缺少分隔词元时，保留长度歧义标记。附件3对齐版的27条样本有131个未知词占位，对应音视位置同时全零、文本注意力为1；本文所列结果采用保留占位的固定输入口径，位置存在与词义可用状态分别记录。
+
+\hypertarget{q2-ux8f93ux5165ux7ec4ux7ec7ux4e0eux63a9ux7801}{%
+\subsection{输入组织与掩码}\label{q2-ux8f93ux5165ux7ec4ux7ec7ux4e0eux63a9ux7801}}
+
+训练数据包含text\_bert、audio、vision及标签。文本统一使用text\_bert中的词元编号；训练与专项推理保持相同输入接口。训练、验证与测试共4850条样本已完成本地BERT分词编号核验。附件3的text\_bert虽为浮点存储，读取时先验证数值有限且为整数，再转为整型编号。
+
+\begin{equation}
+X_i^a\in\mathbb{R}^{T\times74},\quad X_i^v\in\mathbb{R}^{T\times35},\quad T=50\label{q2-eq1}
+\end{equation}
+
+\begin{PaperTable}{3}
+
+\begin{longtable}[]{@{}lll@{}}
+\caption{主要符号与维度\label{q2-tab2}}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.28\columnwidth}\raggedright
+符号\strut
+\end{minipage} & \begin{minipage}[b]{0.35\columnwidth}\raggedright
+含义\strut
+\end{minipage} & \begin{minipage}[b]{0.28\columnwidth}\raggedright
+维度或范围\strut
+\end{minipage}\tabularnewline
+\midrule
+\endfirsthead
+\caption[]{主要符号与维度（续）}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.28\columnwidth}\raggedright
+符号\strut
+\end{minipage} & \begin{minipage}[b]{0.35\columnwidth}\raggedright
+含义\strut
+\end{minipage} & \begin{minipage}[b]{0.28\columnwidth}\raggedright
+维度或范围\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.28\columnwidth}\raggedright
+i，j，m\strut
+\end{minipage} & \begin{minipage}[t]{0.35\columnwidth}\raggedright
+样本、位置、模态索引\strut
+\end{minipage} & \begin{minipage}[t]{0.28\columnwidth}\raggedright
+m∈\{t,a,v\}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.28\columnwidth}\raggedright
+tᵢ\strut
+\end{minipage} & \begin{minipage}[t]{0.35\columnwidth}\raggedright
+文本词元编号\strut
+\end{minipage} & \begin{minipage}[t]{0.28\columnwidth}\raggedright
+50；编号0至30521\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.28\columnwidth}\raggedright
+Xᵢᵃ，Xᵢᵛ\strut
+\end{minipage} & \begin{minipage}[t]{0.35\columnwidth}\raggedright
+语音与视觉输入\strut
+\end{minipage} & \begin{minipage}[t]{0.28\columnwidth}\raggedright
+50×74，50×35\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.28\columnwidth}\raggedright
+vᵢⱼ\strut
+\end{minipage} & \begin{minipage}[t]{0.35\columnwidth}\raggedright
+有效位置标记\strut
+\end{minipage} & \begin{minipage}[t]{0.28\columnwidth}\raggedright
+0或1\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.28\columnwidth}\raggedright
+oᵢⱼᵐ，dᵢⱼᵐ\strut
+\end{minipage} & \begin{minipage}[t]{0.35\columnwidth}\raggedright
+原观测标记与人工缺失标记\strut
+\end{minipage} & \begin{minipage}[t]{0.28\columnwidth}\raggedright
+0或1\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.28\columnwidth}\raggedright
+õᵢⱼᵐ\strut
+\end{minipage} & \begin{minipage}[t]{0.35\columnwidth}\raggedright
+施加缺失后的可用标记\strut
+\end{minipage} & \begin{minipage}[t]{0.28\columnwidth}\raggedright
+0或1\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.28\columnwidth}\raggedright
+cᵢ，yᵢ\strut
+\end{minipage} & \begin{minipage}[t]{0.35\columnwidth}\raggedright
+极性标签与强度标签\strut
+\end{minipage} & \begin{minipage}[t]{0.28\columnwidth}\raggedright
+\{0,1,2\}；{[}−3,3{]}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.28\columnwidth}\raggedright
+pᵢ，ŷᵢ\strut
+\end{minipage} & \begin{minipage}[t]{0.35\columnwidth}\raggedright
+三类概率与预测强度\strut
+\end{minipage} & \begin{minipage}[t]{0.28\columnwidth}\raggedright
+概率单纯形；{[}−3,3{]}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.28\columnwidth}\raggedright
+hᵢᵗ，hᵢᵃ，hᵢᵛ\strut
+\end{minipage} & \begin{minipage}[t]{0.35\columnwidth}\raggedright
+三模态投影表示\strut
+\end{minipage} & \begin{minipage}[t]{0.28\columnwidth}\raggedright
+128，64，64\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.28\columnwidth}\raggedright
+aᵢ，zᵢ\strut
+\end{minipage} & \begin{minipage}[t]{0.35\columnwidth}\raggedright
+三模态可用比例与融合表示\strut
+\end{minipage} & \begin{minipage}[t]{0.28\columnwidth}\raggedright
+3，128\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\end{PaperTable}
+
+有效位置通过文本注意力、词元编号及音视频非零观测的并集确定可辨识边界，排除位置0与CLS、SEP特殊词元。区域内部连续全零仍保留其位置，而不压缩序列。观测掩码则分别判断文本注意力与编号有效性、音视频有限性和整向量全零情况。两类掩码分离，使填充、特殊词元与真实缺失具有不同语义。
+
+\begin{equation}
+\widetilde{o}_{ij}^{m}=v_{ij}o_{ij}^{m}(1-d_{ij}^{m})\label{q2-eq2}
+\end{equation}
+
+式\eqref{q2-eq2}中的d=1表示人工移除信息，õ=1表示模型实际可使用该模态位置。人工缺失操作在编码之前生效。原观测掩码在标准化前确定并保存，不能因为标准化后某些数值恰好为零而重新判为缺失。
+
+\hypertarget{q2-ux9c81ux68d2ux591aux6a21ux6001ux9884ux6d4bux6a21ux578b}{%
+\subsection{鲁棒多模态预测模型}\label{q2-ux9c81ux68d2ux591aux6a21ux6001ux9884ux6d4bux6a21ux578b}}
+
+\hypertarget{q2-ux8badux7ec3ux96c6ux7edfux8ba1ux91cfux4e0eux8f93ux5165ux5904ux7406}{%
+\subsubsection{训练集统计量与输入处理}\label{q2-ux8badux7ec3ux96c6ux7edfux8ba1ux91cfux4e0eux8f93ux5165ux5904ux7406}}
+
+不同模态的数值尺度差异会影响优化。我们仅使用当前拟合子集内可观测位置估计每个音视频坐标的均值与总体标准差；内部三折各自重新估计，官方完整训练后固定一份统计量用于验证、测试与附件3。
+
+\begin{equation}
+\mu_k^m={\sum_{i,j}o_{ij}^m x_{ijk}^m\over\sum_{i,j}o_{ij}^m}\label{q2-eq3}
+\end{equation}
+
+\begin{equation}
+\sigma_k^m=\max\left(\sqrt{{\sum_{i,j}o_{ij}^m(x_{ijk}^m-\mu_k^m)^2\over\sum_{i,j}o_{ij}^m}},10^{-5}\right)\label{q2-eq4}
+\end{equation}
+
+\begin{equation}
+\widetilde{x}_{ijk}^{m}=\widetilde{o}_{ij}^{m}\,\operatorname{clip}((x_{ijk}^{m}-\mu_k^m)/\sigma_k^m,-10,10)\label{q2-eq5}
+\end{equation}
+
+式\eqref{q2-eq3}与式\eqref{q2-eq4}的求和仅覆盖拟合子集，m取语音或视觉。标准差下界为10⁻⁵，标准化后固定裁剪至{[}−10,10{]}以限制极端数值的影响；该规则在实验前已固定，不依据验证结果改变。不可观测向量置零但另保留掩码，因此模型不会把占位零当成正常测量。
+
+\hypertarget{q2-ux7f16ux7801ux524dux5c4fux853dux4e0eux6587ux672cux4e0aux4e0bux6587ux8868ux793a}{%
+\subsubsection{编码前屏蔽与文本上下文表示}\label{q2-ux7f16ux7801ux524dux5c4fux853dux4e0eux6587ux672cux4e0aux4e0bux6587ux8868ux793a}}
+
+文本编码器采用bert-base-uncased通用预训练权重\cite{q2-ref1,q2-ref2}：12层、12个注意力头、768维隐状态和3072维前馈层，保留完整30522词表及前50个位置嵌入。词元、位置与segment嵌入经LayerNorm、dropout后送入Transformer。
+
+对于缺失的普通词元，先将编号置为占位值并从注意力键中屏蔽，再进行上下文编码；CLS与可辨认的SEP保留为结构边界，CLS位置始终开启以避免全屏蔽注意力的数值问题。汇总仅使用实际观测词元，特殊词元与缺失位置不进入均值。位置与边界信息作为结构输入保留。
+
+\begin{equation}
+\operatorname{Attn}(Q,K,V)=\operatorname{softmax}(QK^{\mathsf T}/\sqrt{64}+B)V\label{q2-eq6}
+\end{equation}
+
+式\eqref{q2-eq6}给出单个注意力头的核心计算。Q、K、V为线性投影，头宽为64；B在不可用键位置取−10000，其余位置取0。实现使用残差连接、后置LayerNorm和GELU前馈变换。对于缺失位置形成的查询隐状态，不在后续池化中采用，也不允许其作为有效键传递给其他位置。
+
+\begin{equation}
+\bar h_i^t={\sum_{j=1}^T\widetilde{o}_{ij}^t H_{ij}\over\max(1,\sum_{j=1}^T\widetilde{o}_{ij}^t)}\label{q2-eq7}
+\end{equation}
+
+H为最终文本隐状态。式\eqref{q2-eq7}的分母截为至少1避免空序列除零，池化结果经768→128线性层、LayerNorm与GELU；若文本完全不可用，投影后的表示再次乘以可用性指示，使其严格为零。文本完全不可用时，其投影向量严格置零。
+
+\hypertarget{q2-ux97f3ux89c6ux9891ux6c47ux603bux4e0eux591aux6a21ux6001ux878dux5408}{%
+\subsubsection{音视频汇总与多模态融合}\label{q2-ux97f3ux89c6ux9891ux6c47ux603bux4e0eux591aux6a21ux6001ux878dux5408}}
+
+\begin{equation}
+\bar x_i^m={\sum_{j=1}^T\widetilde{o}_{ij}^m\widetilde{x}_{ij}^m\over\max(1,\sum_{j=1}^T\widetilde{o}_{ij}^m)},\quad m\in\{a,v\}\label{q2-eq8}
+\end{equation}
+
+语音和视觉采用观测掩码均值汇总，再分别通过74→64与35→64的线性层、LayerNorm和GELU。均值编码在小样本条件下参数量较低、实现稳定，但不显式区分可见片段内部的细粒度顺序，该汇总保留可见片段的平均信息。完全缺失的模态输出置零。
+
+\begin{equation}
+a_i^m={\sum_j\widetilde{o}_{ij}^m\over\max(1,\sum_jv_{ij})},\quad z_i=\operatorname{GELU}(W_f[h_i^t;h_i^a;h_i^v;a_i]+b_f)\label{q2-eq9}
+\end{equation}
+
+式\eqref{q2-eq9}将128维文本、64维语音、64维视觉和3维可用比例拼接成259维向量，再映射为128维融合表示，训练dropout为0.2。可用比例向融合层提供各模态剩余观测量。
+
+\begin{equation}
+p_i=\operatorname{softmax}(W_cz_i+b_c),\quad\hat c_i=\arg\max_kp_{ik},\quad\hat y_i=3\tanh(w_r^{\mathsf T}z_i+b_r)\label{q2-eq10}
+\end{equation}
+
+\begin{figure}
+\centering
+\includegraphics{../问题2/docs/paper_current/figures/r3_fig01_architecture.pdf}
+\caption{模型结构与编码前缺失处理。长度50为特征位置上限，不代表50秒。融合输入包含三模态表示及可用比例。\label{q2-fig1}}
+\end{figure}
+
+分类头输出三类softmax概率，回归头通过3tanh限制强度范围。标签约定0、1、2分别为负向、中性、正向。两头共享融合表示但分别监督，因而可能出现类别与强度符号不一致；本文保存两个任务各自的输出。
+
+\hypertarget{q2-ux7c7bux522bux5e73ux8861ux76eeux6807ux51fdux6570}{%
+\subsubsection{类别平衡目标函数}\label{q2-ux7c7bux522bux5e73ux8861ux76eeux6807ux51fdux6570}}
+
+既有模型在三类任务上整体表现并不均衡。训练集负向、中性、正向样本量分别为967、758、1670，最多与最少类别之比约为2.20。该分布偏斜为检验类别平衡策略提供了动机，但不足以证明中性类别错误完全由样本数量造成；语义边界、表示能力和优化过程同样可能影响结果。
+
+以类别频率调整经验风险\cite{q2-ref6,q2-ref7}，比较不加权、平方根逆频率与逆频率三个强度。设当前拟合子集含N条样本、第c类数量为n\_c，C=3，各内部折独立计数。
+
+\begin{equation}
+u_c=(N/(C n_c))^\alpha,\quad w_c=u_c/(C^{-1}\sum_{k=0}^{C-1}u_k),\quad\alpha\in\{0,0.5,1\}\label{q2-eq11}
+\end{equation}
+
+α=0、0.5、1分别对应不加权、平方根逆频率和逆频率。最终采用α=1，权重从第1轮开始作用。公共缩放在加权交叉熵的分子分母中相互抵消，因此将类别权重的算术均值规范为1不改变目标；若当前拟合子集缺少某类，程序明确报错而不生成无穷权重。
+
+\begin{equation}
+\mathcal L_B=-\frac{\sum_{i\in B}w_{c_i}\log p_{i,c_i}}{\sum_{i\in B}w_{c_i}}+\frac{1}{|B|}\sum_{i\in B}H_1(\hat y_i-y_i)\label{q2-eq12}
+\end{equation}
+
+\begin{equation}
+H_1(e)=\begin{cases}e^2/2,&|e|\le1,\\|e|-1/2,&|e|>1.\end{cases}\label{q2-eq13}
+\end{equation}
+
+c\_i始终表示离散类别，y\_i始终表示连续强度，B表示有效批量；分类概率p的第二下标选择真实类别。加权交叉熵强调较少类别的分类误差，Huber阈值固定为1，对较大回归残差采用线性增长。两任务系数为1:1。类别权重不增加推理参数，也不将softmax概率自动校准为正确率。
+
+\hypertarget{q2-ux8fdeux7eedux7f3aux5931ux8badux7ec3}{%
+\subsubsection{连续缺失训练}\label{q2-ux8fdeux7eedux7f3aux5931ux8badux7ec3}}
+
+\begin{equation}
+k_i=\min(n_i,\max(1,\lfloor r n_i+0.5\rfloor)),\quad n_i=\sum_jv_{ij}\label{q2-eq14}
+\end{equation}
+
+对每个训练样本，以0.7概率选取一个模态施加连续缺失，模态均匀抽样，比例r从0.1、0.3、0.5中均匀抽样。式\eqref{q2-eq14}适用于有效长度nᵢ\textgreater0；空序列不额外移除位置。连续性按有效位置的顺序定义，随机起点保证所选片段在边界内。该增强使优化目标包含人工缺失下的监督风险，但不能保证所有缺失条件都改善，其作用由消融实验判断。
+
+\hypertarget{q2-ux6c42ux89e3ux6d41ux7a0bux4e0eux5b9eux9a8cux534fux8bae}{%
+\subsection{求解流程与实验协议}\label{q2-ux6c42ux89e3ux6d41ux7a0bux4e0eux5b9eux9a8cux534fux8bae}}
+
+\begin{PaperTable}{2}
+
+\begin{longtable}[]{@{}ll@{}}
+\caption{固定训练参数\label{q2-tab3}}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.17\columnwidth}\raggedright
+步骤\strut
+\end{minipage} & \begin{minipage}[b]{0.77\columnwidth}\raggedright
+操作\strut
+\end{minipage}\tabularnewline
+\midrule
+\endfirsthead
+\caption[]{固定训练参数（续）}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.17\columnwidth}\raggedright
+步骤\strut
+\end{minipage} & \begin{minipage}[b]{0.77\columnwidth}\raggedright
+操作\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.17\columnwidth}\raggedright
+1\strut
+\end{minipage} & \begin{minipage}[t]{0.77\columnwidth}\raggedright
+固定官方划分；在训练集内按原视频标识生成三折，各折视频组不重叠。\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.17\columnwidth}\raggedright
+2\strut
+\end{minipage} & \begin{minipage}[t]{0.77\columnwidth}\raggedright
+各折只以拟合样本估计标准化参数和类别频率；按阶段协议固定预训练词表。\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.17\columnwidth}\raggedright
+3\strut
+\end{minipage} & \begin{minipage}[t]{0.77\columnwidth}\raggedright
+初始化预训练编码器和预测头；每个批量在编码前按规则生成局部缺失掩码。\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.17\columnwidth}\raggedright
+4\strut
+\end{minipage} & \begin{minipage}[t]{0.77\columnwidth}\raggedright
+计算加权交叉熵与Huber损失，按有效批量累积梯度，裁剪后以AdamW更新。\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.17\columnwidth}\raggedright
+5\strut
+\end{minipage} & \begin{minipage}[t]{0.77\columnwidth}\raggedright
+内部每轮评价完整输入和九类固定缺失场景；按预定分数保存最佳轮次并早停。\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.17\columnwidth}\raggedright
+6\strut
+\end{minipage} & \begin{minipage}[t]{0.77\columnwidth}\raggedright
+对完成三折且满足保护条件的候选排序；以最佳轮数中位数固定正式训练轮数。\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.17\columnwidth}\raggedright
+7\strut
+\end{minipage} & \begin{minipage}[t]{0.77\columnwidth}\raggedright
+仅在官方训练集重新拟合，完成三个种子的验证确认；冻结模型后才开展描述性测试。\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\end{PaperTable}
+
+\begin{PaperTable}{2}
+
+\begin{longtable}[]{@{}ll@{}}
+\caption{求解流程与实验协议}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.27\columnwidth}\raggedright
+项目\strut
+\end{minipage} & \begin{minipage}[b]{0.67\columnwidth}\raggedright
+取值\strut
+\end{minipage}\tabularnewline
+\midrule
+\endfirsthead
+\caption[]{求解流程与实验协议（续）}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.27\columnwidth}\raggedright
+项目\strut
+\end{minipage} & \begin{minipage}[b]{0.67\columnwidth}\raggedright
+取值\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.27\columnwidth}\raggedright
+编码器学习率\strut
+\end{minipage} & \begin{minipage}[t]{0.67\columnwidth}\raggedright
+2×10⁻⁵\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.27\columnwidth}\raggedright
+投影与预测头学习率\strut
+\end{minipage} & \begin{minipage}[t]{0.67\columnwidth}\raggedright
+5×10⁻⁴\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.27\columnwidth}\raggedright
+优化器与权重衰减\strut
+\end{minipage} & \begin{minipage}[t]{0.67\columnwidth}\raggedright
+AdamW；0.01；偏置和归一化参数不衰减\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.27\columnwidth}\raggedright
+有效批量与梯度裁剪\strut
+\end{minipage} & \begin{minipage}[t]{0.67\columnwidth}\raggedright
+32；梯度范数上限1\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.27\columnwidth}\raggedright
+学习率计划\strut
+\end{minipage} & \begin{minipage}[t]{0.67\columnwidth}\raggedright
+前10\%更新线性预热，其后线性衰减\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.27\columnwidth}\raggedright
+内部训练预算\strut
+\end{minipage} & \begin{minipage}[t]{0.67\columnwidth}\raggedright
+12层模型最多6轮；连续3轮无改善早停\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.27\columnwidth}\raggedright
+训练与推理精度\strut
+\end{minipage} & \begin{minipage}[t]{0.67\columnwidth}\raggedright
+CUDA BF16自动混合精度训练；FP32评价；关闭TF32\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.27\columnwidth}\raggedright
+随机种子\strut
+\end{minipage} & \begin{minipage}[t]{0.67\columnwidth}\raggedright
+三折分组240924；确认42、2026、3407\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.27\columnwidth}\raggedright
+连续缺失增强\strut
+\end{minipage} & \begin{minipage}[t]{0.67\columnwidth}\raggedright
+概率0.7；三模态与三个比例均匀抽样\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.27\columnwidth}\raggedright
+损失权重\strut
+\end{minipage} & \begin{minipage}[t]{0.67\columnwidth}\raggedright
+加权交叉熵:Huber=1:1\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\end{PaperTable}
+
+AdamW采用解耦权重衰减\cite{q2-ref3}。有效批量固定为32；显存不足时允许微批量缩至16或8并累计贡献，不能对类别组成不同的微批量加权均值简单平均。对B的互不相交分块B\_j，分类分母始终使用完整B的权重和，回归分母始终使用\textbar B\textbar。固定轮数确认阶段在训练结束后一次评价，不逐轮利用官方验证选检查点。
+
+\begin{equation}
+\mathcal L_B=\sum_j\left[-\frac{\sum_{i\in B_j}w_{c_i}\log p_{i,c_i}}{\sum_{i\in B}w_{c_i}}+\frac{\sum_{i\in B_j}H_1(\hat y_i-y_i)}{|B|}\right]\label{q2-eq15}
+\end{equation}
+
+\begin{equation}
+\operatorname{MAE}={1\over N}\sum_i|\hat y_i-y_i|,\quad S={1\over2}\overline{F1}_{miss}+{1\over2}(1-\overline{MAE}_{miss}/6)\label{q2-eq17}
+\end{equation}
+
+除式\eqref{q2-eq17}的选择分数外，按共用评价约定报告Accuracy、Macro-F1、各类别F1、MAE与Pearson。F1对三类等权求平均，分母为零的类别按0计；Pearson在样本不足或真值、预测恒定时记为未定义并说明原因，不填造数值。内部选择分数S仅是团队预先固定的比较准则，不是比赛官方评分公式。
+
+验证主场景为文本、语音、视觉分别缺失10\%、30\%、50\%，共9类；每个样本的随机起点由固定种子、样本ID和场景名称的SHA256确定。补充场景采用前部、中部、后部以及分成最多三段的多个短区间，共36类。多个短片段不保证彼此间隔非零，极短样本中可能合并，报告按实际移除位置统计而非假定严格分离。
+
+所有候选共享场景定义与样本顺序。S取九场景指标的算术平均，不是将场景样本拼接后计算一次F1。完整输入clean表示没有额外人工缺失，仍可能包含原始自然缺失。人工选择的位置若原本不可观测，不会产生额外的信息移除；因此同时记录所选位置数和新增不可观测位置数。
+
+类别权重候选须至少在两个内部折提高S，且完整输入三折平均Macro-F1下降不超过0.01、MAE增加不超过0.03；取合格者中平均S最高者进行三个同种子确认。正式训练固定为内部最佳轮数中位数4轮，部署使用种子42。
+
+官方验证集用于候选确认与缺失规律分析，历史研究也曾查看测试表现。测试结果作为固定方案的描述性评价；模型比较的结论限定于所列划分与开发协议。
+
+\hypertarget{q2-ux6a21ux578bux5f00ux53d1ux4e0eux4e3bux7ed3ux679c}{%
+\subsection{模型开发与主结果}\label{q2-ux6a21ux578bux5f00ux53d1ux4e0eux4e3bux7ed3ux679c}}
+
+\hypertarget{q2-ux9a8cux8bc1ux7ed3ux679cux4e0eux6a21ux578bux6bd4ux8f83}{%
+\subsection{验证结果与模型比较}\label{q2-ux9a8cux8bc1ux7ed3ux679cux4e0eux6a21ux578bux6bd4ux8f83}}
+
+\hypertarget{q2-ux9884ux8badux7ec3ux65b9ux6848ux4e0eux7f3aux5931ux589eux5f3aux5bf9ux7167}{%
+\subsubsection{预训练方案与缺失增强对照}\label{q2-ux9884ux8badux7ec3ux65b9ux6848ux4e0eux7f3aux5931ux589eux5f3aux5bf9ux7167}}
+
+\begin{PaperTable}{6}
+
+\begin{longtable}[]{@{}llllll@{}}
+\caption{内部三折平均结果\label{q2-tab4}}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.25\columnwidth}\raggedright
+模型\strut
+\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedright
+完整F1\strut
+\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedright
+完整MAE\strut
+\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedright
+缺失F1\strut
+\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedright
+缺失MAE\strut
+\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedright
+S\strut
+\end{minipage}\tabularnewline
+\midrule
+\endfirsthead
+\caption[]{内部三折平均结果（续）}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.25\columnwidth}\raggedright
+模型\strut
+\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedright
+完整F1\strut
+\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedright
+完整MAE\strut
+\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedright
+缺失F1\strut
+\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedright
+缺失MAE\strut
+\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedright
+S\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.25\columnwidth}\raggedright
+两层蒸馏基线\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+0.5575\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+0.6938\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+0.5475\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+0.7073\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+0.7148\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.25\columnwidth}\raggedright
+12层裁剪词表＋缺失训练\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+0.6025\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+0.6094\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+0.5857\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+0.6301\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+0.7403\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.25\columnwidth}\raggedright
+12层完整词表＋缺失训练\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+0.6218\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+0.6050\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+0.6038\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+0.6241\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+0.7499\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.25\columnwidth}\raggedright
+12层完整词表 无缺失增强\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+0.6231\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+0.6031\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+0.6044\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+0.6227\strut
+\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+0.7503\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\end{PaperTable}
+
+表\ref{q2-tab4}中F1为Macro-F1，数值为视频分组内部三折的算术均值。完整词表方案与关闭缺失增强方案采用相同训练协议。关闭增强后S增加0.0004、缺失F1增加0.0006、缺失MAE降低0.0015；本对照未显示连续缺失增强的收益，类别加权后的关闭增强对照尚无结果。
+
+完整词表相对于裁剪词表12层模型，三折平均S变化为+0.0096，完整F1变化为+0.0193，完整MAE变化为-0.0044。该比较提供词表保留策略的经验依据；由于词表维度变化也会影响同种子下后续随机初始化序列，且开发阶段只使用一个训练种子，不能将差异完全归因为未见词元本身。
+
+连续缺失训练相对于不增强方案的三折平均S变化为-0.0004，缺失平均F1变化为-0.0006，缺失平均MAE变化为+0.0015。该结果未显示连续缺失训练在本配置下具有更高的综合得分，不能把缺失增强描述为已被充分证明有效的创新点。 两组模型均按自己的内部验证分数选最佳轮次，因此这里比较的是包含早停的训练策略，而非同一固定轮数的纯损失扰动。
+
+保留的两层实验分别检验文本单模态、多模态输入、连续缺失增强、蒸馏与随机初始化；四层实验检验另一种编码深度。蒸馏模型与四层模型的内部S差距很小，不能仅凭排序宣称其具有显著优势。两层与12层模型训练轮数及训练目标可能不同，跨结构的总差异不应包装成严格的单因素消融。
+
+\hypertarget{q2-ux7c7bux522bux6743ux91cdux7684ux5185ux90e8ux914dux5bf9ux6bd4ux8f83}{%
+\subsubsection{类别权重的内部配对比较}\label{q2-ux7c7bux522bux6743ux91cdux7684ux5185ux90e8ux914dux5bf9ux6bd4ux8f83}}
+
+内部开发继续使用不加权基线按视频分组的三折。每个候选仅改变分类权重强度，随机种子42，最多6轮、早停耐心3轮；标准化、原始预训练权重、完整词表、连续缺失训练概率0.7和AdamW参数保持一致。以九类主要缺失场景上的既有综合分数S选择最佳轮次，再用最佳轮数中位数确定官方训练确认的固定轮数。
+
+为确认软件修改没有改变对照条件，先重跑不加权配置的第1折。重跑与不加权基线对应模型的217个参数张量逐项完全一致，最大绝对差为0.0，选择分数差为0.0。该检查支持在同环境与同配方下复用旧对照；不能推广为跨硬件逐位一致保证。
+
+\begin{PaperTable}{6}
+
+\begin{longtable}[]{@{}llllll@{}}
+\caption{内部三折算术均值\label{q2-tab5}}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.14\columnwidth}\raggedright
+配置\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
+完整F1\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
+完整MAE\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
+缺失F1\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
+缺失MAE\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
+S\strut
+\end{minipage}\tabularnewline
+\midrule
+\endfirsthead
+\caption[]{内部三折算术均值（续）}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.14\columnwidth}\raggedright
+配置\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
+完整F1\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
+完整MAE\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
+缺失F1\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
+缺失MAE\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
+S\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.14\columnwidth}\raggedright
+不加权参照\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+0.6218\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+0.6050\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+0.6038\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+0.6241\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+0.7499\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.14\columnwidth}\raggedright
+平方根权重\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+0.6294\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+0.6059\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+0.6092\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+0.6250\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+0.7525\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.14\columnwidth}\raggedright
+逆频率权重\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+0.6327\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+0.6147\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+0.6124\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+0.6325\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+0.7535\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\end{PaperTable}
+
+平方根权重在2/3折提高S，平均差为+0.00263；中性F1均值为0.4611。其内部保护条件判定为通过。该比较使用各配置在内部验证上选定的最佳轮次，反映受同一预算约束的整体训练方案差异，不是未经选择的泛化性能估计。
+
+逆频率权重在2/3折提高S，平均差为+0.00360；中性F1均值为0.4646。其内部保护条件判定为通过。该比较使用各配置在内部验证上选定的最佳轮次，反映受同一预算约束的整体训练方案差异，不是未经选择的泛化性能估计。
+
+\hypertarget{q2-ux4e09ux79cdux5b50ux4e3bux7ed3ux679cux4e0eux6027ux80fdux53d6ux820d}{%
+\subsubsection{三种子主结果与性能取舍}\label{q2-ux4e09ux79cdux5b50ux4e3bux7ed3ux679cux4e0eux6027ux80fdux53d6ux820d}}
+
+\begin{PaperTable}{4}
+
+\begin{longtable}[]{@{}llll@{}}
+\caption{官方验证集三种子确认均值与样本标准差\label{q2-tab7}}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.27\columnwidth}\raggedright
+指标\strut
+\end{minipage} & \begin{minipage}[b]{0.23\columnwidth}\raggedright
+不加权基线参照\strut
+\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
+类别平衡模型\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedright
+均值差\strut
+\end{minipage}\tabularnewline
+\midrule
+\endfirsthead
+\caption[]{官方验证集三种子确认均值与样本标准差（续）}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.27\columnwidth}\raggedright
+指标\strut
+\end{minipage} & \begin{minipage}[b]{0.23\columnwidth}\raggedright
+不加权基线参照\strut
+\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
+类别平衡模型\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedright
+均值差\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.27\columnwidth}\raggedright
+完整Accuracy\strut
+\end{minipage} & \begin{minipage}[t]{0.23\columnwidth}\raggedright
+0.6369 ± 0.0042\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.6277 ± 0.0060\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
+-0.0092\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.27\columnwidth}\raggedright
+完整Macro-F1\strut
+\end{minipage} & \begin{minipage}[t]{0.23\columnwidth}\raggedright
+0.5959 ± 0.0059\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.6163 ± 0.0040\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
++0.0204\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.27\columnwidth}\raggedright
+完整MAE\strut
+\end{minipage} & \begin{minipage}[t]{0.23\columnwidth}\raggedright
+0.5783 ± 0.0060\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.5790 ± 0.0099\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
++0.0006\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.27\columnwidth}\raggedright
+完整Pearson\strut
+\end{minipage} & \begin{minipage}[t]{0.23\columnwidth}\raggedright
+0.6815 ± 0.0063\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.6816 ± 0.0086\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
++0.0001\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.27\columnwidth}\raggedright
+负向类别F1\strut
+\end{minipage} & \begin{minipage}[t]{0.23\columnwidth}\raggedright
+0.6770 ± 0.0109\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.6728 ± 0.0070\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
+-0.0042\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.27\columnwidth}\raggedright
+中性类别F1\strut
+\end{minipage} & \begin{minipage}[t]{0.23\columnwidth}\raggedright
+0.3871 ± 0.0133\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.4808 ± 0.0062\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
++0.0937\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.27\columnwidth}\raggedright
+正向类别F1\strut
+\end{minipage} & \begin{minipage}[t]{0.23\columnwidth}\raggedright
+0.7238 ± 0.0020\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.6954 ± 0.0140\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
+-0.0284\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.27\columnwidth}\raggedright
+缺失平均Macro-F1\strut
+\end{minipage} & \begin{minipage}[t]{0.23\columnwidth}\raggedright
+0.5862 ± 0.0018\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.6026 ± 0.0013\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
++0.0164\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.27\columnwidth}\raggedright
+缺失平均MAE\strut
+\end{minipage} & \begin{minipage}[t]{0.23\columnwidth}\raggedright
+0.5906 ± 0.0067\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.5909 ± 0.0101\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
++0.0002\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.27\columnwidth}\raggedright
+内部选择分数S\strut
+\end{minipage} & \begin{minipage}[t]{0.23\columnwidth}\raggedright
+0.7439 ± 0.0009\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.7521 ± 0.0008\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
++0.0082\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\end{PaperTable}
+
+均值差由未舍入结果计算，表中均值与标准差统一显示四位小数。
+
+两层蒸馏到完整编码基线的改善涉及编码深度、词表及训练方案变化，不能归为单一因素。类别平衡方案保持编码结构并调整分类损失，三种子完整Macro-F1均改善，但Accuracy和正向F1的均值下降。当前取舍由此前固定的目标与保护条件决定，不代表所有应用场景都会优先选择该模型。
+
+\hypertarget{q2-ux56faux5b9aux6a21ux578bux7684ux4e0dux786eux5b9aux6027ux5206ux6790}{%
+\subsubsection{固定模型的不确定性分析}\label{q2-ux56faux5b9aux6a21ux578bux7684ux4e0dux786eux5b9aux6027ux5206ux6790}}
+
+区间估计以原视频为重采样单位，在验证集239个视频组中有放回抽取相同数量的组，保留组内全部片段及重复次数，共进行2000次。每次对两个模型和所有场景使用完全相同的抽样组，然后重新计算F1与MAE的差值。该配对设计保留组内相关性和模型比较的样本配对。95\%区间取差值分布的2.5\%与97.5\%分位点，不是三个种子均值的置信区间，也未校正此前模型搜索带来的选择偏差。
+
+\begin{PaperTable}{4}
+
+\begin{longtable}[]{@{}llll@{}}
+\caption{种子42模型差异的95\%视频分组配对Bootstrap区间\label{q2-tab9}}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.26\columnwidth}\raggedright
+场景\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedright
+指标\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedright
+差值\strut
+\end{minipage} & \begin{minipage}[b]{0.29\columnwidth}\raggedright
+区间\strut
+\end{minipage}\tabularnewline
+\midrule
+\endfirsthead
+\caption[]{种子42模型差异的95\%视频分组配对Bootstrap区间（续）}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.26\columnwidth}\raggedright
+场景\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedright
+指标\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedright
+差值\strut
+\end{minipage} & \begin{minipage}[b]{0.29\columnwidth}\raggedright
+区间\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.26\columnwidth}\raggedright
+clean\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
+macro\_f1\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
++0.0220\strut
+\end{minipage} & \begin{minipage}[t]{0.29\columnwidth}\raggedright
+{[}-0.0079, +0.0525{]}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.26\columnwidth}\raggedright
+clean\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
+mae\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
+-0.0005\strut
+\end{minipage} & \begin{minipage}[t]{0.29\columnwidth}\raggedright
+{[}-0.0058, +0.0050{]}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.26\columnwidth}\raggedright
+missing\_average\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
+macro\_f1\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
++0.0170\strut
+\end{minipage} & \begin{minipage}[t]{0.29\columnwidth}\raggedright
+{[}-0.0052, +0.0397{]}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.26\columnwidth}\raggedright
+missing\_average\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
+mae\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
+-0.0007\strut
+\end{minipage} & \begin{minipage}[t]{0.29\columnwidth}\raggedright
+{[}-0.0053, +0.0040{]}\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\end{PaperTable}
+
+表\ref{q2-tab9}对239个视频组进行2000次配对Bootstrap，两个模型与所有场景使用相同抽样。所列区间均跨零，固定模型的点估计差异仍有不确定性。
+
+\hypertarget{q2-ux5c40ux90e8ux7f3aux5931ux89c4ux5f8b}{%
+\subsection{局部缺失规律}\label{q2-ux5c40ux90e8ux7f3aux5931ux89c4ux5f8b}}
+
+\hypertarget{q2-ux6a21ux6001ux7c7bux578bux4e0eux7f3aux5931ux6bd4ux4f8b}{%
+\subsubsection{模态类型与缺失比例}\label{q2-ux6a21ux6001ux7c7bux578bux4e0eux7f3aux5931ux6bd4ux4f8b}}
+
+\begin{figure}
+\centering
+\includegraphics{../Paper/assets/q2_missing.pdf}
+\caption{官方验证集连续缺失比例响应。线为三种子均值，阴影为±一个样本标准差，0\%为完整输入；横轴是名义特征位置比例，非秒数。各行共用纵轴，保留非单调变化。Macro-F1越高越好，MAE越低越好。\label{q2-fig5}}
+\end{figure}
+
+\begin{PaperTable}{6}
+
+\begin{longtable}[]{@{}llllll@{}}
+\caption{最终模型种子42的主缺失场景\label{q2-tab10}}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.14\columnwidth}\raggedright
+模态\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
+比例\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
+Macro-F1\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
+ΔF1\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
+MAE\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
+ΔMAE\strut
+\end{minipage}\tabularnewline
+\midrule
+\endfirsthead
+\caption[]{最终模型种子42的主缺失场景（续）}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.14\columnwidth}\raggedright
+模态\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
+比例\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
+Macro-F1\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
+ΔF1\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
+MAE\strut
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
+ΔMAE\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.14\columnwidth}\raggedright
+文本\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+10\%\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+0.5936\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+-0.0181\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+0.5863\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
++0.0109\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.14\columnwidth}\raggedright
+文本\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+30\%\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+0.5643\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+-0.0474\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+0.6091\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
++0.0338\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.14\columnwidth}\raggedright
+文本\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+50\%\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+0.5515\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+-0.0603\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+0.6367\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
++0.0614\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.14\columnwidth}\raggedright
+语音\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+10\%\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+0.6085\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+-0.0033\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+0.5752\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+-0.0001\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.14\columnwidth}\raggedright
+语音\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+30\%\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+0.6160\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
++0.0042\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+0.5764\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
++0.0011\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.14\columnwidth}\raggedright
+语音\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+50\%\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+0.6227\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
++0.0110\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+0.5760\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
++0.0007\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.14\columnwidth}\raggedright
+视觉\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+10\%\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+0.6178\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
++0.0061\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+0.5746\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+-0.0007\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.14\columnwidth}\raggedright
+视觉\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+30\%\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+0.6158\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
++0.0041\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+0.5732\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+-0.0021\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.14\columnwidth}\raggedright
+视觉\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+50\%\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+0.6202\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
++0.0085\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+0.5749\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+-0.0005\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\end{PaperTable}
+
+种子42在文本连续缺失50\%时Macro-F1为0.5515，相对完整输入变化为-0.0603；MAE变化为+0.0614。音视频响应较小且存在非单调变化，可能与当前均值表示、文本主导或噪声移除有关，但本实验不能单独识别这些机制。三种子曲线的阴影只刻画训练种子波动，不覆盖缺失起点重复抽样的不确定性。
+
+\hypertarget{q2-ux7f3aux5931ux4f4dux7f6eux4e0eux7247ux6bb5ux5f62ux72b6}{%
+\subsubsection{缺失位置与片段形状}\label{q2-ux7f3aux5931ux4f4dux7f6eux4e0eux7247ux6bb5ux5f62ux72b6}}
+
+固定文本缺失比例50\%时，前部、中部、后部的Macro-F1分别为0.5586、0.5313、0.5152。该模型在这一固定划分和实现下对后部缺失更敏感；位置以有效特征顺序定义，没有依据将其解释为特定秒数、情绪转折或结尾词的因果作用。补充热图保留全部36类场景和不利结果。
+
+片段形状比较的差值均为多个短片段减单长片段。类别平衡模型文本缺失10\%和30\%时，多段F1较高但MAE也略高；50\%时多段F1反而较低而MAE略低。不同评价任务的变化并不一致，不能得出多段缺失普遍更容易或更困难的结论。
+
+名义比例10\%、30\%、50\%对应的样本平均实际位置比例依次为11.20\%、30.74\%、51.64\%。差异源于按有效长度取整及至少移除一个位置；若所选位置原已不可观测，新增信息损失少于所选位置数。这两类数量分别保留在实验档案中。
+
+\begin{figure}
+\centering
+\includegraphics{../问题2/docs/paper_current/figures/current_missing_shapes.pdf}
+\caption{类别平衡模型种子42在官方验证集728条样本的36类补充缺失场景。数值为相对同模型完整输入的变化；上排ΔMacro-F1越负越差，下排ΔMAE越正越差。同一指标共用色标，位置比例不是时间。\label{q2-fig6}}
+\end{figure}
+
+\hypertarget{q2-ux5206ux7c7bux4e0eux56deux5f52ux8befux5dee}{%
+\subsection{分类与回归误差}\label{q2-ux5206ux7c7bux4e0eux56deux5f52ux8befux5dee}}
+
+\begin{figure}
+\centering
+\includegraphics{../Paper/assets/q2_confusion.pdf}
+\caption{固定种子42的完整官方验证集混淆矩阵，两个模型均使用相同728条样本。格内同时给出计数与真实类别内比例，两图使用共同色标。\label{q2-fig7}}
+\end{figure}
+
+类别平衡改变不同类别的错误代价。种子42模型中，中性F1由0.3810提高至0.4810，正向F1由0.7231降至0.6792，Accuracy由0.6332降至0.6209。三种子结果呈现同样的类别取舍。
+
+三分类与强度回归是不同损失下的两个输出。若将所有非零回归值直接按符号分为正负，而只有精确零对应中性，则预测为中性的样本几乎都会被计入``类别与回归不一致''。这一严格定义容易把接近零的正常连续输出混入真正的正负方向冲突。因此，应分解统计，而不能把总不一致率直接称为模型自相矛盾率。
+
+\begin{PaperTable}{5}
+
+\begin{longtable}[]{@{}lllll@{}}
+\caption{完整验证集的严格符号不一致分解\label{q2-tab13}}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.15\columnwidth}\raggedright
+模型\strut
+\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedright
+总不一致\strut
+\end{minipage} & \begin{minipage}[b]{0.20\columnwidth}\raggedright
+中性类且回归非零\strut
+\end{minipage} & \begin{minipage}[b]{0.18\columnwidth}\raggedright
+非中性正负相反\strut
+\end{minipage} & \begin{minipage}[b]{0.20\columnwidth}\raggedright
+非中性且回归为零\strut
+\end{minipage}\tabularnewline
+\midrule
+\endfirsthead
+\caption[]{完整验证集的严格符号不一致分解（续）}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.15\columnwidth}\raggedright
+模型\strut
+\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedright
+总不一致\strut
+\end{minipage} & \begin{minipage}[b]{0.20\columnwidth}\raggedright
+中性类且回归非零\strut
+\end{minipage} & \begin{minipage}[b]{0.18\columnwidth}\raggedright
+非中性正负相反\strut
+\end{minipage} & \begin{minipage}[b]{0.20\columnwidth}\raggedright
+非中性且回归为零\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.15\columnwidth}\raggedright
+不加权基线\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+140\strut
+\end{minipage} & \begin{minipage}[t]{0.20\columnwidth}\raggedright
+131\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright
+9\strut
+\end{minipage} & \begin{minipage}[t]{0.20\columnwidth}\raggedright
+0\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.15\columnwidth}\raggedright
+类别平衡模型\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+249\strut
+\end{minipage} & \begin{minipage}[t]{0.20\columnwidth}\raggedright
+236\strut
+\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright
+13\strut
+\end{minipage} & \begin{minipage}[t]{0.20\columnwidth}\raggedright
+0\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\end{PaperTable}
+
+该分解仅用于解释现有诊断指标，没有据官方验证重新设定回归阈值或改写预测。中性类别的精确率、召回率和F1仍按官方离散标签计算，强度误差仍按原连续标签计算。模型分别保存两个任务的监督输出。
+
+种子42模型中，中性样本184条，正确识别101条，误判负向29条、正向54条。该计数对应类别平衡方案完整输入结果，不能与不加权基线混淆矩阵混用。
+
+\begin{figure}
+\centering
+\includegraphics{../问题2/docs/paper_current/figures/current_regression.pdf}
+\caption{类别平衡方案最终模型种子42的完整官方验证集回归诊断，n=728。左图为实际二维计数，虚线为理想预测；右图为各真实类别的残差箱线图，保留离群点。箱体表示第25至75百分位，线为中位数，须线采用1.5倍四分位距规则，不是置信区间。\label{q2-fig8}}
+\end{figure}
+
+\hypertarget{q2-ux9644ux4ef6ux4e09ux5168ux91cfux9884ux6d4bux4e0eux7ed3ux679cux63a5ux53e3}{%
+\subsection{附件三全量预测与结果接口}\label{q2-ux9644ux4ef6ux4e09ux5168ux91cfux9884ux6d4bux4e0eux7ed3ux679cux63a5ux53e3}}
+
+30条样本采用同一对齐版本、训练集标准化统计和种子42模型。按文件名及文件内序号构造样本标识，检查整数词元编号、形状、有限性与观测掩码后，输出三类概率、极性和强度。
+
+\begin{PaperTable}{4}
+
+\begin{longtable}[]{@{}llll@{}}
+\caption{附件3全部30条类别平衡模型预测\label{q2-tab17}}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.22\columnwidth}\raggedright
+文件编号\strut
+\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
+预测类别\strut
+\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
+情感强度\strut
+\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
+最大类概率\strut
+\end{minipage}\tabularnewline
+\midrule
+\endfirsthead
+\caption[]{附件3全部30条类别平衡模型预测（续）}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.22\columnwidth}\raggedright
+文件编号\strut
+\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
+预测类别\strut
+\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
+情感强度\strut
+\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
+最大类概率\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+附件3\_01\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+负向\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+-0.9664\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.9351\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+附件3\_02\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+中性\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+-0.0240\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.8249\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+附件3\_03\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+中性\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.2880\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.6327\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+附件3\_04\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+中性\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.4002\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.5492\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+附件3\_05\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+负向\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+-1.4878\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.9620\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+附件3\_06\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+正向\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.7274\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.7612\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+附件3\_07\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+中性\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.3212\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.4591\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+附件3\_08\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+负向\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+-0.1221\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.4424\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+附件3\_09\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+正向\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+1.1522\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.9127\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+附件3\_10\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+中性\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+-0.0761\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.8693\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+附件3\_11\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+正向\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.4640\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.5397\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+附件3\_12\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+正向\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.4631\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.4775\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+附件3\_13\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+正向\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.3951\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.5546\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+附件3\_14\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+负向\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+-0.8660\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.9331\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+附件3\_15\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+正向\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.4315\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.6484\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+附件3\_16\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+正向\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+1.4899\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.9466\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+附件3\_17\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+中性\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.2033\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.6264\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+附件3\_18\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+中性\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.4165\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.5085\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+附件3\_19\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+中性\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+-0.0275\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.4710\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+附件3\_20\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+中性\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.0469\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.7418\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+附件3\_21\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+正向\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.3067\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.5091\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+附件3\_22\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+正向\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.4599\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.5061\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+附件3\_23\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+中性\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.2963\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.6255\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+附件3\_24\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+负向\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+-0.1566\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.4829\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+附件3\_25\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+中性\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.3507\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.7080\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+附件3\_26\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+正向\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.6527\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.7230\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+附件3\_27\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+正向\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.4871\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.5590\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+附件3\_28\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+中性\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.4902\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.5805\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+附件3\_29\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+正向\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.6848\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.6238\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+附件3\_30\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+中性\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.3920\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
+0.7424\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\end{PaperTable}
+
+专项CSV保留sample\_id、scenario、class\_id、sentiment、intensity和三类概率，表内数值为显示而舍入，CSV保留原计算精度。稳定标识使用文件名和文件内序号，与原始视频标识分开保存。附件3没有标签，其预测分布不用于调参，最大类概率也不是已校准的置信度。
+
+文本编码的主要计算量为 \(O(L(Td^2+T^2d+Td\,d_{ff}))\)，其中T=50、d=768、L=12；音视汇总分别为 \(O(74T)\)、\(O(35T)\)。运行环境记录为Python 3.10.18、PyTorch 2.8.0、CUDA 12.8、NumPy 2.2.6和scikit-learn 1.7.2。复算使用训练得到的模型权重与标准化参数，先构造同一观测掩码，再进行批量推理；预测CSV保留完整精度。

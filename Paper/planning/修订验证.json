@@ -1,0 +1,55 @@
+{
+  "status": "passed",
+  "pages": 43,
+  "pdf_bytes": 2073088,
+  "pdf_sha256": "8defc8fd782f7b862d4fcb414bd8f8231a4ad1d88693ea540657e99f8cd70989",
+  "sources_verified": true,
+  "abstract_pages": 1,
+  "continuous_page_numbers": true,
+  "undefined_references": false,
+  "missing_glyphs": false,
+  "overfull_boxes": false,
+  "result_checks": {
+    "q1_rows": 100,
+    "q1_word_states": [
+      1397,
+      71,
+      464
+    ],
+    "q2_rows": 30,
+    "q3_prediction_rows": 20,
+    "q3_location_rows": 20,
+    "q3_metrics_match_json": true,
+    "q2_comparison_scope": "existing manuscript predictions; model weights unavailable in this workspace"
+  },
+  "scope": "PDF compilation, pagination, source hashes, tables and recorded metrics; no new model training or independent accuracy evaluation.",
+  "visual_review": {
+    "method": "Rendered full-document contact sheets, then inspected final changed pages at higher resolution",
+    "checked_final_physical_pages": [
+      14,
+      23,
+      25,
+      37,
+      38,
+      39,
+      40,
+      41
+    ],
+    "checks": [
+      "official four-logo cover retained and page zero removed",
+      "abstract one page; body begins on following page",
+      "Chinese body and tables retain specified size",
+      "complete table identifiers and continuation headings",
+      "diagram labels, mathematical equations, scientific plots and media captions legible",
+      "typical-card scalar values separated by row",
+      "conclusion begins on a new page"
+    ],
+    "render_cache": "/workspace/paper-revision-render",
+    "scope_note": "Full contact-sheet review preceded the final pagination adjustments; final changed table/card/conclusion pages were separately reviewed."
+  },
+  "remaining_metadata": [
+    "cover school, team number and names not supplied",
+    "AI model release date and earlier tool-use metadata not supplied"
+  ],
+  "existing_reproduction_gap": "Q2 final/model.pt and final/scaler.npz absent from this workspace; no new inference replay claimed."
+}

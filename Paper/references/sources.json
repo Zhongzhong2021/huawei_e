@@ -1,0 +1,67 @@
+[
+  {
+    "name": "format-2026.docx",
+    "url": "https://cpipc.acge.org.cn/sysFile/downFile.do?fileId=97a93e3a9e074738aea95eea986508f2",
+    "sha256": "46d2e2a87e90608ace764203d5326d7c7e41f01a5eb79986724a6f159fd70e16",
+    "bytes": 93167,
+    "path": "Paper/references/official/format-2026.docx",
+    "retrieved": "2026-09-26"
+  },
+  {
+    "name": "template-2026.doc",
+    "url": "https://cpipc.acge.org.cn/sysFile/downFile.do?fileId=a730b312331e492baad17b248bad6b51",
+    "sha256": "195b06cf670ec1aeb796bfd07e6d3e98e36d16db119308dcf4d0756319fe2e29",
+    "bytes": 894976,
+    "path": "Paper/references/official/template-2026.doc",
+    "retrieved": "2026-09-26",
+    "format_note": "Official download is legacy binary DOC despite DOCX link label; preserved bytes."
+  },
+  {
+    "name": "ai-use-2026.docx",
+    "url": "https://cpipc.acge.org.cn/sysFile/downFile.do?fileId=4fc024f7a1504abb87fc056440c64a28",
+    "sha256": "5922c1f92530c88eab3214e67de981aeda195c27d5b583ddc2380ee24db0e539",
+    "bytes": 18523,
+    "path": "Paper/references/official/ai-use-2026.docx",
+    "retrieved": "2026-09-26"
+  },
+  {
+    "name": "A23100070049.pdf",
+    "url": "https://raw.githubusercontent.com/zhanwen/MathModel/master/%E5%9B%BD%E8%B5%9B%E8%AE%BA%E6%96%87/2023%E5%B9%B4%E4%BC%98%E7%A7%80%E8%AE%BA%E6%96%87/A/A23100070049.pdf",
+    "sha256": "d33556a20cd948a1a64b448a798d7bd5199ed33e64b8b42f9c9066718709cc1a",
+    "bytes": 2405135,
+    "path": "/workspace/paper-style-research/A23100070049.pdf",
+    "retrieved": "2026-09-26"
+  },
+  {
+    "name": "C23102540029.pdf",
+    "url": "https://raw.githubusercontent.com/zhanwen/MathModel/master/%E5%9B%BD%E8%B5%9B%E8%AE%BA%E6%96%87/2023%E5%B9%B4%E4%BC%98%E7%A7%80%E8%AE%BA%E6%96%87/C/C23102540029.pdf",
+    "sha256": "feb372a7fb5a8688de384182401fe0f642da7763f50f74e7ee0a1a22b7641230",
+    "bytes": 3617240,
+    "path": "/workspace/paper-style-research/C23102540029.pdf",
+    "retrieved": "2026-09-26"
+  },
+  {
+    "name": "F23102520378.pdf",
+    "url": "https://raw.githubusercontent.com/zhanwen/MathModel/master/%E5%9B%BD%E8%B5%9B%E8%AE%BA%E6%96%87/2023%E5%B9%B4%E4%BC%98%E7%A7%80%E8%AE%BA%E6%96%87/F/F23102520378.pdf",
+    "sha256": "a1dc5e7fe882f5963dd9d6fe47a24a74b5885f5e37416dc475cff907085e8a66",
+    "bytes": 6625881,
+    "path": "/workspace/paper-style-research/F23102520378.pdf",
+    "retrieved": "2026-09-26"
+  },
+  {
+    "name": "复杂场景下多模态情感识别的数学建模与算法设计.docx",
+    "kind": "local_problem_statement",
+    "path": "/workspace/data/复杂场景下多模态情感识别的数学建模与算法设计.docx",
+    "sha256": "38cec978723bff36ab945fa98f6454558bb9084e2cd01d814dd6e38ab4b4c336",
+    "bytes": 1004454,
+    "checked": "2026-09-26"
+  },
+  {
+    "name": "paper.pdf",
+    "kind": "pre_revision_integration_baseline",
+    "path": "/workspace/paper-before-revision/paper.pdf",
+    "sha256": "e4b86a7fc8624582f0e58079c9cbf2009d4240b1a62f0db0d86d00e83993d43f",
+    "bytes": 2469307,
+    "checked": "2026-09-26"
+  }
+]

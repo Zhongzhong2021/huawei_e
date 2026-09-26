@@ -1,0 +1,32 @@
+\section{数据组织与评价约定}
+\subsection{数据与输入版本}
+全部任务使用题目附件。附件一包含100条原始视频及文本、情感标签，样本由视频标识和片段标识联合确定。附件二提供情感强度标签与预计算特征；问题二、三统一采用aligned\_50版本，附件三、四分别用于两问的无标签专项推理。
+
+\Needspace{10\baselineskip}
+\begin{longtable}{lrrrrl}
+\caption{数据划分与用途}\label{tab:data}\\
+\toprule 集合 & 样本数 & 负向 & 中性 & 正向 & 用途\\\midrule\endfirsthead
+\toprule 集合 & 样本数 & 负向 & 中性 & 正向 & 用途\\\midrule\endhead
+附件二训练 &3395&967&758&1670&参数拟合\\
+附件二验证 &728&206&184&338&模型比较与误差分析\\
+附件二测试 &727&207&158&362&描述性评价\\
+附件三 &30&—&—&—&问题二专项预测\\
+附件四 &20&—&—&—&问题三预测与解释\\\bottomrule
+\end{longtable}
+每条预计算样本最多50个对齐位置，声学维度74、视觉维度35；文本包含768维连续表示及三行BERT输入记录。两个预测模型均使用词元编号进入BERT，训练、验证与专项推理保持接口一致。对齐位置表示附件的共同序列索引，精确物理时间通过原始媒体另行记录。
+
+标签$y\in[-3,3]$，负值、零值、正值分别对应负向、中性、正向，类别编码$c\in\{0,1,2\}$。原始标签和划分保持不变，均值、标准差及类别频率只由相应训练子集估计。
+
+\subsection{共用符号与评价量}
+$i$表示样本，$j$表示序列位置，$m\in\{T,A,V\}$表示文本、语音与视觉。$X^m$为模态特征，$o^m$为原观测掩码，$v$为有效位置标记，$d^m$为额外缺失标记，$\widetilde o^m=v o^m(1-d^m)$为模型可用位置。问题一另保存人脸事件F及逐维有效性；单个合法数值为零时仍保留其观测状态。
+
+预测评价使用Accuracy、三类等权Macro-F1、强度MAE和Pearson相关系数：
+\begin{equation}
+\mathrm{Acc}=\frac1N\sum_i\mathbf1(\widehat c_i=c_i),\qquad
+\mathrm{MacroF1}=\frac13\sum_{c=0}^2\frac{2TP_c}{2TP_c+FP_c+FN_c}.
+\end{equation}
+\begin{equation}
+\mathrm{MAE}=\frac1N\sum_i|\widehat y_i-y_i|,\qquad
+r=\frac{\sum_i(y_i-\bar y)(\widehat y_i-\overline{\widehat y})}{\sqrt{\sum_i(y_i-\bar y)^2\sum_i(\widehat y_i-\overline{\widehat y})^2}}.
+\end{equation}
+F1分母为零时该类别记0；相关系数分母为零时记未定义。Macro-F1与Accuracy评价离散类别，MAE与Pearson评价连续强度。时间候选覆盖率以原词总数为分母，解释分解误差比较贡献之和与当前模型读出，分别在相应章节报告。

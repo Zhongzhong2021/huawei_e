@@ -1,0 +1,30 @@
+{
+  "notice_url": "https://cpipc.acge.org.cn/cw/contestNews/detail/4/2c9080178aee323d018bccd11b4e428a",
+  "download_url": "https://cpipc.acge.org.cn/sysFile/downFile.do?fileId=8bd2022abd144781a0f5925f2cab2d79",
+  "download_sha256": "fc18c7501aed28bbcc95b7366ffef1a55e61084bae99753d2fef58a2b119f410",
+  "checked": "2026-09-26",
+  "status": "Matched in official 2023 proposed-award announcement; not a separate final certificate verification",
+  "papers": [
+    {
+      "paper": "A23100070049.pdf",
+      "award": "一等奖(华为专项二等奖)",
+      "sheet_xml": "xl/worksheets/sheet1.xml",
+      "row": "5",
+      "award_workbook": "A题公示名单.xlsx"
+    },
+    {
+      "paper": "C23102540029.pdf",
+      "award": "一等奖",
+      "sheet_xml": "xl/worksheets/sheet1.xml",
+      "row": "5",
+      "award_workbook": "C题公示名单.xlsx"
+    },
+    {
+      "paper": "F23102520378.pdf",
+      "award": "一等奖",
+      "sheet_xml": "xl/worksheets/sheet1.xml",
+      "row": "7",
+      "award_workbook": "F题公示名单.xlsx"
+    }
+  ]
+}
