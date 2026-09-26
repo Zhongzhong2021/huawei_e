@@ -1,0 +1,76 @@
+{
+  "attachment2_samples": 4850,
+  "attachment2_spreadsheet_sha256": "0d6351ace01a2edee8861b21b2893c82d916d2a3e8b69d3b4f832ca841349875",
+  "attachment2_spreadsheet_rows": 4850,
+  "attachment2_label_versions_equal": {
+    "train": {
+      "classification_labels": true,
+      "regression_labels": true
+    },
+    "valid": {
+      "classification_labels": true,
+      "regression_labels": true
+    },
+    "test": {
+      "classification_labels": true,
+      "regression_labels": true
+    }
+  },
+  "attachment2_label_text_split_issues": [],
+  "attachment2_tokenization_issues": [],
+  "attachment1_samples": 100,
+  "attachment1_shared_labels_compared": 18,
+  "attachment1_label_issues": [],
+  "attachment1_repair_note": [
+    [
+      "检查项目",
+      "结果"
+    ],
+    [
+      "筛选依据",
+      "当前本地已有的100个MOSEI视频片段（video_id + clip_id 精确匹配）"
+    ],
+    [
+      "筛选后数据行数",
+      100
+    ],
+    [
+      "列数",
+      6
+    ],
+    [
+      "video_id / clip_id 写入格式",
+      "文本格式，避免 Excel 将以减号开头的 ID 解析为公式"
+    ],
+    [
+      "负向样本",
+      18
+    ],
+    [
+      "中性样本",
+      25
+    ],
+    [
+      "正向样本",
+      57
+    ],
+    [
+      "训练集",
+      64
+    ],
+    [
+      "验证集",
+      10
+    ],
+    [
+      "测试集",
+      26
+    ],
+    [
+      "结论",
+      "label 工作表仅包含与本地100个视频一一对应的标签记录。"
+    ]
+  ],
+  "special_labels_exported": false,
+  "script_sha256": "3e80c8412bb2a026ac56d5983560ae1083719bea89517ab700ab26637434c142"
+}

@@ -46,7 +46,10 @@ def predict(checkpoint, scaler, input_dir, output, device="cpu"):
     assert np.array_equal(p, reload_p) and np.array_equal(y, reload_y)
     assert len(set(data["ids"])) == len(data["ids"])
     write_predictions(output, data, p, y)
-    check = {"rows": len(y), "unique_ids":len(set(data["ids"])), "device":str(device),
+    check = {"text_observation_policy": "retain",
+             "unknown_token_positions": int(data["text_unknown"].sum()),
+             "lexical_available_positions": int(data["text_lexical_available"].sum()),
+             "rows": len(y), "unique_ids":len(set(data["ids"])), "device":str(device),
              "single_batch_max_probability_diff":float(np.abs(p-single_p).max()),
              "single_batch_max_intensity_diff":float(np.abs(y-single_y).max()),
              "single_batch_class_equal":True, "reload_exact_match":True, "finite":True,

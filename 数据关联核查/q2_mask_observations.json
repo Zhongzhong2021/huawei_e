@@ -1,0 +1,379 @@
+{
+  "source_sha256": "e538678c675b25a3d9519eac4c7f6d1630871eed4bbd6725c4d62e4ba97d7a6d",
+  "samples": [
+    {
+      "sample": "附件3_01",
+      "unk_positions": [],
+      "current_text_observed_at_unk": 0,
+      "current_audio_observed_at_unk": 0,
+      "current_vision_observed_at_unk": 0
+    },
+    {
+      "sample": "附件3_02",
+      "unk_positions": [
+        2,
+        5,
+        7,
+        9,
+        10
+      ],
+      "current_text_observed_at_unk": 5,
+      "current_audio_observed_at_unk": 0,
+      "current_vision_observed_at_unk": 0
+    },
+    {
+      "sample": "附件3_03",
+      "unk_positions": [
+        6,
+        16,
+        20,
+        23,
+        31
+      ],
+      "current_text_observed_at_unk": 5,
+      "current_audio_observed_at_unk": 0,
+      "current_vision_observed_at_unk": 0
+    },
+    {
+      "sample": "附件3_04",
+      "unk_positions": [
+        6,
+        8
+      ],
+      "current_text_observed_at_unk": 2,
+      "current_audio_observed_at_unk": 0,
+      "current_vision_observed_at_unk": 0
+    },
+    {
+      "sample": "附件3_05",
+      "unk_positions": [],
+      "current_text_observed_at_unk": 0,
+      "current_audio_observed_at_unk": 0,
+      "current_vision_observed_at_unk": 0
+    },
+    {
+      "sample": "附件3_06",
+      "unk_positions": [
+        14,
+        17,
+        25
+      ],
+      "current_text_observed_at_unk": 3,
+      "current_audio_observed_at_unk": 0,
+      "current_vision_observed_at_unk": 0
+    },
+    {
+      "sample": "附件3_07",
+      "unk_positions": [
+        10,
+        12,
+        14
+      ],
+      "current_text_observed_at_unk": 3,
+      "current_audio_observed_at_unk": 0,
+      "current_vision_observed_at_unk": 0
+    },
+    {
+      "sample": "附件3_08",
+      "unk_positions": [
+        9,
+        10
+      ],
+      "current_text_observed_at_unk": 2,
+      "current_audio_observed_at_unk": 0,
+      "current_vision_observed_at_unk": 0
+    },
+    {
+      "sample": "附件3_09",
+      "unk_positions": [
+        3,
+        4
+      ],
+      "current_text_observed_at_unk": 2,
+      "current_audio_observed_at_unk": 0,
+      "current_vision_observed_at_unk": 0
+    },
+    {
+      "sample": "附件3_10",
+      "unk_positions": [],
+      "current_text_observed_at_unk": 0,
+      "current_audio_observed_at_unk": 0,
+      "current_vision_observed_at_unk": 0
+    },
+    {
+      "sample": "附件3_11",
+      "unk_positions": [
+        4,
+        5,
+        7,
+        14
+      ],
+      "current_text_observed_at_unk": 4,
+      "current_audio_observed_at_unk": 0,
+      "current_vision_observed_at_unk": 0
+    },
+    {
+      "sample": "附件3_12",
+      "unk_positions": [
+        5,
+        13
+      ],
+      "current_text_observed_at_unk": 2,
+      "current_audio_observed_at_unk": 0,
+      "current_vision_observed_at_unk": 0
+    },
+    {
+      "sample": "附件3_13",
+      "unk_positions": [
+        5,
+        14
+      ],
+      "current_text_observed_at_unk": 2,
+      "current_audio_observed_at_unk": 0,
+      "current_vision_observed_at_unk": 0
+    },
+    {
+      "sample": "附件3_14",
+      "unk_positions": [
+        21,
+        22
+      ],
+      "current_text_observed_at_unk": 2,
+      "current_audio_observed_at_unk": 0,
+      "current_vision_observed_at_unk": 0
+    },
+    {
+      "sample": "附件3_15",
+      "unk_positions": [
+        2,
+        6,
+        18
+      ],
+      "current_text_observed_at_unk": 3,
+      "current_audio_observed_at_unk": 0,
+      "current_vision_observed_at_unk": 0
+    },
+    {
+      "sample": "附件3_16",
+      "unk_positions": [
+        5,
+        10,
+        21,
+        25
+      ],
+      "current_text_observed_at_unk": 4,
+      "current_audio_observed_at_unk": 0,
+      "current_vision_observed_at_unk": 0
+    },
+    {
+      "sample": "附件3_17",
+      "unk_positions": [
+        1,
+        2,
+        3,
+        5,
+        12,
+        15,
+        18,
+        21
+      ],
+      "current_text_observed_at_unk": 8,
+      "current_audio_observed_at_unk": 0,
+      "current_vision_observed_at_unk": 0
+    },
+    {
+      "sample": "附件3_18",
+      "unk_positions": [
+        2,
+        3,
+        5
+      ],
+      "current_text_observed_at_unk": 3,
+      "current_audio_observed_at_unk": 0,
+      "current_vision_observed_at_unk": 0
+    },
+    {
+      "sample": "附件3_19",
+      "unk_positions": [
+        3,
+        4,
+        7,
+        8,
+        13,
+        17,
+        21
+      ],
+      "current_text_observed_at_unk": 7,
+      "current_audio_observed_at_unk": 0,
+      "current_vision_observed_at_unk": 0
+    },
+    {
+      "sample": "附件3_20",
+      "unk_positions": [
+        6,
+        8,
+        9,
+        11,
+        21,
+        26,
+        31,
+        38,
+        39,
+        40,
+        41,
+        43,
+        44,
+        48
+      ],
+      "current_text_observed_at_unk": 14,
+      "current_audio_observed_at_unk": 0,
+      "current_vision_observed_at_unk": 0
+    },
+    {
+      "sample": "附件3_21",
+      "unk_positions": [
+        2,
+        4,
+        8
+      ],
+      "current_text_observed_at_unk": 3,
+      "current_audio_observed_at_unk": 0,
+      "current_vision_observed_at_unk": 0
+    },
+    {
+      "sample": "附件3_22",
+      "unk_positions": [
+        7,
+        12,
+        14,
+        16
+      ],
+      "current_text_observed_at_unk": 4,
+      "current_audio_observed_at_unk": 0,
+      "current_vision_observed_at_unk": 0
+    },
+    {
+      "sample": "附件3_23",
+      "unk_positions": [
+        6,
+        10,
+        11,
+        12
+      ],
+      "current_text_observed_at_unk": 4,
+      "current_audio_observed_at_unk": 0,
+      "current_vision_observed_at_unk": 0
+    },
+    {
+      "sample": "附件3_24",
+      "unk_positions": [
+        1,
+        7
+      ],
+      "current_text_observed_at_unk": 2,
+      "current_audio_observed_at_unk": 0,
+      "current_vision_observed_at_unk": 0
+    },
+    {
+      "sample": "附件3_25",
+      "unk_positions": [
+        1,
+        5
+      ],
+      "current_text_observed_at_unk": 2,
+      "current_audio_observed_at_unk": 0,
+      "current_vision_observed_at_unk": 0
+    },
+    {
+      "sample": "附件3_26",
+      "unk_positions": [
+        1,
+        5,
+        11,
+        15,
+        16,
+        22
+      ],
+      "current_text_observed_at_unk": 6,
+      "current_audio_observed_at_unk": 0,
+      "current_vision_observed_at_unk": 0
+    },
+    {
+      "sample": "附件3_27",
+      "unk_positions": [
+        2,
+        3,
+        4,
+        7,
+        10,
+        18,
+        20,
+        21
+      ],
+      "current_text_observed_at_unk": 8,
+      "current_audio_observed_at_unk": 0,
+      "current_vision_observed_at_unk": 0
+    },
+    {
+      "sample": "附件3_28",
+      "unk_positions": [
+        6,
+        7,
+        10,
+        11,
+        12,
+        21,
+        22,
+        26,
+        27,
+        29,
+        31
+      ],
+      "current_text_observed_at_unk": 11,
+      "current_audio_observed_at_unk": 0,
+      "current_vision_observed_at_unk": 0
+    },
+    {
+      "sample": "附件3_29",
+      "unk_positions": [
+        2,
+        7,
+        8,
+        9,
+        10,
+        15,
+        17,
+        18
+      ],
+      "current_text_observed_at_unk": 8,
+      "current_audio_observed_at_unk": 0,
+      "current_vision_observed_at_unk": 0
+    },
+    {
+      "sample": "附件3_30",
+      "unk_positions": [
+        1,
+        4,
+        7,
+        8,
+        9,
+        10,
+        14,
+        18,
+        20,
+        21,
+        22,
+        23
+      ],
+      "current_text_observed_at_unk": 12,
+      "current_audio_observed_at_unk": 0,
+      "current_vision_observed_at_unk": 0
+    }
+  ],
+  "totals": {
+    "current_text_observed_at_unk": 131,
+    "current_audio_observed_at_unk": 0,
+    "current_vision_observed_at_unk": 0
+  },
+  "weights_or_predictions_changed": false
+}

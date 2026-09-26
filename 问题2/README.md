@@ -161,3 +161,19 @@ python -m q2v3 train --name reproduction_new --seed 42 \
 `train_run`现在拒绝任何已有实验目录，包括已完成目录。要复用结果应显式读取记录；要重训必须使用新名称。`best.pt`只保存推理模型，不含优化器和随机数状态，因此不能称为逐轮断点续训。中断后若需要继续研究，应先登记新预算与新目录，再从原初始化受控重跑；不得将重跑覆盖到旧证据上。
 
 `verify_checkpoint_recovery.py`执行有界的真实模型保存及原配方复现检查；`close_interrupted_round5.py`仅在无活动研究进程且原预算已过时新增关闭记录，不修改原协议、开发记录或残缺检查点。两者用于工程验收，不是新的性能优化实验。
+
+## 未知词占位与共同位置缺失
+
+输入接口现区分`text_present`（词元位置存在）、`text_unknown`（编号100的未知词占位）和`text_lexical_available`（保留可辨识词元）。这些状态用于描述输入，不把未知词视为人为破坏的证明。既有冻结模型采用`retain`口径；候选`mask_unk`口径将未知词从文本观测掩码中排除，通过`convert(..., unknown_policy="mask_unk")`显式启用。
+
+新增验证入口比较两种口径：完整输入，以及文本占位、三模态同位置缺失各10%/30%/50%，分别采用连续区间和分散位置，共13个场景、26组结果。两种口径使用完全相同的扰动位置，按原有效序列位置计数，保留原始输入。仅在附件2验证集比较Accuracy、Macro-F1、MAE和Pearson；不使用专项标签，也不从其他附件补回遮蔽内容。
+
+```bash
+python scripts/evaluate_observation_policy.py \
+  --aligned /path/to/aligned_50.pkl \
+  --checkpoint /path/to/final/model.pt \
+  --scaler /path/to/final/scaler.npz \
+  --output /path/to/new-observation-evaluation --device cpu
+```
+
+程序先检查3395条训练样本和728条验证样本的输入状态，并构造固定配对场景。本次两集合均无编号100的原始词元；完整输入下两种口径一致。当前本机缺少第四轮权重与标准化文件，结果记录在[验证状态](docs/observation_validation/results.json)，模型性能比较标为待运行。现有冻结成绩仍对应原口径，尚不能宣称候选口径提高性能。

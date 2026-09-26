@@ -5,6 +5,7 @@ import json
 import pickle
 from pathlib import Path
 import numpy as np
+from .observation import text_state
 
 CLASSES = ["Negative", "Neutral", "Positive"]
 MODALITIES = ["text", "audio", "vision"]
@@ -44,7 +45,7 @@ def load_pickle(path):
         return NumpyUnpickler(f).load()
 
 
-def convert(raw, ids):
+def convert(raw, ids, *, unknown_policy="retain"):
     bert = np.asarray(raw["text_bert"])
     if bert.ndim != 3 or bert.shape[1:] != (3, 50):
         raise ValueError(f"Invalid text_bert shape: {bert.shape}")
@@ -70,6 +71,8 @@ def convert(raw, ids):
     valid = (positions <= end[:, None]) & (positions > 0)
     valid &= (tokens != 101) & (tokens != 102)
     text_obs = valid & (attention == 1) & (tokens != 0)
+    states = text_state(tokens, valid, text_obs, unknown_policy)
+    text_obs = states["text_observed"]
     observations = [text_obs]
     audit = {"n": n, "all_empty_rows": int((end < 0).sum()),
              "boundary_without_sep": int((~np.any(tokens == 102, axis=1)).sum()),
@@ -88,10 +91,14 @@ def convert(raw, ids):
             "nonzero_outside_valid": int((~valid & ~zero).sum())}
     audit["modalities"]["text"] = {"observed": int(text_obs.sum()),
                                           "missing_inside_extent": int((valid & ~text_obs).sum())}
+    audit["text_observation_policy"] = unknown_policy
+    audit["text_unknown_positions"] = int(states["text_unknown"].sum())
+    audit["text_lexical_available_positions"] = int(states["text_lexical_available"].sum())
     result = {"tokens": tokens, "audio": np.nan_to_num(audio, nan=0., posinf=0., neginf=0.),
               "vision": np.nan_to_num(vision, nan=0., posinf=0., neginf=0.),
               "valid": valid, "observed": np.stack(observations, axis=-1),
               "ids": np.asarray(ids, dtype=str)}
+    result.update({k: v for k, v in states.items() if k != "text_observed"})
     if len(ids) != n or len(set(map(str, ids))) != n:
         raise ValueError("Sample IDs must be unique and cover all rows")
     if "classification_labels" in raw:
