@@ -1,0 +1,163 @@
+{
+  "sample_id": "-aNfi7CP8vM$_$7",
+  "source_sha256": "0b6389f45bb966113c65a11998c6e7facdd24c8c42acf2e8cf32e0f2139402e1",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " Maybe they have no political party affiliation, they're not interested in politics, they could care less about politics.",
+      "start": 0.0,
+      "end": 7.54,
+      "avg_logprob": -0.12642728308072457,
+      "no_speech_prob": 0.01114654541015625
+    }
+  ],
+  "words": [
+    {
+      "text": " Maybe",
+      "interval_s": [
+        0.0,
+        0.62
+      ],
+      "probability": 0.873046875
+    },
+    {
+      "text": " they",
+      "interval_s": [
+        0.62,
+        0.8
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " have",
+      "interval_s": [
+        0.8,
+        0.98
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " no",
+      "interval_s": [
+        0.98,
+        1.12
+      ],
+      "probability": 0.90966796875
+    },
+    {
+      "text": " political",
+      "interval_s": [
+        1.12,
+        2.16
+      ],
+      "probability": 0.98583984375
+    },
+    {
+      "text": " party",
+      "interval_s": [
+        2.16,
+        2.76
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " affiliation,",
+      "interval_s": [
+        2.76,
+        3.72
+      ],
+      "probability": 0.999267578125
+    },
+    {
+      "text": " they're",
+      "interval_s": [
+        3.76,
+        4.34
+      ],
+      "probability": 0.984375
+    },
+    {
+      "text": " not",
+      "interval_s": [
+        4.34,
+        4.5
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " interested",
+      "interval_s": [
+        4.5,
+        4.94
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " in",
+      "interval_s": [
+        4.94,
+        5.22
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " politics,",
+      "interval_s": [
+        5.22,
+        5.62
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " they",
+      "interval_s": [
+        5.9,
+        6.02
+      ],
+      "probability": 0.994140625
+    },
+    {
+      "text": " could",
+      "interval_s": [
+        6.02,
+        6.18
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " care",
+      "interval_s": [
+        6.18,
+        6.38
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " less",
+      "interval_s": [
+        6.38,
+        6.7
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " about",
+      "interval_s": [
+        6.7,
+        6.98
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " politics.",
+      "interval_s": [
+        6.98,
+        7.54
+      ],
+      "probability": 1.0
+    }
+  ],
+  "elapsed_s": 0.6704363690223545
+}

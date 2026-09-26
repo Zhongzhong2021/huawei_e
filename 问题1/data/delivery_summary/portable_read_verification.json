@@ -1,0 +1,12 @@
+{
+  "candidates": 1342,
+  "unresolved": 590,
+  "samples": 100,
+  "status": "passed",
+  "identical_summary_after_relocation": true,
+  "source_media_or_model_inference_rerun": false,
+  "human_files_or_diagnostic_models_required": false,
+  "environment": "existing Python/NumPy; fresh directory, not a newly installed environment",
+  "scope": "identity, feature/index hashes, all word queries, full-audio physical queries",
+  "script_sha256": "7e0faf1e302b1360fca7feb2766feffe8935c327cd04b9f2a1c539c088269b53"
+}

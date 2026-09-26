@@ -1,8 +1,2 @@
 __pycache__/
-*.py[cod]
-.venv/
-venv/
-.env
-/cache/
-/results/
-/interface_check_new/
+*.pyc

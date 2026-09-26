@@ -1,0 +1,213 @@
+{
+  "words": [
+    {
+      "word_index": 0,
+      "text": "So",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 1,
+      "text": "physical",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 2,
+      "text": "therapists",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 3,
+      "text": "and",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 4,
+      "text": "chiropractors",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 5,
+      "text": "will",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 6,
+      "text": "do",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 7,
+      "text": "joint",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 8,
+      "text": "manipulations",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 9,
+      "text": "and",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 10,
+      "text": "mobilizations",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    }
+  ],
+  "phrases": [],
+  "diagnostics": [],
+  "added_words": 0,
+  "phrase_only_words": [],
+  "baseline_candidates": 0,
+  "conflicting_baseline_words": 0,
+  "sample_id": "-mJ2ud6oKI8$_$2",
+  "source_sha256": "c41790f8b75f886bd1f5d6d72cbab1985306d0b715e5ae47203f3d0c8a3e7b28",
+  "human_data_used": false,
+  "baseline_result_sha256": "4b026fbe39a55d2203943c6e5e884abeeb2e1f7cf71c70506332b59b3e40e956",
+  "decision_policy": "unprompted_asr_local_phonetic_multigranular_ordered_selection_v3"
+}

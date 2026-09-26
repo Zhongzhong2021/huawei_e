@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "samples": 100,
+  "experiments": 300,
+  "word_records_checked": 5796,
+  "identity_reproduced": true,
+  "counts_and_residual_denominators_verified": true,
+  "candidates_fully_inside_added_silence": 0,
+  "protocol_sha256": "fa9ad9be987db46c8be869c5a547c82c36739cf933699d7da0e1adf944a49b44",
+  "results_sha256": "cfe0851044b1141c5edc9781e6393a079fa7d0b5656faff7657e5b41361c02f9",
+  "summary_sha256": "85e5a541ab6a2c916275781674a08f5293853f0bc2c372b9393f65ab564bc381",
+  "verification_script_sha256": "21771006a9f6b55a5388a26aae1d3d685beece8518935a46acb092039d5bc175",
+  "scope": "Consistency and controlled-transform measurements; not absolute alignment accuracy."
+}

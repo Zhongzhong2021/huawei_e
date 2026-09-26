@@ -1,0 +1,305 @@
+{
+  "sample_id": "-3g5yACwYnA$_$3",
+  "source_sha256": "eff8cfefba2425155f2b72656829b34b23be8bfe1dcbece384154f56818aa26d",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " we're a huge user of adhesives for our operation called flocking and we don't",
+      "start": 0.0,
+      "end": 7.2,
+      "avg_logprob": -0.22290558574047495,
+      "no_speech_prob": 0.0305328369140625
+    },
+    {
+      "text": " have the technical and inside information compounding or the technical",
+      "start": 7.2,
+      "end": 10.62,
+      "avg_logprob": -0.22290558574047495,
+      "no_speech_prob": 0.0305328369140625
+    },
+    {
+      "text": " expertise to do these types of things so key brings",
+      "start": 10.62,
+      "end": 14.08,
+      "avg_logprob": -0.22290558574047495,
+      "no_speech_prob": 0.0305328369140625
+    }
+  ],
+  "words": [
+    {
+      "text": " we're",
+      "interval_s": [
+        0.0,
+        0.96
+      ],
+      "probability": 0.44989013671875
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        0.96,
+        1.1
+      ],
+      "probability": 0.95947265625
+    },
+    {
+      "text": " huge",
+      "interval_s": [
+        1.1,
+        1.54
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " user",
+      "interval_s": [
+        1.54,
+        2.72
+      ],
+      "probability": 0.9814453125
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        2.72,
+        2.96
+      ],
+      "probability": 0.9951171875
+    },
+    {
+      "text": " adhesives",
+      "interval_s": [
+        2.96,
+        3.52
+      ],
+      "probability": 0.9905598958333334
+    },
+    {
+      "text": " for",
+      "interval_s": [
+        3.52,
+        4.24
+      ],
+      "probability": 0.98583984375
+    },
+    {
+      "text": " our",
+      "interval_s": [
+        4.24,
+        4.56
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " operation",
+      "interval_s": [
+        4.56,
+        5.06
+      ],
+      "probability": 0.98095703125
+    },
+    {
+      "text": " called",
+      "interval_s": [
+        5.06,
+        5.66
+      ],
+      "probability": 0.92578125
+    },
+    {
+      "text": " flocking",
+      "interval_s": [
+        5.66,
+        6.12
+      ],
+      "probability": 0.95703125
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        6.12,
+        6.5
+      ],
+      "probability": 0.7431640625
+    },
+    {
+      "text": " we",
+      "interval_s": [
+        6.5,
+        7.0
+      ],
+      "probability": 0.994140625
+    },
+    {
+      "text": " don't",
+      "interval_s": [
+        7.0,
+        7.2
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " have",
+      "interval_s": [
+        7.2,
+        7.28
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        7.28,
+        7.4
+      ],
+      "probability": 0.98291015625
+    },
+    {
+      "text": " technical",
+      "interval_s": [
+        7.4,
+        7.74
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        7.74,
+        8.0
+      ],
+      "probability": 0.41455078125
+    },
+    {
+      "text": " inside",
+      "interval_s": [
+        8.0,
+        8.5
+      ],
+      "probability": 0.861328125
+    },
+    {
+      "text": " information",
+      "interval_s": [
+        8.5,
+        8.78
+      ],
+      "probability": 0.38720703125
+    },
+    {
+      "text": " compounding",
+      "interval_s": [
+        8.78,
+        9.94
+      ],
+      "probability": 0.90234375
+    },
+    {
+      "text": " or",
+      "interval_s": [
+        9.94,
+        10.14
+      ],
+      "probability": 0.9921875
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        10.14,
+        10.32
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " technical",
+      "interval_s": [
+        10.32,
+        10.62
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " expertise",
+      "interval_s": [
+        10.62,
+        11.02
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        11.02,
+        11.32
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " do",
+      "interval_s": [
+        11.32,
+        11.44
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " these",
+      "interval_s": [
+        11.44,
+        11.6
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " types",
+      "interval_s": [
+        11.6,
+        11.8
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        11.8,
+        11.98
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " things",
+      "interval_s": [
+        11.98,
+        12.26
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " so",
+      "interval_s": [
+        12.26,
+        13.0
+      ],
+      "probability": 0.896484375
+    },
+    {
+      "text": " key",
+      "interval_s": [
+        13.0,
+        13.8
+      ],
+      "probability": 0.2283935546875
+    },
+    {
+      "text": " brings",
+      "interval_s": [
+        13.8,
+        14.08
+      ],
+      "probability": 0.94140625
+    }
+  ],
+  "elapsed_s": 0.8947815230349079
+}

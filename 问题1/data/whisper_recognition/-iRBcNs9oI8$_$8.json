@@ -1,0 +1,202 @@
+{
+  "sample_id": "-iRBcNs9oI8$_$8",
+  "source_sha256": "72a49e3da2862addcde033bd2fbae957d086533664ca4dcbccd3a851bcd50412",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " ever decide to ask out that special someone. So what is the secret I'm telling you about?",
+      "start": 0.0,
+      "end": 5.66,
+      "avg_logprob": -0.163085940759629,
+      "no_speech_prob": 0.0655517578125
+    },
+    {
+      "text": " Well, it is the secret.",
+      "start": 6.14,
+      "end": 7.84,
+      "avg_logprob": -0.163085940759629,
+      "no_speech_prob": 0.0655517578125
+    }
+  ],
+  "words": [
+    {
+      "text": " ever",
+      "interval_s": [
+        0.0,
+        0.22
+      ],
+      "probability": 0.7421875
+    },
+    {
+      "text": " decide",
+      "interval_s": [
+        0.22,
+        0.56
+      ],
+      "probability": 0.98681640625
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        0.56,
+        0.96
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " ask",
+      "interval_s": [
+        0.96,
+        1.28
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " out",
+      "interval_s": [
+        1.28,
+        1.56
+      ],
+      "probability": 0.9931640625
+    },
+    {
+      "text": " that",
+      "interval_s": [
+        1.56,
+        1.94
+      ],
+      "probability": 0.994140625
+    },
+    {
+      "text": " special",
+      "interval_s": [
+        1.94,
+        2.26
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " someone.",
+      "interval_s": [
+        2.26,
+        2.6
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " So",
+      "interval_s": [
+        3.44,
+        3.98
+      ],
+      "probability": 0.962890625
+    },
+    {
+      "text": " what",
+      "interval_s": [
+        3.98,
+        4.14
+      ],
+      "probability": 0.8583984375
+    },
+    {
+      "text": " is",
+      "interval_s": [
+        4.14,
+        4.26
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        4.26,
+        4.36
+      ],
+      "probability": 0.91552734375
+    },
+    {
+      "text": " secret",
+      "interval_s": [
+        4.36,
+        4.68
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " I'm",
+      "interval_s": [
+        4.68,
+        4.92
+      ],
+      "probability": 0.985107421875
+    },
+    {
+      "text": " telling",
+      "interval_s": [
+        4.92,
+        5.18
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " you",
+      "interval_s": [
+        5.18,
+        5.4
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " about?",
+      "interval_s": [
+        5.4,
+        5.66
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " Well,",
+      "interval_s": [
+        6.14,
+        6.68
+      ],
+      "probability": 0.99365234375
+    },
+    {
+      "text": " it",
+      "interval_s": [
+        6.72,
+        7.14
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " is",
+      "interval_s": [
+        7.14,
+        7.34
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        7.34,
+        7.5
+      ],
+      "probability": 0.99267578125
+    },
+    {
+      "text": " secret.",
+      "interval_s": [
+        7.5,
+        7.84
+      ],
+      "probability": 0.9794921875
+    }
+  ],
+  "elapsed_s": 0.7809423219878227
+}

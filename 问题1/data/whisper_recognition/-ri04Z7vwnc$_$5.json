@@ -1,0 +1,131 @@
+{
+  "sample_id": "-ri04Z7vwnc$_$5",
+  "source_sha256": "2a5e4319bf592a18c8eb5117f7c7ec30c6c79528f9eac9fe4fb85bf70f277736",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " And a lot of people who are working, you know, money is very important.",
+      "start": 0.0,
+      "end": 3.16,
+      "avg_logprob": -0.23769532591104509,
+      "no_speech_prob": 0.238037109375
+    }
+  ],
+  "words": [
+    {
+      "text": " And",
+      "interval_s": [
+        0.0,
+        0.28
+      ],
+      "probability": 0.285888671875
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        0.28,
+        0.44
+      ],
+      "probability": 0.876953125
+    },
+    {
+      "text": " lot",
+      "interval_s": [
+        0.44,
+        0.68
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        0.68,
+        0.76
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " people",
+      "interval_s": [
+        0.76,
+        0.98
+      ],
+      "probability": 0.98974609375
+    },
+    {
+      "text": " who",
+      "interval_s": [
+        0.98,
+        1.16
+      ],
+      "probability": 0.966796875
+    },
+    {
+      "text": " are",
+      "interval_s": [
+        1.16,
+        1.22
+      ],
+      "probability": 0.9912109375
+    },
+    {
+      "text": " working,",
+      "interval_s": [
+        1.22,
+        1.58
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " you",
+      "interval_s": [
+        1.72,
+        2.3
+      ],
+      "probability": 0.68603515625
+    },
+    {
+      "text": " know,",
+      "interval_s": [
+        2.3,
+        2.4
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " money",
+      "interval_s": [
+        2.42,
+        2.6
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " is",
+      "interval_s": [
+        2.6,
+        2.78
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " very",
+      "interval_s": [
+        2.78,
+        2.98
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " important.",
+      "interval_s": [
+        2.98,
+        3.16
+      ],
+      "probability": 0.98779296875
+    }
+  ],
+  "elapsed_s": 0.5844612230430357
+}

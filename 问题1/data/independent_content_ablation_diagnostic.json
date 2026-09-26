@@ -1,0 +1,105 @@
+{
+  "status": "post_review_diagnostic_not_new_method_validation",
+  "review_sha256": "f2a72ac7fed9a48c07d66d62f4cda28fd121beadf324df70bbbd2837ca0e7150",
+  "existing_ablation_source": "data/automatic_evaluation.json",
+  "automatic_outputs_modified": false,
+  "rows": [
+    {
+      "sample_id": "-AUZQgSxyPQ$_$2",
+      "human_content": "complete",
+      "words": 41,
+      "informative_coverage": 0.4838709677419355,
+      "informative_anchors": 15,
+      "variant_candidates": {
+        "frozen_baseline": 0,
+        "existing_coverage_0.3_ablation": 21,
+        "existing_no_content_gate_ablation": 21
+      }
+    },
+    {
+      "sample_id": "-mJ2ud6oKI8$_$6",
+      "human_content": "absent",
+      "words": 5,
+      "informative_coverage": 0.0,
+      "informative_anchors": 0,
+      "variant_candidates": {
+        "frozen_baseline": 0,
+        "existing_coverage_0.3_ablation": 0,
+        "existing_no_content_gate_ablation": 1
+      }
+    },
+    {
+      "sample_id": "-qDkUB0GgYY$_$6",
+      "human_content": "complete",
+      "words": 16,
+      "informative_coverage": 0.5714285714285714,
+      "informative_anchors": 4,
+      "variant_candidates": {
+        "frozen_baseline": 9,
+        "existing_coverage_0.3_ablation": 9,
+        "existing_no_content_gate_ablation": 9
+      }
+    },
+    {
+      "sample_id": "-ri04Z7vwnc$_$0",
+      "human_content": "absent",
+      "words": 8,
+      "informative_coverage": 0.0,
+      "informative_anchors": 0,
+      "variant_candidates": {
+        "frozen_baseline": 0,
+        "existing_coverage_0.3_ablation": 0,
+        "existing_no_content_gate_ablation": 0
+      }
+    },
+    {
+      "sample_id": "-tANM6ETl_M$_$3",
+      "human_content": "complete",
+      "words": 22,
+      "informative_coverage": 0.9090909090909091,
+      "informative_anchors": 10,
+      "variant_candidates": {
+        "frozen_baseline": 20,
+        "existing_coverage_0.3_ablation": 20,
+        "existing_no_content_gate_ablation": 20
+      }
+    },
+    {
+      "sample_id": "-wny0OAz3g8$_$5",
+      "human_content": "complete",
+      "words": 20,
+      "informative_coverage": 0.9090909090909091,
+      "informative_anchors": 10,
+      "variant_candidates": {
+        "frozen_baseline": 18,
+        "existing_coverage_0.3_ablation": 18,
+        "existing_no_content_gate_ablation": 18
+      }
+    },
+    {
+      "sample_id": "-wMB_hJL-3o$_$7",
+      "human_content": "complete",
+      "words": 22,
+      "informative_coverage": 1.0,
+      "informative_anchors": 5,
+      "variant_candidates": {
+        "frozen_baseline": 22,
+        "existing_coverage_0.3_ablation": 22,
+        "existing_no_content_gate_ablation": 22
+      }
+    },
+    {
+      "sample_id": "-vxjVxOeScU$_$4",
+      "human_content": "complete",
+      "words": 21,
+      "informative_coverage": 0.7272727272727273,
+      "informative_anchors": 8,
+      "variant_candidates": {
+        "frozen_baseline": 17,
+        "existing_coverage_0.3_ablation": 17,
+        "existing_no_content_gate_ablation": 17
+      }
+    }
+  ],
+  "interpretation": "These ablations already existed. Selecting or designing a method from this comparison uses these references for development; no word-accuracy conclusion."
+}

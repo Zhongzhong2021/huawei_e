@@ -1,0 +1,131 @@
+{
+  "sample_id": "-mqbVkbCndg$_$0",
+  "source_sha256": "cdeba953bba30907814acf72f3e35582dec263eaa25bdd922dad7fafe02e4dda",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " How, at a particular moment in time, our moment in time, are they limited?",
+      "start": 0.0,
+      "end": 5.56,
+      "avg_logprob": -0.21000744331450688,
+      "no_speech_prob": 0.0082244873046875
+    }
+  ],
+  "words": [
+    {
+      "text": " How,",
+      "interval_s": [
+        0.0,
+        0.24
+      ],
+      "probability": 0.82275390625
+    },
+    {
+      "text": " at",
+      "interval_s": [
+        0.34,
+        0.86
+      ],
+      "probability": 0.9931640625
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        0.86,
+        0.96
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " particular",
+      "interval_s": [
+        0.96,
+        1.28
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " moment",
+      "interval_s": [
+        1.28,
+        1.74
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " in",
+      "interval_s": [
+        1.74,
+        2.06
+      ],
+      "probability": 0.9912109375
+    },
+    {
+      "text": " time,",
+      "interval_s": [
+        2.06,
+        2.42
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " our",
+      "interval_s": [
+        2.48,
+        2.74
+      ],
+      "probability": 0.9296875
+    },
+    {
+      "text": " moment",
+      "interval_s": [
+        2.74,
+        3.26
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " in",
+      "interval_s": [
+        3.26,
+        3.5
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " time,",
+      "interval_s": [
+        3.5,
+        3.9
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " are",
+      "interval_s": [
+        3.96,
+        4.48
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " they",
+      "interval_s": [
+        4.48,
+        4.78
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " limited?",
+      "interval_s": [
+        4.78,
+        5.56
+      ],
+      "probability": 0.99072265625
+    }
+  ],
+  "elapsed_s": 0.6717047319980338
+}

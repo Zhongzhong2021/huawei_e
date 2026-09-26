@@ -1,0 +1,858 @@
+{
+  "schema": "q1-automatic-evaluation-v1",
+  "config_sha256": "b0adbf96c3cfcda192429317763b44f8ab5da4453b7d1b4779664feccadecf7c",
+  "samples": 100,
+  "baseline_candidate_words": 1908,
+  "automatic_eligible_words": 1328,
+  "reference_words": 1932,
+  "sample_gate_counts": {
+    "supported": 74,
+    "insufficient_evidence": 8,
+    "no_informative_support": 16,
+    "no_signal": 2
+  },
+  "word_status_counts": {
+    "automatic_candidate": 1328,
+    "unmatched_or_ambiguous": 170,
+    "approximate_lexical_match": 37,
+    "boundary_disagreement": 2,
+    "sample_support_insufficient": 395
+  },
+  "diagnostic_existing_human_reports": [
+    {
+      "sample_id": "-3g5yACwYnA$_$2",
+      "task_id": "-3g5yACwYnA$_$2:speech:0-1",
+      "human_interpretation": "human_confirmed_original_group_range_only",
+      "sample_gate": "supported",
+      "target_words": 2,
+      "baseline_candidate_words": 2,
+      "automatic_eligible_words": 0,
+      "automatic_group_complete": false,
+      "automatic_span_s": null,
+      "human_span_s": [
+        2.922471655328798,
+        3.362471655328798
+      ],
+      "boundary_error_s": null,
+      "word_status_counts": {
+        "unmatched_or_ambiguous": 2
+      }
+    },
+    {
+      "sample_id": "-3g5yACwYnA$_$9",
+      "task_id": "-3g5yACwYnA$_$9:speech:21-22",
+      "human_interpretation": "target_phrase_scope_unresolved_do_not_accept_original_range",
+      "sample_gate": "supported",
+      "target_words": 2,
+      "baseline_candidate_words": 2,
+      "automatic_eligible_words": 0,
+      "automatic_group_complete": false,
+      "automatic_span_s": null,
+      "human_span_s": null,
+      "boundary_error_s": null,
+      "word_status_counts": {
+        "unmatched_or_ambiguous": 2
+      }
+    },
+    {
+      "sample_id": "-HeZS2-Prhc$_$2",
+      "task_id": "-HeZS2-Prhc$_$2:speech:15-15",
+      "human_interpretation": "reported_group_range_only",
+      "sample_gate": "supported",
+      "target_words": 1,
+      "baseline_candidate_words": 1,
+      "automatic_eligible_words": 0,
+      "automatic_group_complete": false,
+      "automatic_span_s": null,
+      "human_span_s": [
+        7.342471655328798,
+        7.602471655328798
+      ],
+      "boundary_error_s": null,
+      "word_status_counts": {
+        "unmatched_or_ambiguous": 1
+      }
+    },
+    {
+      "sample_id": "-HwX2H8Z4hY$_$9",
+      "task_id": "-HwX2H8Z4hY$_$9:speech:0-7",
+      "human_interpretation": "reported_group_range_only",
+      "sample_gate": "insufficient_evidence",
+      "target_words": 8,
+      "baseline_candidate_words": 8,
+      "automatic_eligible_words": 0,
+      "automatic_group_complete": false,
+      "automatic_span_s": null,
+      "human_span_s": [
+        2.921995464852608,
+        4.261995464852608
+      ],
+      "boundary_error_s": null,
+      "word_status_counts": {
+        "sample_support_insufficient": 8
+      }
+    },
+    {
+      "sample_id": "-I_e4mIh0yE$_$3",
+      "task_id": "-I_e4mIh0yE$_$3:speech:0-4",
+      "human_interpretation": "reported_group_range_only",
+      "sample_gate": "supported",
+      "target_words": 5,
+      "baseline_candidate_words": 5,
+      "automatic_eligible_words": 3,
+      "automatic_group_complete": false,
+      "automatic_span_s": null,
+      "human_span_s": [
+        2.5624716553287983,
+        3.362471655328798
+      ],
+      "boundary_error_s": null,
+      "word_status_counts": {
+        "automatic_candidate": 3,
+        "unmatched_or_ambiguous": 2
+      }
+    },
+    {
+      "sample_id": "-MeTTeMJBNc$_$13",
+      "task_id": "-MeTTeMJBNc$_$13:speech:0-1",
+      "human_interpretation": "partial_content_range_not_full_text_alignment",
+      "sample_gate": "supported",
+      "target_words": 2,
+      "baseline_candidate_words": 2,
+      "automatic_eligible_words": 0,
+      "automatic_group_complete": false,
+      "automatic_span_s": null,
+      "human_span_s": null,
+      "boundary_error_s": null,
+      "word_status_counts": {
+        "unmatched_or_ambiguous": 1,
+        "approximate_lexical_match": 1
+      }
+    },
+    {
+      "sample_id": "-NFrJFQijFE$_$2",
+      "task_id": "-NFrJFQijFE$_$2:speech:0-17",
+      "human_interpretation": "human_reported_full_audio_text_mismatch",
+      "sample_gate": "no_informative_support",
+      "target_words": 18,
+      "baseline_candidate_words": 18,
+      "automatic_eligible_words": 0,
+      "automatic_group_complete": false,
+      "automatic_span_s": null,
+      "human_span_s": null,
+      "boundary_error_s": null,
+      "word_status_counts": {
+        "sample_support_insufficient": 18
+      }
+    },
+    {
+      "sample_id": "-aNfi7CP8vM$_$7",
+      "task_id": "-aNfi7CP8vM$_$7:speech:0-0",
+      "human_interpretation": "boundary_unresolved",
+      "sample_gate": "supported",
+      "target_words": 1,
+      "baseline_candidate_words": 1,
+      "automatic_eligible_words": 0,
+      "automatic_group_complete": false,
+      "automatic_span_s": null,
+      "human_span_s": null,
+      "boundary_error_s": null,
+      "word_status_counts": {
+        "unmatched_or_ambiguous": 1
+      }
+    },
+    {
+      "sample_id": "-egA8-b7-3M$_$1",
+      "task_id": "-egA8-b7-3M$_$1:speech:0-0",
+      "human_interpretation": "boundary_unresolved",
+      "sample_gate": "supported",
+      "target_words": 1,
+      "baseline_candidate_words": 1,
+      "automatic_eligible_words": 0,
+      "automatic_group_complete": false,
+      "automatic_span_s": null,
+      "human_span_s": null,
+      "boundary_error_s": null,
+      "word_status_counts": {
+        "unmatched_or_ambiguous": 1
+      }
+    },
+    {
+      "sample_id": "-hnBHBN8p5A$_$7",
+      "task_id": "-hnBHBN8p5A$_$7:speech:0-12",
+      "human_interpretation": "human_reported_full_audio_text_mismatch",
+      "sample_gate": "no_informative_support",
+      "target_words": 13,
+      "baseline_candidate_words": 13,
+      "automatic_eligible_words": 0,
+      "automatic_group_complete": false,
+      "automatic_span_s": null,
+      "human_span_s": null,
+      "boundary_error_s": null,
+      "word_status_counts": {
+        "sample_support_insufficient": 13
+      }
+    },
+    {
+      "sample_id": "-iRBcNs9oI8$_$3",
+      "task_id": "-iRBcNs9oI8$_$3:speech:0-7",
+      "human_interpretation": "human_reported_full_audio_text_mismatch",
+      "sample_gate": "no_informative_support",
+      "target_words": 8,
+      "baseline_candidate_words": 8,
+      "automatic_eligible_words": 0,
+      "automatic_group_complete": false,
+      "automatic_span_s": null,
+      "human_span_s": null,
+      "boundary_error_s": null,
+      "word_status_counts": {
+        "sample_support_insufficient": 8
+      }
+    },
+    {
+      "sample_id": "-iRBcNs9oI8$_$6",
+      "task_id": "-iRBcNs9oI8$_$6:speech:0-4",
+      "human_interpretation": "human_reported_full_audio_text_mismatch",
+      "sample_gate": "no_informative_support",
+      "target_words": 5,
+      "baseline_candidate_words": 5,
+      "automatic_eligible_words": 0,
+      "automatic_group_complete": false,
+      "automatic_span_s": null,
+      "human_span_s": null,
+      "boundary_error_s": null,
+      "word_status_counts": {
+        "sample_support_insufficient": 5
+      }
+    }
+  ],
+  "ablation_and_sensitivity": {
+    "exact_only": {
+      "eligible_words": 1328,
+      "samples_with_eligible_words": 74,
+      "mismatch_diagnostic_eligible_words": 0
+    },
+    "no_content_gate": {
+      "eligible_words": 1382,
+      "samples_with_eligible_words": 84,
+      "mismatch_diagnostic_eligible_words": 0
+    },
+    "no_boundary_agreement": {
+      "eligible_words": 1330,
+      "samples_with_eligible_words": 74,
+      "mismatch_diagnostic_eligible_words": 0
+    },
+    "coverage_0.3": {
+      "eligible_words": 1369,
+      "samples_with_eligible_words": 78,
+      "mismatch_diagnostic_eligible_words": 0
+    },
+    "coverage_0.7": {
+      "eligible_words": 1185,
+      "samples_with_eligible_words": 64,
+      "mismatch_diagnostic_eligible_words": 0
+    }
+  },
+  "cross_video_reference_swap_control": {
+    "trials": 98,
+    "gate_supported": 0,
+    "cases": [
+      {
+        "audio_sample_id": "-3g5yACwYnA$_$13",
+        "reference_sample_id": "-3nNcZdcdvU$_$5",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-3g5yACwYnA$_$2",
+        "reference_sample_id": "-3nNcZdcdvU$_$5",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-3g5yACwYnA$_$3",
+        "reference_sample_id": "-3nNcZdcdvU$_$5",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-3g5yACwYnA$_$9",
+        "reference_sample_id": "-3nNcZdcdvU$_$5",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-3nNcZdcdvU$_$5",
+        "reference_sample_id": "-571d8cVauQ$_$0",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-571d8cVauQ$_$0",
+        "reference_sample_id": "-6rXp3zJ3kc$_$8",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-571d8cVauQ$_$5",
+        "reference_sample_id": "-6rXp3zJ3kc$_$8",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-6rXp3zJ3kc$_$8",
+        "reference_sample_id": "-9y-fZ3swSY$_$0",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-9y-fZ3swSY$_$0",
+        "reference_sample_id": "-AUZQgSxyPQ$_$2",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-9y-fZ3swSY$_$4",
+        "reference_sample_id": "-AUZQgSxyPQ$_$2",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-9y-fZ3swSY$_$8",
+        "reference_sample_id": "-AUZQgSxyPQ$_$2",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-AUZQgSxyPQ$_$2",
+        "reference_sample_id": "-HeZS2-Prhc$_$2",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-HeZS2-Prhc$_$2",
+        "reference_sample_id": "-HwX2H8Z4hY$_$2",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-HwX2H8Z4hY$_$2",
+        "reference_sample_id": "-I_e4mIh0yE$_$1",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-HwX2H8Z4hY$_$5",
+        "reference_sample_id": "-I_e4mIh0yE$_$1",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-HwX2H8Z4hY$_$6",
+        "reference_sample_id": "-I_e4mIh0yE$_$1",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-HwX2H8Z4hY$_$9",
+        "reference_sample_id": "-I_e4mIh0yE$_$1",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-I_e4mIh0yE$_$1",
+        "reference_sample_id": "-MeTTeMJBNc$_$0",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-I_e4mIh0yE$_$3",
+        "reference_sample_id": "-MeTTeMJBNc$_$0",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-MeTTeMJBNc$_$0",
+        "reference_sample_id": "-NFrJFQijFE$_$1",
+        "gate_status": "insufficient_evidence",
+        "informative_coverage": 0.1111111111111111
+      },
+      {
+        "audio_sample_id": "-MeTTeMJBNc$_$13",
+        "reference_sample_id": "-NFrJFQijFE$_$1",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-MeTTeMJBNc$_$7",
+        "reference_sample_id": "-NFrJFQijFE$_$1",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-NFrJFQijFE$_$1",
+        "reference_sample_id": "-RfYyzHpjk4$_$11",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-NFrJFQijFE$_$2",
+        "reference_sample_id": "-RfYyzHpjk4$_$11",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-RfYyzHpjk4$_$11",
+        "reference_sample_id": "-THoVjtIkeU$_$12",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-RfYyzHpjk4$_$2",
+        "reference_sample_id": "-THoVjtIkeU$_$12",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-RfYyzHpjk4$_$8",
+        "reference_sample_id": "-THoVjtIkeU$_$12",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-THoVjtIkeU$_$12",
+        "reference_sample_id": "-UUCSKoHeMA$_$0",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-THoVjtIkeU$_$2",
+        "reference_sample_id": "-UUCSKoHeMA$_$0",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-THoVjtIkeU$_$6",
+        "reference_sample_id": "-UUCSKoHeMA$_$0",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-UUCSKoHeMA$_$0",
+        "reference_sample_id": "-UacrmKiTn4$_$10",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-UacrmKiTn4$_$10",
+        "reference_sample_id": "-UuX1xuaiiE$_$0",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-UacrmKiTn4$_$4",
+        "reference_sample_id": "-UuX1xuaiiE$_$0",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-UuX1xuaiiE$_$0",
+        "reference_sample_id": "-a55Q6RWvTA$_$3",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-UuX1xuaiiE$_$1",
+        "reference_sample_id": "-a55Q6RWvTA$_$3",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-UuX1xuaiiE$_$3",
+        "reference_sample_id": "-a55Q6RWvTA$_$3",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-UuX1xuaiiE$_$6",
+        "reference_sample_id": "-a55Q6RWvTA$_$3",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-a55Q6RWvTA$_$3",
+        "reference_sample_id": "-aNfi7CP8vM$_$7",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-aNfi7CP8vM$_$7",
+        "reference_sample_id": "-aqamKhZ1Ec$_$0",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-aqamKhZ1Ec$_$0",
+        "reference_sample_id": "-dxfTGcXJoc$_$0",
+        "gate_status": "insufficient_evidence",
+        "informative_coverage": 0.045454545454545456
+      },
+      {
+        "audio_sample_id": "-dxfTGcXJoc$_$0",
+        "reference_sample_id": "-egA8-b7-3M$_$1",
+        "gate_status": "insufficient_evidence",
+        "informative_coverage": 0.13333333333333333
+      },
+      {
+        "audio_sample_id": "-dxfTGcXJoc$_$1",
+        "reference_sample_id": "-egA8-b7-3M$_$1",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-dxfTGcXJoc$_$2",
+        "reference_sample_id": "-egA8-b7-3M$_$1",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-dxfTGcXJoc$_$6",
+        "reference_sample_id": "-egA8-b7-3M$_$1",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-egA8-b7-3M$_$1",
+        "reference_sample_id": "-hnBHBN8p5A$_$6",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-egA8-b7-3M$_$13",
+        "reference_sample_id": "-hnBHBN8p5A$_$6",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-egA8-b7-3M$_$16",
+        "reference_sample_id": "-hnBHBN8p5A$_$6",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-egA8-b7-3M$_$17",
+        "reference_sample_id": "-hnBHBN8p5A$_$6",
+        "gate_status": "insufficient_evidence",
+        "informative_coverage": 0.125
+      },
+      {
+        "audio_sample_id": "-egA8-b7-3M$_$18",
+        "reference_sample_id": "-hnBHBN8p5A$_$6",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-egA8-b7-3M$_$20",
+        "reference_sample_id": "-hnBHBN8p5A$_$6",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-egA8-b7-3M$_$26",
+        "reference_sample_id": "-hnBHBN8p5A$_$6",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-egA8-b7-3M$_$6",
+        "reference_sample_id": "-hnBHBN8p5A$_$6",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-egA8-b7-3M$_$9",
+        "reference_sample_id": "-hnBHBN8p5A$_$6",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-hnBHBN8p5A$_$6",
+        "reference_sample_id": "-iRBcNs9oI8$_$3",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-hnBHBN8p5A$_$7",
+        "reference_sample_id": "-iRBcNs9oI8$_$3",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-iRBcNs9oI8$_$3",
+        "reference_sample_id": "-lzEya4AM_4$_$5",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-iRBcNs9oI8$_$6",
+        "reference_sample_id": "-lzEya4AM_4$_$5",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-iRBcNs9oI8$_$7",
+        "reference_sample_id": "-lzEya4AM_4$_$5",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-iRBcNs9oI8$_$8",
+        "reference_sample_id": "-lzEya4AM_4$_$5",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-iRBcNs9oI8$_$9",
+        "reference_sample_id": "-lzEya4AM_4$_$5",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-lzEya4AM_4$_$5",
+        "reference_sample_id": "-mJ2ud6oKI8$_$6",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-lzEya4AM_4$_$6",
+        "reference_sample_id": "-mJ2ud6oKI8$_$6",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-mJ2ud6oKI8$_$6",
+        "reference_sample_id": "-mqbVkbCndg$_$0",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-mJ2ud6oKI8$_$8",
+        "reference_sample_id": "-mqbVkbCndg$_$0",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-mJ2ud6oKI8$_$9",
+        "reference_sample_id": "-mqbVkbCndg$_$0",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-mqbVkbCndg$_$0",
+        "reference_sample_id": "-qDkUB0GgYY$_$6",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-qDkUB0GgYY$_$6",
+        "reference_sample_id": "-ri04Z7vwnc$_$0",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-ri04Z7vwnc$_$0",
+        "reference_sample_id": "-s9qJ7ATP7w$_$0",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-ri04Z7vwnc$_$2",
+        "reference_sample_id": "-s9qJ7ATP7w$_$0",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-ri04Z7vwnc$_$5",
+        "reference_sample_id": "-s9qJ7ATP7w$_$0",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-s9qJ7ATP7w$_$0",
+        "reference_sample_id": "-t217m2on-s$_$2",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-s9qJ7ATP7w$_$1",
+        "reference_sample_id": "-t217m2on-s$_$2",
+        "gate_status": "insufficient_evidence",
+        "informative_coverage": 0.2
+      },
+      {
+        "audio_sample_id": "-s9qJ7ATP7w$_$4",
+        "reference_sample_id": "-t217m2on-s$_$2",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-s9qJ7ATP7w$_$5",
+        "reference_sample_id": "-t217m2on-s$_$2",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-s9qJ7ATP7w$_$6",
+        "reference_sample_id": "-t217m2on-s$_$2",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-s9qJ7ATP7w$_$7",
+        "reference_sample_id": "-t217m2on-s$_$2",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-s9qJ7ATP7w$_$8",
+        "reference_sample_id": "-t217m2on-s$_$2",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-t217m2on-s$_$2",
+        "reference_sample_id": "-tANM6ETl_M$_$3",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-t217m2on-s$_$7",
+        "reference_sample_id": "-tANM6ETl_M$_$3",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-tANM6ETl_M$_$3",
+        "reference_sample_id": "-tPCytz4rww$_$10",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-tPCytz4rww$_$10",
+        "reference_sample_id": "-uywlfIYOS8$_$4",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-tPCytz4rww$_$11",
+        "reference_sample_id": "-uywlfIYOS8$_$4",
+        "gate_status": "insufficient_evidence",
+        "informative_coverage": 0.1
+      },
+      {
+        "audio_sample_id": "-tPCytz4rww$_$12",
+        "reference_sample_id": "-uywlfIYOS8$_$4",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-tPCytz4rww$_$16",
+        "reference_sample_id": "-uywlfIYOS8$_$4",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-tPCytz4rww$_$18",
+        "reference_sample_id": "-uywlfIYOS8$_$4",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-uywlfIYOS8$_$4",
+        "reference_sample_id": "-vxjVxOeScU$_$4",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-vxjVxOeScU$_$4",
+        "reference_sample_id": "-wMB_hJL-3o$_$7",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-wMB_hJL-3o$_$7",
+        "reference_sample_id": "-wny0OAz3g8$_$0",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-wny0OAz3g8$_$0",
+        "reference_sample_id": "-yRb-Jum7EQ$_$1",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-wny0OAz3g8$_$1",
+        "reference_sample_id": "-yRb-Jum7EQ$_$1",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-wny0OAz3g8$_$2",
+        "reference_sample_id": "-yRb-Jum7EQ$_$1",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-wny0OAz3g8$_$3",
+        "reference_sample_id": "-yRb-Jum7EQ$_$1",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-wny0OAz3g8$_$5",
+        "reference_sample_id": "-yRb-Jum7EQ$_$1",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-wny0OAz3g8$_$7",
+        "reference_sample_id": "-yRb-Jum7EQ$_$1",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-wny0OAz3g8$_$9",
+        "reference_sample_id": "-yRb-Jum7EQ$_$1",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-yRb-Jum7EQ$_$1",
+        "reference_sample_id": "-3g5yACwYnA$_$13",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-yRb-Jum7EQ$_$5",
+        "reference_sample_id": "-3g5yACwYnA$_$13",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      },
+      {
+        "audio_sample_id": "-yRb-Jum7EQ$_$6",
+        "reference_sample_id": "-3g5yACwYnA$_$13",
+        "gate_status": "no_informative_support",
+        "informative_coverage": 0.0
+      }
+    ]
+  },
+  "independent_human_validation_completed": false,
+  "limitations": [
+    "Initial 12 reports informed design; diagnostic only, not held-out accuracy.",
+    "Same acoustic model provides recognition and baseline intervals; agreement is not independence.",
+    "No independently confirmed word boundaries, so word false-positive/false-negative rates are not measurable.",
+    "Rejected support is not proof of incorrect reference text.",
+    "Threshold sensitivity is reported without choosing a better setting from the results."
+  ]
+}

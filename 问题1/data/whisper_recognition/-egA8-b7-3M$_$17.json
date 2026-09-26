@@ -1,0 +1,147 @@
+{
+  "sample_id": "-egA8-b7-3M$_$17",
+  "source_sha256": "f967e81e0edd51c3700671721afb3fbecbbc32652f27d2db40ea444e8d80c68f",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " As you have more experience, you have more times exhibiting, you get to know more people.",
+      "start": 0.0,
+      "end": 6.34,
+      "avg_logprob": -0.18087636258291162,
+      "no_speech_prob": 0.01464080810546875
+    }
+  ],
+  "words": [
+    {
+      "text": " As",
+      "interval_s": [
+        0.0,
+        0.66
+      ],
+      "probability": 0.689453125
+    },
+    {
+      "text": " you",
+      "interval_s": [
+        0.66,
+        0.8
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " have",
+      "interval_s": [
+        0.8,
+        1.0
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " more",
+      "interval_s": [
+        1.0,
+        1.24
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " experience,",
+      "interval_s": [
+        1.24,
+        1.82
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " you",
+      "interval_s": [
+        2.12,
+        3.2
+      ],
+      "probability": 0.98779296875
+    },
+    {
+      "text": " have",
+      "interval_s": [
+        3.2,
+        3.4
+      ],
+      "probability": 0.984375
+    },
+    {
+      "text": " more",
+      "interval_s": [
+        3.4,
+        3.64
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " times",
+      "interval_s": [
+        3.64,
+        4.04
+      ],
+      "probability": 0.89111328125
+    },
+    {
+      "text": " exhibiting,",
+      "interval_s": [
+        4.04,
+        4.76
+      ],
+      "probability": 0.999267578125
+    },
+    {
+      "text": " you",
+      "interval_s": [
+        4.82,
+        5.24
+      ],
+      "probability": 0.97998046875
+    },
+    {
+      "text": " get",
+      "interval_s": [
+        5.24,
+        5.44
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        5.44,
+        5.56
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " know",
+      "interval_s": [
+        5.56,
+        5.74
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " more",
+      "interval_s": [
+        5.74,
+        5.98
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " people.",
+      "interval_s": [
+        5.98,
+        6.34
+      ],
+      "probability": 1.0
+    }
+  ],
+  "elapsed_s": 0.6476208200328983
+}

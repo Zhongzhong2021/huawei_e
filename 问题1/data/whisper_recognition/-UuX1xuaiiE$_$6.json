@@ -1,0 +1,210 @@
+{
+  "sample_id": "-UuX1xuaiiE$_$6",
+  "source_sha256": "f0131ac00e44410fbd32c547a0d421c2791172434fc0203bb969abe14a530532",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " I ended up going to work for the U.S. government as an intelligence analyst specializing in",
+      "start": 0.0,
+      "end": 5.76,
+      "avg_logprob": -0.1962890629656613,
+      "no_speech_prob": 0.007904052734375
+    },
+    {
+      "text": " war crimes and human rights issues.",
+      "start": 5.76,
+      "end": 7.06,
+      "avg_logprob": -0.1962890629656613,
+      "no_speech_prob": 0.007904052734375
+    }
+  ],
+  "words": [
+    {
+      "text": " I",
+      "interval_s": [
+        0.0,
+        0.52
+      ],
+      "probability": 0.83984375
+    },
+    {
+      "text": " ended",
+      "interval_s": [
+        0.52,
+        0.74
+      ],
+      "probability": 0.99072265625
+    },
+    {
+      "text": " up",
+      "interval_s": [
+        0.74,
+        0.86
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " going",
+      "interval_s": [
+        0.86,
+        0.96
+      ],
+      "probability": 0.9873046875
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        0.96,
+        1.16
+      ],
+      "probability": 0.99169921875
+    },
+    {
+      "text": " work",
+      "interval_s": [
+        1.16,
+        1.38
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " for",
+      "interval_s": [
+        1.38,
+        1.64
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        1.64,
+        1.84
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " U",
+      "interval_s": [
+        1.84,
+        1.96
+      ],
+      "probability": 0.55224609375
+    },
+    {
+      "text": ".S.",
+      "interval_s": [
+        1.96,
+        2.14
+      ],
+      "probability": 0.993408203125
+    },
+    {
+      "text": " government",
+      "interval_s": [
+        2.14,
+        2.42
+      ],
+      "probability": 0.7744140625
+    },
+    {
+      "text": " as",
+      "interval_s": [
+        2.42,
+        2.82
+      ],
+      "probability": 0.98828125
+    },
+    {
+      "text": " an",
+      "interval_s": [
+        2.82,
+        2.98
+      ],
+      "probability": 0.9794921875
+    },
+    {
+      "text": " intelligence",
+      "interval_s": [
+        2.98,
+        3.3
+      ],
+      "probability": 0.9375
+    },
+    {
+      "text": " analyst",
+      "interval_s": [
+        3.3,
+        3.74
+      ],
+      "probability": 0.99267578125
+    },
+    {
+      "text": " specializing",
+      "interval_s": [
+        3.74,
+        5.5
+      ],
+      "probability": 0.7734375
+    },
+    {
+      "text": " in",
+      "interval_s": [
+        5.5,
+        5.76
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " war",
+      "interval_s": [
+        5.76,
+        5.96
+      ],
+      "probability": 0.9873046875
+    },
+    {
+      "text": " crimes",
+      "interval_s": [
+        5.96,
+        6.24
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        6.24,
+        6.42
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " human",
+      "interval_s": [
+        6.42,
+        6.56
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " rights",
+      "interval_s": [
+        6.56,
+        6.78
+      ],
+      "probability": 0.994140625
+    },
+    {
+      "text": " issues.",
+      "interval_s": [
+        6.78,
+        7.06
+      ],
+      "probability": 0.99609375
+    }
+  ],
+  "elapsed_s": 0.7482434979756363
+}

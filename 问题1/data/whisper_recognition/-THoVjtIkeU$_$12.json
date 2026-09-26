@@ -1,0 +1,344 @@
+{
+  "sample_id": "-THoVjtIkeU$_$12",
+  "source_sha256": "e2f148f4f2e74724dc13b3ce870a0ce6a06740cfc224f5a9b3d0a870b196e7d4",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " whatever we turn our attention to is what grows.",
+      "start": 1.2399999999999995,
+      "end": 3.68,
+      "avg_logprob": -0.13213641884235236,
+      "no_speech_prob": 0.0030002593994140625
+    },
+    {
+      "text": " And so if we believe that anything is possible,",
+      "start": 3.92,
+      "end": 6.52,
+      "avg_logprob": -0.13213641884235236,
+      "no_speech_prob": 0.0030002593994140625
+    },
+    {
+      "text": " if we believe that social justice can be achieved,",
+      "start": 6.66,
+      "end": 10.72,
+      "avg_logprob": -0.13213641884235236,
+      "no_speech_prob": 0.0030002593994140625
+    },
+    {
+      "text": " and if we believe in youth, they will believe in themselves.",
+      "start": 10.8,
+      "end": 13.8,
+      "avg_logprob": -0.13213641884235236,
+      "no_speech_prob": 0.0030002593994140625
+    }
+  ],
+  "words": [
+    {
+      "text": " whatever",
+      "interval_s": [
+        1.2399999999999995,
+        1.72
+      ],
+      "probability": 0.59814453125
+    },
+    {
+      "text": " we",
+      "interval_s": [
+        1.72,
+        2.02
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " turn",
+      "interval_s": [
+        2.02,
+        2.2
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " our",
+      "interval_s": [
+        2.2,
+        2.36
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " attention",
+      "interval_s": [
+        2.36,
+        2.56
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        2.56,
+        2.98
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " is",
+      "interval_s": [
+        2.98,
+        3.22
+      ],
+      "probability": 0.94775390625
+    },
+    {
+      "text": " what",
+      "interval_s": [
+        3.22,
+        3.38
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " grows.",
+      "interval_s": [
+        3.38,
+        3.68
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " And",
+      "interval_s": [
+        3.92,
+        4.34
+      ],
+      "probability": 0.9287109375
+    },
+    {
+      "text": " so",
+      "interval_s": [
+        4.34,
+        4.52
+      ],
+      "probability": 0.9931640625
+    },
+    {
+      "text": " if",
+      "interval_s": [
+        4.52,
+        4.74
+      ],
+      "probability": 0.87939453125
+    },
+    {
+      "text": " we",
+      "interval_s": [
+        4.74,
+        4.9
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " believe",
+      "interval_s": [
+        4.9,
+        5.36
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " that",
+      "interval_s": [
+        5.36,
+        5.68
+      ],
+      "probability": 0.9951171875
+    },
+    {
+      "text": " anything",
+      "interval_s": [
+        5.68,
+        5.94
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " is",
+      "interval_s": [
+        5.94,
+        6.16
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " possible,",
+      "interval_s": [
+        6.16,
+        6.52
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " if",
+      "interval_s": [
+        6.66,
+        6.76
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " we",
+      "interval_s": [
+        6.76,
+        6.96
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " believe",
+      "interval_s": [
+        6.96,
+        7.88
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " that",
+      "interval_s": [
+        7.88,
+        8.64
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " social",
+      "interval_s": [
+        8.64,
+        9.54
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " justice",
+      "interval_s": [
+        9.54,
+        9.84
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " can",
+      "interval_s": [
+        9.84,
+        10.2
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " be",
+      "interval_s": [
+        10.2,
+        10.42
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " achieved,",
+      "interval_s": [
+        10.42,
+        10.72
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        10.8,
+        11.0
+      ],
+      "probability": 0.994140625
+    },
+    {
+      "text": " if",
+      "interval_s": [
+        11.0,
+        11.1
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " we",
+      "interval_s": [
+        11.1,
+        11.2
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " believe",
+      "interval_s": [
+        11.2,
+        11.64
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " in",
+      "interval_s": [
+        11.64,
+        11.92
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " youth,",
+      "interval_s": [
+        11.92,
+        12.24
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " they",
+      "interval_s": [
+        12.44,
+        13.1
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " will",
+      "interval_s": [
+        13.1,
+        13.24
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " believe",
+      "interval_s": [
+        13.24,
+        13.48
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " in",
+      "interval_s": [
+        13.48,
+        13.6
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " themselves.",
+      "interval_s": [
+        13.6,
+        13.8
+      ],
+      "probability": 0.99951171875
+    }
+  ],
+  "elapsed_s": 1.06939468201017
+}

@@ -1,0 +1,22 @@
+{
+  "samples": 100,
+  "automatic_candidate_words": 1342,
+  "unresolved_words": 590,
+  "sample_status_counts": {
+    "supported": 74,
+    "insufficient_evidence": 8,
+    "no_informative_support": 16,
+    "no_signal": 2
+  },
+  "reader_identity_and_hash_checks_passed": true,
+  "quality_accuracy_verified": false,
+  "human_data_read": false,
+  "inputs_sha256": "ed5e8e1f01a84abb1d463cf6d4df93782171f681fd2bb49906ac0863be6e08a8",
+  "scripts": {
+    "q1_reader.py": "f7ba906eb06c4734da6b0952b6417112956dabe91c19470290344908b2b512be",
+    "delivery_reader.py": "582ba625d7f5c6c98ce4f75a956c29bcc19eb819637bce85258cfbe86fd65bac",
+    "local_evidence.py": "d779a61b36666baf87012eeeef4948972abdd4bf856b6bfa070632d8030f64a5",
+    "build_delivery_summary.py": "79cbcf0b8bf5d793227b4d61b1570c30206bd2ab2e40b31d4958a2774810649f",
+    "temporal_support.py": "c03f2b04f7c345ee7fed3750bef0b55a18e64dd5fca2eca8afb0cbf0574a315e"
+  }
+}

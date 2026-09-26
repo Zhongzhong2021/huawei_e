@@ -1,0 +1,497 @@
+{
+  "context_envelopes": [
+    {
+      "word_indices": [
+        2
+      ],
+      "interval_s": [
+        0.8024687500000001,
+        1.72246875
+      ],
+      "left_anchor_word": 1,
+      "right_anchor_word": 3,
+      "status": "context_only_not_alignment",
+      "automatic_eligible": false
+    },
+    {
+      "word_indices": [
+        6
+      ],
+      "interval_s": [
+        2.0424687500000003,
+        2.4024687499999997
+      ],
+      "left_anchor_word": 5,
+      "right_anchor_word": 7,
+      "status": "context_only_not_alignment",
+      "automatic_eligible": false
+    }
+  ],
+  "sample_status": "supported",
+  "informative_anchors": 6,
+  "informative_reference_tokens": 7,
+  "informative_coverage": 0.8571428571428571,
+  "edit_cost": 3.0,
+  "optimal_endpoints": [
+    14
+  ],
+  "words": [
+    {
+      "word_index": 0,
+      "text": "Say",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        0.60246875,
+        0.72246875
+      ],
+      "diagnostic_interval_s": [
+        0.60246875,
+        0.72246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            1
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 1,
+      "text": "twenty",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        0.8024687500000001,
+        1.02246875
+      ],
+      "diagnostic_interval_s": [
+        0.8024687500000001,
+        1.02246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            2
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 2,
+      "text": "percent",
+      "status": "unmatched_or_ambiguous",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 3,
+      "text": "so",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        1.58246875,
+        1.72246875
+      ],
+      "diagnostic_interval_s": [
+        1.58246875,
+        1.72246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            5
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 4,
+      "text": "if",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        1.94246875,
+        1.98246875
+      ],
+      "diagnostic_interval_s": [
+        1.94246875,
+        1.98246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            6
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 5,
+      "text": "you've",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        2.0424687500000003,
+        2.2024687500000004
+      ],
+      "diagnostic_interval_s": [
+        2.0424687500000003,
+        2.2024687500000004
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            7
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 6,
+      "text": "got",
+      "status": "unmatched_or_ambiguous",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 7,
+      "text": "a",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        2.38246875,
+        2.4024687499999997
+      ],
+      "diagnostic_interval_s": [
+        2.38246875,
+        2.4024687499999997
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            9
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 8,
+      "text": "thousand",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        2.46246875,
+        2.7824687499999996
+      ],
+      "diagnostic_interval_s": [
+        2.46246875,
+        2.7824687499999996
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            10
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 9,
+      "text": "square",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        2.80246875,
+        3.0424687500000003
+      ],
+      "diagnostic_interval_s": [
+        2.80246875,
+        3.0424687500000003
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            11
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 10,
+      "text": "foot",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        3.10246875,
+        3.2824687499999996
+      ],
+      "diagnostic_interval_s": [
+        3.10246875,
+        3.2824687499999996
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            12
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 11,
+      "text": "condo",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        3.68246875,
+        4.02246875
+      ],
+      "diagnostic_interval_s": [
+        3.68246875,
+        4.02246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            13
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    }
+  ],
+  "automatic_eligible_words": 10,
+  "sample_id": "-tPCytz4rww$_$10",
+  "source_sha256": "758183192cbd5f0f20823d26ece3ddee40dec0aadec35247b2495510a53f52f8",
+  "recognition": [
+    {
+      "text": "FOOTAGE",
+      "interval_s": [
+        0.0,
+        0.30246875
+      ],
+      "mean_emission_probability": 0.9822094866207668
+    },
+    {
+      "text": "SAY",
+      "interval_s": [
+        0.60246875,
+        0.72246875
+      ],
+      "mean_emission_probability": 0.9994742472966512
+    },
+    {
+      "text": "TWENTY",
+      "interval_s": [
+        0.8024687500000001,
+        1.02246875
+      ],
+      "mean_emission_probability": 0.9996870656808218
+    },
+    {
+      "text": "PER",
+      "interval_s": [
+        1.08246875,
+        1.20246875
+      ],
+      "mean_emission_probability": 0.9999320904413859
+    },
+    {
+      "text": "CENT",
+      "interval_s": [
+        1.24246875,
+        1.44246875
+      ],
+      "mean_emission_probability": 0.9475253820419312
+    },
+    {
+      "text": "SO",
+      "interval_s": [
+        1.58246875,
+        1.72246875
+      ],
+      "mean_emission_probability": 0.9999113082885742
+    },
+    {
+      "text": "IF",
+      "interval_s": [
+        1.94246875,
+        1.98246875
+      ],
+      "mean_emission_probability": 0.9996704459190369
+    },
+    {
+      "text": "YOU'VE",
+      "interval_s": [
+        2.0424687500000003,
+        2.2024687500000004
+      ],
+      "mean_emission_probability": 0.9588806331157684
+    },
+    {
+      "text": "GET",
+      "interval_s": [
+        2.2424687499999996,
+        2.3224687499999996
+      ],
+      "mean_emission_probability": 0.8502876162528992
+    },
+    {
+      "text": "A",
+      "interval_s": [
+        2.38246875,
+        2.4024687499999997
+      ],
+      "mean_emission_probability": 0.9921870231628418
+    },
+    {
+      "text": "THOUSAND",
+      "interval_s": [
+        2.46246875,
+        2.7824687499999996
+      ],
+      "mean_emission_probability": 0.9993292912840843
+    },
+    {
+      "text": "SQUARE",
+      "interval_s": [
+        2.80246875,
+        3.0424687500000003
+      ],
+      "mean_emission_probability": 0.9516504307587942
+    },
+    {
+      "text": "FOOT",
+      "interval_s": [
+        3.10246875,
+        3.2824687499999996
+      ],
+      "mean_emission_probability": 0.9840929359197617
+    },
+    {
+      "text": "CONDO",
+      "interval_s": [
+        3.68246875,
+        4.02246875
+      ],
+      "mean_emission_probability": 0.9458418488502502
+    },
+    {
+      "text": "MAY",
+      "interval_s": [
+        4.42246875,
+        4.542468749999999
+      ],
+      "mean_emission_probability": 0.9150974154472351
+    }
+  ],
+  "baseline_candidate_words": 12,
+  "native_features_modified": false,
+  "human_data_used": false,
+  "config_sha256": "b0adbf96c3cfcda192429317763b44f8ab5da4453b7d1b4779664feccadecf7c",
+  "local_support_runs": [
+    {
+      "word_indices": [
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "hypothesis_indices": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "distinct_informative_anchors": [
+        "CONDO",
+        "FOOT",
+        "SQUARE",
+        "THOUSAND"
+      ],
+      "meaning": "Local lexical/acoustic consistency, not calibrated correctness."
+    }
+  ],
+  "new_local_candidate_words": 0,
+  "decision_policy": "frozen_selective_baseline_plus_corroborated_local_runs_v2",
+  "whole_text_content_confirmed": false,
+  "context_envelopes_policy": "original_frozen_baseline_navigation_only",
+  "corroborating_run_pairs": [],
+  "baseline_result_sha256": "ecd8b27673598ef3af6f1f5cda9b23eed67e4e246a36cbb73bf1c7a898b52bfc",
+  "human_data_used_for_generation": false
+}

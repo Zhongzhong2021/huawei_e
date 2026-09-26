@@ -1,0 +1,339 @@
+{
+  "words": [
+    {
+      "word_index": 0,
+      "text": "So",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 1,
+      "text": "we",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 2,
+      "text": "coordinate",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 3,
+      "text": "with",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 4,
+      "text": "all",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 5,
+      "text": "the",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 6,
+      "text": "proper",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 7,
+      "text": "technical",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 8,
+      "text": "fields",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 9,
+      "text": "to",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 10,
+      "text": "get",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 11,
+      "text": "ready",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 12,
+      "text": "for",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 13,
+      "text": "the",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 14,
+      "text": "instrument",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 15,
+      "text": "to",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 16,
+      "text": "arrive",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 17,
+      "text": "here",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    }
+  ],
+  "phrases": [],
+  "diagnostics": [],
+  "added_words": 0,
+  "conflicting_baseline_words": 0,
+  "phrase_only_words": [],
+  "baseline_candidates": 0,
+  "sample_id": "-NFrJFQijFE$_$2",
+  "source_sha256": "a54a5c144a64f5abd26b19aafa6cea8142ee08e9385fa508fa70c934f6b616c1",
+  "human_data_used": false,
+  "baseline_result_sha256": "5c72797f7246835ea5a712dac54c95466cd4de40ed6be7d8c857d981719f19f5",
+  "decision_policy": "unprompted_asr_local_phonetic_multigranular_ordered_selection_v3"
+}

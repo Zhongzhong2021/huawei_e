@@ -1,0 +1,258 @@
+{
+  "sample_id": "-wny0OAz3g8$_$7",
+  "source_sha256": "cbf9cac1048ce191aef781d0c4563eb97f9f3ddd52eb1f9551fa78d31d70e7cd",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " Omi and Winnet argue that the concept of race came about as a tool to justify and maintain",
+      "start": 0.0,
+      "end": 4.18,
+      "avg_logprob": -0.1501266891891892,
+      "no_speech_prob": 0.0010156631469726562
+    },
+    {
+      "text": " the economic and political power held by those of European descent.",
+      "start": 4.18,
+      "end": 7.26,
+      "avg_logprob": -0.1501266891891892,
+      "no_speech_prob": 0.0010156631469726562
+    }
+  ],
+  "words": [
+    {
+      "text": " Omi",
+      "interval_s": [
+        0.0,
+        0.62
+      ],
+      "probability": 0.708740234375
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        0.62,
+        0.74
+      ],
+      "probability": 0.958984375
+    },
+    {
+      "text": " Winnet",
+      "interval_s": [
+        0.74,
+        0.98
+      ],
+      "probability": 0.5074462890625
+    },
+    {
+      "text": " argue",
+      "interval_s": [
+        0.98,
+        1.16
+      ],
+      "probability": 0.65625
+    },
+    {
+      "text": " that",
+      "interval_s": [
+        1.16,
+        1.38
+      ],
+      "probability": 0.98095703125
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        1.38,
+        1.46
+      ],
+      "probability": 0.982421875
+    },
+    {
+      "text": " concept",
+      "interval_s": [
+        1.46,
+        1.72
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        1.72,
+        1.96
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " race",
+      "interval_s": [
+        1.96,
+        2.14
+      ],
+      "probability": 0.95947265625
+    },
+    {
+      "text": " came",
+      "interval_s": [
+        2.14,
+        2.36
+      ],
+      "probability": 0.99072265625
+    },
+    {
+      "text": " about",
+      "interval_s": [
+        2.36,
+        2.62
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " as",
+      "interval_s": [
+        2.62,
+        2.74
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        2.74,
+        2.8
+      ],
+      "probability": 0.990234375
+    },
+    {
+      "text": " tool",
+      "interval_s": [
+        2.8,
+        3.04
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        3.04,
+        3.22
+      ],
+      "probability": 0.994140625
+    },
+    {
+      "text": " justify",
+      "interval_s": [
+        3.22,
+        3.52
+      ],
+      "probability": 0.9921875
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        3.52,
+        3.86
+      ],
+      "probability": 0.99072265625
+    },
+    {
+      "text": " maintain",
+      "interval_s": [
+        3.86,
+        4.18
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        4.18,
+        4.52
+      ],
+      "probability": 0.99169921875
+    },
+    {
+      "text": " economic",
+      "interval_s": [
+        4.52,
+        4.82
+      ],
+      "probability": 0.9921875
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        4.82,
+        5.12
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " political",
+      "interval_s": [
+        5.12,
+        5.36
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " power",
+      "interval_s": [
+        5.36,
+        5.78
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " held",
+      "interval_s": [
+        5.78,
+        6.1
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " by",
+      "interval_s": [
+        6.1,
+        6.3
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " those",
+      "interval_s": [
+        6.3,
+        6.44
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        6.44,
+        6.58
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " European",
+      "interval_s": [
+        6.58,
+        6.82
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " descent.",
+      "interval_s": [
+        6.82,
+        7.26
+      ],
+      "probability": 0.96240234375
+    }
+  ],
+  "elapsed_s": 0.798751013004221
+}

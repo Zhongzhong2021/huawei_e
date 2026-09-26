@@ -1,0 +1,78 @@
+{
+  "config": {
+    "schema": "q1-whisper-multigranular-v1",
+    "repository": "Systran/faster-whisper-large-v3",
+    "revision": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+    "files": [
+      "config.json",
+      "model.bin",
+      "preprocessor_config.json",
+      "tokenizer.json",
+      "vocabulary.json"
+    ],
+    "recognition": {
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 5,
+      "temperature": 0.0,
+      "condition_on_previous_text": false,
+      "word_timestamps": true,
+      "vad_filter": false,
+      "initial_prompt": null,
+      "hotwords": null
+    },
+    "compute_type": "int8_float16",
+    "boundary_agreement_s": 0.2,
+    "minimum_distinct_anchors": 2,
+    "minimum_phrase_words": 2,
+    "maximum_phrase_words": 8,
+    "policy": "Unique exact content runs with informative support; MFA/Whisper timing agreement; group-only output where internal boundaries disagree; explicit conflicts.",
+    "parameter_source": "Boundary tolerance and anchor count inherited from fixed baseline; phrase search limited to 2–8 words as an engineering bound before inference. No human transcripts, intervals, notes, labels or sample-specific rules."
+  },
+  "config_sha256": "26d9fcee8cc41d5ec4ce36218e32aec6e2b8a623e087183df880a4b47748ecee",
+  "script_sha256": "1c17ec8048e76d8b7315667585d77abb84492078fd3e85b4beb56f24ad51dc32",
+  "input_manifest_sha256": "ed5e8e1f01a84abb1d463cf6d4df93782171f681fd2bb49906ac0863be6e08a8",
+  "model": {
+    "repository": "Systran/faster-whisper-large-v3",
+    "revision": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+    "files": [
+      {
+        "path": "config.json",
+        "sha256": "a9306624f5ec14270a014b647e5c316b6e03a662c369758d1b90697a7b0655b9",
+        "bytes": 2394
+      },
+      {
+        "path": "model.bin",
+        "sha256": "69f74147e3334731bc3a76048724833325d2ec74642fb52620eda87352e3d4f1",
+        "bytes": 3087284237
+      },
+      {
+        "path": "preprocessor_config.json",
+        "sha256": "7ccc62c6f2765af1f3b46c00c9b5894426835a05021c8b9c01eecb6dfb542711",
+        "bytes": 340
+      },
+      {
+        "path": "tokenizer.json",
+        "sha256": "6d8cbd7cd0d8d5815e478dac67b85a26bbe77c1f5e0c6d76d1ce2abc0e5f21ca",
+        "bytes": 2480617
+      },
+      {
+        "path": "vocabulary.json",
+        "sha256": "c69260f2ab26d659b7c398f9a2b2b48ed0df16c3b47d7326782fd9cba71690c1",
+        "bytes": 1068114
+      }
+    ]
+  },
+  "device": "cuda",
+  "compute_type": "int8_float16",
+  "condition": "identity",
+  "reference_prompt_used": false,
+  "human_data_used": false,
+  "label_used": false,
+  "versions": {
+    "faster-whisper": "1.2.1",
+    "ctranslate2": "4.8.2",
+    "numpy": "2.2.6",
+    "av": "17.1.0"
+  }
+}

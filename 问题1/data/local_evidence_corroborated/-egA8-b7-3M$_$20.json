@@ -1,0 +1,767 @@
+{
+  "context_envelopes": [],
+  "sample_status": "supported",
+  "informative_anchors": 7,
+  "informative_reference_tokens": 7,
+  "informative_coverage": 1.0,
+  "edit_cost": 0.0,
+  "optimal_endpoints": [
+    20
+  ],
+  "words": [
+    {
+      "word_index": 0,
+      "text": "Now",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        0.58246875,
+        0.70246875
+      ],
+      "diagnostic_interval_s": [
+        0.58246875,
+        0.70246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            0
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 1,
+      "text": "you've",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        0.76246875,
+        0.94246875
+      ],
+      "diagnostic_interval_s": [
+        0.76246875,
+        0.94246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            1
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 2,
+      "text": "got",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        0.98246875,
+        1.14246875
+      ],
+      "diagnostic_interval_s": [
+        0.98246875,
+        1.14246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            2
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 3,
+      "text": "a",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        1.20246875,
+        1.22246875
+      ],
+      "diagnostic_interval_s": [
+        1.20246875,
+        1.22246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            3
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 4,
+      "text": "face",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        1.30246875,
+        1.58246875
+      ],
+      "diagnostic_interval_s": [
+        1.30246875,
+        1.58246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            4
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 5,
+      "text": "that",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        1.64246875,
+        1.76246875
+      ],
+      "diagnostic_interval_s": [
+        1.64246875,
+        1.76246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            5
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 6,
+      "text": "you",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        1.80246875,
+        1.88246875
+      ],
+      "diagnostic_interval_s": [
+        1.80246875,
+        1.88246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            6
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 7,
+      "text": "can",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        1.96246875,
+        2.06246875
+      ],
+      "diagnostic_interval_s": [
+        1.96246875,
+        2.06246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            7
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 8,
+      "text": "connect",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        2.14246875,
+        2.46246875
+      ],
+      "diagnostic_interval_s": [
+        2.14246875,
+        2.46246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            8
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 9,
+      "text": "with",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        2.5824687500000003,
+        2.7024687500000004
+      ],
+      "diagnostic_interval_s": [
+        2.5824687500000003,
+        2.7024687500000004
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            9
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 10,
+      "text": "a",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        2.7824687499999996,
+        2.80246875
+      ],
+      "diagnostic_interval_s": [
+        2.7824687499999996,
+        2.80246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            10
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 11,
+      "text": "voice",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        2.88246875,
+        3.2424687499999996
+      ],
+      "diagnostic_interval_s": [
+        2.88246875,
+        3.2424687499999996
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            11
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 12,
+      "text": "and",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        3.9424687499999997,
+        4.042468749999999
+      ],
+      "diagnostic_interval_s": [
+        3.9424687499999997,
+        4.042468749999999
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            12
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 13,
+      "text": "that",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        4.10246875,
+        4.2424687500000005
+      ],
+      "diagnostic_interval_s": [
+        4.10246875,
+        4.2424687500000005
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            13
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 14,
+      "text": "makes",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        4.30246875,
+        4.50246875
+      ],
+      "diagnostic_interval_s": [
+        4.30246875,
+        4.50246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            14
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 15,
+      "text": "you",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        4.542468749999999,
+        4.64246875
+      ],
+      "diagnostic_interval_s": [
+        4.542468749999999,
+        4.64246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            15
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 16,
+      "text": "closer",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        4.72246875,
+        5.10246875
+      ],
+      "diagnostic_interval_s": [
+        4.72246875,
+        5.10246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            16
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 17,
+      "text": "to",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        5.2024687499999995,
+        5.30246875
+      ],
+      "diagnostic_interval_s": [
+        5.2024687499999995,
+        5.30246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            17
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 18,
+      "text": "that",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        5.36246875,
+        5.50246875
+      ],
+      "diagnostic_interval_s": [
+        5.36246875,
+        5.50246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            18
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 19,
+      "text": "client",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        5.58246875,
+        5.94246875
+      ],
+      "diagnostic_interval_s": [
+        5.58246875,
+        5.94246875
+      ],
+      "boundary_disagreement_s": 0.019999999999999574,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            19
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    }
+  ],
+  "automatic_eligible_words": 20,
+  "sample_id": "-egA8-b7-3M$_$20",
+  "source_sha256": "719ef133920e74b3ea33925d2bca0270b062199116867568f88ac83cadcd74e8",
+  "recognition": [
+    {
+      "text": "NOW",
+      "interval_s": [
+        0.58246875,
+        0.70246875
+      ],
+      "mean_emission_probability": 0.999692459901174
+    },
+    {
+      "text": "YOU'VE",
+      "interval_s": [
+        0.76246875,
+        0.94246875
+      ],
+      "mean_emission_probability": 0.99588875969251
+    },
+    {
+      "text": "GOT",
+      "interval_s": [
+        0.98246875,
+        1.14246875
+      ],
+      "mean_emission_probability": 0.9172444542249044
+    },
+    {
+      "text": "A",
+      "interval_s": [
+        1.20246875,
+        1.22246875
+      ],
+      "mean_emission_probability": 0.9971619844436646
+    },
+    {
+      "text": "FACE",
+      "interval_s": [
+        1.30246875,
+        1.58246875
+      ],
+      "mean_emission_probability": 0.9978467524051666
+    },
+    {
+      "text": "THAT",
+      "interval_s": [
+        1.64246875,
+        1.76246875
+      ],
+      "mean_emission_probability": 0.9775129854679108
+    },
+    {
+      "text": "YOU",
+      "interval_s": [
+        1.80246875,
+        1.88246875
+      ],
+      "mean_emission_probability": 0.9981710116068522
+    },
+    {
+      "text": "CAN",
+      "interval_s": [
+        1.96246875,
+        2.06246875
+      ],
+      "mean_emission_probability": 0.9994431932767233
+    },
+    {
+      "text": "CONNECT",
+      "interval_s": [
+        2.14246875,
+        2.46246875
+      ],
+      "mean_emission_probability": 0.9990283761705671
+    },
+    {
+      "text": "WITH",
+      "interval_s": [
+        2.5824687500000003,
+        2.7024687500000004
+      ],
+      "mean_emission_probability": 0.9974599331617355
+    },
+    {
+      "text": "A",
+      "interval_s": [
+        2.7824687499999996,
+        2.80246875
+      ],
+      "mean_emission_probability": 0.9966944456100464
+    },
+    {
+      "text": "VOICE",
+      "interval_s": [
+        2.88246875,
+        3.2424687499999996
+      ],
+      "mean_emission_probability": 0.9996685266494751
+    },
+    {
+      "text": "AND",
+      "interval_s": [
+        3.9424687499999997,
+        4.042468749999999
+      ],
+      "mean_emission_probability": 0.9769494930903116
+    },
+    {
+      "text": "THAT",
+      "interval_s": [
+        4.10246875,
+        4.2424687500000005
+      ],
+      "mean_emission_probability": 0.9785294234752655
+    },
+    {
+      "text": "MAKES",
+      "interval_s": [
+        4.30246875,
+        4.50246875
+      ],
+      "mean_emission_probability": 0.995457112789154
+    },
+    {
+      "text": "YOU",
+      "interval_s": [
+        4.542468749999999,
+        4.64246875
+      ],
+      "mean_emission_probability": 0.9999019304911295
+    },
+    {
+      "text": "CLOSER",
+      "interval_s": [
+        4.72246875,
+        5.10246875
+      ],
+      "mean_emission_probability": 0.9790419042110443
+    },
+    {
+      "text": "TO",
+      "interval_s": [
+        5.2024687499999995,
+        5.30246875
+      ],
+      "mean_emission_probability": 0.9991806447505951
+    },
+    {
+      "text": "THAT",
+      "interval_s": [
+        5.36246875,
+        5.50246875
+      ],
+      "mean_emission_probability": 0.8475057035684586
+    },
+    {
+      "text": "CLIENT",
+      "interval_s": [
+        5.58246875,
+        5.94246875
+      ],
+      "mean_emission_probability": 0.9762649238109589
+    }
+  ],
+  "baseline_candidate_words": 20,
+  "native_features_modified": false,
+  "human_data_used": false,
+  "config_sha256": "b0adbf96c3cfcda192429317763b44f8ab5da4453b7d1b4779664feccadecf7c",
+  "local_support_runs": [
+    {
+      "word_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "hypothesis_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "distinct_informative_anchors": [
+        "CLIENT",
+        "CLOSER",
+        "CONNECT",
+        "FACE",
+        "MAKES",
+        "VOICE",
+        "YOU'VE"
+      ],
+      "meaning": "Local lexical/acoustic consistency, not calibrated correctness."
+    }
+  ],
+  "new_local_candidate_words": 0,
+  "decision_policy": "frozen_selective_baseline_plus_corroborated_local_runs_v2",
+  "whole_text_content_confirmed": false,
+  "context_envelopes_policy": "original_frozen_baseline_navigation_only",
+  "corroborating_run_pairs": [],
+  "baseline_result_sha256": "01ffc6f0eb93efff7a65ea35f15d180de26beb7f338b22e9078c85e26d3afc24",
+  "human_data_used_for_generation": false
+}

@@ -1,0 +1,158 @@
+Looking in indexes: https://pypi.org/simple, https://download.pytorch.org/whl/cpu
+Collecting absl-py==2.5.0
+  Downloading absl_py-2.5.0-py3-none-any.whl (137 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 137.4/137.4 KB 200.7 kB/s eta 0:00:00
+Collecting attrs==26.1.0
+  Downloading attrs-26.1.0-py3-none-any.whl (67 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.5/67.5 KB 184.6 kB/s eta 0:00:00
+Collecting certifi==2026.7.22
+  Downloading certifi-2026.7.22-py3-none-any.whl (136 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 137.0/137.0 KB 353.5 kB/s eta 0:00:00
+Collecting cffi==2.1.1
+  Downloading cffi-2.1.1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (218 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 218.7/218.7 KB 279.3 kB/s eta 0:00:00
+Collecting charset-normalizer==3.5.1
+  Downloading charset_normalizer-3.5.1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (261 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 261.6/261.6 KB 1.1 MB/s eta 0:00:00
+Collecting contourpy==1.3.2
+  Downloading contourpy-1.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (325 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 325.0/325.0 KB 458.4 kB/s eta 0:00:00
+Collecting cycler==0.12.1
+  Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Collecting docopt==0.6.2
+  Using cached docopt-0.6.2-py2.py3-none-any.whl
+Collecting et_xmlfile==2.0.0
+  Downloading et_xmlfile-2.0.0-py3-none-any.whl (18 kB)
+Collecting filelock==3.32.3
+  Downloading filelock-3.32.3-py3-none-any.whl (98 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.9/98.9 KB 165.3 kB/s eta 0:00:00
+Collecting flatbuffers==25.12.19
+  Downloading flatbuffers-25.12.19-py2.py3-none-any.whl (26 kB)
+Collecting fonttools==4.65.0
+  Downloading fonttools-4.65.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.3/5.3 MB 820.6 kB/s eta 0:00:00
+Collecting fsspec==2026.7.0
+  Downloading fsspec-2026.7.0-py3-none-any.whl (206 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 206.6/206.6 KB 1.6 MB/s eta 0:00:00
+Collecting hf-xet==1.6.0
+  Downloading hf_xet-1.6.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (4.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 MB 1.3 MB/s eta 0:00:00
+Collecting huggingface_hub==0.36.2
+  Downloading huggingface_hub-0.36.2-py3-none-any.whl (566 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 566.4/566.4 KB 1.1 MB/s eta 0:00:00
+Collecting idna==3.20
+  Downloading idna-3.20-py3-none-any.whl (69 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 69.6/69.6 KB 11.1 MB/s eta 0:00:00
+Collecting jax==0.6.2
+  Downloading jax-0.6.2-py3-none-any.whl (2.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.7/2.7 MB 1.5 MB/s eta 0:00:00
+Collecting jaxlib==0.6.2
+  Downloading jaxlib-0.6.2-cp310-cp310-manylinux2014_x86_64.whl (89.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 89.9/89.9 MB 3.9 MB/s eta 0:00:00
+Collecting Jinja2==3.1.6
+  Downloading https://download.pytorch.org/whl/jinja2-3.1.6-py3-none-any.whl (134 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.9/134.9 KB 672.4 kB/s eta 0:00:00
+Collecting kiwisolver==1.5.1
+  Downloading kiwisolver-1.5.1-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (1.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 2.3 MB/s eta 0:00:00
+Collecting MarkupSafe==3.0.3
+  Downloading https://download.pytorch.org/whl/markupsafe-3.0.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (20 kB)
+Collecting matplotlib==3.10.9
+  Downloading matplotlib-3.10.9-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (8.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.8/8.8 MB 4.0 MB/s eta 0:00:00
+Collecting mediapipe==0.10.21
+  Downloading mediapipe-0.10.21-cp310-cp310-manylinux_2_28_x86_64.whl (35.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.6/35.6 MB 4.7 MB/s eta 0:00:00
+Collecting ml_dtypes==0.5.4
+  Downloading ml_dtypes-0.5.4-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (5.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.0/5.0 MB 4.7 MB/s eta 0:00:00
+Collecting mpmath==1.3.0
+  Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 KB 1.6 MB/s eta 0:00:00
+Collecting networkx==3.4.2
+  Downloading networkx-3.4.2-py3-none-any.whl (1.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 1.7 MB/s eta 0:00:00
+Collecting num2words==0.5.14
+  Downloading num2words-0.5.14-py3-none-any.whl (163 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 163.5/163.5 KB 15.9 MB/s eta 0:00:00
+Collecting numpy==1.26.4
+  Downloading numpy-1.26.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.2/18.2 MB 4.5 MB/s eta 0:00:00
+Collecting opencv-contrib-python==4.11.0.86
+  Downloading opencv_contrib_python-4.11.0.86-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (69.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 69.1/69.1 MB 4.0 MB/s eta 0:00:00
+Collecting openpyxl==3.0.9
+  Downloading openpyxl-3.0.9-py2.py3-none-any.whl (242 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 242.2/242.2 KB 801.8 kB/s eta 0:00:00
+Collecting opt_einsum==3.4.0
+  Downloading opt_einsum-3.4.0-py3-none-any.whl (71 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 71.9/71.9 KB 241.3 kB/s eta 0:00:00
+Collecting packaging==26.3
+  Downloading packaging-26.3-py3-none-any.whl (129 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 130.0/130.0 KB 5.0 MB/s eta 0:00:00
+Collecting pillow==12.3.0
+  Downloading pillow-12.3.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (6.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.9/6.9 MB 3.7 MB/s eta 0:00:00
+Collecting protobuf==4.25.9
+  Downloading protobuf-4.25.9-cp37-abi3-manylinux2014_x86_64.whl (295 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 295.2/295.2 KB 913.2 kB/s eta 0:00:00
+Collecting pycparser==3.0
+  Downloading pycparser-3.0-py3-none-any.whl (48 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.2/48.2 KB 10.9 MB/s eta 0:00:00
+Collecting pyparsing==3.3.3
+  Downloading pyparsing-3.3.3-py3-none-any.whl (126 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 126.4/126.4 KB 11.6 MB/s eta 0:00:00
+Collecting python-dateutil==2.9.0.post0
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 229.9/229.9 KB 11.5 MB/s eta 0:00:00
+Collecting PyYAML==6.0.3
+  Downloading pyyaml-6.0.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (770 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 770.3/770.3 KB 1.8 MB/s eta 0:00:00
+Collecting regex==2026.9.10
+  Downloading regex-2026.9.10-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (796 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 796.3/796.3 KB 1.0 MB/s eta 0:00:00
+Collecting requests==2.34.2
+  Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.1/73.1 KB 122.0 kB/s eta 0:00:00
+Collecting safetensors==0.8.0
+  Downloading safetensors-0.8.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (516 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 516.0/516.0 KB 629.7 kB/s eta 0:00:00
+Collecting scipy==1.14.1
+  Downloading scipy-1.14.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (41.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.2/41.2 MB 4.3 MB/s eta 0:00:00
+Collecting sentencepiece==0.2.2
+  Downloading sentencepiece-0.2.2-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (1.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 3.0 MB/s eta 0:00:00
+Collecting six==1.17.0
+  Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Collecting sounddevice==0.5.6
+  Downloading sounddevice-0.5.6-py3-none-any.whl (32 kB)
+Collecting sympy==1.13.1
+  Downloading sympy-1.13.1-py3-none-any.whl (6.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.2/6.2 MB 5.4 MB/s eta 0:00:00
+Collecting tokenizers==0.21.4
+  Downloading tokenizers-0.21.4-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.1/3.1 MB 5.5 MB/s eta 0:00:00
+Collecting torch==2.6.0+cpu
+  Downloading https://download-r2.pytorch.org/whl/cpu/torch-2.6.0%2Bcpu-cp310-cp310-linux_x86_64.whl (178.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 178.6/178.6 MB 4.1 MB/s eta 0:00:00
+Collecting torchaudio==2.6.0+cpu
+  Downloading https://download-r2.pytorch.org/whl/cpu/torchaudio-2.6.0%2Bcpu-cp310-cp310-linux_x86_64.whl (1.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 3.9 MB/s eta 0:00:00
+Collecting torchvision==0.21.0+cpu
+  Downloading https://download-r2.pytorch.org/whl/cpu/torchvision-0.21.0%2Bcpu-cp310-cp310-linux_x86_64.whl (1.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 3.8 MB/s eta 0:00:00
+Collecting tqdm==4.70.1
+  Downloading tqdm-4.70.1-py3-none-any.whl (80 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.2/80.2 KB 81.4 kB/s eta 0:00:00
+Collecting transformers==4.48.3
+  Downloading transformers-4.48.3-py3-none-any.whl (9.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.7/9.7 MB 5.7 MB/s eta 0:00:00
+Collecting typing_extensions==4.16.0
+  Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.6/45.6 KB 9.5 MB/s eta 0:00:00
+Collecting urllib3==2.8.0
+  Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 135.7/135.7 KB 11.1 MB/s eta 0:00:00
+Installing collected packages: mpmath, flatbuffers, docopt, urllib3, typing_extensions, tqdm, sympy, six, sentencepiece, safetensors, regex, PyYAML, pyparsing, pycparser, protobuf, pillow, packaging, opt_einsum, numpy, num2words, networkx, MarkupSafe, kiwisolver, idna, hf-xet, fsspec, fonttools, filelock, et_xmlfile, cycler, charset-normalizer, certifi, attrs, absl-py, scipy, requests, python-dateutil, openpyxl, opencv-contrib-python, ml_dtypes, Jinja2, contourpy, cffi, torch, sounddevice, matplotlib, jaxlib, huggingface_hub, torchvision, torchaudio, tokenizers, jax, transformers, mediapipe
+Successfully installed Jinja2-3.1.6 MarkupSafe-3.0.3 PyYAML-6.0.3 absl-py-2.5.0 attrs-26.1.0 certifi-2026.7.22 cffi-2.1.1 charset-normalizer-3.5.1 contourpy-1.3.2 cycler-0.12.1 docopt-0.6.2 et_xmlfile-2.0.0 filelock-3.32.3 flatbuffers-25.12.19 fonttools-4.65.0 fsspec-2026.7.0 hf-xet-1.6.0 huggingface_hub-0.36.2 idna-3.20 jax-0.6.2 jaxlib-0.6.2 kiwisolver-1.5.1 matplotlib-3.10.9 mediapipe-0.10.21 ml_dtypes-0.5.4 mpmath-1.3.0 networkx-3.4.2 num2words-0.5.14 numpy-1.26.4 opencv-contrib-python-4.11.0.86 openpyxl-3.0.9 opt_einsum-3.4.0 packaging-26.3 pillow-12.3.0 protobuf-4.25.9 pycparser-3.0 pyparsing-3.3.3 python-dateutil-2.9.0.post0 regex-2026.9.10 requests-2.34.2 safetensors-0.8.0 scipy-1.14.1 sentencepiece-0.2.2 six-1.17.0 sounddevice-0.5.6 sympy-1.13.1 tokenizers-0.21.4 torch-2.6.0+cpu torchaudio-2.6.0+cpu torchvision-0.21.0+cpu tqdm-4.70.1 transformers-4.48.3 typing_extensions-4.16.0 urllib3-2.8.0

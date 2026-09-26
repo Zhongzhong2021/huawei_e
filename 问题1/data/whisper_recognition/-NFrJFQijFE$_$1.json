@@ -1,0 +1,43 @@
+{
+  "sample_id": "-NFrJFQijFE$_$1",
+  "source_sha256": "d8fcf16c6eb51c56947ec3d0549c6f3bc7a0cf1fc5f5d89e8b38d4249a08db4f",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " Thanks for watching!",
+      "start": 4.220000000000001,
+      "end": 5.62,
+      "avg_logprob": -0.6506696258272443,
+      "no_speech_prob": 0.69189453125
+    }
+  ],
+  "words": [
+    {
+      "text": " Thanks",
+      "interval_s": [
+        4.220000000000001,
+        5.62
+      ],
+      "probability": 0.0291290283203125
+    },
+    {
+      "text": " for",
+      "interval_s": [
+        5.62,
+        5.62
+      ],
+      "probability": 0.96533203125
+    },
+    {
+      "text": " watching!",
+      "interval_s": [
+        5.62,
+        5.62
+      ],
+      "probability": 0.9697265625
+    }
+  ],
+  "elapsed_s": 0.3725560689927079
+}

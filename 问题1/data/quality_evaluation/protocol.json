@@ -1,0 +1,32 @@
+{
+  "status": "fixed_before_execution",
+  "samples": 100,
+  "variants": {
+    "identity": "original audio",
+    "half_gain": "multiply PCM by 0.5",
+    "leading_silence_1s": "prepend exactly 16000 zero samples after resampling"
+  },
+  "rules": "Run unchanged recognition and forced-alignment branches, then fixed selective policy. No threshold tuning.",
+  "comparison": "Same original word indices; boundary residual subtracts the known 1s shift. Compare only jointly emitted candidates and report retention separately.",
+  "not_measured": [
+    "semantic precision",
+    "true word-boundary error",
+    "emotion accuracy"
+  ],
+  "human_records_used": false,
+  "emotion_labels_used": false,
+  "scripts": {
+    "extract.py": "b3a9398304dc0b292c62d1befce4d48800b612c8a472686caf54c11a1af87ca3",
+    "math_features.py": "612a124aeb397f8b8b97d5fb4fcd4622ffcadde60e0dfad0b2917ea0094228aa",
+    "ctc_alignment.py": "107e8f1a55fe7513a70ee6d82e8036dd4ee7ca2ae3be1d54f5aa5e9618bb9255",
+    "local_alignment.py": "6604c4186241cd9c2eb2ed936d91f1583e3931f8843a7a3e503ecedcd64a146a",
+    "selective_alignment.py": "f913b31e9cfcc1cfe14ff41d58256a694a269254dbe302bf627f441012d5408c",
+    "local_evidence.py": "d779a61b36666baf87012eeeef4948972abdd4bf856b6bfa070632d8030f64a5",
+    "run_automatic_alignment.py": "5c5a9959f48780b04e247e513269f00a2caf7b7030df7bf594542180dba1476a",
+    "feature_io.py": "b25c6c886df1de3b33e6f47c3caec913383f0d9212683a892932eaf2df6f3a66",
+    "evaluate_pipeline_quality.py": "a3aa6516285c7a1af17c9f7de952face04090a92bd6fd8a7147479c2844b20f7"
+  },
+  "config_sha256": "b0adbf96c3cfcda192429317763b44f8ab5da4453b7d1b4779664feccadecf7c",
+  "method_sha256": "3bf6d56c643f41aaeb4e7156b2506dc70a8244129cffa188ba8a10ef17187546",
+  "inputs_sha256": "ed5e8e1f01a84abb1d463cf6d4df93782171f681fd2bb49906ac0863be6e08a8"
+}

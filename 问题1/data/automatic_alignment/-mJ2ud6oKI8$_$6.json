@@ -1,0 +1,183 @@
+{
+  "context_envelopes": [],
+  "sample_status": "no_informative_support",
+  "informative_anchors": 0,
+  "informative_reference_tokens": 1,
+  "informative_coverage": 0.0,
+  "edit_cost": 4.0,
+  "optimal_endpoints": [
+    3,
+    4,
+    5
+  ],
+  "words": [
+    {
+      "word_index": 0,
+      "text": "They",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 1,
+      "text": "are",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 2,
+      "text": "all",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": [
+        0.58246875,
+        0.70246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            2
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 3,
+      "text": "very",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 4,
+      "text": "safe",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    }
+  ],
+  "automatic_eligible_words": 0,
+  "sample_id": "-mJ2ud6oKI8$_$6",
+  "source_sha256": "134a3a4ebbc423760133b0da0e90cfe84d75ea85df3968000afd84153c5d828d",
+  "recognition": [
+    {
+      "text": "THAT",
+      "interval_s": [
+        0.02246875,
+        0.16246875
+      ],
+      "mean_emission_probability": 0.9644258916378021
+    },
+    {
+      "text": "WE",
+      "interval_s": [
+        0.30246875,
+        0.38246875
+      ],
+      "mean_emission_probability": 0.9998493492603302
+    },
+    {
+      "text": "ALL",
+      "interval_s": [
+        0.58246875,
+        0.70246875
+      ],
+      "mean_emission_probability": 0.9980574448903402
+    },
+    {
+      "text": "WANT",
+      "interval_s": [
+        0.78246875,
+        0.94246875
+      ],
+      "mean_emission_probability": 0.9542787820100784
+    },
+    {
+      "text": "A",
+      "interval_s": [
+        1.06246875,
+        1.08246875
+      ],
+      "mean_emission_probability": 0.9371031522750854
+    },
+    {
+      "text": "PROACH",
+      "interval_s": [
+        1.14246875,
+        1.42246875
+      ],
+      "mean_emission_probability": 0.9710016250610352
+    },
+    {
+      "text": "REALLY",
+      "interval_s": [
+        1.78246875,
+        2.0024687500000002
+      ],
+      "mean_emission_probability": 0.9591259956359863
+    },
+    {
+      "text": "ANY",
+      "interval_s": [
+        2.06246875,
+        2.1624687500000004
+      ],
+      "mean_emission_probability": 0.968313972155253
+    }
+  ],
+  "baseline_candidate_words": 5,
+  "native_features_modified": false,
+  "human_data_used": false,
+  "config_sha256": "b0adbf96c3cfcda192429317763b44f8ab5da4453b7d1b4779664feccadecf7c"
+}

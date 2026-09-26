@@ -1,0 +1,48 @@
+{
+  "repository": "facebook/wav2vec2-lv-60-espeak-cv-ft",
+  "revision": "ae45363bf3413b374fecd9dc8bc1df0e24c3b7f4",
+  "files": [
+    {
+      "path": "config.json",
+      "url": "https://huggingface.co/facebook/wav2vec2-lv-60-espeak-cv-ft/resolve/ae45363bf3413b374fecd9dc8bc1df0e24c3b7f4/config.json",
+      "bytes": 1856,
+      "sha256": "4609fb49b7e1d28aecb2840da1926c40bd915bc6f1120a940afacf7159bbfb13"
+    },
+    {
+      "path": "preprocessor_config.json",
+      "url": "https://huggingface.co/facebook/wav2vec2-lv-60-espeak-cv-ft/resolve/ae45363bf3413b374fecd9dc8bc1df0e24c3b7f4/preprocessor_config.json",
+      "bytes": 212,
+      "sha256": "a2254a5b58f72cd4de3632f8eee64f3f098b7c1402128d2f419e7d00ae13e335"
+    },
+    {
+      "path": "pytorch_model.bin",
+      "url": "https://huggingface.co/facebook/wav2vec2-lv-60-espeak-cv-ft/resolve/ae45363bf3413b374fecd9dc8bc1df0e24c3b7f4/pytorch_model.bin",
+      "bytes": 1263535127,
+      "sha256": "3173bde9e9ce490fa0f989e413c42f25bc1820c020adc1e6b9b87025b3cfcc5e"
+    },
+    {
+      "path": "special_tokens_map.json",
+      "url": "https://huggingface.co/facebook/wav2vec2-lv-60-espeak-cv-ft/resolve/ae45363bf3413b374fecd9dc8bc1df0e24c3b7f4/special_tokens_map.json",
+      "bytes": 85,
+      "sha256": "bb7068de1150661a10b55f9e4b12a0e77af8bf91f5e45e1b58afaf1d0e17f675"
+    },
+    {
+      "path": "tokenizer_config.json",
+      "url": "https://huggingface.co/facebook/wav2vec2-lv-60-espeak-cv-ft/resolve/ae45363bf3413b374fecd9dc8bc1df0e24c3b7f4/tokenizer_config.json",
+      "bytes": 321,
+      "sha256": "1273ec458332cc55226ec596904bae811420755ace7e5d69462b61c4f480b457"
+    },
+    {
+      "path": "vocab.json",
+      "url": "https://huggingface.co/facebook/wav2vec2-lv-60-espeak-cv-ft/resolve/ae45363bf3413b374fecd9dc8bc1df0e24c3b7f4/vocab.json",
+      "bytes": 4637,
+      "sha256": "d732ab2456c0c017930001dc9af0b41b3b93d25b2eb9740bf9d925508d7d87d0"
+    },
+    {
+      "path": "README.md",
+      "url": "https://huggingface.co/facebook/wav2vec2-lv-60-espeak-cv-ft/resolve/ae45363bf3413b374fecd9dc8bc1df0e24c3b7f4/README.md",
+      "bytes": 3035,
+      "sha256": "81a55816a87034bcf0828d6181fa88abad32a0cbfcebc2ebc8b336664b69ba60"
+    }
+  ]
+}

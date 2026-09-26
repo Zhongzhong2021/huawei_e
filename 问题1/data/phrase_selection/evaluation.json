@@ -1,0 +1,2878 @@
+{
+  "status": "passed",
+  "samples": 100,
+  "words": 1932,
+  "totals": {
+    "early_greedy": {
+      "word_candidates": 1397,
+      "phrase_only_words": 56,
+      "phrases": 38,
+      "incompatible_pairs": 2,
+      "group_word_memberships": 134
+    },
+    "deferred_greedy": {
+      "word_candidates": 1397,
+      "phrase_only_words": 71,
+      "phrases": 53,
+      "incompatible_pairs": 2,
+      "group_word_memberships": 176
+    },
+    "optimal": {
+      "word_candidates": 1397,
+      "phrase_only_words": 71,
+      "phrases": 50,
+      "incompatible_pairs": 0,
+      "group_word_memberships": 171
+    }
+  },
+  "samples_with_added_coverage": 12,
+  "gained_coarse_words": 15,
+  "lost_coarse_words": 0,
+  "controls": {
+    "run_order_permutations": 100,
+    "missing_context_no_additions": 100,
+    "outside_audio_no_additions": 100
+  },
+  "sample_results": [
+    {
+      "sample_id": "-3g5yACwYnA$_$13",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 14,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 2
+        },
+        "deferred_greedy": {
+          "word_candidates": 14,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 2
+        },
+        "optimal": {
+          "word_candidates": 14,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 2
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-3g5yACwYnA$_$2",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 12,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 12,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 12,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-3g5yACwYnA$_$3",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 21,
+          "phrase_only_words": 6,
+          "phrases": 2,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 7
+        },
+        "deferred_greedy": {
+          "word_candidates": 21,
+          "phrase_only_words": 6,
+          "phrases": 2,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 7
+        },
+        "optimal": {
+          "word_candidates": 21,
+          "phrase_only_words": 6,
+          "phrases": 2,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 7
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-3g5yACwYnA$_$9",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 19,
+          "phrase_only_words": 2,
+          "phrases": 2,
+          "incompatible_pairs": 1,
+          "group_word_memberships": 5
+        },
+        "deferred_greedy": {
+          "word_candidates": 19,
+          "phrase_only_words": 3,
+          "phrases": 3,
+          "incompatible_pairs": 1,
+          "group_word_memberships": 8
+        },
+        "optimal": {
+          "word_candidates": 19,
+          "phrase_only_words": 3,
+          "phrases": 2,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 6
+        }
+      },
+      "gained_coarse_word_indices": [
+        4
+      ],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-3nNcZdcdvU$_$5",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 16,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 16,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 16,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-571d8cVauQ$_$0",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 7,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 7,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 7,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-571d8cVauQ$_$5",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 41,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 41,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 2
+        },
+        "optimal": {
+          "word_candidates": 41,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 2
+        }
+      },
+      "gained_coarse_word_indices": [
+        3
+      ],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-6rXp3zJ3kc$_$8",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 30,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 3
+        },
+        "deferred_greedy": {
+          "word_candidates": 30,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 3
+        },
+        "optimal": {
+          "word_candidates": 30,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 3
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-9y-fZ3swSY$_$0",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 11,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 3
+        },
+        "deferred_greedy": {
+          "word_candidates": 11,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 3
+        },
+        "optimal": {
+          "word_candidates": 11,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 3
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-9y-fZ3swSY$_$4",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 4,
+          "phrase_only_words": 3,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 3
+        },
+        "deferred_greedy": {
+          "word_candidates": 4,
+          "phrase_only_words": 3,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 3
+        },
+        "optimal": {
+          "word_candidates": 4,
+          "phrase_only_words": 3,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 3
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-9y-fZ3swSY$_$8",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 12,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 12,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 12,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-AUZQgSxyPQ$_$2",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 15,
+          "phrase_only_words": 3,
+          "phrases": 2,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 5
+        },
+        "deferred_greedy": {
+          "word_candidates": 15,
+          "phrase_only_words": 3,
+          "phrases": 2,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 5
+        },
+        "optimal": {
+          "word_candidates": 15,
+          "phrase_only_words": 3,
+          "phrases": 2,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 5
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-HeZS2-Prhc$_$2",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 11,
+          "phrase_only_words": 2,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 4
+        },
+        "deferred_greedy": {
+          "word_candidates": 11,
+          "phrase_only_words": 2,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 4
+        },
+        "optimal": {
+          "word_candidates": 11,
+          "phrase_only_words": 2,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 4
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-HwX2H8Z4hY$_$2",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-HwX2H8Z4hY$_$5",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 7,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 7,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 7,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-HwX2H8Z4hY$_$6",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 5,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 2
+        },
+        "deferred_greedy": {
+          "word_candidates": 5,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 2
+        },
+        "optimal": {
+          "word_candidates": 5,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 2
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-HwX2H8Z4hY$_$9",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 6,
+          "phrase_only_words": 2,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 2
+        },
+        "deferred_greedy": {
+          "word_candidates": 6,
+          "phrase_only_words": 2,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 2
+        },
+        "optimal": {
+          "word_candidates": 6,
+          "phrase_only_words": 2,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 2
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-I_e4mIh0yE$_$1",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 18,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 18,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 18,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-I_e4mIh0yE$_$3",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 17,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 17,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 17,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-MeTTeMJBNc$_$0",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 20,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 20,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 20,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-MeTTeMJBNc$_$13",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 12,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 12,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 12,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-MeTTeMJBNc$_$7",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 31,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 31,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 31,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-NFrJFQijFE$_$1",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-NFrJFQijFE$_$2",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-RfYyzHpjk4$_$11",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 13,
+          "phrase_only_words": 2,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 4
+        },
+        "deferred_greedy": {
+          "word_candidates": 13,
+          "phrase_only_words": 3,
+          "phrases": 2,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 6
+        },
+        "optimal": {
+          "word_candidates": 13,
+          "phrase_only_words": 3,
+          "phrases": 2,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 6
+        }
+      },
+      "gained_coarse_word_indices": [
+        3
+      ],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-RfYyzHpjk4$_$2",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 22,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 22,
+          "phrase_only_words": 3,
+          "phrases": 3,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 6
+        },
+        "optimal": {
+          "word_candidates": 22,
+          "phrase_only_words": 3,
+          "phrases": 3,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 6
+        }
+      },
+      "gained_coarse_word_indices": [
+        7,
+        13,
+        19
+      ],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-RfYyzHpjk4$_$8",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 16,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 16,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 16,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-THoVjtIkeU$_$12",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 35,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 35,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 35,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-THoVjtIkeU$_$2",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 10,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 10,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 10,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-THoVjtIkeU$_$6",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 27,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 27,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 27,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-UUCSKoHeMA$_$0",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 16,
+          "phrase_only_words": 2,
+          "phrases": 2,
+          "incompatible_pairs": 1,
+          "group_word_memberships": 8
+        },
+        "deferred_greedy": {
+          "word_candidates": 16,
+          "phrase_only_words": 2,
+          "phrases": 2,
+          "incompatible_pairs": 1,
+          "group_word_memberships": 8
+        },
+        "optimal": {
+          "word_candidates": 16,
+          "phrase_only_words": 2,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 5
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-UacrmKiTn4$_$10",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 18,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 18,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 18,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-UacrmKiTn4$_$4",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 13,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 13,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 13,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-UuX1xuaiiE$_$0",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 8,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 3
+        },
+        "deferred_greedy": {
+          "word_candidates": 8,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 3
+        },
+        "optimal": {
+          "word_candidates": 8,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 3
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-UuX1xuaiiE$_$1",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 24,
+          "phrase_only_words": 2,
+          "phrases": 2,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 14
+        },
+        "deferred_greedy": {
+          "word_candidates": 24,
+          "phrase_only_words": 2,
+          "phrases": 2,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 14
+        },
+        "optimal": {
+          "word_candidates": 24,
+          "phrase_only_words": 2,
+          "phrases": 2,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 14
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-UuX1xuaiiE$_$3",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 7,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 6
+        },
+        "deferred_greedy": {
+          "word_candidates": 7,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 6
+        },
+        "optimal": {
+          "word_candidates": 7,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 6
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-UuX1xuaiiE$_$6",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 17,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 4
+        },
+        "deferred_greedy": {
+          "word_candidates": 17,
+          "phrase_only_words": 2,
+          "phrases": 2,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 6
+        },
+        "optimal": {
+          "word_candidates": 17,
+          "phrase_only_words": 2,
+          "phrases": 2,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 6
+        }
+      },
+      "gained_coarse_word_indices": [
+        20
+      ],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-a55Q6RWvTA$_$3",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 61,
+          "phrase_only_words": 2,
+          "phrases": 2,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 6
+        },
+        "deferred_greedy": {
+          "word_candidates": 61,
+          "phrase_only_words": 2,
+          "phrases": 2,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 6
+        },
+        "optimal": {
+          "word_candidates": 61,
+          "phrase_only_words": 2,
+          "phrases": 2,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 6
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-aNfi7CP8vM$_$7",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 12,
+          "phrase_only_words": 2,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 4
+        },
+        "deferred_greedy": {
+          "word_candidates": 12,
+          "phrase_only_words": 2,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 4
+        },
+        "optimal": {
+          "word_candidates": 12,
+          "phrase_only_words": 2,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 4
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-aqamKhZ1Ec$_$0",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 6,
+          "phrase_only_words": 5,
+          "phrases": 2,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 5
+        },
+        "deferred_greedy": {
+          "word_candidates": 6,
+          "phrase_only_words": 5,
+          "phrases": 2,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 5
+        },
+        "optimal": {
+          "word_candidates": 6,
+          "phrase_only_words": 5,
+          "phrases": 2,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 5
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-dxfTGcXJoc$_$0",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 30,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 30,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 3
+        },
+        "optimal": {
+          "word_candidates": 30,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 3
+        }
+      },
+      "gained_coarse_word_indices": [
+        4
+      ],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-dxfTGcXJoc$_$1",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 32,
+          "phrase_only_words": 4,
+          "phrases": 2,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 9
+        },
+        "deferred_greedy": {
+          "word_candidates": 32,
+          "phrase_only_words": 4,
+          "phrases": 2,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 9
+        },
+        "optimal": {
+          "word_candidates": 32,
+          "phrase_only_words": 4,
+          "phrases": 2,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 9
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-dxfTGcXJoc$_$2",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 32,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 32,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 32,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-dxfTGcXJoc$_$6",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 26,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 2
+        },
+        "deferred_greedy": {
+          "word_candidates": 26,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 2
+        },
+        "optimal": {
+          "word_candidates": 26,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 2
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-egA8-b7-3M$_$1",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 15,
+          "phrase_only_words": 3,
+          "phrases": 2,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 8
+        },
+        "deferred_greedy": {
+          "word_candidates": 15,
+          "phrase_only_words": 4,
+          "phrases": 3,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 12
+        },
+        "optimal": {
+          "word_candidates": 15,
+          "phrase_only_words": 4,
+          "phrases": 2,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 12
+        }
+      },
+      "gained_coarse_word_indices": [
+        18
+      ],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-egA8-b7-3M$_$13",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 11,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 11,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 11,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-egA8-b7-3M$_$16",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 11,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 11,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 11,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-egA8-b7-3M$_$17",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 15,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 15,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 2
+        },
+        "optimal": {
+          "word_candidates": 15,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 2
+        }
+      },
+      "gained_coarse_word_indices": [
+        13
+      ],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-egA8-b7-3M$_$18",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 21,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 2
+        },
+        "deferred_greedy": {
+          "word_candidates": 21,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 2
+        },
+        "optimal": {
+          "word_candidates": 21,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 2
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-egA8-b7-3M$_$20",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 20,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 20,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 20,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-egA8-b7-3M$_$26",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 14,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 14,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 14,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-egA8-b7-3M$_$6",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 11,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 11,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 11,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-egA8-b7-3M$_$9",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 10,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 10,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 10,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-hnBHBN8p5A$_$6",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-hnBHBN8p5A$_$7",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-iRBcNs9oI8$_$3",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-iRBcNs9oI8$_$6",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-iRBcNs9oI8$_$7",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-iRBcNs9oI8$_$8",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-iRBcNs9oI8$_$9",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-lzEya4AM_4$_$5",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 16,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 16,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 6
+        },
+        "optimal": {
+          "word_candidates": 16,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 6
+        }
+      },
+      "gained_coarse_word_indices": [
+        18
+      ],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-lzEya4AM_4$_$6",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 39,
+          "phrase_only_words": 2,
+          "phrases": 2,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 10
+        },
+        "deferred_greedy": {
+          "word_candidates": 39,
+          "phrase_only_words": 2,
+          "phrases": 2,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 10
+        },
+        "optimal": {
+          "word_candidates": 39,
+          "phrase_only_words": 2,
+          "phrases": 2,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 10
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-mJ2ud6oKI8$_$1",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-mJ2ud6oKI8$_$2",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-mJ2ud6oKI8$_$6",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-mJ2ud6oKI8$_$8",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-mJ2ud6oKI8$_$9",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-mqbVkbCndg$_$0",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 14,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 14,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 14,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-qDkUB0GgYY$_$6",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 9,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 9,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 9,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-ri04Z7vwnc$_$0",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-ri04Z7vwnc$_$2",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-ri04Z7vwnc$_$5",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-s9qJ7ATP7w$_$0",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 18,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 18,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 18,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-s9qJ7ATP7w$_$1",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 10,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 10,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 10,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-s9qJ7ATP7w$_$4",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 8,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 8,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 8,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-s9qJ7ATP7w$_$5",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 18,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 18,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 18,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-s9qJ7ATP7w$_$6",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 5,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 5,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 5,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-s9qJ7ATP7w$_$7",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 26,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 26,
+          "phrase_only_words": 2,
+          "phrases": 2,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 7
+        },
+        "optimal": {
+          "word_candidates": 26,
+          "phrase_only_words": 2,
+          "phrases": 2,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 7
+        }
+      },
+      "gained_coarse_word_indices": [
+        8,
+        14
+      ],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-s9qJ7ATP7w$_$8",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 9,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 9,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 9,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-t217m2on-s$_$2",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 11,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 11,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 11,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-t217m2on-s$_$7",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 43,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 2
+        },
+        "deferred_greedy": {
+          "word_candidates": 43,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 2
+        },
+        "optimal": {
+          "word_candidates": 43,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 2
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-tANM6ETl_M$_$3",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 20,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 20,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 3
+        },
+        "optimal": {
+          "word_candidates": 20,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 3
+        }
+      },
+      "gained_coarse_word_indices": [
+        12
+      ],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-tPCytz4rww$_$10",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 10,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 10,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 10,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-tPCytz4rww$_$11",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 15,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 15,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 15,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-tPCytz4rww$_$12",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 20,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 20,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 20,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-tPCytz4rww$_$16",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 13,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 13,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 13,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-tPCytz4rww$_$18",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 16,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 16,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 16,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-uywlfIYOS8$_$4",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 16,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 16,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 16,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-vxjVxOeScU$_$4",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 18,
+          "phrase_only_words": 3,
+          "phrases": 2,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 8
+        },
+        "deferred_greedy": {
+          "word_candidates": 18,
+          "phrase_only_words": 3,
+          "phrases": 2,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 8
+        },
+        "optimal": {
+          "word_candidates": 18,
+          "phrase_only_words": 3,
+          "phrases": 2,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 8
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-wMB_hJL-3o$_$7",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 22,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 22,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 22,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-wny0OAz3g8$_$0",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 9,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 9,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 9,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-wny0OAz3g8$_$1",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 22,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 22,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 22,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-wny0OAz3g8$_$2",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 23,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 23,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 23,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-wny0OAz3g8$_$3",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 19,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 19,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 19,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-wny0OAz3g8$_$5",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 19,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 19,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 2
+        },
+        "optimal": {
+          "word_candidates": 19,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 2
+        }
+      },
+      "gained_coarse_word_indices": [
+        14
+      ],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-wny0OAz3g8$_$7",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 25,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 3
+        },
+        "deferred_greedy": {
+          "word_candidates": 25,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 3
+        },
+        "optimal": {
+          "word_candidates": 25,
+          "phrase_only_words": 1,
+          "phrases": 1,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 3
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-wny0OAz3g8$_$9",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 20,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 20,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 20,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-yRb-Jum7EQ$_$1",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 1,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 1,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 1,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-yRb-Jum7EQ$_$5",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 1,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 1,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 1,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    },
+    {
+      "sample_id": "-yRb-Jum7EQ$_$6",
+      "metrics": {
+        "early_greedy": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "deferred_greedy": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        },
+        "optimal": {
+          "word_candidates": 0,
+          "phrase_only_words": 0,
+          "phrases": 0,
+          "incompatible_pairs": 0,
+          "group_word_memberships": 0
+        }
+      },
+      "gained_coarse_word_indices": [],
+      "lost_coarse_word_indices": []
+    }
+  ],
+  "reference_sha256": "b95724cfa19bdbc069ec9343e7548144fc5a7edb0bc83e19bfa2480da31fee23",
+  "acoustic_evidence_sha256": "04ef96b8d983a6ec0792d419a5fc7b6bd014470fc910c5a0651437a33f00d766",
+  "current_manifest_sha256": "3e7d25d9eaffe4e7ec9480aeb79b19323c581b42110c83e641b1c0a13f5fff57",
+  "scripts_sha256": {
+    "phrase_selection.py": "a7c1ec58961b08f0b08166078ea48524e80f3c606cf65e2011cccb549a11fb5e",
+    "multigranular_alignment.py": "70e52c9dba52fb9365973764016e21882c2bea492e7f03b94fc28608c97740dc",
+    "evaluate_phrase_selection.py": "c2a4c6afa42e2099397122b91252097bcf7928ec8eb4c6ab63e95c77447028d5"
+  },
+  "word_decisions_unchanged": true,
+  "previous_policy_exactly_reproduced": true,
+  "human_data_used": false,
+  "independent_accuracy_measured": false,
+  "scope": "Fixed-evidence selection ablation and structural controls. Not semantic accuracy or true boundary error."
+}

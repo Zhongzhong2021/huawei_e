@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "archive_sha256": "5e7f943cb6176573161e826ad30fda31280b6745707f68ab4d84c8b01894ea66",
+  "relocated_code_executed": true,
+  "source": "original attachment",
+  "byte_equal_files": [
+    "data/figures/delivery_example.json",
+    "data/figures/delivery_example.png",
+    "data/figures/delivery-example-frame-19.png",
+    "data/figures/delivery-example-frame-108.png",
+    "data/figures/delivery-example-frame-199.png"
+  ],
+  "pdf_regenerated_but_byte_identity_not_claimed": true,
+  "temporary_extraction_removed_after_check": true
+}

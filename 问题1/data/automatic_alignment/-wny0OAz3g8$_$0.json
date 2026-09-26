@@ -1,0 +1,344 @@
+{
+  "context_envelopes": [],
+  "sample_status": "supported",
+  "informative_anchors": 8,
+  "informative_reference_tokens": 8,
+  "informative_coverage": 1.0,
+  "edit_cost": 0.0,
+  "optimal_endpoints": [
+    9
+  ],
+  "words": [
+    {
+      "word_index": 0,
+      "text": "trade",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        0.32246874999999997,
+        0.50246875
+      ],
+      "diagnostic_interval_s": [
+        0.32246874999999997,
+        0.50246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            0
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 1,
+      "text": "labor",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        0.54246875,
+        0.72246875
+      ],
+      "diagnostic_interval_s": [
+        0.54246875,
+        0.72246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            1
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 2,
+      "text": "unions",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        0.82246875,
+        1.06246875
+      ],
+      "diagnostic_interval_s": [
+        0.82246875,
+        1.06246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            2
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 3,
+      "text": "didn’t",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        1.14246875,
+        1.3624687500000001
+      ],
+      "diagnostic_interval_s": [
+        1.14246875,
+        1.3624687500000001
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            3
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 4,
+      "text": "allow",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        1.44246875,
+        1.66246875
+      ],
+      "diagnostic_interval_s": [
+        1.44246875,
+        1.66246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            4
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 5,
+      "text": "Black",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        1.76246875,
+        1.94246875
+      ],
+      "diagnostic_interval_s": [
+        1.76246875,
+        1.94246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            5
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 6,
+      "text": "workers",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        2.0024687500000002,
+        2.30246875
+      ],
+      "diagnostic_interval_s": [
+        2.0024687500000002,
+        2.30246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            6
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 7,
+      "text": "to",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        2.34246875,
+        2.42246875
+      ],
+      "diagnostic_interval_s": [
+        2.34246875,
+        2.42246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            7
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 8,
+      "text": "join",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        2.48246875,
+        2.7024687500000004
+      ],
+      "diagnostic_interval_s": [
+        2.48246875,
+        2.7024687500000004
+      ],
+      "boundary_disagreement_s": 0.020000000000000462,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            8
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    }
+  ],
+  "automatic_eligible_words": 9,
+  "sample_id": "-wny0OAz3g8$_$0",
+  "source_sha256": "1cc21b4432e2f4b592284ee40558a18acc7d208019117aebdb2f6a1b67ea198d",
+  "recognition": [
+    {
+      "text": "TRADE",
+      "interval_s": [
+        0.32246874999999997,
+        0.50246875
+      ],
+      "mean_emission_probability": 0.9422934412956238
+    },
+    {
+      "text": "LABOR",
+      "interval_s": [
+        0.54246875,
+        0.72246875
+      ],
+      "mean_emission_probability": 0.9451347947120666
+    },
+    {
+      "text": "UNIONS",
+      "interval_s": [
+        0.82246875,
+        1.06246875
+      ],
+      "mean_emission_probability": 0.9929756224155426
+    },
+    {
+      "text": "DIDN'T",
+      "interval_s": [
+        1.14246875,
+        1.3624687500000001
+      ],
+      "mean_emission_probability": 0.997582197189331
+    },
+    {
+      "text": "ALLOW",
+      "interval_s": [
+        1.44246875,
+        1.66246875
+      ],
+      "mean_emission_probability": 0.999910581111908
+    },
+    {
+      "text": "BLACK",
+      "interval_s": [
+        1.76246875,
+        1.94246875
+      ],
+      "mean_emission_probability": 0.9548370957374572
+    },
+    {
+      "text": "WORKERS",
+      "interval_s": [
+        2.0024687500000002,
+        2.30246875
+      ],
+      "mean_emission_probability": 0.9711439183780125
+    },
+    {
+      "text": "TO",
+      "interval_s": [
+        2.34246875,
+        2.42246875
+      ],
+      "mean_emission_probability": 0.9634836316108704
+    },
+    {
+      "text": "JOIN",
+      "interval_s": [
+        2.48246875,
+        2.7024687500000004
+      ],
+      "mean_emission_probability": 0.9965494871139526
+    },
+    {
+      "text": "AND",
+      "interval_s": [
+        2.8224687499999996,
+        2.88246875
+      ],
+      "mean_emission_probability": 0.9992501139640808
+    },
+    {
+      "text": "BECAUSE",
+      "interval_s": [
+        2.92246875,
+        3.1624687500000004
+      ],
+      "mean_emission_probability": 0.9998042242867606
+    }
+  ],
+  "baseline_candidate_words": 9,
+  "native_features_modified": false,
+  "human_data_used": false,
+  "config_sha256": "b0adbf96c3cfcda192429317763b44f8ab5da4453b7d1b4779664feccadecf7c"
+}

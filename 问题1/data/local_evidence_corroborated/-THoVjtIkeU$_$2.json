@@ -1,0 +1,410 @@
+{
+  "context_envelopes": [],
+  "sample_status": "supported",
+  "informative_anchors": 7,
+  "informative_reference_tokens": 7,
+  "informative_coverage": 1.0,
+  "edit_cost": 1.0,
+  "optimal_endpoints": [
+    11
+  ],
+  "words": [
+    {
+      "word_index": 0,
+      "text": "I",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        0.04246875,
+        0.06246875
+      ],
+      "diagnostic_interval_s": [
+        0.04246875,
+        0.06246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            0
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 1,
+      "text": "think",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        0.16246875,
+        0.38246875
+      ],
+      "diagnostic_interval_s": [
+        0.16246875,
+        0.38246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            1
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 2,
+      "text": "social",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        1.20246875,
+        1.44246875
+      ],
+      "diagnostic_interval_s": [
+        1.20246875,
+        1.44246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            3
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 3,
+      "text": "justice",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        1.50246875,
+        1.78246875
+      ],
+      "diagnostic_interval_s": [
+        1.50246875,
+        1.78246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            4
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 4,
+      "text": "is",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        1.8624687500000001,
+        1.90246875
+      ],
+      "diagnostic_interval_s": [
+        1.8624687500000001,
+        1.90246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            5
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 5,
+      "text": "extremely",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        1.98246875,
+        2.3624687499999997
+      ],
+      "diagnostic_interval_s": [
+        1.98246875,
+        2.3624687499999997
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            6
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 6,
+      "text": "important",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        2.42246875,
+        2.7824687499999996
+      ],
+      "diagnostic_interval_s": [
+        2.42246875,
+        2.7824687499999996
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            7
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 7,
+      "text": "for",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        2.8624687499999997,
+        2.98246875
+      ],
+      "diagnostic_interval_s": [
+        2.8624687499999997,
+        2.98246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            8
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 8,
+      "text": "young",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        3.0824687500000003,
+        3.2424687499999996
+      ],
+      "diagnostic_interval_s": [
+        3.0824687500000003,
+        3.2424687499999996
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            9
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 9,
+      "text": "people",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        3.3224687499999996,
+        3.6224687500000003
+      ],
+      "diagnostic_interval_s": [
+        3.3224687499999996,
+        3.6224687500000003
+      ],
+      "boundary_disagreement_s": 0.020000000000000462,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            10
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    }
+  ],
+  "automatic_eligible_words": 10,
+  "sample_id": "-THoVjtIkeU$_$2",
+  "source_sha256": "35a6c2464ffd68dd96411edb5dc2763f0efb59f264c1d8b737e616fa6b0d1d5b",
+  "recognition": [
+    {
+      "text": "I",
+      "interval_s": [
+        0.04246875,
+        0.06246875
+      ],
+      "mean_emission_probability": 0.8039546012878418
+    },
+    {
+      "text": "THINK",
+      "interval_s": [
+        0.16246875,
+        0.38246875
+      ],
+      "mean_emission_probability": 0.9996392369270325
+    },
+    {
+      "text": "A",
+      "interval_s": [
+        0.68246875,
+        0.70246875
+      ],
+      "mean_emission_probability": 0.9677563905715942
+    },
+    {
+      "text": "SOCIAL",
+      "interval_s": [
+        1.20246875,
+        1.44246875
+      ],
+      "mean_emission_probability": 0.9844922622044882
+    },
+    {
+      "text": "JUSTICE",
+      "interval_s": [
+        1.50246875,
+        1.78246875
+      ],
+      "mean_emission_probability": 0.9892514773777553
+    },
+    {
+      "text": "IS",
+      "interval_s": [
+        1.8624687500000001,
+        1.90246875
+      ],
+      "mean_emission_probability": 0.999460369348526
+    },
+    {
+      "text": "EXTREMELY",
+      "interval_s": [
+        1.98246875,
+        2.3624687499999997
+      ],
+      "mean_emission_probability": 0.9912590516938103
+    },
+    {
+      "text": "IMPORTANT",
+      "interval_s": [
+        2.42246875,
+        2.7824687499999996
+      ],
+      "mean_emission_probability": 0.9999424682723151
+    },
+    {
+      "text": "FOR",
+      "interval_s": [
+        2.8624687499999997,
+        2.98246875
+      ],
+      "mean_emission_probability": 0.9993415872255961
+    },
+    {
+      "text": "YOUNG",
+      "interval_s": [
+        3.0824687500000003,
+        3.2424687499999996
+      ],
+      "mean_emission_probability": 0.9996216654777527
+    },
+    {
+      "text": "PEOPLE",
+      "interval_s": [
+        3.3224687499999996,
+        3.6224687500000003
+      ],
+      "mean_emission_probability": 0.9974086284637451
+    }
+  ],
+  "baseline_candidate_words": 10,
+  "native_features_modified": false,
+  "human_data_used": false,
+  "config_sha256": "b0adbf96c3cfcda192429317763b44f8ab5da4453b7d1b4779664feccadecf7c",
+  "local_support_runs": [
+    {
+      "word_indices": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "hypothesis_indices": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "distinct_informative_anchors": [
+        "EXTREMELY",
+        "IMPORTANT",
+        "JUSTICE",
+        "PEOPLE",
+        "SOCIAL",
+        "YOUNG"
+      ],
+      "meaning": "Local lexical/acoustic consistency, not calibrated correctness."
+    }
+  ],
+  "new_local_candidate_words": 0,
+  "decision_policy": "frozen_selective_baseline_plus_corroborated_local_runs_v2",
+  "whole_text_content_confirmed": false,
+  "context_envelopes_policy": "original_frozen_baseline_navigation_only",
+  "corroborating_run_pairs": [],
+  "baseline_result_sha256": "403f6cb9835f2d336393019aee89b9c4e148d0317fa086acfe753cd84ade6110",
+  "human_data_used_for_generation": false
+}

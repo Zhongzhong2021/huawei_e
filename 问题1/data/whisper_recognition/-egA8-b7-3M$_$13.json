@@ -1,0 +1,114 @@
+{
+  "sample_id": "-egA8-b7-3M$_$13",
+  "source_sha256": "cbd627c225ebca37521ae238cb9ec254cad236822f4f37ebfbb039e6c56aea4c",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " What are you doing that's different?",
+      "start": 0.0,
+      "end": 1.6,
+      "avg_logprob": -0.2615131484834771,
+      "no_speech_prob": 0.03790283203125
+    },
+    {
+      "text": " They always want an answer.",
+      "start": 1.84,
+      "end": 3.32,
+      "avg_logprob": -0.2615131484834771,
+      "no_speech_prob": 0.03790283203125
+    }
+  ],
+  "words": [
+    {
+      "text": " What",
+      "interval_s": [
+        0.0,
+        0.56
+      ],
+      "probability": 0.68603515625
+    },
+    {
+      "text": " are",
+      "interval_s": [
+        0.56,
+        0.7
+      ],
+      "probability": 0.9912109375
+    },
+    {
+      "text": " you",
+      "interval_s": [
+        0.7,
+        0.76
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " doing",
+      "interval_s": [
+        0.76,
+        1.02
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " that's",
+      "interval_s": [
+        1.02,
+        1.26
+      ],
+      "probability": 0.958984375
+    },
+    {
+      "text": " different?",
+      "interval_s": [
+        1.26,
+        1.6
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " They",
+      "interval_s": [
+        1.84,
+        2.36
+      ],
+      "probability": 0.98583984375
+    },
+    {
+      "text": " always",
+      "interval_s": [
+        2.36,
+        2.62
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " want",
+      "interval_s": [
+        2.62,
+        2.88
+      ],
+      "probability": 0.986328125
+    },
+    {
+      "text": " an",
+      "interval_s": [
+        2.88,
+        3.02
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " answer.",
+      "interval_s": [
+        3.02,
+        3.32
+      ],
+      "probability": 0.9990234375
+    }
+  ],
+  "elapsed_s": 0.6056069959886372
+}

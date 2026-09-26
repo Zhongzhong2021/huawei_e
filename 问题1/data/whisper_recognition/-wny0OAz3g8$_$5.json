@@ -1,0 +1,201 @@
+{
+  "sample_id": "-wny0OAz3g8$_$5",
+  "source_sha256": "6c6a8a4cba654b25190ab1793bfae81c3d2159ecd6cbc02d3fcbd598543acce0",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " themselves.",
+      "start": 0.0,
+      "end": 0.36,
+      "avg_logprob": -0.20836759554712395,
+      "no_speech_prob": 0.00757598876953125
+    },
+    {
+      "text": " This is what's now known as Racial Formation Theory, a theory formalized by modern sociologists",
+      "start": 0.48,
+      "end": 4.78,
+      "avg_logprob": -0.20836759554712395,
+      "no_speech_prob": 0.00757598876953125
+    },
+    {
+      "text": " Michael Omi and Howard Winant.",
+      "start": 4.78,
+      "end": 6.08,
+      "avg_logprob": -0.20836759554712395,
+      "no_speech_prob": 0.00757598876953125
+    }
+  ],
+  "words": [
+    {
+      "text": " themselves.",
+      "interval_s": [
+        0.0,
+        0.36
+      ],
+      "probability": 0.245361328125
+    },
+    {
+      "text": " This",
+      "interval_s": [
+        0.48,
+        0.62
+      ],
+      "probability": 0.98779296875
+    },
+    {
+      "text": " is",
+      "interval_s": [
+        0.62,
+        0.78
+      ],
+      "probability": 0.986328125
+    },
+    {
+      "text": " what's",
+      "interval_s": [
+        0.78,
+        0.96
+      ],
+      "probability": 0.937744140625
+    },
+    {
+      "text": " now",
+      "interval_s": [
+        0.96,
+        1.12
+      ],
+      "probability": 0.96484375
+    },
+    {
+      "text": " known",
+      "interval_s": [
+        1.12,
+        1.36
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " as",
+      "interval_s": [
+        1.36,
+        1.6
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " Racial",
+      "interval_s": [
+        1.6,
+        1.92
+      ],
+      "probability": 0.7010498046875
+    },
+    {
+      "text": " Formation",
+      "interval_s": [
+        1.92,
+        2.36
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " Theory,",
+      "interval_s": [
+        2.36,
+        2.6
+      ],
+      "probability": 0.9248046875
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        2.82,
+        3.04
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " theory",
+      "interval_s": [
+        3.04,
+        3.26
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " formalized",
+      "interval_s": [
+        3.26,
+        3.82
+      ],
+      "probability": 0.993408203125
+    },
+    {
+      "text": " by",
+      "interval_s": [
+        3.82,
+        3.96
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " modern",
+      "interval_s": [
+        3.96,
+        4.2
+      ],
+      "probability": 0.94775390625
+    },
+    {
+      "text": " sociologists",
+      "interval_s": [
+        4.2,
+        4.78
+      ],
+      "probability": 0.971435546875
+    },
+    {
+      "text": " Michael",
+      "interval_s": [
+        4.78,
+        5.06
+      ],
+      "probability": 0.9873046875
+    },
+    {
+      "text": " Omi",
+      "interval_s": [
+        5.06,
+        5.34
+      ],
+      "probability": 0.7177734375
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        5.34,
+        5.5
+      ],
+      "probability": 0.99169921875
+    },
+    {
+      "text": " Howard",
+      "interval_s": [
+        5.5,
+        5.78
+      ],
+      "probability": 0.99072265625
+    },
+    {
+      "text": " Winant.",
+      "interval_s": [
+        5.78,
+        6.08
+      ],
+      "probability": 0.727783203125
+    }
+  ],
+  "elapsed_s": 0.8675397759652697
+}

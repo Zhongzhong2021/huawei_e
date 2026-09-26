@@ -1,0 +1,194 @@
+{
+  "sample_id": "-wny0OAz3g8$_$3",
+  "source_sha256": "ea917c506bc9fa39460f2b722f7c416f646312bb17cd74baa618905b54837bce",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " behavior, which then allowed the white workers in unions to justify their decision to not",
+      "start": 0.0,
+      "end": 3.58,
+      "avg_logprob": -0.22656249787126267,
+      "no_speech_prob": 0.00572967529296875
+    },
+    {
+      "text": " allow black workers into their union.",
+      "start": 3.58,
+      "end": 5.4,
+      "avg_logprob": -0.22656249787126267,
+      "no_speech_prob": 0.00572967529296875
+    }
+  ],
+  "words": [
+    {
+      "text": " behavior,",
+      "interval_s": [
+        0.0,
+        0.34
+      ],
+      "probability": 0.58154296875
+    },
+    {
+      "text": " which",
+      "interval_s": [
+        0.48,
+        0.6
+      ],
+      "probability": 0.99365234375
+    },
+    {
+      "text": " then",
+      "interval_s": [
+        0.6,
+        0.76
+      ],
+      "probability": 0.974609375
+    },
+    {
+      "text": " allowed",
+      "interval_s": [
+        0.76,
+        1.04
+      ],
+      "probability": 0.9912109375
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        1.04,
+        1.18
+      ],
+      "probability": 0.91943359375
+    },
+    {
+      "text": " white",
+      "interval_s": [
+        1.18,
+        1.36
+      ],
+      "probability": 0.9453125
+    },
+    {
+      "text": " workers",
+      "interval_s": [
+        1.36,
+        1.58
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " in",
+      "interval_s": [
+        1.58,
+        1.78
+      ],
+      "probability": 0.60791015625
+    },
+    {
+      "text": " unions",
+      "interval_s": [
+        1.78,
+        2.02
+      ],
+      "probability": 0.9833984375
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        2.02,
+        2.24
+      ],
+      "probability": 0.9951171875
+    },
+    {
+      "text": " justify",
+      "interval_s": [
+        2.24,
+        2.66
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " their",
+      "interval_s": [
+        2.66,
+        2.9
+      ],
+      "probability": 0.990234375
+    },
+    {
+      "text": " decision",
+      "interval_s": [
+        2.9,
+        3.18
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        3.18,
+        3.4
+      ],
+      "probability": 0.939453125
+    },
+    {
+      "text": " not",
+      "interval_s": [
+        3.4,
+        3.58
+      ],
+      "probability": 0.99365234375
+    },
+    {
+      "text": " allow",
+      "interval_s": [
+        3.58,
+        3.84
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " black",
+      "interval_s": [
+        3.84,
+        4.1
+      ],
+      "probability": 0.79443359375
+    },
+    {
+      "text": " workers",
+      "interval_s": [
+        4.1,
+        4.52
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " into",
+      "interval_s": [
+        4.52,
+        4.9
+      ],
+      "probability": 0.94140625
+    },
+    {
+      "text": " their",
+      "interval_s": [
+        4.9,
+        5.1
+      ],
+      "probability": 0.98974609375
+    },
+    {
+      "text": " union.",
+      "interval_s": [
+        5.1,
+        5.4
+      ],
+      "probability": 0.94091796875
+    }
+  ],
+  "elapsed_s": 0.747577789996285
+}

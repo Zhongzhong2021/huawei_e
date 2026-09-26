@@ -1,0 +1,155 @@
+{
+  "sample_id": "-RfYyzHpjk4$_$11",
+  "source_sha256": "96e481cd732001239639c8cb4e7f94e570925e5a15940920ffab0cec1f13f904",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " So get your friends lined up, get your business colleagues lined up, and have a good time.",
+      "start": 0.0,
+      "end": 4.44,
+      "avg_logprob": -0.22911004786906036,
+      "no_speech_prob": 0.0005521774291992188
+    }
+  ],
+  "words": [
+    {
+      "text": " So",
+      "interval_s": [
+        0.0,
+        0.72
+      ],
+      "probability": 0.75048828125
+    },
+    {
+      "text": " get",
+      "interval_s": [
+        0.72,
+        1.36
+      ],
+      "probability": 0.7138671875
+    },
+    {
+      "text": " your",
+      "interval_s": [
+        1.36,
+        1.54
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " friends",
+      "interval_s": [
+        1.54,
+        1.78
+      ],
+      "probability": 0.97119140625
+    },
+    {
+      "text": " lined",
+      "interval_s": [
+        1.78,
+        2.0
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " up,",
+      "interval_s": [
+        2.0,
+        2.24
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " get",
+      "interval_s": [
+        2.28,
+        2.42
+      ],
+      "probability": 0.99267578125
+    },
+    {
+      "text": " your",
+      "interval_s": [
+        2.42,
+        2.58
+      ],
+      "probability": 0.974609375
+    },
+    {
+      "text": " business",
+      "interval_s": [
+        2.58,
+        2.78
+      ],
+      "probability": 0.99365234375
+    },
+    {
+      "text": " colleagues",
+      "interval_s": [
+        2.78,
+        3.1
+      ],
+      "probability": 0.98193359375
+    },
+    {
+      "text": " lined",
+      "interval_s": [
+        3.1,
+        3.46
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " up,",
+      "interval_s": [
+        3.46,
+        3.72
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        3.72,
+        3.8
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " have",
+      "interval_s": [
+        3.8,
+        3.94
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        3.94,
+        4.04
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " good",
+      "interval_s": [
+        4.04,
+        4.18
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " time.",
+      "interval_s": [
+        4.18,
+        4.44
+      ],
+      "probability": 0.99951171875
+    }
+  ],
+  "elapsed_s": 0.7165402039536275
+}

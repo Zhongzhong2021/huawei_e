@@ -1,0 +1,658 @@
+{
+  "context_envelopes": [
+    {
+      "word_indices": [
+        0
+      ],
+      "interval_s": [
+        0.56246875,
+        1.8624687500000001
+      ],
+      "left_anchor_word": null,
+      "right_anchor_word": 1,
+      "status": "context_only_not_alignment",
+      "automatic_eligible": false
+    },
+    {
+      "word_indices": [
+        2
+      ],
+      "interval_s": [
+        1.68246875,
+        2.72246875
+      ],
+      "left_anchor_word": 1,
+      "right_anchor_word": 3,
+      "status": "context_only_not_alignment",
+      "automatic_eligible": false
+    }
+  ],
+  "sample_status": "supported",
+  "informative_anchors": 5,
+  "informative_reference_tokens": 7,
+  "informative_coverage": 0.7142857142857143,
+  "edit_cost": 1.231,
+  "optimal_endpoints": [
+    19
+  ],
+  "words": [
+    {
+      "word_index": 0,
+      "text": "Noncompliance",
+      "status": "approximate_lexical_match",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": [
+        0.90246875,
+        1.54246875
+      ],
+      "boundary_disagreement_s": 0.32000000000000006,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            1
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 1,
+      "text": "can",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        1.68246875,
+        1.8624687500000001
+      ],
+      "diagnostic_interval_s": [
+        1.68246875,
+        1.8624687500000001
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            2
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 2,
+      "text": "result",
+      "status": "unmatched_or_ambiguous",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 3,
+      "text": "in",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        2.68246875,
+        2.72246875
+      ],
+      "diagnostic_interval_s": [
+        2.68246875,
+        2.72246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            4
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 4,
+      "text": "legal",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        2.84246875,
+        3.0824687500000003
+      ],
+      "diagnostic_interval_s": [
+        2.84246875,
+        3.0824687500000003
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            5
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 5,
+      "text": "liability",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        3.14246875,
+        3.80246875
+      ],
+      "diagnostic_interval_s": [
+        3.14246875,
+        3.80246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            6
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 6,
+      "text": "to",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        3.98246875,
+        4.14246875
+      ],
+      "diagnostic_interval_s": [
+        3.98246875,
+        4.14246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            7
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 7,
+      "text": "you",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        4.26246875,
+        4.46246875
+      ],
+      "diagnostic_interval_s": [
+        4.26246875,
+        4.46246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            8
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 8,
+      "text": "and",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        5.042468749999999,
+        5.14246875
+      ],
+      "diagnostic_interval_s": [
+        5.042468749999999,
+        5.14246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            9
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 9,
+      "text": "to",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        5.2424687500000005,
+        5.3224687500000005
+      ],
+      "diagnostic_interval_s": [
+        5.2424687500000005,
+        5.3224687500000005
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            10
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 10,
+      "text": "the",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        5.402468750000001,
+        5.48246875
+      ],
+      "diagnostic_interval_s": [
+        5.402468750000001,
+        5.48246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            11
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 11,
+      "text": "school",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        5.542468749999999,
+        5.76246875
+      ],
+      "diagnostic_interval_s": [
+        5.542468749999999,
+        5.76246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            12
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 12,
+      "text": "district",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        5.8224687500000005,
+        6.14246875
+      ],
+      "diagnostic_interval_s": [
+        5.8224687500000005,
+        6.14246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            13
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 13,
+      "text": "in",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        6.18246875,
+        6.22246875
+      ],
+      "diagnostic_interval_s": [
+        6.18246875,
+        6.22246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            14
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 14,
+      "text": "which",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        6.28246875,
+        6.42246875
+      ],
+      "diagnostic_interval_s": [
+        6.28246875,
+        6.42246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            15
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 15,
+      "text": "you",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        6.48246875,
+        6.58246875
+      ],
+      "diagnostic_interval_s": [
+        6.48246875,
+        6.58246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            16
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 16,
+      "text": "are",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        6.64246875,
+        6.7424687500000005
+      ],
+      "diagnostic_interval_s": [
+        6.64246875,
+        6.7424687500000005
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            17
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 17,
+      "text": "employed",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        6.8224687500000005,
+        7.2424687500000005
+      ],
+      "diagnostic_interval_s": [
+        6.8224687500000005,
+        7.2424687500000005
+      ],
+      "boundary_disagreement_s": 0.020000000000000462,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            18
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    }
+  ],
+  "automatic_eligible_words": 16,
+  "sample_id": "-3nNcZdcdvU$_$5",
+  "source_sha256": "7ea53ad502b77be7d2ee4494dc23a9478c897792203cf887d546e83d584c1728",
+  "recognition": [
+    {
+      "text": "NON",
+      "interval_s": [
+        0.56246875,
+        0.78246875
+      ],
+      "mean_emission_probability": 0.9646138946215311
+    },
+    {
+      "text": "COMPLIANCE",
+      "interval_s": [
+        0.90246875,
+        1.54246875
+      ],
+      "mean_emission_probability": 0.9982688903808594
+    },
+    {
+      "text": "CAN",
+      "interval_s": [
+        1.68246875,
+        1.8624687500000001
+      ],
+      "mean_emission_probability": 0.9999035199483236
+    },
+    {
+      "text": "RESOLVE",
+      "interval_s": [
+        1.98246875,
+        2.5024687500000002
+      ],
+      "mean_emission_probability": 0.99868186882564
+    },
+    {
+      "text": "IN",
+      "interval_s": [
+        2.68246875,
+        2.72246875
+      ],
+      "mean_emission_probability": 0.996621698141098
+    },
+    {
+      "text": "LEGAL",
+      "interval_s": [
+        2.84246875,
+        3.0824687500000003
+      ],
+      "mean_emission_probability": 0.9990859270095825
+    },
+    {
+      "text": "LIABILITY",
+      "interval_s": [
+        3.14246875,
+        3.80246875
+      ],
+      "mean_emission_probability": 0.9945134520530701
+    },
+    {
+      "text": "TO",
+      "interval_s": [
+        3.98246875,
+        4.14246875
+      ],
+      "mean_emission_probability": 0.9985977709293365
+    },
+    {
+      "text": "YOU",
+      "interval_s": [
+        4.26246875,
+        4.46246875
+      ],
+      "mean_emission_probability": 0.9472887913386027
+    },
+    {
+      "text": "AND",
+      "interval_s": [
+        5.042468749999999,
+        5.14246875
+      ],
+      "mean_emission_probability": 0.9993204673131307
+    },
+    {
+      "text": "TO",
+      "interval_s": [
+        5.2424687500000005,
+        5.3224687500000005
+      ],
+      "mean_emission_probability": 0.9996588826179504
+    },
+    {
+      "text": "THE",
+      "interval_s": [
+        5.402468750000001,
+        5.48246875
+      ],
+      "mean_emission_probability": 0.9983152548472086
+    },
+    {
+      "text": "SCHOOL",
+      "interval_s": [
+        5.542468749999999,
+        5.76246875
+      ],
+      "mean_emission_probability": 0.9995136360327402
+    },
+    {
+      "text": "DISTRICT",
+      "interval_s": [
+        5.8224687500000005,
+        6.14246875
+      ],
+      "mean_emission_probability": 0.987300306558609
+    },
+    {
+      "text": "IN",
+      "interval_s": [
+        6.18246875,
+        6.22246875
+      ],
+      "mean_emission_probability": 0.9952379763126373
+    },
+    {
+      "text": "WHICH",
+      "interval_s": [
+        6.28246875,
+        6.42246875
+      ],
+      "mean_emission_probability": 0.9998888731002807
+    },
+    {
+      "text": "YOU",
+      "interval_s": [
+        6.48246875,
+        6.58246875
+      ],
+      "mean_emission_probability": 0.9959572553634644
+    },
+    {
+      "text": "ARE",
+      "interval_s": [
+        6.64246875,
+        6.7424687500000005
+      ],
+      "mean_emission_probability": 0.9983584880828857
+    },
+    {
+      "text": "EMPLOYED",
+      "interval_s": [
+        6.8224687500000005,
+        7.2424687500000005
+      ],
+      "mean_emission_probability": 0.9774007797241211
+    }
+  ],
+  "baseline_candidate_words": 18,
+  "native_features_modified": false,
+  "human_data_used": false,
+  "config_sha256": "b0adbf96c3cfcda192429317763b44f8ab5da4453b7d1b4779664feccadecf7c"
+}

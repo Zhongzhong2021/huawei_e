@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "scope": "Unified delivery: optional phonetic enhancement, local omission tests and complete correspondence inventory",
+  "documents_sha256": {
+    "复现运行说明.md": "3c6f4d9a5b8847cf8e2c668049f5d119ad8b9e5a140966bf5bc871222538546b",
+    "问题1正文稿.md": "890b2022b96c055aa2ccd139c481ade969122b030cafadb5493b7df582c45e43",
+    "README.md": "9f396b17fe35d470a13a3c59725ad06a8a726cf9eb9d4763aac70591559a1110"
+  },
+  "enhancement_sha256": "911d1eb3121690e44ca6788020a4f5718de73858cd87823a56edb9f96aaaf0d8",
+  "validation_sha256": "4e03bb0b04a90c5a7b1cc08028617edefc30d1fd32faf7caef794a299adbfa38",
+  "inventory_sha256": "a59436d8ac87e1579e8f166c2d3e099f90b926dcc7442fc26614ae443422a85d",
+  "tests_executed": {
+    "phonetic": 6,
+    "enhancement": 4,
+    "correspondence": 4,
+    "base_project": 79
+  },
+  "all_tests_passed": true,
+  "local_omission_repeated_scoring": {
+    "tests": 641,
+    "exact_file_sha256_equal": true,
+    "sha256": "7c4ad52f1c3aaca7b3faa4ce80494ac7eead6797fa71f2490fb52abf28fb6dd8"
+  },
+  "human_review_read_by_enhancement": false,
+  "frozen_base_archive_sha256": "79f2ce637b0736c22f338374e855ef6ac2bd840d62024c3ba17797111b6d8bd8"
+}

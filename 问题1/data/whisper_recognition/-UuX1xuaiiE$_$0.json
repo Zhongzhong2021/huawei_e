@@ -1,0 +1,91 @@
+{
+  "sample_id": "-UuX1xuaiiE$_$0",
+  "source_sha256": "f578b305d53bc152702f5e771de0fcd12d1e9aaefc5cefce3d2082a417aab7c8",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " It's amazing to see their enthusiasm and their passion.",
+      "start": 0.0,
+      "end": 2.86,
+      "avg_logprob": -0.18191964498588017,
+      "no_speech_prob": 0.0153350830078125
+    }
+  ],
+  "words": [
+    {
+      "text": " It's",
+      "interval_s": [
+        0.0,
+        0.12
+      ],
+      "probability": 0.760986328125
+    },
+    {
+      "text": " amazing",
+      "interval_s": [
+        0.12,
+        0.54
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        0.54,
+        0.88
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " see",
+      "interval_s": [
+        0.88,
+        1.14
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " their",
+      "interval_s": [
+        1.14,
+        1.38
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " enthusiasm",
+      "interval_s": [
+        1.38,
+        1.92
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        1.92,
+        2.32
+      ],
+      "probability": 0.98583984375
+    },
+    {
+      "text": " their",
+      "interval_s": [
+        2.32,
+        2.44
+      ],
+      "probability": 0.96923828125
+    },
+    {
+      "text": " passion.",
+      "interval_s": [
+        2.44,
+        2.86
+      ],
+      "probability": 0.9990234375
+    }
+  ],
+  "elapsed_s": 0.6167853339575231
+}

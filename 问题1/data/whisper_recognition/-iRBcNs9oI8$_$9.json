@@ -1,0 +1,43 @@
+{
+  "sample_id": "-iRBcNs9oI8$_$9",
+  "source_sha256": "352bdcc73d3622d6abac1b09f2039b211d15b9bf7acee66f0b07783c9b7a4c74",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " of Power Pose.",
+      "start": 0.0,
+      "end": 2.12,
+      "avg_logprob": -0.4497767686843872,
+      "no_speech_prob": 0.01383209228515625
+    }
+  ],
+  "words": [
+    {
+      "text": " of",
+      "interval_s": [
+        0.0,
+        0.36
+      ],
+      "probability": 0.74951171875
+    },
+    {
+      "text": " Power",
+      "interval_s": [
+        0.36,
+        1.48
+      ],
+      "probability": 0.521484375
+    },
+    {
+      "text": " Pose.",
+      "interval_s": [
+        1.48,
+        2.12
+      ],
+      "probability": 0.9501953125
+    }
+  ],
+  "elapsed_s": 0.3793772889766842
+}

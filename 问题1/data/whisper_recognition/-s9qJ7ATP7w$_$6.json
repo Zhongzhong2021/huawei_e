@@ -1,0 +1,75 @@
+{
+  "sample_id": "-s9qJ7ATP7w$_$6",
+  "source_sha256": "40b684fd1b4559f0f82e72f9b47f4ce7c5e15059fe8d0d8ab112637cd3386451",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " for me, but I just kept going.",
+      "start": 0.0,
+      "end": 1.72,
+      "avg_logprob": -0.18489583457509676,
+      "no_speech_prob": 0.04754638671875
+    }
+  ],
+  "words": [
+    {
+      "text": " for",
+      "interval_s": [
+        0.0,
+        0.12
+      ],
+      "probability": 0.76708984375
+    },
+    {
+      "text": " me,",
+      "interval_s": [
+        0.12,
+        0.28
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " but",
+      "interval_s": [
+        0.36,
+        0.64
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " I",
+      "interval_s": [
+        0.64,
+        0.92
+      ],
+      "probability": 0.97998046875
+    },
+    {
+      "text": " just",
+      "interval_s": [
+        0.92,
+        1.32
+      ],
+      "probability": 0.95654296875
+    },
+    {
+      "text": " kept",
+      "interval_s": [
+        1.32,
+        1.48
+      ],
+      "probability": 0.9892578125
+    },
+    {
+      "text": " going.",
+      "interval_s": [
+        1.48,
+        1.72
+      ],
+      "probability": 0.99072265625
+    }
+  ],
+  "elapsed_s": 0.4420541070285253
+}

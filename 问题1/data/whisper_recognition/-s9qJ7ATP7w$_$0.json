@@ -1,0 +1,195 @@
+{
+  "sample_id": "-s9qJ7ATP7w$_$0",
+  "source_sha256": "f2324dbc6debe0d1e4254e6f943523373e3cbb30d8d0555413ce3a7b370a4af5",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " They have doubt, they have fear, they're losing a Ferrari race or they're losing a race and then they just give up.",
+      "start": 0.0,
+      "end": 6.04,
+      "avg_logprob": -0.2070312534769376,
+      "no_speech_prob": 0.034027099609375
+    }
+  ],
+  "words": [
+    {
+      "text": " They",
+      "interval_s": [
+        0.0,
+        0.12
+      ],
+      "probability": 0.5546875
+    },
+    {
+      "text": " have",
+      "interval_s": [
+        0.12,
+        0.18
+      ],
+      "probability": 0.96337890625
+    },
+    {
+      "text": " doubt,",
+      "interval_s": [
+        0.18,
+        0.44
+      ],
+      "probability": 0.91552734375
+    },
+    {
+      "text": " they",
+      "interval_s": [
+        0.56,
+        0.7
+      ],
+      "probability": 0.99072265625
+    },
+    {
+      "text": " have",
+      "interval_s": [
+        0.7,
+        0.84
+      ],
+      "probability": 0.994140625
+    },
+    {
+      "text": " fear,",
+      "interval_s": [
+        0.84,
+        1.22
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " they're",
+      "interval_s": [
+        1.38,
+        1.8
+      ],
+      "probability": 0.765869140625
+    },
+    {
+      "text": " losing",
+      "interval_s": [
+        1.8,
+        2.06
+      ],
+      "probability": 0.95166015625
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        2.06,
+        2.24
+      ],
+      "probability": 0.98193359375
+    },
+    {
+      "text": " Ferrari",
+      "interval_s": [
+        2.24,
+        2.48
+      ],
+      "probability": 0.98681640625
+    },
+    {
+      "text": " race",
+      "interval_s": [
+        2.48,
+        2.96
+      ],
+      "probability": 0.994140625
+    },
+    {
+      "text": " or",
+      "interval_s": [
+        2.96,
+        3.16
+      ],
+      "probability": 0.79541015625
+    },
+    {
+      "text": " they're",
+      "interval_s": [
+        3.16,
+        3.32
+      ],
+      "probability": 0.95947265625
+    },
+    {
+      "text": " losing",
+      "interval_s": [
+        3.32,
+        3.68
+      ],
+      "probability": 0.98486328125
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        3.68,
+        3.9
+      ],
+      "probability": 0.9755859375
+    },
+    {
+      "text": " race",
+      "interval_s": [
+        3.9,
+        4.66
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        4.66,
+        5.14
+      ],
+      "probability": 0.71484375
+    },
+    {
+      "text": " then",
+      "interval_s": [
+        5.14,
+        5.32
+      ],
+      "probability": 0.9619140625
+    },
+    {
+      "text": " they",
+      "interval_s": [
+        5.32,
+        5.44
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " just",
+      "interval_s": [
+        5.44,
+        5.62
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " give",
+      "interval_s": [
+        5.62,
+        5.78
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " up.",
+      "interval_s": [
+        5.78,
+        6.04
+      ],
+      "probability": 0.9990234375
+    }
+  ],
+  "elapsed_s": 0.8083615799550898
+}

@@ -1,0 +1,91 @@
+{
+  "sample_id": "-iRBcNs9oI8$_$6",
+  "source_sha256": "030b0b8d8d4ae47799432ab71b66fcc881f077c5b0feef892c1f146dc0a592e3",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " help you if you have an English job interview.",
+      "start": 0.0,
+      "end": 2.16,
+      "avg_logprob": -0.15655048535420343,
+      "no_speech_prob": 0.0233154296875
+    }
+  ],
+  "words": [
+    {
+      "text": " help",
+      "interval_s": [
+        0.0,
+        0.16
+      ],
+      "probability": 0.89794921875
+    },
+    {
+      "text": " you",
+      "interval_s": [
+        0.16,
+        0.28
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " if",
+      "interval_s": [
+        0.28,
+        0.46
+      ],
+      "probability": 0.7724609375
+    },
+    {
+      "text": " you",
+      "interval_s": [
+        0.46,
+        0.56
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " have",
+      "interval_s": [
+        0.56,
+        0.7
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " an",
+      "interval_s": [
+        0.7,
+        0.82
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " English",
+      "interval_s": [
+        0.82,
+        1.1
+      ],
+      "probability": 0.93603515625
+    },
+    {
+      "text": " job",
+      "interval_s": [
+        1.1,
+        1.5
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " interview.",
+      "interval_s": [
+        1.5,
+        2.16
+      ],
+      "probability": 0.99609375
+    }
+  ],
+  "elapsed_s": 0.4533251689863391
+}

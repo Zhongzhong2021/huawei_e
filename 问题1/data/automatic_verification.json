@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "samples": 100,
+  "eligible_word_reads_checked": 1328,
+  "decoded_transcripts_equal_previous_inference": 100,
+  "human_references_used_for_generation": false,
+  "script_hashes_checked": true
+}

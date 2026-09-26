@@ -1,0 +1,202 @@
+{
+  "sample_id": "-MeTTeMJBNc$_$0",
+  "source_sha256": "54e2097f7bdb455d243e72254e5af7ed16160739f2f3cfd22f57d2729ec1acbe",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " Okay, what happens at this point after we've taken this brief walk down memory lane is",
+      "start": 0.96,
+      "end": 6.78,
+      "avg_logprob": -0.22443181547251614,
+      "no_speech_prob": 0.04254150390625
+    },
+    {
+      "text": " is the presentation of the gift.",
+      "start": 6.78,
+      "end": 8.34,
+      "avg_logprob": -0.23945313692092896,
+      "no_speech_prob": 0.015960693359375
+    }
+  ],
+  "words": [
+    {
+      "text": " Okay,",
+      "interval_s": [
+        0.7400000000000002,
+        1.08
+      ],
+      "probability": 0.5927734375
+    },
+    {
+      "text": " what",
+      "interval_s": [
+        1.18,
+        1.38
+      ],
+      "probability": 0.994140625
+    },
+    {
+      "text": " happens",
+      "interval_s": [
+        1.38,
+        1.94
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " at",
+      "interval_s": [
+        1.94,
+        2.16
+      ],
+      "probability": 0.986328125
+    },
+    {
+      "text": " this",
+      "interval_s": [
+        2.16,
+        2.4
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " point",
+      "interval_s": [
+        2.4,
+        2.78
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " after",
+      "interval_s": [
+        2.78,
+        3.24
+      ],
+      "probability": 0.61572265625
+    },
+    {
+      "text": " we've",
+      "interval_s": [
+        3.24,
+        3.58
+      ],
+      "probability": 0.949462890625
+    },
+    {
+      "text": " taken",
+      "interval_s": [
+        3.58,
+        3.84
+      ],
+      "probability": 0.994140625
+    },
+    {
+      "text": " this",
+      "interval_s": [
+        3.84,
+        4.14
+      ],
+      "probability": 0.9951171875
+    },
+    {
+      "text": " brief",
+      "interval_s": [
+        4.14,
+        4.58
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " walk",
+      "interval_s": [
+        4.58,
+        4.98
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " down",
+      "interval_s": [
+        4.98,
+        5.32
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " memory",
+      "interval_s": [
+        5.32,
+        5.66
+      ],
+      "probability": 0.9931640625
+    },
+    {
+      "text": " lane",
+      "interval_s": [
+        5.66,
+        6.04
+      ],
+      "probability": 0.99267578125
+    },
+    {
+      "text": " is",
+      "interval_s": [
+        6.04,
+        6.78
+      ],
+      "probability": 0.81787109375
+    },
+    {
+      "text": " is",
+      "interval_s": [
+        6.78,
+        6.9
+      ],
+      "probability": 0.95068359375
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        6.9,
+        6.98
+      ],
+      "probability": 0.98828125
+    },
+    {
+      "text": " presentation",
+      "interval_s": [
+        6.98,
+        7.48
+      ],
+      "probability": 0.97412109375
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        7.48,
+        7.94
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        7.94,
+        8.04
+      ],
+      "probability": 0.9892578125
+    },
+    {
+      "text": " gift.",
+      "interval_s": [
+        8.04,
+        8.34
+      ],
+      "probability": 0.994140625
+    }
+  ],
+  "elapsed_s": 1.067692804033868
+}

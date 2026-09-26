@@ -1,0 +1,59 @@
+{
+  "sample_id": "-HwX2H8Z4hY$_$2",
+  "source_sha256": "920a1052c09ebd1eedba6dd1ccfecd80f56f6f0fdcdd1f6dd32b0d90bcb89358",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " mediocrity look at the record",
+      "start": 0.0,
+      "end": 3.16,
+      "avg_logprob": -0.39804687201976774,
+      "no_speech_prob": 0.0487060546875
+    }
+  ],
+  "words": [
+    {
+      "text": " mediocrity",
+      "interval_s": [
+        0.0,
+        0.74
+      ],
+      "probability": 0.9612630208333334
+    },
+    {
+      "text": " look",
+      "interval_s": [
+        0.74,
+        2.72
+      ],
+      "probability": 0.217529296875
+    },
+    {
+      "text": " at",
+      "interval_s": [
+        2.72,
+        2.88
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        2.88,
+        2.94
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " record",
+      "interval_s": [
+        2.94,
+        3.16
+      ],
+      "probability": 0.99609375
+    }
+  ],
+  "elapsed_s": 0.5345102910068817
+}

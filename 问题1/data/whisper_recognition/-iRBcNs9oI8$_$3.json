@@ -1,0 +1,131 @@
+{
+  "sample_id": "-iRBcNs9oI8$_$3",
+  "source_sha256": "39c547acd1a8da2ebc6c6ab008191a5676420398a974cd9611cad087f0ccec50",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " is going to help you on your tests, such as TOEFL, IELTS, or university.",
+      "start": 0.0,
+      "end": 5.1,
+      "avg_logprob": -0.0715625023841858,
+      "no_speech_prob": 0.011688232421875
+    }
+  ],
+  "words": [
+    {
+      "text": " is",
+      "interval_s": [
+        0.0,
+        0.42
+      ],
+      "probability": 0.84423828125
+    },
+    {
+      "text": " going",
+      "interval_s": [
+        0.42,
+        0.58
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        0.58,
+        0.76
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " help",
+      "interval_s": [
+        0.76,
+        0.98
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " you",
+      "interval_s": [
+        0.98,
+        1.24
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " on",
+      "interval_s": [
+        1.24,
+        1.92
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " your",
+      "interval_s": [
+        1.92,
+        2.12
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " tests,",
+      "interval_s": [
+        2.12,
+        2.52
+      ],
+      "probability": 0.994140625
+    },
+    {
+      "text": " such",
+      "interval_s": [
+        2.62,
+        3.38
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " as",
+      "interval_s": [
+        3.38,
+        3.6
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " TOEFL,",
+      "interval_s": [
+        3.6,
+        4.0
+      ],
+      "probability": 0.9982096354166666
+    },
+    {
+      "text": " IELTS,",
+      "interval_s": [
+        4.18,
+        4.74
+      ],
+      "probability": 0.9993489583333334
+    },
+    {
+      "text": " or",
+      "interval_s": [
+        4.74,
+        4.86
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " university.",
+      "interval_s": [
+        4.86,
+        5.1
+      ],
+      "probability": 0.9853515625
+    }
+  ],
+  "elapsed_s": 0.8757734810351394
+}

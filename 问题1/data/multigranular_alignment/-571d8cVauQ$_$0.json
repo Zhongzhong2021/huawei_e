@@ -1,0 +1,424 @@
+{
+  "words": [
+    {
+      "word_index": 0,
+      "text": "This",
+      "status": "unmatched_or_ambiguous",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 1,
+      "text": "is",
+      "status": "unmatched_or_ambiguous",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 2,
+      "text": "Rhett",
+      "status": "unmatched_or_ambiguous",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 3,
+      "text": "Reiger",
+      "status": "approximate_lexical_match",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": [
+        1.56246875,
+        1.88246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            2
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 4,
+      "text": "White",
+      "status": "unmatched_or_ambiguous",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 5,
+      "text": "Caspian",
+      "status": "whisper_local_phonetic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        2.170000021457672,
+        2.5800000476837157
+      ],
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 6,
+      "text": "Studios",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        2.6224687500000003,
+        3.06246875
+      ],
+      "diagnostic_interval_s": [
+        2.6224687500000003,
+        3.06246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            4
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 7,
+      "text": "on",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        3.14246875,
+        3.2024687500000004
+      ],
+      "diagnostic_interval_s": [
+        3.14246875,
+        3.2024687500000004
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            5
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 8,
+      "text": "behalf",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        3.26246875,
+        3.52246875
+      ],
+      "diagnostic_interval_s": [
+        3.26246875,
+        3.52246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            6
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 9,
+      "text": "of",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        3.6224687500000003,
+        3.6624687500000004
+      ],
+      "diagnostic_interval_s": [
+        3.6224687500000003,
+        3.6624687500000004
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            7
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 10,
+      "text": "Expert",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        3.7424687499999996,
+        4.042468749999999
+      ],
+      "diagnostic_interval_s": [
+        3.7424687499999996,
+        4.042468749999999
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            8
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 11,
+      "text": "Village",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        4.10246875,
+        4.402468750000001
+      ],
+      "diagnostic_interval_s": [
+        4.10246875,
+        4.402468750000001
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            9
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    }
+  ],
+  "phrases": [],
+  "diagnostics": [
+    {
+      "run_index": 0,
+      "word_index": 4,
+      "asr_interval_s": [
+        1.88,
+        2.04
+      ],
+      "mfa_context_05_s": [
+        1.38,
+        2.13
+      ],
+      "mfa_context_10_s": [
+        0.8799375,
+        2.1299375
+      ],
+      "status": "word_evidence_insufficient"
+    },
+    {
+      "run_index": 0,
+      "word_index": 5,
+      "asr_interval_s": [
+        2.04,
+        2.48
+      ],
+      "mfa_context_05_s": [
+        2.170000021457672,
+        2.5800000476837157
+      ],
+      "mfa_context_10_s": [
+        2.1699374618530274,
+        2.579937547683716
+      ],
+      "status": "word_proposal"
+    },
+    {
+      "run_index": 0,
+      "word_index": 6,
+      "asr_interval_s": [
+        2.48,
+        2.76
+      ],
+      "mfa_context_05_s": [
+        2.5800000476837157,
+        3.110000019073486
+      ],
+      "mfa_context_10_s": [
+        2.579937547683716,
+        3.1099375190734864
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "run_index": 0,
+      "word_index": 7,
+      "asr_interval_s": [
+        2.94,
+        3.14
+      ],
+      "mfa_context_05_s": [
+        3.110000019073486,
+        3.2400000143051146
+      ],
+      "mfa_context_10_s": [
+        3.1099375190734864,
+        3.2399373950958252
+      ],
+      "status": "baseline_agreement"
+    },
+    {
+      "run_index": 0,
+      "word_index": 8,
+      "asr_interval_s": [
+        3.14,
+        3.34
+      ],
+      "mfa_context_05_s": [
+        3.2400000143051146,
+        3.5800000476837157
+      ],
+      "mfa_context_10_s": [
+        3.2399373950958252,
+        3.579937547683716
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "run_index": 0,
+      "word_index": 9,
+      "asr_interval_s": [
+        3.34,
+        3.64
+      ],
+      "mfa_context_05_s": [
+        3.5800000476837157,
+        3.689999942779541
+      ],
+      "mfa_context_10_s": [
+        3.579937547683716,
+        3.689937442779541
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "run_index": 0,
+      "word_index": 10,
+      "asr_interval_s": [
+        3.64,
+        3.86
+      ],
+      "mfa_context_05_s": [
+        3.689999942779541,
+        4.070000057220459
+      ],
+      "mfa_context_10_s": [
+        3.689937442779541,
+        4.0699375572204595
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "run_index": 0,
+      "word_index": 11,
+      "asr_interval_s": [
+        3.86,
+        4.22
+      ],
+      "mfa_context_05_s": [
+        4.070000057220459,
+        4.499999885559082
+      ],
+      "mfa_context_10_s": [
+        4.0699375572204595,
+        4.4999373855590825
+      ],
+      "status": "baseline_without_new_support"
+    }
+  ],
+  "added_words": 1,
+  "conflicting_baseline_words": 0,
+  "phrase_only_words": [],
+  "baseline_candidates": 6,
+  "sample_id": "-571d8cVauQ$_$0",
+  "source_sha256": "defc62e1530d9b0cd27f2acfe042b71dd84d7e8c85f1df261f04912091976088",
+  "human_data_used": false,
+  "baseline_result_sha256": "d27ba819735ea700659920512abb1c615891e4fed975d849fc6f15cc1485d8be",
+  "decision_policy": "unprompted_asr_local_phonetic_multigranular_ordered_selection_v3"
+}

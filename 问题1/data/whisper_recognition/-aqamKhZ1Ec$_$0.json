@@ -1,0 +1,147 @@
+{
+  "sample_id": "-aqamKhZ1Ec$_$0",
+  "source_sha256": "6f6e674bbba4353399e9e7825217f37e6d8ca1adf9675f33cf37106f31c55548",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " In 2008 there were very serious tribal warfare in Kenya, and even following a disputed election.",
+      "start": 0.0,
+      "end": 10.22,
+      "avg_logprob": -0.43359374593604694,
+      "no_speech_prob": 0.03179931640625
+    }
+  ],
+  "words": [
+    {
+      "text": " In",
+      "interval_s": [
+        0.0,
+        0.34
+      ],
+      "probability": 0.728515625
+    },
+    {
+      "text": " 2008",
+      "interval_s": [
+        0.34,
+        0.88
+      ],
+      "probability": 0.9833984375
+    },
+    {
+      "text": " there",
+      "interval_s": [
+        0.88,
+        2.86
+      ],
+      "probability": 0.5673828125
+    },
+    {
+      "text": " were",
+      "interval_s": [
+        2.86,
+        3.04
+      ],
+      "probability": 0.70654296875
+    },
+    {
+      "text": " very",
+      "interval_s": [
+        3.04,
+        3.34
+      ],
+      "probability": 0.9775390625
+    },
+    {
+      "text": " serious",
+      "interval_s": [
+        3.34,
+        3.9
+      ],
+      "probability": 0.994140625
+    },
+    {
+      "text": " tribal",
+      "interval_s": [
+        3.9,
+        4.34
+      ],
+      "probability": 0.982421875
+    },
+    {
+      "text": " warfare",
+      "interval_s": [
+        4.34,
+        4.94
+      ],
+      "probability": 0.98681640625
+    },
+    {
+      "text": " in",
+      "interval_s": [
+        4.94,
+        5.44
+      ],
+      "probability": 0.97802734375
+    },
+    {
+      "text": " Kenya,",
+      "interval_s": [
+        5.44,
+        6.18
+      ],
+      "probability": 0.9912109375
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        6.32,
+        6.92
+      ],
+      "probability": 0.59521484375
+    },
+    {
+      "text": " even",
+      "interval_s": [
+        6.92,
+        7.74
+      ],
+      "probability": 0.90771484375
+    },
+    {
+      "text": " following",
+      "interval_s": [
+        7.74,
+        8.1
+      ],
+      "probability": 0.343017578125
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        8.1,
+        9.36
+      ],
+      "probability": 0.8974609375
+    },
+    {
+      "text": " disputed",
+      "interval_s": [
+        9.36,
+        9.88
+      ],
+      "probability": 0.989501953125
+    },
+    {
+      "text": " election.",
+      "interval_s": [
+        9.88,
+        10.22
+      ],
+      "probability": 0.9951171875
+    }
+  ],
+  "elapsed_s": 0.7478683509980328
+}

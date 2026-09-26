@@ -1,0 +1,123 @@
+{
+  "sample_id": "-s9qJ7ATP7w$_$4",
+  "source_sha256": "76e0672ffce5857a789b41fb10606402f7da58c33579b1032a8282f86fb35bc9",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " keep going. I have lost at everything you can imagine. Seriously, we have.",
+      "start": 0.0,
+      "end": 3.74,
+      "avg_logprob": -0.2792968854308128,
+      "no_speech_prob": 0.12744140625
+    }
+  ],
+  "words": [
+    {
+      "text": " keep",
+      "interval_s": [
+        0.0,
+        0.1
+      ],
+      "probability": 0.6064453125
+    },
+    {
+      "text": " going.",
+      "interval_s": [
+        0.1,
+        0.34
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " I",
+      "interval_s": [
+        0.42,
+        0.6
+      ],
+      "probability": 0.9775390625
+    },
+    {
+      "text": " have",
+      "interval_s": [
+        0.6,
+        0.74
+      ],
+      "probability": 0.99072265625
+    },
+    {
+      "text": " lost",
+      "interval_s": [
+        0.74,
+        1.1
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " at",
+      "interval_s": [
+        1.1,
+        1.28
+      ],
+      "probability": 0.7724609375
+    },
+    {
+      "text": " everything",
+      "interval_s": [
+        1.28,
+        1.8
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " you",
+      "interval_s": [
+        1.8,
+        2.14
+      ],
+      "probability": 0.9892578125
+    },
+    {
+      "text": " can",
+      "interval_s": [
+        2.14,
+        2.3
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " imagine.",
+      "interval_s": [
+        2.3,
+        2.7
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " Seriously,",
+      "interval_s": [
+        2.82,
+        3.14
+      ],
+      "probability": 0.9853515625
+    },
+    {
+      "text": " we",
+      "interval_s": [
+        3.32,
+        3.56
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " have.",
+      "interval_s": [
+        3.56,
+        3.74
+      ],
+      "probability": 0.99853515625
+    }
+  ],
+  "elapsed_s": 0.6090923470328562
+}

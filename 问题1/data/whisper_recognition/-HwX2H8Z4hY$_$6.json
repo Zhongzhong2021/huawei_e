@@ -1,0 +1,75 @@
+{
+  "sample_id": "-HwX2H8Z4hY$_$6",
+  "source_sha256": "696576dcbd0dc42cb678fa40d8a0f0f419a3072bfa7662d653756ab29bba4c46",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " And in part, Al Shanker did too.",
+      "start": 0.0,
+      "end": 2.58,
+      "avg_logprob": -0.18269231227728036,
+      "no_speech_prob": 0.007007598876953125
+    }
+  ],
+  "words": [
+    {
+      "text": " And",
+      "interval_s": [
+        0.0,
+        0.56
+      ],
+      "probability": 0.6123046875
+    },
+    {
+      "text": " in",
+      "interval_s": [
+        0.56,
+        0.66
+      ],
+      "probability": 0.97021484375
+    },
+    {
+      "text": " part,",
+      "interval_s": [
+        0.66,
+        1.02
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " Al",
+      "interval_s": [
+        1.16,
+        1.5
+      ],
+      "probability": 0.9921875
+    },
+    {
+      "text": " Shanker",
+      "interval_s": [
+        1.5,
+        2.06
+      ],
+      "probability": 0.7900390625
+    },
+    {
+      "text": " did",
+      "interval_s": [
+        2.06,
+        2.32
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " too.",
+      "interval_s": [
+        2.32,
+        2.58
+      ],
+      "probability": 0.822265625
+    }
+  ],
+  "elapsed_s": 0.5505407550372183
+}

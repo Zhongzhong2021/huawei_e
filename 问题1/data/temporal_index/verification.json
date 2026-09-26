@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "samples": 100,
+  "time_nodes": 4030,
+  "source_and_native_hashes_checked": true,
+  "original_text_words": 1932,
+  "scope": "Independent audio intersection/aggregation formulas, source identity, native frame/face correspondence and masks; not semantic alignment validation."
+}

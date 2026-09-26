@@ -1,0 +1,369 @@
+{
+  "sample_id": "-lzEya4AM_4$_$6",
+  "source_sha256": "ff5da5afb551001d58100ed2471caea51c741046d5396957efbf40082307ca18",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " If the product or poison is some type of petroleum product or corrosive product,",
+      "start": 0.0,
+      "end": 5.02,
+      "avg_logprob": -0.11867897808551789,
+      "no_speech_prob": 0.003940582275390625
+    },
+    {
+      "text": " you would not attempt to induce vomiting and nausea.",
+      "start": 5.26,
+      "end": 9.1,
+      "avg_logprob": -0.11867897808551789,
+      "no_speech_prob": 0.003940582275390625
+    },
+    {
+      "text": " As the product burned on the way down, it could cause damage and burning on the way back up.",
+      "start": 9.12,
+      "end": 14.08,
+      "avg_logprob": -0.11867897808551789,
+      "no_speech_prob": 0.003940582275390625
+    }
+  ],
+  "words": [
+    {
+      "text": " If",
+      "interval_s": [
+        0.0,
+        0.64
+      ],
+      "probability": 0.947265625
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        0.64,
+        0.74
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " product",
+      "interval_s": [
+        0.74,
+        1.08
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " or",
+      "interval_s": [
+        1.08,
+        1.54
+      ],
+      "probability": 0.9814453125
+    },
+    {
+      "text": " poison",
+      "interval_s": [
+        1.54,
+        1.98
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " is",
+      "interval_s": [
+        1.98,
+        2.16
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " some",
+      "interval_s": [
+        2.16,
+        2.34
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " type",
+      "interval_s": [
+        2.34,
+        2.52
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        2.52,
+        2.76
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " petroleum",
+      "interval_s": [
+        2.76,
+        3.14
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " product",
+      "interval_s": [
+        3.14,
+        3.58
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " or",
+      "interval_s": [
+        3.58,
+        4.2
+      ],
+      "probability": 0.984375
+    },
+    {
+      "text": " corrosive",
+      "interval_s": [
+        4.2,
+        4.72
+      ],
+      "probability": 0.999755859375
+    },
+    {
+      "text": " product,",
+      "interval_s": [
+        4.72,
+        5.02
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " you",
+      "interval_s": [
+        5.26,
+        5.8
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " would",
+      "interval_s": [
+        5.8,
+        5.98
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " not",
+      "interval_s": [
+        5.98,
+        6.2
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " attempt",
+      "interval_s": [
+        6.2,
+        6.62
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        6.62,
+        7.22
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " induce",
+      "interval_s": [
+        7.22,
+        7.66
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " vomiting",
+      "interval_s": [
+        7.66,
+        8.2
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        8.2,
+        8.58
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " nausea.",
+      "interval_s": [
+        8.58,
+        9.1
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " As",
+      "interval_s": [
+        9.12,
+        9.66
+      ],
+      "probability": 0.97705078125
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        9.66,
+        9.82
+      ],
+      "probability": 0.92822265625
+    },
+    {
+      "text": " product",
+      "interval_s": [
+        9.82,
+        10.16
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " burned",
+      "interval_s": [
+        10.16,
+        10.48
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " on",
+      "interval_s": [
+        10.48,
+        10.74
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        10.74,
+        10.84
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " way",
+      "interval_s": [
+        10.84,
+        11.0
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " down,",
+      "interval_s": [
+        11.0,
+        11.32
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " it",
+      "interval_s": [
+        11.44,
+        11.76
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " could",
+      "interval_s": [
+        11.76,
+        11.92
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " cause",
+      "interval_s": [
+        11.92,
+        12.16
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " damage",
+      "interval_s": [
+        12.16,
+        12.54
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        12.54,
+        12.74
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " burning",
+      "interval_s": [
+        12.74,
+        13.1
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " on",
+      "interval_s": [
+        13.1,
+        13.44
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        13.44,
+        13.54
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " way",
+      "interval_s": [
+        13.54,
+        13.7
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " back",
+      "interval_s": [
+        13.7,
+        13.84
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " up.",
+      "interval_s": [
+        13.84,
+        14.08
+      ],
+      "probability": 1.0
+    }
+  ],
+  "elapsed_s": 1.0542015109676868
+}

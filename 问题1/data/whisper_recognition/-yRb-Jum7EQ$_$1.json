@@ -1,0 +1,377 @@
+{
+  "sample_id": "-yRb-Jum7EQ$_$1",
+  "source_sha256": "2f16da1baa8660e5bfc608f5237cdd59725d16e57a19bc02c4556cd2c7129a46",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " Yesterday, Iran announced that it was going to train the families of the murderous terrorists.",
+      "start": 8.44,
+      "end": 16.68,
+      "avg_logprob": -0.5744047713658166,
+      "no_speech_prob": 0.04876708984375
+    },
+    {
+      "text": " This shows that Iran, after the nuclear agreement, continues to assist terrorism there as well,",
+      "start": 17.0,
+      "end": 23.06,
+      "avg_logprob": -0.5744047713658166,
+      "no_speech_prob": 0.04876708984375
+    },
+    {
+      "text": " both Palestinian terrorism and the terrorism of Hezbollah, of course, also assisting Hamas.",
+      "start": 23.18,
+      "end": 28.7,
+      "avg_logprob": -0.5744047713658166,
+      "no_speech_prob": 0.04876708984375
+    }
+  ],
+  "words": [
+    {
+      "text": " Yesterday,",
+      "interval_s": [
+        8.44,
+        9.12
+      ],
+      "probability": 0.37109375
+    },
+    {
+      "text": " Iran",
+      "interval_s": [
+        9.5,
+        9.98
+      ],
+      "probability": 0.99169921875
+    },
+    {
+      "text": " announced",
+      "interval_s": [
+        9.98,
+        11.4
+      ],
+      "probability": 0.95654296875
+    },
+    {
+      "text": " that",
+      "interval_s": [
+        11.4,
+        11.74
+      ],
+      "probability": 0.8681640625
+    },
+    {
+      "text": " it",
+      "interval_s": [
+        11.74,
+        11.86
+      ],
+      "probability": 0.9873046875
+    },
+    {
+      "text": " was",
+      "interval_s": [
+        11.86,
+        11.96
+      ],
+      "probability": 0.28759765625
+    },
+    {
+      "text": " going",
+      "interval_s": [
+        11.96,
+        12.06
+      ],
+      "probability": 0.9326171875
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        12.06,
+        12.3
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " train",
+      "interval_s": [
+        12.3,
+        12.64
+      ],
+      "probability": 0.033111572265625
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        12.64,
+        13.68
+      ],
+      "probability": 0.93896484375
+    },
+    {
+      "text": " families",
+      "interval_s": [
+        13.68,
+        14.54
+      ],
+      "probability": 0.85546875
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        14.54,
+        15.14
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        15.14,
+        15.42
+      ],
+      "probability": 0.82080078125
+    },
+    {
+      "text": " murderous",
+      "interval_s": [
+        15.42,
+        16.6
+      ],
+      "probability": 0.499267578125
+    },
+    {
+      "text": " terrorists.",
+      "interval_s": [
+        16.6,
+        16.68
+      ],
+      "probability": 0.93798828125
+    },
+    {
+      "text": " This",
+      "interval_s": [
+        17.0,
+        17.68
+      ],
+      "probability": 0.7841796875
+    },
+    {
+      "text": " shows",
+      "interval_s": [
+        17.68,
+        17.84
+      ],
+      "probability": 0.81494140625
+    },
+    {
+      "text": " that",
+      "interval_s": [
+        17.84,
+        18.12
+      ],
+      "probability": 0.98779296875
+    },
+    {
+      "text": " Iran,",
+      "interval_s": [
+        18.12,
+        18.34
+      ],
+      "probability": 0.892578125
+    },
+    {
+      "text": " after",
+      "interval_s": [
+        18.44,
+        18.68
+      ],
+      "probability": 0.6962890625
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        18.68,
+        18.92
+      ],
+      "probability": 0.95068359375
+    },
+    {
+      "text": " nuclear",
+      "interval_s": [
+        18.92,
+        19.28
+      ],
+      "probability": 0.71337890625
+    },
+    {
+      "text": " agreement,",
+      "interval_s": [
+        19.28,
+        19.74
+      ],
+      "probability": 0.7548828125
+    },
+    {
+      "text": " continues",
+      "interval_s": [
+        19.74,
+        20.3
+      ],
+      "probability": 0.900390625
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        20.3,
+        20.76
+      ],
+      "probability": 0.81787109375
+    },
+    {
+      "text": " assist",
+      "interval_s": [
+        20.76,
+        21.62
+      ],
+      "probability": 0.32275390625
+    },
+    {
+      "text": " terrorism",
+      "interval_s": [
+        21.62,
+        22.1
+      ],
+      "probability": 0.61083984375
+    },
+    {
+      "text": " there",
+      "interval_s": [
+        22.1,
+        22.78
+      ],
+      "probability": 0.55908203125
+    },
+    {
+      "text": " as",
+      "interval_s": [
+        22.78,
+        22.82
+      ],
+      "probability": 0.478759765625
+    },
+    {
+      "text": " well,",
+      "interval_s": [
+        22.82,
+        23.06
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " both",
+      "interval_s": [
+        23.18,
+        23.36
+      ],
+      "probability": 0.221923828125
+    },
+    {
+      "text": " Palestinian",
+      "interval_s": [
+        23.36,
+        23.8
+      ],
+      "probability": 0.736328125
+    },
+    {
+      "text": " terrorism",
+      "interval_s": [
+        23.8,
+        24.58
+      ],
+      "probability": 0.8916015625
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        24.58,
+        24.68
+      ],
+      "probability": 0.83837890625
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        24.68,
+        24.86
+      ],
+      "probability": 0.3984375
+    },
+    {
+      "text": " terrorism",
+      "interval_s": [
+        24.86,
+        25.12
+      ],
+      "probability": 0.732421875
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        25.12,
+        25.4
+      ],
+      "probability": 0.86328125
+    },
+    {
+      "text": " Hezbollah,",
+      "interval_s": [
+        25.4,
+        25.96
+      ],
+      "probability": 0.9967041015625
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        26.08,
+        26.72
+      ],
+      "probability": 0.4326171875
+    },
+    {
+      "text": " course,",
+      "interval_s": [
+        26.72,
+        27.08
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " also",
+      "interval_s": [
+        27.1,
+        27.42
+      ],
+      "probability": 0.5546875
+    },
+    {
+      "text": " assisting",
+      "interval_s": [
+        27.42,
+        28.0
+      ],
+      "probability": 0.31640625
+    },
+    {
+      "text": " Hamas.",
+      "interval_s": [
+        28.0,
+        28.7
+      ],
+      "probability": 0.96240234375
+    }
+  ],
+  "elapsed_s": 1.2432016269885935
+}

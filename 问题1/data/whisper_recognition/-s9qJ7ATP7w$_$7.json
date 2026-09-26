@@ -1,0 +1,289 @@
+{
+  "sample_id": "-s9qJ7ATP7w$_$7",
+  "source_sha256": "5301f4403cf7cd299cc525d2f443392ac70fd70c3c9cd4a09406f2ba4df6734d",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " I used to work for Warren Avis, the guy who started Avis Rent-A-Car, and he said to me",
+      "start": 0.0,
+      "end": 3.74,
+      "avg_logprob": -0.20634191585522071,
+      "no_speech_prob": 0.29541015625
+    },
+    {
+      "text": " one day, Robert, what's the purpose of business?",
+      "start": 3.74,
+      "end": 6.06,
+      "avg_logprob": -0.20634191585522071,
+      "no_speech_prob": 0.29541015625
+    },
+    {
+      "text": " And I said, oh.",
+      "start": 6.22,
+      "end": 6.74,
+      "avg_logprob": -0.20634191585522071,
+      "no_speech_prob": 0.29541015625
+    }
+  ],
+  "words": [
+    {
+      "text": " I",
+      "interval_s": [
+        0.0,
+        0.5
+      ],
+      "probability": 0.484375
+    },
+    {
+      "text": " used",
+      "interval_s": [
+        0.5,
+        0.68
+      ],
+      "probability": 0.9873046875
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        0.68,
+        0.8
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " work",
+      "interval_s": [
+        0.8,
+        0.94
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " for",
+      "interval_s": [
+        0.94,
+        1.08
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " Warren",
+      "interval_s": [
+        1.08,
+        1.3
+      ],
+      "probability": 0.91455078125
+    },
+    {
+      "text": " Avis,",
+      "interval_s": [
+        1.3,
+        1.6
+      ],
+      "probability": 0.914794921875
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        1.66,
+        1.9
+      ],
+      "probability": 0.9912109375
+    },
+    {
+      "text": " guy",
+      "interval_s": [
+        1.9,
+        2.06
+      ],
+      "probability": 0.994140625
+    },
+    {
+      "text": " who",
+      "interval_s": [
+        2.06,
+        2.18
+      ],
+      "probability": 0.9775390625
+    },
+    {
+      "text": " started",
+      "interval_s": [
+        2.18,
+        2.38
+      ],
+      "probability": 0.98681640625
+    },
+    {
+      "text": " Avis",
+      "interval_s": [
+        2.38,
+        2.68
+      ],
+      "probability": 0.97021484375
+    },
+    {
+      "text": " Rent",
+      "interval_s": [
+        2.68,
+        2.86
+      ],
+      "probability": 0.919921875
+    },
+    {
+      "text": "-A",
+      "interval_s": [
+        2.86,
+        2.98
+      ],
+      "probability": 0.835693359375
+    },
+    {
+      "text": "-Car,",
+      "interval_s": [
+        2.98,
+        3.1
+      ],
+      "probability": 0.981201171875
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        3.16,
+        3.24
+      ],
+      "probability": 0.98095703125
+    },
+    {
+      "text": " he",
+      "interval_s": [
+        3.24,
+        3.32
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " said",
+      "interval_s": [
+        3.32,
+        3.5
+      ],
+      "probability": 0.95654296875
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        3.5,
+        3.6
+      ],
+      "probability": 0.9892578125
+    },
+    {
+      "text": " me",
+      "interval_s": [
+        3.6,
+        3.74
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " one",
+      "interval_s": [
+        3.74,
+        3.84
+      ],
+      "probability": 0.99365234375
+    },
+    {
+      "text": " day,",
+      "interval_s": [
+        3.84,
+        4.08
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " Robert,",
+      "interval_s": [
+        4.22,
+        4.94
+      ],
+      "probability": 0.689453125
+    },
+    {
+      "text": " what's",
+      "interval_s": [
+        5.04,
+        5.3
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        5.3,
+        5.34
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " purpose",
+      "interval_s": [
+        5.34,
+        5.66
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        5.66,
+        5.84
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " business?",
+      "interval_s": [
+        5.84,
+        6.06
+      ],
+      "probability": 0.984375
+    },
+    {
+      "text": " And",
+      "interval_s": [
+        6.22,
+        6.36
+      ],
+      "probability": 0.98486328125
+    },
+    {
+      "text": " I",
+      "interval_s": [
+        6.36,
+        6.46
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " said,",
+      "interval_s": [
+        6.46,
+        6.66
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " oh.",
+      "interval_s": [
+        6.68,
+        6.74
+      ],
+      "probability": 0.77880859375
+    }
+  ],
+  "elapsed_s": 1.0478701129904948
+}

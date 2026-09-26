@@ -1,0 +1,137 @@
+{
+  "sample_id": "-hnBHBN8p5A$_$6",
+  "source_sha256": "997f6808ac3973ddd71800e91c8e10755c10b5037186d84348a79e00d672fdc7",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " to follow just one vision?",
+      "start": 0.0,
+      "end": 1.98,
+      "avg_logprob": -0.31175596373421804,
+      "no_speech_prob": 0.052825927734375
+    },
+    {
+      "text": " Have you ever wondered how",
+      "start": 3.22,
+      "end": 4.72,
+      "avg_logprob": -0.31175596373421804,
+      "no_speech_prob": 0.052825927734375
+    },
+    {
+      "text": " a single person",
+      "start": 4.72,
+      "end": 6.3,
+      "avg_logprob": -0.31175596373421804,
+      "no_speech_prob": 0.052825927734375
+    }
+  ],
+  "words": [
+    {
+      "text": " to",
+      "interval_s": [
+        0.0,
+        0.58
+      ],
+      "probability": 0.697265625
+    },
+    {
+      "text": " follow",
+      "interval_s": [
+        0.58,
+        0.82
+      ],
+      "probability": 0.95068359375
+    },
+    {
+      "text": " just",
+      "interval_s": [
+        0.82,
+        1.06
+      ],
+      "probability": 0.994140625
+    },
+    {
+      "text": " one",
+      "interval_s": [
+        1.06,
+        1.54
+      ],
+      "probability": 0.98828125
+    },
+    {
+      "text": " vision?",
+      "interval_s": [
+        1.54,
+        1.98
+      ],
+      "probability": 0.611328125
+    },
+    {
+      "text": " Have",
+      "interval_s": [
+        3.22,
+        3.84
+      ],
+      "probability": 0.96630859375
+    },
+    {
+      "text": " you",
+      "interval_s": [
+        3.84,
+        3.96
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " ever",
+      "interval_s": [
+        3.96,
+        4.1
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " wondered",
+      "interval_s": [
+        4.1,
+        4.44
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " how",
+      "interval_s": [
+        4.44,
+        4.72
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        4.72,
+        5.68
+      ],
+      "probability": 0.97607421875
+    },
+    {
+      "text": " single",
+      "interval_s": [
+        5.68,
+        6.08
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " person",
+      "interval_s": [
+        6.08,
+        6.3
+      ],
+      "probability": 0.97119140625
+    }
+  ],
+  "elapsed_s": 0.6817475749994628
+}

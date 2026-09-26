@@ -1,0 +1,560 @@
+{
+  "sample_id": "-a55Q6RWvTA$_$3",
+  "source_sha256": "15d029fc15f50b268b98f1e8abc65e45582e638c13a018d7aa74a18373275946",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " and if you clip coupons, if you don't go out for dinner and movies and things of that nature",
+      "start": 0.0,
+      "end": 6.14,
+      "avg_logprob": -0.12054869341988896,
+      "no_speech_prob": 0.01166534423828125
+    },
+    {
+      "text": " and try to take up things in life that, well, they always say, the best things in life are free.",
+      "start": 6.14,
+      "end": 11.56,
+      "avg_logprob": -0.12054869341988896,
+      "no_speech_prob": 0.01166534423828125
+    },
+    {
+      "text": " Reading a book, going for a nice walk and, of course, combining exercise and various things of that nature",
+      "start": 11.98,
+      "end": 18.36,
+      "avg_logprob": -0.12054869341988896,
+      "no_speech_prob": 0.01166534423828125
+    },
+    {
+      "text": " where you're not spending money per se.",
+      "start": 18.36,
+      "end": 21.26,
+      "avg_logprob": -0.12054869341988896,
+      "no_speech_prob": 0.01166534423828125
+    }
+  ],
+  "words": [
+    {
+      "text": " and",
+      "interval_s": [
+        0.0,
+        0.72
+      ],
+      "probability": 0.2049560546875
+    },
+    {
+      "text": " if",
+      "interval_s": [
+        0.72,
+        1.04
+      ],
+      "probability": 0.845703125
+    },
+    {
+      "text": " you",
+      "interval_s": [
+        1.04,
+        1.24
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " clip",
+      "interval_s": [
+        1.24,
+        1.58
+      ],
+      "probability": 0.97021484375
+    },
+    {
+      "text": " coupons,",
+      "interval_s": [
+        1.58,
+        2.38
+      ],
+      "probability": 0.997802734375
+    },
+    {
+      "text": " if",
+      "interval_s": [
+        2.38,
+        2.68
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " you",
+      "interval_s": [
+        2.68,
+        2.84
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " don't",
+      "interval_s": [
+        2.84,
+        3.24
+      ],
+      "probability": 0.994873046875
+    },
+    {
+      "text": " go",
+      "interval_s": [
+        3.24,
+        3.34
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " out",
+      "interval_s": [
+        3.34,
+        3.58
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " for",
+      "interval_s": [
+        3.58,
+        3.78
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " dinner",
+      "interval_s": [
+        3.78,
+        4.08
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        4.08,
+        4.46
+      ],
+      "probability": 0.92529296875
+    },
+    {
+      "text": " movies",
+      "interval_s": [
+        4.46,
+        4.88
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        4.88,
+        5.22
+      ],
+      "probability": 0.98681640625
+    },
+    {
+      "text": " things",
+      "interval_s": [
+        5.22,
+        5.46
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        5.46,
+        5.58
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " that",
+      "interval_s": [
+        5.58,
+        5.7
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " nature",
+      "interval_s": [
+        5.7,
+        6.14
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        6.14,
+        6.56
+      ],
+      "probability": 0.67529296875
+    },
+    {
+      "text": " try",
+      "interval_s": [
+        6.56,
+        7.2
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        7.2,
+        7.36
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " take",
+      "interval_s": [
+        7.36,
+        7.58
+      ],
+      "probability": 0.98876953125
+    },
+    {
+      "text": " up",
+      "interval_s": [
+        7.58,
+        7.76
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " things",
+      "interval_s": [
+        7.76,
+        8.02
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " in",
+      "interval_s": [
+        8.02,
+        8.32
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " life",
+      "interval_s": [
+        8.32,
+        8.64
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " that,",
+      "interval_s": [
+        8.64,
+        8.94
+      ],
+      "probability": 0.98974609375
+    },
+    {
+      "text": " well,",
+      "interval_s": [
+        8.96,
+        9.2
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " they",
+      "interval_s": [
+        9.26,
+        9.48
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " always",
+      "interval_s": [
+        9.48,
+        9.78
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " say,",
+      "interval_s": [
+        9.78,
+        10.02
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        10.12,
+        10.24
+      ],
+      "probability": 0.9912109375
+    },
+    {
+      "text": " best",
+      "interval_s": [
+        10.24,
+        10.44
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " things",
+      "interval_s": [
+        10.44,
+        10.66
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " in",
+      "interval_s": [
+        10.66,
+        10.82
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " life",
+      "interval_s": [
+        10.82,
+        11.06
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " are",
+      "interval_s": [
+        11.06,
+        11.22
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " free.",
+      "interval_s": [
+        11.22,
+        11.56
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " Reading",
+      "interval_s": [
+        11.98,
+        12.46
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        12.46,
+        12.74
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " book,",
+      "interval_s": [
+        12.74,
+        13.12
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " going",
+      "interval_s": [
+        13.26,
+        14.38
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " for",
+      "interval_s": [
+        14.38,
+        14.66
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        14.66,
+        14.78
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " nice",
+      "interval_s": [
+        14.78,
+        14.98
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " walk",
+      "interval_s": [
+        14.98,
+        15.3
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " and,",
+      "interval_s": [
+        15.3,
+        15.58
+      ],
+      "probability": 0.410888671875
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        15.6,
+        15.68
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " course,",
+      "interval_s": [
+        15.68,
+        15.82
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " combining",
+      "interval_s": [
+        15.84,
+        16.14
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " exercise",
+      "interval_s": [
+        16.14,
+        16.76
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        16.76,
+        17.24
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " various",
+      "interval_s": [
+        17.24,
+        17.46
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " things",
+      "interval_s": [
+        17.46,
+        17.76
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        17.76,
+        17.88
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " that",
+      "interval_s": [
+        17.88,
+        17.96
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " nature",
+      "interval_s": [
+        17.96,
+        18.36
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " where",
+      "interval_s": [
+        18.36,
+        18.98
+      ],
+      "probability": 0.98095703125
+    },
+    {
+      "text": " you're",
+      "interval_s": [
+        18.98,
+        19.12
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " not",
+      "interval_s": [
+        19.12,
+        19.3
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " spending",
+      "interval_s": [
+        19.3,
+        19.76
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " money",
+      "interval_s": [
+        19.76,
+        20.36
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " per",
+      "interval_s": [
+        20.36,
+        20.86
+      ],
+      "probability": 0.73681640625
+    },
+    {
+      "text": " se.",
+      "interval_s": [
+        20.86,
+        21.26
+      ],
+      "probability": 0.9990234375
+    }
+  ],
+  "elapsed_s": 1.5129449749947526
+}

@@ -1,0 +1,894 @@
+{
+  "words": [
+    {
+      "word_index": 0,
+      "text": "And",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        0.56246875,
+        0.62246875
+      ],
+      "diagnostic_interval_s": [
+        0.56246875,
+        0.62246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            3
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 1,
+      "text": "because",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        0.6624687499999999,
+        0.92246875
+      ],
+      "diagnostic_interval_s": [
+        0.6624687499999999,
+        0.92246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            4
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 2,
+      "text": "they",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        0.96246875,
+        1.06246875
+      ],
+      "diagnostic_interval_s": [
+        0.96246875,
+        1.06246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            5
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 3,
+      "text": "couldn’t",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        1.1024687499999999,
+        1.32246875
+      ],
+      "diagnostic_interval_s": [
+        1.1024687499999999,
+        1.32246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            6
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 4,
+      "text": "join",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        1.3624687500000001,
+        1.52246875
+      ],
+      "diagnostic_interval_s": [
+        1.3624687500000001,
+        1.52246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            7
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 5,
+      "text": "unions",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        1.68246875,
+        2.0024687500000002
+      ],
+      "diagnostic_interval_s": [
+        1.68246875,
+        2.0024687500000002
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            8
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 6,
+      "text": "many",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        2.1624687500000004,
+        2.3224687499999996
+      ],
+      "diagnostic_interval_s": [
+        2.1624687500000004,
+        2.3224687499999996
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            9
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 7,
+      "text": "Black",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        2.3624687499999997,
+        2.5424687500000003
+      ],
+      "diagnostic_interval_s": [
+        2.3624687499999997,
+        2.5424687500000003
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            10
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 8,
+      "text": "workers",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        2.60246875,
+        2.88246875
+      ],
+      "diagnostic_interval_s": [
+        2.60246875,
+        2.88246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            11
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 9,
+      "text": "couldn’t",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        2.96246875,
+        3.2024687500000004
+      ],
+      "diagnostic_interval_s": [
+        2.96246875,
+        3.2024687500000004
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            12
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 10,
+      "text": "get",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        3.2424687499999996,
+        3.34246875
+      ],
+      "diagnostic_interval_s": [
+        3.2424687499999996,
+        3.34246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            13
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 11,
+      "text": "manufacturing",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        3.4024687499999997,
+        4.00246875
+      ],
+      "diagnostic_interval_s": [
+        3.4024687499999997,
+        4.00246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            14
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 12,
+      "text": "or",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        4.042468749999999,
+        4.10246875
+      ],
+      "diagnostic_interval_s": [
+        4.042468749999999,
+        4.10246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            15
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 13,
+      "text": "trade",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        4.16246875,
+        4.36246875
+      ],
+      "diagnostic_interval_s": [
+        4.16246875,
+        4.36246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            16
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 14,
+      "text": "work",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        4.402468750000001,
+        4.542468749999999
+      ],
+      "diagnostic_interval_s": [
+        4.402468750000001,
+        4.542468749999999
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            17
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 15,
+      "text": "which",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        4.66246875,
+        4.78246875
+      ],
+      "diagnostic_interval_s": [
+        4.66246875,
+        4.78246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            18
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 16,
+      "text": "paid",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        4.86246875,
+        5.06246875
+      ],
+      "diagnostic_interval_s": [
+        4.86246875,
+        5.06246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            19
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 17,
+      "text": "much",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        5.16246875,
+        5.30246875
+      ],
+      "diagnostic_interval_s": [
+        5.16246875,
+        5.30246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            20
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 18,
+      "text": "better",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        5.38246875,
+        5.58246875
+      ],
+      "diagnostic_interval_s": [
+        5.38246875,
+        5.58246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            21
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 19,
+      "text": "than",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        5.6224687499999995,
+        5.72246875
+      ],
+      "diagnostic_interval_s": [
+        5.6224687499999995,
+        5.72246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            22
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 20,
+      "text": "service",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        5.78246875,
+        6.042468749999999
+      ],
+      "diagnostic_interval_s": [
+        5.78246875,
+        6.042468749999999
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            23
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 21,
+      "text": "work",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        6.10246875,
+        6.22246875
+      ],
+      "diagnostic_interval_s": [
+        6.10246875,
+        6.22246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            24
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    }
+  ],
+  "phrases": [],
+  "diagnostics": [
+    {
+      "run_index": 0,
+      "word_index": 0,
+      "asr_interval_s": [
+        0.5,
+        0.56
+      ],
+      "mfa_context_05_s": [
+        0.5199999809265137,
+        0.6299999952316284
+      ],
+      "mfa_context_10_s": [
+        0.5199999809265137,
+        0.6299999952316284
+      ],
+      "status": "baseline_agreement"
+    },
+    {
+      "run_index": 0,
+      "word_index": 1,
+      "asr_interval_s": [
+        0.56,
+        0.78
+      ],
+      "mfa_context_05_s": [
+        0.6299999952316284,
+        0.9700000286102295
+      ],
+      "mfa_context_10_s": [
+        0.6299999952316284,
+        0.9700000286102295
+      ],
+      "status": "baseline_agreement"
+    },
+    {
+      "run_index": 0,
+      "word_index": 2,
+      "asr_interval_s": [
+        0.78,
+        1.02
+      ],
+      "mfa_context_05_s": [
+        0.9700000286102295,
+        1.059999942779541
+      ],
+      "mfa_context_10_s": [
+        0.9700000286102295,
+        1.059999942779541
+      ],
+      "status": "baseline_agreement"
+    },
+    {
+      "run_index": 0,
+      "word_index": 3,
+      "asr_interval_s": [
+        1.02,
+        1.3
+      ],
+      "mfa_context_05_s": [
+        1.059999942779541,
+        1.340000033378601
+      ],
+      "mfa_context_10_s": [
+        1.059999942779541,
+        1.340000033378601
+      ],
+      "status": "baseline_agreement"
+    },
+    {
+      "run_index": 0,
+      "word_index": 4,
+      "asr_interval_s": [
+        1.3,
+        1.46
+      ],
+      "mfa_context_05_s": [
+        1.340000033378601,
+        1.590000033378601
+      ],
+      "mfa_context_10_s": [
+        1.340000033378601,
+        1.590000033378601
+      ],
+      "status": "baseline_agreement"
+    },
+    {
+      "run_index": 0,
+      "word_index": 5,
+      "asr_interval_s": [
+        1.46,
+        1.8
+      ],
+      "mfa_context_05_s": [
+        1.590000033378601,
+        2.109999895095825
+      ],
+      "mfa_context_10_s": [
+        1.590000033378601,
+        2.109999895095825
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "run_index": 0,
+      "word_index": 6,
+      "asr_interval_s": [
+        2.04,
+        2.22
+      ],
+      "mfa_context_05_s": [
+        2.109999895095825,
+        2.319999933242798
+      ],
+      "mfa_context_10_s": [
+        2.109999895095825,
+        2.319999933242798
+      ],
+      "status": "baseline_agreement"
+    },
+    {
+      "run_index": 0,
+      "word_index": 7,
+      "asr_interval_s": [
+        2.22,
+        2.46
+      ],
+      "mfa_context_05_s": [
+        2.319999933242798,
+        2.5899999141693115
+      ],
+      "mfa_context_10_s": [
+        2.319999933242798,
+        2.5899999141693115
+      ],
+      "status": "baseline_agreement"
+    },
+    {
+      "run_index": 0,
+      "word_index": 8,
+      "asr_interval_s": [
+        2.46,
+        2.76
+      ],
+      "mfa_context_05_s": [
+        2.5899999141693115,
+        2.9000000953674316
+      ],
+      "mfa_context_10_s": [
+        2.5899999141693115,
+        2.9000000953674316
+      ],
+      "status": "baseline_agreement"
+    },
+    {
+      "run_index": 0,
+      "word_index": 9,
+      "asr_interval_s": [
+        2.76,
+        3.16
+      ],
+      "mfa_context_05_s": [
+        2.9000000953674316,
+        3.240000009536743
+      ],
+      "mfa_context_10_s": [
+        2.9000000953674316,
+        3.240000009536743
+      ],
+      "status": "baseline_agreement"
+    },
+    {
+      "run_index": 0,
+      "word_index": 10,
+      "asr_interval_s": [
+        3.16,
+        3.28
+      ],
+      "mfa_context_05_s": [
+        3.240000009536743,
+        3.359999895095825
+      ],
+      "mfa_context_10_s": [
+        3.240000009536743,
+        3.359999895095825
+      ],
+      "status": "baseline_agreement"
+    },
+    {
+      "run_index": 0,
+      "word_index": 11,
+      "asr_interval_s": [
+        3.28,
+        3.64
+      ],
+      "mfa_context_05_s": [
+        3.359999895095825,
+        4.010000228881836
+      ],
+      "mfa_context_10_s": [
+        3.359999895095825,
+        4.010000228881836
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "run_index": 0,
+      "word_index": 12,
+      "asr_interval_s": [
+        3.64,
+        4.06
+      ],
+      "mfa_context_05_s": [
+        4.010000228881836,
+        4.079999923706055
+      ],
+      "mfa_context_10_s": [
+        4.010000228881836,
+        4.079999923706055
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "run_index": 0,
+      "word_index": 13,
+      "asr_interval_s": [
+        4.06,
+        4.26
+      ],
+      "mfa_context_05_s": [
+        4.079999923706055,
+        4.400000095367432
+      ],
+      "mfa_context_10_s": [
+        4.079999923706055,
+        4.400000095367432
+      ],
+      "status": "baseline_agreement"
+    },
+    {
+      "run_index": 0,
+      "word_index": 14,
+      "asr_interval_s": [
+        4.26,
+        4.48
+      ],
+      "mfa_context_05_s": [
+        4.400000095367432,
+        4.590000152587891
+      ],
+      "mfa_context_10_s": [
+        4.400000095367432,
+        4.590000152587891
+      ],
+      "status": "baseline_agreement"
+    },
+    {
+      "run_index": 0,
+      "word_index": 15,
+      "asr_interval_s": [
+        4.56,
+        4.76
+      ],
+      "mfa_context_05_s": [
+        4.639999866485596,
+        4.849999904632568
+      ],
+      "mfa_context_10_s": [
+        4.639999866485596,
+        4.849999904632568
+      ],
+      "status": "baseline_agreement"
+    },
+    {
+      "run_index": 0,
+      "word_index": 16,
+      "asr_interval_s": [
+        4.76,
+        4.94
+      ],
+      "mfa_context_05_s": [
+        4.849999904632568,
+        5.079999923706055
+      ],
+      "mfa_context_10_s": [
+        4.849999904632568,
+        5.079999923706055
+      ],
+      "status": "baseline_agreement"
+    },
+    {
+      "run_index": 0,
+      "word_index": 17,
+      "asr_interval_s": [
+        4.94,
+        5.16
+      ],
+      "mfa_context_05_s": [
+        5.079999923706055,
+        5.360000133514404
+      ],
+      "mfa_context_10_s": [
+        5.079999923706055,
+        5.360000133514404
+      ],
+      "status": "baseline_without_new_support"
+    }
+  ],
+  "added_words": 0,
+  "conflicting_baseline_words": 0,
+  "phrase_only_words": [],
+  "baseline_candidates": 22,
+  "sample_id": "-wny0OAz3g8$_$1",
+  "source_sha256": "c5535859f129ce04da5f5b5104d02d4168057b9d947a5349d423278ad4f3d8e8",
+  "human_data_used": false,
+  "baseline_result_sha256": "d2f7f9a7150475e2819ac5660a1d0cb560ee9814cd368ad2cb17d37078705b2f",
+  "decision_policy": "unprompted_asr_local_phonetic_multigranular_ordered_selection_v3"
+}

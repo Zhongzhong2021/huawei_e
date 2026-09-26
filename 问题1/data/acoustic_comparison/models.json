@@ -1,0 +1,26 @@
+[
+  {
+    "kind": "acoustic",
+    "tag": "acoustic-english_mfa-v3.0.0",
+    "url": "https://github.com/MontrealCorpusTools/mfa-models/releases/download/acoustic-english_mfa-v3.0.0/english_mfa.zip",
+    "path": "/workspace/q1-mfa-models/acoustic-english_mfa.zip",
+    "sha256": "a5c26c360b741e9a8e692416d942dae1fb2a8957dccc0826c4d6a87c98945f73",
+    "bytes": 92175348
+  },
+  {
+    "kind": "dictionary",
+    "tag": "dictionary-english_mfa-v3.0.0",
+    "url": "https://github.com/MontrealCorpusTools/mfa-models/releases/download/dictionary-english_mfa-v3.0.0/english_mfa.dict",
+    "path": "/workspace/q1-mfa-models/dictionary-english_mfa.dict",
+    "sha256": "30da2ad9168290da124369edb8011ebca5e9a6f0d4b0ad5e0fc33fa0fe12ca77",
+    "bytes": 7862165
+  },
+  {
+    "kind": "g2p",
+    "tag": "g2p-english_us_mfa-v3.0.0",
+    "url": "https://github.com/MontrealCorpusTools/mfa-models/releases/download/g2p-english_us_mfa-v3.0.0/english_us_mfa.zip",
+    "path": "/workspace/q1-mfa-models/g2p-english_us_mfa.zip",
+    "sha256": "9923b38d59a8b3e3e322f225c52523c2a6248e5ffc9fd89be151ade2dc97cb02",
+    "bytes": 10740410
+  }
+]

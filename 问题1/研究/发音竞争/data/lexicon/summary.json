@@ -1,0 +1,43 @@
+{
+  "pronunciation_mode": "lexicon",
+  "status": "complete",
+  "identity": {
+    "proposals": 393,
+    "accepted": 17,
+    "status_counts": {
+      "competition_rejected": 475,
+      "model_supported": 125,
+      "open_set_rejected": 174,
+      "phonemically_ambiguous_alternative": 12
+    }
+  },
+  "cross_video": {
+    "comparisons": 9396,
+    "proposals": 0,
+    "accepted": 0
+  },
+  "shifted": {
+    "proposals": 388,
+    "accepted": 0
+  },
+  "text_corruption": {
+    "proposals": 393,
+    "accepted": 0
+  },
+  "protocol_sha256": "bb16b785549a9e7a124453053979c9668b9bdd08c2303c49cee5419f0d0e27ad",
+  "posterior_manifest_sha256": "4e90fe0ff250d236c1c4ca27c9653d3cd74a864129782300ccf90f0f2b64481b",
+  "scripts_sha256": {
+    "injected_controls.py": "2f32b82d87573e1806d83aa93761750d0fd735f432e43d3fd1fe08eee9dbfab9",
+    "evaluate_competition.py": "b49d18b7b4ddfce92e312cb235b3c7de77e4457bff51226c484f82cdc058b047",
+    "phone_evidence.py": "f13f44e6a68f9575eb6274732958a0f927d22c8651d580fce7b1453f1334190c",
+    "infer_phones.py": "a4e47ed11a93c7c2df172cbd90f3bbe362c15af29118dd4e44406866bc542095",
+    "prepare_proposals.py": "54bd660ba01b3600e2918b6ea8a191d709a6da8d1f6c7e20e314df7744d66982",
+    "summarize_research.py": "cd5120e4794071ed4a97735ba0f82a02531f31b1e7c8022e8e269084b36d47c1",
+    "proposals.py": "97f131a87ddf7f51f08ffe979ecf902e47a7e535c9f5082bdf1ed741de71c828",
+    "compare_phone_rebuild.py": "bb8f0f3b23ce0c3ac05ddabd25f781eb9e92f665f11effbbaef5f8b0f6c7f440",
+    "test_phone_evidence.py": "03efe19a6d433893e5addee3b9b92b6bdc99e915184733d265d3b7bb6b5992fa",
+    "fetch_model.py": "4bc46d151ce005e73a99171226b82125f84d2b31c832a42f12b260c35deb331d"
+  },
+  "human_data_used": false,
+  "ground_truth_accuracy_measured": false
+}

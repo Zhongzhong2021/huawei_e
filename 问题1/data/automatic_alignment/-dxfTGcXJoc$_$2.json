@@ -1,0 +1,1205 @@
+{
+  "context_envelopes": [
+    {
+      "word_indices": [
+        3
+      ],
+      "interval_s": [
+        1.38246875,
+        3.60246875
+      ],
+      "left_anchor_word": 2,
+      "right_anchor_word": 4,
+      "status": "context_only_not_alignment",
+      "automatic_eligible": false
+    },
+    {
+      "word_indices": [
+        17
+      ],
+      "interval_s": [
+        8.52246875,
+        9.50246875
+      ],
+      "left_anchor_word": 16,
+      "right_anchor_word": 18,
+      "status": "context_only_not_alignment",
+      "automatic_eligible": false
+    }
+  ],
+  "sample_status": "supported",
+  "informative_anchors": 20,
+  "informative_reference_tokens": 21,
+  "informative_coverage": 0.9523809523809523,
+  "edit_cost": 2.0,
+  "optimal_endpoints": [
+    35
+  ],
+  "words": [
+    {
+      "word_index": 0,
+      "text": "An",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        0.56246875,
+        0.60246875
+      ],
+      "diagnostic_interval_s": [
+        0.56246875,
+        0.60246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            0
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 1,
+      "text": "estimated",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        0.76246875,
+        1.26246875
+      ],
+      "diagnostic_interval_s": [
+        0.76246875,
+        1.26246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            1
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 2,
+      "text": "20,000",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        1.38246875,
+        2.2024687500000004
+      ],
+      "diagnostic_interval_s": [
+        1.38246875,
+        2.2024687500000004
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            2
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        },
+        {
+          "hypothesis_options": [
+            3
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 3,
+      "text": "biotech",
+      "status": "unmatched_or_ambiguous",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 4,
+      "text": "scientists",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        3.02246875,
+        3.60246875
+      ],
+      "diagnostic_interval_s": [
+        3.02246875,
+        3.60246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            5
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 5,
+      "text": "executives",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        3.9024687499999997,
+        4.542468749999999
+      ],
+      "diagnostic_interval_s": [
+        3.9024687499999997,
+        4.542468749999999
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            6
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 6,
+      "text": "and",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        4.7424687500000005,
+        4.8224687500000005
+      ],
+      "diagnostic_interval_s": [
+        4.7424687500000005,
+        4.8224687500000005
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            7
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 7,
+      "text": "industry",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        5.042468749999999,
+        5.44246875
+      ],
+      "diagnostic_interval_s": [
+        5.042468749999999,
+        5.44246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            8
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 8,
+      "text": "experts",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        5.56246875,
+        6.02246875
+      ],
+      "diagnostic_interval_s": [
+        5.56246875,
+        6.02246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            9
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 9,
+      "text": "from",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        6.42246875,
+        6.542468749999999
+      ],
+      "diagnostic_interval_s": [
+        6.42246875,
+        6.542468749999999
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            10
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 10,
+      "text": "more",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        6.6224687499999995,
+        6.76246875
+      ],
+      "diagnostic_interval_s": [
+        6.6224687499999995,
+        6.76246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            11
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 11,
+      "text": "than",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        6.80246875,
+        6.92246875
+      ],
+      "diagnostic_interval_s": [
+        6.80246875,
+        6.92246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            12
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 12,
+      "text": "50",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        7.00246875,
+        7.28246875
+      ],
+      "diagnostic_interval_s": [
+        7.00246875,
+        7.28246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            13
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 13,
+      "text": "nations",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        7.36246875,
+        7.76246875
+      ],
+      "diagnostic_interval_s": [
+        7.36246875,
+        7.76246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            14
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 14,
+      "text": "were",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        8.06246875,
+        8.22246875
+      ],
+      "diagnostic_interval_s": [
+        8.06246875,
+        8.22246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            15
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 15,
+      "text": "at",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        8.382468750000001,
+        8.46246875
+      ],
+      "diagnostic_interval_s": [
+        8.382468750000001,
+        8.46246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            16
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 16,
+      "text": "the",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        8.52246875,
+        8.60246875
+      ],
+      "diagnostic_interval_s": [
+        8.52246875,
+        8.60246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            17
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 17,
+      "text": "BIO",
+      "status": "unmatched_or_ambiguous",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 18,
+      "text": "conference",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        9.06246875,
+        9.50246875
+      ],
+      "diagnostic_interval_s": [
+        9.06246875,
+        9.50246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            19
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 19,
+      "text": "to",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        9.60246875,
+        9.70246875
+      ],
+      "diagnostic_interval_s": [
+        9.60246875,
+        9.70246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            20
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 20,
+      "text": "learn",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        9.80246875,
+        10.08246875
+      ],
+      "diagnostic_interval_s": [
+        9.80246875,
+        10.08246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            21
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 21,
+      "text": "about",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        10.20246875,
+        10.42246875
+      ],
+      "diagnostic_interval_s": [
+        10.20246875,
+        10.42246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            22
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 22,
+      "text": "the",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        10.46246875,
+        10.52246875
+      ],
+      "diagnostic_interval_s": [
+        10.46246875,
+        10.52246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            23
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 23,
+      "text": "latest",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        10.58246875,
+        10.90246875
+      ],
+      "diagnostic_interval_s": [
+        10.58246875,
+        10.90246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            24
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 24,
+      "text": "scientific",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        10.94246875,
+        11.46246875
+      ],
+      "diagnostic_interval_s": [
+        10.94246875,
+        11.46246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            25
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 25,
+      "text": "advances",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        11.54246875,
+        12.06246875
+      ],
+      "diagnostic_interval_s": [
+        11.54246875,
+        12.06246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            26
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 26,
+      "text": "and",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        12.54246875,
+        12.62246875
+      ],
+      "diagnostic_interval_s": [
+        12.54246875,
+        12.62246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            27
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 27,
+      "text": "to",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        12.68246875,
+        12.74246875
+      ],
+      "diagnostic_interval_s": [
+        12.68246875,
+        12.74246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            28
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 28,
+      "text": "exchange",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        12.82246875,
+        13.32246875
+      ],
+      "diagnostic_interval_s": [
+        12.82246875,
+        13.32246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            29
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 29,
+      "text": "ideas",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        13.48246875,
+        13.90246875
+      ],
+      "diagnostic_interval_s": [
+        13.48246875,
+        13.90246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            30
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 30,
+      "text": "and",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        14.20246875,
+        14.28246875
+      ],
+      "diagnostic_interval_s": [
+        14.20246875,
+        14.28246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            31
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 31,
+      "text": "establish",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        14.32246875,
+        14.76246875
+      ],
+      "diagnostic_interval_s": [
+        14.32246875,
+        14.76246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            32
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 32,
+      "text": "business",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        14.86246875,
+        15.22246875
+      ],
+      "diagnostic_interval_s": [
+        14.86246875,
+        15.22246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            33
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 33,
+      "text": "relationships",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        15.26246875,
+        16.00246875
+      ],
+      "diagnostic_interval_s": [
+        15.26246875,
+        16.00246875
+      ],
+      "boundary_disagreement_s": 0.019999999999997797,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            34
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    }
+  ],
+  "automatic_eligible_words": 32,
+  "sample_id": "-dxfTGcXJoc$_$2",
+  "source_sha256": "46a5e523b5dd00364c99a3bcbc6fae4c80e1382a84b5b5e681c46eb074ed10f7",
+  "recognition": [
+    {
+      "text": "AN",
+      "interval_s": [
+        0.56246875,
+        0.60246875
+      ],
+      "mean_emission_probability": 0.9999090433120728
+    },
+    {
+      "text": "ESTIMATED",
+      "interval_s": [
+        0.76246875,
+        1.26246875
+      ],
+      "mean_emission_probability": 0.9402388665411208
+    },
+    {
+      "text": "TWENTY",
+      "interval_s": [
+        1.38246875,
+        1.66246875
+      ],
+      "mean_emission_probability": 0.9728362560272217
+    },
+    {
+      "text": "THOUSAND",
+      "interval_s": [
+        1.72246875,
+        2.2024687500000004
+      ],
+      "mean_emission_probability": 0.9447739273309708
+    },
+    {
+      "text": "BAOTEC",
+      "interval_s": [
+        2.3624687499999997,
+        2.88246875
+      ],
+      "mean_emission_probability": 0.8468562761942545
+    },
+    {
+      "text": "SCIENTISTS",
+      "interval_s": [
+        3.02246875,
+        3.60246875
+      ],
+      "mean_emission_probability": 0.9161499321460724
+    },
+    {
+      "text": "EXECUTIVES",
+      "interval_s": [
+        3.9024687499999997,
+        4.542468749999999
+      ],
+      "mean_emission_probability": 0.9871229290962219
+    },
+    {
+      "text": "AND",
+      "interval_s": [
+        4.7424687500000005,
+        4.8224687500000005
+      ],
+      "mean_emission_probability": 0.9472540616989136
+    },
+    {
+      "text": "INDUSTRY",
+      "interval_s": [
+        5.042468749999999,
+        5.44246875
+      ],
+      "mean_emission_probability": 0.9803409948945045
+    },
+    {
+      "text": "EXPERTS",
+      "interval_s": [
+        5.56246875,
+        6.02246875
+      ],
+      "mean_emission_probability": 0.994711092540196
+    },
+    {
+      "text": "FROM",
+      "interval_s": [
+        6.42246875,
+        6.542468749999999
+      ],
+      "mean_emission_probability": 0.9895653873682022
+    },
+    {
+      "text": "MORE",
+      "interval_s": [
+        6.6224687499999995,
+        6.76246875
+      ],
+      "mean_emission_probability": 0.9996221959590912
+    },
+    {
+      "text": "THAN",
+      "interval_s": [
+        6.80246875,
+        6.92246875
+      ],
+      "mean_emission_probability": 0.9372554123401642
+    },
+    {
+      "text": "FIFTY",
+      "interval_s": [
+        7.00246875,
+        7.28246875
+      ],
+      "mean_emission_probability": 0.9911746859550477
+    },
+    {
+      "text": "NATIONS",
+      "interval_s": [
+        7.36246875,
+        7.76246875
+      ],
+      "mean_emission_probability": 0.9478489756584167
+    },
+    {
+      "text": "WERE",
+      "interval_s": [
+        8.06246875,
+        8.22246875
+      ],
+      "mean_emission_probability": 0.9854206740856171
+    },
+    {
+      "text": "AT",
+      "interval_s": [
+        8.382468750000001,
+        8.46246875
+      ],
+      "mean_emission_probability": 0.9627657830715179
+    },
+    {
+      "text": "THE",
+      "interval_s": [
+        8.52246875,
+        8.60246875
+      ],
+      "mean_emission_probability": 0.9945749243100485
+    },
+    {
+      "text": "BOW",
+      "interval_s": [
+        8.66246875,
+        8.84246875
+      ],
+      "mean_emission_probability": 0.9393514593442281
+    },
+    {
+      "text": "CONFERENCE",
+      "interval_s": [
+        9.06246875,
+        9.50246875
+      ],
+      "mean_emission_probability": 0.9945150732994079
+    },
+    {
+      "text": "TO",
+      "interval_s": [
+        9.60246875,
+        9.70246875
+      ],
+      "mean_emission_probability": 0.9999761581420898
+    },
+    {
+      "text": "LEARN",
+      "interval_s": [
+        9.80246875,
+        10.08246875
+      ],
+      "mean_emission_probability": 0.9740664243698121
+    },
+    {
+      "text": "ABOUT",
+      "interval_s": [
+        10.20246875,
+        10.42246875
+      ],
+      "mean_emission_probability": 0.9452925205230713
+    },
+    {
+      "text": "THE",
+      "interval_s": [
+        10.46246875,
+        10.52246875
+      ],
+      "mean_emission_probability": 0.9998183846473694
+    },
+    {
+      "text": "LATEST",
+      "interval_s": [
+        10.58246875,
+        10.90246875
+      ],
+      "mean_emission_probability": 0.9995769759019216
+    },
+    {
+      "text": "SCIENTIFIC",
+      "interval_s": [
+        10.94246875,
+        11.46246875
+      ],
+      "mean_emission_probability": 0.96476109623909
+    },
+    {
+      "text": "ADVANCES",
+      "interval_s": [
+        11.54246875,
+        12.06246875
+      ],
+      "mean_emission_probability": 0.9859474301338196
+    },
+    {
+      "text": "AND",
+      "interval_s": [
+        12.54246875,
+        12.62246875
+      ],
+      "mean_emission_probability": 0.9945562283198038
+    },
+    {
+      "text": "TO",
+      "interval_s": [
+        12.68246875,
+        12.74246875
+      ],
+      "mean_emission_probability": 0.9999122023582458
+    },
+    {
+      "text": "EXCHANGE",
+      "interval_s": [
+        12.82246875,
+        13.32246875
+      ],
+      "mean_emission_probability": 0.9856848195195198
+    },
+    {
+      "text": "IDEAS",
+      "interval_s": [
+        13.48246875,
+        13.90246875
+      ],
+      "mean_emission_probability": 0.9934954881668091
+    },
+    {
+      "text": "AND",
+      "interval_s": [
+        14.20246875,
+        14.28246875
+      ],
+      "mean_emission_probability": 0.9998908638954163
+    },
+    {
+      "text": "ESTABLISH",
+      "interval_s": [
+        14.32246875,
+        14.76246875
+      ],
+      "mean_emission_probability": 0.9952793187565274
+    },
+    {
+      "text": "BUSINESS",
+      "interval_s": [
+        14.86246875,
+        15.22246875
+      ],
+      "mean_emission_probability": 0.9978099465370178
+    },
+    {
+      "text": "RELATIONSHIPS",
+      "interval_s": [
+        15.26246875,
+        16.00246875
+      ],
+      "mean_emission_probability": 0.9635347907359784
+    }
+  ],
+  "baseline_candidate_words": 34,
+  "native_features_modified": false,
+  "human_data_used": false,
+  "config_sha256": "b0adbf96c3cfcda192429317763b44f8ab5da4453b7d1b4779664feccadecf7c"
+}

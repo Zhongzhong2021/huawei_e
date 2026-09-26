@@ -1,0 +1,305 @@
+{
+  "sample_id": "-dxfTGcXJoc$_$2",
+  "source_sha256": "46a5e523b5dd00364c99a3bcbc6fae4c80e1382a84b5b5e681c46eb074ed10f7",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " An estimated 20,000 biotech scientists, executives, and industry experts from more than 50 nations",
+      "start": 0.0,
+      "end": 7.6,
+      "avg_logprob": -0.15734374433755874,
+      "no_speech_prob": 0.0255126953125
+    },
+    {
+      "text": " were at the bioconference to learn about the latest scientific advances and to exchange",
+      "start": 7.6,
+      "end": 13.0,
+      "avg_logprob": -0.15734374433755874,
+      "no_speech_prob": 0.0255126953125
+    },
+    {
+      "text": " ideas and establish business relationships.",
+      "start": 13.0,
+      "end": 15.54,
+      "avg_logprob": -0.15734374433755874,
+      "no_speech_prob": 0.0255126953125
+    }
+  ],
+  "words": [
+    {
+      "text": " An",
+      "interval_s": [
+        0.0,
+        0.58
+      ],
+      "probability": 0.9423828125
+    },
+    {
+      "text": " estimated",
+      "interval_s": [
+        0.58,
+        1.02
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " 20",
+      "interval_s": [
+        1.02,
+        1.48
+      ],
+      "probability": 0.98681640625
+    },
+    {
+      "text": ",000",
+      "interval_s": [
+        1.48,
+        2.1
+      ],
+      "probability": 0.987548828125
+    },
+    {
+      "text": " biotech",
+      "interval_s": [
+        2.1,
+        2.92
+      ],
+      "probability": 0.9851888020833334
+    },
+    {
+      "text": " scientists,",
+      "interval_s": [
+        2.92,
+        3.24
+      ],
+      "probability": 0.9873046875
+    },
+    {
+      "text": " executives,",
+      "interval_s": [
+        3.66,
+        4.1
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        4.54,
+        4.8
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " industry",
+      "interval_s": [
+        4.8,
+        5.18
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " experts",
+      "interval_s": [
+        5.18,
+        5.78
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " from",
+      "interval_s": [
+        5.78,
+        6.46
+      ],
+      "probability": 0.97705078125
+    },
+    {
+      "text": " more",
+      "interval_s": [
+        6.46,
+        6.66
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " than",
+      "interval_s": [
+        6.66,
+        6.84
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " 50",
+      "interval_s": [
+        6.84,
+        7.1
+      ],
+      "probability": 0.96337890625
+    },
+    {
+      "text": " nations",
+      "interval_s": [
+        7.1,
+        7.6
+      ],
+      "probability": 0.9912109375
+    },
+    {
+      "text": " were",
+      "interval_s": [
+        7.6,
+        8.08
+      ],
+      "probability": 0.97607421875
+    },
+    {
+      "text": " at",
+      "interval_s": [
+        8.08,
+        8.34
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        8.34,
+        8.54
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " bioconference",
+      "interval_s": [
+        8.54,
+        9.36
+      ],
+      "probability": 0.79803466796875
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        9.36,
+        9.6
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " learn",
+      "interval_s": [
+        9.6,
+        9.92
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " about",
+      "interval_s": [
+        9.92,
+        10.22
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        10.22,
+        10.46
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " latest",
+      "interval_s": [
+        10.46,
+        10.74
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " scientific",
+      "interval_s": [
+        10.74,
+        11.18
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " advances",
+      "interval_s": [
+        11.18,
+        11.78
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        11.78,
+        12.54
+      ],
+      "probability": 0.6552734375
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        12.54,
+        12.68
+      ],
+      "probability": 0.982421875
+    },
+    {
+      "text": " exchange",
+      "interval_s": [
+        12.68,
+        13.0
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " ideas",
+      "interval_s": [
+        13.0,
+        13.66
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        13.66,
+        14.16
+      ],
+      "probability": 0.9912109375
+    },
+    {
+      "text": " establish",
+      "interval_s": [
+        14.16,
+        14.48
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " business",
+      "interval_s": [
+        14.48,
+        14.94
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " relationships.",
+      "interval_s": [
+        14.94,
+        15.54
+      ],
+      "probability": 0.98828125
+    }
+  ],
+  "elapsed_s": 1.0724511879961938
+}

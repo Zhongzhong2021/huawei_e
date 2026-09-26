@@ -1,0 +1,21 @@
+{
+  "sample_id": "-mJ2ud6oKI8$_$2",
+  "source_sha256": "c41790f8b75f886bd1f5d6d72cbab1985306d0b715e5ae47203f3d0c8a3e7b28",
+  "native_features_sha256": "f96854cd08d59763a5b942cf0d8a7f483c193b3add2f13e1c58cbe456f92f513",
+  "native_metadata_sha256": "ca4e37244998e7cc04966f0624e66259b894cadc1fc62965e824e67057bcc1c7",
+  "index_sha256": "1b467ec1c150b21874bc94c328ad211f0d817f46448e69054482d96b5a8b0ff7",
+  "time_nodes": 30,
+  "audio_edges": 313,
+  "face_events_linked": 0,
+  "original_text_words_retained": 11,
+  "zero_audio": true,
+  "text_time_inferred": false,
+  "source_scene_semantics": "Nearest sampled frame representation over its native cell, restricted to the union of actual decoded frame supports.",
+  "audio_usable_nodes": 0,
+  "video_gap_seconds_excluded": -8.881784197001252e-16,
+  "voiced_nodes": 0,
+  "nodes_with_pitch_zero_fill_dilution": 0,
+  "max_pitch_zero_fill_dilution_hz": 0,
+  "semantic_acceptance": "not_applicable_to_physical_index",
+  "human_data_used": false
+}

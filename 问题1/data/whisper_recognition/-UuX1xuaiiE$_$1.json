@@ -1,0 +1,242 @@
+{
+  "sample_id": "-UuX1xuaiiE$_$1",
+  "source_sha256": "d5bbda38fcec15817d2b87bab5dcc559d6d425f7d28a82e6c32d13f14b48650c",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " and all of them are really being able to explore these different areas in depth",
+      "start": 0.0,
+      "end": 6.08,
+      "avg_logprob": -0.16624540134387858,
+      "no_speech_prob": 0.00867462158203125
+    },
+    {
+      "text": " in a way that really wasn't available before the center was here.",
+      "start": 6.08,
+      "end": 9.54,
+      "avg_logprob": -0.16624540134387858,
+      "no_speech_prob": 0.00867462158203125
+    }
+  ],
+  "words": [
+    {
+      "text": " and",
+      "interval_s": [
+        0.0,
+        0.48
+      ],
+      "probability": 0.6025390625
+    },
+    {
+      "text": " all",
+      "interval_s": [
+        0.48,
+        0.7
+      ],
+      "probability": 0.9921875
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        0.7,
+        0.84
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " them",
+      "interval_s": [
+        0.84,
+        1.02
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " are",
+      "interval_s": [
+        1.02,
+        1.2
+      ],
+      "probability": 0.9853515625
+    },
+    {
+      "text": " really",
+      "interval_s": [
+        1.2,
+        1.5
+      ],
+      "probability": 0.9853515625
+    },
+    {
+      "text": " being",
+      "interval_s": [
+        1.5,
+        1.76
+      ],
+      "probability": 0.9267578125
+    },
+    {
+      "text": " able",
+      "interval_s": [
+        1.76,
+        2.2
+      ],
+      "probability": 0.9873046875
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        2.2,
+        2.8
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " explore",
+      "interval_s": [
+        2.8,
+        3.26
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " these",
+      "interval_s": [
+        3.26,
+        4.1
+      ],
+      "probability": 0.986328125
+    },
+    {
+      "text": " different",
+      "interval_s": [
+        4.1,
+        4.64
+      ],
+      "probability": 0.9951171875
+    },
+    {
+      "text": " areas",
+      "interval_s": [
+        4.64,
+        5.02
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " in",
+      "interval_s": [
+        5.02,
+        5.54
+      ],
+      "probability": 0.9736328125
+    },
+    {
+      "text": " depth",
+      "interval_s": [
+        5.54,
+        6.08
+      ],
+      "probability": 0.7861328125
+    },
+    {
+      "text": " in",
+      "interval_s": [
+        6.08,
+        6.52
+      ],
+      "probability": 0.82373046875
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        6.52,
+        6.62
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " way",
+      "interval_s": [
+        6.62,
+        6.86
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " that",
+      "interval_s": [
+        6.86,
+        7.08
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " really",
+      "interval_s": [
+        7.08,
+        7.38
+      ],
+      "probability": 0.94482421875
+    },
+    {
+      "text": " wasn't",
+      "interval_s": [
+        7.38,
+        7.72
+      ],
+      "probability": 0.990966796875
+    },
+    {
+      "text": " available",
+      "interval_s": [
+        7.72,
+        7.94
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " before",
+      "interval_s": [
+        7.94,
+        8.46
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        8.46,
+        8.74
+      ],
+      "probability": 0.9814453125
+    },
+    {
+      "text": " center",
+      "interval_s": [
+        8.74,
+        8.96
+      ],
+      "probability": 0.55224609375
+    },
+    {
+      "text": " was",
+      "interval_s": [
+        8.96,
+        9.22
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " here.",
+      "interval_s": [
+        9.22,
+        9.54
+      ],
+      "probability": 0.99853515625
+    }
+  ],
+  "elapsed_s": 0.7262492469744757
+}

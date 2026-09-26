@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "samples": 100,
+  "arrays_exactly_equal": 200,
+  "source_identity_and_decoded_phones_equal": true,
+  "original_manifest_sha256": "efa236b29053bce88b2a15eaf44c30eb13d9049150b4f89a5cb8c990443bde61",
+  "fresh_manifest_sha256": "4e90fe0ff250d236c1c4ca27c9653d3cd74a864129782300ccf90f0f2b64481b",
+  "current_inference_script_sha256": "a4e47ed11a93c7c2df172cbd90f3bbe362c15af29118dd4e44406866bc542095",
+  "scope": "Fresh CPU phoneme inference and frame construction on the same host; no claim of arbitrary hardware equivalence.",
+  "score_runs_compared_before_reference_cleanup": true,
+  "all_three_branches_and_control_rows_exactly_equal": true,
+  "scored_cases_compared": 4701,
+  "reproduced_score_rows_sha256": {
+    "canonical/identity": "cfa126a3a308b60e41c8d1e24706e5414662f5199d4482565928658d60ef25aa",
+    "canonical/shifted": "77109e2493abb7c74ab9ba078ca2120f3ef1a691c5ea7364c39ddddac6f163c6",
+    "canonical/corrupted": "a9f5145ed822e09e3c62b407982344e159054a0e96d2cc22fdb8a75dbf767fbd",
+    "canonical/cross_video": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "canonical/injected": "837a74de5287e1670d97a8d63cfe058e2200f19f7056b696387c079d588b9c1e",
+    "contextual/identity": "6eb492cd8d3a44421f0e6927fef7317b1a4b7395edbbafcd9027f7c37d98642a",
+    "contextual/shifted": "94b88c195900739a95ab81fd584b2ce0402cd807cf1f103cd2318e10b85e5b75",
+    "contextual/corrupted": "39c945911aa5e47afd223910a607be5f96f828159702f563e1552b0633b47a61",
+    "contextual/cross_video": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "contextual/injected": "f2b81c5a7720290701dbe380aed22b6b498356e12d154eaae7e2cceb5b22a0ab",
+    "lexicon/identity": "2cf02687a741411f1e3dd9b22048db32985e3651e9b1fbfdaed652f9ebf70120",
+    "lexicon/shifted": "e68cb213b6186309361c9330b9c64f97a92ee2634016764652691b690b7cf24e",
+    "lexicon/corrupted": "f6ce8a23432baaec18edb59b8d4df2a4c3428a19c8642c320ac7db43bc110647",
+    "lexicon/cross_video": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "lexicon/injected": "8c8f3982b2d98387c4abd3832ae132bec7e6fecdc833b10321925dab26b0c3e1"
+  }
+}

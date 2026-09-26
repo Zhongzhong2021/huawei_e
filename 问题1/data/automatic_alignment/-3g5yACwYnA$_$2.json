@@ -1,0 +1,561 @@
+{
+  "context_envelopes": [
+    {
+      "word_indices": [
+        0,
+        1
+      ],
+      "interval_s": [
+        0.0,
+        3.60246875
+      ],
+      "left_anchor_word": null,
+      "right_anchor_word": 2,
+      "status": "context_only_not_alignment",
+      "automatic_eligible": false
+    }
+  ],
+  "sample_status": "supported",
+  "informative_anchors": 6,
+  "informative_reference_tokens": 7,
+  "informative_coverage": 0.8571428571428571,
+  "edit_cost": 3.0,
+  "optimal_endpoints": [
+    20
+  ],
+  "words": [
+    {
+      "word_index": 0,
+      "text": "Key",
+      "status": "unmatched_or_ambiguous",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 1,
+      "text": "Polymer",
+      "status": "unmatched_or_ambiguous",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 2,
+      "text": "brings",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        3.4024687499999997,
+        3.60246875
+      ],
+      "diagnostic_interval_s": [
+        3.4024687499999997,
+        3.60246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            7
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 3,
+      "text": "a",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        3.68246875,
+        3.7024687500000004
+      ],
+      "diagnostic_interval_s": [
+        3.68246875,
+        3.7024687500000004
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            8
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 4,
+      "text": "technical",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        3.76246875,
+        4.14246875
+      ],
+      "diagnostic_interval_s": [
+        3.76246875,
+        4.14246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            9
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 5,
+      "text": "aspect",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        4.38246875,
+        4.68246875
+      ],
+      "diagnostic_interval_s": [
+        4.38246875,
+        4.68246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            10
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 6,
+      "text": "to",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        4.72246875,
+        4.86246875
+      ],
+      "diagnostic_interval_s": [
+        4.72246875,
+        4.86246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            11
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 7,
+      "text": "our",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        5.86246875,
+        5.94246875
+      ],
+      "diagnostic_interval_s": [
+        5.86246875,
+        5.94246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            13
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 8,
+      "text": "operation",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        6.00246875,
+        6.42246875
+      ],
+      "diagnostic_interval_s": [
+        6.00246875,
+        6.42246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            14
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 9,
+      "text": "that",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        6.50246875,
+        6.6224687499999995
+      ],
+      "diagnostic_interval_s": [
+        6.50246875,
+        6.6224687499999995
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            15
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 10,
+      "text": "we",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        6.68246875,
+        6.7424687500000005
+      ],
+      "diagnostic_interval_s": [
+        6.68246875,
+        6.7424687500000005
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            16
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 11,
+      "text": "don't",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        6.8224687500000005,
+        7.00246875
+      ],
+      "diagnostic_interval_s": [
+        6.8224687500000005,
+        7.00246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            17
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 12,
+      "text": "have",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        7.042468749999999,
+        7.2024687499999995
+      ],
+      "diagnostic_interval_s": [
+        7.042468749999999,
+        7.2024687499999995
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            18
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 13,
+      "text": "internally",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        7.26246875,
+        7.68246875
+      ],
+      "diagnostic_interval_s": [
+        7.26246875,
+        7.68246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            19
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    }
+  ],
+  "automatic_eligible_words": 12,
+  "sample_id": "-3g5yACwYnA$_$2",
+  "source_sha256": "0619c01f137d017c15c058176f18a575919189c7e81ebd2bfb993afdb86f3de7",
+  "recognition": [
+    {
+      "text": "ERATIONS",
+      "interval_s": [
+        0.0,
+        0.40246875
+      ],
+      "mean_emission_probability": 0.9478826820850372
+    },
+    {
+      "text": "AM",
+      "interval_s": [
+        1.42246875,
+        1.50246875
+      ],
+      "mean_emission_probability": 0.6869854629039764
+    },
+    {
+      "text": "KEE",
+      "interval_s": [
+        1.8624687500000001,
+        1.98246875
+      ],
+      "mean_emission_probability": 0.8220692078272501
+    },
+    {
+      "text": "BRINGS",
+      "interval_s": [
+        2.0424687500000003,
+        2.30246875
+      ],
+      "mean_emission_probability": 0.8998668491840363
+    },
+    {
+      "text": "THE",
+      "interval_s": [
+        2.3624687499999997,
+        2.52246875
+      ],
+      "mean_emission_probability": 0.6837476889292399
+    },
+    {
+      "text": "KEEP",
+      "interval_s": [
+        2.92246875,
+        3.06246875
+      ],
+      "mean_emission_probability": 0.9750837683677673
+    },
+    {
+      "text": "ALFROM",
+      "interval_s": [
+        3.14246875,
+        3.3624687499999997
+      ],
+      "mean_emission_probability": 0.5286324222882589
+    },
+    {
+      "text": "BRINGS",
+      "interval_s": [
+        3.4024687499999997,
+        3.60246875
+      ],
+      "mean_emission_probability": 0.9647026658058167
+    },
+    {
+      "text": "A",
+      "interval_s": [
+        3.68246875,
+        3.7024687500000004
+      ],
+      "mean_emission_probability": 0.6739290356636047
+    },
+    {
+      "text": "TECHNICAL",
+      "interval_s": [
+        3.76246875,
+        4.14246875
+      ],
+      "mean_emission_probability": 0.9949576059977213
+    },
+    {
+      "text": "ASPECT",
+      "interval_s": [
+        4.38246875,
+        4.68246875
+      ],
+      "mean_emission_probability": 0.9954133331775665
+    },
+    {
+      "text": "TO",
+      "interval_s": [
+        4.72246875,
+        4.86246875
+      ],
+      "mean_emission_probability": 0.995993971824646
+    },
+    {
+      "text": "AR",
+      "interval_s": [
+        5.46246875,
+        5.542468749999999
+      ],
+      "mean_emission_probability": 0.7451135218143463
+    },
+    {
+      "text": "OUR",
+      "interval_s": [
+        5.86246875,
+        5.94246875
+      ],
+      "mean_emission_probability": 0.9910426735877991
+    },
+    {
+      "text": "OPERATION",
+      "interval_s": [
+        6.00246875,
+        6.42246875
+      ],
+      "mean_emission_probability": 0.9795742498503791
+    },
+    {
+      "text": "THAT",
+      "interval_s": [
+        6.50246875,
+        6.6224687499999995
+      ],
+      "mean_emission_probability": 0.9882279336452484
+    },
+    {
+      "text": "WE",
+      "interval_s": [
+        6.68246875,
+        6.7424687500000005
+      ],
+      "mean_emission_probability": 0.9997405707836151
+    },
+    {
+      "text": "DON'T",
+      "interval_s": [
+        6.8224687500000005,
+        7.00246875
+      ],
+      "mean_emission_probability": 0.944270920753479
+    },
+    {
+      "text": "HAVE",
+      "interval_s": [
+        7.042468749999999,
+        7.2024687499999995
+      ],
+      "mean_emission_probability": 0.9941532462835312
+    },
+    {
+      "text": "INTERNALLY",
+      "interval_s": [
+        7.26246875,
+        7.68246875
+      ],
+      "mean_emission_probability": 0.9720299899578094
+    },
+    {
+      "text": "AM",
+      "interval_s": [
+        8.36246875,
+        8.48246875
+      ],
+      "mean_emission_probability": 0.7338069379329681
+    },
+    {
+      "text": "WE",
+      "interval_s": [
+        8.98246875,
+        9.10246875
+      ],
+      "mean_emission_probability": 0.9853461682796478
+    }
+  ],
+  "baseline_candidate_words": 14,
+  "native_features_modified": false,
+  "human_data_used": false,
+  "config_sha256": "b0adbf96c3cfcda192429317763b44f8ab5da4453b7d1b4779664feccadecf7c"
+}

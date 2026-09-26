@@ -1,0 +1,131 @@
+{
+  "sample_id": "-hnBHBN8p5A$_$7",
+  "source_sha256": "0ec6fb76226315d3fafbb483e3500e60cc8a6729617b10e4b4b76163595080fb",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " the majority of an entire nation to believe and trust his or her words.",
+      "start": 0.0,
+      "end": 5.82,
+      "avg_logprob": -0.17230903026130465,
+      "no_speech_prob": 0.032012939453125
+    }
+  ],
+  "words": [
+    {
+      "text": " the",
+      "interval_s": [
+        0.0,
+        0.12
+      ],
+      "probability": 0.8486328125
+    },
+    {
+      "text": " majority",
+      "interval_s": [
+        0.12,
+        0.48
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        0.48,
+        0.96
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " an",
+      "interval_s": [
+        0.96,
+        1.08
+      ],
+      "probability": 0.9931640625
+    },
+    {
+      "text": " entire",
+      "interval_s": [
+        1.08,
+        1.48
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " nation",
+      "interval_s": [
+        1.48,
+        2.04
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        2.04,
+        3.52
+      ],
+      "probability": 0.97900390625
+    },
+    {
+      "text": " believe",
+      "interval_s": [
+        3.52,
+        3.92
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        3.92,
+        4.18
+      ],
+      "probability": 0.96630859375
+    },
+    {
+      "text": " trust",
+      "interval_s": [
+        4.18,
+        4.52
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " his",
+      "interval_s": [
+        4.52,
+        4.94
+      ],
+      "probability": 0.96337890625
+    },
+    {
+      "text": " or",
+      "interval_s": [
+        4.94,
+        5.16
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " her",
+      "interval_s": [
+        5.16,
+        5.32
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " words.",
+      "interval_s": [
+        5.32,
+        5.82
+      ],
+      "probability": 0.99658203125
+    }
+  ],
+  "elapsed_s": 0.7384972459985875
+}

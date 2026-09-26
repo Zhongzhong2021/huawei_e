@@ -1,0 +1,157 @@
+{
+  "samples": 100,
+  "totals": {
+    "words": 1932,
+    "candidates": 1342,
+    "audio_rows": 38776,
+    "video_rows": 4030,
+    "no_face_frames": 327,
+    "single_face_frames": 3636,
+    "multiple_face_frames": 67,
+    "face_events": 3789,
+    "crop_edge_events": 23
+  },
+  "coverage_groups": {
+    "partial": 59,
+    "zero": 25,
+    "full": 16
+  },
+  "macro_sample_coverage": 0.6417945584851165,
+  "micro_word_coverage": 0.6946169772256728,
+  "unresolved_direct_reasons": {
+    "no_unique_exact_recognition": 518,
+    "boundary_disagreement": 8,
+    "sample_support_only": 40,
+    "zero_signal": 24
+  },
+  "valid_audio_rows_by_dimension": [
+    38190,
+    38190,
+    38190,
+    38190,
+    38190,
+    38190,
+    38190,
+    38190,
+    38190,
+    38190,
+    38190,
+    38190,
+    38190,
+    38190,
+    38190,
+    16492,
+    37988
+  ],
+  "sensitivity_candidates": {
+    "coverage_0.3": 1369,
+    "coverage_0.5": 1342,
+    "coverage_0.7": 1277,
+    "without_boundary_guard": 1344
+  },
+  "transformations": {
+    "identity": {
+      "reference_candidates": 1342,
+      "candidates": 1342,
+      "retained": 1342,
+      "lost": 0,
+      "added": 0,
+      "boundary_residual_s": {
+        "n": 1342,
+        "median": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "retained_within_20ms": 1342,
+      "retained_within_100ms": 1342
+    },
+    "half_gain": {
+      "reference_candidates": 1342,
+      "candidates": 1342,
+      "retained": 1342,
+      "lost": 0,
+      "added": 0,
+      "boundary_residual_s": {
+        "n": 1342,
+        "median": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "retained_within_20ms": 1342,
+      "retained_within_100ms": 1342
+    },
+    "leading_silence_1s": {
+      "reference_candidates": 1342,
+      "candidates": 1343,
+      "retained": 1325,
+      "lost": 17,
+      "added": 18,
+      "boundary_residual_s": {
+        "n": 1325,
+        "median": 0.0,
+        "p95": 0.019999999999999796,
+        "max": 0.020000000000003126
+      },
+      "retained_within_20ms": 1325,
+      "retained_within_100ms": 1325
+    }
+  },
+  "acoustic_calibration": {
+    "tones": [
+      {
+        "frequency_hz": 80,
+        "valid_pitch_frames": 97,
+        "absolute_pitch_error_cents": {
+          "n": 97,
+          "median": 8.677922248840332,
+          "p95": 17.39960289001465,
+          "max": 17.39960289001465
+        }
+      },
+      {
+        "frequency_hz": 120,
+        "valid_pitch_frames": 97,
+        "absolute_pitch_error_cents": {
+          "n": 97,
+          "median": 4.3334879875183105,
+          "p95": 4.3334879875183105,
+          "max": 4.3334879875183105
+        }
+      },
+      {
+        "frequency_hz": 200,
+        "valid_pitch_frames": 97,
+        "absolute_pitch_error_cents": {
+          "n": 97,
+          "median": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        }
+      },
+      {
+        "frequency_hz": 300,
+        "valid_pitch_frames": 97,
+        "absolute_pitch_error_cents": {
+          "n": 97,
+          "median": 10.854056358337402,
+          "p95": 10.854056358337402,
+          "max": 10.854056358337402
+        }
+      },
+      {
+        "frequency_hz": 400,
+        "valid_pitch_frames": 97,
+        "absolute_pitch_error_cents": {
+          "n": 97,
+          "median": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        }
+      }
+    ],
+    "half_gain_log_rms_max_error": 0.0,
+    "meaning": "Analytical signal checks, not speech pitch ground truth or sentiment prediction."
+  },
+  "results_sha256": "cfe0851044b1141c5edc9781e6393a079fa7d0b5656faff7657e5b41361c02f9",
+  "scope": "Full attachment measurements and controlled robustness; no semantic accuracy or downstream sentiment gain."
+}

@@ -1,0 +1,194 @@
+{
+  "sample_id": "-vxjVxOeScU$_$4",
+  "source_sha256": "00282df9a314394f19d616d561bd1916d1d30dca4c814dfb43630ca164f4c719",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " you're going to talk about their life, their marriage, and usually how amazing it is that",
+      "start": 0.0,
+      "end": 6.86,
+      "avg_logprob": -0.21396168778019567,
+      "no_speech_prob": 0.0092620849609375
+    },
+    {
+      "text": " they've stayed together this long.",
+      "start": 6.86,
+      "end": 8.32,
+      "avg_logprob": -0.21396168778019567,
+      "no_speech_prob": 0.0092620849609375
+    }
+  ],
+  "words": [
+    {
+      "text": " you're",
+      "interval_s": [
+        0.0,
+        0.6
+      ],
+      "probability": 0.568115234375
+    },
+    {
+      "text": " going",
+      "interval_s": [
+        0.6,
+        0.64
+      ],
+      "probability": 0.9658203125
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        0.64,
+        0.7
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " talk",
+      "interval_s": [
+        0.7,
+        0.94
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " about",
+      "interval_s": [
+        0.94,
+        1.32
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " their",
+      "interval_s": [
+        1.32,
+        1.94
+      ],
+      "probability": 0.99169921875
+    },
+    {
+      "text": " life,",
+      "interval_s": [
+        1.94,
+        2.4
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " their",
+      "interval_s": [
+        2.5,
+        2.96
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " marriage,",
+      "interval_s": [
+        2.96,
+        3.56
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        3.82,
+        4.58
+      ],
+      "probability": 0.97216796875
+    },
+    {
+      "text": " usually",
+      "interval_s": [
+        4.58,
+        5.12
+      ],
+      "probability": 0.98974609375
+    },
+    {
+      "text": " how",
+      "interval_s": [
+        5.12,
+        5.62
+      ],
+      "probability": 0.94482421875
+    },
+    {
+      "text": " amazing",
+      "interval_s": [
+        5.62,
+        6.2
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " it",
+      "interval_s": [
+        6.2,
+        6.44
+      ],
+      "probability": 0.9892578125
+    },
+    {
+      "text": " is",
+      "interval_s": [
+        6.44,
+        6.66
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " that",
+      "interval_s": [
+        6.66,
+        6.86
+      ],
+      "probability": 0.98291015625
+    },
+    {
+      "text": " they've",
+      "interval_s": [
+        6.86,
+        7.06
+      ],
+      "probability": 0.9765625
+    },
+    {
+      "text": " stayed",
+      "interval_s": [
+        7.06,
+        7.3
+      ],
+      "probability": 0.99072265625
+    },
+    {
+      "text": " together",
+      "interval_s": [
+        7.3,
+        7.66
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " this",
+      "interval_s": [
+        7.66,
+        8.0
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " long.",
+      "interval_s": [
+        8.0,
+        8.32
+      ],
+      "probability": 0.99951171875
+    }
+  ],
+  "elapsed_s": 0.7897048880113289
+}

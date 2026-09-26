@@ -1,0 +1,58 @@
+{
+  "status": "verified_final_q1_delivery",
+  "archive": "/workspace/q1-delivery.zip",
+  "archive_sha256": "baf5273d8cd49b6e72bc1dc8501f0700fd291d98d0e0f0808e9504d1ca217171",
+  "archive_bytes": 23340868,
+  "method": "Evidence-constrained multimodal features and multigranular temporal relations, with deferred phrase selection and two-order dynamic programming.",
+  "results": {
+    "samples": 100,
+    "words": 1932,
+    "word_candidates": 1397,
+    "phrase_candidates": 50,
+    "phrase_only_words": 71,
+    "covered_words": 1468,
+    "fully_unresolved_words": 464
+  },
+  "acceptance": {
+    "all_word_decisions_unchanged": true,
+    "no_loss_of_previous_coarse_coverage": true,
+    "newly_covered_words": 15,
+    "incompatible_phrase_pairs": 0,
+    "same_fixed_thresholds": true,
+    "no_human_data_in_inference": true,
+    "structural_cases": 300,
+    "exhaustive_optimizer_cases": 100,
+    "unit_tests_passed": 79,
+    "fresh_recognition_samples": 100,
+    "fresh_phonetic_tasks": 236,
+    "packaged_core_tests_passed": 79,
+    "packaged_supplementary_tests_passed": 14,
+    "all_packaged_files_equal_current": true,
+    "relocated_verification_passed": true
+  },
+  "quality_scope": "Candidate coverage, structural consistency and reproducibility. Independent word accuracy and absolute boundary error are unmeasured.",
+  "evidence": [
+    "data/phrase_selection/evaluation.json",
+    "data/multigranular_alignment/verification.json",
+    "data/multigranular_alignment/reproduction.json",
+    "data/submission_verification.json",
+    "研究/发音竞争/data/verification.json",
+    "研究/发音竞争/data/correspondence_inventory.json"
+  ],
+  "temporary_work_directories_removed": [
+    "/workspace/q1-stability-rebuild",
+    "/workspace/q1-stable-final-package",
+    "/workspace/q1-selection-previous"
+  ],
+  "pre_change_archive": "/workspace/q1-before-finalization.zip",
+  "unified_package": true,
+  "supplementary": {
+    "compatible_phrase_candidates": 1,
+    "potential_new_words": 3,
+    "counted_in_main_coverage": false,
+    "local_omission_tests": 641,
+    "local_omission_supported_tests": 0,
+    "all_original_words_explained": 1932,
+    "visual_relation": "synchronous_observation; speaker identity unknown"
+  }
+}

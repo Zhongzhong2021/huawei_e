@@ -1,0 +1,194 @@
+{
+  "sample_id": "-tANM6ETl_M$_$3",
+  "source_sha256": "6d3af064c060dad3816a9e1dfa00101faebd8b7da7d8ceea85b0bc0fca70abd6",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " The first place is either you have a prospect or a customer who's never done it before.",
+      "start": 0.0,
+      "end": 4.86,
+      "avg_logprob": -0.14309896330038707,
+      "no_speech_prob": 0.0755615234375
+    },
+    {
+      "text": " They've never tried it.",
+      "start": 4.96,
+      "end": 6.02,
+      "avg_logprob": -0.14309896330038707,
+      "no_speech_prob": 0.0755615234375
+    }
+  ],
+  "words": [
+    {
+      "text": " The",
+      "interval_s": [
+        0.0,
+        0.52
+      ],
+      "probability": 0.5888671875
+    },
+    {
+      "text": " first",
+      "interval_s": [
+        0.52,
+        0.82
+      ],
+      "probability": 0.994140625
+    },
+    {
+      "text": " place",
+      "interval_s": [
+        0.82,
+        1.16
+      ],
+      "probability": 0.98095703125
+    },
+    {
+      "text": " is",
+      "interval_s": [
+        1.16,
+        1.38
+      ],
+      "probability": 0.98779296875
+    },
+    {
+      "text": " either",
+      "interval_s": [
+        1.38,
+        1.62
+      ],
+      "probability": 0.97314453125
+    },
+    {
+      "text": " you",
+      "interval_s": [
+        1.62,
+        1.84
+      ],
+      "probability": 0.9912109375
+    },
+    {
+      "text": " have",
+      "interval_s": [
+        1.84,
+        2.08
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        2.08,
+        2.22
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " prospect",
+      "interval_s": [
+        2.22,
+        2.66
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " or",
+      "interval_s": [
+        2.66,
+        2.96
+      ],
+      "probability": 0.9013671875
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        2.96,
+        3.04
+      ],
+      "probability": 0.875
+    },
+    {
+      "text": " customer",
+      "interval_s": [
+        3.04,
+        3.38
+      ],
+      "probability": 0.9931640625
+    },
+    {
+      "text": " who's",
+      "interval_s": [
+        3.38,
+        3.68
+      ],
+      "probability": 0.89990234375
+    },
+    {
+      "text": " never",
+      "interval_s": [
+        3.68,
+        3.94
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " done",
+      "interval_s": [
+        3.94,
+        4.3
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " it",
+      "interval_s": [
+        4.3,
+        4.5
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " before.",
+      "interval_s": [
+        4.5,
+        4.86
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " They've",
+      "interval_s": [
+        4.96,
+        5.22
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " never",
+      "interval_s": [
+        5.22,
+        5.5
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " tried",
+      "interval_s": [
+        5.5,
+        5.9
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " it.",
+      "interval_s": [
+        5.9,
+        6.02
+      ],
+      "probability": 0.99267578125
+    }
+  ],
+  "elapsed_s": 0.7493230000254698
+}

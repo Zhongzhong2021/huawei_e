@@ -1,0 +1,226 @@
+{
+  "sample_id": "-RfYyzHpjk4$_$2",
+  "source_sha256": "5e428ee22de58c9d6561b9b4353bef9dfb811a5841d9ab07b5bc453d697ad17f",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " You can make a conference call, but it takes quite a bit of planning.",
+      "start": 0.2999999999999998,
+      "end": 2.72,
+      "avg_logprob": -0.17415364790293905,
+      "no_speech_prob": 0.03936767578125
+    },
+    {
+      "text": " Well, not a lot of planning. It's pretty easy to do.",
+      "start": 2.8,
+      "end": 4.74,
+      "avg_logprob": -0.17415364790293905,
+      "no_speech_prob": 0.03936767578125
+    }
+  ],
+  "words": [
+    {
+      "text": " You",
+      "interval_s": [
+        0.2999999999999998,
+        0.54
+      ],
+      "probability": 0.42919921875
+    },
+    {
+      "text": " can",
+      "interval_s": [
+        0.54,
+        0.64
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " make",
+      "interval_s": [
+        0.64,
+        0.82
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        0.82,
+        0.88
+      ],
+      "probability": 0.98095703125
+    },
+    {
+      "text": " conference",
+      "interval_s": [
+        0.88,
+        1.16
+      ],
+      "probability": 0.96533203125
+    },
+    {
+      "text": " call,",
+      "interval_s": [
+        1.16,
+        1.46
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " but",
+      "interval_s": [
+        1.5,
+        1.62
+      ],
+      "probability": 0.99365234375
+    },
+    {
+      "text": " it",
+      "interval_s": [
+        1.62,
+        1.7
+      ],
+      "probability": 0.9521484375
+    },
+    {
+      "text": " takes",
+      "interval_s": [
+        1.7,
+        1.82
+      ],
+      "probability": 0.98583984375
+    },
+    {
+      "text": " quite",
+      "interval_s": [
+        1.82,
+        2.1
+      ],
+      "probability": 0.98388671875
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        2.1,
+        2.2
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " bit",
+      "interval_s": [
+        2.2,
+        2.36
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        2.36,
+        2.46
+      ],
+      "probability": 0.9931640625
+    },
+    {
+      "text": " planning.",
+      "interval_s": [
+        2.46,
+        2.72
+      ],
+      "probability": 0.99365234375
+    },
+    {
+      "text": " Well,",
+      "interval_s": [
+        2.8,
+        2.9
+      ],
+      "probability": 0.943359375
+    },
+    {
+      "text": " not",
+      "interval_s": [
+        2.92,
+        3.0
+      ],
+      "probability": 0.9951171875
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        3.0,
+        3.12
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " lot",
+      "interval_s": [
+        3.12,
+        3.24
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        3.24,
+        3.36
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " planning.",
+      "interval_s": [
+        3.36,
+        3.58
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " It's",
+      "interval_s": [
+        3.74,
+        3.84
+      ],
+      "probability": 0.991943359375
+    },
+    {
+      "text": " pretty",
+      "interval_s": [
+        3.84,
+        4.08
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " easy",
+      "interval_s": [
+        4.08,
+        4.32
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        4.32,
+        4.5
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " do.",
+      "interval_s": [
+        4.5,
+        4.74
+      ],
+      "probability": 0.99951171875
+    }
+  ],
+  "elapsed_s": 0.8144352080416866
+}

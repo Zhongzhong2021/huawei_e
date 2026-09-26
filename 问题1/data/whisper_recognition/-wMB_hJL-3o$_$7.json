@@ -1,0 +1,202 @@
+{
+  "sample_id": "-wMB_hJL-3o$_$7",
+  "source_sha256": "04a73d73fd150b07edab8e652fd14c9cb4a0f6e017ea97b17e8146e377b9fae7",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " So, if you have a loved one who is depressed, those are some of the things that you should",
+      "start": 0.0,
+      "end": 4.58,
+      "avg_logprob": -0.1938802013794581,
+      "no_speech_prob": 0.00475311279296875
+    },
+    {
+      "text": " think about doing.",
+      "start": 4.58,
+      "end": 5.26,
+      "avg_logprob": -0.1938802013794581,
+      "no_speech_prob": 0.00475311279296875
+    }
+  ],
+  "words": [
+    {
+      "text": " So,",
+      "interval_s": [
+        0.0,
+        0.56
+      ],
+      "probability": 0.399169921875
+    },
+    {
+      "text": " if",
+      "interval_s": [
+        0.76,
+        1.1
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " you",
+      "interval_s": [
+        1.1,
+        1.22
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " have",
+      "interval_s": [
+        1.22,
+        1.4
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        1.4,
+        1.46
+      ],
+      "probability": 0.9951171875
+    },
+    {
+      "text": " loved",
+      "interval_s": [
+        1.46,
+        1.68
+      ],
+      "probability": 0.994140625
+    },
+    {
+      "text": " one",
+      "interval_s": [
+        1.68,
+        1.88
+      ],
+      "probability": 0.9814453125
+    },
+    {
+      "text": " who",
+      "interval_s": [
+        1.88,
+        2.06
+      ],
+      "probability": 0.9638671875
+    },
+    {
+      "text": " is",
+      "interval_s": [
+        2.06,
+        2.16
+      ],
+      "probability": 0.7666015625
+    },
+    {
+      "text": " depressed,",
+      "interval_s": [
+        2.16,
+        2.52
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " those",
+      "interval_s": [
+        2.9,
+        3.3
+      ],
+      "probability": 0.99365234375
+    },
+    {
+      "text": " are",
+      "interval_s": [
+        3.3,
+        3.48
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " some",
+      "interval_s": [
+        3.48,
+        3.66
+      ],
+      "probability": 0.98974609375
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        3.66,
+        3.78
+      ],
+      "probability": 0.9951171875
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        3.78,
+        3.82
+      ],
+      "probability": 0.99169921875
+    },
+    {
+      "text": " things",
+      "interval_s": [
+        3.82,
+        4.1
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " that",
+      "interval_s": [
+        4.1,
+        4.28
+      ],
+      "probability": 0.82958984375
+    },
+    {
+      "text": " you",
+      "interval_s": [
+        4.28,
+        4.4
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " should",
+      "interval_s": [
+        4.4,
+        4.58
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " think",
+      "interval_s": [
+        4.58,
+        4.78
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " about",
+      "interval_s": [
+        4.78,
+        4.98
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " doing.",
+      "interval_s": [
+        4.98,
+        5.26
+      ],
+      "probability": 0.99853515625
+    }
+  ],
+  "elapsed_s": 0.6950095039792359
+}

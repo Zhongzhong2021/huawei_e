@@ -1,0 +1,57 @@
+{
+  "command": [
+    "/workspace/q1-mfa-env/bin/mfa",
+    "align",
+    "/workspace/q1-whisper-local-work/corpus",
+    "/workspace/q1-mfa-models/dictionary-english_mfa.dict",
+    "/workspace/q1-mfa-models/acoustic-english_mfa.zip",
+    "/workspace/huawei_e/问题1/data/whisper_local/raw",
+    "-c",
+    "/workspace/huawei_e/问题1/data/whisper_local/mfa.yaml",
+    "--g2p_model_path",
+    "/workspace/q1-mfa-models/g2p-english_us_mfa.zip",
+    "--output_format",
+    "json",
+    "-s",
+    "6",
+    "--no_use_postgres",
+    "-j",
+    "2",
+    "-t",
+    "/workspace/q1-whisper-local-work/temp"
+  ],
+  "version": "3.3.9",
+  "models": [
+    {
+      "kind": "acoustic",
+      "tag": "acoustic-english_mfa-v3.0.0",
+      "url": "https://github.com/MontrealCorpusTools/mfa-models/releases/download/acoustic-english_mfa-v3.0.0/english_mfa.zip",
+      "path": "/workspace/q1-mfa-models/acoustic-english_mfa.zip",
+      "sha256": "a5c26c360b741e9a8e692416d942dae1fb2a8957dccc0826c4d6a87c98945f73",
+      "bytes": 92175348
+    },
+    {
+      "kind": "dictionary",
+      "tag": "dictionary-english_mfa-v3.0.0",
+      "url": "https://github.com/MontrealCorpusTools/mfa-models/releases/download/dictionary-english_mfa-v3.0.0/english_mfa.dict",
+      "path": "/workspace/q1-mfa-models/dictionary-english_mfa.dict",
+      "sha256": "30da2ad9168290da124369edb8011ebca5e9a6f0d4b0ad5e0fc33fa0fe12ca77",
+      "bytes": 7862165
+    },
+    {
+      "kind": "g2p",
+      "tag": "g2p-english_us_mfa-v3.0.0",
+      "url": "https://github.com/MontrealCorpusTools/mfa-models/releases/download/g2p-english_us_mfa-v3.0.0/english_us_mfa.zip",
+      "path": "/workspace/q1-mfa-models/g2p-english_us_mfa.zip",
+      "sha256": "9923b38d59a8b3e3e322f225c52523c2a6248e5ffc9fd89be151ade2dc97cb02",
+      "bytes": 10740410
+    }
+  ],
+  "returncode": 0,
+  "elapsed_s": 54.26571156200953,
+  "preparation_sha256": "8155b1240b5e0ae3aa4641f8b66b4ef24e72e326ad824fa7af7d7ea616e0b816",
+  "config_sha256": "93916060e7f3d5ab2271219c565acfd56f4aded00b02de0197c24a7d249728e8",
+  "script_sha256": "523366e20fdf66419779ee30945ef01a315f0877124732a762930608d801b754",
+  "log_sha256": "bd2aeeedeea7da928b5712452ad088abd6f4a3cf1a87c5872433d1c5dff68224",
+  "human_data_used": false
+}

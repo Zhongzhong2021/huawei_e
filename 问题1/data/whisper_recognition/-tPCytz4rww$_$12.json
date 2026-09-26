@@ -1,0 +1,242 @@
+{
+  "sample_id": "-tPCytz4rww$_$12",
+  "source_sha256": "e3c7f9cd67ad2d20fef997696dc278361f97f027db58762e22104e5720d509d5",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " square feet, no less than 800 square feet. They're going to be similar with bedrooms",
+      "start": 0.0,
+      "end": 6.06,
+      "avg_logprob": -0.234592008507914,
+      "no_speech_prob": 0.01425933837890625
+    },
+    {
+      "text": " and bathrooms as well and hopefully the complexes will have similar amenities.",
+      "start": 6.06,
+      "end": 10.86,
+      "avg_logprob": -0.234592008507914,
+      "no_speech_prob": 0.01425933837890625
+    }
+  ],
+  "words": [
+    {
+      "text": " square",
+      "interval_s": [
+        0.0,
+        0.12
+      ],
+      "probability": 0.81494140625
+    },
+    {
+      "text": " feet,",
+      "interval_s": [
+        0.12,
+        0.38
+      ],
+      "probability": 0.99072265625
+    },
+    {
+      "text": " no",
+      "interval_s": [
+        0.42,
+        0.54
+      ],
+      "probability": 0.978515625
+    },
+    {
+      "text": " less",
+      "interval_s": [
+        0.54,
+        0.78
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " than",
+      "interval_s": [
+        0.78,
+        1.0
+      ],
+      "probability": 0.97265625
+    },
+    {
+      "text": " 800",
+      "interval_s": [
+        1.0,
+        1.46
+      ],
+      "probability": 0.775390625
+    },
+    {
+      "text": " square",
+      "interval_s": [
+        1.46,
+        1.84
+      ],
+      "probability": 0.9853515625
+    },
+    {
+      "text": " feet.",
+      "interval_s": [
+        1.84,
+        2.16
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " They're",
+      "interval_s": [
+        2.24,
+        2.64
+      ],
+      "probability": 0.64453125
+    },
+    {
+      "text": " going",
+      "interval_s": [
+        2.64,
+        2.7
+      ],
+      "probability": 0.94970703125
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        2.7,
+        2.76
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " be",
+      "interval_s": [
+        2.76,
+        2.8
+      ],
+      "probability": 0.9951171875
+    },
+    {
+      "text": " similar",
+      "interval_s": [
+        2.8,
+        3.28
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " with",
+      "interval_s": [
+        3.28,
+        3.66
+      ],
+      "probability": 0.8203125
+    },
+    {
+      "text": " bedrooms",
+      "interval_s": [
+        3.66,
+        6.06
+      ],
+      "probability": 0.986328125
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        6.06,
+        6.3
+      ],
+      "probability": 0.99169921875
+    },
+    {
+      "text": " bathrooms",
+      "interval_s": [
+        6.3,
+        6.64
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " as",
+      "interval_s": [
+        6.64,
+        6.94
+      ],
+      "probability": 0.9091796875
+    },
+    {
+      "text": " well",
+      "interval_s": [
+        6.94,
+        7.16
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        7.16,
+        7.78
+      ],
+      "probability": 0.4033203125
+    },
+    {
+      "text": " hopefully",
+      "interval_s": [
+        7.78,
+        8.5
+      ],
+      "probability": 0.98388671875
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        8.5,
+        8.86
+      ],
+      "probability": 0.91796875
+    },
+    {
+      "text": " complexes",
+      "interval_s": [
+        8.86,
+        9.64
+      ],
+      "probability": 0.96728515625
+    },
+    {
+      "text": " will",
+      "interval_s": [
+        9.64,
+        9.88
+      ],
+      "probability": 0.479736328125
+    },
+    {
+      "text": " have",
+      "interval_s": [
+        9.88,
+        9.98
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " similar",
+      "interval_s": [
+        9.98,
+        10.38
+      ],
+      "probability": 0.99365234375
+    },
+    {
+      "text": " amenities.",
+      "interval_s": [
+        10.38,
+        10.86
+      ],
+      "probability": 0.9853515625
+    }
+  ],
+  "elapsed_s": 0.7337781219976023
+}

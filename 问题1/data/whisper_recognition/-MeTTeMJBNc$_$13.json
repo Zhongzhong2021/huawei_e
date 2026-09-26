@@ -1,0 +1,139 @@
+{
+  "sample_id": "-MeTTeMJBNc$_$13",
+  "source_sha256": "80c5d996e5d7b61c58e1fe32d706efcaf80c8c8cddb5c37a5c66d527786c2a44",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " it is. Just needs to be a simple statement and then you present the gift.",
+      "start": 0.0,
+      "end": 4.6,
+      "avg_logprob": -0.21640624552965165,
+      "no_speech_prob": 0.0017004013061523438
+    }
+  ],
+  "words": [
+    {
+      "text": " it",
+      "interval_s": [
+        0.0,
+        0.1
+      ],
+      "probability": 0.96826171875
+    },
+    {
+      "text": " is.",
+      "interval_s": [
+        0.1,
+        0.42
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " Just",
+      "interval_s": [
+        0.7,
+        1.22
+      ],
+      "probability": 0.58544921875
+    },
+    {
+      "text": " needs",
+      "interval_s": [
+        1.22,
+        1.46
+      ],
+      "probability": 0.9521484375
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        1.46,
+        1.7
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " be",
+      "interval_s": [
+        1.7,
+        1.82
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        1.82,
+        1.98
+      ],
+      "probability": 0.99365234375
+    },
+    {
+      "text": " simple",
+      "interval_s": [
+        1.98,
+        2.4
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " statement",
+      "interval_s": [
+        2.4,
+        2.98
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        2.98,
+        3.46
+      ],
+      "probability": 0.6865234375
+    },
+    {
+      "text": " then",
+      "interval_s": [
+        3.46,
+        3.74
+      ],
+      "probability": 0.98388671875
+    },
+    {
+      "text": " you",
+      "interval_s": [
+        3.74,
+        3.82
+      ],
+      "probability": 0.98974609375
+    },
+    {
+      "text": " present",
+      "interval_s": [
+        3.82,
+        4.12
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        4.12,
+        4.42
+      ],
+      "probability": 0.99365234375
+    },
+    {
+      "text": " gift.",
+      "interval_s": [
+        4.42,
+        4.6
+      ],
+      "probability": 0.9990234375
+    }
+  ],
+  "elapsed_s": 0.6018994050100446
+}

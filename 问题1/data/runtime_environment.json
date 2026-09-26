@@ -1,0 +1,26 @@
+{
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "system": "Linux",
+  "machine": "x86_64",
+  "tools": {
+    "ffmpeg": "ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers",
+    "ffprobe": "ffprobe version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2007-2021 the FFmpeg developers"
+  },
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.14.1",
+    "torch": "2.6.0+cpu",
+    "torchaudio": "2.6.0+cpu",
+    "torchvision": "0.21.0+cpu",
+    "transformers": "4.48.3",
+    "mediapipe": "0.10.21",
+    "Pillow": "12.3.0",
+    "matplotlib": "3.10.9",
+    "openpyxl": "3.0.9",
+    "num2words": "0.5.14"
+  },
+  "configuration": "CPU inference; 2 torch threads and seed 0 set explicitly by core generation scripts.",
+  "host_or_user_identifiers_recorded": false,
+  "environment_lock_sha256": "b33c0c66ce6b2c582aac16285032ce1c134162f06a7a6a18585b227580ae9e7e",
+  "scope": "Version capture in the installed environment; not proof of fresh dependency installation."
+}

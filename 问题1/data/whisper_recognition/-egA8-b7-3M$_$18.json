@@ -1,0 +1,195 @@
+{
+  "sample_id": "-egA8-b7-3M$_$18",
+  "source_sha256": "fd4bc95a6adfb16a9588b7ed65cc2812186ce3d607804dc76f4486312951ef90",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " It becomes easier at each one of these conferences to connect with people that you've met or that you're doing business with.",
+      "start": 0.0,
+      "end": 7.6,
+      "avg_logprob": -0.06382533561970506,
+      "no_speech_prob": 0.00148773193359375
+    }
+  ],
+  "words": [
+    {
+      "text": " It",
+      "interval_s": [
+        0.0,
+        0.56
+      ],
+      "probability": 0.81787109375
+    },
+    {
+      "text": " becomes",
+      "interval_s": [
+        0.56,
+        0.92
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " easier",
+      "interval_s": [
+        0.92,
+        1.42
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " at",
+      "interval_s": [
+        1.42,
+        1.96
+      ],
+      "probability": 0.97802734375
+    },
+    {
+      "text": " each",
+      "interval_s": [
+        1.96,
+        2.18
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " one",
+      "interval_s": [
+        2.18,
+        2.44
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        2.44,
+        2.6
+      ],
+      "probability": 0.984375
+    },
+    {
+      "text": " these",
+      "interval_s": [
+        2.6,
+        2.74
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " conferences",
+      "interval_s": [
+        2.74,
+        3.2
+      ],
+      "probability": 0.99365234375
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        3.2,
+        4.08
+      ],
+      "probability": 0.98828125
+    },
+    {
+      "text": " connect",
+      "interval_s": [
+        4.08,
+        4.46
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " with",
+      "interval_s": [
+        4.46,
+        4.7
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " people",
+      "interval_s": [
+        4.7,
+        5.04
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " that",
+      "interval_s": [
+        5.04,
+        5.28
+      ],
+      "probability": 0.98388671875
+    },
+    {
+      "text": " you've",
+      "interval_s": [
+        5.28,
+        5.5
+      ],
+      "probability": 0.98876953125
+    },
+    {
+      "text": " met",
+      "interval_s": [
+        5.5,
+        5.76
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " or",
+      "interval_s": [
+        5.76,
+        6.38
+      ],
+      "probability": 0.9619140625
+    },
+    {
+      "text": " that",
+      "interval_s": [
+        6.38,
+        6.58
+      ],
+      "probability": 0.99169921875
+    },
+    {
+      "text": " you're",
+      "interval_s": [
+        6.58,
+        6.76
+      ],
+      "probability": 0.990966796875
+    },
+    {
+      "text": " doing",
+      "interval_s": [
+        6.76,
+        6.94
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " business",
+      "interval_s": [
+        6.94,
+        7.3
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " with.",
+      "interval_s": [
+        7.3,
+        7.6
+      ],
+      "probability": 0.9990234375
+    }
+  ],
+  "elapsed_s": 0.7135987229994498
+}

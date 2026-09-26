@@ -1,0 +1,642 @@
+{
+  "context_envelopes": [],
+  "sample_status": "supported",
+  "informative_anchors": 8,
+  "informative_reference_tokens": 8,
+  "informative_coverage": 1.0,
+  "edit_cost": 0.0,
+  "optimal_endpoints": [
+    19
+  ],
+  "words": [
+    {
+      "word_index": 0,
+      "text": "In",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        0.82246875,
+        0.86246875
+      ],
+      "diagnostic_interval_s": [
+        0.82246875,
+        0.86246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            1
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 1,
+      "text": "the",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        0.90246875,
+        0.96246875
+      ],
+      "diagnostic_interval_s": [
+        0.90246875,
+        0.96246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            2
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 2,
+      "text": "United",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        1.02246875,
+        1.28246875
+      ],
+      "diagnostic_interval_s": [
+        1.02246875,
+        1.28246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            3
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 3,
+      "text": "States",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        1.34246875,
+        1.58246875
+      ],
+      "diagnostic_interval_s": [
+        1.34246875,
+        1.58246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            4
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 4,
+      "text": "we",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        1.64246875,
+        1.74246875
+      ],
+      "diagnostic_interval_s": [
+        1.64246875,
+        1.74246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            5
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 5,
+      "text": "don't",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        1.8624687500000001,
+        2.0824687500000003
+      ],
+      "diagnostic_interval_s": [
+        1.8624687500000001,
+        2.0824687500000003
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            6
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 6,
+      "text": "punish",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        2.2024687500000004,
+        2.5024687500000002
+      ],
+      "diagnostic_interval_s": [
+        2.2024687500000004,
+        2.5024687500000002
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            7
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 7,
+      "text": "failure",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        2.64246875,
+        3.0824687500000003
+      ],
+      "diagnostic_interval_s": [
+        2.64246875,
+        3.0824687500000003
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            8
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 8,
+      "text": "to",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        3.52246875,
+        3.6224687500000003
+      ],
+      "diagnostic_interval_s": [
+        3.52246875,
+        3.6224687500000003
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            9
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 9,
+      "text": "the",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        3.68246875,
+        3.7424687499999996
+      ],
+      "diagnostic_interval_s": [
+        3.68246875,
+        3.7424687499999996
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            10
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 10,
+      "text": "degree",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        3.80246875,
+        4.16246875
+      ],
+      "diagnostic_interval_s": [
+        3.80246875,
+        4.16246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            11
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 11,
+      "text": "to",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        4.26246875,
+        4.3224687500000005
+      ],
+      "diagnostic_interval_s": [
+        4.26246875,
+        4.3224687500000005
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            12
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 12,
+      "text": "which",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        4.42246875,
+        4.6224687499999995
+      ],
+      "diagnostic_interval_s": [
+        4.42246875,
+        4.6224687499999995
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            13
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 13,
+      "text": "failure",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        4.902468750000001,
+        5.28246875
+      ],
+      "diagnostic_interval_s": [
+        4.902468750000001,
+        5.28246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            14
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 14,
+      "text": "is",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        5.34246875,
+        5.402468750000001
+      ],
+      "diagnostic_interval_s": [
+        5.34246875,
+        5.402468750000001
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            15
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 15,
+      "text": "punished",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        5.50246875,
+        5.86246875
+      ],
+      "diagnostic_interval_s": [
+        5.50246875,
+        5.86246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            16
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 16,
+      "text": "in",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        6.30246875,
+        6.34246875
+      ],
+      "diagnostic_interval_s": [
+        6.30246875,
+        6.34246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            17
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 17,
+      "text": "Europe",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        6.6224687499999995,
+        6.86246875
+      ],
+      "diagnostic_interval_s": [
+        6.6224687499999995,
+        6.86246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            18
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    }
+  ],
+  "automatic_eligible_words": 18,
+  "sample_id": "-I_e4mIh0yE$_$1",
+  "source_sha256": "8453a966d4bd1f0179eb86a35cd34c0864a3a3bc2fa86f37783060cc0d14f5df",
+  "recognition": [
+    {
+      "text": "SHIP",
+      "interval_s": [
+        0.06246875,
+        0.24246875
+      ],
+      "mean_emission_probability": 0.9908430278301239
+    },
+    {
+      "text": "IN",
+      "interval_s": [
+        0.82246875,
+        0.86246875
+      ],
+      "mean_emission_probability": 0.9990451335906982
+    },
+    {
+      "text": "THE",
+      "interval_s": [
+        0.90246875,
+        0.96246875
+      ],
+      "mean_emission_probability": 0.9993829925855001
+    },
+    {
+      "text": "UNITED",
+      "interval_s": [
+        1.02246875,
+        1.28246875
+      ],
+      "mean_emission_probability": 0.9827238420645396
+    },
+    {
+      "text": "STATES",
+      "interval_s": [
+        1.34246875,
+        1.58246875
+      ],
+      "mean_emission_probability": 0.9974173704783121
+    },
+    {
+      "text": "WE",
+      "interval_s": [
+        1.64246875,
+        1.74246875
+      ],
+      "mean_emission_probability": 0.9314112067222595
+    },
+    {
+      "text": "DON'T",
+      "interval_s": [
+        1.8624687500000001,
+        2.0824687500000003
+      ],
+      "mean_emission_probability": 0.969320285320282
+    },
+    {
+      "text": "PUNISH",
+      "interval_s": [
+        2.2024687500000004,
+        2.5024687500000002
+      ],
+      "mean_emission_probability": 0.9685037036736807
+    },
+    {
+      "text": "FAILURE",
+      "interval_s": [
+        2.64246875,
+        3.0824687500000003
+      ],
+      "mean_emission_probability": 0.9988902296338763
+    },
+    {
+      "text": "TO",
+      "interval_s": [
+        3.52246875,
+        3.6224687500000003
+      ],
+      "mean_emission_probability": 0.9993844926357269
+    },
+    {
+      "text": "THE",
+      "interval_s": [
+        3.68246875,
+        3.7424687499999996
+      ],
+      "mean_emission_probability": 0.9980535507202148
+    },
+    {
+      "text": "DEGREE",
+      "interval_s": [
+        3.80246875,
+        4.16246875
+      ],
+      "mean_emission_probability": 0.9861762126286825
+    },
+    {
+      "text": "TO",
+      "interval_s": [
+        4.26246875,
+        4.3224687500000005
+      ],
+      "mean_emission_probability": 0.962211549282074
+    },
+    {
+      "text": "WHICH",
+      "interval_s": [
+        4.42246875,
+        4.6224687499999995
+      ],
+      "mean_emission_probability": 0.9996212840080261
+    },
+    {
+      "text": "FAILURE",
+      "interval_s": [
+        4.902468750000001,
+        5.28246875
+      ],
+      "mean_emission_probability": 0.9960180010114398
+    },
+    {
+      "text": "IS",
+      "interval_s": [
+        5.34246875,
+        5.402468750000001
+      ],
+      "mean_emission_probability": 0.9814746379852295
+    },
+    {
+      "text": "PUNISHED",
+      "interval_s": [
+        5.50246875,
+        5.86246875
+      ],
+      "mean_emission_probability": 0.9939981922507286
+    },
+    {
+      "text": "IN",
+      "interval_s": [
+        6.30246875,
+        6.34246875
+      ],
+      "mean_emission_probability": 0.9996978342533112
+    },
+    {
+      "text": "EUROPE",
+      "interval_s": [
+        6.6224687499999995,
+        6.86246875
+      ],
+      "mean_emission_probability": 0.9432458678881327
+    }
+  ],
+  "baseline_candidate_words": 18,
+  "native_features_modified": false,
+  "human_data_used": false,
+  "config_sha256": "b0adbf96c3cfcda192429317763b44f8ab5da4453b7d1b4779664feccadecf7c"
+}

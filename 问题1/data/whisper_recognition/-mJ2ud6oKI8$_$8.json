@@ -1,0 +1,139 @@
+{
+  "sample_id": "-mJ2ud6oKI8$_$8",
+  "source_sha256": "6af6614c9838417a48c4817f4dd5bf1e6669eb5f78f983e9a68adc113fcdc7cc",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " we want to evaluate them you know give them a full thorough evaluation to find",
+      "start": 0.0,
+      "end": 4.0,
+      "avg_logprob": -0.20681423279974195,
+      "no_speech_prob": 0.10162353515625
+    }
+  ],
+  "words": [
+    {
+      "text": " we",
+      "interval_s": [
+        0.0,
+        0.78
+      ],
+      "probability": 0.304931640625
+    },
+    {
+      "text": " want",
+      "interval_s": [
+        0.78,
+        0.98
+      ],
+      "probability": 0.90576171875
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        0.98,
+        1.06
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " evaluate",
+      "interval_s": [
+        1.06,
+        1.34
+      ],
+      "probability": 0.9912109375
+    },
+    {
+      "text": " them",
+      "interval_s": [
+        1.34,
+        1.72
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " you",
+      "interval_s": [
+        1.72,
+        1.98
+      ],
+      "probability": 0.410888671875
+    },
+    {
+      "text": " know",
+      "interval_s": [
+        1.98,
+        2.1
+      ],
+      "probability": 0.9921875
+    },
+    {
+      "text": " give",
+      "interval_s": [
+        2.1,
+        2.18
+      ],
+      "probability": 0.9775390625
+    },
+    {
+      "text": " them",
+      "interval_s": [
+        2.18,
+        2.34
+      ],
+      "probability": 0.96923828125
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        2.34,
+        2.42
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " full",
+      "interval_s": [
+        2.42,
+        2.6
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " thorough",
+      "interval_s": [
+        2.6,
+        3.02
+      ],
+      "probability": 0.97412109375
+    },
+    {
+      "text": " evaluation",
+      "interval_s": [
+        3.02,
+        3.48
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        3.48,
+        3.88
+      ],
+      "probability": 0.96533203125
+    },
+    {
+      "text": " find",
+      "interval_s": [
+        3.88,
+        4.0
+      ],
+      "probability": 0.994140625
+    }
+  ],
+  "elapsed_s": 0.6454583610175177
+}

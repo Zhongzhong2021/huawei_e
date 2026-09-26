@@ -1,0 +1,31 @@
+{
+  "schema": "q1-phonetic-competition-research-v3",
+  "frozen_before_acoustic_results": false,
+  "model": "facebook/wav2vec2-lv-60-espeak-cv-ft",
+  "revision": "ae45363bf3413b374fecd9dc8bc1df0e24c3b7f4",
+  "source_scope": "All 100 original attachment samples; labels and human review are not inference or selection inputs.",
+  "proposal": "Adjacent unique informative text-ASR anchors; 1 to 4 intervening reference words, ordered nonoverlapping ASR anchor times. No previous sample support gate or accepted output filter.",
+  "maximum_interior_words": 4,
+  "contexts_s": [
+    0.0,
+    0.1
+  ],
+  "minimum_log_likelihood_margin": 2.302585092994046,
+  "margin_interpretation": "An engineering model-score ratio of 10, not calibrated correctness probability.",
+  "pronunciations": "eSpeak-ng en-us isolated and contextual pronunciations. Whole-group context paths allow word fusion; original word indices retained at group level, without invented internal phone ownership. Equal prior over distinct complete phone sequences, maximum 64 per hypothesis.",
+  "competitors": "Delete each word including both anchors; ASR alternative when phonemically distinct. Context pronunciations recomputed for every competitor.",
+  "acceptance": "All word-deletion competitors (anchors included) lose by the fixed margin in both time contexts; phonemically distinct ASR alternative loses by same margin; unknown phone or equivalent deletion remains indeterminate. Distinct orthographic alternatives sharing a phonetic path remain indeterminate.",
+  "output_granularity": "Research group-level candidates only; no invented internal word times.",
+  "controls": "Different-video text/audio pairings through identical proposal and score pipeline; shifted audio windows with same text; existing zero signals. Controls are not natural error-rate estimates.",
+  "promotion": "Require independent correctness evidence before replacing the stable delivery. Coverage and model agreement alone are insufficient.",
+  "pronunciation_ablation": {
+    "canonical": "Isolated word pronunciation only",
+    "contextual": "Canonical and contextual pronunciations including fused words",
+    "lexicon": "Contextual paths plus single interior-word replacements using up to 3 highest-prior exact-vocabulary pronunciations from fixed english_mfa dictionary; no phone alphabet substitution, same score thresholds."
+  },
+  "development_record": "v1 controls exposed a numeral G2P rendering defect and closed-set preference on unrelated audio. v2 corrects generic normalized numeral rendering and adds a transcript-free phone competitor. These controls are development evidence, not held-out validation. v2 whole-sequence plausibility rejected every proposal. v3 reports and gates excess negative log likelihood per target phone, rather than a cumulative sequence ratio; the shortest target pronunciation length is used as the denominator. This is a development change and requires separate validation.",
+  "normalization": "Render the existing attachment tokenizer numerical parts before G2P; original word indices and text are preserved.",
+  "open_set": "Require (target mixture log likelihood - unconstrained greedy collapsed-phone sequence log likelihood) / minimum target pronunciation phone count >= -ln(10), in both contexts. Fixed per-phone engineering tolerance; not a posterior probability or independent precision estimate.",
+  "additional_controls": "After freezing v3, inject all available candidate windows into deterministic different-video audio windows, bypassing lexical proposal filtering to exercise the acoustic scorer directly. No thresholds will be fitted to these controls.",
+  "score_interpretation": "CTC conditional phone-sequence scores P(phones | audio), averaged over distinct pronunciation variants with equal weights. They are not acoustic likelihoods P(audio | text), Bayes factors for lexical correctness, or calibrated probabilities of transcript correctness."
+}

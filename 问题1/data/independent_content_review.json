@@ -1,0 +1,70 @@
+{
+  "schema": "q1-independent-content-review-v1",
+  "exported_at": "2026-09-26T16:26:15.236Z",
+  "samples": [
+    {
+      "sample_id": "-AUZQgSxyPQ$_$2",
+      "source_sha256": "e09034b30bb4f8fb9f9c2568afc20f2a764e327fe6ef4e13f21804eaac51bb7b",
+      "listened_full_audio": true,
+      "content_relation": "complete",
+      "notes": "",
+      "updated_at": "2026-09-26T16:24:36.756Z"
+    },
+    {
+      "sample_id": "-mJ2ud6oKI8$_$6",
+      "source_sha256": "134a3a4ebbc423760133b0da0e90cfe84d75ea85df3968000afd84153c5d828d",
+      "listened_full_audio": true,
+      "content_relation": "absent",
+      "notes": "",
+      "updated_at": "2026-09-26T16:24:54.564Z"
+    },
+    {
+      "sample_id": "-qDkUB0GgYY$_$6",
+      "source_sha256": "ab19bf4a761d3919b7113b1104ccaadbbf0c4e7b45694904d094280a2c329c8b",
+      "listened_full_audio": true,
+      "content_relation": "complete",
+      "notes": "开头会多一些",
+      "updated_at": "2026-09-26T16:25:19.716Z"
+    },
+    {
+      "sample_id": "-ri04Z7vwnc$_$0",
+      "source_sha256": "93021c70c8fad20ad3fded80e7fc790a2f9c96835de58a3b694c6906de42684b",
+      "listened_full_audio": true,
+      "content_relation": "absent",
+      "notes": "",
+      "updated_at": "2026-09-26T16:25:23.308Z"
+    },
+    {
+      "sample_id": "-tANM6ETl_M$_$3",
+      "source_sha256": "6d3af064c060dad3816a9e1dfa00101faebd8b7da7d8ceea85b0bc0fca70abd6",
+      "listened_full_audio": true,
+      "content_relation": "complete",
+      "notes": "",
+      "updated_at": "2026-09-26T16:25:31.428Z"
+    },
+    {
+      "sample_id": "-wny0OAz3g8$_$5",
+      "source_sha256": "6c6a8a4cba654b25190ab1793bfae81c3d2159ecd6cbc02d3fcbd598543acce0",
+      "listened_full_audio": true,
+      "content_relation": "complete",
+      "notes": "开头末尾会多一些",
+      "updated_at": "2026-09-26T16:25:52.172Z"
+    },
+    {
+      "sample_id": "-wMB_hJL-3o$_$7",
+      "source_sha256": "04a73d73fd150b07edab8e652fd14c9cb4a0f6e017ea97b17e8146e377b9fae7",
+      "listened_full_audio": true,
+      "content_relation": "complete",
+      "notes": "",
+      "updated_at": "2026-09-26T16:25:58.996Z"
+    },
+    {
+      "sample_id": "-vxjVxOeScU$_$4",
+      "source_sha256": "00282df9a314394f19d616d561bd1916d1d30dca4c814dfb43630ca164f4c719",
+      "listened_full_audio": true,
+      "content_relation": "complete",
+      "notes": "",
+      "updated_at": "2026-09-26T16:26:11.652Z"
+    }
+  ]
+}

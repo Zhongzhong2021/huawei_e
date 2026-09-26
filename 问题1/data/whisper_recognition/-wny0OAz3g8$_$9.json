@@ -1,0 +1,201 @@
+{
+  "sample_id": "-wny0OAz3g8$_$9",
+  "source_sha256": "b76f70fe783ee76bf1b637137226c98e67d13a6b15ec725894175b36cd76a136",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " Wilson.",
+      "start": 0.0,
+      "end": 0.28,
+      "avg_logprob": -0.1779785118997097,
+      "no_speech_prob": 0.0031223297119140625
+    },
+    {
+      "text": " He explores why black and white Americans tend to have such different outcomes in terms",
+      "start": 0.42,
+      "end": 3.86,
+      "avg_logprob": -0.1779785118997097,
+      "no_speech_prob": 0.0031223297119140625
+    },
+    {
+      "text": " of income, education, and more.",
+      "start": 3.86,
+      "end": 5.38,
+      "avg_logprob": -0.1779785118997097,
+      "no_speech_prob": 0.0031223297119140625
+    }
+  ],
+  "words": [
+    {
+      "text": " Wilson.",
+      "interval_s": [
+        0.0,
+        0.28
+      ],
+      "probability": 0.440185546875
+    },
+    {
+      "text": " He",
+      "interval_s": [
+        0.42,
+        0.52
+      ],
+      "probability": 0.9892578125
+    },
+    {
+      "text": " explores",
+      "interval_s": [
+        0.52,
+        0.86
+      ],
+      "probability": 0.9951171875
+    },
+    {
+      "text": " why",
+      "interval_s": [
+        0.86,
+        1.06
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " black",
+      "interval_s": [
+        1.06,
+        1.22
+      ],
+      "probability": 0.71630859375
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        1.22,
+        1.4
+      ],
+      "probability": 0.98095703125
+    },
+    {
+      "text": " white",
+      "interval_s": [
+        1.4,
+        1.52
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " Americans",
+      "interval_s": [
+        1.52,
+        1.84
+      ],
+      "probability": 0.98583984375
+    },
+    {
+      "text": " tend",
+      "interval_s": [
+        1.84,
+        2.16
+      ],
+      "probability": 0.9853515625
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        2.16,
+        2.3
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " have",
+      "interval_s": [
+        2.3,
+        2.44
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " such",
+      "interval_s": [
+        2.44,
+        2.64
+      ],
+      "probability": 0.99267578125
+    },
+    {
+      "text": " different",
+      "interval_s": [
+        2.64,
+        2.92
+      ],
+      "probability": 0.9814453125
+    },
+    {
+      "text": " outcomes",
+      "interval_s": [
+        2.92,
+        3.44
+      ],
+      "probability": 0.9951171875
+    },
+    {
+      "text": " in",
+      "interval_s": [
+        3.44,
+        3.7
+      ],
+      "probability": 0.90234375
+    },
+    {
+      "text": " terms",
+      "interval_s": [
+        3.7,
+        3.86
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        3.86,
+        4.0
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " income,",
+      "interval_s": [
+        4.0,
+        4.26
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " education,",
+      "interval_s": [
+        4.44,
+        4.72
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        5.02,
+        5.22
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " more.",
+      "interval_s": [
+        5.22,
+        5.38
+      ],
+      "probability": 0.99853515625
+    }
+  ],
+  "elapsed_s": 0.9522242500097491
+}

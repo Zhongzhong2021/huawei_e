@@ -1,0 +1,194 @@
+{
+  "sample_id": "-mJ2ud6oKI8$_$9",
+  "source_sha256": "df3442f3ed8f894b507923e87e426ae9636790a4a502d00c350a215270cc3e47",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " to find out because you might have hip osteoarthritis but then you could also",
+      "start": 0.0,
+      "end": 3.54,
+      "avg_logprob": -0.21181955452888243,
+      "no_speech_prob": 0.12322998046875
+    },
+    {
+      "text": " have other you know dysfunctions around your",
+      "start": 3.54,
+      "end": 6.78,
+      "avg_logprob": -0.21181955452888243,
+      "no_speech_prob": 0.12322998046875
+    }
+  ],
+  "words": [
+    {
+      "text": " to",
+      "interval_s": [
+        0.0,
+        0.34
+      ],
+      "probability": 0.505859375
+    },
+    {
+      "text": " find",
+      "interval_s": [
+        0.34,
+        0.6
+      ],
+      "probability": 0.99267578125
+    },
+    {
+      "text": " out",
+      "interval_s": [
+        0.6,
+        0.84
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " because",
+      "interval_s": [
+        0.84,
+        1.14
+      ],
+      "probability": 0.712890625
+    },
+    {
+      "text": " you",
+      "interval_s": [
+        1.14,
+        1.36
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " might",
+      "interval_s": [
+        1.36,
+        1.5
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " have",
+      "interval_s": [
+        1.5,
+        1.68
+      ],
+      "probability": 0.9794921875
+    },
+    {
+      "text": " hip",
+      "interval_s": [
+        1.68,
+        1.88
+      ],
+      "probability": 0.96240234375
+    },
+    {
+      "text": " osteoarthritis",
+      "interval_s": [
+        1.88,
+        2.62
+      ],
+      "probability": 0.9666748046875
+    },
+    {
+      "text": " but",
+      "interval_s": [
+        2.62,
+        2.96
+      ],
+      "probability": 0.65234375
+    },
+    {
+      "text": " then",
+      "interval_s": [
+        2.96,
+        3.06
+      ],
+      "probability": 0.35693359375
+    },
+    {
+      "text": " you",
+      "interval_s": [
+        3.06,
+        3.2
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " could",
+      "interval_s": [
+        3.2,
+        3.32
+      ],
+      "probability": 0.9248046875
+    },
+    {
+      "text": " also",
+      "interval_s": [
+        3.32,
+        3.54
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " have",
+      "interval_s": [
+        3.54,
+        3.72
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " other",
+      "interval_s": [
+        3.72,
+        4.18
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " you",
+      "interval_s": [
+        4.18,
+        5.42
+      ],
+      "probability": 0.72607421875
+    },
+    {
+      "text": " know",
+      "interval_s": [
+        5.42,
+        5.96
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " dysfunctions",
+      "interval_s": [
+        5.96,
+        6.5
+      ],
+      "probability": 0.8492838541666666
+    },
+    {
+      "text": " around",
+      "interval_s": [
+        6.5,
+        6.66
+      ],
+      "probability": 0.98779296875
+    },
+    {
+      "text": " your",
+      "interval_s": [
+        6.66,
+        6.78
+      ],
+      "probability": 0.56640625
+    }
+  ],
+  "elapsed_s": 0.8203968050074764
+}

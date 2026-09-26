@@ -1,0 +1,131 @@
+{
+  "sample_id": "-3g5yACwYnA$_$2",
+  "source_sha256": "0619c01f137d017c15c058176f18a575919189c7e81ebd2bfb993afdb86f3de7",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " Key Polymer brings a technical aspect to our operation that we don't have internally.",
+      "start": 1.9200000000000004,
+      "end": 7.52,
+      "avg_logprob": -0.29296873658895495,
+      "no_speech_prob": 0.1658935546875
+    }
+  ],
+  "words": [
+    {
+      "text": " Key",
+      "interval_s": [
+        1.9200000000000004,
+        2.6
+      ],
+      "probability": 0.5830078125
+    },
+    {
+      "text": " Polymer",
+      "interval_s": [
+        2.6,
+        3.28
+      ],
+      "probability": 0.621337890625
+    },
+    {
+      "text": " brings",
+      "interval_s": [
+        3.28,
+        3.42
+      ],
+      "probability": 0.90673828125
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        3.42,
+        3.62
+      ],
+      "probability": 0.94091796875
+    },
+    {
+      "text": " technical",
+      "interval_s": [
+        3.62,
+        3.92
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " aspect",
+      "interval_s": [
+        3.92,
+        4.38
+      ],
+      "probability": 0.9921875
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        4.38,
+        4.78
+      ],
+      "probability": 0.98974609375
+    },
+    {
+      "text": " our",
+      "interval_s": [
+        4.78,
+        5.34
+      ],
+      "probability": 0.9833984375
+    },
+    {
+      "text": " operation",
+      "interval_s": [
+        5.34,
+        6.18
+      ],
+      "probability": 0.90576171875
+    },
+    {
+      "text": " that",
+      "interval_s": [
+        6.18,
+        6.52
+      ],
+      "probability": 0.96923828125
+    },
+    {
+      "text": " we",
+      "interval_s": [
+        6.52,
+        6.72
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " don't",
+      "interval_s": [
+        6.72,
+        6.96
+      ],
+      "probability": 0.984619140625
+    },
+    {
+      "text": " have",
+      "interval_s": [
+        6.96,
+        7.08
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " internally.",
+      "interval_s": [
+        7.08,
+        7.52
+      ],
+      "probability": 0.98779296875
+    }
+  ],
+  "elapsed_s": 0.5961492329952307
+}

@@ -1,0 +1,107 @@
+{
+  "sample_id": "-egA8-b7-3M$_$16",
+  "source_sha256": "4c015f85e3bd901ecedde8c0c2ca4a756d9a77dfe4177625c481581f2037ff9c",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " Third, another big benefit of exhibiting is connecting with existing clients.",
+      "start": 0.0,
+      "end": 4.6,
+      "avg_logprob": -0.1811810661764706,
+      "no_speech_prob": 0.003345489501953125
+    }
+  ],
+  "words": [
+    {
+      "text": " Third,",
+      "interval_s": [
+        0.0,
+        0.68
+      ],
+      "probability": 0.84521484375
+    },
+    {
+      "text": " another",
+      "interval_s": [
+        0.78,
+        1.02
+      ],
+      "probability": 0.9814453125
+    },
+    {
+      "text": " big",
+      "interval_s": [
+        1.02,
+        1.36
+      ],
+      "probability": 0.97509765625
+    },
+    {
+      "text": " benefit",
+      "interval_s": [
+        1.36,
+        1.76
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        1.76,
+        2.02
+      ],
+      "probability": 0.98779296875
+    },
+    {
+      "text": " exhibiting",
+      "interval_s": [
+        2.02,
+        2.58
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " is",
+      "interval_s": [
+        2.58,
+        2.78
+      ],
+      "probability": 0.97802734375
+    },
+    {
+      "text": " connecting",
+      "interval_s": [
+        2.78,
+        3.18
+      ],
+      "probability": 0.986328125
+    },
+    {
+      "text": " with",
+      "interval_s": [
+        3.18,
+        3.6
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " existing",
+      "interval_s": [
+        3.6,
+        3.96
+      ],
+      "probability": 0.97021484375
+    },
+    {
+      "text": " clients.",
+      "interval_s": [
+        3.96,
+        4.6
+      ],
+      "probability": 0.99658203125
+    }
+  ],
+  "elapsed_s": 0.5682062059640884
+}

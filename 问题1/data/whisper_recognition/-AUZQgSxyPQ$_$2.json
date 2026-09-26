@@ -1,0 +1,361 @@
+{
+  "sample_id": "-AUZQgSxyPQ$_$2",
+  "source_sha256": "e09034b30bb4f8fb9f9c2568afc20f2a764e327fe6ef4e13f21804eaac51bb7b",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " The perfect soulmate to the Clarisonic Spot Therapy Brush, this gentle, pH balanced and",
+      "start": 0.0,
+      "end": 6.72,
+      "avg_logprob": -0.23887310741525708,
+      "no_speech_prob": 0.00743865966796875
+    },
+    {
+      "text": " hydrating exfoliant contains jojoba and acai fruit oils with bamboo and prickly bear extracts.",
+      "start": 6.72,
+      "end": 15.18,
+      "avg_logprob": -0.23887310741525708,
+      "no_speech_prob": 0.00743865966796875
+    },
+    {
+      "text": " These deliver intense healing while smooth granules buff away dead, dry skin cells.",
+      "start": 15.2,
+      "end": 21.58,
+      "avg_logprob": -0.23887310741525708,
+      "no_speech_prob": 0.00743865966796875
+    }
+  ],
+  "words": [
+    {
+      "text": " The",
+      "interval_s": [
+        0.0,
+        0.54
+      ],
+      "probability": 0.4716796875
+    },
+    {
+      "text": " perfect",
+      "interval_s": [
+        0.54,
+        0.84
+      ],
+      "probability": 0.880859375
+    },
+    {
+      "text": " soulmate",
+      "interval_s": [
+        0.84,
+        1.38
+      ],
+      "probability": 0.800537109375
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        1.38,
+        1.62
+      ],
+      "probability": 0.9755859375
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        1.62,
+        1.74
+      ],
+      "probability": 0.96728515625
+    },
+    {
+      "text": " Clarisonic",
+      "interval_s": [
+        1.74,
+        2.46
+      ],
+      "probability": 0.673828125
+    },
+    {
+      "text": " Spot",
+      "interval_s": [
+        2.46,
+        3.16
+      ],
+      "probability": 0.84423828125
+    },
+    {
+      "text": " Therapy",
+      "interval_s": [
+        3.16,
+        3.94
+      ],
+      "probability": 0.9873046875
+    },
+    {
+      "text": " Brush,",
+      "interval_s": [
+        3.94,
+        4.12
+      ],
+      "probability": 0.88623046875
+    },
+    {
+      "text": " this",
+      "interval_s": [
+        4.4,
+        5.0
+      ],
+      "probability": 0.95654296875
+    },
+    {
+      "text": " gentle,",
+      "interval_s": [
+        5.0,
+        5.54
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " pH",
+      "interval_s": [
+        5.56,
+        5.9
+      ],
+      "probability": 0.8916015625
+    },
+    {
+      "text": " balanced",
+      "interval_s": [
+        5.9,
+        6.38
+      ],
+      "probability": 0.630859375
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        6.38,
+        6.72
+      ],
+      "probability": 0.66015625
+    },
+    {
+      "text": " hydrating",
+      "interval_s": [
+        6.72,
+        7.34
+      ],
+      "probability": 0.995849609375
+    },
+    {
+      "text": " exfoliant",
+      "interval_s": [
+        7.34,
+        8.18
+      ],
+      "probability": 0.990234375
+    },
+    {
+      "text": " contains",
+      "interval_s": [
+        8.18,
+        8.94
+      ],
+      "probability": 0.91455078125
+    },
+    {
+      "text": " jojoba",
+      "interval_s": [
+        8.94,
+        9.76
+      ],
+      "probability": 0.939453125
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        9.76,
+        10.28
+      ],
+      "probability": 0.96142578125
+    },
+    {
+      "text": " acai",
+      "interval_s": [
+        10.28,
+        10.7
+      ],
+      "probability": 0.8763020833333334
+    },
+    {
+      "text": " fruit",
+      "interval_s": [
+        10.7,
+        11.18
+      ],
+      "probability": 0.95556640625
+    },
+    {
+      "text": " oils",
+      "interval_s": [
+        11.18,
+        11.56
+      ],
+      "probability": 0.97802734375
+    },
+    {
+      "text": " with",
+      "interval_s": [
+        11.56,
+        12.44
+      ],
+      "probability": 0.6826171875
+    },
+    {
+      "text": " bamboo",
+      "interval_s": [
+        12.44,
+        12.92
+      ],
+      "probability": 0.9482421875
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        12.92,
+        13.54
+      ],
+      "probability": 0.98974609375
+    },
+    {
+      "text": " prickly",
+      "interval_s": [
+        13.54,
+        14.02
+      ],
+      "probability": 0.966552734375
+    },
+    {
+      "text": " bear",
+      "interval_s": [
+        14.02,
+        14.2
+      ],
+      "probability": 0.8046875
+    },
+    {
+      "text": " extracts.",
+      "interval_s": [
+        14.2,
+        15.18
+      ],
+      "probability": 0.9951171875
+    },
+    {
+      "text": " These",
+      "interval_s": [
+        15.2,
+        15.74
+      ],
+      "probability": 0.98486328125
+    },
+    {
+      "text": " deliver",
+      "interval_s": [
+        15.74,
+        16.08
+      ],
+      "probability": 0.9931640625
+    },
+    {
+      "text": " intense",
+      "interval_s": [
+        16.08,
+        16.58
+      ],
+      "probability": 0.9921875
+    },
+    {
+      "text": " healing",
+      "interval_s": [
+        16.58,
+        17.14
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " while",
+      "interval_s": [
+        17.14,
+        17.88
+      ],
+      "probability": 0.7958984375
+    },
+    {
+      "text": " smooth",
+      "interval_s": [
+        17.88,
+        18.2
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " granules",
+      "interval_s": [
+        18.2,
+        18.82
+      ],
+      "probability": 0.9892578125
+    },
+    {
+      "text": " buff",
+      "interval_s": [
+        18.82,
+        19.12
+      ],
+      "probability": 0.99169921875
+    },
+    {
+      "text": " away",
+      "interval_s": [
+        19.12,
+        19.4
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " dead,",
+      "interval_s": [
+        19.4,
+        20.22
+      ],
+      "probability": 0.984375
+    },
+    {
+      "text": " dry",
+      "interval_s": [
+        20.36,
+        20.76
+      ],
+      "probability": 0.98681640625
+    },
+    {
+      "text": " skin",
+      "interval_s": [
+        20.76,
+        21.24
+      ],
+      "probability": 0.986328125
+    },
+    {
+      "text": " cells.",
+      "interval_s": [
+        21.24,
+        21.58
+      ],
+      "probability": 0.99462890625
+    }
+  ],
+  "elapsed_s": 1.2235581359709613
+}

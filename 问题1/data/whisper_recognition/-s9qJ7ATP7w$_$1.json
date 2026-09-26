@@ -1,0 +1,138 @@
+{
+  "sample_id": "-s9qJ7ATP7w$_$1",
+  "source_sha256": "a33e8f82a185bcb7648b523927308cdc2142e3076479ba2b45cd0e828636fc09",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " And the hardest thing in life to learn is to lose.",
+      "start": 0.0,
+      "end": 3.5,
+      "avg_logprob": -0.2645596455443989,
+      "no_speech_prob": 0.0423583984375
+    },
+    {
+      "text": " Winning is easy.",
+      "start": 3.64,
+      "end": 4.34,
+      "avg_logprob": -0.2645596455443989,
+      "no_speech_prob": 0.0423583984375
+    }
+  ],
+  "words": [
+    {
+      "text": " And",
+      "interval_s": [
+        0.0,
+        0.66
+      ],
+      "probability": 0.0305328369140625
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        0.66,
+        0.66
+      ],
+      "probability": 0.94091796875
+    },
+    {
+      "text": " hardest",
+      "interval_s": [
+        0.66,
+        1.54
+      ],
+      "probability": 0.99267578125
+    },
+    {
+      "text": " thing",
+      "interval_s": [
+        1.54,
+        1.84
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " in",
+      "interval_s": [
+        1.84,
+        1.92
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " life",
+      "interval_s": [
+        1.92,
+        2.08
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        2.08,
+        2.2
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " learn",
+      "interval_s": [
+        2.2,
+        2.44
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " is",
+      "interval_s": [
+        2.44,
+        3.1
+      ],
+      "probability": 0.986328125
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        3.1,
+        3.26
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " lose.",
+      "interval_s": [
+        3.26,
+        3.5
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " Winning",
+      "interval_s": [
+        3.64,
+        4.0
+      ],
+      "probability": 0.998291015625
+    },
+    {
+      "text": " is",
+      "interval_s": [
+        4.0,
+        4.06
+      ],
+      "probability": 0.607421875
+    },
+    {
+      "text": " easy.",
+      "interval_s": [
+        4.06,
+        4.34
+      ],
+      "probability": 0.99951171875
+    }
+  ],
+  "elapsed_s": 0.6247962429770268
+}

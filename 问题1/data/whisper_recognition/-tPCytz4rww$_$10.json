@@ -1,0 +1,139 @@
+{
+  "sample_id": "-tPCytz4rww$_$10",
+  "source_sha256": "758183192cbd5f0f20823d26ece3ddee40dec0aadec35247b2495510a53f52f8",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " footage say 20% so if you've got a thousand square foot condo make sure",
+      "start": 0.0,
+      "end": 4.58,
+      "avg_logprob": -0.3103515535593033,
+      "no_speech_prob": 0.2032470703125
+    }
+  ],
+  "words": [
+    {
+      "text": " footage",
+      "interval_s": [
+        0.0,
+        0.34
+      ],
+      "probability": 0.49755859375
+    },
+    {
+      "text": " say",
+      "interval_s": [
+        0.34,
+        0.6
+      ],
+      "probability": 0.492919921875
+    },
+    {
+      "text": " 20",
+      "interval_s": [
+        0.6,
+        0.96
+      ],
+      "probability": 0.71337890625
+    },
+    {
+      "text": "%",
+      "interval_s": [
+        0.96,
+        1.2
+      ],
+      "probability": 0.4345703125
+    },
+    {
+      "text": " so",
+      "interval_s": [
+        1.2,
+        1.58
+      ],
+      "probability": 0.9462890625
+    },
+    {
+      "text": " if",
+      "interval_s": [
+        1.58,
+        1.92
+      ],
+      "probability": 0.990234375
+    },
+    {
+      "text": " you've",
+      "interval_s": [
+        1.92,
+        2.12
+      ],
+      "probability": 0.9453125
+    },
+    {
+      "text": " got",
+      "interval_s": [
+        2.12,
+        2.26
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        2.26,
+        2.36
+      ],
+      "probability": 0.96142578125
+    },
+    {
+      "text": " thousand",
+      "interval_s": [
+        2.36,
+        2.6
+      ],
+      "probability": 0.87548828125
+    },
+    {
+      "text": " square",
+      "interval_s": [
+        2.6,
+        2.88
+      ],
+      "probability": 0.97021484375
+    },
+    {
+      "text": " foot",
+      "interval_s": [
+        2.88,
+        3.2
+      ],
+      "probability": 0.9580078125
+    },
+    {
+      "text": " condo",
+      "interval_s": [
+        3.2,
+        4.08
+      ],
+      "probability": 0.9921875
+    },
+    {
+      "text": " make",
+      "interval_s": [
+        4.08,
+        4.44
+      ],
+      "probability": 0.448974609375
+    },
+    {
+      "text": " sure",
+      "interval_s": [
+        4.44,
+        4.58
+      ],
+      "probability": 0.9873046875
+    }
+  ],
+  "elapsed_s": 0.5872220150195062
+}

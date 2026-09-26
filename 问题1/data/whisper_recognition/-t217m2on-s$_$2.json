@@ -1,0 +1,107 @@
+{
+  "sample_id": "-t217m2on-s$_$2",
+  "source_sha256": "6713a983112173204502dc5adbb886bc6c38554b4627698611931420c47663a8",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " A good thing to do is yarning. Chewing gum is effective.",
+      "start": 0.0,
+      "end": 4.68,
+      "avg_logprob": -0.3261718799670537,
+      "no_speech_prob": 0.0287628173828125
+    }
+  ],
+  "words": [
+    {
+      "text": " A",
+      "interval_s": [
+        0.0,
+        0.7
+      ],
+      "probability": 0.200927734375
+    },
+    {
+      "text": " good",
+      "interval_s": [
+        0.7,
+        1.5
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " thing",
+      "interval_s": [
+        1.5,
+        1.68
+      ],
+      "probability": 0.9951171875
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        1.68,
+        1.76
+      ],
+      "probability": 0.98583984375
+    },
+    {
+      "text": " do",
+      "interval_s": [
+        1.76,
+        1.88
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " is",
+      "interval_s": [
+        1.88,
+        2.0
+      ],
+      "probability": 0.9912109375
+    },
+    {
+      "text": " yarning.",
+      "interval_s": [
+        2.0,
+        2.46
+      ],
+      "probability": 0.78857421875
+    },
+    {
+      "text": " Chewing",
+      "interval_s": [
+        3.38,
+        3.78
+      ],
+      "probability": 0.98583984375
+    },
+    {
+      "text": " gum",
+      "interval_s": [
+        3.78,
+        4.14
+      ],
+      "probability": 0.994140625
+    },
+    {
+      "text": " is",
+      "interval_s": [
+        4.14,
+        4.3
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " effective.",
+      "interval_s": [
+        4.3,
+        4.68
+      ],
+      "probability": 0.98388671875
+    }
+  ],
+  "elapsed_s": 0.639384263951797
+}

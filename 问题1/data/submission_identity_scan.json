@@ -1,0 +1,11 @@
+{
+  "archive_sha256": "baf5273d8cd49b6e72bc1dc8501f0700fd291d98d0e0f0808e9504d1ca217171",
+  "checked_patterns": {
+    "home_path": "/(?:home|Users)/[^/\\s\"<>]+",
+    "email": "[\\w.+-]+@[\\w.-]+\\.[A-Za-z]{2,}",
+    "identity_field": "(?:队员姓名|队伍编号|参赛单位)\\s*[:：]\\s*\\S+"
+  },
+  "matches": [],
+  "pdf_author_fields": [],
+  "scope": "Text/source identity patterns and PDF author fields checked; original dataset names preserved."
+}

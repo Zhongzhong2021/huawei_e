@@ -1,0 +1,139 @@
+{
+  "sample_id": "-UacrmKiTn4$_$4",
+  "source_sha256": "a7f2ab0d6ee2e2a2d5cd4239f03e6cac67c618ddb744891323df3ff87e29af84",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " it, just given to their own devices. They are not going to read the textbook.",
+      "start": 0.0,
+      "end": 3.8,
+      "avg_logprob": -0.20591517289479574,
+      "no_speech_prob": 0.04736328125
+    }
+  ],
+  "words": [
+    {
+      "text": " it,",
+      "interval_s": [
+        0.0,
+        0.1
+      ],
+      "probability": 0.6689453125
+    },
+    {
+      "text": " just",
+      "interval_s": [
+        0.1,
+        0.58
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " given",
+      "interval_s": [
+        0.58,
+        0.84
+      ],
+      "probability": 0.6318359375
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        0.84,
+        1.04
+      ],
+      "probability": 0.99365234375
+    },
+    {
+      "text": " their",
+      "interval_s": [
+        1.04,
+        1.2
+      ],
+      "probability": 0.994140625
+    },
+    {
+      "text": " own",
+      "interval_s": [
+        1.2,
+        1.36
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " devices.",
+      "interval_s": [
+        1.36,
+        1.9
+      ],
+      "probability": 0.98779296875
+    },
+    {
+      "text": " They",
+      "interval_s": [
+        1.96,
+        2.18
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " are",
+      "interval_s": [
+        2.18,
+        2.34
+      ],
+      "probability": 0.9765625
+    },
+    {
+      "text": " not",
+      "interval_s": [
+        2.34,
+        2.56
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " going",
+      "interval_s": [
+        2.56,
+        2.84
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        2.84,
+        3.06
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " read",
+      "interval_s": [
+        3.06,
+        3.28
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        3.28,
+        3.46
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " textbook.",
+      "interval_s": [
+        3.46,
+        3.8
+      ],
+      "probability": 0.68505859375
+    }
+  ],
+  "elapsed_s": 0.7201992049813271
+}

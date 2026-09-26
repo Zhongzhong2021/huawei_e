@@ -1,0 +1,634 @@
+{
+  "context_envelopes": [],
+  "sample_status": "no_informative_support",
+  "informative_anchors": 0,
+  "informative_reference_tokens": 12,
+  "informative_coverage": 0.0,
+  "edit_cost": 21.0,
+  "optimal_endpoints": [
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "words": [
+    {
+      "word_index": 0,
+      "text": "It's",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 1,
+      "text": "safe",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 2,
+      "text": "and",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 3,
+      "text": "the",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 4,
+      "text": "person",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 5,
+      "text": "will",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 6,
+      "text": "feel",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 7,
+      "text": "better",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 8,
+      "text": "later",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 9,
+      "text": "on",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 10,
+      "text": "but",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            11
+          ],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 11,
+      "text": "it's",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 12,
+      "text": "sort",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 13,
+      "text": "of",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 14,
+      "text": "like",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 15,
+      "text": "flossing",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 16,
+      "text": "your",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            23
+          ],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 17,
+      "text": "teeth",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 18,
+      "text": "for",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 19,
+      "text": "the",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 20,
+      "text": "first",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 21,
+      "text": "time",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    }
+  ],
+  "automatic_eligible_words": 0,
+  "sample_id": "-mJ2ud6oKI8$_$9",
+  "source_sha256": "df3442f3ed8f894b507923e87e426ae9636790a4a502d00c350a215270cc3e47",
+  "recognition": [
+    {
+      "text": "WATION",
+      "interval_s": [
+        0.0,
+        0.28246875
+      ],
+      "mean_emission_probability": 0.9358554085095724
+    },
+    {
+      "text": "TO",
+      "interval_s": [
+        0.36246875,
+        0.42246875
+      ],
+      "mean_emission_probability": 0.9833127856254578
+    },
+    {
+      "text": "FIND",
+      "interval_s": [
+        0.48246875,
+        0.70246875
+      ],
+      "mean_emission_probability": 0.999313086271286
+    },
+    {
+      "text": "OUT",
+      "interval_s": [
+        0.84246875,
+        0.92246875
+      ],
+      "mean_emission_probability": 0.9968159198760986
+    },
+    {
+      "text": "BECAUSE",
+      "interval_s": [
+        1.06246875,
+        1.30246875
+      ],
+      "mean_emission_probability": 0.9861034325190953
+    },
+    {
+      "text": "YOU",
+      "interval_s": [
+        1.34246875,
+        1.42246875
+      ],
+      "mean_emission_probability": 0.9977614084879557
+    },
+    {
+      "text": "MIGHT",
+      "interval_s": [
+        1.46246875,
+        1.62246875
+      ],
+      "mean_emission_probability": 0.9535396933555603
+    },
+    {
+      "text": "HAVE",
+      "interval_s": [
+        1.64246875,
+        1.78246875
+      ],
+      "mean_emission_probability": 0.9917357861995697
+    },
+    {
+      "text": "HIPPOTER",
+      "interval_s": [
+        1.84246875,
+        2.26246875
+      ],
+      "mean_emission_probability": 0.7947922497987747
+    },
+    {
+      "text": "A",
+      "interval_s": [
+        2.3224687499999996,
+        2.34246875
+      ],
+      "mean_emission_probability": 0.6874992847442627
+    },
+    {
+      "text": "THRITUS",
+      "interval_s": [
+        2.38246875,
+        2.76246875
+      ],
+      "mean_emission_probability": 0.8719370067119598
+    },
+    {
+      "text": "BUT",
+      "interval_s": [
+        2.92246875,
+        3.02246875
+      ],
+      "mean_emission_probability": 0.9913180073102316
+    },
+    {
+      "text": "THAT",
+      "interval_s": [
+        3.0424687500000003,
+        3.14246875
+      ],
+      "mean_emission_probability": 0.8564689308404922
+    },
+    {
+      "text": "YOU",
+      "interval_s": [
+        3.18246875,
+        3.26246875
+      ],
+      "mean_emission_probability": 0.9870295524597168
+    },
+    {
+      "text": "COULD",
+      "interval_s": [
+        3.30246875,
+        3.4024687499999997
+      ],
+      "mean_emission_probability": 0.9941374063491821
+    },
+    {
+      "text": "ALSO",
+      "interval_s": [
+        3.4424687499999997,
+        3.6224687500000003
+      ],
+      "mean_emission_probability": 0.9998655170202255
+    },
+    {
+      "text": "HAVE",
+      "interval_s": [
+        3.7024687500000004,
+        3.84246875
+      ],
+      "mean_emission_probability": 0.9030574411153793
+    },
+    {
+      "text": "OTHER",
+      "interval_s": [
+        4.06246875,
+        4.28246875
+      ],
+      "mean_emission_probability": 0.9935826420783996
+    },
+    {
+      "text": "A",
+      "interval_s": [
+        5.10246875,
+        5.1224687499999995
+      ],
+      "mean_emission_probability": 0.9593703746795654
+    },
+    {
+      "text": "YOU",
+      "interval_s": [
+        5.86246875,
+        5.92246875
+      ],
+      "mean_emission_probability": 0.9857914050420126
+    },
+    {
+      "text": "KNOW",
+      "interval_s": [
+        5.94246875,
+        6.02246875
+      ],
+      "mean_emission_probability": 0.9864195138216019
+    },
+    {
+      "text": "DISFUNCTIONS",
+      "interval_s": [
+        6.08246875,
+        6.56246875
+      ],
+      "mean_emission_probability": 0.98757237692674
+    },
+    {
+      "text": "ROUND",
+      "interval_s": [
+        6.6224687499999995,
+        6.76246875
+      ],
+      "mean_emission_probability": 0.9674635171890259
+    },
+    {
+      "text": "YOUR",
+      "interval_s": [
+        6.80246875,
+        6.88246875
+      ],
+      "mean_emission_probability": 0.9798813462257385
+    }
+  ],
+  "baseline_candidate_words": 22,
+  "native_features_modified": false,
+  "human_data_used": false,
+  "config_sha256": "b0adbf96c3cfcda192429317763b44f8ab5da4453b7d1b4779664feccadecf7c",
+  "local_support_runs": [],
+  "new_local_candidate_words": 0,
+  "decision_policy": "frozen_selective_baseline_plus_corroborated_local_runs_v2",
+  "whole_text_content_confirmed": false,
+  "context_envelopes_policy": "original_frozen_baseline_navigation_only",
+  "corroborating_run_pairs": [],
+  "baseline_result_sha256": "a6d1b8515d77e6c2d06ae6d811c6bdf8990fbc239e51d31de875355ecd74f1d2",
+  "human_data_used_for_generation": false
+}

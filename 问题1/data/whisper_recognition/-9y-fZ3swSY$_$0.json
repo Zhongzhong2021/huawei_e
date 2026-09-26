@@ -1,0 +1,226 @@
+{
+  "sample_id": "-9y-fZ3swSY$_$0",
+  "source_sha256": "29a1fd181293cdbe24e50edcad51e3cc0f27a5824d840bcc39d453b272fb6e3c",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " you can say hey you know what i really like baby skin they're so",
+      "start": 0.0,
+      "end": 3.88,
+      "avg_logprob": -0.16370738636363635,
+      "no_speech_prob": 0.475341796875
+    },
+    {
+      "text": " soft they don't have any hair on the face it's so",
+      "start": 3.88,
+      "end": 6.52,
+      "avg_logprob": -0.16370738636363635,
+      "no_speech_prob": 0.475341796875
+    }
+  ],
+  "words": [
+    {
+      "text": " you",
+      "interval_s": [
+        0.0,
+        0.2
+      ],
+      "probability": 0.1583251953125
+    },
+    {
+      "text": " can",
+      "interval_s": [
+        0.2,
+        0.28
+      ],
+      "probability": 0.853515625
+    },
+    {
+      "text": " say",
+      "interval_s": [
+        0.28,
+        0.48
+      ],
+      "probability": 0.9931640625
+    },
+    {
+      "text": " hey",
+      "interval_s": [
+        0.48,
+        0.88
+      ],
+      "probability": 0.541015625
+    },
+    {
+      "text": " you",
+      "interval_s": [
+        0.88,
+        1.48
+      ],
+      "probability": 0.9677734375
+    },
+    {
+      "text": " know",
+      "interval_s": [
+        1.48,
+        1.6
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " what",
+      "interval_s": [
+        1.6,
+        1.72
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " i",
+      "interval_s": [
+        1.72,
+        1.88
+      ],
+      "probability": 0.833984375
+    },
+    {
+      "text": " really",
+      "interval_s": [
+        1.88,
+        2.12
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " like",
+      "interval_s": [
+        2.12,
+        2.58
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " baby",
+      "interval_s": [
+        2.58,
+        3.12
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " skin",
+      "interval_s": [
+        3.12,
+        3.4
+      ],
+      "probability": 0.7568359375
+    },
+    {
+      "text": " they're",
+      "interval_s": [
+        3.4,
+        3.76
+      ],
+      "probability": 0.99267578125
+    },
+    {
+      "text": " so",
+      "interval_s": [
+        3.76,
+        3.88
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " soft",
+      "interval_s": [
+        3.88,
+        4.48
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " they",
+      "interval_s": [
+        4.48,
+        4.66
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " don't",
+      "interval_s": [
+        4.66,
+        4.9
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " have",
+      "interval_s": [
+        4.9,
+        5.04
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " any",
+      "interval_s": [
+        5.04,
+        5.36
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " hair",
+      "interval_s": [
+        5.36,
+        5.6
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " on",
+      "interval_s": [
+        5.6,
+        5.76
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        5.76,
+        5.84
+      ],
+      "probability": 0.53564453125
+    },
+    {
+      "text": " face",
+      "interval_s": [
+        5.84,
+        6.16
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " it's",
+      "interval_s": [
+        6.16,
+        6.38
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " so",
+      "interval_s": [
+        6.38,
+        6.52
+      ],
+      "probability": 0.99853515625
+    }
+  ],
+  "elapsed_s": 0.8648897900129668
+}

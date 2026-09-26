@@ -1,0 +1,163 @@
+{
+  "sample_id": "-tPCytz4rww$_$11",
+  "source_sha256": "6dc09d02467baaef67594ff32cffb01f8ed1565cda4c5abd161b8261a51e2e5d",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " make sure that you're using comps that are no larger than 1,200 square feet, no less than",
+      "start": 0.0,
+      "end": 5.28,
+      "avg_logprob": -0.1715625,
+      "no_speech_prob": 0.056488037109375
+    }
+  ],
+  "words": [
+    {
+      "text": " make",
+      "interval_s": [
+        0.0,
+        0.46
+      ],
+      "probability": 0.33935546875
+    },
+    {
+      "text": " sure",
+      "interval_s": [
+        0.46,
+        0.72
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " that",
+      "interval_s": [
+        0.72,
+        0.94
+      ],
+      "probability": 0.92578125
+    },
+    {
+      "text": " you're",
+      "interval_s": [
+        0.94,
+        1.1
+      ],
+      "probability": 0.939697265625
+    },
+    {
+      "text": " using",
+      "interval_s": [
+        1.1,
+        1.36
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " comps",
+      "interval_s": [
+        1.36,
+        1.86
+      ],
+      "probability": 0.97802734375
+    },
+    {
+      "text": " that",
+      "interval_s": [
+        1.86,
+        1.96
+      ],
+      "probability": 0.99072265625
+    },
+    {
+      "text": " are",
+      "interval_s": [
+        1.96,
+        2.08
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " no",
+      "interval_s": [
+        2.08,
+        2.24
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " larger",
+      "interval_s": [
+        2.24,
+        2.64
+      ],
+      "probability": 0.97412109375
+    },
+    {
+      "text": " than",
+      "interval_s": [
+        2.64,
+        3.72
+      ],
+      "probability": 0.73681640625
+    },
+    {
+      "text": " 1",
+      "interval_s": [
+        3.72,
+        3.88
+      ],
+      "probability": 0.4609375
+    },
+    {
+      "text": ",200",
+      "interval_s": [
+        3.88,
+        4.16
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " square",
+      "interval_s": [
+        4.16,
+        4.46
+      ],
+      "probability": 0.9794921875
+    },
+    {
+      "text": " feet,",
+      "interval_s": [
+        4.46,
+        4.72
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " no",
+      "interval_s": [
+        4.78,
+        4.92
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " less",
+      "interval_s": [
+        4.92,
+        5.14
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " than",
+      "interval_s": [
+        5.14,
+        5.28
+      ],
+      "probability": 0.8173828125
+    }
+  ],
+  "elapsed_s": 0.650746044004336
+}

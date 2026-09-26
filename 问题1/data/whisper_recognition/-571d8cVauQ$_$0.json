@@ -1,0 +1,115 @@
+{
+  "sample_id": "-571d8cVauQ$_$0",
+  "source_sha256": "defc62e1530d9b0cd27f2acfe042b71dd84d7e8c85f1df261f04912091976088",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " This is Rhett Riger, White Caspian Studios, on behalf of Expert Village.",
+      "start": 0.6799999999999988,
+      "end": 4.22,
+      "avg_logprob": -0.2972301177003167,
+      "no_speech_prob": 0.09222412109375
+    }
+  ],
+  "words": [
+    {
+      "text": " This",
+      "interval_s": [
+        0.6799999999999988,
+        1.12
+      ],
+      "probability": 0.82470703125
+    },
+    {
+      "text": " is",
+      "interval_s": [
+        1.12,
+        1.24
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " Rhett",
+      "interval_s": [
+        1.24,
+        1.48
+      ],
+      "probability": 0.902099609375
+    },
+    {
+      "text": " Riger,",
+      "interval_s": [
+        1.48,
+        1.78
+      ],
+      "probability": 0.823486328125
+    },
+    {
+      "text": " White",
+      "interval_s": [
+        1.88,
+        2.04
+      ],
+      "probability": 0.97607421875
+    },
+    {
+      "text": " Caspian",
+      "interval_s": [
+        2.04,
+        2.48
+      ],
+      "probability": 0.9803059895833334
+    },
+    {
+      "text": " Studios,",
+      "interval_s": [
+        2.48,
+        2.76
+      ],
+      "probability": 0.93505859375
+    },
+    {
+      "text": " on",
+      "interval_s": [
+        2.94,
+        3.14
+      ],
+      "probability": 0.9853515625
+    },
+    {
+      "text": " behalf",
+      "interval_s": [
+        3.14,
+        3.34
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        3.34,
+        3.64
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " Expert",
+      "interval_s": [
+        3.64,
+        3.86
+      ],
+      "probability": 0.98779296875
+    },
+    {
+      "text": " Village.",
+      "interval_s": [
+        3.86,
+        4.22
+      ],
+      "probability": 0.99609375
+    }
+  ],
+  "elapsed_s": 0.5930408220156096
+}

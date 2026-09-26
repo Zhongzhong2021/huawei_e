@@ -1,0 +1,21 @@
+{
+  "sample_id": "-HeZS2-Prhc$_$2",
+  "source_sha256": "edb0fa22fdfbd990c8174764af78670bd2ecad799240d35d96a1124a3cd9dc0c",
+  "native_features_sha256": "5a49fa2e92b78c9bb2aec219bccec9b3d6ce80bc966ada0b34251f3fab27de0e",
+  "native_metadata_sha256": "e63ecfbd2547fa942b8c9d917d701a875be97508fa24981fadbeb88861fca25a",
+  "index_sha256": "7fd346de123dec7c657153066dcf601ec3c616a1ca23510e064aeda21963f115",
+  "time_nodes": 42,
+  "audio_edges": 448,
+  "face_events_linked": 42,
+  "original_text_words_retained": 16,
+  "zero_audio": false,
+  "text_time_inferred": false,
+  "source_scene_semantics": "Nearest sampled frame representation over its native cell, restricted to the union of actual decoded frame supports.",
+  "audio_usable_nodes": 42,
+  "video_gap_seconds_excluded": 0.03333333333335453,
+  "voiced_nodes": 37,
+  "nodes_with_pitch_zero_fill_dilution": 33,
+  "max_pitch_zero_fill_dilution_hz": 334.43453246674017,
+  "semantic_acceptance": "not_applicable_to_physical_index",
+  "human_data_used": false
+}

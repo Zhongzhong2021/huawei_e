@@ -1,0 +1,115 @@
+{
+  "sample_id": "-egA8-b7-3M$_$6",
+  "source_sha256": "2e88a00d5e55863aa956b4b0949fc0e4f2975ccfd83b3194957f6fca86ecfce0",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " First, exhibiting is a wonderful opportunity to network with other legal vendors.",
+      "start": 0.0,
+      "end": 5.08,
+      "avg_logprob": -0.1534288144773907,
+      "no_speech_prob": 0.0111236572265625
+    }
+  ],
+  "words": [
+    {
+      "text": " First,",
+      "interval_s": [
+        0.0,
+        0.66
+      ],
+      "probability": 0.98193359375
+    },
+    {
+      "text": " exhibiting",
+      "interval_s": [
+        0.84,
+        1.52
+      ],
+      "probability": 0.993896484375
+    },
+    {
+      "text": " is",
+      "interval_s": [
+        1.52,
+        1.62
+      ],
+      "probability": 0.99169921875
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        1.62,
+        1.74
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " wonderful",
+      "interval_s": [
+        1.74,
+        2.14
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " opportunity",
+      "interval_s": [
+        2.14,
+        2.8
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        2.8,
+        3.3
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " network",
+      "interval_s": [
+        3.3,
+        3.72
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " with",
+      "interval_s": [
+        3.72,
+        4.0
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " other",
+      "interval_s": [
+        4.0,
+        4.34
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " legal",
+      "interval_s": [
+        4.34,
+        4.66
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " vendors.",
+      "interval_s": [
+        4.66,
+        5.08
+      ],
+      "probability": 0.98876953125
+    }
+  ],
+  "elapsed_s": 0.6286094820243306
+}

@@ -1,0 +1,43 @@
+{
+  "sample_id": "-ri04Z7vwnc$_$2",
+  "source_sha256": "f5993ce3a6ee56298462c08692a96f78c7d914d7264257ed401de7d6e17fd148",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " Hi, I'm Magenta.",
+      "start": 3.5200000000000014,
+      "end": 5.3,
+      "avg_logprob": -0.313281261920929,
+      "no_speech_prob": 0.150390625
+    }
+  ],
+  "words": [
+    {
+      "text": " Hi,",
+      "interval_s": [
+        3.5200000000000014,
+        4.32
+      ],
+      "probability": 0.7333984375
+    },
+    {
+      "text": " I'm",
+      "interval_s": [
+        4.38,
+        4.9
+      ],
+      "probability": 0.986328125
+    },
+    {
+      "text": " Magenta.",
+      "interval_s": [
+        4.9,
+        5.3
+      ],
+      "probability": 0.860595703125
+    }
+  ],
+  "elapsed_s": 0.48326656699646264
+}

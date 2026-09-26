@@ -1,0 +1,314 @@
+{
+  "sample_id": "-6rXp3zJ3kc$_$8",
+  "source_sha256": "59b77a0f873b7fa95e7327b93d64bb5a4bdae84039321988ef70bba8e63ee1ae",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " aware of. Many people are not until they get to be a older age and they realize that, gosh,",
+      "start": 0.0,
+      "end": 5.26,
+      "avg_logprob": -0.17121010384661087,
+      "no_speech_prob": 0.0067291259765625
+    },
+    {
+      "text": " they've wasted a lot of time and money in placing bets on stock that's ultimately lost value.",
+      "start": 5.26,
+      "end": 12.0,
+      "avg_logprob": -0.17121010384661087,
+      "no_speech_prob": 0.0067291259765625
+    }
+  ],
+  "words": [
+    {
+      "text": " aware",
+      "interval_s": [
+        0.0,
+        0.22
+      ],
+      "probability": 0.83154296875
+    },
+    {
+      "text": " of.",
+      "interval_s": [
+        0.22,
+        0.42
+      ],
+      "probability": 0.994140625
+    },
+    {
+      "text": " Many",
+      "interval_s": [
+        0.46,
+        0.58
+      ],
+      "probability": 0.98779296875
+    },
+    {
+      "text": " people",
+      "interval_s": [
+        0.58,
+        0.9
+      ],
+      "probability": 0.9951171875
+    },
+    {
+      "text": " are",
+      "interval_s": [
+        0.9,
+        1.04
+      ],
+      "probability": 0.99267578125
+    },
+    {
+      "text": " not",
+      "interval_s": [
+        1.04,
+        1.32
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " until",
+      "interval_s": [
+        1.32,
+        1.68
+      ],
+      "probability": 0.9326171875
+    },
+    {
+      "text": " they",
+      "interval_s": [
+        1.68,
+        1.88
+      ],
+      "probability": 0.98974609375
+    },
+    {
+      "text": " get",
+      "interval_s": [
+        1.88,
+        2.08
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        2.08,
+        2.26
+      ],
+      "probability": 0.98876953125
+    },
+    {
+      "text": " be",
+      "interval_s": [
+        2.26,
+        2.42
+      ],
+      "probability": 0.88671875
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        2.42,
+        2.56
+      ],
+      "probability": 0.25341796875
+    },
+    {
+      "text": " older",
+      "interval_s": [
+        2.56,
+        3.36
+      ],
+      "probability": 0.97607421875
+    },
+    {
+      "text": " age",
+      "interval_s": [
+        3.36,
+        3.8
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        3.8,
+        4.02
+      ],
+      "probability": 0.85888671875
+    },
+    {
+      "text": " they",
+      "interval_s": [
+        4.02,
+        4.14
+      ],
+      "probability": 0.8955078125
+    },
+    {
+      "text": " realize",
+      "interval_s": [
+        4.14,
+        4.5
+      ],
+      "probability": 0.9833984375
+    },
+    {
+      "text": " that,",
+      "interval_s": [
+        4.5,
+        4.9
+      ],
+      "probability": 0.96826171875
+    },
+    {
+      "text": " gosh,",
+      "interval_s": [
+        4.94,
+        5.26
+      ],
+      "probability": 0.89794921875
+    },
+    {
+      "text": " they've",
+      "interval_s": [
+        5.26,
+        5.54
+      ],
+      "probability": 0.984375
+    },
+    {
+      "text": " wasted",
+      "interval_s": [
+        5.54,
+        6.08
+      ],
+      "probability": 0.97265625
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        6.08,
+        6.36
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " lot",
+      "interval_s": [
+        6.36,
+        6.48
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        6.48,
+        6.58
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " time",
+      "interval_s": [
+        6.58,
+        6.86
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        6.86,
+        7.14
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " money",
+      "interval_s": [
+        7.14,
+        7.5
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " in",
+      "interval_s": [
+        7.5,
+        8.52
+      ],
+      "probability": 0.98681640625
+    },
+    {
+      "text": " placing",
+      "interval_s": [
+        8.52,
+        9.38
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " bets",
+      "interval_s": [
+        9.38,
+        9.72
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " on",
+      "interval_s": [
+        9.72,
+        9.98
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " stock",
+      "interval_s": [
+        9.98,
+        10.32
+      ],
+      "probability": 0.77197265625
+    },
+    {
+      "text": " that's",
+      "interval_s": [
+        10.32,
+        10.66
+      ],
+      "probability": 0.986328125
+    },
+    {
+      "text": " ultimately",
+      "interval_s": [
+        10.66,
+        11.06
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " lost",
+      "interval_s": [
+        11.06,
+        11.5
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " value.",
+      "interval_s": [
+        11.5,
+        12.0
+      ],
+      "probability": 0.99853515625
+    }
+  ],
+  "elapsed_s": 1.00450661504874
+}

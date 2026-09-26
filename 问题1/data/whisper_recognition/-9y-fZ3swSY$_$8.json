@@ -1,0 +1,131 @@
+{
+  "sample_id": "-9y-fZ3swSY$_$8",
+  "source_sha256": "6140d031e614b62a5d8df73346fef2417c28cee3501310aa95aa40d358b4b256",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " ma'am. That's a more decent and more polite way to call a lady.",
+      "start": 0.0,
+      "end": 4.24,
+      "avg_logprob": -0.2247023866290138,
+      "no_speech_prob": 0.007442474365234375
+    }
+  ],
+  "words": [
+    {
+      "text": " ma",
+      "interval_s": [
+        0.0,
+        0.04
+      ],
+      "probability": 0.4580078125
+    },
+    {
+      "text": "'am.",
+      "interval_s": [
+        0.04,
+        0.16
+      ],
+      "probability": 0.9794921875
+    },
+    {
+      "text": " That's",
+      "interval_s": [
+        0.18,
+        0.4
+      ],
+      "probability": 0.963134765625
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        0.4,
+        0.5
+      ],
+      "probability": 0.908203125
+    },
+    {
+      "text": " more",
+      "interval_s": [
+        0.5,
+        1.04
+      ],
+      "probability": 0.986328125
+    },
+    {
+      "text": " decent",
+      "interval_s": [
+        1.04,
+        1.64
+      ],
+      "probability": 0.98193359375
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        1.64,
+        2.0
+      ],
+      "probability": 0.865234375
+    },
+    {
+      "text": " more",
+      "interval_s": [
+        2.0,
+        2.2
+      ],
+      "probability": 0.88525390625
+    },
+    {
+      "text": " polite",
+      "interval_s": [
+        2.2,
+        2.6
+      ],
+      "probability": 0.98291015625
+    },
+    {
+      "text": " way",
+      "interval_s": [
+        2.6,
+        2.9
+      ],
+      "probability": 0.97119140625
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        2.9,
+        3.18
+      ],
+      "probability": 0.98828125
+    },
+    {
+      "text": " call",
+      "interval_s": [
+        3.18,
+        3.46
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        3.46,
+        3.96
+      ],
+      "probability": 0.9921875
+    },
+    {
+      "text": " lady.",
+      "interval_s": [
+        3.96,
+        4.24
+      ],
+      "probability": 0.9951171875
+    }
+  ],
+  "elapsed_s": 0.6502656170050614
+}

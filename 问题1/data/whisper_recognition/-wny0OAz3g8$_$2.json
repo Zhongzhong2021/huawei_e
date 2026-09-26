@@ -1,0 +1,210 @@
+{
+  "sample_id": "-wny0OAz3g8$_$2",
+  "source_sha256": "1825fb37db2e914fb616cd80aebd613afd873eecb7edd4d0b53158bfda0e522a",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " And because they couldn't get these jobs, black communities had more men out of work,",
+      "start": 0.0,
+      "end": 3.62,
+      "avg_logprob": -0.13423295454545456,
+      "no_speech_prob": 0.0007672309875488281
+    },
+    {
+      "text": " higher rates of poverty, and more criminal behavior.",
+      "start": 3.8,
+      "end": 5.72,
+      "avg_logprob": -0.13423295454545456,
+      "no_speech_prob": 0.0007672309875488281
+    }
+  ],
+  "words": [
+    {
+      "text": " And",
+      "interval_s": [
+        0.0,
+        0.52
+      ],
+      "probability": 0.66845703125
+    },
+    {
+      "text": " because",
+      "interval_s": [
+        0.52,
+        0.76
+      ],
+      "probability": 0.98095703125
+    },
+    {
+      "text": " they",
+      "interval_s": [
+        0.76,
+        1.02
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " couldn't",
+      "interval_s": [
+        1.02,
+        1.26
+      ],
+      "probability": 0.997314453125
+    },
+    {
+      "text": " get",
+      "interval_s": [
+        1.26,
+        1.36
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " these",
+      "interval_s": [
+        1.36,
+        1.52
+      ],
+      "probability": 0.97509765625
+    },
+    {
+      "text": " jobs,",
+      "interval_s": [
+        1.52,
+        1.82
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " black",
+      "interval_s": [
+        2.06,
+        2.26
+      ],
+      "probability": 0.67626953125
+    },
+    {
+      "text": " communities",
+      "interval_s": [
+        2.26,
+        2.64
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " had",
+      "interval_s": [
+        2.64,
+        2.84
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " more",
+      "interval_s": [
+        2.84,
+        3.02
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " men",
+      "interval_s": [
+        3.02,
+        3.2
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " out",
+      "interval_s": [
+        3.2,
+        3.32
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        3.32,
+        3.42
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " work,",
+      "interval_s": [
+        3.42,
+        3.62
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " higher",
+      "interval_s": [
+        3.8,
+        4.08
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " rates",
+      "interval_s": [
+        4.08,
+        4.26
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        4.26,
+        4.4
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " poverty,",
+      "interval_s": [
+        4.4,
+        4.7
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        4.84,
+        4.98
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " more",
+      "interval_s": [
+        4.98,
+        5.12
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " criminal",
+      "interval_s": [
+        5.12,
+        5.42
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " behavior.",
+      "interval_s": [
+        5.42,
+        5.72
+      ],
+      "probability": 0.93603515625
+    }
+  ],
+  "elapsed_s": 0.9177674679667689
+}

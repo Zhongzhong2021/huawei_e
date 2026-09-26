@@ -1,0 +1,170 @@
+{
+  "sample_id": "-I_e4mIh0yE$_$1",
+  "source_sha256": "8453a966d4bd1f0179eb86a35cd34c0864a3a3bc2fa86f37783060cc0d14f5df",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " In the United States, we don't punish failure to the degree to which failure is punished",
+      "start": 0.0,
+      "end": 5.7,
+      "avg_logprob": -0.16376201349955338,
+      "no_speech_prob": 0.048614501953125
+    },
+    {
+      "text": " in Europe.",
+      "start": 5.7,
+      "end": 6.72,
+      "avg_logprob": -0.16376201349955338,
+      "no_speech_prob": 0.048614501953125
+    }
+  ],
+  "words": [
+    {
+      "text": " In",
+      "interval_s": [
+        0.0,
+        0.76
+      ],
+      "probability": 0.90625
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        0.76,
+        0.94
+      ],
+      "probability": 0.99169921875
+    },
+    {
+      "text": " United",
+      "interval_s": [
+        0.94,
+        1.08
+      ],
+      "probability": 0.97265625
+    },
+    {
+      "text": " States,",
+      "interval_s": [
+        1.08,
+        1.46
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " we",
+      "interval_s": [
+        1.54,
+        1.7
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " don't",
+      "interval_s": [
+        1.7,
+        2.06
+      ],
+      "probability": 0.953369140625
+    },
+    {
+      "text": " punish",
+      "interval_s": [
+        2.06,
+        2.34
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " failure",
+      "interval_s": [
+        2.34,
+        2.84
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        2.84,
+        3.5
+      ],
+      "probability": 0.9423828125
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        3.5,
+        3.66
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " degree",
+      "interval_s": [
+        3.66,
+        3.94
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        3.94,
+        4.22
+      ],
+      "probability": 0.97607421875
+    },
+    {
+      "text": " which",
+      "interval_s": [
+        4.22,
+        4.5
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " failure",
+      "interval_s": [
+        4.5,
+        5.06
+      ],
+      "probability": 0.99267578125
+    },
+    {
+      "text": " is",
+      "interval_s": [
+        5.06,
+        5.32
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " punished",
+      "interval_s": [
+        5.32,
+        5.7
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " in",
+      "interval_s": [
+        5.7,
+        6.22
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " Europe.",
+      "interval_s": [
+        6.22,
+        6.72
+      ],
+      "probability": 0.99853515625
+    }
+  ],
+  "elapsed_s": 0.7629508830141276
+}

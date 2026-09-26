@@ -1,0 +1,466 @@
+{
+  "context_envelopes": [
+    {
+      "word_indices": [
+        2,
+        3
+      ],
+      "interval_s": [
+        0.6624687499999999,
+        1.28246875
+      ],
+      "left_anchor_word": 1,
+      "right_anchor_word": 4,
+      "status": "context_only_not_alignment",
+      "automatic_eligible": false
+    },
+    {
+      "word_indices": [
+        8
+      ],
+      "interval_s": [
+        1.90246875,
+        2.18246875
+      ],
+      "left_anchor_word": 7,
+      "right_anchor_word": 9,
+      "status": "context_only_not_alignment",
+      "automatic_eligible": false
+    }
+  ],
+  "sample_status": "supported",
+  "informative_anchors": 4,
+  "informative_reference_tokens": 5,
+  "informative_coverage": 0.8,
+  "edit_cost": 3.0,
+  "optimal_endpoints": [
+    14
+  ],
+  "words": [
+    {
+      "word_index": 0,
+      "text": "And",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        0.52246875,
+        0.60246875
+      ],
+      "diagnostic_interval_s": [
+        0.52246875,
+        0.60246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            2
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 1,
+      "text": "I",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        0.6624687499999999,
+        0.68246875
+      ],
+      "diagnostic_interval_s": [
+        0.6624687499999999,
+        0.68246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            3
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 2,
+      "text": "said",
+      "status": "unmatched_or_ambiguous",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 3,
+      "text": "Oh",
+      "status": "unmatched_or_ambiguous",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 4,
+      "text": "make",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        1.18246875,
+        1.28246875
+      ],
+      "diagnostic_interval_s": [
+        1.18246875,
+        1.28246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            6
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 5,
+      "text": "a",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        1.34246875,
+        1.3624687500000001
+      ],
+      "diagnostic_interval_s": [
+        1.34246875,
+        1.3624687500000001
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            7
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 6,
+      "text": "profit",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        1.42246875,
+        1.8624687500000001
+      ],
+      "diagnostic_interval_s": [
+        1.42246875,
+        1.8624687500000001
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            8
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 7,
+      "text": "and",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        1.90246875,
+        1.96246875
+      ],
+      "diagnostic_interval_s": [
+        1.90246875,
+        1.96246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            9
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 8,
+      "text": "all",
+      "status": "unmatched_or_ambiguous",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 9,
+      "text": "these",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        2.0824687500000003,
+        2.18246875
+      ],
+      "diagnostic_interval_s": [
+        2.0824687500000003,
+        2.18246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            11
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 10,
+      "text": "other",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        2.2424687499999996,
+        2.4024687499999997
+      ],
+      "diagnostic_interval_s": [
+        2.2424687499999996,
+        2.4024687499999997
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            12
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 11,
+      "text": "things",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        2.46246875,
+        2.64246875
+      ],
+      "diagnostic_interval_s": [
+        2.46246875,
+        2.64246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            13
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    }
+  ],
+  "automatic_eligible_words": 9,
+  "sample_id": "-s9qJ7ATP7w$_$8",
+  "source_sha256": "1de4d91bd9d9fb508a3779658747da88460db0bdb1beefe7ea5b2c77edfd2239",
+  "recognition": [
+    {
+      "text": "O",
+      "interval_s": [
+        0.02246875,
+        0.04246875
+      ],
+      "mean_emission_probability": 0.4473365843296051
+    },
+    {
+      "text": "BUSINES",
+      "interval_s": [
+        0.12246875,
+        0.46246875
+      ],
+      "mean_emission_probability": 0.8009057215281895
+    },
+    {
+      "text": "AND",
+      "interval_s": [
+        0.52246875,
+        0.60246875
+      ],
+      "mean_emission_probability": 0.7595684130986532
+    },
+    {
+      "text": "I",
+      "interval_s": [
+        0.6624687499999999,
+        0.68246875
+      ],
+      "mean_emission_probability": 0.9747145771980286
+    },
+    {
+      "text": "SET",
+      "interval_s": [
+        0.78246875,
+        0.90246875
+      ],
+      "mean_emission_probability": 0.7939767440160116
+    },
+    {
+      "text": "O",
+      "interval_s": [
+        0.98246875,
+        1.00246875
+      ],
+      "mean_emission_probability": 0.9117285013198853
+    },
+    {
+      "text": "MAKE",
+      "interval_s": [
+        1.18246875,
+        1.28246875
+      ],
+      "mean_emission_probability": 0.9952235519886017
+    },
+    {
+      "text": "A",
+      "interval_s": [
+        1.34246875,
+        1.3624687500000001
+      ],
+      "mean_emission_probability": 0.9698930382728577
+    },
+    {
+      "text": "PROFIT",
+      "interval_s": [
+        1.42246875,
+        1.8624687500000001
+      ],
+      "mean_emission_probability": 0.9551108082135519
+    },
+    {
+      "text": "AND",
+      "interval_s": [
+        1.90246875,
+        1.96246875
+      ],
+      "mean_emission_probability": 0.974184513092041
+    },
+    {
+      "text": "AL",
+      "interval_s": [
+        1.98246875,
+        2.02246875
+      ],
+      "mean_emission_probability": 0.994608461856842
+    },
+    {
+      "text": "THESE",
+      "interval_s": [
+        2.0824687500000003,
+        2.18246875
+      ],
+      "mean_emission_probability": 0.9942251324653626
+    },
+    {
+      "text": "OTHER",
+      "interval_s": [
+        2.2424687499999996,
+        2.4024687499999997
+      ],
+      "mean_emission_probability": 0.9583831191062927
+    },
+    {
+      "text": "THINGS",
+      "interval_s": [
+        2.46246875,
+        2.64246875
+      ],
+      "mean_emission_probability": 0.9288273255030314
+    },
+    {
+      "text": "THINGS",
+      "interval_s": [
+        2.6624687500000004,
+        2.8224687499999996
+      ],
+      "mean_emission_probability": 0.7002885589996973
+    },
+    {
+      "text": "SITNO",
+      "interval_s": [
+        2.84246875,
+        3.1224687500000003
+      ],
+      "mean_emission_probability": 0.6201880216598511
+    }
+  ],
+  "baseline_candidate_words": 12,
+  "native_features_modified": false,
+  "human_data_used": false,
+  "config_sha256": "b0adbf96c3cfcda192429317763b44f8ab5da4453b7d1b4779664feccadecf7c"
+}

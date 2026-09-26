@@ -1,0 +1,89 @@
+{
+  "schema": "q1-independent-content-protocol-v1",
+  "purpose": "Content-level pilot evaluation of fixed outputs, not word boundary accuracy.",
+  "selection_source_sha256": "fa8516bc865c91d2afe6c213554bfe284eee490c0429b797f7ee44955753c47e",
+  "method_sha256": {
+    "scripts/selective_alignment.py": "f913b31e9cfcc1cfe14ff41d58256a694a269254dbe302bf627f441012d5408c",
+    "scripts/run_automatic_alignment.py": "5c5a9959f48780b04e247e513269f00a2caf7b7030df7bf594542180dba1476a",
+    "config/automatic_alignment.json": "b0adbf96c3cfcda192429317763b44f8ab5da4453b7d1b4779664feccadecf7c",
+    "scripts/q1_reader.py": "f7ba906eb06c4734da6b0952b6417112956dabe91c19470290344908b2b512be"
+  },
+  "samples": [
+    {
+      "sample_id": "-AUZQgSxyPQ$_$2",
+      "source_sha256": "e09034b30bb4f8fb9f9c2568afc20f2a764e327fe6ef4e13f21804eaac51bb7b",
+      "reference_words": 41,
+      "candidate_words": 0,
+      "sample_status": "insufficient_evidence",
+      "automatic_result_sha256": "2a03bdd92158111b541ce45365a87d7bb5429ae08126737ee71598811a7de86f"
+    },
+    {
+      "sample_id": "-mJ2ud6oKI8$_$6",
+      "source_sha256": "134a3a4ebbc423760133b0da0e90cfe84d75ea85df3968000afd84153c5d828d",
+      "reference_words": 5,
+      "candidate_words": 0,
+      "sample_status": "no_informative_support",
+      "automatic_result_sha256": "90b2625de8914bcdf3ad351aa63ca3cbd3afde638c250ca5203d70ba0b79656e"
+    },
+    {
+      "sample_id": "-qDkUB0GgYY$_$6",
+      "source_sha256": "ab19bf4a761d3919b7113b1104ccaadbbf0c4e7b45694904d094280a2c329c8b",
+      "reference_words": 16,
+      "candidate_words": 9,
+      "sample_status": "supported",
+      "automatic_result_sha256": "d128e2a7a56d3ab4fc8b7a94fa569c5c0a1954144fe843d7b06f5542a867e8e4"
+    },
+    {
+      "sample_id": "-ri04Z7vwnc$_$0",
+      "source_sha256": "93021c70c8fad20ad3fded80e7fc790a2f9c96835de58a3b694c6906de42684b",
+      "reference_words": 8,
+      "candidate_words": 0,
+      "sample_status": "no_informative_support",
+      "automatic_result_sha256": "d109b2d23a490f0c36885509f71bc6f101ad0be7e07a157672ee7e6867890bc7"
+    },
+    {
+      "sample_id": "-tANM6ETl_M$_$3",
+      "source_sha256": "6d3af064c060dad3816a9e1dfa00101faebd8b7da7d8ceea85b0bc0fca70abd6",
+      "reference_words": 22,
+      "candidate_words": 20,
+      "sample_status": "supported",
+      "automatic_result_sha256": "d38eb00326bd887a55e2631a405ca2640b0d2b47817228b10c39bd884a87bbb3"
+    },
+    {
+      "sample_id": "-wny0OAz3g8$_$5",
+      "source_sha256": "6c6a8a4cba654b25190ab1793bfae81c3d2159ecd6cbc02d3fcbd598543acce0",
+      "reference_words": 20,
+      "candidate_words": 18,
+      "sample_status": "supported",
+      "automatic_result_sha256": "a609f2aab17c8fe9a7900927c81ffcac01ce34d16df77ecd27bb75f5409084c6"
+    },
+    {
+      "sample_id": "-wMB_hJL-3o$_$7",
+      "source_sha256": "04a73d73fd150b07edab8e652fd14c9cb4a0f6e017ea97b17e8146e377b9fae7",
+      "reference_words": 22,
+      "candidate_words": 22,
+      "sample_status": "supported",
+      "automatic_result_sha256": "6032555c1b98bfc2cdea387aea91e5fc6e065418e926654944225f7bd8f384e5"
+    },
+    {
+      "sample_id": "-vxjVxOeScU$_$4",
+      "source_sha256": "00282df9a314394f19d616d561bd1916d1d30dca4c814dfb43630ca164f4c719",
+      "reference_words": 21,
+      "candidate_words": 17,
+      "sample_status": "supported",
+      "automatic_result_sha256": "4688d8c1e48eaad1646753e79ecea867844e11d93721197e37fade5bb04c8ed7"
+    }
+  ],
+  "metrics": [
+    "completed/uncertain/unfilled counts",
+    "candidate coverage among reference words grouped by complete/partial/absent",
+    "number of absent-content samples with any candidate"
+  ],
+  "limits": [
+    "No timing error from content judgments.",
+    "No per-word precision inferred from a complete-content judgment.",
+    "Eight source-selected clips are a pilot, not general performance proof.",
+    "If feedback is used to alter the method, classify this set as development data."
+  ],
+  "reference_status": "unfilled"
+}

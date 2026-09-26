@@ -1,0 +1,59 @@
+{
+  "status": "passed",
+  "scored_cases_checked": 4701,
+  "context_windows_checked": 9402,
+  "original_files_unchanged": 102,
+  "frozen_generated_files_unchanged": 959,
+  "base_outputs_unchanged": true,
+  "new_words_promoted": 0,
+  "research_test_cases_available": 14,
+  "repeat_inference_equal_arrays": 200,
+  "protocol_sha256": "bb16b785549a9e7a124453053979c9668b9bdd08c2303c49cee5419f0d0e27ad",
+  "enhancement_rebuild_exact": true,
+  "enhancement": {
+    "samples": 100,
+    "candidate_decisions": 393,
+    "statuses": {
+      "acoustic_checks_failed": 365,
+      "already_covered": 22,
+      "base_relation_conflict": 3,
+      "existing_time_conflict": 2,
+      "supplemental_phrase_candidate": 1
+    },
+    "potential_new_words": 3,
+    "new_words_promoted": 0
+  },
+  "correspondence_inventory_rebuild_exact": true,
+  "correspondence": {
+    "samples": 100,
+    "words": 1932,
+    "states": {
+      "approximate_text_only": 16,
+      "insufficient_sample_support": 102,
+      "no_audio_signal": 24,
+      "no_informative_anchor": 216,
+      "phrase_candidate": 71,
+      "time_conflict": 9,
+      "unmatched_or_ambiguous": 96,
+      "unstable_boundary": 1,
+      "word_candidate": 1397
+    },
+    "unresolved_in_base": 464,
+    "local_omission_tested_words": 641,
+    "local_omission_supported_words": 0,
+    "unresolved_with_local_omission_tests": 77,
+    "unresolved_with_local_omission_support": 0,
+    "visual": {
+      "sampled_frames": 4030,
+      "frames_with_face_detections": 3703,
+      "frames_without_face_detections": 327,
+      "face_events": 3789,
+      "multiple_face_frames": 67,
+      "samples_without_face_detections": 6
+    },
+    "nonzero_audio_words_declared_globally_absent": 0
+  },
+  "local_omission_tests": 641,
+  "local_omission_supported_tests": 0,
+  "measurement_scope": "Fixed model-score rules, development and constructed controls, repeatability. No independent precision estimate."
+}

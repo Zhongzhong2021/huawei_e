@@ -1,0 +1,14 @@
+{
+  "python": "3.10.12",
+  "packages": {
+    "torch": "2.6.0+cpu",
+    "transformers": "4.48.3",
+    "numpy": "1.26.4",
+    "scipy": "1.14.1",
+    "phonemizer": "3.3.0",
+    "num2words": "0.5.14"
+  },
+  "espeak": "eSpeak NG text-to-speech: 1.50  Data at: /usr/lib/x86_64-linux-gnu/espeak-ng-data",
+  "inference_device": "cpu",
+  "torch_threads": 2
+}

@@ -1,0 +1,91 @@
+{
+  "sample_id": "-HwX2H8Z4hY$_$5",
+  "source_sha256": "8d61b7f5840a8bd403d9bc6c3cd49029ffc4e304cf9c7834735c1a6bb5fd369d",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " President Ronald Reagan blamed the professional bureaucracy of education.",
+      "start": 0.0,
+      "end": 4.6,
+      "avg_logprob": -0.1534705528846154,
+      "no_speech_prob": 0.039947509765625
+    }
+  ],
+  "words": [
+    {
+      "text": " President",
+      "interval_s": [
+        0.0,
+        0.88
+      ],
+      "probability": 0.95703125
+    },
+    {
+      "text": " Ronald",
+      "interval_s": [
+        0.88,
+        1.4
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " Reagan",
+      "interval_s": [
+        1.4,
+        1.88
+      ],
+      "probability": 0.99072265625
+    },
+    {
+      "text": " blamed",
+      "interval_s": [
+        1.88,
+        2.3
+      ],
+      "probability": 0.9765625
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        2.3,
+        2.66
+      ],
+      "probability": 0.990234375
+    },
+    {
+      "text": " professional",
+      "interval_s": [
+        2.66,
+        3.02
+      ],
+      "probability": 0.84814453125
+    },
+    {
+      "text": " bureaucracy",
+      "interval_s": [
+        3.02,
+        3.64
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        3.64,
+        4.28
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " education.",
+      "interval_s": [
+        4.28,
+        4.6
+      ],
+      "probability": 0.99462890625
+    }
+  ],
+  "elapsed_s": 0.5485739459982142
+}

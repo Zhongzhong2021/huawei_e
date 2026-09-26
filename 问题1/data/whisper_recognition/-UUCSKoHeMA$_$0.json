@@ -1,0 +1,202 @@
+{
+  "sample_id": "-UUCSKoHeMA$_$0",
+  "source_sha256": "3f9792888ec8e969f61cfb6cb4de7bdf7ef8944afe0a9d2a9d13586e1f13b898",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " Okay, I mentioned a word in the last clip called monotone, and I want to talk about",
+      "start": 0.8600000000000001,
+      "end": 6.28,
+      "avg_logprob": -0.211875,
+      "no_speech_prob": 0.2027587890625
+    },
+    {
+      "text": " that briefly. What you do",
+      "start": 6.28,
+      "end": 7.6,
+      "avg_logprob": -0.6501736111111112,
+      "no_speech_prob": 0.439697265625
+    }
+  ],
+  "words": [
+    {
+      "text": " Okay,",
+      "interval_s": [
+        0.8600000000000001,
+        1.34
+      ],
+      "probability": 0.6533203125
+    },
+    {
+      "text": " I",
+      "interval_s": [
+        1.38,
+        1.5
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " mentioned",
+      "interval_s": [
+        1.5,
+        1.8
+      ],
+      "probability": 0.9912109375
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        1.8,
+        2.04
+      ],
+      "probability": 0.94775390625
+    },
+    {
+      "text": " word",
+      "interval_s": [
+        2.04,
+        2.26
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " in",
+      "interval_s": [
+        2.26,
+        2.64
+      ],
+      "probability": 0.9931640625
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        2.64,
+        2.78
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " last",
+      "interval_s": [
+        2.78,
+        3.06
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " clip",
+      "interval_s": [
+        3.06,
+        3.48
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " called",
+      "interval_s": [
+        3.48,
+        3.86
+      ],
+      "probability": 0.98046875
+    },
+    {
+      "text": " monotone,",
+      "interval_s": [
+        3.86,
+        4.88
+      ],
+      "probability": 0.9152018229166666
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        4.96,
+        5.44
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " I",
+      "interval_s": [
+        5.44,
+        5.56
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " want",
+      "interval_s": [
+        5.56,
+        5.7
+      ],
+      "probability": 0.98974609375
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        5.7,
+        5.8
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " talk",
+      "interval_s": [
+        5.8,
+        6.02
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " about",
+      "interval_s": [
+        6.02,
+        6.28
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " that",
+      "interval_s": [
+        6.28,
+        6.48
+      ],
+      "probability": 0.407958984375
+    },
+    {
+      "text": " briefly.",
+      "interval_s": [
+        6.48,
+        6.84
+      ],
+      "probability": 0.97998046875
+    },
+    {
+      "text": " What",
+      "interval_s": [
+        7.14,
+        7.36
+      ],
+      "probability": 0.9033203125
+    },
+    {
+      "text": " you",
+      "interval_s": [
+        7.36,
+        7.5
+      ],
+      "probability": 0.98681640625
+    },
+    {
+      "text": " do",
+      "interval_s": [
+        7.5,
+        7.6
+      ],
+      "probability": 0.5888671875
+    }
+  ],
+  "elapsed_s": 1.0574499919894151
+}

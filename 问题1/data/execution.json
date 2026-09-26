@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "validate_review.py": "7266ebd9d27ad9fadf70890af91f542ba0dc3ebde2b5553b02628b2b48169e0b",
+    "extract.py": "b3a9398304dc0b292c62d1befce4d48800b612c8a472686caf54c11a1af87ca3",
+    "source_info.py": "2d0cffe719b93744c2c5bf1f33e2b9bbda47e439d77bf9513ec31393dc4e9131",
+    "common.py": "dc44a81c4a88fc18d35f44f3eca05294f7831b36c3c8976b46f8b48daf02734f",
+    "math_features.py": "612a124aeb397f8b8b97d5fb4fcd4622ffcadde60e0dfad0b2917ea0094228aa",
+    "local_alignment.py": "6604c4186241cd9c2eb2ed936d91f1583e3931f8843a7a3e503ecedcd64a146a",
+    "audit.py": "b5a7d5bf696ac2d77f49ba424c65a504eb0b2619efc54cb111040ef604d68b58",
+    "ctc_alignment.py": "107e8f1a55fe7513a70ee6d82e8036dd4ee7ca2ae3be1d54f5aa5e9618bb9255",
+    "verify.py": "cf65dc49a4bec023d33631ca7068a564ecef1666142692894bca1c819c041ab6",
+    "feature_io.py": "057b5390733e83eb142e929bc1e9e6425abf4eaf3c89eaa2e5fe0e3e6a037239",
+    "build_review.py": "4ca4589113557e25a8d2aa534b02ab984add9c36de7cc6eb51dba1ecc21dd7e7"
+  },
+  "torch": "2.6.0+cpu",
+  "started": 1790429037.9341846
+}

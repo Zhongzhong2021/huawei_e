@@ -1,0 +1,590 @@
+{
+  "schema": "q1-independent-phonetic-candidate-evaluation-v1",
+  "use": "Independent evaluation only. Never read by proposal, inference or scoring code.",
+  "candidates": [
+    {
+      "sample_id": "-dxfTGcXJoc$_$0",
+      "source_sha256": "04bd0be907fb46c613f926fe1b06bc2c3b30881c293156510baa34a4105ade55",
+      "source_path": "MOSEI数据集部分原始视频-100条/-dxfTGcXJoc/0.mp4",
+      "word_indices": [
+        32,
+        33,
+        34
+      ],
+      "new_word_indices": [
+        32,
+        34
+      ],
+      "reference_words": [
+        "nutrigenomics",
+        "and",
+        "pharmaceuticals"
+      ],
+      "candidate_interval_s": [
+        14.72,
+        17.28
+      ],
+      "evidence": [
+        {
+          "context_s": 0.0,
+          "frame_span": [
+            736,
+            864
+          ],
+          "interval_s": [
+            14.72246875,
+            17.28246875
+          ],
+          "accepted": true,
+          "status": "model_supported",
+          "closed_set_accepted": true,
+          "unconstrained_score": -4.490252494812012,
+          "open_set_margin": -40.89804553985596,
+          "normalized_open_set_margin": -1.5147424274020724,
+          "target_minimum_phones": 27,
+          "target_score": -45.38829803466797,
+          "competitor_scores": {
+            "delete_0": -126.91751861572266,
+            "delete_1": -68.93083190917969,
+            "delete_2": -127.26090240478516
+          },
+          "margins": {
+            "delete_0": 81.52922058105469,
+            "delete_1": 23.54253387451172,
+            "delete_2": 81.87260437011719
+          },
+          "target_variants": 1,
+          "asr_phonemically_equivalent": true
+        },
+        {
+          "context_s": 0.1,
+          "frame_span": [
+            731,
+            869
+          ],
+          "interval_s": [
+            14.62246875,
+            17.38246875
+          ],
+          "accepted": true,
+          "status": "model_supported",
+          "closed_set_accepted": true,
+          "unconstrained_score": -4.486398220062256,
+          "open_set_margin": -58.198904514312744,
+          "normalized_open_set_margin": -2.1555149820115833,
+          "target_minimum_phones": 27,
+          "target_score": -62.685302734375,
+          "competitor_scores": {
+            "delete_0": -144.21490478515625,
+            "delete_1": -86.22783660888672,
+            "delete_2": -144.5579071044922
+          },
+          "margins": {
+            "delete_0": 81.52960205078125,
+            "delete_1": 23.54253387451172,
+            "delete_2": 81.87260437011719
+          },
+          "target_variants": 1,
+          "asr_phonemically_equivalent": true
+        }
+      ],
+      "status": "research_candidate_pending_independent_evaluation",
+      "human_review": {
+        "content": "",
+        "timing": "",
+        "note": ""
+      },
+      "stable_results_modified": false,
+      "internal_word_times_assigned": false
+    },
+    {
+      "sample_id": "-dxfTGcXJoc$_$2",
+      "source_sha256": "46a5e523b5dd00364c99a3bcbc6fae4c80e1382a84b5b5e681c46eb074ed10f7",
+      "source_path": "MOSEI数据集部分原始视频-100条/-dxfTGcXJoc/2.mp4",
+      "word_indices": [
+        1,
+        2,
+        3
+      ],
+      "new_word_indices": [
+        3
+      ],
+      "reference_words": [
+        "estimated",
+        "20,000",
+        "biotech"
+      ],
+      "candidate_interval_s": [
+        0.58,
+        2.92
+      ],
+      "evidence": [
+        {
+          "context_s": 0.0,
+          "frame_span": [
+            29,
+            146
+          ],
+          "interval_s": [
+            0.58246875,
+            2.92246875
+          ],
+          "accepted": true,
+          "status": "model_supported",
+          "closed_set_accepted": true,
+          "unconstrained_score": -3.9070186614990234,
+          "open_set_margin": -25.802915573120117,
+          "normalized_open_set_margin": -0.9556635397451895,
+          "target_minimum_phones": 27,
+          "target_score": -29.70993423461914,
+          "competitor_scores": {
+            "delete_0": -99.42806243896484,
+            "delete_1": -101.54090881347656,
+            "delete_2": -50.571006774902344,
+            "asr_alternative": -73.03116607666016
+          },
+          "margins": {
+            "delete_0": 69.7181282043457,
+            "delete_1": 71.83097457885742,
+            "delete_2": 20.861072540283203,
+            "asr_alternative": 43.321231842041016
+          },
+          "target_variants": 1,
+          "asr_phonemically_equivalent": false
+        },
+        {
+          "context_s": 0.1,
+          "frame_span": [
+            24,
+            151
+          ],
+          "interval_s": [
+            0.48246875,
+            3.02246875
+          ],
+          "accepted": true,
+          "status": "model_supported",
+          "closed_set_accepted": true,
+          "unconstrained_score": -4.496257305145264,
+          "open_set_margin": -32.64908266067505,
+          "normalized_open_set_margin": -1.2092252837287054,
+          "target_minimum_phones": 27,
+          "target_score": -37.14533996582031,
+          "competitor_scores": {
+            "delete_0": -106.86396026611328,
+            "delete_1": -108.97631072998047,
+            "delete_2": -75.48352813720703,
+            "asr_alternative": -80.46656799316406
+          },
+          "margins": {
+            "delete_0": 69.71862030029297,
+            "delete_1": 71.83097076416016,
+            "delete_2": 38.33818817138672,
+            "asr_alternative": 43.32122802734375
+          },
+          "target_variants": 1,
+          "asr_phonemically_equivalent": false
+        }
+      ],
+      "status": "research_candidate_pending_independent_evaluation",
+      "human_review": {
+        "content": "",
+        "timing": "",
+        "note": ""
+      },
+      "stable_results_modified": false,
+      "internal_word_times_assigned": false
+    },
+    {
+      "sample_id": "-AUZQgSxyPQ$_$2",
+      "source_sha256": "e09034b30bb4f8fb9f9c2568afc20f2a764e327fe6ef4e13f21804eaac51bb7b",
+      "source_path": "MOSEI数据集部分原始视频-100条/-AUZQgSxyPQ/2.mp4",
+      "word_indices": [
+        9,
+        10,
+        11
+      ],
+      "new_word_indices": [
+        10
+      ],
+      "reference_words": [
+        "Brush",
+        "this",
+        "gentle"
+      ],
+      "candidate_interval_s": [
+        3.94,
+        5.54
+      ],
+      "evidence": [
+        {
+          "context_s": 0.0,
+          "frame_span": [
+            197,
+            277
+          ],
+          "interval_s": [
+            3.9424687499999997,
+            5.542468749999999
+          ],
+          "accepted": true,
+          "status": "model_supported",
+          "closed_set_accepted": true,
+          "unconstrained_score": -4.3827033042907715,
+          "open_set_margin": 0.0,
+          "normalized_open_set_margin": 0.0,
+          "target_minimum_phones": 12,
+          "target_score": -4.3827033042907715,
+          "competitor_scores": {
+            "delete_0": -27.673933029174805,
+            "delete_1": -19.581480026245117,
+            "delete_2": -38.47545623779297
+          },
+          "margins": {
+            "delete_0": 23.291229724884033,
+            "delete_1": 15.198776721954346,
+            "delete_2": 34.0927529335022
+          },
+          "target_variants": 1,
+          "asr_phonemically_equivalent": true
+        },
+        {
+          "context_s": 0.1,
+          "frame_span": [
+            192,
+            282
+          ],
+          "interval_s": [
+            3.84246875,
+            5.64246875
+          ],
+          "accepted": true,
+          "status": "model_supported",
+          "closed_set_accepted": true,
+          "unconstrained_score": -4.701085567474365,
+          "open_set_margin": -5.243854999542236,
+          "normalized_open_set_margin": -0.4369879166285197,
+          "target_minimum_phones": 12,
+          "target_score": -9.944940567016602,
+          "competitor_scores": {
+            "delete_0": -33.236244201660156,
+            "delete_1": -25.14372444152832,
+            "delete_2": -44.03768539428711
+          },
+          "margins": {
+            "delete_0": 23.291303634643555,
+            "delete_1": 15.198783874511719,
+            "delete_2": 34.09274482727051
+          },
+          "target_variants": 1,
+          "asr_phonemically_equivalent": true
+        }
+      ],
+      "status": "research_candidate_pending_independent_evaluation",
+      "human_review": {
+        "content": "",
+        "timing": "",
+        "note": ""
+      },
+      "stable_results_modified": false,
+      "internal_word_times_assigned": false
+    },
+    {
+      "sample_id": "-AUZQgSxyPQ$_$2",
+      "source_sha256": "e09034b30bb4f8fb9f9c2568afc20f2a764e327fe6ef4e13f21804eaac51bb7b",
+      "source_path": "MOSEI数据集部分原始视频-100条/-AUZQgSxyPQ/2.mp4",
+      "word_indices": [
+        24,
+        25,
+        26
+      ],
+      "new_word_indices": [
+        24,
+        25,
+        26
+      ],
+      "reference_words": [
+        "bamboo",
+        "and",
+        "prickly"
+      ],
+      "candidate_interval_s": [
+        12.44,
+        14.02
+      ],
+      "evidence": [
+        {
+          "context_s": 0.0,
+          "frame_span": [
+            622,
+            701
+          ],
+          "interval_s": [
+            12.44246875,
+            14.02246875
+          ],
+          "accepted": true,
+          "status": "model_supported",
+          "closed_set_accepted": true,
+          "unconstrained_score": -5.417241096496582,
+          "open_set_margin": -9.555498123168945,
+          "normalized_open_set_margin": -0.6825355802263532,
+          "target_minimum_phones": 14,
+          "target_score": -14.972739219665527,
+          "competitor_scores": {
+            "delete_0": -43.311973571777344,
+            "delete_1": -26.550914764404297,
+            "delete_2": -29.186962127685547
+          },
+          "margins": {
+            "delete_0": 28.339234352111816,
+            "delete_1": 11.57817554473877,
+            "delete_2": 14.21422290802002
+          },
+          "target_variants": 1,
+          "asr_phonemically_equivalent": true
+        },
+        {
+          "context_s": 0.1,
+          "frame_span": [
+            617,
+            706
+          ],
+          "interval_s": [
+            12.34246875,
+            14.12246875
+          ],
+          "accepted": true,
+          "status": "model_supported",
+          "closed_set_accepted": true,
+          "unconstrained_score": -5.565890789031982,
+          "open_set_margin": -22.744389057159424,
+          "normalized_open_set_margin": -1.6245992183685303,
+          "target_minimum_phones": 14,
+          "target_score": -28.310279846191406,
+          "competitor_scores": {
+            "delete_0": -56.64904022216797,
+            "delete_1": -39.88844299316406,
+            "delete_2": -42.52448272705078
+          },
+          "margins": {
+            "delete_0": 28.338760375976562,
+            "delete_1": 11.578163146972656,
+            "delete_2": 14.214202880859375
+          },
+          "target_variants": 1,
+          "asr_phonemically_equivalent": true
+        }
+      ],
+      "status": "research_candidate_pending_independent_evaluation",
+      "human_review": {
+        "content": "",
+        "timing": "",
+        "note": ""
+      },
+      "stable_results_modified": false,
+      "internal_word_times_assigned": false
+    },
+    {
+      "sample_id": "-THoVjtIkeU$_$12",
+      "source_sha256": "e2f148f4f2e74724dc13b3ce870a0ce6a06740cfc224f5a9b3d0a870b196e7d4",
+      "source_path": "MOSEI数据集部分原始视频-100条/-THoVjtIkeU/12.mp4",
+      "word_indices": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "new_word_indices": [
+        6,
+        7
+      ],
+      "reference_words": [
+        "attention",
+        "to",
+        "is",
+        "what",
+        "grows"
+      ],
+      "candidate_interval_s": [
+        2.36,
+        3.68
+      ],
+      "evidence": [
+        {
+          "context_s": 0.0,
+          "frame_span": [
+            118,
+            184
+          ],
+          "interval_s": [
+            2.3624687499999997,
+            3.68246875
+          ],
+          "accepted": true,
+          "status": "model_supported",
+          "closed_set_accepted": true,
+          "unconstrained_score": -2.582629919052124,
+          "open_set_margin": -16.332624894399927,
+          "normalized_open_set_margin": -0.9073680496888848,
+          "target_minimum_phones": 18,
+          "target_score": -18.91525481345205,
+          "competitor_scores": {
+            "delete_0": -67.87013623986932,
+            "delete_1": -31.612451553344727,
+            "delete_2": -35.808035735015736,
+            "delete_3": -39.45975570116714,
+            "delete_4": -29.220803064448386
+          },
+          "margins": {
+            "delete_0": 48.95488142641727,
+            "delete_1": 12.697196739892675,
+            "delete_2": 16.892780921563684,
+            "delete_3": 20.54450088771509,
+            "delete_4": 10.305548250996335
+          },
+          "target_variants": 2,
+          "asr_phonemically_equivalent": true
+        },
+        {
+          "context_s": 0.1,
+          "frame_span": [
+            113,
+            189
+          ],
+          "interval_s": [
+            2.26246875,
+            3.7824687499999996
+          ],
+          "accepted": true,
+          "status": "model_supported",
+          "closed_set_accepted": true,
+          "unconstrained_score": -3.177931070327759,
+          "open_set_margin": -35.53135443901054,
+          "normalized_open_set_margin": -1.9739641355005857,
+          "target_minimum_phones": 18,
+          "target_score": -38.7092855093383,
+          "competitor_scores": {
+            "delete_0": -87.99543652809484,
+            "delete_1": -51.40646743774414,
+            "delete_2": -55.60204971206652,
+            "delete_3": -59.25378013824455,
+            "delete_4": -49.10367943023674
+          },
+          "margins": {
+            "delete_0": 49.28615101875654,
+            "delete_1": 12.69718192840584,
+            "delete_2": 16.892764202728216,
+            "delete_3": 20.54449462890625,
+            "delete_4": 10.394393920898438
+          },
+          "target_variants": 2,
+          "asr_phonemically_equivalent": true
+        }
+      ],
+      "status": "research_candidate_pending_independent_evaluation",
+      "human_review": {
+        "content": "",
+        "timing": "",
+        "note": ""
+      },
+      "stable_results_modified": false,
+      "internal_word_times_assigned": false
+    },
+    {
+      "sample_id": "-3g5yACwYnA$_$3",
+      "source_sha256": "eff8cfefba2425155f2b72656829b34b23be8bfe1dcbece384154f56818aa26d",
+      "source_path": "MOSEI数据集部分原始视频-100条/-3g5yACwYnA/3.mp4",
+      "word_indices": [
+        0,
+        1,
+        2
+      ],
+      "new_word_indices": [
+        0
+      ],
+      "reference_words": [
+        "We're",
+        "a",
+        "huge"
+      ],
+      "candidate_interval_s": [
+        0.0,
+        1.54
+      ],
+      "evidence": [
+        {
+          "context_s": 0.0,
+          "frame_span": [
+            0,
+            77
+          ],
+          "interval_s": [
+            0.0,
+            1.54246875
+          ],
+          "accepted": true,
+          "status": "model_supported",
+          "closed_set_accepted": true,
+          "unconstrained_score": -4.163412570953369,
+          "open_set_margin": -15.454430269814416,
+          "normalized_open_set_margin": -2.207775752830631,
+          "target_minimum_phones": 7,
+          "target_score": -19.617842840767786,
+          "competitor_scores": {
+            "delete_0": -27.765621439496766,
+            "delete_1": -22.678869247436523,
+            "delete_2": -24.795478898991416
+          },
+          "margins": {
+            "delete_0": 8.14777859872898,
+            "delete_1": 3.061026406668738,
+            "delete_2": 5.17763605822363
+          },
+          "target_variants": 4,
+          "asr_phonemically_equivalent": true
+        },
+        {
+          "context_s": 0.1,
+          "frame_span": [
+            0,
+            82
+          ],
+          "interval_s": [
+            0.0,
+            1.64246875
+          ],
+          "accepted": true,
+          "status": "model_supported",
+          "closed_set_accepted": true,
+          "unconstrained_score": -4.166186332702637,
+          "open_set_margin": -15.398996519661829,
+          "normalized_open_set_margin": -2.1998566456659754,
+          "target_minimum_phones": 7,
+          "target_score": -19.565182852364465,
+          "competitor_scores": {
+            "delete_0": -27.712965547670542,
+            "delete_1": -22.6262149810791,
+            "delete_2": -24.79827469510646
+          },
+          "margins": {
+            "delete_0": 8.147782695306077,
+            "delete_1": 3.0610321287146363,
+            "delete_2": 5.233091842741995
+          },
+          "target_variants": 4,
+          "asr_phonemically_equivalent": true
+        }
+      ],
+      "status": "research_candidate_pending_independent_evaluation",
+      "human_review": {
+        "content": "",
+        "timing": "",
+        "note": ""
+      },
+      "stable_results_modified": false,
+      "internal_word_times_assigned": false
+    }
+  ]
+}

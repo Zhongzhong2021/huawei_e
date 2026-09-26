@@ -1,0 +1,91 @@
+{
+  "sample_id": "-9y-fZ3swSY$_$4",
+  "source_sha256": "fe04a26710e85c58bdaad5a48618c7e0f742d82b0d920eb4a046c8f14a6921dc",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " I've seen this in US or in the US.",
+      "start": 0.0,
+      "end": 2.24,
+      "avg_logprob": -0.16336494897093093,
+      "no_speech_prob": 0.0738525390625
+    }
+  ],
+  "words": [
+    {
+      "text": " I've",
+      "interval_s": [
+        0.0,
+        0.42
+      ],
+      "probability": 0.892333984375
+    },
+    {
+      "text": " seen",
+      "interval_s": [
+        0.42,
+        0.64
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " this",
+      "interval_s": [
+        0.64,
+        0.82
+      ],
+      "probability": 0.98486328125
+    },
+    {
+      "text": " in",
+      "interval_s": [
+        0.82,
+        1.02
+      ],
+      "probability": 0.98828125
+    },
+    {
+      "text": " US",
+      "interval_s": [
+        1.02,
+        1.26
+      ],
+      "probability": 0.60009765625
+    },
+    {
+      "text": " or",
+      "interval_s": [
+        1.26,
+        1.76
+      ],
+      "probability": 0.84912109375
+    },
+    {
+      "text": " in",
+      "interval_s": [
+        1.76,
+        1.94
+      ],
+      "probability": 0.97119140625
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        1.94,
+        2.06
+      ],
+      "probability": 0.966796875
+    },
+    {
+      "text": " US.",
+      "interval_s": [
+        2.06,
+        2.24
+      ],
+      "probability": 0.97216796875
+    }
+  ],
+  "elapsed_s": 0.4469372890307568
+}

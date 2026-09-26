@@ -1,0 +1,45 @@
+{
+  "status": "research_complete_not_promoted",
+  "modes": {
+    "canonical": {
+      "accepted_groups": 21,
+      "union_covered_words": 76,
+      "provisional_new_words_vs_stable": 9,
+      "shifted_accepted": 0,
+      "shifted_trials": 388,
+      "corrupted_accepted": 0,
+      "corrupted_trials": 393,
+      "injected_accepted": 0,
+      "injected_trials": 393
+    },
+    "contextual": {
+      "accepted_groups": 28,
+      "union_covered_words": 103,
+      "provisional_new_words_vs_stable": 10,
+      "shifted_accepted": 0,
+      "shifted_trials": 388,
+      "corrupted_accepted": 0,
+      "corrupted_trials": 393,
+      "injected_accepted": 0,
+      "injected_trials": 393
+    },
+    "lexicon": {
+      "accepted_groups": 17,
+      "union_covered_words": 62,
+      "provisional_new_words_vs_stable": 10,
+      "shifted_accepted": 0,
+      "shifted_trials": 388,
+      "corrupted_accepted": 0,
+      "corrupted_trials": 393,
+      "injected_accepted": 0,
+      "injected_trials": 393
+    }
+  },
+  "protocol_sha256": "bb16b785549a9e7a124453053979c9668b9bdd08c2303c49cee5419f0d0e27ad",
+  "stable_archive_sha256": "79f2ce637b0736c22f338374e855ef6ac2bd840d62024c3ba17797111b6d8bd8",
+  "independent_accuracy_measured": false,
+  "stable_outputs_changed": false,
+  "new_review_groups": 6,
+  "decision": "Contextual pronunciation is the preferred next evaluation branch; no automatic merge into stable predictions. Fixed control behavior does not establish natural speech precision.",
+  "development_limits": "Per-phone open-score normalization was introduced during development after whole-sequence scoring rejected all proposals. Shift and corruption controls informed the design; injected different-video controls were specified after freezing v3. No threshold sweep was performed."
+}

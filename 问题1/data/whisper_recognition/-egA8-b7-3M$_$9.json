@@ -1,0 +1,99 @@
+{
+  "sample_id": "-egA8-b7-3M$_$9",
+  "source_sha256": "bcd643f328616312eae9b28e6c9aabbe8acaec3e4c4be58daeb45e3eee4d973c",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " Secondly, another goal of exhibiting is building your company image.",
+      "start": 0.0,
+      "end": 4.1,
+      "avg_logprob": -0.2346191368997097,
+      "no_speech_prob": 0.0055694580078125
+    }
+  ],
+  "words": [
+    {
+      "text": " Secondly,",
+      "interval_s": [
+        0.0,
+        0.88
+      ],
+      "probability": 0.93115234375
+    },
+    {
+      "text": " another",
+      "interval_s": [
+        1.0,
+        1.28
+      ],
+      "probability": 0.9931640625
+    },
+    {
+      "text": " goal",
+      "interval_s": [
+        1.28,
+        1.74
+      ],
+      "probability": 0.9921875
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        1.74,
+        1.94
+      ],
+      "probability": 0.9892578125
+    },
+    {
+      "text": " exhibiting",
+      "interval_s": [
+        1.94,
+        2.48
+      ],
+      "probability": 0.995849609375
+    },
+    {
+      "text": " is",
+      "interval_s": [
+        2.48,
+        2.66
+      ],
+      "probability": 0.97509765625
+    },
+    {
+      "text": " building",
+      "interval_s": [
+        2.66,
+        3.08
+      ],
+      "probability": 0.95849609375
+    },
+    {
+      "text": " your",
+      "interval_s": [
+        3.08,
+        3.36
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " company",
+      "interval_s": [
+        3.36,
+        3.72
+      ],
+      "probability": 0.98681640625
+    },
+    {
+      "text": " image.",
+      "interval_s": [
+        3.72,
+        4.1
+      ],
+      "probability": 0.99365234375
+    }
+  ],
+  "elapsed_s": 0.6202810480026528
+}

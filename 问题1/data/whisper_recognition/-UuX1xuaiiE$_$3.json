@@ -1,0 +1,91 @@
+{
+  "sample_id": "-UuX1xuaiiE$_$3",
+  "source_sha256": "eddb408f25bdc13e6de2fb74caeed709cb7a8f00640e7897135330437f66a2aa",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " My goal is to become a human rights lawyer.",
+      "start": 0.0,
+      "end": 3.38,
+      "avg_logprob": -0.24594351878532997,
+      "no_speech_prob": 0.0775146484375
+    }
+  ],
+  "words": [
+    {
+      "text": " My",
+      "interval_s": [
+        0.0,
+        0.54
+      ],
+      "probability": 0.39111328125
+    },
+    {
+      "text": " goal",
+      "interval_s": [
+        0.54,
+        0.76
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " is",
+      "interval_s": [
+        0.76,
+        1.18
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        1.18,
+        1.42
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " become",
+      "interval_s": [
+        1.42,
+        1.88
+      ],
+      "probability": 0.99365234375
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        1.88,
+        2.2
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " human",
+      "interval_s": [
+        2.2,
+        2.78
+      ],
+      "probability": 0.9736328125
+    },
+    {
+      "text": " rights",
+      "interval_s": [
+        2.78,
+        2.98
+      ],
+      "probability": 0.994140625
+    },
+    {
+      "text": " lawyer.",
+      "interval_s": [
+        2.98,
+        3.38
+      ],
+      "probability": 0.994140625
+    }
+  ],
+  "elapsed_s": 0.567728870024439
+}

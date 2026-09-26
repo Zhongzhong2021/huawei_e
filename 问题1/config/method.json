@@ -1,0 +1,58 @@
+{
+  "schema": "q1-reference-first-v1",
+  "status": "candidate_method_pending_targeted_review",
+  "audio_rate": 16000,
+  "audio_window": 400,
+  "audio_hop": 320,
+  "pitch_window": 1024,
+  "pitch_range_hz": [
+    50,
+    500
+  ],
+  "pitch_periodicity_min": 0.6,
+  "video_step_s": 0.2,
+  "image_width": 640,
+  "face_confidence": 0.5,
+  "face_max": 3,
+  "crop_fallback": [
+    [
+      0,
+      0,
+      0.6,
+      0.6
+    ],
+    [
+      0.4,
+      0,
+      1,
+      0.6
+    ],
+    [
+      0,
+      0.4,
+      0.6,
+      1
+    ],
+    [
+      0.4,
+      0.4,
+      1,
+      1
+    ]
+  ],
+  "face_duplicate_iou": 0.5,
+  "review_token_score": 0.5,
+  "review_boundary_difference_s": 0.2,
+  "review_context_s": 0.5,
+  "ctc_outer_wildcard_log_score": 0.0,
+  "automatic_acceptance": false,
+  "notes": [
+    "Reference text and character offsets are preserved.",
+    "Outside-reference audio may be represented by external CTC wildcards, never internal wildcards.",
+    "All reference words must be consumed in semi-global ASR comparison; internal edits retain their costs.",
+    "CTC scores are not calibrated probabilities of correct alignment.",
+    "Thresholds prioritize human review only, not final acceptance or tuned accuracy.",
+    "Human feedback informs method design, not retained as new validation data."
+  ],
+  "outer_boundary_implementation": "Two virtual wildcard-only frames permit empty outer spans; discard virtual frames and shift token indices back before mapping time."
+}

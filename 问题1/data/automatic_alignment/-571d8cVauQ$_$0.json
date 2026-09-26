@@ -1,0 +1,390 @@
+{
+  "context_envelopes": [
+    {
+      "word_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "interval_s": [
+        1.06246875,
+        3.06246875
+      ],
+      "left_anchor_word": null,
+      "right_anchor_word": 6,
+      "status": "context_only_not_alignment",
+      "automatic_eligible": false
+    }
+  ],
+  "sample_status": "supported",
+  "informative_anchors": 4,
+  "informative_reference_tokens": 8,
+  "informative_coverage": 0.5,
+  "edit_cost": 5.167,
+  "optimal_endpoints": [
+    10
+  ],
+  "words": [
+    {
+      "word_index": 0,
+      "text": "This",
+      "status": "unmatched_or_ambiguous",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 1,
+      "text": "is",
+      "status": "unmatched_or_ambiguous",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 2,
+      "text": "Rhett",
+      "status": "unmatched_or_ambiguous",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 3,
+      "text": "Reiger",
+      "status": "approximate_lexical_match",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": [
+        1.56246875,
+        1.88246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            2
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 4,
+      "text": "White",
+      "status": "unmatched_or_ambiguous",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 5,
+      "text": "Caspian",
+      "status": "unmatched_or_ambiguous",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 6,
+      "text": "Studios",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        2.6224687500000003,
+        3.06246875
+      ],
+      "diagnostic_interval_s": [
+        2.6224687500000003,
+        3.06246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            4
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 7,
+      "text": "on",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        3.14246875,
+        3.2024687500000004
+      ],
+      "diagnostic_interval_s": [
+        3.14246875,
+        3.2024687500000004
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            5
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 8,
+      "text": "behalf",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        3.26246875,
+        3.52246875
+      ],
+      "diagnostic_interval_s": [
+        3.26246875,
+        3.52246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            6
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 9,
+      "text": "of",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        3.6224687500000003,
+        3.6624687500000004
+      ],
+      "diagnostic_interval_s": [
+        3.6224687500000003,
+        3.6624687500000004
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            7
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 10,
+      "text": "Expert",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        3.7424687499999996,
+        4.042468749999999
+      ],
+      "diagnostic_interval_s": [
+        3.7424687499999996,
+        4.042468749999999
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            8
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 11,
+      "text": "Village",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        4.10246875,
+        4.402468750000001
+      ],
+      "diagnostic_interval_s": [
+        4.10246875,
+        4.402468750000001
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            9
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    }
+  ],
+  "automatic_eligible_words": 6,
+  "sample_id": "-571d8cVauQ$_$0",
+  "source_sha256": "defc62e1530d9b0cd27f2acfe042b71dd84d7e8c85f1df261f04912091976088",
+  "recognition": [
+    {
+      "text": "MISSUS",
+      "interval_s": [
+        1.06246875,
+        1.28246875
+      ],
+      "mean_emission_probability": 0.8986473282178243
+    },
+    {
+      "text": "RED",
+      "interval_s": [
+        1.34246875,
+        1.50246875
+      ],
+      "mean_emission_probability": 0.9197675387064616
+    },
+    {
+      "text": "RIGER",
+      "interval_s": [
+        1.56246875,
+        1.88246875
+      ],
+      "mean_emission_probability": 0.9764337182044983
+    },
+    {
+      "text": "WHITECASPING",
+      "interval_s": [
+        1.96246875,
+        2.5824687500000003
+      ],
+      "mean_emission_probability": 0.9059684822956721
+    },
+    {
+      "text": "STUDIOS",
+      "interval_s": [
+        2.6224687500000003,
+        3.06246875
+      ],
+      "mean_emission_probability": 0.9812067832265582
+    },
+    {
+      "text": "ON",
+      "interval_s": [
+        3.14246875,
+        3.2024687500000004
+      ],
+      "mean_emission_probability": 0.9498923420906067
+    },
+    {
+      "text": "BEHALF",
+      "interval_s": [
+        3.26246875,
+        3.52246875
+      ],
+      "mean_emission_probability": 0.9990363319714864
+    },
+    {
+      "text": "OF",
+      "interval_s": [
+        3.6224687500000003,
+        3.6624687500000004
+      ],
+      "mean_emission_probability": 0.990026593208313
+    },
+    {
+      "text": "EXPERT",
+      "interval_s": [
+        3.7424687499999996,
+        4.042468749999999
+      ],
+      "mean_emission_probability": 0.9567523797353109
+    },
+    {
+      "text": "VILLAGE",
+      "interval_s": [
+        4.10246875,
+        4.402468750000001
+      ],
+      "mean_emission_probability": 0.9989292621612549
+    }
+  ],
+  "baseline_candidate_words": 12,
+  "native_features_modified": false,
+  "human_data_used": false,
+  "config_sha256": "b0adbf96c3cfcda192429317763b44f8ab5da4453b7d1b4779664feccadecf7c"
+}

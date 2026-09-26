@@ -1,0 +1,107 @@
+{
+  "sample_id": "-iRBcNs9oI8$_$7",
+  "source_sha256": "cc7b1c7a06ec41d72007b5c42fb8036f30b66d5cf76e3f093160c22fc5e38081",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " interview. And this secret will also help you if you ever...",
+      "start": 0.0,
+      "end": 3.96,
+      "avg_logprob": -0.3366699256002903,
+      "no_speech_prob": 0.12237548828125
+    }
+  ],
+  "words": [
+    {
+      "text": " interview.",
+      "interval_s": [
+        0.0,
+        0.34
+      ],
+      "probability": 0.471923828125
+    },
+    {
+      "text": " And",
+      "interval_s": [
+        0.78,
+        1.36
+      ],
+      "probability": 0.9716796875
+    },
+    {
+      "text": " this",
+      "interval_s": [
+        1.36,
+        1.48
+      ],
+      "probability": 0.79541015625
+    },
+    {
+      "text": " secret",
+      "interval_s": [
+        1.48,
+        1.8
+      ],
+      "probability": 0.98828125
+    },
+    {
+      "text": " will",
+      "interval_s": [
+        1.8,
+        2.42
+      ],
+      "probability": 0.98779296875
+    },
+    {
+      "text": " also",
+      "interval_s": [
+        2.42,
+        2.72
+      ],
+      "probability": 0.98876953125
+    },
+    {
+      "text": " help",
+      "interval_s": [
+        2.72,
+        3.0
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " you",
+      "interval_s": [
+        3.0,
+        3.22
+      ],
+      "probability": 0.982421875
+    },
+    {
+      "text": " if",
+      "interval_s": [
+        3.22,
+        3.58
+      ],
+      "probability": 0.9482421875
+    },
+    {
+      "text": " you",
+      "interval_s": [
+        3.58,
+        3.74
+      ],
+      "probability": 0.9677734375
+    },
+    {
+      "text": " ever...",
+      "interval_s": [
+        3.74,
+        3.96
+      ],
+      "probability": 0.6099853515625
+    }
+  ],
+  "elapsed_s": 0.5673209320520982
+}

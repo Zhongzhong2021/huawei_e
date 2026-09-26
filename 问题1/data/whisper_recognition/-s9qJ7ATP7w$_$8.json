@@ -1,0 +1,147 @@
+{
+  "sample_id": "-s9qJ7ATP7w$_$8",
+  "source_sha256": "1de4d91bd9d9fb508a3779658747da88460db0bdb1beefe7ea5b2c77edfd2239",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " business and I said I'll make a profit and all these other things they said no",
+      "start": 0.0,
+      "end": 3.02,
+      "avg_logprob": -0.21718750670552253,
+      "no_speech_prob": 0.07830810546875
+    }
+  ],
+  "words": [
+    {
+      "text": " business",
+      "interval_s": [
+        0.0,
+        0.24
+      ],
+      "probability": 0.62841796875
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        0.24,
+        0.52
+      ],
+      "probability": 0.58544921875
+    },
+    {
+      "text": " I",
+      "interval_s": [
+        0.52,
+        0.64
+      ],
+      "probability": 0.57861328125
+    },
+    {
+      "text": " said",
+      "interval_s": [
+        0.64,
+        0.82
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " I'll",
+      "interval_s": [
+        0.82,
+        0.98
+      ],
+      "probability": 0.64404296875
+    },
+    {
+      "text": " make",
+      "interval_s": [
+        0.98,
+        1.18
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        1.18,
+        1.3
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " profit",
+      "interval_s": [
+        1.3,
+        1.6
+      ],
+      "probability": 0.98828125
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        1.6,
+        1.92
+      ],
+      "probability": 0.9736328125
+    },
+    {
+      "text": " all",
+      "interval_s": [
+        1.92,
+        1.98
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " these",
+      "interval_s": [
+        1.98,
+        2.1
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " other",
+      "interval_s": [
+        2.1,
+        2.28
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " things",
+      "interval_s": [
+        2.28,
+        2.52
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " they",
+      "interval_s": [
+        2.52,
+        2.7
+      ],
+      "probability": 0.77099609375
+    },
+    {
+      "text": " said",
+      "interval_s": [
+        2.7,
+        2.84
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " no",
+      "interval_s": [
+        2.84,
+        3.02
+      ],
+      "probability": 0.9794921875
+    }
+  ],
+  "elapsed_s": 0.8019454209716059
+}

@@ -1,0 +1,99 @@
+{
+  "sample_id": "-THoVjtIkeU$_$2",
+  "source_sha256": "35a6c2464ffd68dd96411edb5dc2763f0efb59f264c1d8b737e616fa6b0d1d5b",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " I think social justice is extremely important for young people.",
+      "start": 0.0,
+      "end": 3.5,
+      "avg_logprob": -0.21512277211461747,
+      "no_speech_prob": 0.004962921142578125
+    }
+  ],
+  "words": [
+    {
+      "text": " I",
+      "interval_s": [
+        0.0,
+        0.08
+      ],
+      "probability": 0.89599609375
+    },
+    {
+      "text": " think",
+      "interval_s": [
+        0.08,
+        0.32
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " social",
+      "interval_s": [
+        0.32,
+        1.24
+      ],
+      "probability": 0.7978515625
+    },
+    {
+      "text": " justice",
+      "interval_s": [
+        1.24,
+        1.56
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " is",
+      "interval_s": [
+        1.56,
+        1.86
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " extremely",
+      "interval_s": [
+        1.86,
+        2.14
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " important",
+      "interval_s": [
+        2.14,
+        2.58
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " for",
+      "interval_s": [
+        2.58,
+        2.9
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " young",
+      "interval_s": [
+        2.9,
+        3.1
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " people.",
+      "interval_s": [
+        3.1,
+        3.5
+      ],
+      "probability": 0.99951171875
+    }
+  ],
+  "elapsed_s": 0.5995363239781
+}

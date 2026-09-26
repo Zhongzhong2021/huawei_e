@@ -1,0 +1,257 @@
+{
+  "sample_id": "-dxfTGcXJoc$_$6",
+  "source_sha256": "55c1ff86729ab21da743a5107ed07b220e41b4193cd1c0ba9f009e65c3ab0513",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " Kentucky's participation at the annual Bio-International Convention is the primary",
+      "start": 0.0,
+      "end": 5.42,
+      "avg_logprob": -0.148723328985819,
+      "no_speech_prob": 0.006580352783203125
+    },
+    {
+      "text": " means by which our high-tech companies and institutions can reach out to the global scientific",
+      "start": 5.42,
+      "end": 11.18,
+      "avg_logprob": -0.148723328985819,
+      "no_speech_prob": 0.006580352783203125
+    },
+    {
+      "text": " community.",
+      "start": 11.18,
+      "end": 11.74,
+      "avg_logprob": -0.148723328985819,
+      "no_speech_prob": 0.006580352783203125
+    }
+  ],
+  "words": [
+    {
+      "text": " Kentucky's",
+      "interval_s": [
+        0.0,
+        0.86
+      ],
+      "probability": 0.9560546875
+    },
+    {
+      "text": " participation",
+      "interval_s": [
+        0.86,
+        1.32
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " at",
+      "interval_s": [
+        1.32,
+        1.9
+      ],
+      "probability": 0.98486328125
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        1.9,
+        2.0
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " annual",
+      "interval_s": [
+        2.0,
+        2.46
+      ],
+      "probability": 0.966796875
+    },
+    {
+      "text": " Bio",
+      "interval_s": [
+        2.46,
+        2.9
+      ],
+      "probability": 0.79345703125
+    },
+    {
+      "text": "-International",
+      "interval_s": [
+        2.9,
+        3.6
+      ],
+      "probability": 0.833251953125
+    },
+    {
+      "text": " Convention",
+      "interval_s": [
+        3.6,
+        3.96
+      ],
+      "probability": 0.85400390625
+    },
+    {
+      "text": " is",
+      "interval_s": [
+        3.96,
+        4.78
+      ],
+      "probability": 0.98828125
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        4.78,
+        5.02
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " primary",
+      "interval_s": [
+        5.02,
+        5.42
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " means",
+      "interval_s": [
+        5.42,
+        5.92
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " by",
+      "interval_s": [
+        5.92,
+        6.24
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " which",
+      "interval_s": [
+        6.24,
+        6.58
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " our",
+      "interval_s": [
+        6.58,
+        6.92
+      ],
+      "probability": 0.99365234375
+    },
+    {
+      "text": " high",
+      "interval_s": [
+        6.92,
+        7.28
+      ],
+      "probability": 0.9814453125
+    },
+    {
+      "text": "-tech",
+      "interval_s": [
+        7.28,
+        7.54
+      ],
+      "probability": 0.899658203125
+    },
+    {
+      "text": " companies",
+      "interval_s": [
+        7.54,
+        7.98
+      ],
+      "probability": 0.98681640625
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        7.98,
+        8.26
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " institutions",
+      "interval_s": [
+        8.26,
+        8.72
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " can",
+      "interval_s": [
+        8.72,
+        9.4
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " reach",
+      "interval_s": [
+        9.4,
+        9.72
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " out",
+      "interval_s": [
+        9.72,
+        10.02
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        10.02,
+        10.28
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        10.28,
+        10.38
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " global",
+      "interval_s": [
+        10.38,
+        10.68
+      ],
+      "probability": 0.9951171875
+    },
+    {
+      "text": " scientific",
+      "interval_s": [
+        10.68,
+        11.18
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " community.",
+      "interval_s": [
+        11.18,
+        11.74
+      ],
+      "probability": 1.0
+    }
+  ],
+  "elapsed_s": 0.8941175889922306
+}

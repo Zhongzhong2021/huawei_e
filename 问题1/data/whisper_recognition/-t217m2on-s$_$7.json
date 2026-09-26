@@ -1,0 +1,393 @@
+{
+  "sample_id": "-t217m2on-s$_$7",
+  "source_sha256": "41c76b8a733ecb780d56348f55d00f0ba0c07f44f46e93044e62d876710180b7",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " If you find that your ears consistently do this and you can't pop them often,",
+      "start": 0.0,
+      "end": 6.3,
+      "avg_logprob": -0.12637060776091458,
+      "no_speech_prob": 0.0014324188232421875
+    },
+    {
+      "text": " you'll definitely need to see a physician regarding those things.",
+      "start": 6.54,
+      "end": 10.34,
+      "avg_logprob": -0.12637060776091458,
+      "no_speech_prob": 0.0014324188232421875
+    },
+    {
+      "text": " It could be something more of a nasal infection or a sinus infection that he would need to deal with.",
+      "start": 10.42,
+      "end": 16.36,
+      "avg_logprob": -0.12637060776091458,
+      "no_speech_prob": 0.0014324188232421875
+    }
+  ],
+  "words": [
+    {
+      "text": " If",
+      "interval_s": [
+        0.0,
+        0.56
+      ],
+      "probability": 0.86376953125
+    },
+    {
+      "text": " you",
+      "interval_s": [
+        0.56,
+        0.66
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " find",
+      "interval_s": [
+        0.66,
+        1.0
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " that",
+      "interval_s": [
+        1.0,
+        1.2
+      ],
+      "probability": 0.994140625
+    },
+    {
+      "text": " your",
+      "interval_s": [
+        1.2,
+        1.46
+      ],
+      "probability": 0.9892578125
+    },
+    {
+      "text": " ears",
+      "interval_s": [
+        1.46,
+        1.86
+      ],
+      "probability": 0.9921875
+    },
+    {
+      "text": " consistently",
+      "interval_s": [
+        1.86,
+        3.5
+      ],
+      "probability": 0.85986328125
+    },
+    {
+      "text": " do",
+      "interval_s": [
+        3.5,
+        4.18
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " this",
+      "interval_s": [
+        4.18,
+        4.58
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        4.58,
+        4.78
+      ],
+      "probability": 0.84423828125
+    },
+    {
+      "text": " you",
+      "interval_s": [
+        4.78,
+        4.9
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " can't",
+      "interval_s": [
+        4.9,
+        5.38
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " pop",
+      "interval_s": [
+        5.38,
+        5.64
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " them",
+      "interval_s": [
+        5.64,
+        5.92
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " often,",
+      "interval_s": [
+        5.92,
+        6.3
+      ],
+      "probability": 0.990234375
+    },
+    {
+      "text": " you'll",
+      "interval_s": [
+        6.54,
+        7.0
+      ],
+      "probability": 0.893310546875
+    },
+    {
+      "text": " definitely",
+      "interval_s": [
+        7.0,
+        7.26
+      ],
+      "probability": 0.99365234375
+    },
+    {
+      "text": " need",
+      "interval_s": [
+        7.26,
+        7.58
+      ],
+      "probability": 0.96923828125
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        7.58,
+        7.94
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " see",
+      "interval_s": [
+        7.94,
+        8.1
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        8.1,
+        8.24
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " physician",
+      "interval_s": [
+        8.24,
+        8.6
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " regarding",
+      "interval_s": [
+        8.6,
+        9.6
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " those",
+      "interval_s": [
+        9.6,
+        10.0
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " things.",
+      "interval_s": [
+        10.0,
+        10.34
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " It",
+      "interval_s": [
+        10.42,
+        10.86
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " could",
+      "interval_s": [
+        10.86,
+        11.02
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " be",
+      "interval_s": [
+        11.02,
+        11.24
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " something",
+      "interval_s": [
+        11.24,
+        11.5
+      ],
+      "probability": 0.9951171875
+    },
+    {
+      "text": " more",
+      "interval_s": [
+        11.5,
+        11.86
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        11.86,
+        12.0
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        12.0,
+        12.06
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " nasal",
+      "interval_s": [
+        12.06,
+        12.36
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " infection",
+      "interval_s": [
+        12.36,
+        12.84
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " or",
+      "interval_s": [
+        12.84,
+        13.22
+      ],
+      "probability": 0.9951171875
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        13.22,
+        13.42
+      ],
+      "probability": 0.994140625
+    },
+    {
+      "text": " sinus",
+      "interval_s": [
+        13.42,
+        13.72
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " infection",
+      "interval_s": [
+        13.72,
+        14.2
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " that",
+      "interval_s": [
+        14.2,
+        15.2
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " he",
+      "interval_s": [
+        15.2,
+        15.4
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " would",
+      "interval_s": [
+        15.4,
+        15.62
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " need",
+      "interval_s": [
+        15.62,
+        15.84
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        15.84,
+        16.0
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " deal",
+      "interval_s": [
+        16.0,
+        16.18
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " with.",
+      "interval_s": [
+        16.18,
+        16.36
+      ],
+      "probability": 1.0
+    }
+  ],
+  "elapsed_s": 1.170275562966708
+}

@@ -1,0 +1,361 @@
+{
+  "context_envelopes": [
+    {
+      "word_indices": [
+        0
+      ],
+      "interval_s": [
+        0.30246875,
+        0.72246875
+      ],
+      "left_anchor_word": null,
+      "right_anchor_word": 1,
+      "status": "context_only_not_alignment",
+      "automatic_eligible": false
+    },
+    {
+      "word_indices": [
+        6
+      ],
+      "interval_s": [
+        1.54246875,
+        2.5424687500000003
+      ],
+      "left_anchor_word": 5,
+      "right_anchor_word": 7,
+      "status": "context_only_not_alignment",
+      "automatic_eligible": false
+    }
+  ],
+  "sample_status": "supported",
+  "informative_anchors": 3,
+  "informative_reference_tokens": 4,
+  "informative_coverage": 0.75,
+  "edit_cost": 2.0,
+  "optimal_endpoints": [
+    8
+  ],
+  "words": [
+    {
+      "word_index": 0,
+      "text": "it's",
+      "status": "unmatched_or_ambiguous",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 1,
+      "text": "amazing",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        0.30246875,
+        0.72246875
+      ],
+      "diagnostic_interval_s": [
+        0.30246875,
+        0.72246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            0
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 2,
+      "text": "to",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        0.88246875,
+        0.96246875
+      ],
+      "diagnostic_interval_s": [
+        0.88246875,
+        0.96246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            1
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 3,
+      "text": "see",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        1.06246875,
+        1.22246875
+      ],
+      "diagnostic_interval_s": [
+        1.06246875,
+        1.22246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            2
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 4,
+      "text": "their",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        1.32246875,
+        1.48246875
+      ],
+      "diagnostic_interval_s": [
+        1.32246875,
+        1.48246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            3
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 5,
+      "text": "enthusiasm",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        1.54246875,
+        2.2424687499999996
+      ],
+      "diagnostic_interval_s": [
+        1.54246875,
+        2.2424687499999996
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            4
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 6,
+      "text": "and",
+      "status": "unmatched_or_ambiguous",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 7,
+      "text": "their",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        2.4024687499999997,
+        2.5424687500000003
+      ],
+      "diagnostic_interval_s": [
+        2.4024687499999997,
+        2.5424687500000003
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            6
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 8,
+      "text": "passion",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        2.5824687500000003,
+        2.98246875
+      ],
+      "diagnostic_interval_s": [
+        2.5824687500000003,
+        2.98246875
+      ],
+      "boundary_disagreement_s": 0.019999999999999574,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            7
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    }
+  ],
+  "automatic_eligible_words": 7,
+  "sample_id": "-UuX1xuaiiE$_$0",
+  "source_sha256": "f578b305d53bc152702f5e771de0fcd12d1e9aaefc5cefce3d2082a417aab7c8",
+  "recognition": [
+    {
+      "text": "AMAZING",
+      "interval_s": [
+        0.30246875,
+        0.72246875
+      ],
+      "mean_emission_probability": 0.9990034784589495
+    },
+    {
+      "text": "TO",
+      "interval_s": [
+        0.88246875,
+        0.96246875
+      ],
+      "mean_emission_probability": 0.9974303841590881
+    },
+    {
+      "text": "SEE",
+      "interval_s": [
+        1.06246875,
+        1.22246875
+      ],
+      "mean_emission_probability": 0.99538121620814
+    },
+    {
+      "text": "THEIR",
+      "interval_s": [
+        1.32246875,
+        1.48246875
+      ],
+      "mean_emission_probability": 0.9570705533027649
+    },
+    {
+      "text": "ENTHUSIASM",
+      "interval_s": [
+        1.54246875,
+        2.2424687499999996
+      ],
+      "mean_emission_probability": 0.9835177719593048
+    },
+    {
+      "text": "AN",
+      "interval_s": [
+        2.30246875,
+        2.34246875
+      ],
+      "mean_emission_probability": 0.7783161401748657
+    },
+    {
+      "text": "THEIR",
+      "interval_s": [
+        2.4024687499999997,
+        2.5424687500000003
+      ],
+      "mean_emission_probability": 0.9818511605262756
+    },
+    {
+      "text": "PASSION",
+      "interval_s": [
+        2.5824687500000003,
+        2.98246875
+      ],
+      "mean_emission_probability": 0.9671615617615836
+    }
+  ],
+  "baseline_candidate_words": 9,
+  "native_features_modified": false,
+  "human_data_used": false,
+  "config_sha256": "b0adbf96c3cfcda192429317763b44f8ab5da4453b7d1b4779664feccadecf7c",
+  "local_support_runs": [
+    {
+      "word_indices": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "hypothesis_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "distinct_informative_anchors": [
+        "AMAZING",
+        "ENTHUSIASM"
+      ],
+      "meaning": "Local lexical/acoustic consistency, not calibrated correctness."
+    }
+  ],
+  "new_local_candidate_words": 0,
+  "decision_policy": "frozen_selective_baseline_plus_corroborated_local_runs_v2",
+  "whole_text_content_confirmed": false,
+  "context_envelopes_policy": "original_frozen_baseline_navigation_only",
+  "corroborating_run_pairs": [],
+  "baseline_result_sha256": "43cb9137785e73ad62921afa25f2fdc14b926b5b9312f1a4062f8315a3daa086",
+  "human_data_used_for_generation": false
+}

@@ -1,0 +1,266 @@
+{
+  "sample_id": "-yRb-Jum7EQ$_$5",
+  "source_sha256": "6d6145293cf84d1fc8324dfa8d39465e2d7fc07affb67ff68deeabf6e3c410d9",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " Yesterday, Eliyav Goodman, may he rest in peace, lost his life in another attack,",
+      "start": 0.0,
+      "end": 5.98,
+      "avg_logprob": -0.4268466051329266,
+      "no_speech_prob": 0.106201171875
+    },
+    {
+      "text": " this time not of the students of terrorism but of the terrorists, of the Palestinian teachers.",
+      "start": 6.900000000000001,
+      "end": 11.7,
+      "avg_logprob": -0.4268466051329266,
+      "no_speech_prob": 0.106201171875
+    }
+  ],
+  "words": [
+    {
+      "text": " Yesterday,",
+      "interval_s": [
+        0.0,
+        0.2
+      ],
+      "probability": 0.7958984375
+    },
+    {
+      "text": " Eliyav",
+      "interval_s": [
+        0.24,
+        0.88
+      ],
+      "probability": 0.71240234375
+    },
+    {
+      "text": " Goodman,",
+      "interval_s": [
+        0.88,
+        1.34
+      ],
+      "probability": 0.892822265625
+    },
+    {
+      "text": " may",
+      "interval_s": [
+        1.34,
+        1.94
+      ],
+      "probability": 0.8271484375
+    },
+    {
+      "text": " he",
+      "interval_s": [
+        1.94,
+        1.94
+      ],
+      "probability": 0.56201171875
+    },
+    {
+      "text": " rest",
+      "interval_s": [
+        1.94,
+        2.92
+      ],
+      "probability": 0.72314453125
+    },
+    {
+      "text": " in",
+      "interval_s": [
+        2.92,
+        3.0
+      ],
+      "probability": 0.98974609375
+    },
+    {
+      "text": " peace,",
+      "interval_s": [
+        3.0,
+        3.32
+      ],
+      "probability": 0.9248046875
+    },
+    {
+      "text": " lost",
+      "interval_s": [
+        3.52,
+        3.78
+      ],
+      "probability": 0.9033203125
+    },
+    {
+      "text": " his",
+      "interval_s": [
+        3.78,
+        4.1
+      ],
+      "probability": 0.9833984375
+    },
+    {
+      "text": " life",
+      "interval_s": [
+        4.1,
+        4.38
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " in",
+      "interval_s": [
+        4.38,
+        4.8
+      ],
+      "probability": 0.62109375
+    },
+    {
+      "text": " another",
+      "interval_s": [
+        4.8,
+        5.28
+      ],
+      "probability": 0.5634765625
+    },
+    {
+      "text": " attack,",
+      "interval_s": [
+        5.28,
+        5.98
+      ],
+      "probability": 0.8466796875
+    },
+    {
+      "text": " this",
+      "interval_s": [
+        6.900000000000001,
+        7.46
+      ],
+      "probability": 0.50634765625
+    },
+    {
+      "text": " time",
+      "interval_s": [
+        7.46,
+        7.72
+      ],
+      "probability": 0.994140625
+    },
+    {
+      "text": " not",
+      "interval_s": [
+        7.72,
+        7.96
+      ],
+      "probability": 0.7216796875
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        7.96,
+        8.18
+      ],
+      "probability": 0.40185546875
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        8.18,
+        8.3
+      ],
+      "probability": 0.80859375
+    },
+    {
+      "text": " students",
+      "interval_s": [
+        8.3,
+        8.68
+      ],
+      "probability": 0.70068359375
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        8.68,
+        8.88
+      ],
+      "probability": 0.92041015625
+    },
+    {
+      "text": " terrorism",
+      "interval_s": [
+        8.88,
+        9.24
+      ],
+      "probability": 0.493408203125
+    },
+    {
+      "text": " but",
+      "interval_s": [
+        9.24,
+        9.4
+      ],
+      "probability": 0.658203125
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        9.4,
+        9.6
+      ],
+      "probability": 0.8896484375
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        9.6,
+        9.74
+      ],
+      "probability": 0.86181640625
+    },
+    {
+      "text": " terrorists,",
+      "interval_s": [
+        9.74,
+        10.02
+      ],
+      "probability": 0.2369384765625
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        10.64,
+        10.78
+      ],
+      "probability": 0.81640625
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        10.78,
+        10.92
+      ],
+      "probability": 0.72412109375
+    },
+    {
+      "text": " Palestinian",
+      "interval_s": [
+        10.92,
+        11.1
+      ],
+      "probability": 0.7529296875
+    },
+    {
+      "text": " teachers.",
+      "interval_s": [
+        11.1,
+        11.7
+      ],
+      "probability": 0.40185546875
+    }
+  ],
+  "elapsed_s": 0.8797179129905999
+}

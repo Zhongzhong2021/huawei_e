@@ -1,0 +1,186 @@
+{
+  "sample_id": "-UacrmKiTn4$_$10",
+  "source_sha256": "00312e0602dbeac970de5d7dd0e8a970e514fe45d7fe6625b4f454b299e36360",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " reading it, because if they are not in any way held accountable for reading the material,",
+      "start": 0.0,
+      "end": 5.0,
+      "avg_logprob": -0.17860991584843602,
+      "no_speech_prob": 0.036712646484375
+    },
+    {
+      "text": " they won't do it.",
+      "start": 5.86,
+      "end": 6.58,
+      "avg_logprob": -0.17860991584843602,
+      "no_speech_prob": 0.036712646484375
+    }
+  ],
+  "words": [
+    {
+      "text": " reading",
+      "interval_s": [
+        0.0,
+        0.26
+      ],
+      "probability": 0.96337890625
+    },
+    {
+      "text": " it,",
+      "interval_s": [
+        0.26,
+        0.42
+      ],
+      "probability": 0.98388671875
+    },
+    {
+      "text": " because",
+      "interval_s": [
+        0.46,
+        0.68
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " if",
+      "interval_s": [
+        0.68,
+        0.86
+      ],
+      "probability": 0.98046875
+    },
+    {
+      "text": " they",
+      "interval_s": [
+        0.86,
+        1.06
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " are",
+      "interval_s": [
+        1.06,
+        1.2
+      ],
+      "probability": 0.96484375
+    },
+    {
+      "text": " not",
+      "interval_s": [
+        1.2,
+        1.5
+      ],
+      "probability": 0.9912109375
+    },
+    {
+      "text": " in",
+      "interval_s": [
+        1.5,
+        2.22
+      ],
+      "probability": 0.84912109375
+    },
+    {
+      "text": " any",
+      "interval_s": [
+        2.22,
+        2.48
+      ],
+      "probability": 0.84814453125
+    },
+    {
+      "text": " way",
+      "interval_s": [
+        2.48,
+        2.7
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " held",
+      "interval_s": [
+        2.7,
+        2.96
+      ],
+      "probability": 0.9765625
+    },
+    {
+      "text": " accountable",
+      "interval_s": [
+        2.96,
+        3.58
+      ],
+      "probability": 0.9951171875
+    },
+    {
+      "text": " for",
+      "interval_s": [
+        3.58,
+        4.02
+      ],
+      "probability": 0.98974609375
+    },
+    {
+      "text": " reading",
+      "interval_s": [
+        4.02,
+        4.38
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        4.38,
+        4.62
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " material,",
+      "interval_s": [
+        4.62,
+        5.0
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " they",
+      "interval_s": [
+        5.72,
+        5.96
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " won't",
+      "interval_s": [
+        5.96,
+        6.32
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " do",
+      "interval_s": [
+        6.32,
+        6.44
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " it.",
+      "interval_s": [
+        6.44,
+        6.58
+      ],
+      "probability": 0.99951171875
+    }
+  ],
+  "elapsed_s": 0.7250059450161643
+}

@@ -1,0 +1,501 @@
+{
+  "context_envelopes": [
+    {
+      "word_indices": [
+        2
+      ],
+      "interval_s": [
+        1.04246875,
+        1.82246875
+      ],
+      "left_anchor_word": 1,
+      "right_anchor_word": 3,
+      "status": "context_only_not_alignment",
+      "automatic_eligible": false
+    },
+    {
+      "word_indices": [
+        11
+      ],
+      "interval_s": [
+        4.60246875,
+        5.38246875
+      ],
+      "left_anchor_word": 10,
+      "right_anchor_word": null,
+      "status": "context_only_not_alignment",
+      "automatic_eligible": false
+    }
+  ],
+  "sample_status": "supported",
+  "informative_anchors": 7,
+  "informative_reference_tokens": 8,
+  "informative_coverage": 0.875,
+  "edit_cost": 2.0,
+  "optimal_endpoints": [
+    11,
+    12
+  ],
+  "words": [
+    {
+      "word_index": 0,
+      "text": "First",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        0.52246875,
+        0.8024687500000001
+      ],
+      "diagnostic_interval_s": [
+        0.52246875,
+        0.8024687500000001
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            0
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 1,
+      "text": "exhibiting",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        1.04246875,
+        1.56246875
+      ],
+      "diagnostic_interval_s": [
+        1.04246875,
+        1.56246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            1
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 2,
+      "text": "is",
+      "status": "unmatched_or_ambiguous",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 3,
+      "text": "a",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        1.80246875,
+        1.82246875
+      ],
+      "diagnostic_interval_s": [
+        1.80246875,
+        1.82246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            3
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 4,
+      "text": "wonderful",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        1.94246875,
+        2.4024687499999997
+      ],
+      "diagnostic_interval_s": [
+        1.94246875,
+        2.4024687499999997
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            4
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 5,
+      "text": "opportunity",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        2.5424687500000003,
+        3.1624687500000004
+      ],
+      "diagnostic_interval_s": [
+        2.5424687500000003,
+        3.1624687500000004
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            5
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 6,
+      "text": "to",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        3.26246875,
+        3.38246875
+      ],
+      "diagnostic_interval_s": [
+        3.26246875,
+        3.38246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            6
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 7,
+      "text": "network",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        3.48246875,
+        3.8624687499999997
+      ],
+      "diagnostic_interval_s": [
+        3.48246875,
+        3.8624687499999997
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            7
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 8,
+      "text": "with",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        3.96246875,
+        4.08246875
+      ],
+      "diagnostic_interval_s": [
+        3.96246875,
+        4.08246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            8
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 9,
+      "text": "other",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        4.26246875,
+        4.44246875
+      ],
+      "diagnostic_interval_s": [
+        4.26246875,
+        4.44246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            9
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 10,
+      "text": "legal",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        4.60246875,
+        4.88246875
+      ],
+      "diagnostic_interval_s": [
+        4.60246875,
+        4.88246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            10
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 11,
+      "text": "vendors",
+      "status": "unmatched_or_ambiguous",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    }
+  ],
+  "automatic_eligible_words": 10,
+  "sample_id": "-egA8-b7-3M$_$6",
+  "source_sha256": "2e88a00d5e55863aa956b4b0949fc0e4f2975ccfd83b3194957f6fca86ecfce0",
+  "recognition": [
+    {
+      "text": "FIRST",
+      "interval_s": [
+        0.52246875,
+        0.8024687500000001
+      ],
+      "mean_emission_probability": 0.9969658613204956
+    },
+    {
+      "text": "EXHIBITING",
+      "interval_s": [
+        1.04246875,
+        1.56246875
+      ],
+      "mean_emission_probability": 0.9740272760391235
+    },
+    {
+      "text": "ITS",
+      "interval_s": [
+        1.64246875,
+        1.74246875
+      ],
+      "mean_emission_probability": 0.7297379374504089
+    },
+    {
+      "text": "A",
+      "interval_s": [
+        1.80246875,
+        1.82246875
+      ],
+      "mean_emission_probability": 0.9781242609024048
+    },
+    {
+      "text": "WONDERFUL",
+      "interval_s": [
+        1.94246875,
+        2.4024687499999997
+      ],
+      "mean_emission_probability": 0.920765929751926
+    },
+    {
+      "text": "OPPORTUNITY",
+      "interval_s": [
+        2.5424687500000003,
+        3.1624687500000004
+      ],
+      "mean_emission_probability": 0.9875909740274603
+    },
+    {
+      "text": "TO",
+      "interval_s": [
+        3.26246875,
+        3.38246875
+      ],
+      "mean_emission_probability": 0.9955215156078339
+    },
+    {
+      "text": "NETWORK",
+      "interval_s": [
+        3.48246875,
+        3.8624687499999997
+      ],
+      "mean_emission_probability": 0.9997904811586652
+    },
+    {
+      "text": "WITH",
+      "interval_s": [
+        3.96246875,
+        4.08246875
+      ],
+      "mean_emission_probability": 0.9998493790626526
+    },
+    {
+      "text": "OTHER",
+      "interval_s": [
+        4.26246875,
+        4.44246875
+      ],
+      "mean_emission_probability": 0.9963527202606202
+    },
+    {
+      "text": "LEGAL",
+      "interval_s": [
+        4.60246875,
+        4.88246875
+      ],
+      "mean_emission_probability": 0.97086580991745
+    },
+    {
+      "text": "VENGERS",
+      "interval_s": [
+        4.96246875,
+        5.38246875
+      ],
+      "mean_emission_probability": 0.9773022191865104
+    }
+  ],
+  "baseline_candidate_words": 12,
+  "native_features_modified": false,
+  "human_data_used": false,
+  "config_sha256": "b0adbf96c3cfcda192429317763b44f8ab5da4453b7d1b4779664feccadecf7c",
+  "local_support_runs": [
+    {
+      "word_indices": [
+        0,
+        1
+      ],
+      "hypothesis_indices": [
+        0,
+        1
+      ],
+      "distinct_informative_anchors": [
+        "EXHIBITING",
+        "FIRST"
+      ],
+      "meaning": "Local lexical/acoustic consistency, not calibrated correctness."
+    },
+    {
+      "word_indices": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "hypothesis_indices": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "distinct_informative_anchors": [
+        "LEGAL",
+        "NETWORK",
+        "OPPORTUNITY",
+        "OTHER",
+        "WONDERFUL"
+      ],
+      "meaning": "Local lexical/acoustic consistency, not calibrated correctness."
+    }
+  ],
+  "new_local_candidate_words": 0,
+  "decision_policy": "frozen_selective_baseline_plus_corroborated_local_runs_v2",
+  "whole_text_content_confirmed": false,
+  "context_envelopes_policy": "original_frozen_baseline_navigation_only",
+  "corroborating_run_pairs": [
+    [
+      0,
+      1
+    ]
+  ],
+  "baseline_result_sha256": "1102e46ff9f6518e2f4edcbf1ad6758a0e56ceb72eb494325a9cd4208ca85b42",
+  "human_data_used_for_generation": false
+}

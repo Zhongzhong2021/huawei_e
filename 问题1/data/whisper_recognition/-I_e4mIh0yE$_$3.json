@@ -1,0 +1,194 @@
+{
+  "sample_id": "-I_e4mIh0yE$_$3",
+  "source_sha256": "a015f02ae51d74c42ad27e2a0831263a303f0658ac8d984819e27ad61342b23e",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " It's perceived that you've actually learned something over the course of your career and",
+      "start": 0.0,
+      "end": 6.48,
+      "avg_logprob": -0.16080729713042577,
+      "no_speech_prob": 0.01062774658203125
+    },
+    {
+      "text": " that you won't make the mistake twice.",
+      "start": 6.48,
+      "end": 8.2,
+      "avg_logprob": -0.16080729713042577,
+      "no_speech_prob": 0.01062774658203125
+    }
+  ],
+  "words": [
+    {
+      "text": " It's",
+      "interval_s": [
+        0.0,
+        0.66
+      ],
+      "probability": 0.6353759765625
+    },
+    {
+      "text": " perceived",
+      "interval_s": [
+        0.66,
+        1.26
+      ],
+      "probability": 0.958984375
+    },
+    {
+      "text": " that",
+      "interval_s": [
+        1.26,
+        1.58
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " you've",
+      "interval_s": [
+        1.58,
+        1.78
+      ],
+      "probability": 0.9599609375
+    },
+    {
+      "text": " actually",
+      "interval_s": [
+        1.78,
+        2.04
+      ],
+      "probability": 0.9921875
+    },
+    {
+      "text": " learned",
+      "interval_s": [
+        2.04,
+        3.68
+      ],
+      "probability": 0.77880859375
+    },
+    {
+      "text": " something",
+      "interval_s": [
+        3.68,
+        4.48
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " over",
+      "interval_s": [
+        4.48,
+        5.5
+      ],
+      "probability": 0.98291015625
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        5.5,
+        5.62
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " course",
+      "interval_s": [
+        5.62,
+        5.82
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        5.82,
+        5.96
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " your",
+      "interval_s": [
+        5.96,
+        6.06
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " career",
+      "interval_s": [
+        6.06,
+        6.34
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        6.34,
+        6.48
+      ],
+      "probability": 0.89208984375
+    },
+    {
+      "text": " that",
+      "interval_s": [
+        6.48,
+        6.58
+      ],
+      "probability": 0.95654296875
+    },
+    {
+      "text": " you",
+      "interval_s": [
+        6.58,
+        6.72
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " won't",
+      "interval_s": [
+        6.72,
+        7.0
+      ],
+      "probability": 0.994140625
+    },
+    {
+      "text": " make",
+      "interval_s": [
+        7.0,
+        7.08
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        7.08,
+        7.54
+      ],
+      "probability": 0.99072265625
+    },
+    {
+      "text": " mistake",
+      "interval_s": [
+        7.54,
+        7.76
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " twice.",
+      "interval_s": [
+        7.76,
+        8.2
+      ],
+      "probability": 0.9990234375
+    }
+  ],
+  "elapsed_s": 0.8407901399768889
+}

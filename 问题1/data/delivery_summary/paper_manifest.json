@@ -1,0 +1,9 @@
+{
+  "status": "q1_body_with_measured_results_and_explicit_uncertainty",
+  "sources": {
+    "scripts/paper_body.txt": "6de5976255553565f1b0903dd859c23d1f9a1d70c71db1fee027ba155b3d2c7a",
+    "data/multigranular_alignment/all_100.md": "c3c83bf5eadd21126648c7ae6859deb3af93e05bc4d3be6389acd277361af379"
+  },
+  "paper_sha256": "890b2022b96c055aa2ccd139c481ade969122b030cafadb5493b7df582c45e43",
+  "sample_rows": 100
+}

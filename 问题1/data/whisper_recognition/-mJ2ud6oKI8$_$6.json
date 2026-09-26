@@ -1,0 +1,83 @@
+{
+  "sample_id": "-mJ2ud6oKI8$_$6",
+  "source_sha256": "134a3a4ebbc423760133b0da0e90cfe84d75ea85df3968000afd84153c5d828d",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " that we all want to approach, really any.",
+      "start": 0.0,
+      "end": 2.06,
+      "avg_logprob": -0.4254807692307692,
+      "no_speech_prob": 0.020477294921875
+    }
+  ],
+  "words": [
+    {
+      "text": " that",
+      "interval_s": [
+        0.0,
+        0.16
+      ],
+      "probability": 0.93505859375
+    },
+    {
+      "text": " we",
+      "interval_s": [
+        0.16,
+        0.32
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " all",
+      "interval_s": [
+        0.32,
+        0.54
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " want",
+      "interval_s": [
+        0.54,
+        0.86
+      ],
+      "probability": 0.814453125
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        0.86,
+        0.94
+      ],
+      "probability": 0.9921875
+    },
+    {
+      "text": " approach,",
+      "interval_s": [
+        0.94,
+        1.26
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " really",
+      "interval_s": [
+        1.44,
+        1.84
+      ],
+      "probability": 0.98095703125
+    },
+    {
+      "text": " any.",
+      "interval_s": [
+        1.84,
+        2.06
+      ],
+      "probability": 0.472900390625
+    }
+  ],
+  "elapsed_s": 0.4575989739969373
+}

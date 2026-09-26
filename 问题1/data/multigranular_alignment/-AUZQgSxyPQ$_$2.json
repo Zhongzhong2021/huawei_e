@@ -1,0 +1,1596 @@
+{
+  "words": [
+    {
+      "word_index": 0,
+      "text": "The",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": [
+        0.50246875,
+        0.58246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            0
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 1,
+      "text": "perfect",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": [
+        0.64246875,
+        0.96246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            1
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 2,
+      "text": "soul",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 3,
+      "text": "mate",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 4,
+      "text": "to",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": [
+        1.6024687499999999,
+        1.66246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            4
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 5,
+      "text": "the",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": [
+        1.72246875,
+        1.78246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            5
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 6,
+      "text": "Clarisonic",
+      "status": "whisper_local_phonetic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        1.8799375,
+        2.489937514305115
+      ],
+      "diagnostic_interval_s": [
+        1.8624687500000001,
+        2.5024687500000002
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            6
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 7,
+      "text": "Spot",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": [
+        3.0824687500000003,
+        3.4024687499999997
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            7
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 8,
+      "text": "Therapy",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 9,
+      "text": "Brush",
+      "status": "local_coherent_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        4.042468749999999,
+        4.3224687500000005
+      ],
+      "diagnostic_interval_s": [
+        4.042468749999999,
+        4.3224687500000005
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            9
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false,
+      "local_support_run": 0
+    },
+    {
+      "word_index": 10,
+      "text": "this",
+      "status": "cross_model_time_conflict",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": [
+        4.94246875,
+        5.08246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            10
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false,
+      "local_support_run": 0,
+      "competing_intervals_s": [
+        [
+          4.94246875,
+          5.08246875
+        ],
+        [
+          4.279937595367432,
+          5.1899374427795415
+        ]
+      ]
+    },
+    {
+      "word_index": 11,
+      "text": "gentle",
+      "status": "local_coherent_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        5.18246875,
+        5.56246875
+      ],
+      "diagnostic_interval_s": [
+        5.18246875,
+        5.56246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            11
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false,
+      "local_support_run": 0
+    },
+    {
+      "word_index": 12,
+      "text": "Ph",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 13,
+      "text": "balanced",
+      "status": "local_coherent_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        6.18246875,
+        6.60246875
+      ],
+      "diagnostic_interval_s": [
+        6.18246875,
+        6.60246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            14
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false,
+      "local_support_run": 1
+    },
+    {
+      "word_index": 14,
+      "text": "and",
+      "status": "local_coherent_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        6.7424687500000005,
+        6.8224687500000005
+      ],
+      "diagnostic_interval_s": [
+        6.7424687500000005,
+        6.8224687500000005
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            15
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false,
+      "local_support_run": 1
+    },
+    {
+      "word_index": 15,
+      "text": "hydrating",
+      "status": "local_coherent_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        6.902468750000001,
+        7.46246875
+      ],
+      "diagnostic_interval_s": [
+        6.902468750000001,
+        7.46246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            16
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false,
+      "local_support_run": 1
+    },
+    {
+      "word_index": 16,
+      "text": "exfoliant",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": [
+        7.64246875,
+        8.24246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            17
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 17,
+      "text": "containing",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 18,
+      "text": "jojoba",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 19,
+      "text": "and",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 20,
+      "text": "acai",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 21,
+      "text": "fruit",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 22,
+      "text": "oils",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 23,
+      "text": "and",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 24,
+      "text": "bamboo",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": [
+        12.70246875,
+        13.12246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            25
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 25,
+      "text": "and",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": [
+        13.56246875,
+        13.642468749999999
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            26
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 26,
+      "text": "prickly",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 27,
+      "text": "bear",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 28,
+      "text": "extracts",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": [
+        14.642468749999999,
+        15.10246875
+      ],
+      "boundary_disagreement_s": 0.7400000000000002,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            29
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 29,
+      "text": "deliver",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": [
+        15.94246875,
+        16.342468750000002
+      ],
+      "boundary_disagreement_s": 0.060000000000002274,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            31
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 30,
+      "text": "intense",
+      "status": "local_coherent_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        16.50246875,
+        16.862468749999998
+      ],
+      "diagnostic_interval_s": [
+        16.50246875,
+        16.862468749999998
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            32
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false,
+      "local_support_run": 2
+    },
+    {
+      "word_index": 31,
+      "text": "healing",
+      "status": "local_coherent_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        16.96246875,
+        17.32246875
+      ],
+      "diagnostic_interval_s": [
+        16.96246875,
+        17.32246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            33
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false,
+      "local_support_run": 2
+    },
+    {
+      "word_index": 32,
+      "text": "while",
+      "status": "local_coherent_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        17.82246875,
+        18.02246875
+      ],
+      "diagnostic_interval_s": [
+        17.82246875,
+        18.02246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            34
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false,
+      "local_support_run": 2
+    },
+    {
+      "word_index": 33,
+      "text": "smooth",
+      "status": "local_coherent_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        18.122468750000003,
+        18.38246875
+      ],
+      "diagnostic_interval_s": [
+        18.122468750000003,
+        18.38246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            35
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false,
+      "local_support_run": 2
+    },
+    {
+      "word_index": 34,
+      "text": "granules",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 35,
+      "text": "buff",
+      "status": "whisper_local_phonetic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        18.940000047683718,
+        19.299999942779543
+      ],
+      "diagnostic_interval_s": [
+        19.06246875,
+        19.26246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            37
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 36,
+      "text": "away",
+      "status": "local_coherent_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        19.362468749999998,
+        19.622468750000003
+      ],
+      "diagnostic_interval_s": [
+        19.362468749999998,
+        19.622468750000003
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            38
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false,
+      "local_support_run": 3
+    },
+    {
+      "word_index": 37,
+      "text": "dead",
+      "status": "local_coherent_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        20.122468750000003,
+        20.342468750000002
+      ],
+      "diagnostic_interval_s": [
+        20.122468750000003,
+        20.342468750000002
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            39
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false,
+      "local_support_run": 3
+    },
+    {
+      "word_index": 38,
+      "text": "dry",
+      "status": "local_coherent_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        20.682468749999998,
+        20.96246875
+      ],
+      "diagnostic_interval_s": [
+        20.682468749999998,
+        20.96246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            40
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false,
+      "local_support_run": 3
+    },
+    {
+      "word_index": 39,
+      "text": "skin",
+      "status": "local_coherent_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        21.20246875,
+        21.402468749999997
+      ],
+      "diagnostic_interval_s": [
+        21.20246875,
+        21.402468749999997
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            41
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false,
+      "local_support_run": 3
+    },
+    {
+      "word_index": 40,
+      "text": "cells",
+      "status": "sample_support_insufficient",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    }
+  ],
+  "phrases": [
+    {
+      "word_indices": [
+        6,
+        7,
+        8
+      ],
+      "interval_s": [
+        1.8799375,
+        3.949937433242798
+      ],
+      "run_index": 0,
+      "asr_interval_s": [
+        1.74,
+        3.94
+      ],
+      "second_context_interval_s": [
+        1.8399375381469727,
+        3.949937433242798
+      ],
+      "status": "acoustically_supported_phrase_candidate",
+      "internal_word_times_assigned": false
+    },
+    {
+      "word_indices": [
+        11,
+        12
+      ],
+      "interval_s": [
+        5.1899374427795415,
+        6.099937290191651
+      ],
+      "run_index": 0,
+      "asr_interval_s": [
+        5.0,
+        5.9
+      ],
+      "second_context_interval_s": [
+        5.189937442779541,
+        6.09993729019165
+      ],
+      "status": "acoustically_supported_phrase_candidate",
+      "internal_word_times_assigned": false
+    }
+  ],
+  "diagnostics": [
+    {
+      "run_index": 0,
+      "word_index": 4,
+      "asr_interval_s": [
+        1.38,
+        1.62
+      ],
+      "mfa_context_05_s": [
+        0.8799375,
+        1.7999375166893006
+      ],
+      "mfa_context_10_s": [
+        0.3799375,
+        0.49993749731779097
+      ],
+      "status": "word_evidence_insufficient"
+    },
+    {
+      "run_index": 0,
+      "word_index": 5,
+      "asr_interval_s": [
+        1.62,
+        1.74
+      ],
+      "mfa_context_05_s": [
+        1.829937488079071,
+        1.8799375
+      ],
+      "mfa_context_10_s": [
+        0.49993749731779097,
+        1.8099374475479126
+      ],
+      "status": "word_evidence_insufficient"
+    },
+    {
+      "run_index": 0,
+      "word_index": 6,
+      "asr_interval_s": [
+        1.74,
+        2.46
+      ],
+      "mfa_context_05_s": [
+        1.8799375,
+        2.489937514305115
+      ],
+      "mfa_context_10_s": [
+        1.8399375381469727,
+        2.4899373950958252
+      ],
+      "status": "word_proposal"
+    },
+    {
+      "run_index": 0,
+      "word_index": 7,
+      "asr_interval_s": [
+        2.46,
+        3.16
+      ],
+      "mfa_context_05_s": [
+        2.999937385559082,
+        3.429937452316284
+      ],
+      "mfa_context_10_s": [
+        2.999937385559082,
+        3.429937452316284
+      ],
+      "status": "word_evidence_insufficient"
+    },
+    {
+      "run_index": 0,
+      "word_index": 8,
+      "asr_interval_s": [
+        3.16,
+        3.94
+      ],
+      "mfa_context_05_s": [
+        3.569937557220459,
+        3.949937433242798
+      ],
+      "mfa_context_10_s": [
+        3.569937557220459,
+        3.949937433242798
+      ],
+      "status": "word_evidence_insufficient"
+    },
+    {
+      "run_index": 0,
+      "word_index": 9,
+      "asr_interval_s": [
+        3.94,
+        4.12
+      ],
+      "mfa_context_05_s": [
+        3.949937433242798,
+        4.239937395095826
+      ],
+      "mfa_context_10_s": [
+        3.949937433242798,
+        4.239937395095825
+      ],
+      "status": "baseline_agreement"
+    },
+    {
+      "run_index": 0,
+      "word_index": 10,
+      "asr_interval_s": [
+        4.4,
+        5.0
+      ],
+      "mfa_context_05_s": [
+        4.279937595367432,
+        5.1899374427795415
+      ],
+      "mfa_context_10_s": [
+        4.279937595367431,
+        5.189937442779541
+      ],
+      "status": "baseline_cross_model_disagreement"
+    },
+    {
+      "run_index": 0,
+      "word_index": 11,
+      "asr_interval_s": [
+        5.0,
+        5.54
+      ],
+      "mfa_context_05_s": [
+        5.1899374427795415,
+        5.639937728881836
+      ],
+      "mfa_context_10_s": [
+        5.189937442779541,
+        5.619937271118164
+      ],
+      "status": "baseline_agreement"
+    },
+    {
+      "run_index": 0,
+      "word_index": 12,
+      "asr_interval_s": [
+        5.56,
+        5.9
+      ],
+      "mfa_context_05_s": [
+        5.829937309265137,
+        6.099937290191651
+      ],
+      "mfa_context_10_s": [
+        5.829937309265136,
+        6.09993729019165
+      ],
+      "status": "word_evidence_insufficient"
+    },
+    {
+      "run_index": 0,
+      "word_index": 13,
+      "asr_interval_s": [
+        5.9,
+        6.38
+      ],
+      "mfa_context_05_s": [
+        6.099937290191651,
+        6.6299375000000005
+      ],
+      "mfa_context_10_s": [
+        6.09993729019165,
+        6.6299375
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "run_index": 0,
+      "word_index": 14,
+      "asr_interval_s": [
+        6.38,
+        6.72
+      ],
+      "mfa_context_05_s": [
+        6.6299375000000005,
+        6.919937461853028
+      ],
+      "mfa_context_10_s": [
+        6.6299375,
+        6.919937461853027
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "run_index": 0,
+      "word_index": 15,
+      "asr_interval_s": [
+        6.72,
+        7.34
+      ],
+      "mfa_context_05_s": [
+        6.949937671661377,
+        7.5699375572204595
+      ],
+      "mfa_context_10_s": [
+        6.9499376716613765,
+        7.569937557220459
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "run_index": 0,
+      "word_index": 16,
+      "asr_interval_s": [
+        7.34,
+        8.18
+      ],
+      "mfa_context_05_s": [
+        7.599937290191651,
+        8.68
+      ],
+      "mfa_context_10_s": [
+        7.59993729019165,
+        9.179999500000001
+      ],
+      "status": "word_evidence_insufficient"
+    },
+    {
+      "run_index": 1,
+      "word_index": 18,
+      "asr_interval_s": [
+        8.94,
+        9.76
+      ],
+      "mfa_context_05_s": [
+        8.800000014305114,
+        10.24999994277954
+      ],
+      "mfa_context_10_s": [
+        7.9399375,
+        11.639937547683715
+      ],
+      "status": "word_evidence_insufficient"
+    },
+    {
+      "run_index": 1,
+      "word_index": 19,
+      "asr_interval_s": [
+        9.76,
+        10.28
+      ],
+      "mfa_context_05_s": [
+        10.2800000333786,
+        10.529999914169311
+      ],
+      "mfa_context_10_s": [
+        11.679937509536742,
+        12.1899375
+      ],
+      "status": "word_evidence_insufficient"
+    },
+    {
+      "run_index": 1,
+      "word_index": 20,
+      "asr_interval_s": [
+        10.28,
+        10.7
+      ],
+      "mfa_context_05_s": [
+        10.529999914169311,
+        10.880000057220458
+      ],
+      "mfa_context_10_s": [
+        12.219937709808349,
+        12.33993759536743
+      ],
+      "status": "word_evidence_insufficient"
+    },
+    {
+      "run_index": 1,
+      "word_index": 21,
+      "asr_interval_s": [
+        10.7,
+        11.18
+      ],
+      "mfa_context_05_s": [
+        11.170000019073486,
+        11.370000066757202
+      ],
+      "mfa_context_10_s": [
+        12.33993759536743,
+        12.459937480926513
+      ],
+      "status": "word_evidence_insufficient"
+    },
+    {
+      "run_index": 1,
+      "word_index": 22,
+      "asr_interval_s": [
+        11.18,
+        11.56
+      ],
+      "mfa_context_05_s": [
+        11.410000028610229,
+        12.059999999999999
+      ],
+      "mfa_context_10_s": [
+        12.459937480926513,
+        12.56
+      ],
+      "status": "word_evidence_insufficient"
+    },
+    {
+      "run_index": 2,
+      "word_index": 24,
+      "asr_interval_s": [
+        12.44,
+        12.92
+      ],
+      "mfa_context_05_s": [
+        11.94,
+        12.99999994277954
+      ],
+      "mfa_context_10_s": [
+        11.44,
+        11.590000005960464
+      ],
+      "status": "word_evidence_insufficient"
+    },
+    {
+      "run_index": 2,
+      "word_index": 25,
+      "asr_interval_s": [
+        12.92,
+        13.54
+      ],
+      "mfa_context_05_s": [
+        12.99999994277954,
+        13.729999961853027
+      ],
+      "mfa_context_10_s": [
+        11.679999994635581,
+        13.729999961853027
+      ],
+      "status": "word_evidence_insufficient"
+    },
+    {
+      "run_index": 2,
+      "word_index": 26,
+      "asr_interval_s": [
+        13.54,
+        14.02
+      ],
+      "mfa_context_05_s": [
+        13.760000052452087,
+        14.070000114440917
+      ],
+      "mfa_context_10_s": [
+        13.759999933242797,
+        14.059999885559082
+      ],
+      "status": "word_evidence_insufficient"
+    },
+    {
+      "run_index": 2,
+      "word_index": 27,
+      "asr_interval_s": [
+        14.02,
+        14.2
+      ],
+      "mfa_context_05_s": [
+        14.070000114440917,
+        14.459999980926513
+      ],
+      "mfa_context_10_s": [
+        14.059999885559082,
+        14.459999980926513
+      ],
+      "status": "word_evidence_insufficient"
+    },
+    {
+      "run_index": 2,
+      "word_index": 28,
+      "asr_interval_s": [
+        14.2,
+        15.18
+      ],
+      "mfa_context_05_s": [
+        14.559999885559082,
+        15.68
+      ],
+      "mfa_context_10_s": [
+        15.69,
+        16.18
+      ],
+      "status": "word_evidence_insufficient"
+    },
+    {
+      "run_index": 3,
+      "word_index": 29,
+      "asr_interval_s": [
+        15.74,
+        16.08
+      ],
+      "mfa_context_05_s": [
+        15.24,
+        16.389999976158144
+      ],
+      "mfa_context_10_s": [
+        14.74,
+        16.389999976158144
+      ],
+      "status": "word_evidence_insufficient"
+    },
+    {
+      "run_index": 3,
+      "word_index": 30,
+      "asr_interval_s": [
+        16.08,
+        16.58
+      ],
+      "mfa_context_05_s": [
+        16.450000038146975,
+        16.86999999523163
+      ],
+      "mfa_context_10_s": [
+        16.450000038146975,
+        16.87000011444092
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "run_index": 3,
+      "word_index": 31,
+      "asr_interval_s": [
+        16.58,
+        17.14
+      ],
+      "mfa_context_05_s": [
+        16.86999999523163,
+        17.289999952316286
+      ],
+      "mfa_context_10_s": [
+        16.87000011444092,
+        17.289999952316286
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "run_index": 3,
+      "word_index": 32,
+      "asr_interval_s": [
+        17.14,
+        17.88
+      ],
+      "mfa_context_05_s": [
+        17.819999923706057,
+        17.99999999046326
+      ],
+      "mfa_context_10_s": [
+        17.819999923706057,
+        17.99999999046326
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "run_index": 3,
+      "word_index": 33,
+      "asr_interval_s": [
+        17.88,
+        18.2
+      ],
+      "mfa_context_05_s": [
+        17.99999999046326,
+        18.46000002861023
+      ],
+      "mfa_context_10_s": [
+        17.99999999046326,
+        18.46000002861023
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "run_index": 3,
+      "word_index": 34,
+      "asr_interval_s": [
+        18.2,
+        18.82
+      ],
+      "mfa_context_05_s": [
+        18.46000002861023,
+        18.940000047683718
+      ],
+      "mfa_context_10_s": [
+        18.46000002861023,
+        18.93000005722046
+      ],
+      "status": "word_evidence_insufficient"
+    },
+    {
+      "run_index": 3,
+      "word_index": 35,
+      "asr_interval_s": [
+        18.82,
+        19.12
+      ],
+      "mfa_context_05_s": [
+        18.940000047683718,
+        19.299999942779543
+      ],
+      "mfa_context_10_s": [
+        18.93000005722046,
+        19.299999942779543
+      ],
+      "status": "word_proposal"
+    },
+    {
+      "run_index": 3,
+      "word_index": 36,
+      "asr_interval_s": [
+        19.12,
+        19.4
+      ],
+      "mfa_context_05_s": [
+        19.299999942779543,
+        19.729999771118166
+      ],
+      "mfa_context_10_s": [
+        19.299999942779543,
+        19.729999771118166
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "run_index": 3,
+      "word_index": 37,
+      "asr_interval_s": [
+        19.4,
+        20.22
+      ],
+      "mfa_context_05_s": [
+        20.12000011444092,
+        20.39999984741211
+      ],
+      "mfa_context_10_s": [
+        20.12000011444092,
+        20.39999984741211
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "run_index": 3,
+      "word_index": 38,
+      "asr_interval_s": [
+        20.36,
+        20.76
+      ],
+      "mfa_context_05_s": [
+        20.700000038146975,
+        21.040000190734865
+      ],
+      "mfa_context_10_s": [
+        20.700000038146975,
+        21.040000190734865
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "run_index": 3,
+      "word_index": 39,
+      "asr_interval_s": [
+        20.76,
+        21.24
+      ],
+      "mfa_context_05_s": [
+        21.169999828338625,
+        21.490000000000002
+      ],
+      "mfa_context_10_s": [
+        21.169999828338625,
+        21.490000000000002
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "run_index": 3,
+      "word_index": 40,
+      "asr_interval_s": [
+        21.24,
+        21.58
+      ],
+      "mfa_context_05_s": [
+        21.490000000000002,
+        22.08
+      ],
+      "mfa_context_10_s": [
+        21.490000000000002,
+        22.404562
+      ],
+      "status": "word_evidence_insufficient"
+    }
+  ],
+  "added_words": 2,
+  "conflicting_baseline_words": 1,
+  "phrase_only_words": [
+    7,
+    8,
+    12
+  ],
+  "baseline_candidates": 14,
+  "sample_id": "-AUZQgSxyPQ$_$2",
+  "source_sha256": "e09034b30bb4f8fb9f9c2568afc20f2a764e327fe6ef4e13f21804eaac51bb7b",
+  "human_data_used": false,
+  "baseline_result_sha256": "eae2ddc532807ca87573cce3871fb0591e13828679513fff69e20304919ca630",
+  "decision_policy": "unprompted_asr_local_phonetic_multigranular_ordered_selection_v3"
+}

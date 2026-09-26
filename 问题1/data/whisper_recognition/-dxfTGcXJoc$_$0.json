@@ -1,0 +1,400 @@
+{
+  "sample_id": "-dxfTGcXJoc$_$0",
+  "source_sha256": "04bd0be907fb46c613f926fe1b06bc2c3b30881c293156510baa34a4105ade55",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " This is Governor Steve Beshear ... About Kentucky.",
+      "start": 0.56,
+      "end": 3.16,
+      "avg_logprob": -0.13429418129139933,
+      "no_speech_prob": 0.004535675048828125
+    },
+    {
+      "text": " Our state is home to more than 1,500 bioscience and life science companies and more than 100,000",
+      "start": 4.32,
+      "end": 11.4,
+      "avg_logprob": -0.13429418129139933,
+      "no_speech_prob": 0.004535675048828125
+    },
+    {
+      "text": " people who work for these firms, in areas from nutrigenomics and pharmaceuticals to",
+      "start": 11.4,
+      "end": 17.66,
+      "avg_logprob": -0.13429418129139933,
+      "no_speech_prob": 0.004535675048828125
+    },
+    {
+      "text": " to nanotechnology and medical devices.",
+      "start": 17.66,
+      "end": 19.44,
+      "avg_logprob": -0.31367187201976776,
+      "no_speech_prob": 0.0230712890625
+    }
+  ],
+  "words": [
+    {
+      "text": " This",
+      "interval_s": [
+        0.30000000000000004,
+        0.6
+      ],
+      "probability": 0.93017578125
+    },
+    {
+      "text": " is",
+      "interval_s": [
+        0.6,
+        0.76
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " Governor",
+      "interval_s": [
+        0.76,
+        1.04
+      ],
+      "probability": 0.97998046875
+    },
+    {
+      "text": " Steve",
+      "interval_s": [
+        1.04,
+        1.34
+      ],
+      "probability": 0.951171875
+    },
+    {
+      "text": " Beshear",
+      "interval_s": [
+        1.34,
+        1.98
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " ...",
+      "interval_s": [
+        1.98,
+        2.06
+      ],
+      "probability": 0.97607421875
+    },
+    {
+      "text": " About",
+      "interval_s": [
+        2.06,
+        2.7
+      ],
+      "probability": 0.9931640625
+    },
+    {
+      "text": " Kentucky.",
+      "interval_s": [
+        2.7,
+        3.16
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " Our",
+      "interval_s": [
+        4.1000000000000005,
+        4.4
+      ],
+      "probability": 0.9892578125
+    },
+    {
+      "text": " state",
+      "interval_s": [
+        4.4,
+        4.74
+      ],
+      "probability": 0.98779296875
+    },
+    {
+      "text": " is",
+      "interval_s": [
+        4.74,
+        4.96
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " home",
+      "interval_s": [
+        4.96,
+        5.26
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        5.26,
+        5.56
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " more",
+      "interval_s": [
+        5.56,
+        5.74
+      ],
+      "probability": 0.994140625
+    },
+    {
+      "text": " than",
+      "interval_s": [
+        5.74,
+        6.02
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " 1",
+      "interval_s": [
+        6.02,
+        6.2
+      ],
+      "probability": 0.7939453125
+    },
+    {
+      "text": ",500",
+      "interval_s": [
+        6.2,
+        6.86
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " bioscience",
+      "interval_s": [
+        6.86,
+        7.98
+      ],
+      "probability": 0.958740234375
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        7.98,
+        8.24
+      ],
+      "probability": 0.9951171875
+    },
+    {
+      "text": " life",
+      "interval_s": [
+        8.24,
+        8.54
+      ],
+      "probability": 0.90283203125
+    },
+    {
+      "text": " science",
+      "interval_s": [
+        8.54,
+        8.8
+      ],
+      "probability": 0.86962890625
+    },
+    {
+      "text": " companies",
+      "interval_s": [
+        8.8,
+        9.28
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        9.28,
+        10.02
+      ],
+      "probability": 0.69482421875
+    },
+    {
+      "text": " more",
+      "interval_s": [
+        10.02,
+        10.24
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " than",
+      "interval_s": [
+        10.24,
+        10.46
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " 100",
+      "interval_s": [
+        10.46,
+        10.72
+      ],
+      "probability": 0.853515625
+    },
+    {
+      "text": ",000",
+      "interval_s": [
+        10.72,
+        11.4
+      ],
+      "probability": 0.990966796875
+    },
+    {
+      "text": " people",
+      "interval_s": [
+        11.4,
+        11.62
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " who",
+      "interval_s": [
+        11.62,
+        12.08
+      ],
+      "probability": 0.98779296875
+    },
+    {
+      "text": " work",
+      "interval_s": [
+        12.08,
+        12.36
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " for",
+      "interval_s": [
+        12.36,
+        12.5
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " these",
+      "interval_s": [
+        12.5,
+        12.64
+      ],
+      "probability": 0.994140625
+    },
+    {
+      "text": " firms,",
+      "interval_s": [
+        12.64,
+        13.04
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " in",
+      "interval_s": [
+        13.26,
+        13.88
+      ],
+      "probability": 0.9931640625
+    },
+    {
+      "text": " areas",
+      "interval_s": [
+        13.88,
+        14.34
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " from",
+      "interval_s": [
+        14.34,
+        14.72
+      ],
+      "probability": 0.9951171875
+    },
+    {
+      "text": " nutrigenomics",
+      "interval_s": [
+        14.72,
+        15.94
+      ],
+      "probability": 0.8956705729166666
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        15.94,
+        16.2
+      ],
+      "probability": 0.98876953125
+    },
+    {
+      "text": " pharmaceuticals",
+      "interval_s": [
+        16.2,
+        17.28
+      ],
+      "probability": 0.998779296875
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        17.28,
+        17.66
+      ],
+      "probability": 0.8876953125
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        17.66,
+        17.74
+      ],
+      "probability": 0.71923828125
+    },
+    {
+      "text": " nanotechnology",
+      "interval_s": [
+        17.74,
+        18.5
+      ],
+      "probability": 0.940673828125
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        18.5,
+        18.82
+      ],
+      "probability": 0.951171875
+    },
+    {
+      "text": " medical",
+      "interval_s": [
+        18.82,
+        19.06
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " devices.",
+      "interval_s": [
+        19.06,
+        19.44
+      ],
+      "probability": 0.998046875
+    }
+  ],
+  "elapsed_s": 1.4312893449678086
+}

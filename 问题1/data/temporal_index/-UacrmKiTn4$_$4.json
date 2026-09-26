@@ -1,0 +1,21 @@
+{
+  "sample_id": "-UacrmKiTn4$_$4",
+  "source_sha256": "a7f2ab0d6ee2e2a2d5cd4239f03e6cac67c618ddb744891323df3ff87e29af84",
+  "native_features_sha256": "40d79d822a21e03591a3bf1e47fc2a1ddbef1d768039ed493fa321ad0cdd2001",
+  "native_metadata_sha256": "4d394a300faa13534cbd971da34130d1e647cd07c218dd86cba893307fe69151",
+  "index_sha256": "afaf9f8dc32c964f012535d452276c6dc9086476818b8a7dc28b1b042d2d926a",
+  "time_nodes": 25,
+  "audio_edges": 257,
+  "face_events_linked": 25,
+  "original_text_words_retained": 14,
+  "zero_audio": false,
+  "text_time_inferred": false,
+  "source_scene_semantics": "Nearest sampled frame representation over its native cell, restricted to the union of actual decoded frame supports.",
+  "audio_usable_nodes": 25,
+  "video_gap_seconds_excluded": 8.881784197001252e-15,
+  "voiced_nodes": 18,
+  "nodes_with_pitch_zero_fill_dilution": 17,
+  "max_pitch_zero_fill_dilution_hz": 112.50000000000028,
+  "semantic_acceptance": "not_applicable_to_physical_index",
+  "human_data_used": false
+}

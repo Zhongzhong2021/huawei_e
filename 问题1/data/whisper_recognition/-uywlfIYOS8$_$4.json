@@ -1,0 +1,171 @@
+{
+  "sample_id": "-uywlfIYOS8$_$4",
+  "source_sha256": "fde46f5222cf5cfec7af9c93214c972ce2d686b0bf9c90a291021601968986f9",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " And then from a brand point of view, we need to make sure that we're driving the relevant insights.",
+      "start": 0.6600000000000006,
+      "end": 5.08,
+      "avg_logprob": -0.26671875,
+      "no_speech_prob": 0.1900634765625
+    }
+  ],
+  "words": [
+    {
+      "text": " And",
+      "interval_s": [
+        0.6600000000000006,
+        1.06
+      ],
+      "probability": 0.12115478515625
+    },
+    {
+      "text": " then",
+      "interval_s": [
+        1.06,
+        1.2
+      ],
+      "probability": 0.93017578125
+    },
+    {
+      "text": " from",
+      "interval_s": [
+        1.2,
+        1.38
+      ],
+      "probability": 0.81982421875
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        1.38,
+        1.52
+      ],
+      "probability": 0.99267578125
+    },
+    {
+      "text": " brand",
+      "interval_s": [
+        1.52,
+        1.88
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " point",
+      "interval_s": [
+        1.88,
+        2.14
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        2.14,
+        2.36
+      ],
+      "probability": 0.97607421875
+    },
+    {
+      "text": " view,",
+      "interval_s": [
+        2.36,
+        2.52
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " we",
+      "interval_s": [
+        2.56,
+        2.68
+      ],
+      "probability": 0.9951171875
+    },
+    {
+      "text": " need",
+      "interval_s": [
+        2.68,
+        2.92
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        2.92,
+        3.08
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " make",
+      "interval_s": [
+        3.08,
+        3.24
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " sure",
+      "interval_s": [
+        3.24,
+        3.44
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " that",
+      "interval_s": [
+        3.44,
+        3.6
+      ],
+      "probability": 0.96435546875
+    },
+    {
+      "text": " we're",
+      "interval_s": [
+        3.6,
+        3.74
+      ],
+      "probability": 0.970458984375
+    },
+    {
+      "text": " driving",
+      "interval_s": [
+        3.74,
+        4.04
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        4.04,
+        4.26
+      ],
+      "probability": 0.990234375
+    },
+    {
+      "text": " relevant",
+      "interval_s": [
+        4.26,
+        4.46
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " insights.",
+      "interval_s": [
+        4.46,
+        5.08
+      ],
+      "probability": 0.6435546875
+    }
+  ],
+  "elapsed_s": 0.815200951998122
+}

@@ -1,0 +1,194 @@
+{
+  "sample_id": "-egA8-b7-3M$_$1",
+  "source_sha256": "589a7989b1b4888568c31614a2d6beefba88fb87289c85b94df2d8051500403b",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " I have started a successful legal nurse consulting business in 1989.",
+      "start": 0.0,
+      "end": 5.22,
+      "avg_logprob": -0.19838170121823037,
+      "no_speech_prob": 0.08966064453125
+    },
+    {
+      "text": " I mentor nurses who want to become legal nurse consultants.",
+      "start": 5.62,
+      "end": 9.12,
+      "avg_logprob": -0.19838170121823037,
+      "no_speech_prob": 0.08966064453125
+    }
+  ],
+  "words": [
+    {
+      "text": " I",
+      "interval_s": [
+        0.0,
+        0.48
+      ],
+      "probability": 0.4853515625
+    },
+    {
+      "text": " have",
+      "interval_s": [
+        0.48,
+        0.78
+      ],
+      "probability": 0.86767578125
+    },
+    {
+      "text": " started",
+      "interval_s": [
+        0.78,
+        1.5
+      ],
+      "probability": 0.986328125
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        1.5,
+        1.72
+      ],
+      "probability": 0.97509765625
+    },
+    {
+      "text": " successful",
+      "interval_s": [
+        1.72,
+        2.08
+      ],
+      "probability": 0.9892578125
+    },
+    {
+      "text": " legal",
+      "interval_s": [
+        2.08,
+        2.58
+      ],
+      "probability": 0.916015625
+    },
+    {
+      "text": " nurse",
+      "interval_s": [
+        2.58,
+        2.84
+      ],
+      "probability": 0.97314453125
+    },
+    {
+      "text": " consulting",
+      "interval_s": [
+        2.84,
+        3.26
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " business",
+      "interval_s": [
+        3.26,
+        3.7
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " in",
+      "interval_s": [
+        3.7,
+        4.52
+      ],
+      "probability": 0.9775390625
+    },
+    {
+      "text": " 1989.",
+      "interval_s": [
+        4.52,
+        5.22
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " I",
+      "interval_s": [
+        5.62,
+        6.34
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " mentor",
+      "interval_s": [
+        6.34,
+        6.62
+      ],
+      "probability": 0.98486328125
+    },
+    {
+      "text": " nurses",
+      "interval_s": [
+        6.62,
+        7.1
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " who",
+      "interval_s": [
+        7.1,
+        7.38
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " want",
+      "interval_s": [
+        7.38,
+        7.68
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        7.68,
+        7.84
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " become",
+      "interval_s": [
+        7.84,
+        8.1
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " legal",
+      "interval_s": [
+        8.1,
+        8.4
+      ],
+      "probability": 0.9873046875
+    },
+    {
+      "text": " nurse",
+      "interval_s": [
+        8.4,
+        8.64
+      ],
+      "probability": 0.99072265625
+    },
+    {
+      "text": " consultants.",
+      "interval_s": [
+        8.64,
+        9.12
+      ],
+      "probability": 0.99755859375
+    }
+  ],
+  "elapsed_s": 0.6386957219801843
+}

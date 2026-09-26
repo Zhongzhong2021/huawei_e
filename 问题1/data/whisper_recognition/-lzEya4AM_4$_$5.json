@@ -1,0 +1,170 @@
+{
+  "sample_id": "-lzEya4AM_4$_$5",
+  "source_sha256": "3b74de8d0e66fd754594f05985e5af3480adcc03555f79225d3b727cb4bed043",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " If it falls into any of those three categories, inducing nausea and vomiting would be your",
+      "start": 0.0,
+      "end": 6.52,
+      "avg_logprob": -0.15219908069681237,
+      "no_speech_prob": 0.0011243820190429688
+    },
+    {
+      "text": " next step.",
+      "start": 6.52,
+      "end": 6.94,
+      "avg_logprob": -0.15219908069681237,
+      "no_speech_prob": 0.0011243820190429688
+    }
+  ],
+  "words": [
+    {
+      "text": " If",
+      "interval_s": [
+        0.0,
+        0.52
+      ],
+      "probability": 0.7138671875
+    },
+    {
+      "text": " it",
+      "interval_s": [
+        0.52,
+        0.66
+      ],
+      "probability": 0.9912109375
+    },
+    {
+      "text": " falls",
+      "interval_s": [
+        0.66,
+        0.88
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " into",
+      "interval_s": [
+        0.88,
+        1.12
+      ],
+      "probability": 0.9267578125
+    },
+    {
+      "text": " any",
+      "interval_s": [
+        1.12,
+        1.58
+      ],
+      "probability": 0.9794921875
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        1.58,
+        1.78
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " those",
+      "interval_s": [
+        1.78,
+        1.96
+      ],
+      "probability": 0.98876953125
+    },
+    {
+      "text": " three",
+      "interval_s": [
+        1.96,
+        2.18
+      ],
+      "probability": 0.935546875
+    },
+    {
+      "text": " categories,",
+      "interval_s": [
+        2.18,
+        2.66
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " inducing",
+      "interval_s": [
+        2.92,
+        4.2
+      ],
+      "probability": 0.98486328125
+    },
+    {
+      "text": " nausea",
+      "interval_s": [
+        4.2,
+        5.42
+      ],
+      "probability": 0.6993408203125
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        5.42,
+        5.46
+      ],
+      "probability": 0.9765625
+    },
+    {
+      "text": " vomiting",
+      "interval_s": [
+        5.46,
+        5.86
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " would",
+      "interval_s": [
+        5.86,
+        6.28
+      ],
+      "probability": 0.90771484375
+    },
+    {
+      "text": " be",
+      "interval_s": [
+        6.28,
+        6.4
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " your",
+      "interval_s": [
+        6.4,
+        6.52
+      ],
+      "probability": 0.990234375
+    },
+    {
+      "text": " next",
+      "interval_s": [
+        6.52,
+        6.72
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " step.",
+      "interval_s": [
+        6.72,
+        6.94
+      ],
+      "probability": 0.994140625
+    }
+  ],
+  "elapsed_s": 0.7300146169727668
+}

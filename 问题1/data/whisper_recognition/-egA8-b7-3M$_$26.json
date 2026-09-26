@@ -1,0 +1,147 @@
+{
+  "sample_id": "-egA8-b7-3M$_$26",
+  "source_sha256": "11f78aed680ea9c5862a15e04ff6c1f8776c46d29c98b68d28773ff39d959685",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " We are updating it all the time and looking forward to your comments on our videos.",
+      "start": 0.0,
+      "end": 4.9,
+      "avg_logprob": -0.17861328646540642,
+      "no_speech_prob": 0.0173187255859375
+    }
+  ],
+  "words": [
+    {
+      "text": " We",
+      "interval_s": [
+        0.0,
+        0.5
+      ],
+      "probability": 0.83740234375
+    },
+    {
+      "text": " are",
+      "interval_s": [
+        0.5,
+        0.62
+      ],
+      "probability": 0.358642578125
+    },
+    {
+      "text": " updating",
+      "interval_s": [
+        0.62,
+        0.96
+      ],
+      "probability": 0.98974609375
+    },
+    {
+      "text": " it",
+      "interval_s": [
+        0.96,
+        1.22
+      ],
+      "probability": 0.94677734375
+    },
+    {
+      "text": " all",
+      "interval_s": [
+        1.22,
+        1.42
+      ],
+      "probability": 0.9921875
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        1.42,
+        1.58
+      ],
+      "probability": 0.974609375
+    },
+    {
+      "text": " time",
+      "interval_s": [
+        1.58,
+        1.92
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        1.92,
+        2.48
+      ],
+      "probability": 0.81201171875
+    },
+    {
+      "text": " looking",
+      "interval_s": [
+        2.48,
+        2.72
+      ],
+      "probability": 0.908203125
+    },
+    {
+      "text": " forward",
+      "interval_s": [
+        2.72,
+        3.14
+      ],
+      "probability": 0.9921875
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        3.14,
+        3.36
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " your",
+      "interval_s": [
+        3.36,
+        3.56
+      ],
+      "probability": 0.9775390625
+    },
+    {
+      "text": " comments",
+      "interval_s": [
+        3.56,
+        4.02
+      ],
+      "probability": 0.99365234375
+    },
+    {
+      "text": " on",
+      "interval_s": [
+        4.02,
+        4.4
+      ],
+      "probability": 0.98779296875
+    },
+    {
+      "text": " our",
+      "interval_s": [
+        4.4,
+        4.6
+      ],
+      "probability": 0.98486328125
+    },
+    {
+      "text": " videos.",
+      "interval_s": [
+        4.6,
+        4.9
+      ],
+      "probability": 0.98583984375
+    }
+  ],
+  "elapsed_s": 0.7035041039926
+}

@@ -1,0 +1,171 @@
+{
+  "sample_id": "-tPCytz4rww$_$16",
+  "source_sha256": "8b3f82f9628792eebaf8c227becc2ebeba59bb8abb668bcca86e07fb1a992a93",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " so make sure to get a thorough or to do a thorough cleaning of the property if you need",
+      "start": 0.0,
+      "end": 7.04,
+      "avg_logprob": -0.16708096861839294,
+      "no_speech_prob": 0.002590179443359375
+    }
+  ],
+  "words": [
+    {
+      "text": " so",
+      "interval_s": [
+        0.0,
+        0.54
+      ],
+      "probability": 0.2666015625
+    },
+    {
+      "text": " make",
+      "interval_s": [
+        0.54,
+        1.02
+      ],
+      "probability": 0.9931640625
+    },
+    {
+      "text": " sure",
+      "interval_s": [
+        1.02,
+        1.24
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        1.24,
+        1.52
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " get",
+      "interval_s": [
+        1.52,
+        1.96
+      ],
+      "probability": 0.7421875
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        1.96,
+        2.06
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " thorough",
+      "interval_s": [
+        2.06,
+        2.36
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " or",
+      "interval_s": [
+        2.36,
+        3.86
+      ],
+      "probability": 0.73046875
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        3.86,
+        4.22
+      ],
+      "probability": 0.99072265625
+    },
+    {
+      "text": " do",
+      "interval_s": [
+        4.22,
+        4.48
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        4.48,
+        4.6
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " thorough",
+      "interval_s": [
+        4.6,
+        4.88
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " cleaning",
+      "interval_s": [
+        4.88,
+        5.38
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        5.38,
+        5.76
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        5.76,
+        5.96
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " property",
+      "interval_s": [
+        5.96,
+        6.36
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " if",
+      "interval_s": [
+        6.36,
+        6.86
+      ],
+      "probability": 0.72021484375
+    },
+    {
+      "text": " you",
+      "interval_s": [
+        6.86,
+        6.92
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " need",
+      "interval_s": [
+        6.92,
+        7.04
+      ],
+      "probability": 0.99365234375
+    }
+  ],
+  "elapsed_s": 0.5639558690018021
+}

@@ -1,0 +1,185 @@
+{
+  "_id": "621ffdc136468d709f17ae85",
+  "id": "facebook/wav2vec2-lv-60-espeak-cv-ft",
+  "private": false,
+  "pipeline_tag": "automatic-speech-recognition",
+  "library_name": "transformers",
+  "tags": [
+    "transformers",
+    "pytorch",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "speech",
+    "audio",
+    "phoneme-recognition",
+    "multilingual",
+    "dataset:common_voice",
+    "arxiv:2109.11680",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "deploy:azure",
+    "region:us"
+  ],
+  "downloads": 269339,
+  "likes": 70,
+  "modelId": "facebook/wav2vec2-lv-60-espeak-cv-ft",
+  "author": "facebook",
+  "sha": "ae45363bf3413b374fecd9dc8bc1df0e24c3b7f4",
+  "lastModified": "2023-10-31T13:13:45.000Z",
+  "gated": false,
+  "disabled": false,
+  "widgetData": [
+    {
+      "example_title": "Librispeech sample 1",
+      "src": "https://cdn-media.huggingface.co/speech_samples/sample1.flac"
+    },
+    {
+      "example_title": "Librispeech sample 2",
+      "src": "https://cdn-media.huggingface.co/speech_samples/sample2.flac"
+    }
+  ],
+  "model-index": null,
+  "config": {
+    "architectures": [
+      "Wav2Vec2ForCTC"
+    ],
+    "model_type": "wav2vec2",
+    "tokenizer_config": {
+      "unk_token": "<unk>",
+      "bos_token": "<s>",
+      "eos_token": "</s>",
+      "pad_token": "<pad>"
+    }
+  },
+  "cardData": {
+    "language": "multilingual",
+    "datasets": [
+      "common_voice"
+    ],
+    "tags": [
+      "speech",
+      "audio",
+      "automatic-speech-recognition",
+      "phoneme-recognition"
+    ],
+    "widget": [
+      {
+        "example_title": "Librispeech sample 1",
+        "src": "https://cdn-media.huggingface.co/speech_samples/sample1.flac"
+      },
+      {
+        "example_title": "Librispeech sample 2",
+        "src": "https://cdn-media.huggingface.co/speech_samples/sample2.flac"
+      }
+    ],
+    "license": "apache-2.0"
+  },
+  "transformersInfo": {
+    "auto_model": "AutoModelForCTC",
+    "pipeline_tag": "automatic-speech-recognition",
+    "processor": "AutoProcessor"
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes"
+    },
+    {
+      "rfilename": "README.md"
+    },
+    {
+      "rfilename": "config.json"
+    },
+    {
+      "rfilename": "preprocessor_config.json"
+    },
+    {
+      "rfilename": "pytorch_model.bin"
+    },
+    {
+      "rfilename": "special_tokens_map.json"
+    },
+    {
+      "rfilename": "tokenizer_config.json"
+    },
+    {
+      "rfilename": "vocab.json"
+    }
+  ],
+  "spaces": [
+    "mteb/leaderboard",
+    "KoelLabs/IPA-Transcription-EN",
+    "Bisher/Speech2Phonetics",
+    "pwenker/pronunciation_trainer",
+    "davidmeikle/phoneme-recorder",
+    "build-small-hackathon/rhotic",
+    "UT-healthcare/multilingual-phoneme-production-analysis",
+    "maxpar1/leaderboard",
+    "ZacDLX1915/IPA-Translator",
+    "Wystan28/PhonemeModel",
+    "SergejKurt/german-pronunciation-trainer",
+    "Akuro000/NovScorePronuciation",
+    "hanbian/facebook-wav2vec2-lv-60-espeak-cv-ft",
+    "gsvann/speech-to-russian-speech-translation",
+    "vladakoz/phoneme-model",
+    "uzagi/speak-smart",
+    "prakashp1893/pronunce-api",
+    "yazh4/lumaspeech-backend",
+    "junaiddbz/Clario-Analysis-Module",
+    "diminch/ielts-grader-api",
+    "Layer7/audio2phoneme",
+    "999life/espeak-ng",
+    "LJKJHI/pronunciation_trainer",
+    "emreyoleridev/ielts-grader-api",
+    "hana92/Arabic-Speech-2-IPA-2-Phoneme",
+    "n-fleischmann/accent-coach",
+    "neev2211/arabic-native-classifier",
+    "jsflor/language-learning",
+    "Zaynabe/pronunciation-api",
+    "matheetharanadshyan/vocalis",
+    "sashaikevich/test-audio-phonemes",
+    "loydkim/pronun-ai-backend",
+    "kiedistv/leaderboard",
+    "ushna22/accentify-word-level",
+    "muoten/aichael-jackson",
+    "qiaosong88/leaderboard",
+    "nevil213/pronun",
+    "ArtemBolgov/leaderboard",
+    "IndianChess/rhotacism-nemotron-coach",
+    "urgent-challenge-team/eval-intrusive-2026",
+    "urgent-challenge-team/eval-dnsmos-2026",
+    "urgent-challenge-team/eval-nisqa-2026",
+    "urgent-challenge-team/eval-utmos-2026",
+    "urgent-challenge-team/eval-scoreq-2026",
+    "urgent-challenge-team/eval-speechbert-2026",
+    "urgent-challenge-team/eval-spksim-2026",
+    "urgent-challenge-team/eval-lps-2026",
+    "urgent-challenge-team/eval-cacc-2026",
+    "urgent-challenge-team/eval-lid-2026",
+    "urgent-challenge-team/eval-emosim-2026",
+    "ereke090/chatty",
+    "justinz3/IPA-Speech-Analyzer",
+    "ismail91/aria-backend",
+    "salomon1142608010/QuickEnglishLearningApp-Backend",
+    "Wystan28/PhonemeRecognizer",
+    "Vitailer/pronunciation-assessment",
+    "malyvena/leaderboard",
+    "anicoli11/coach",
+    "HuggingLLM/leaderboard",
+    "wangsh0111/leaderboard",
+    "kaotd/leaderboard",
+    "jimprovuntangled/sonorant",
+    "Speakz/phoneme-recognizer-multi",
+    "AlexeiDorofeev/spanish-pron",
+    "royluu/gop",
+    "Wystan28/FinalPhonemeRecognizer",
+    "chariotk/longtong_mdd",
+    "chariotk/longtong-phoneme",
+    "sairahulallam/livo",
+    "Saikiran252/pronunciation-coach",
+    "MRS1409/livo-backend",
+    "aviral21/phonetics-identify",
+    "g-zucatelli/phone-accentedness"
+  ],
+  "createdAt": "2022-03-02T23:29:05.000Z",
+  "usedStorage": 2526949775
+}

@@ -1,0 +1,10 @@
+{
+  "archive": "/workspace/q1-delivery.zip",
+  "bytes": 23340868,
+  "sha256": "baf5273d8cd49b6e72bc1dc8501f0700fd291d98d0e0f0808e9504d1ca217171",
+  "files": 1233,
+  "uncompressed_bytes": 57244557,
+  "status": "q1_delivery_verified_with_explicit_quality_limits",
+  "team_total_size_verified": false,
+  "human_anonymity_review_complete": false
+}

@@ -1,0 +1,35 @@
+{
+  "sample_id": "-ri04Z7vwnc$_$0",
+  "source_sha256": "93021c70c8fad20ad3fded80e7fc790a2f9c96835de58a3b694c6906de42684b",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " Thank you.",
+      "start": 0.0,
+      "end": 2.74,
+      "avg_logprob": -0.666015644868215,
+      "no_speech_prob": 0.5400390625
+    }
+  ],
+  "words": [
+    {
+      "text": " Thank",
+      "interval_s": [
+        0.0,
+        1.76
+      ],
+      "probability": 0.1800537109375
+    },
+    {
+      "text": " you.",
+      "interval_s": [
+        1.76,
+        2.74
+      ],
+      "probability": 0.99951171875
+    }
+  ],
+  "elapsed_s": 0.3699482440133579
+}

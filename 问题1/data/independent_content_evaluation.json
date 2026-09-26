@@ -1,0 +1,32 @@
+{
+  "status": "pilot_reviewed",
+  "counts": {
+    "complete": 6,
+    "absent": 2
+  },
+  "content_groups": {
+    "complete": {
+      "samples": 6,
+      "original_words": 142,
+      "candidate_words": 86,
+      "samples_with_any_candidate": 5,
+      "candidate_coverage": 0.6056338028169014
+    },
+    "absent": {
+      "samples": 2,
+      "original_words": 13,
+      "candidate_words": 0,
+      "samples_with_any_candidate": 0,
+      "candidate_coverage": 0.0
+    }
+  },
+  "expected_samples": 8,
+  "absent_samples_with_any_candidate": 0,
+  "word_boundary_accuracy": null,
+  "word_precision": null,
+  "automatic_results_modified": false,
+  "interpretation": "Coverage is availability, not accuracy. Absent groups remain separate; uncertain and unfilled are not negatives.",
+  "protocol_sha256": "9c6b7bf58ecf4a9efaf102eb3d263a99b7045ee2e870f1ff3470b1c8e60ce446",
+  "review_sha256": "f2a72ac7fed9a48c07d66d62f4cda28fd121beadf324df70bbbd2837ca0e7150",
+  "method_and_prediction_hashes_checked": true
+}

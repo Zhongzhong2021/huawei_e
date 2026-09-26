@@ -1,0 +1,163 @@
+{
+  "sample_id": "-3g5yACwYnA$_$13",
+  "source_sha256": "aeb47627f59dce3d0a85a44ef35e4a3bc18211498e98c8c11cf60269646df24f",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " that we do, they've been able to find solutions or at least bring some answers to the table.",
+      "start": 0.0,
+      "end": 4.74,
+      "avg_logprob": -0.21956379525363445,
+      "no_speech_prob": 0.003879547119140625
+    }
+  ],
+  "words": [
+    {
+      "text": " that",
+      "interval_s": [
+        0.0,
+        0.16
+      ],
+      "probability": 0.82568359375
+    },
+    {
+      "text": " we",
+      "interval_s": [
+        0.16,
+        0.3
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " do,",
+      "interval_s": [
+        0.3,
+        0.52
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " they've",
+      "interval_s": [
+        0.6,
+        1.58
+      ],
+      "probability": 0.95751953125
+    },
+    {
+      "text": " been",
+      "interval_s": [
+        1.58,
+        1.6
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " able",
+      "interval_s": [
+        1.6,
+        1.8
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        1.8,
+        2.0
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " find",
+      "interval_s": [
+        2.0,
+        2.24
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " solutions",
+      "interval_s": [
+        2.24,
+        2.7
+      ],
+      "probability": 0.9951171875
+    },
+    {
+      "text": " or",
+      "interval_s": [
+        2.7,
+        3.04
+      ],
+      "probability": 0.8623046875
+    },
+    {
+      "text": " at",
+      "interval_s": [
+        3.04,
+        3.18
+      ],
+      "probability": 0.98876953125
+    },
+    {
+      "text": " least",
+      "interval_s": [
+        3.18,
+        3.34
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " bring",
+      "interval_s": [
+        3.34,
+        3.56
+      ],
+      "probability": 0.98974609375
+    },
+    {
+      "text": " some",
+      "interval_s": [
+        3.56,
+        3.86
+      ],
+      "probability": 0.990234375
+    },
+    {
+      "text": " answers",
+      "interval_s": [
+        3.86,
+        4.14
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        4.14,
+        4.38
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        4.38,
+        4.46
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " table.",
+      "interval_s": [
+        4.46,
+        4.74
+      ],
+      "probability": 0.9990234375
+    }
+  ],
+  "elapsed_s": 1.0590122860157862
+}

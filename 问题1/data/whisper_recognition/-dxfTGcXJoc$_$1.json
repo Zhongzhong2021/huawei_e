@@ -1,0 +1,313 @@
+{
+  "sample_id": "-dxfTGcXJoc$_$1",
+  "source_sha256": "b5ffdc98a4a98b8f0aae55dee5fed66a43bcb129f47a250a004c1cc74e572595",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " For the 10th straight year, some of Kentucky's best and most innovative biotech companies",
+      "start": 0.0,
+      "end": 5.8,
+      "avg_logprob": -0.13206129979628783,
+      "no_speech_prob": 0.01299285888671875
+    },
+    {
+      "text": " and technologies were on display at the annual BioInternational Convention, which I and other",
+      "start": 5.8,
+      "end": 12.86,
+      "avg_logprob": -0.13206129979628783,
+      "no_speech_prob": 0.01299285888671875
+    },
+    {
+      "text": " state officials attended this week in Chicago.",
+      "start": 12.86,
+      "end": 15.12,
+      "avg_logprob": -0.13206129979628783,
+      "no_speech_prob": 0.01299285888671875
+    }
+  ],
+  "words": [
+    {
+      "text": " For",
+      "interval_s": [
+        0.0,
+        0.56
+      ],
+      "probability": 0.9423828125
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        0.56,
+        0.66
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " 10th",
+      "interval_s": [
+        0.66,
+        1.02
+      ],
+      "probability": 0.7364501953125
+    },
+    {
+      "text": " straight",
+      "interval_s": [
+        1.02,
+        1.22
+      ],
+      "probability": 0.9755859375
+    },
+    {
+      "text": " year,",
+      "interval_s": [
+        1.22,
+        1.56
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " some",
+      "interval_s": [
+        1.8,
+        2.42
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        2.42,
+        2.66
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " Kentucky's",
+      "interval_s": [
+        2.66,
+        3.2
+      ],
+      "probability": 0.993896484375
+    },
+    {
+      "text": " best",
+      "interval_s": [
+        3.2,
+        3.6
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        3.6,
+        3.86
+      ],
+      "probability": 0.9892578125
+    },
+    {
+      "text": " most",
+      "interval_s": [
+        3.86,
+        4.14
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " innovative",
+      "interval_s": [
+        4.14,
+        4.66
+      ],
+      "probability": 0.99169921875
+    },
+    {
+      "text": " biotech",
+      "interval_s": [
+        4.66,
+        5.46
+      ],
+      "probability": 0.9944661458333334
+    },
+    {
+      "text": " companies",
+      "interval_s": [
+        5.46,
+        5.8
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        5.8,
+        6.06
+      ],
+      "probability": 0.9951171875
+    },
+    {
+      "text": " technologies",
+      "interval_s": [
+        6.06,
+        6.6
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " were",
+      "interval_s": [
+        6.6,
+        7.36
+      ],
+      "probability": 0.98876953125
+    },
+    {
+      "text": " on",
+      "interval_s": [
+        7.36,
+        7.6
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " display",
+      "interval_s": [
+        7.6,
+        8.06
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " at",
+      "interval_s": [
+        8.06,
+        8.6
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        8.6,
+        8.78
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " annual",
+      "interval_s": [
+        8.78,
+        9.22
+      ],
+      "probability": 0.982421875
+    },
+    {
+      "text": " BioInternational",
+      "interval_s": [
+        9.22,
+        10.64
+      ],
+      "probability": 0.752197265625
+    },
+    {
+      "text": " Convention,",
+      "interval_s": [
+        10.64,
+        10.98
+      ],
+      "probability": 0.77392578125
+    },
+    {
+      "text": " which",
+      "interval_s": [
+        11.3,
+        11.94
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " I",
+      "interval_s": [
+        11.94,
+        12.16
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        12.16,
+        12.56
+      ],
+      "probability": 0.9716796875
+    },
+    {
+      "text": " other",
+      "interval_s": [
+        12.56,
+        12.86
+      ],
+      "probability": 0.99365234375
+    },
+    {
+      "text": " state",
+      "interval_s": [
+        12.86,
+        13.08
+      ],
+      "probability": 0.9677734375
+    },
+    {
+      "text": " officials",
+      "interval_s": [
+        13.08,
+        13.44
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " attended",
+      "interval_s": [
+        13.44,
+        13.88
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " this",
+      "interval_s": [
+        13.88,
+        14.2
+      ],
+      "probability": 0.9892578125
+    },
+    {
+      "text": " week",
+      "interval_s": [
+        14.2,
+        14.54
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " in",
+      "interval_s": [
+        14.54,
+        14.82
+      ],
+      "probability": 0.9833984375
+    },
+    {
+      "text": " Chicago.",
+      "interval_s": [
+        14.82,
+        15.12
+      ],
+      "probability": 0.99951171875
+    }
+  ],
+  "elapsed_s": 1.038224257004913
+}

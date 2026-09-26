@@ -1,0 +1,155 @@
+{
+  "sample_id": "-RfYyzHpjk4$_$8",
+  "source_sha256": "ed8c672c532b8c7d1c830c82d6e2c14fcb3bbd3dc1a86670a03a6c8e83c02f3c",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " It's pretty, pretty easy to do, but you've got to set up those numbers ahead of time.",
+      "start": 0.0,
+      "end": 3.88,
+      "avg_logprob": -0.215625,
+      "no_speech_prob": 0.01197052001953125
+    }
+  ],
+  "words": [
+    {
+      "text": " It's",
+      "interval_s": [
+        0.0,
+        0.56
+      ],
+      "probability": 0.6474609375
+    },
+    {
+      "text": " pretty,",
+      "interval_s": [
+        0.56,
+        0.84
+      ],
+      "probability": 0.9912109375
+    },
+    {
+      "text": " pretty",
+      "interval_s": [
+        0.92,
+        1.14
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " easy",
+      "interval_s": [
+        1.14,
+        1.42
+      ],
+      "probability": 0.98046875
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        1.42,
+        1.58
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " do,",
+      "interval_s": [
+        1.58,
+        1.76
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " but",
+      "interval_s": [
+        1.82,
+        1.94
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " you've",
+      "interval_s": [
+        1.94,
+        2.1
+      ],
+      "probability": 0.960205078125
+    },
+    {
+      "text": " got",
+      "interval_s": [
+        2.1,
+        2.22
+      ],
+      "probability": 0.97265625
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        2.22,
+        2.34
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " set",
+      "interval_s": [
+        2.34,
+        2.52
+      ],
+      "probability": 0.97900390625
+    },
+    {
+      "text": " up",
+      "interval_s": [
+        2.52,
+        2.72
+      ],
+      "probability": 0.9599609375
+    },
+    {
+      "text": " those",
+      "interval_s": [
+        2.72,
+        2.9
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " numbers",
+      "interval_s": [
+        2.9,
+        3.16
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " ahead",
+      "interval_s": [
+        3.16,
+        3.38
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        3.38,
+        3.6
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " time.",
+      "interval_s": [
+        3.6,
+        3.88
+      ],
+      "probability": 0.99951171875
+    }
+  ],
+  "elapsed_s": 0.6519029110204428
+}

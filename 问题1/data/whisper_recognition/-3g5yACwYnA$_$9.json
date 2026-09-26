@@ -1,0 +1,218 @@
+{
+  "sample_id": "-3g5yACwYnA$_$9",
+  "source_sha256": "b962573b12ed1f06d5533f6427c80dce2bae3a99dd332f6d3fcb32c579f3f016",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " we have many new opportunities through the way things have changed through the",
+      "start": 0.0,
+      "end": 4.46,
+      "avg_logprob": -0.21704101795330644,
+      "no_speech_prob": 0.0079803466796875
+    },
+    {
+      "text": " years looking for new niche high-end value-added products and",
+      "start": 4.46,
+      "end": 8.22,
+      "avg_logprob": -0.21704101795330644,
+      "no_speech_prob": 0.0079803466796875
+    }
+  ],
+  "words": [
+    {
+      "text": " we",
+      "interval_s": [
+        0.0,
+        0.52
+      ],
+      "probability": 0.2254638671875
+    },
+    {
+      "text": " have",
+      "interval_s": [
+        0.52,
+        0.98
+      ],
+      "probability": 0.98974609375
+    },
+    {
+      "text": " many",
+      "interval_s": [
+        0.98,
+        1.22
+      ],
+      "probability": 0.99267578125
+    },
+    {
+      "text": " new",
+      "interval_s": [
+        1.22,
+        1.7
+      ],
+      "probability": 0.990234375
+    },
+    {
+      "text": " opportunities",
+      "interval_s": [
+        1.7,
+        2.32
+      ],
+      "probability": 0.982421875
+    },
+    {
+      "text": " through",
+      "interval_s": [
+        2.32,
+        2.6
+      ],
+      "probability": 0.9150390625
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        2.6,
+        3.4
+      ],
+      "probability": 0.98876953125
+    },
+    {
+      "text": " way",
+      "interval_s": [
+        3.4,
+        3.54
+      ],
+      "probability": 0.9931640625
+    },
+    {
+      "text": " things",
+      "interval_s": [
+        3.54,
+        3.76
+      ],
+      "probability": 0.9951171875
+    },
+    {
+      "text": " have",
+      "interval_s": [
+        3.76,
+        3.9
+      ],
+      "probability": 0.9638671875
+    },
+    {
+      "text": " changed",
+      "interval_s": [
+        3.9,
+        4.14
+      ],
+      "probability": 0.9912109375
+    },
+    {
+      "text": " through",
+      "interval_s": [
+        4.14,
+        4.34
+      ],
+      "probability": 0.88134765625
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        4.34,
+        4.46
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " years",
+      "interval_s": [
+        4.46,
+        4.74
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " looking",
+      "interval_s": [
+        4.74,
+        5.64
+      ],
+      "probability": 0.31689453125
+    },
+    {
+      "text": " for",
+      "interval_s": [
+        5.64,
+        5.92
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " new",
+      "interval_s": [
+        5.92,
+        6.08
+      ],
+      "probability": 0.9931640625
+    },
+    {
+      "text": " niche",
+      "interval_s": [
+        6.08,
+        6.36
+      ],
+      "probability": 0.978515625
+    },
+    {
+      "text": " high",
+      "interval_s": [
+        6.36,
+        6.66
+      ],
+      "probability": 0.845703125
+    },
+    {
+      "text": "-end",
+      "interval_s": [
+        6.66,
+        6.92
+      ],
+      "probability": 0.91064453125
+    },
+    {
+      "text": " value",
+      "interval_s": [
+        6.92,
+        7.22
+      ],
+      "probability": 0.96728515625
+    },
+    {
+      "text": "-added",
+      "interval_s": [
+        7.22,
+        7.5
+      ],
+      "probability": 0.9537760416666666
+    },
+    {
+      "text": " products",
+      "interval_s": [
+        7.5,
+        7.86
+      ],
+      "probability": 0.9951171875
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        7.86,
+        8.22
+      ],
+      "probability": 0.56103515625
+    }
+  ],
+  "elapsed_s": 0.8515771430102177
+}

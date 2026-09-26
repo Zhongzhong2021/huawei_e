@@ -1,0 +1,30 @@
+{
+  "core_dependencies_sha256": {
+    "scripts/math_features.py": "612a124aeb397f8b8b97d5fb4fcd4622ffcadde60e0dfad0b2917ea0094228aa",
+    "scripts/common.py": "dc44a81c4a88fc18d35f44f3eca05294f7831b36c3c8976b46f8b48daf02734f",
+    "scripts/whisper_support.py": "d5b97092f38f2daa5d7328a257f8b2c020e3098a23caadd3ab34c744eaaf0fea",
+    "scripts/selective_alignment.py": "f913b31e9cfcc1cfe14ff41d58256a694a269254dbe302bf627f441012d5408c",
+    "config/automatic_alignment.json": "b0adbf96c3cfcda192429317763b44f8ab5da4453b7d1b4779664feccadecf7c",
+    "scripts/phrase_selection.py": "a7c1ec58961b08f0b08166078ea48524e80f3c606cf65e2011cccb549a11fb5e"
+  },
+  "research_algorithms_sha256": {
+    "injected_controls.py": "2f32b82d87573e1806d83aa93761750d0fd735f432e43d3fd1fe08eee9dbfab9",
+    "evaluate_competition.py": "b49d18b7b4ddfce92e312cb235b3c7de77e4457bff51226c484f82cdc058b047",
+    "phone_evidence.py": "f13f44e6a68f9575eb6274732958a0f927d22c8651d580fce7b1453f1334190c",
+    "infer_phones.py": "a4e47ed11a93c7c2df172cbd90f3bbe362c15af29118dd4e44406866bc542095",
+    "verify_research.py": "f341f259de6ac3220d1d2eeb5578a766e9b27bdb9bf72e58d07511bbeaed6f91",
+    "prepare_proposals.py": "54bd660ba01b3600e2918b6ea8a191d709a6da8d1f6c7e20e314df7744d66982",
+    "summarize_research.py": "3303bf4221f71e46c95abcf8fb36d983cf14971846430fd7dcabb014362341a3",
+    "proposals.py": "97f131a87ddf7f51f08ffe979ecf902e47a7e535c9f5082bdf1ed741de71c828",
+    "compare_phone_rebuild.py": "bb8f0f3b23ce0c3ac05ddabd25f781eb9e92f665f11effbbaef5f8b0f6c7f440",
+    "test_phone_evidence.py": "03efe19a6d433893e5addee3b9b92b6bdc99e915184733d265d3b7bb6b5992fa",
+    "fetch_model.py": "4bc46d151ce005e73a99171226b82125f84d2b31c832a42f12b260c35deb331d",
+    "build_enhancement.py": "9f7ec9570e78ab52d1d5734b2d51de2b55ea3aa701a52d367ed53a4ea8ad2386",
+    "test_enhancement.py": "3442b47d7f887df1ea83bd4a1287336ee36c20dfedbdae70f5a6ed33d1402f0f",
+    "build_correspondence_inventory.py": "0889ad269185a25295ebd312fcfc922d62b63e807881bcf3ea3d44aa17218d64",
+    "check_local_omissions.py": "be0b6636db65b17ebb8b621c81ec7e0ff1b6827d91238cd2ee7746fd702d8316",
+    "test_correspondence.py": "7451645dbd0043fe62e100a33923fffd6fe26694377f49d8ef6dbd48e2617a83"
+  },
+  "dictionary_sha256": "30da2ad9168290da124369edb8011ebca5e9a6f0d4b0ad5e0fc33fa0fe12ca77",
+  "extra_dependencies_sha256": "5bfe5c52884759d7f1129a401c7d6ec80c501ac5ed83c91c772500878b9ebad0"
+}

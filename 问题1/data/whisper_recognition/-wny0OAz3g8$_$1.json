@@ -1,0 +1,415 @@
+{
+  "sample_id": "-wny0OAz3g8$_$1",
+  "source_sha256": "c5535859f129ce04da5f5b5104d02d4168057b9d947a5349d423278ad4f3d8e8",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " to join.",
+      "start": 0.0,
+      "end": 0.36,
+      "avg_logprob": -0.18844697571764088,
+      "no_speech_prob": 0.006000518798828125
+    },
+    {
+      "text": " And because they couldn't join unions, many black workers couldn't get manufacturing",
+      "start": 0.5,
+      "end": 3.64,
+      "avg_logprob": -0.18844697571764088,
+      "no_speech_prob": 0.006000518798828125
+    },
+    {
+      "text": " or trade work, which paid much better than service work.",
+      "start": 3.64,
+      "end": 5.16,
+      "avg_logprob": -0.18844697571764088,
+      "no_speech_prob": 0.006000518798828125
+    },
+    {
+      "text": " or trade work, which paid much better than service work.",
+      "start": 5.16,
+      "end": 6.18,
+      "avg_logprob": -0.18844697571764088,
+      "no_speech_prob": 0.006000518798828125
+    },
+    {
+      "text": " And because they couldn't join unions, many black workers couldn't get manufacturing",
+      "start": 6.28,
+      "end": 6.74,
+      "avg_logprob": -0.18844697571764088,
+      "no_speech_prob": 0.006000518798828125
+    }
+  ],
+  "words": [
+    {
+      "text": " to",
+      "interval_s": [
+        0.0,
+        0.14
+      ],
+      "probability": 0.66455078125
+    },
+    {
+      "text": " join.",
+      "interval_s": [
+        0.14,
+        0.36
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " And",
+      "interval_s": [
+        0.5,
+        0.56
+      ],
+      "probability": 0.97802734375
+    },
+    {
+      "text": " because",
+      "interval_s": [
+        0.56,
+        0.78
+      ],
+      "probability": 0.98095703125
+    },
+    {
+      "text": " they",
+      "interval_s": [
+        0.78,
+        1.02
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " couldn't",
+      "interval_s": [
+        1.02,
+        1.3
+      ],
+      "probability": 0.996337890625
+    },
+    {
+      "text": " join",
+      "interval_s": [
+        1.3,
+        1.46
+      ],
+      "probability": 0.99267578125
+    },
+    {
+      "text": " unions,",
+      "interval_s": [
+        1.46,
+        1.8
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " many",
+      "interval_s": [
+        2.04,
+        2.22
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " black",
+      "interval_s": [
+        2.22,
+        2.46
+      ],
+      "probability": 0.64599609375
+    },
+    {
+      "text": " workers",
+      "interval_s": [
+        2.46,
+        2.76
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " couldn't",
+      "interval_s": [
+        2.76,
+        3.16
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " get",
+      "interval_s": [
+        3.16,
+        3.28
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " manufacturing",
+      "interval_s": [
+        3.28,
+        3.64
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " or",
+      "interval_s": [
+        3.64,
+        4.06
+      ],
+      "probability": 0.99072265625
+    },
+    {
+      "text": " trade",
+      "interval_s": [
+        4.06,
+        4.26
+      ],
+      "probability": 0.98974609375
+    },
+    {
+      "text": " work,",
+      "interval_s": [
+        4.26,
+        4.48
+      ],
+      "probability": 0.98193359375
+    },
+    {
+      "text": " which",
+      "interval_s": [
+        4.56,
+        4.76
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " paid",
+      "interval_s": [
+        4.76,
+        4.94
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " much",
+      "interval_s": [
+        4.94,
+        5.16
+      ],
+      "probability": 0.97900390625
+    },
+    {
+      "text": " better",
+      "interval_s": [
+        5.16,
+        5.16
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " than",
+      "interval_s": [
+        5.16,
+        5.16
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " service",
+      "interval_s": [
+        5.16,
+        5.16
+      ],
+      "probability": 0.99072265625
+    },
+    {
+      "text": " work.",
+      "interval_s": [
+        5.16,
+        5.16
+      ],
+      "probability": 0.98779296875
+    },
+    {
+      "text": " or",
+      "interval_s": [
+        5.16,
+        5.16
+      ],
+      "probability": 0.953125
+    },
+    {
+      "text": " trade",
+      "interval_s": [
+        5.16,
+        5.16
+      ],
+      "probability": 0.98681640625
+    },
+    {
+      "text": " work,",
+      "interval_s": [
+        5.16,
+        5.16
+      ],
+      "probability": 0.9912109375
+    },
+    {
+      "text": " which",
+      "interval_s": [
+        5.16,
+        5.16
+      ],
+      "probability": 0.98681640625
+    },
+    {
+      "text": " paid",
+      "interval_s": [
+        5.16,
+        5.16
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " much",
+      "interval_s": [
+        5.16,
+        5.16
+      ],
+      "probability": 0.98828125
+    },
+    {
+      "text": " better",
+      "interval_s": [
+        5.16,
+        5.44
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " than",
+      "interval_s": [
+        5.44,
+        5.66
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " service",
+      "interval_s": [
+        5.66,
+        5.9
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " work.",
+      "interval_s": [
+        5.9,
+        6.18
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " And",
+      "interval_s": [
+        6.28,
+        6.34
+      ],
+      "probability": 0.947265625
+    },
+    {
+      "text": " because",
+      "interval_s": [
+        6.34,
+        6.48
+      ],
+      "probability": 0.9951171875
+    },
+    {
+      "text": " they",
+      "interval_s": [
+        6.48,
+        6.64
+      ],
+      "probability": 0.459228515625
+    },
+    {
+      "text": " couldn't",
+      "interval_s": [
+        6.64,
+        6.74
+      ],
+      "probability": 0.98095703125
+    },
+    {
+      "text": " join",
+      "interval_s": [
+        6.74,
+        6.74
+      ],
+      "probability": 0.95263671875
+    },
+    {
+      "text": " unions,",
+      "interval_s": [
+        6.74,
+        6.74
+      ],
+      "probability": 0.97021484375
+    },
+    {
+      "text": " many",
+      "interval_s": [
+        6.74,
+        6.74
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " black",
+      "interval_s": [
+        6.74,
+        6.74
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " workers",
+      "interval_s": [
+        6.74,
+        6.74
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " couldn't",
+      "interval_s": [
+        6.74,
+        6.74
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " get",
+      "interval_s": [
+        6.74,
+        6.74
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " manufacturing",
+      "interval_s": [
+        6.74,
+        6.74
+      ],
+      "probability": 0.97412109375
+    }
+  ],
+  "elapsed_s": 1.6596707190037705
+}

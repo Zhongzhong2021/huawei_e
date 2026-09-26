@@ -1,0 +1,11 @@
+{
+  "samples": 100,
+  "videos": 37,
+  "zero_audio": [
+    "-mJ2ud6oKI8$_$1",
+    "-mJ2ud6oKI8$_$2"
+  ],
+  "observed_spans_s": 786.2781775510203,
+  "raw_decoding_and_mappings_checked": true,
+  "semantic_correctness": "not_established"
+}

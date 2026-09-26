@@ -1,0 +1,258 @@
+{
+  "sample_id": "-THoVjtIkeU$_$6",
+  "source_sha256": "efaa55ee6394032c867046690a92c29edfd825005f0a090cca5ccb763b227f64",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " You know I think that listening to young people taking in what they have to say because what we've seen all around the world is",
+      "start": 0.0,
+      "end": 6.48,
+      "avg_logprob": -0.17388392431395394,
+      "no_speech_prob": 0.11956787109375
+    },
+    {
+      "text": " the power of youth",
+      "start": 6.48,
+      "end": 7.34,
+      "avg_logprob": -0.17388392431395394,
+      "no_speech_prob": 0.11956787109375
+    }
+  ],
+  "words": [
+    {
+      "text": " You",
+      "interval_s": [
+        0.0,
+        0.52
+      ],
+      "probability": 0.6328125
+    },
+    {
+      "text": " know",
+      "interval_s": [
+        0.52,
+        0.62
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " I",
+      "interval_s": [
+        0.62,
+        0.74
+      ],
+      "probability": 0.369873046875
+    },
+    {
+      "text": " think",
+      "interval_s": [
+        0.74,
+        1.06
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " that",
+      "interval_s": [
+        1.06,
+        1.28
+      ],
+      "probability": 0.978515625
+    },
+    {
+      "text": " listening",
+      "interval_s": [
+        1.28,
+        1.66
+      ],
+      "probability": 0.98291015625
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        1.66,
+        1.96
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " young",
+      "interval_s": [
+        1.96,
+        2.1
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " people",
+      "interval_s": [
+        2.1,
+        2.4
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " taking",
+      "interval_s": [
+        2.4,
+        2.76
+      ],
+      "probability": 0.576171875
+    },
+    {
+      "text": " in",
+      "interval_s": [
+        2.76,
+        3.08
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " what",
+      "interval_s": [
+        3.08,
+        3.24
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " they",
+      "interval_s": [
+        3.24,
+        3.42
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " have",
+      "interval_s": [
+        3.42,
+        3.6
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        3.6,
+        3.8
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " say",
+      "interval_s": [
+        3.8,
+        4.0
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " because",
+      "interval_s": [
+        4.0,
+        4.3
+      ],
+      "probability": 0.85888671875
+    },
+    {
+      "text": " what",
+      "interval_s": [
+        4.3,
+        4.86
+      ],
+      "probability": 0.8798828125
+    },
+    {
+      "text": " we've",
+      "interval_s": [
+        4.86,
+        5.1
+      ],
+      "probability": 0.990478515625
+    },
+    {
+      "text": " seen",
+      "interval_s": [
+        5.1,
+        5.32
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " all",
+      "interval_s": [
+        5.32,
+        5.54
+      ],
+      "probability": 0.9873046875
+    },
+    {
+      "text": " around",
+      "interval_s": [
+        5.54,
+        5.76
+      ],
+      "probability": 0.9912109375
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        5.76,
+        5.98
+      ],
+      "probability": 0.951171875
+    },
+    {
+      "text": " world",
+      "interval_s": [
+        5.98,
+        6.2
+      ],
+      "probability": 0.98828125
+    },
+    {
+      "text": " is",
+      "interval_s": [
+        6.2,
+        6.48
+      ],
+      "probability": 0.921875
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        6.48,
+        6.6
+      ],
+      "probability": 0.99169921875
+    },
+    {
+      "text": " power",
+      "interval_s": [
+        6.6,
+        6.9
+      ],
+      "probability": 0.99365234375
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        6.9,
+        7.1
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " youth",
+      "interval_s": [
+        7.1,
+        7.34
+      ],
+      "probability": 0.9658203125
+    }
+  ],
+  "elapsed_s": 0.8830470669781789
+}

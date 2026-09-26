@@ -1,0 +1,1865 @@
+{
+  "words": [
+    {
+      "word_index": 0,
+      "text": "So",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        0.54246875,
+        0.64246875
+      ],
+      "diagnostic_interval_s": [
+        0.54246875,
+        0.64246875
+      ],
+      "boundary_disagreement_s": 0.019999999999999907,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            1
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 1,
+      "text": "very",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        0.76246875,
+        0.96246875
+      ],
+      "diagnostic_interval_s": [
+        0.76246875,
+        0.96246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            2
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 2,
+      "text": "important",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        1.02246875,
+        1.38246875
+      ],
+      "diagnostic_interval_s": [
+        1.02246875,
+        1.38246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            3
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 3,
+      "text": "to",
+      "status": "unmatched_or_ambiguous",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": null,
+      "boundary_disagreement_s": null,
+      "recognition_options": [
+        {
+          "hypothesis_options": [],
+          "unmatched_possible": true,
+          "stable": false,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 4,
+      "text": "go",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        1.6024687499999999,
+        1.74246875
+      ],
+      "diagnostic_interval_s": [
+        1.6024687499999999,
+        1.74246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            5
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 5,
+      "text": "out",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        1.92246875,
+        2.0024687500000002
+      ],
+      "diagnostic_interval_s": [
+        1.92246875,
+        2.0024687500000002
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            6
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 6,
+      "text": "to",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        2.46246875,
+        2.5824687500000003
+      ],
+      "diagnostic_interval_s": [
+        2.46246875,
+        2.5824687500000003
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            7
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 7,
+      "text": "the",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        2.6624687500000004,
+        2.72246875
+      ],
+      "diagnostic_interval_s": [
+        2.6624687500000004,
+        2.72246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            8
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 8,
+      "text": "locations",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        2.7824687499999996,
+        3.38246875
+      ],
+      "diagnostic_interval_s": [
+        2.7824687499999996,
+        3.38246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            9
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 9,
+      "text": "walk",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        3.80246875,
+        4.02246875
+      ],
+      "diagnostic_interval_s": [
+        3.80246875,
+        4.02246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            10
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 10,
+      "text": "around",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        4.14246875,
+        4.44246875
+      ],
+      "diagnostic_interval_s": [
+        4.14246875,
+        4.44246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            11
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 11,
+      "text": "talk",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        4.72246875,
+        4.92246875
+      ],
+      "diagnostic_interval_s": [
+        4.72246875,
+        4.92246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            12
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 12,
+      "text": "with",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        5.00246875,
+        5.10246875
+      ],
+      "diagnostic_interval_s": [
+        5.00246875,
+        5.10246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            13
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 13,
+      "text": "the",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        5.14246875,
+        5.22246875
+      ],
+      "diagnostic_interval_s": [
+        5.14246875,
+        5.22246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            14
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 14,
+      "text": "owners",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        5.3224687500000005,
+        5.56246875
+      ],
+      "diagnostic_interval_s": [
+        5.3224687500000005,
+        5.56246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            15
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 15,
+      "text": "if",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        5.64246875,
+        5.68246875
+      ],
+      "diagnostic_interval_s": [
+        5.64246875,
+        5.68246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            16
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 16,
+      "text": "you",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        5.7424687500000005,
+        5.8224687500000005
+      ],
+      "diagnostic_interval_s": [
+        5.7424687500000005,
+        5.8224687500000005
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            17
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 17,
+      "text": "can",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        5.88246875,
+        6.08246875
+      ],
+      "diagnostic_interval_s": [
+        5.88246875,
+        6.08246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            18
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 18,
+      "text": "tell",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        6.48246875,
+        6.64246875
+      ],
+      "diagnostic_interval_s": [
+        6.48246875,
+        6.64246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            19
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 19,
+      "text": "them",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        6.68246875,
+        6.80246875
+      ],
+      "diagnostic_interval_s": [
+        6.68246875,
+        6.80246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            20
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 20,
+      "text": "what",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        6.86246875,
+        6.96246875
+      ],
+      "diagnostic_interval_s": [
+        6.86246875,
+        6.96246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            21
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 21,
+      "text": "you're",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        7.00246875,
+        7.16246875
+      ],
+      "diagnostic_interval_s": [
+        7.00246875,
+        7.16246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            22
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 22,
+      "text": "doing",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        7.18246875,
+        7.38246875
+      ],
+      "diagnostic_interval_s": [
+        7.18246875,
+        7.38246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            23
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 23,
+      "text": "build",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        7.7024687499999995,
+        7.902468750000001
+      ],
+      "diagnostic_interval_s": [
+        7.7024687499999995,
+        7.902468750000001
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            24
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 24,
+      "text": "a",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        7.98246875,
+        8.00246875
+      ],
+      "diagnostic_interval_s": [
+        7.98246875,
+        8.00246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            25
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 25,
+      "text": "little",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        8.04246875,
+        8.26246875
+      ],
+      "diagnostic_interval_s": [
+        8.04246875,
+        8.26246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            26
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 26,
+      "text": "excitement",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        8.32246875,
+        8.82246875
+      ],
+      "diagnostic_interval_s": [
+        8.32246875,
+        8.82246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            27
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 27,
+      "text": "put",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        9.42246875,
+        9.52246875
+      ],
+      "diagnostic_interval_s": [
+        9.42246875,
+        9.52246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            28
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 28,
+      "text": "a",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        9.56246875,
+        9.58246875
+      ],
+      "diagnostic_interval_s": [
+        9.56246875,
+        9.58246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            29
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 29,
+      "text": "little",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        9.62246875,
+        9.82246875
+      ],
+      "diagnostic_interval_s": [
+        9.62246875,
+        9.82246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            30
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 30,
+      "text": "glitz",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        9.86246875,
+        10.12246875
+      ],
+      "diagnostic_interval_s": [
+        9.86246875,
+        10.12246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            31
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 31,
+      "text": "on",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        10.28246875,
+        10.32246875
+      ],
+      "diagnostic_interval_s": [
+        10.28246875,
+        10.32246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            32
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 32,
+      "text": "there",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        10.40246875,
+        10.58246875
+      ],
+      "diagnostic_interval_s": [
+        10.40246875,
+        10.58246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            33
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 33,
+      "text": "and",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        11.24246875,
+        11.32246875
+      ],
+      "diagnostic_interval_s": [
+        11.24246875,
+        11.32246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            34
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 34,
+      "text": "let",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        11.54246875,
+        11.66246875
+      ],
+      "diagnostic_interval_s": [
+        11.54246875,
+        11.66246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            35
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 35,
+      "text": "everybody",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        11.72246875,
+        12.06246875
+      ],
+      "diagnostic_interval_s": [
+        11.72246875,
+        12.06246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            36
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 36,
+      "text": "knows",
+      "status": "approximate_lexical_match",
+      "automatic_eligible": false,
+      "interval_s": null,
+      "diagnostic_interval_s": [
+        12.10246875,
+        12.24246875
+      ],
+      "boundary_disagreement_s": 0.019999999999999574,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            37
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": false
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 37,
+      "text": "this",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        12.74246875,
+        12.882468750000001
+      ],
+      "diagnostic_interval_s": [
+        12.74246875,
+        12.882468750000001
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            38
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 38,
+      "text": "is",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        12.98246875,
+        13.04246875
+      ],
+      "diagnostic_interval_s": [
+        12.98246875,
+        13.04246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            39
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 39,
+      "text": "a",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        13.142468749999999,
+        13.16246875
+      ],
+      "diagnostic_interval_s": [
+        13.142468749999999,
+        13.16246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            40
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 40,
+      "text": "very",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        13.30246875,
+        13.54246875
+      ],
+      "diagnostic_interval_s": [
+        13.30246875,
+        13.54246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            41
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 41,
+      "text": "valuable",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        13.68246875,
+        14.16246875
+      ],
+      "diagnostic_interval_s": [
+        13.68246875,
+        14.16246875
+      ],
+      "boundary_disagreement_s": 0.0,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            42
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    },
+    {
+      "word_index": 42,
+      "text": "spot",
+      "status": "automatic_candidate",
+      "automatic_eligible": true,
+      "interval_s": [
+        14.24246875,
+        14.52246875
+      ],
+      "diagnostic_interval_s": [
+        14.24246875,
+        14.52246875
+      ],
+      "boundary_disagreement_s": 0.019999999999999574,
+      "recognition_options": [
+        {
+          "hypothesis_options": [
+            43
+          ],
+          "unmatched_possible": false,
+          "stable": true,
+          "exact": true
+        }
+      ],
+      "human_verified": false
+    }
+  ],
+  "phrases": [
+    {
+      "word_indices": [
+        2,
+        3
+      ],
+      "interval_s": [
+        0.9800000190734863,
+        1.4600000381469727
+      ],
+      "run_index": 0,
+      "asr_interval_s": [
+        0.82,
+        1.42
+      ],
+      "second_context_interval_s": [
+        0.9800000190734863,
+        1.4700000286102295
+      ],
+      "status": "acoustically_supported_phrase_candidate",
+      "internal_word_times_assigned": false
+    }
+  ],
+  "diagnostics": [
+    {
+      "run_index": 0,
+      "word_index": 0,
+      "asr_interval_s": [
+        0.0,
+        0.52
+      ],
+      "mfa_context_05_s": [
+        0.5,
+        0.6700000166893005
+      ],
+      "mfa_context_10_s": [
+        0.5,
+        0.6700000166893005
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "run_index": 0,
+      "word_index": 1,
+      "asr_interval_s": [
+        0.52,
+        0.82
+      ],
+      "mfa_context_05_s": [
+        0.6700000166893005,
+        0.9800000190734863
+      ],
+      "mfa_context_10_s": [
+        0.6700000166893005,
+        0.9800000190734863
+      ],
+      "status": "baseline_agreement"
+    },
+    {
+      "run_index": 0,
+      "word_index": 2,
+      "asr_interval_s": [
+        0.82,
+        1.2
+      ],
+      "mfa_context_05_s": [
+        0.9800000190734863,
+        1.350000023841858
+      ],
+      "mfa_context_10_s": [
+        0.9800000190734863,
+        1.350000023841858
+      ],
+      "status": "baseline_agreement"
+    },
+    {
+      "run_index": 0,
+      "word_index": 3,
+      "asr_interval_s": [
+        1.2,
+        1.42
+      ],
+      "mfa_context_05_s": [
+        1.350000023841858,
+        1.4600000381469727
+      ],
+      "mfa_context_10_s": [
+        1.350000023841858,
+        1.4700000286102295
+      ],
+      "status": "word_proposal"
+    },
+    {
+      "run_index": 0,
+      "word_index": 4,
+      "asr_interval_s": [
+        1.42,
+        1.62
+      ],
+      "mfa_context_05_s": [
+        1.4600000381469727,
+        1.7999999523162842
+      ],
+      "mfa_context_10_s": [
+        1.4700000286102295,
+        1.7999999523162842
+      ],
+      "status": "baseline_agreement"
+    },
+    {
+      "run_index": 0,
+      "word_index": 5,
+      "asr_interval_s": [
+        1.62,
+        1.94
+      ],
+      "mfa_context_05_s": [
+        1.7999999523162842,
+        2.0899999141693115
+      ],
+      "mfa_context_10_s": [
+        1.7999999523162842,
+        2.0899999141693115
+      ],
+      "status": "baseline_agreement"
+    },
+    {
+      "run_index": 0,
+      "word_index": 6,
+      "asr_interval_s": [
+        1.94,
+        2.5
+      ],
+      "mfa_context_05_s": [
+        2.440000057220459,
+        2.640000104904175
+      ],
+      "mfa_context_10_s": [
+        2.440000057220459,
+        2.640000104904175
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "run_index": 0,
+      "word_index": 7,
+      "asr_interval_s": [
+        2.5,
+        2.64
+      ],
+      "mfa_context_05_s": [
+        2.640000104904175,
+        2.7100000381469727
+      ],
+      "mfa_context_10_s": [
+        2.640000104904175,
+        2.7100000381469727
+      ],
+      "status": "baseline_agreement"
+    },
+    {
+      "run_index": 0,
+      "word_index": 8,
+      "asr_interval_s": [
+        2.64,
+        3.1
+      ],
+      "mfa_context_05_s": [
+        2.7100000381469727,
+        3.4800000190734863
+      ],
+      "mfa_context_10_s": [
+        2.7100000381469727,
+        3.4800000190734863
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "run_index": 0,
+      "word_index": 9,
+      "asr_interval_s": [
+        3.1,
+        3.8
+      ],
+      "mfa_context_05_s": [
+        3.6600000858306885,
+        4.070000171661377
+      ],
+      "mfa_context_10_s": [
+        3.6600000858306885,
+        4.070000171661377
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "run_index": 0,
+      "word_index": 10,
+      "asr_interval_s": [
+        3.8,
+        4.24
+      ],
+      "mfa_context_05_s": [
+        4.070000171661377,
+        4.489999771118164
+      ],
+      "mfa_context_10_s": [
+        4.070000171661377,
+        4.489999771118164
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "run_index": 0,
+      "word_index": 11,
+      "asr_interval_s": [
+        4.24,
+        4.76
+      ],
+      "mfa_context_05_s": [
+        4.690000057220459,
+        4.989999771118164
+      ],
+      "mfa_context_10_s": [
+        4.690000057220459,
+        4.989999771118164
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "run_index": 0,
+      "word_index": 12,
+      "asr_interval_s": [
+        4.76,
+        5.02
+      ],
+      "mfa_context_05_s": [
+        4.989999771118164,
+        5.110000133514404
+      ],
+      "mfa_context_10_s": [
+        4.989999771118164,
+        5.110000133514404
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "run_index": 0,
+      "word_index": 13,
+      "asr_interval_s": [
+        5.02,
+        5.14
+      ],
+      "mfa_context_05_s": [
+        5.110000133514404,
+        5.260000228881836
+      ],
+      "mfa_context_10_s": [
+        5.110000133514404,
+        5.260000228881836
+      ],
+      "status": "baseline_agreement"
+    },
+    {
+      "run_index": 0,
+      "word_index": 14,
+      "asr_interval_s": [
+        5.14,
+        5.42
+      ],
+      "mfa_context_05_s": [
+        5.260000228881836,
+        5.599999904632568
+      ],
+      "mfa_context_10_s": [
+        5.260000228881836,
+        5.599999904632568
+      ],
+      "status": "baseline_agreement"
+    },
+    {
+      "run_index": 0,
+      "word_index": 15,
+      "asr_interval_s": [
+        5.42,
+        5.66
+      ],
+      "mfa_context_05_s": [
+        5.599999904632568,
+        5.760000228881836
+      ],
+      "mfa_context_10_s": [
+        5.599999904632568,
+        5.760000228881836
+      ],
+      "status": "baseline_agreement"
+    },
+    {
+      "run_index": 0,
+      "word_index": 16,
+      "asr_interval_s": [
+        5.66,
+        5.78
+      ],
+      "mfa_context_05_s": [
+        5.760000228881836,
+        5.820000171661377
+      ],
+      "mfa_context_10_s": [
+        5.760000228881836,
+        5.820000171661377
+      ],
+      "status": "baseline_agreement"
+    },
+    {
+      "run_index": 0,
+      "word_index": 17,
+      "asr_interval_s": [
+        5.78,
+        5.98
+      ],
+      "mfa_context_05_s": [
+        5.820000171661377,
+        6.190000057220459
+      ],
+      "mfa_context_10_s": [
+        5.820000171661377,
+        6.190000057220459
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "run_index": 0,
+      "word_index": 18,
+      "asr_interval_s": [
+        5.98,
+        6.54
+      ],
+      "mfa_context_05_s": [
+        6.440000057220459,
+        6.670000076293945
+      ],
+      "mfa_context_10_s": [
+        6.440000057220459,
+        6.670000076293945
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "run_index": 0,
+      "word_index": 19,
+      "asr_interval_s": [
+        6.54,
+        6.72
+      ],
+      "mfa_context_05_s": [
+        6.670000076293945,
+        6.820000171661377
+      ],
+      "mfa_context_10_s": [
+        6.670000076293945,
+        6.820000171661377
+      ],
+      "status": "baseline_agreement"
+    },
+    {
+      "run_index": 0,
+      "word_index": 20,
+      "asr_interval_s": [
+        6.72,
+        6.88
+      ],
+      "mfa_context_05_s": [
+        6.820000171661377,
+        7.039999961853027
+      ],
+      "mfa_context_10_s": [
+        6.820000171661377,
+        7.039999961853027
+      ],
+      "status": "baseline_agreement"
+    },
+    {
+      "run_index": 0,
+      "word_index": 21,
+      "asr_interval_s": [
+        6.88,
+        7.06
+      ],
+      "mfa_context_05_s": [
+        7.039999961853027,
+        7.099999904632568
+      ],
+      "mfa_context_10_s": [
+        7.039999961853027,
+        7.099999904632568
+      ],
+      "status": "baseline_agreement"
+    },
+    {
+      "run_index": 0,
+      "word_index": 22,
+      "asr_interval_s": [
+        7.06,
+        7.28
+      ],
+      "mfa_context_05_s": [
+        7.099999904632568,
+        7.409999847412109
+      ],
+      "mfa_context_10_s": [
+        7.099999904632568,
+        7.409999847412109
+      ],
+      "status": "baseline_agreement"
+    },
+    {
+      "run_index": 0,
+      "word_index": 23,
+      "asr_interval_s": [
+        7.28,
+        7.76
+      ],
+      "mfa_context_05_s": [
+        7.699999809265137,
+        7.909999847412109
+      ],
+      "mfa_context_10_s": [
+        7.699999809265137,
+        7.909999847412109
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "run_index": 0,
+      "word_index": 24,
+      "asr_interval_s": [
+        7.76,
+        7.96
+      ],
+      "mfa_context_05_s": [
+        7.909999847412109,
+        7.949999809265137
+      ],
+      "mfa_context_10_s": [
+        7.909999847412109,
+        7.949999809265137
+      ],
+      "status": "baseline_agreement"
+    },
+    {
+      "run_index": 0,
+      "word_index": 25,
+      "asr_interval_s": [
+        7.96,
+        8.1
+      ],
+      "mfa_context_05_s": [
+        7.949999809265137,
+        8.260000228881836
+      ],
+      "mfa_context_10_s": [
+        7.949999809265137,
+        8.260000228881836
+      ],
+      "status": "baseline_agreement"
+    },
+    {
+      "run_index": 0,
+      "word_index": 26,
+      "asr_interval_s": [
+        8.1,
+        8.52
+      ],
+      "mfa_context_05_s": [
+        8.260000228881836,
+        8.869999885559082
+      ],
+      "mfa_context_10_s": [
+        8.260000228881836,
+        8.869999885559082
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "run_index": 0,
+      "word_index": 27,
+      "asr_interval_s": [
+        8.52,
+        9.44
+      ],
+      "mfa_context_05_s": [
+        9.40999984741211,
+        9.539999961853027
+      ],
+      "mfa_context_10_s": [
+        9.40999984741211,
+        9.539999961853027
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "run_index": 0,
+      "word_index": 28,
+      "asr_interval_s": [
+        9.44,
+        9.58
+      ],
+      "mfa_context_05_s": [
+        9.539999961853027,
+        9.569999694824219
+      ],
+      "mfa_context_10_s": [
+        9.539999961853027,
+        9.569999694824219
+      ],
+      "status": "baseline_agreement"
+    },
+    {
+      "run_index": 0,
+      "word_index": 29,
+      "asr_interval_s": [
+        9.58,
+        9.68
+      ],
+      "mfa_context_05_s": [
+        9.569999694824219,
+        9.779999732971191
+      ],
+      "mfa_context_10_s": [
+        9.569999694824219,
+        9.779999732971191
+      ],
+      "status": "baseline_agreement"
+    },
+    {
+      "run_index": 0,
+      "word_index": 30,
+      "asr_interval_s": [
+        9.68,
+        10.08
+      ],
+      "mfa_context_05_s": [
+        9.779999732971191,
+        10.180000305175781
+      ],
+      "mfa_context_10_s": [
+        9.779999732971191,
+        10.180000305175781
+      ],
+      "status": "baseline_agreement"
+    },
+    {
+      "run_index": 0,
+      "word_index": 31,
+      "asr_interval_s": [
+        10.08,
+        10.22
+      ],
+      "mfa_context_05_s": [
+        10.180000305175781,
+        10.399999618530273
+      ],
+      "mfa_context_10_s": [
+        10.180000305175781,
+        10.399999618530273
+      ],
+      "status": "baseline_agreement"
+    },
+    {
+      "run_index": 0,
+      "word_index": 32,
+      "asr_interval_s": [
+        10.22,
+        10.46
+      ],
+      "mfa_context_05_s": [
+        10.399999618530273,
+        10.720000267028809
+      ],
+      "mfa_context_10_s": [
+        10.399999618530273,
+        10.720000267028809
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "run_index": 0,
+      "word_index": 33,
+      "asr_interval_s": [
+        10.46,
+        11.22
+      ],
+      "mfa_context_05_s": [
+        11.170000076293945,
+        11.430000305175781
+      ],
+      "mfa_context_10_s": [
+        11.170000076293945,
+        11.430000305175781
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "run_index": 0,
+      "word_index": 34,
+      "asr_interval_s": [
+        11.22,
+        11.56
+      ],
+      "mfa_context_05_s": [
+        11.510000228881836,
+        11.680000305175781
+      ],
+      "mfa_context_10_s": [
+        11.510000228881836,
+        11.680000305175781
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "run_index": 0,
+      "word_index": 35,
+      "asr_interval_s": [
+        11.56,
+        11.84
+      ],
+      "mfa_context_05_s": [
+        11.680000305175781,
+        12.34
+      ],
+      "mfa_context_10_s": [
+        11.680000305175781,
+        12.84
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "run_index": 1,
+      "word_index": 37,
+      "asr_interval_s": [
+        12.16,
+        12.78
+      ],
+      "mfa_context_05_s": [
+        11.66,
+        11.750000003576279
+      ],
+      "mfa_context_10_s": [
+        11.16,
+        11.41
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "run_index": 1,
+      "word_index": 38,
+      "asr_interval_s": [
+        12.78,
+        12.96
+      ],
+      "mfa_context_05_s": [
+        11.750000003576279,
+        11.810000005960465
+      ],
+      "mfa_context_10_s": [
+        11.490000013113022,
+        11.549999985694885
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "run_index": 1,
+      "word_index": 39,
+      "asr_interval_s": [
+        12.96,
+        13.1
+      ],
+      "mfa_context_05_s": [
+        11.810000005960465,
+        11.840000007152558
+      ],
+      "mfa_context_10_s": [
+        11.549999985694885,
+        11.579999986886978
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "run_index": 1,
+      "word_index": 40,
+      "asr_interval_s": [
+        13.1,
+        13.42
+      ],
+      "mfa_context_05_s": [
+        11.840000007152558,
+        12.030000004768372
+      ],
+      "mfa_context_10_s": [
+        11.579999986886978,
+        11.840000007152558
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "run_index": 1,
+      "word_index": 41,
+      "asr_interval_s": [
+        13.42,
+        13.96
+      ],
+      "mfa_context_05_s": [
+        12.030000004768372,
+        12.390000019073486
+      ],
+      "mfa_context_10_s": [
+        11.840000007152558,
+        12.390000019073486
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "run_index": 1,
+      "word_index": 42,
+      "asr_interval_s": [
+        13.96,
+        14.32
+      ],
+      "mfa_context_05_s": [
+        12.829999957084656,
+        14.82
+      ],
+      "mfa_context_10_s": [
+        12.829999957084656,
+        15.11525
+      ],
+      "status": "baseline_without_new_support"
+    },
+    {
+      "word_index": 3,
+      "status": "new_word_time_conflict"
+    }
+  ],
+  "added_words": 0,
+  "conflicting_baseline_words": 0,
+  "phrase_only_words": [
+    3
+  ],
+  "baseline_candidates": 41,
+  "sample_id": "-571d8cVauQ$_$5",
+  "source_sha256": "e304c03fac1f477823fe0926c4fb421b9c4e4091f85718b729afe856c24a7d3e",
+  "human_data_used": false,
+  "baseline_result_sha256": "9ecc827a9cb30babd3929a76a98efc561338879b1e198d442b946695fed66e75",
+  "decision_policy": "unprompted_asr_local_phonetic_multigranular_ordered_selection_v3"
+}
