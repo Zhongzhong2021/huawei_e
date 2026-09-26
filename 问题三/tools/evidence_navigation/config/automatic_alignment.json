@@ -1,0 +1,12 @@
+{
+  "schema": "q1-automatic-selective-alignment-v1",
+  "edit_cost": 1000,
+  "approximate_max_distance": 0.25,
+  "approximate_min_chars": 4,
+  "minimum_informative_anchors": 2,
+  "minimum_informative_coverage": 0.5,
+  "boundary_agreement_s": 0.2,
+  "informative_min_chars": 4,
+  "function_words": ["THAT", "THIS", "THESE", "THOSE", "WITH", "FROM", "HAVE", "BEEN", "WERE", "WILL", "WOULD", "COULD", "SHOULD", "THEIR", "THERE", "THEY", "THEM", "WHAT", "WHEN", "WHERE", "WHICH", "YOUR", "INTO", "THEN", "THAN", "SOME", "JUST", "VERY", "ALSO", "DOES", "ABOUT"],
+  "meaning": "Fixed engineering rules, not calibrated probabilities. No human times, notes, IDs, or labels are algorithm inputs. All-optimal-path ambiguity is within one ASR hypothesis, not total recognition uncertainty."
+}

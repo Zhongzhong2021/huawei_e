@@ -1,0 +1,249 @@
+{
+  "sample_id": "13",
+  "source_sha256": "8a64f1201e0299f79d915aa87b4a9be811e346525589d1f41060c2533599a7cb",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " For example, I could take a set of data, and from that data,",
+      "start": 0.0,
+      "end": 4.26,
+      "avg_logprob": -0.2154605212180238,
+      "no_speech_prob": 0.003475189208984375
+    },
+    {
+      "text": " I could find a relationship between any two",
+      "start": 4.38,
+      "end": 6.6,
+      "avg_logprob": -0.2154605212180238,
+      "no_speech_prob": 0.003475189208984375
+    },
+    {
+      "text": " of the given variables or more.",
+      "start": 6.6,
+      "end": 8.46,
+      "avg_logprob": -0.2154605212180238,
+      "no_speech_prob": 0.003475189208984375
+    }
+  ],
+  "words": [
+    {
+      "text": " For",
+      "interval_s": [
+        0.0,
+        0.08
+      ],
+      "probability": 0.8916015625
+    },
+    {
+      "text": " example,",
+      "interval_s": [
+        0.08,
+        0.4
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " I",
+      "interval_s": [
+        0.54,
+        0.84
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " could",
+      "interval_s": [
+        0.84,
+        0.98
+      ],
+      "probability": 0.79150390625
+    },
+    {
+      "text": " take",
+      "interval_s": [
+        0.98,
+        1.18
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        1.18,
+        1.3
+      ],
+      "probability": 0.982421875
+    },
+    {
+      "text": " set",
+      "interval_s": [
+        1.3,
+        1.42
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        1.42,
+        1.62
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " data,",
+      "interval_s": [
+        1.62,
+        1.92
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        2.04,
+        2.86
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " from",
+      "interval_s": [
+        2.86,
+        3.36
+      ],
+      "probability": 0.9765625
+    },
+    {
+      "text": " that",
+      "interval_s": [
+        3.36,
+        3.88
+      ],
+      "probability": 0.98388671875
+    },
+    {
+      "text": " data,",
+      "interval_s": [
+        3.88,
+        4.26
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " I",
+      "interval_s": [
+        4.38,
+        4.62
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " could",
+      "interval_s": [
+        4.62,
+        4.76
+      ],
+      "probability": 0.96044921875
+    },
+    {
+      "text": " find",
+      "interval_s": [
+        4.76,
+        4.92
+      ],
+      "probability": 0.98486328125
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        4.92,
+        4.98
+      ],
+      "probability": 0.98779296875
+    },
+    {
+      "text": " relationship",
+      "interval_s": [
+        4.98,
+        5.36
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " between",
+      "interval_s": [
+        5.36,
+        5.86
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " any",
+      "interval_s": [
+        5.86,
+        6.34
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " two",
+      "interval_s": [
+        6.34,
+        6.6
+      ],
+      "probability": 0.98193359375
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        6.6,
+        6.74
+      ],
+      "probability": 0.994140625
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        6.74,
+        6.86
+      ],
+      "probability": 0.9951171875
+    },
+    {
+      "text": " given",
+      "interval_s": [
+        6.86,
+        7.06
+      ],
+      "probability": 0.95556640625
+    },
+    {
+      "text": " variables",
+      "interval_s": [
+        7.06,
+        7.54
+      ],
+      "probability": 0.96728515625
+    },
+    {
+      "text": " or",
+      "interval_s": [
+        7.54,
+        8.22
+      ],
+      "probability": 0.52734375
+    },
+    {
+      "text": " more.",
+      "interval_s": [
+        8.22,
+        8.46
+      ],
+      "probability": 0.9990234375
+    }
+  ],
+  "elapsed_s": 0.88073405000614
+}

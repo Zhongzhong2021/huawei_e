@@ -1,0 +1,225 @@
+{
+  "sample_id": "15",
+  "source_sha256": "bdd4ea47f2dac729a445cdf34009b9dff6d66bdc8ca997b82814bd55dc7fc675",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " Her father, the breadwinner, died when she was barely a year old,",
+      "start": 0.0,
+      "end": 2.88,
+      "avg_logprob": -0.12990785791323736,
+      "no_speech_prob": 0.033843994140625
+    },
+    {
+      "text": " putting the family in a dire financial position.",
+      "start": 2.98,
+      "end": 5.26,
+      "avg_logprob": -0.12990785791323736,
+      "no_speech_prob": 0.033843994140625
+    },
+    {
+      "text": " However, despite their poverty,",
+      "start": 5.7,
+      "end": 6.96,
+      "avg_logprob": -0.12990785791323736,
+      "no_speech_prob": 0.033843994140625
+    }
+  ],
+  "words": [
+    {
+      "text": " Her",
+      "interval_s": [
+        0.0,
+        0.14
+      ],
+      "probability": 0.60693359375
+    },
+    {
+      "text": " father,",
+      "interval_s": [
+        0.14,
+        0.44
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        0.58,
+        0.66
+      ],
+      "probability": 0.9931640625
+    },
+    {
+      "text": " breadwinner,",
+      "interval_s": [
+        0.66,
+        1.18
+      ],
+      "probability": 0.984375
+    },
+    {
+      "text": " died",
+      "interval_s": [
+        1.2,
+        1.38
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " when",
+      "interval_s": [
+        1.38,
+        1.66
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " she",
+      "interval_s": [
+        1.66,
+        1.78
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " was",
+      "interval_s": [
+        1.78,
+        1.92
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " barely",
+      "interval_s": [
+        1.92,
+        2.26
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        2.26,
+        2.4
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " year",
+      "interval_s": [
+        2.4,
+        2.56
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " old,",
+      "interval_s": [
+        2.56,
+        2.88
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " putting",
+      "interval_s": [
+        2.98,
+        3.46
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        3.46,
+        3.6
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " family",
+      "interval_s": [
+        3.6,
+        3.9
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " in",
+      "interval_s": [
+        3.9,
+        4.04
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        4.04,
+        4.12
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " dire",
+      "interval_s": [
+        4.12,
+        4.36
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " financial",
+      "interval_s": [
+        4.36,
+        4.74
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " position.",
+      "interval_s": [
+        4.74,
+        5.26
+      ],
+      "probability": 0.994140625
+    },
+    {
+      "text": " However,",
+      "interval_s": [
+        5.7,
+        6.12
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " despite",
+      "interval_s": [
+        6.28,
+        6.54
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " their",
+      "interval_s": [
+        6.54,
+        6.9
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " poverty,",
+      "interval_s": [
+        6.9,
+        6.96
+      ],
+      "probability": 0.99951171875
+    }
+  ],
+  "elapsed_s": 0.8897621849901043
+}

@@ -1,0 +1,123 @@
+{
+  "sample_id": "02",
+  "source_sha256": "6b651e908aefd86959f85b78f945f7d5a5d9e767eb4c095926e1df2ed9629ff9",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " We want to live by each other's happiness, not by each other's misery.",
+      "start": 0.0,
+      "end": 2.58,
+      "avg_logprob": -0.16914063096046447,
+      "no_speech_prob": 0.1622314453125
+    }
+  ],
+  "words": [
+    {
+      "text": " We",
+      "interval_s": [
+        0.0,
+        0.54
+      ],
+      "probability": 0.87255859375
+    },
+    {
+      "text": " want",
+      "interval_s": [
+        0.54,
+        0.64
+      ],
+      "probability": 0.98828125
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        0.64,
+        0.74
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " live",
+      "interval_s": [
+        0.74,
+        0.86
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " by",
+      "interval_s": [
+        0.86,
+        1.0
+      ],
+      "probability": 0.9951171875
+    },
+    {
+      "text": " each",
+      "interval_s": [
+        1.0,
+        1.12
+      ],
+      "probability": 0.98974609375
+    },
+    {
+      "text": " other's",
+      "interval_s": [
+        1.12,
+        1.38
+      ],
+      "probability": 0.976806640625
+    },
+    {
+      "text": " happiness,",
+      "interval_s": [
+        1.38,
+        1.6
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " not",
+      "interval_s": [
+        1.7,
+        1.86
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " by",
+      "interval_s": [
+        1.86,
+        1.98
+      ],
+      "probability": 0.974609375
+    },
+    {
+      "text": " each",
+      "interval_s": [
+        1.98,
+        2.14
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " other's",
+      "interval_s": [
+        2.14,
+        2.4
+      ],
+      "probability": 0.997802734375
+    },
+    {
+      "text": " misery.",
+      "interval_s": [
+        2.4,
+        2.58
+      ],
+      "probability": 0.9990234375
+    }
+  ],
+  "elapsed_s": 0.5513763129711151
+}

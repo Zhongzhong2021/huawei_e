@@ -1,0 +1,186 @@
+{
+  "sample_id": "04",
+  "source_sha256": "766db8dc32508b8f7f8faaa47656e0eedc8d1707b809fe8235db1e74e15d3369",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " If I blow it at the team exercise, should I kiss my chances of cheering go blue goodbye?",
+      "start": 0.0,
+      "end": 4.62,
+      "avg_logprob": -0.2551618197134563,
+      "no_speech_prob": 0.0196380615234375
+    },
+    {
+      "text": " Absolutely not.",
+      "start": 5.180000000000001,
+      "end": 6.08,
+      "avg_logprob": -0.2551618197134563,
+      "no_speech_prob": 0.0196380615234375
+    }
+  ],
+  "words": [
+    {
+      "text": " If",
+      "interval_s": [
+        0.0,
+        0.5
+      ],
+      "probability": 0.9072265625
+    },
+    {
+      "text": " I",
+      "interval_s": [
+        0.5,
+        0.58
+      ],
+      "probability": 0.9853515625
+    },
+    {
+      "text": " blow",
+      "interval_s": [
+        0.58,
+        0.84
+      ],
+      "probability": 0.9951171875
+    },
+    {
+      "text": " it",
+      "interval_s": [
+        0.84,
+        1.04
+      ],
+      "probability": 0.9912109375
+    },
+    {
+      "text": " at",
+      "interval_s": [
+        1.04,
+        1.12
+      ],
+      "probability": 0.99072265625
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        1.12,
+        1.2
+      ],
+      "probability": 0.9892578125
+    },
+    {
+      "text": " team",
+      "interval_s": [
+        1.2,
+        1.36
+      ],
+      "probability": 0.98779296875
+    },
+    {
+      "text": " exercise,",
+      "interval_s": [
+        1.36,
+        1.7
+      ],
+      "probability": 0.9921875
+    },
+    {
+      "text": " should",
+      "interval_s": [
+        1.96,
+        2.24
+      ],
+      "probability": 0.990234375
+    },
+    {
+      "text": " I",
+      "interval_s": [
+        2.24,
+        2.36
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " kiss",
+      "interval_s": [
+        2.36,
+        2.56
+      ],
+      "probability": 0.99072265625
+    },
+    {
+      "text": " my",
+      "interval_s": [
+        2.56,
+        2.72
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " chances",
+      "interval_s": [
+        2.72,
+        3.08
+      ],
+      "probability": 0.99072265625
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        3.08,
+        3.32
+      ],
+      "probability": 0.99267578125
+    },
+    {
+      "text": " cheering",
+      "interval_s": [
+        3.32,
+        3.5
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " go",
+      "interval_s": [
+        3.5,
+        3.82
+      ],
+      "probability": 0.271728515625
+    },
+    {
+      "text": " blue",
+      "interval_s": [
+        3.82,
+        4.14
+      ],
+      "probability": 0.9267578125
+    },
+    {
+      "text": " goodbye?",
+      "interval_s": [
+        4.14,
+        4.62
+      ],
+      "probability": 0.74951171875
+    },
+    {
+      "text": " Absolutely",
+      "interval_s": [
+        5.180000000000001,
+        5.66
+      ],
+      "probability": 0.97412109375
+    },
+    {
+      "text": " not.",
+      "interval_s": [
+        5.66,
+        6.08
+      ],
+      "probability": 0.986328125
+    }
+  ],
+  "elapsed_s": 0.7661478579975665
+}

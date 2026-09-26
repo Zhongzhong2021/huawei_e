@@ -1,0 +1,210 @@
+{
+  "sample_id": "17",
+  "source_sha256": "8a2f9bad44684ae0ba22f4ad39e848020dbac6acf7e5fe9d974f2448e6902462",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " applying these four design concepts to your presentations is simple easy and",
+      "start": 0.0,
+      "end": 6.34,
+      "avg_logprob": -0.24386159649917058,
+      "no_speech_prob": 0.03143310546875
+    },
+    {
+      "text": " will make people think you turned into a design guru or",
+      "start": 6.34,
+      "end": 9.28,
+      "avg_logprob": -0.24386159649917058,
+      "no_speech_prob": 0.03143310546875
+    }
+  ],
+  "words": [
+    {
+      "text": " applying",
+      "interval_s": [
+        0.0,
+        0.72
+      ],
+      "probability": 0.416259765625
+    },
+    {
+      "text": " these",
+      "interval_s": [
+        0.72,
+        1.16
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " four",
+      "interval_s": [
+        1.16,
+        1.4
+      ],
+      "probability": 0.84912109375
+    },
+    {
+      "text": " design",
+      "interval_s": [
+        1.4,
+        1.92
+      ],
+      "probability": 0.994140625
+    },
+    {
+      "text": " concepts",
+      "interval_s": [
+        1.92,
+        2.52
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        2.52,
+        2.84
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " your",
+      "interval_s": [
+        2.84,
+        2.98
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " presentations",
+      "interval_s": [
+        2.98,
+        3.46
+      ],
+      "probability": 0.98291015625
+    },
+    {
+      "text": " is",
+      "interval_s": [
+        3.46,
+        4.28
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " simple",
+      "interval_s": [
+        4.28,
+        4.98
+      ],
+      "probability": 0.994140625
+    },
+    {
+      "text": " easy",
+      "interval_s": [
+        4.98,
+        5.6
+      ],
+      "probability": 0.798828125
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        5.6,
+        6.34
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " will",
+      "interval_s": [
+        6.34,
+        6.78
+      ],
+      "probability": 0.9755859375
+    },
+    {
+      "text": " make",
+      "interval_s": [
+        6.78,
+        7.0
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " people",
+      "interval_s": [
+        7.0,
+        7.26
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " think",
+      "interval_s": [
+        7.26,
+        7.52
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " you",
+      "interval_s": [
+        7.52,
+        7.72
+      ],
+      "probability": 0.98095703125
+    },
+    {
+      "text": " turned",
+      "interval_s": [
+        7.72,
+        7.94
+      ],
+      "probability": 0.98779296875
+    },
+    {
+      "text": " into",
+      "interval_s": [
+        7.94,
+        8.1
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        8.1,
+        8.24
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " design",
+      "interval_s": [
+        8.24,
+        8.46
+      ],
+      "probability": 0.974609375
+    },
+    {
+      "text": " guru",
+      "interval_s": [
+        8.46,
+        8.84
+      ],
+      "probability": 0.953125
+    },
+    {
+      "text": " or",
+      "interval_s": [
+        8.84,
+        9.28
+      ],
+      "probability": 0.93505859375
+    }
+  ],
+  "elapsed_s": 0.7532347359810956
+}

@@ -1,0 +1,107 @@
+{
+  "sample_id": "08",
+  "source_sha256": "962057312eb9b751ff907ba5799f455dedfc271cabb5d45abd40803e08f88d79",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " So that brings us to tonight, the Universal Design Grand Challenge.",
+      "start": 0.0,
+      "end": 4.0,
+      "avg_logprob": -0.08886718656867743,
+      "no_speech_prob": 0.0016145706176757812
+    }
+  ],
+  "words": [
+    {
+      "text": " So",
+      "interval_s": [
+        0.0,
+        0.54
+      ],
+      "probability": 0.97705078125
+    },
+    {
+      "text": " that",
+      "interval_s": [
+        0.54,
+        0.7
+      ],
+      "probability": 0.96630859375
+    },
+    {
+      "text": " brings",
+      "interval_s": [
+        0.7,
+        0.94
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " us",
+      "interval_s": [
+        0.94,
+        1.16
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        1.16,
+        1.3
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " tonight,",
+      "interval_s": [
+        1.3,
+        1.6
+      ],
+      "probability": 0.97802734375
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        1.76,
+        1.86
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " Universal",
+      "interval_s": [
+        1.86,
+        2.18
+      ],
+      "probability": 0.9189453125
+    },
+    {
+      "text": " Design",
+      "interval_s": [
+        2.18,
+        2.74
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " Grand",
+      "interval_s": [
+        2.74,
+        3.44
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " Challenge.",
+      "interval_s": [
+        3.44,
+        4.0
+      ],
+      "probability": 1.0
+    }
+  ],
+  "elapsed_s": 0.6266153620090336
+}

@@ -1,0 +1,107 @@
+{
+  "complete": true,
+  "samples": [
+    {
+      "sample_id": "01",
+      "sha256": "4525f6d3ef7f3a70c735735e6a33aaba0855de3ba164a2024bd078c67ff1c576",
+      "words": 21
+    },
+    {
+      "sample_id": "02",
+      "sha256": "8cca3680c691fca948b0113a4407234d70d3c738ebfd6ed0467814ad0961b178",
+      "words": 13
+    },
+    {
+      "sample_id": "03",
+      "sha256": "efc8a417c106650151318f8673181aea278d0d586f02d313c750a8e01e403592",
+      "words": 27
+    },
+    {
+      "sample_id": "04",
+      "sha256": "2e61e6a39b0917ed1a33f9e53cc50e868e0c1097d35f4d311a190cb12a7c7eb3",
+      "words": 20
+    },
+    {
+      "sample_id": "05",
+      "sha256": "b473f518e44386c676dd3f10115c571451b707e4d9f7cccd3a91df3fbe88f77b",
+      "words": 11
+    },
+    {
+      "sample_id": "06",
+      "sha256": "c2496a88514c93591631fe7d3a1d8841705364d8379584539cf590b6402e5cb3",
+      "words": 31
+    },
+    {
+      "sample_id": "07",
+      "sha256": "161454d8206fc5b670c035426bc1855d0178820836c07b188a5369b8af07f890",
+      "words": 51
+    },
+    {
+      "sample_id": "08",
+      "sha256": "aa5e46ea48ba55787dca4b4903469523e014d8550b15b395ea60943228fcc1f5",
+      "words": 11
+    },
+    {
+      "sample_id": "09",
+      "sha256": "21879f0da585bf49b640ffe3e63b31829ec22173d3c290f711d455196d5a3f3c",
+      "words": 16
+    },
+    {
+      "sample_id": "10",
+      "sha256": "d42ce99c1d66bd3731a9cdfb2a04ea6939838d7f4c988895f6f84f8a26458b43",
+      "words": 25
+    },
+    {
+      "sample_id": "11",
+      "sha256": "82442374d1ef2b61117800e40f884a4372b9ca988a7624107bed8388e51beb21",
+      "words": 14
+    },
+    {
+      "sample_id": "12",
+      "sha256": "edf8113257737ba41542ac1f939cf0b80c16d8a64e29bb256707a8811f1b5dbe",
+      "words": 35
+    },
+    {
+      "sample_id": "13",
+      "sha256": "626d74b24c76515c718332bee40b0fca6c08af247edc704cdd1c515a3f90a83a",
+      "words": 27
+    },
+    {
+      "sample_id": "14",
+      "sha256": "b67fa983dfb9a5d5828e9f2bec64b6935d3014fd9434740b75982905f59b4233",
+      "words": 24
+    },
+    {
+      "sample_id": "15",
+      "sha256": "0c0d97393bde03bf42b9a53e1001fa24ef49186249ad37081684f7c41565ea16",
+      "words": 24
+    },
+    {
+      "sample_id": "16",
+      "sha256": "98801cdedd641a07fc37cd93ff8866597928515192f87bbaba3a4b2d8f2ae933",
+      "words": 11
+    },
+    {
+      "sample_id": "17",
+      "sha256": "87903fd38db9a2e128c3b01920c2dc10d451333c9a055ad6d54484e3859db849",
+      "words": 23
+    },
+    {
+      "sample_id": "18",
+      "sha256": "54302e3b7931795467fa06ff01a8dcf565a01b7385ec45778976a27a1687f44a",
+      "words": 44
+    },
+    {
+      "sample_id": "19",
+      "sha256": "ab4f9c64d959fd4cfe25487ab7e30d4c38120e699eb653331db95d62db526677",
+      "words": 33
+    },
+    {
+      "sample_id": "20",
+      "sha256": "0e6332f121b8d0cb51234615e24682fbefc0403e8d062ad0c4f37fb3724d1631",
+      "words": 37
+    }
+  ],
+  "protocol_sha256": "099a9762ef4db1f9b354c4f49e6fa2ed5cbc4c58783b14e81c47e492c86432d8",
+  "human_data_used": false
+}

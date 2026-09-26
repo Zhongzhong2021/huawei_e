@@ -1,0 +1,448 @@
+{
+  "sample_id": "07",
+  "source_sha256": "f3b47ceaddf31d472c367259788cb68e93511b14ae117577836f196e22ecedc5",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " As Lynn's associate editor Michael Bodke reports in our November 28th issue, attendees",
+      "start": 0.0,
+      "end": 5.26,
+      "avg_logprob": -0.17241010273972604,
+      "no_speech_prob": 0.0008893013000488281
+    },
+    {
+      "text": " enthusiastically discuss the topics of growing the hobby, the future of stamp shows, and",
+      "start": 6.199999999999999,
+      "end": 11.54,
+      "avg_logprob": -0.17241010273972604,
+      "no_speech_prob": 0.0008893013000488281
+    },
+    {
+      "text": " dealers and philatelic partnerships, along with ways the leading organizations involved",
+      "start": 11.54,
+      "end": 16.32,
+      "avg_logprob": -0.17241010273972604,
+      "no_speech_prob": 0.0008893013000488281
+    },
+    {
+      "text": " in the stamp hobby can work together to make it succeed and grow.",
+      "start": 16.32,
+      "end": 20.86,
+      "avg_logprob": -0.17241010273972604,
+      "no_speech_prob": 0.0008893013000488281
+    }
+  ],
+  "words": [
+    {
+      "text": " As",
+      "interval_s": [
+        0.0,
+        0.62
+      ],
+      "probability": 0.9052734375
+    },
+    {
+      "text": " Lynn's",
+      "interval_s": [
+        0.62,
+        0.9
+      ],
+      "probability": 0.76806640625
+    },
+    {
+      "text": " associate",
+      "interval_s": [
+        0.9,
+        1.14
+      ],
+      "probability": 0.54248046875
+    },
+    {
+      "text": " editor",
+      "interval_s": [
+        1.14,
+        1.54
+      ],
+      "probability": 0.98681640625
+    },
+    {
+      "text": " Michael",
+      "interval_s": [
+        1.54,
+        1.84
+      ],
+      "probability": 0.810546875
+    },
+    {
+      "text": " Bodke",
+      "interval_s": [
+        1.84,
+        2.2
+      ],
+      "probability": 0.510986328125
+    },
+    {
+      "text": " reports",
+      "interval_s": [
+        2.2,
+        2.52
+      ],
+      "probability": 0.99365234375
+    },
+    {
+      "text": " in",
+      "interval_s": [
+        2.52,
+        2.88
+      ],
+      "probability": 0.98046875
+    },
+    {
+      "text": " our",
+      "interval_s": [
+        2.88,
+        3.0
+      ],
+      "probability": 0.9853515625
+    },
+    {
+      "text": " November",
+      "interval_s": [
+        3.0,
+        3.26
+      ],
+      "probability": 0.97607421875
+    },
+    {
+      "text": " 28th",
+      "interval_s": [
+        3.26,
+        3.9
+      ],
+      "probability": 0.8583984375
+    },
+    {
+      "text": " issue,",
+      "interval_s": [
+        3.9,
+        4.12
+      ],
+      "probability": 0.982421875
+    },
+    {
+      "text": " attendees",
+      "interval_s": [
+        4.36,
+        5.26
+      ],
+      "probability": 0.9482421875
+    },
+    {
+      "text": " enthusiastically",
+      "interval_s": [
+        6.199999999999999,
+        6.84
+      ],
+      "probability": 0.9521484375
+    },
+    {
+      "text": " discuss",
+      "interval_s": [
+        6.84,
+        7.22
+      ],
+      "probability": 0.876953125
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        7.22,
+        7.58
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " topics",
+      "interval_s": [
+        7.58,
+        8.0
+      ],
+      "probability": 0.99169921875
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        8.0,
+        8.68
+      ],
+      "probability": 0.9853515625
+    },
+    {
+      "text": " growing",
+      "interval_s": [
+        8.68,
+        9.0
+      ],
+      "probability": 0.88720703125
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        9.0,
+        9.16
+      ],
+      "probability": 0.990234375
+    },
+    {
+      "text": " hobby,",
+      "interval_s": [
+        9.16,
+        9.46
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        9.6,
+        9.88
+      ],
+      "probability": 0.98876953125
+    },
+    {
+      "text": " future",
+      "interval_s": [
+        9.88,
+        10.24
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        10.24,
+        10.42
+      ],
+      "probability": 0.986328125
+    },
+    {
+      "text": " stamp",
+      "interval_s": [
+        10.42,
+        10.64
+      ],
+      "probability": 0.88720703125
+    },
+    {
+      "text": " shows,",
+      "interval_s": [
+        10.64,
+        10.92
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        11.22,
+        11.54
+      ],
+      "probability": 0.9921875
+    },
+    {
+      "text": " dealers",
+      "interval_s": [
+        11.54,
+        11.9
+      ],
+      "probability": 0.982421875
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        11.9,
+        12.22
+      ],
+      "probability": 0.75390625
+    },
+    {
+      "text": " philatelic",
+      "interval_s": [
+        12.22,
+        12.76
+      ],
+      "probability": 0.9876953125
+    },
+    {
+      "text": " partnerships,",
+      "interval_s": [
+        12.76,
+        13.1
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " along",
+      "interval_s": [
+        13.48,
+        14.02
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " with",
+      "interval_s": [
+        14.02,
+        14.34
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " ways",
+      "interval_s": [
+        14.34,
+        14.62
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        14.62,
+        15.0
+      ],
+      "probability": 0.8740234375
+    },
+    {
+      "text": " leading",
+      "interval_s": [
+        15.0,
+        15.2
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " organizations",
+      "interval_s": [
+        15.2,
+        15.72
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " involved",
+      "interval_s": [
+        15.72,
+        16.32
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " in",
+      "interval_s": [
+        16.32,
+        16.64
+      ],
+      "probability": 0.98583984375
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        16.64,
+        16.72
+      ],
+      "probability": 0.95068359375
+    },
+    {
+      "text": " stamp",
+      "interval_s": [
+        16.72,
+        16.98
+      ],
+      "probability": 0.97705078125
+    },
+    {
+      "text": " hobby",
+      "interval_s": [
+        16.98,
+        17.3
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " can",
+      "interval_s": [
+        17.3,
+        17.98
+      ],
+      "probability": 0.974609375
+    },
+    {
+      "text": " work",
+      "interval_s": [
+        17.98,
+        18.24
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " together",
+      "interval_s": [
+        18.24,
+        18.66
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        18.66,
+        19.4
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " make",
+      "interval_s": [
+        19.4,
+        19.62
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " it",
+      "interval_s": [
+        19.62,
+        19.76
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " succeed",
+      "interval_s": [
+        19.76,
+        20.22
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        20.22,
+        20.6
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " grow.",
+      "interval_s": [
+        20.6,
+        20.86
+      ],
+      "probability": 0.99951171875
+    }
+  ],
+  "elapsed_s": 1.351140510989353
+}

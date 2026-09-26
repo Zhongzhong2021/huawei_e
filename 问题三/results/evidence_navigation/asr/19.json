@@ -1,0 +1,297 @@
+{
+  "sample_id": "19",
+  "source_sha256": "26148d75d5b4c1ff6f69a36485cc02a771a74203d2c07d9d08f018bf88658217",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " People are surprisingly forgiving brands when they own up to mistakes.",
+      "start": 0.0,
+      "end": 4.12,
+      "avg_logprob": -0.13332201248925665,
+      "no_speech_prob": 0.0205841064453125
+    },
+    {
+      "text": " And unfortunately, some haters out there love to point fingers and jump all over imperfections.",
+      "start": 4.64,
+      "end": 10.66,
+      "avg_logprob": -0.13332201248925665,
+      "no_speech_prob": 0.0205841064453125
+    },
+    {
+      "text": " But for the most part, people understand.",
+      "start": 10.76,
+      "end": 12.74,
+      "avg_logprob": -0.13332201248925665,
+      "no_speech_prob": 0.0205841064453125
+    }
+  ],
+  "words": [
+    {
+      "text": " People",
+      "interval_s": [
+        0.0,
+        0.64
+      ],
+      "probability": 0.442626953125
+    },
+    {
+      "text": " are",
+      "interval_s": [
+        0.64,
+        0.76
+      ],
+      "probability": 0.994140625
+    },
+    {
+      "text": " surprisingly",
+      "interval_s": [
+        0.76,
+        1.36
+      ],
+      "probability": 0.98681640625
+    },
+    {
+      "text": " forgiving",
+      "interval_s": [
+        1.36,
+        1.88
+      ],
+      "probability": 0.99072265625
+    },
+    {
+      "text": " brands",
+      "interval_s": [
+        1.88,
+        2.46
+      ],
+      "probability": 0.96044921875
+    },
+    {
+      "text": " when",
+      "interval_s": [
+        2.46,
+        2.86
+      ],
+      "probability": 0.9765625
+    },
+    {
+      "text": " they",
+      "interval_s": [
+        2.86,
+        3.02
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " own",
+      "interval_s": [
+        3.02,
+        3.34
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " up",
+      "interval_s": [
+        3.34,
+        3.58
+      ],
+      "probability": 0.99072265625
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        3.58,
+        3.76
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " mistakes.",
+      "interval_s": [
+        3.76,
+        4.12
+      ],
+      "probability": 0.9765625
+    },
+    {
+      "text": " And",
+      "interval_s": [
+        4.64,
+        5.18
+      ],
+      "probability": 0.8662109375
+    },
+    {
+      "text": " unfortunately,",
+      "interval_s": [
+        5.18,
+        5.7
+      ],
+      "probability": 0.9169921875
+    },
+    {
+      "text": " some",
+      "interval_s": [
+        5.92,
+        6.16
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " haters",
+      "interval_s": [
+        6.16,
+        6.58
+      ],
+      "probability": 0.97119140625
+    },
+    {
+      "text": " out",
+      "interval_s": [
+        6.58,
+        6.82
+      ],
+      "probability": 0.97119140625
+    },
+    {
+      "text": " there",
+      "interval_s": [
+        6.82,
+        7.04
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " love",
+      "interval_s": [
+        7.04,
+        7.66
+      ],
+      "probability": 0.92529296875
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        7.66,
+        8.04
+      ],
+      "probability": 0.99169921875
+    },
+    {
+      "text": " point",
+      "interval_s": [
+        8.04,
+        8.26
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " fingers",
+      "interval_s": [
+        8.26,
+        8.7
+      ],
+      "probability": 0.98779296875
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        8.7,
+        8.98
+      ],
+      "probability": 0.98486328125
+    },
+    {
+      "text": " jump",
+      "interval_s": [
+        8.98,
+        9.24
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " all",
+      "interval_s": [
+        9.24,
+        9.5
+      ],
+      "probability": 0.9501953125
+    },
+    {
+      "text": " over",
+      "interval_s": [
+        9.5,
+        9.8
+      ],
+      "probability": 0.99169921875
+    },
+    {
+      "text": " imperfections.",
+      "interval_s": [
+        9.8,
+        10.66
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " But",
+      "interval_s": [
+        10.76,
+        11.24
+      ],
+      "probability": 0.990234375
+    },
+    {
+      "text": " for",
+      "interval_s": [
+        11.24,
+        11.34
+      ],
+      "probability": 0.9677734375
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        11.34,
+        11.46
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " most",
+      "interval_s": [
+        11.46,
+        11.66
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " part,",
+      "interval_s": [
+        11.66,
+        11.92
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " people",
+      "interval_s": [
+        12.0,
+        12.2
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " understand.",
+      "interval_s": [
+        12.2,
+        12.74
+      ],
+      "probability": 0.99560546875
+    }
+  ],
+  "elapsed_s": 0.9816511489916593
+}

@@ -1,0 +1,19 @@
+{
+  "schema": "q1-whisper-multigranular-v1",
+  "repository": "Systran/faster-whisper-large-v3",
+  "revision": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "files": ["config.json", "model.bin", "preprocessor_config.json", "tokenizer.json", "vocabulary.json"],
+  "recognition": {
+    "language": "en", "task": "transcribe", "beam_size": 5,
+    "temperature": 0.0, "condition_on_previous_text": false,
+    "word_timestamps": true, "vad_filter": false,
+    "initial_prompt": null, "hotwords": null
+  },
+  "compute_type": "int8_float16",
+  "boundary_agreement_s": 0.2,
+  "minimum_distinct_anchors": 2,
+  "minimum_phrase_words": 2,
+  "maximum_phrase_words": 8,
+  "policy": "Unique exact content runs with informative support; MFA/Whisper timing agreement; group-only output where internal boundaries disagree; explicit conflicts.",
+  "parameter_source": "Boundary tolerance and anchor count inherited from fixed baseline; phrase search limited to 2–8 words as an engineering bound before inference. No human transcripts, intervals, notes, labels or sample-specific rules."
+}

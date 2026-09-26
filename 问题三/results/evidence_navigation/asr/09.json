@@ -1,0 +1,147 @@
+{
+  "sample_id": "09",
+  "source_sha256": "7ecb03c24c8fc45b66bff4eb56bdf2adba033e96db52dd2d858abd93fae9d749",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " I did not like this movie at all. I would not recommend it. I only watched",
+      "start": 0.5599999999999996,
+      "end": 4.78,
+      "avg_logprob": -0.21205357142857142,
+      "no_speech_prob": 0.291015625
+    }
+  ],
+  "words": [
+    {
+      "text": " I",
+      "interval_s": [
+        0.5599999999999996,
+        0.94
+      ],
+      "probability": 0.82080078125
+    },
+    {
+      "text": " did",
+      "interval_s": [
+        0.94,
+        1.26
+      ],
+      "probability": 0.94482421875
+    },
+    {
+      "text": " not",
+      "interval_s": [
+        1.26,
+        1.38
+      ],
+      "probability": 0.9931640625
+    },
+    {
+      "text": " like",
+      "interval_s": [
+        1.38,
+        1.54
+      ],
+      "probability": 0.9951171875
+    },
+    {
+      "text": " this",
+      "interval_s": [
+        1.54,
+        1.68
+      ],
+      "probability": 0.9921875
+    },
+    {
+      "text": " movie",
+      "interval_s": [
+        1.68,
+        2.02
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " at",
+      "interval_s": [
+        2.02,
+        2.28
+      ],
+      "probability": 0.9794921875
+    },
+    {
+      "text": " all.",
+      "interval_s": [
+        2.28,
+        2.5
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " I",
+      "interval_s": [
+        2.64,
+        2.76
+      ],
+      "probability": 0.9912109375
+    },
+    {
+      "text": " would",
+      "interval_s": [
+        2.76,
+        2.92
+      ],
+      "probability": 0.9853515625
+    },
+    {
+      "text": " not",
+      "interval_s": [
+        2.92,
+        3.06
+      ],
+      "probability": 0.98974609375
+    },
+    {
+      "text": " recommend",
+      "interval_s": [
+        3.06,
+        3.4
+      ],
+      "probability": 0.984375
+    },
+    {
+      "text": " it.",
+      "interval_s": [
+        3.4,
+        3.7
+      ],
+      "probability": 0.99267578125
+    },
+    {
+      "text": " I",
+      "interval_s": [
+        3.8,
+        3.96
+      ],
+      "probability": 0.99267578125
+    },
+    {
+      "text": " only",
+      "interval_s": [
+        3.96,
+        4.5
+      ],
+      "probability": 0.994140625
+    },
+    {
+      "text": " watched",
+      "interval_s": [
+        4.5,
+        4.78
+      ],
+      "probability": 0.9482421875
+    }
+  ],
+  "elapsed_s": 0.5693928450345993
+}

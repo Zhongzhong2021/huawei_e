@@ -1,0 +1,218 @@
+{
+  "sample_id": "14",
+  "source_sha256": "8f1c4cb4b1c97b31cd065317faef41465cfcda403ef12d1defce4a5d23b8e18e",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " He is the co-founder of Rawson & Vitesse Limited and the former executive director of Uniform",
+      "start": 0.0,
+      "end": 5.32,
+      "avg_logprob": -0.24712172464320534,
+      "no_speech_prob": 0.016876220703125
+    },
+    {
+      "text": " Final Examination Courses at Toronto's York University.",
+      "start": 5.32,
+      "end": 9.36,
+      "avg_logprob": -0.24712172464320534,
+      "no_speech_prob": 0.016876220703125
+    }
+  ],
+  "words": [
+    {
+      "text": " He",
+      "interval_s": [
+        0.0,
+        0.5
+      ],
+      "probability": 0.9560546875
+    },
+    {
+      "text": " is",
+      "interval_s": [
+        0.5,
+        0.6
+      ],
+      "probability": 0.66162109375
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        0.6,
+        0.68
+      ],
+      "probability": 0.90234375
+    },
+    {
+      "text": " co",
+      "interval_s": [
+        0.68,
+        0.8
+      ],
+      "probability": 0.91943359375
+    },
+    {
+      "text": "-founder",
+      "interval_s": [
+        0.8,
+        1.22
+      ],
+      "probability": 0.970947265625
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        1.22,
+        1.42
+      ],
+      "probability": 0.994140625
+    },
+    {
+      "text": " Rawson",
+      "interval_s": [
+        1.42,
+        1.84
+      ],
+      "probability": 0.725830078125
+    },
+    {
+      "text": " &",
+      "interval_s": [
+        1.84,
+        2.0
+      ],
+      "probability": 0.334228515625
+    },
+    {
+      "text": " Vitesse",
+      "interval_s": [
+        2.0,
+        2.3
+      ],
+      "probability": 0.643798828125
+    },
+    {
+      "text": " Limited",
+      "interval_s": [
+        2.3,
+        2.6
+      ],
+      "probability": 0.62109375
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        2.6,
+        3.16
+      ],
+      "probability": 0.7783203125
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        3.16,
+        3.3
+      ],
+      "probability": 0.86572265625
+    },
+    {
+      "text": " former",
+      "interval_s": [
+        3.3,
+        3.6
+      ],
+      "probability": 0.95751953125
+    },
+    {
+      "text": " executive",
+      "interval_s": [
+        3.6,
+        3.98
+      ],
+      "probability": 0.61376953125
+    },
+    {
+      "text": " director",
+      "interval_s": [
+        3.98,
+        4.4
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        4.4,
+        4.82
+      ],
+      "probability": 0.9931640625
+    },
+    {
+      "text": " Uniform",
+      "interval_s": [
+        4.82,
+        5.32
+      ],
+      "probability": 0.876708984375
+    },
+    {
+      "text": " Final",
+      "interval_s": [
+        5.32,
+        5.7
+      ],
+      "probability": 0.93798828125
+    },
+    {
+      "text": " Examination",
+      "interval_s": [
+        5.7,
+        6.38
+      ],
+      "probability": 0.97900390625
+    },
+    {
+      "text": " Courses",
+      "interval_s": [
+        6.38,
+        6.94
+      ],
+      "probability": 0.9147135416666666
+    },
+    {
+      "text": " at",
+      "interval_s": [
+        6.94,
+        7.78
+      ],
+      "probability": 0.7392578125
+    },
+    {
+      "text": " Toronto's",
+      "interval_s": [
+        7.78,
+        8.7
+      ],
+      "probability": 0.980224609375
+    },
+    {
+      "text": " York",
+      "interval_s": [
+        8.7,
+        8.88
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " University.",
+      "interval_s": [
+        8.88,
+        9.36
+      ],
+      "probability": 0.98974609375
+    }
+  ],
+  "elapsed_s": 0.896581094013527
+}

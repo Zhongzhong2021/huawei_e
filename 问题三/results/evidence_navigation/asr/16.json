@@ -1,0 +1,107 @@
+{
+  "sample_id": "16",
+  "source_sha256": "819a4c15dce5b85d8f7717087ea660551c3044daf3cecba1d45d342ae85365e5",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " It's a terrible. This is a terrible movie. I do not",
+      "start": 0.0,
+      "end": 2.82,
+      "avg_logprob": -0.2211626838235294,
+      "no_speech_prob": 0.132080078125
+    }
+  ],
+  "words": [
+    {
+      "text": " It's",
+      "interval_s": [
+        0.0,
+        0.62
+      ],
+      "probability": 0.892333984375
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        0.62,
+        0.62
+      ],
+      "probability": 0.9521484375
+    },
+    {
+      "text": " terrible.",
+      "interval_s": [
+        0.62,
+        1.04
+      ],
+      "probability": 0.98828125
+    },
+    {
+      "text": " This",
+      "interval_s": [
+        1.14,
+        1.5
+      ],
+      "probability": 0.875
+    },
+    {
+      "text": " is",
+      "interval_s": [
+        1.5,
+        1.64
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " a",
+      "interval_s": [
+        1.64,
+        1.68
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " terrible",
+      "interval_s": [
+        1.68,
+        2.0
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " movie.",
+      "interval_s": [
+        2.0,
+        2.3
+      ],
+      "probability": 0.93603515625
+    },
+    {
+      "text": " I",
+      "interval_s": [
+        2.4,
+        2.54
+      ],
+      "probability": 0.9931640625
+    },
+    {
+      "text": " do",
+      "interval_s": [
+        2.54,
+        2.6
+      ],
+      "probability": 0.93115234375
+    },
+    {
+      "text": " not",
+      "interval_s": [
+        2.6,
+        2.82
+      ],
+      "probability": 0.9892578125
+    }
+  ],
+  "elapsed_s": 0.4844522220082581
+}

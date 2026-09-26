@@ -1,0 +1,219 @@
+{
+  "sample_id": "10",
+  "source_sha256": "21047991667edfdde0cb848dfd80aa41ccb871bc02742bd24f28d512a70f53db",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " Um, and you know, I really do like to see fluffy chick flicks sometimes, so I'm not against that, but this one was pretty terrible.",
+      "start": 0.0,
+      "end": 8.94,
+      "avg_logprob": -0.1279017882687705,
+      "no_speech_prob": 0.056549072265625
+    }
+  ],
+  "words": [
+    {
+      "text": " Um,",
+      "interval_s": [
+        0.0,
+        0.32
+      ],
+      "probability": 0.314453125
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        0.56,
+        1.24
+      ],
+      "probability": 0.990234375
+    },
+    {
+      "text": " you",
+      "interval_s": [
+        1.24,
+        1.34
+      ],
+      "probability": 0.8837890625
+    },
+    {
+      "text": " know,",
+      "interval_s": [
+        1.34,
+        1.5
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " I",
+      "interval_s": [
+        1.58,
+        1.84
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " really",
+      "interval_s": [
+        1.84,
+        2.14
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " do",
+      "interval_s": [
+        2.14,
+        2.34
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " like",
+      "interval_s": [
+        2.34,
+        2.6
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        2.6,
+        2.74
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " see",
+      "interval_s": [
+        2.74,
+        2.92
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " fluffy",
+      "interval_s": [
+        2.92,
+        3.26
+      ],
+      "probability": 0.98876953125
+    },
+    {
+      "text": " chick",
+      "interval_s": [
+        3.26,
+        3.72
+      ],
+      "probability": 0.99365234375
+    },
+    {
+      "text": " flicks",
+      "interval_s": [
+        3.72,
+        4.14
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " sometimes,",
+      "interval_s": [
+        4.14,
+        4.44
+      ],
+      "probability": 0.9892578125
+    },
+    {
+      "text": " so",
+      "interval_s": [
+        4.82,
+        5.08
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " I'm",
+      "interval_s": [
+        5.08,
+        5.28
+      ],
+      "probability": 0.998291015625
+    },
+    {
+      "text": " not",
+      "interval_s": [
+        5.28,
+        5.4
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " against",
+      "interval_s": [
+        5.4,
+        5.92
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " that,",
+      "interval_s": [
+        5.92,
+        6.38
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " but",
+      "interval_s": [
+        6.52,
+        6.76
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " this",
+      "interval_s": [
+        6.76,
+        7.02
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " one",
+      "interval_s": [
+        7.02,
+        7.24
+      ],
+      "probability": 1.0
+    },
+    {
+      "text": " was",
+      "interval_s": [
+        7.24,
+        7.56
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " pretty",
+      "interval_s": [
+        7.56,
+        8.44
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " terrible.",
+      "interval_s": [
+        8.44,
+        8.94
+      ],
+      "probability": 0.99951171875
+    }
+  ],
+  "elapsed_s": 0.893313572043553
+}

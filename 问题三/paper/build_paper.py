@@ -49,6 +49,9 @@ assert SENS['structures'][-1]['valid']==MET['valid']['final']
 for group in 'AB':
     assert {r['multiplier'] for r in SENS['learning_rates'] if r['group']==group}=={.5,1,2}
 MEDIA = {x['id']:x for x in records('results/media_mapping.jsonl')}
+NAV = {x['id']:x for x in records('results/evidence_navigation/navigation.jsonl')}
+NAV_SUMMARY = read('results/evidence_navigation/summary.json')
+MEDIA_CHECK = {r['id']:r for r in read('results/evidence_navigation/media_consistency.json')['samples']}
 EXP = {x['id']:x for x in records('results/uncertainty/special_explanations.jsonl')}
 PRED = {x['id']:x for x in rows('results/uncertainty/special_predictions.csv')}
 SHARE = {x['id']:x for x in rows('results/contributions/attachment4_contributions.csv')}
@@ -298,16 +301,17 @@ para('局部重要性按分类间隔的有符号读出绘制。为避免只呈�
 figure('06_local_16','图6 附件4样本16的主要参考模态内局部重要性。每行给出原BERT位置和对应原文，负值表示反对当前类别间隔；词的上下文由BERT编码。')
 figure('06_local_02','图7 附件4样本02的文本局部重要性。保留正负方向，绝对值大不等于支持当前预测。')
 def evidence(sid,mod,limit=3):
-    e=EXP[sid]; lookup={j:x for x in MEDIA[sid]['entries'] for j in x['source_indices']};lines=[]
-    if mod=='V' and SHARE[sid]['available_V']=='False':return '无有效视觉观测；不列视觉证据。'
-    for item in e['top_evidence'][mod][:limit]:
+    lines=[]
+    if mod=='V' and SHARE[sid]['available_V']=='False':return '无有效视觉观测。'
+    for item in NAV[sid]['top_evidence'][mod][:limit]:
         if abs(item['signed_score'])<1e-10:continue
-        entries=[lookup[j] for j in item['source_indices'] if j in lookup]
-        word=' / '.join(dict.fromkeys(z['text'] for z in entries))
-        spans=[span for z in entries for span in z.get('char_spans',[])]
-        starts=[z.get('start_seconds') for z in entries if z.get('start_seconds') is not None];ends=[z.get('end_seconds') for z in entries if z.get('end_seconds') is not None]
-        timing=f'；估计{min(starts):.2f}—{max(ends):.2f}s' if starts and ends else '；时间未定位'
-        lines.append(f"位置{item['source_indices']}，{word}，字符{spans}，分数{item['signed_score']:+.4f}"+timing)
+        interval=item['interval_s']
+        reason={'lexical_identity_not_unique_exact':'原文与识别结果未形成唯一精确匹配','run_anchor_support_insufficient':'连续片段的信息锚点不足','asr_internal_boundary_unavailable':'识别未提供独立词界','temporal_order_conflict':'候选时序冲突','acoustic_boundary_support_insufficient':'局部声学边界支持不足'}.get(item.get('unresolved_reason'),'')
+        label={'word_candidate':'词级候选','phrase_candidate':'短语级回看','no_lexical_span':'标点或符号，无独立发音区间','insufficient_support':'语音定位支持不足'}[item['status']]
+        timing=f'；{label} {interval[0]:.2f}—{interval[1]:.2f}s' if interval else '；'+label
+        if reason:timing+='（'+reason+'）'
+        if item.get('video_frame'):timing+=f"；同步画面{item['video_frame']['pts_s']:.3f}s"
+        lines.append(f"位置{item['source_indices']}，{item['text']}，字符{item['char_spans']}，分数{item['signed_score']:+.4f}"+timing)
     return '；\n'.join(lines) or '无非零局部项。'
 
 head('8 附件四全量预测与典型解释')
@@ -317,19 +321,25 @@ table(['编号','预测极性','最终强度','文本(%)','语音(%)','视觉(%)
 counts=[sum(int(r['polarity'])==k for r in PRED.values()) for k in range(3)]
 para(f'模型预测的类别分布为负向{counts[0]}条、中性{counts[1]}条、正向{counts[2]}条。该分布是预测输出的统计。样本02的最终强度为+1.0×10⁻⁶，来自类别一致性处理，故以科学计数法保留其正号，避免将其显示为中性0。')
 subhead('8.2 关键证据定位与结果文件')
-para('对每条样本，按局部贡献绝对值选取关键项，同时保留其支持或反对的方向。表中列主要参考模态内最显著的局部词元及原序列索引；完整结果文件同时给出三模态关键证据、原文本字符区间及估计时间。表内的语音时间来自MMS强制对齐[8]，仅用于媒体回查；同位置视觉时间为粗略检索区间，不视为原视觉特征的精确帧时间。')
+para('对每条样本，按局部贡献绝对值选取关键项，保留原特征索引、有符号分数及原文字符区间。20条样本的原文、BERT编号与字符映射均与原始输入逐项核对，原视频通过文件摘要确认。沿用问题一的独立语音识别与局部声学交叉支持规则，对附件四重新定位。完整音轨先由Whisper识别，识别过程只输入音频；原文随后与识别结果进行唯一词序匹配，每段至少含两个不同的信息锚点。对候选段分别扩展0.5秒和1秒上下文，用MFA进行局部强制对齐。')
+para('词级候选以扩展0.5秒上下文的声学边界为基准，分别与扩展1秒上下文的结果、独立识别的结果比较，两组最大端点差异均须不超过0.2秒，同时满足原词顺序和区间相容性。内部词界支持不足而外边界一致时，从2—8词候选中选择词序与时间均不重叠、覆盖未确定词最多的短语范围；其余位置保留原文本与贡献，标记语音定位支持不足。标点和连接符保留各自读出，不分配邻词的语音时间。0.2秒为固定一致性门槛，不是实测定位误差。原MMS估计[8]仅保留作边界差异对照。')
+nc=NAV_SUMMARY['top_evidence'];nt=NAV_SUMMARY['totals']
+para(f"附件四共{nt['reference_words']}个规范化原词，得到{nt['word_candidates']}个词级候选，另有{nt['phrase_candidates']}个短语覆盖{nt['phrase_only_words']}个词级未确定词。三模态共{NAV_SUMMARY['top_evidence_count']}个关键读出中，{nc.get('word_candidate',0)}项获得词级候选，{nc.get('phrase_candidate',0)}项获得短语回看范围，{nc.get('insufficient_support',0)}项语音定位支持不足，{nc.get('no_lexical_span',0)}项为标点或符号。其中{NAV_SUMMARY['samples_with_key_navigation']}条样本具有可回看的关键项，另{NAV_SUMMARY['samples']-NAV_SUMMARY['samples_with_key_navigation']}条保留原文和贡献索引。此处按读出项统计，同一原词可以被不同模态引用；覆盖率与模型一致性分别描述可回查程度和候选支持，定位准确率需要独立时间真值。")
+para(f"在{NAV_SUMMARY['word_top_items_compared_with_previous']}项具有旧时间的词级关键读出中，{NAV_SUMMARY['word_top_items_previous_boundary_difference_over_02s']}项与旧估计的边界差异超过0.2秒。该比较仅涵盖取得词级交叉支持的部分；其余旧估计仍需区分内容支持与边界支持。模型一致性不能替代独立时间真值。")
+nr=NAV_SUMMARY['unresolved_reasons']
+para(f"{nc.get('insufficient_support',0)}项支持不足的关键读出中，{nr.get('lexical_identity_not_unique_exact',0)}项未形成唯一精确的文字匹配，{nr.get('run_anchor_support_insufficient',0)}项缺少足够的连续片段锚点，{nr.get('acoustic_boundary_support_insufficient',0)}项未通过局部声学边界检查。精确匹配会受专名、缩略语与识别差异影响；扩展上下文也可能带入候选段之外的语音，使局部强制对齐移动边界。因此，支持不足表示本组定位规则尚未给出充分依据，不能据此断言原词未发音或输入模态缺失。")
+para('对已定位关键项，从原视频实际帧时间戳中选取落在回看区间内、最接近区间中点的帧，记录帧序号、时间及图像摘要；重复帧合并保存。截图展示该时段的同步场景，图中人物与发声者的身份对应仍需单独验证。附件中的音视特征缺少原始采样时间，新定位用于媒体导航；模型贡献的归属继续由原特征索引确定。')
+
 evidence_rows=[]
 for sid in sorted(EXP):
-    top=EXP[sid]['top_evidence'][EXP[sid]['principal_modality']][0]
-    lookup={j:z for z in MEDIA[sid]['entries'] for j in z['source_indices']}
-    entries=[lookup[j] for j in top['source_indices'] if j in lookup]
-    words=' / '.join(dict.fromkeys(z['text'] for z in entries))
-    starts=[z['start_seconds'] for z in entries if z.get('start_seconds') is not None]
-    ends=[z['end_seconds'] for z in entries if z.get('end_seconds') is not None]
-    timing=f'{min(starts):.2f}—{max(ends):.2f}' if starts and ends else '未定位'
-    evidence_rows.append([sid,f"{top['source_indices']} / {words}",f"{top['signed_score']:+.4f}",timing])
+    top=NAV[sid]['top_evidence'][EXP[sid]['principal_modality']][0]
+    interval=top['interval_s'];status={'word_candidate':'词级','phrase_candidate':'短语','insufficient_support':'支持不足','no_lexical_span':'标点/符号'}[top['status']]
+    timing=f'{interval[0]:.2f}—{interval[1]:.2f}（{status}）' if interval else status
+    evidence_rows.append([sid,f"{top['source_indices']} / {top['text']}",f"{top['signed_score']:+.4f}",timing])
 table(['编号','主模态关键位置 / 原词元','有符号贡献','估计时段(s)'], evidence_rows, '附件四20条样本的主要证据定位索引')
 para('完整预测与解释以CSV汇总：一行对应一个样本，含类别、最终及原始强度、分类与回归净分数及比例、主要模态、三模态关键证据和可用状态。全部20条详细解释卡与该表使用同一批固定预测记录生成。')
+para('进一步将文本内容支持、特征可用性和媒体定位分别检查。附件四两套版本的原文与文本输入一致，视频逐条字节一致；13号在对齐版中视觉数组全零，未对齐版仍有17行非零视觉特征。本文按所选对齐版关闭其视觉贡献，该状态表示当前输入无有效视觉观测。')
+para('15号的完整音轨约7.314秒。Whisper与Wav2Vec2 CTC分别在不输入原文的情况下识别音轨，均主要识别出所给句子之前的内容，在末尾才衔接到当前句开头，提示配套媒体可能存在剪辑边界偏移。该样本保留基于给定特征的预测与贡献，媒体对应标为待确认，解释卡不赋予缺少支持的语音区间。两个识别模型的一致现象用于异常筛查，不作为人工真值或故意篡改的判断。')
 subhead('8.3 典型样本解释卡')
 para('选取02、13、14、16号样本，分别展示分类与回归分歧、视觉缺失、中性决策以及文本高度主导的读出。每张卡同时列预测、三模态作用程度、主要模态、证据位置及数值方向；其解读仅说明模型如何形成当前判断。字符区间采用原文本的半开区间，序列位置为零基BERT索引。')
 notes={
@@ -337,10 +347,14 @@ notes={
 '13':'原视觉数组全零，视觉单项及关联交互关闭，视觉贡献为0。当前判断来自可观测的文本与语音，分类输出为中性。缺失是输入的观测事实，不能由这一案例推断若补充视觉就会改变类别。',
 '14':'分类判为中性，最终强度置零；回归q中视觉净作用占41.09%，高于其他单个模态。中性类别并不意味着各模态没有作用，局部支持、反对以及输出偏置共同决定最终分类间隔。',
 '16':'预测为负向，最终强度为−2.6363。文本净贡献占99.04%，原句中两处terrible可在局部图中回查；这些读出已包含全句上下文，不能解释为词自身独立产生的因果效应。'}
-card_lines=['# 附件四全20条解释卡','本文件按无标签专项集展示预测与解释。秒数为机器对齐估计，视觉检索时段并非原特征精确帧时间。T/A/V分别表示文本/语音/视觉；有符号分数针对预测类与竞争类的间隔，正值支持、负值反对。']
+card_lines=['# 附件四全20条解释卡','本文件按无标签专项集展示预测与解释。秒数为交叉支持的候选回看范围，词级与短语级分别标注。截图展示实际帧时间对应的同步场景；贡献归属采用原特征索引。T/A/V分别表示文本/语音/视觉；有符号分数针对预测类与竞争类的间隔，正值支持、负值反对。']
 formal_rows=[]
 for sid in sorted(EXP):
     s=SHARE[sid];r=PRED[sid];e=EXP[sid]
+    check=MEDIA_CHECK[sid]
+    content_note=('两个识别模型均显示原文内容支持偏低；媒体对应待确认' if check['content_status']=='low_cross_recognizer_support' else '未触发双模型低内容支持提示；候选时间按关键项分别标注')
+    available=check['feature_availability']
+    visual_note=f"对齐版非零视觉行{available['nonzero_rows']['aligned']['vision']}；未对齐版非零视觉行{available['nonzero_rows']['unaligned']['vision']}（分别按各自序列统计）"
     competitor=int(e['target'].rsplit('_',1)[-1])
     data=[['预测极性 / 最终强度',f"{CN[int(r['polarity'])]} / {strength(r['intensity'])}"],
           ['原始强度 / 竞争类别',f"{strength(s['raw_intensity'])} / {CN[competitor]}"],
@@ -348,15 +362,26 @@ for sid in sorted(EXP):
           ['分类净分数 T / A / V',' / '.join(f"{float(s['classification_modal_scores_'+m]):+.4f}" for m in 'TAV')],
           ['回归q贡献 T / A / V',' / '.join(f"{100*float(s['regression_modality_shares_'+m]):.2f}%" for m in 'TAV')],
           ['分类 / 回归主要模态',s['classification_principal_modality']+' / '+s['regression_principal_modality']],
-          ['分类间隔 / 偏置',f"{e['score']:.4f} / {e['bias']:+.4f}"],['原文本',MEDIA[sid]['raw_text']]]
+          ['分类间隔 / 偏置',f"{e['score']:.4f} / {e['bias']:+.4f}"],['原文本',MEDIA[sid]['raw_text']],['媒体对应状态',content_note],['视觉特征可用性',visual_note]]
     card_lines+=['',f'## 样本{sid}']+[f'**{a}：** {b}' for a,b in data]
-    for m in 'TAV': card_lines+=[f'**{m}关键证据：** '+evidence(sid,m)]
+    shown=set()
+    for m in 'TAV':
+        card_lines+=[f'**{m}关键证据：** '+evidence(sid,m)]
+        for item in NAV[sid]['top_evidence'][m]:
+            frame=item.get('video_frame')
+            if frame and frame['path'] not in shown:
+                shown.add(frame['path'])
+                card_lines+=[f"![同步场景：{frame['pts_s']:.3f}秒](evidence_navigation/{frame['path']})",f"原视频帧{frame['frame_index']}，时间{frame['pts_s']:.3f}秒；对应关键位置{item['source_indices']}的回看范围。"]
     if sid in notes:
         card_lines+=['**解读：** '+notes[sid]]
         add('card_start','样本'+sid)
         table(['项目','内容'],data, '样本'+sid+'解释卡')
         for m in 'TAV': para(m+'关键证据：'+evidence(sid,m,limit=3 if m=='T' else 1))
         para('解读：'+notes[sid])
+        view=next(((m,it) for m in 'VTA' for it in NAV[sid]['top_evidence'][m] if it.get('video_frame')),None)
+        if view:
+            m,it=view;frame=it['video_frame']
+            figure('../../results/evidence_navigation/'+frame['path'],f"样本{sid}同步场景，实际帧时间{frame['pts_s']:.3f}秒。图像对应{m}关键位置{it['source_indices']}的回看范围；原特征贡献仍按序列位置解释。")
     out={'id':sid,'predicted_polarity':int(r['polarity']),'predicted_label':CN[int(r['polarity'])],
          'predicted_intensity':r['intensity'],'raw_intensity':s['raw_intensity'],
          'classification_principal_modality':s['classification_principal_modality'],
@@ -367,7 +392,10 @@ for sid in sorted(EXP):
         for key in ('classification_modal_scores','classification_modality_shares','regression_modal_scores','regression_modality_shares','precision_weight','available'):
             out[key+'_'+m]=s[key+'_'+m]
         out['key_evidence_'+m]=evidence(sid,m)
-    out['time_note']='机器对齐估计；视觉时段仅用于回查，并非原特征精确帧时间'
+    out['media_content_status']=check['content_status']
+    out['media_content_note']=content_note
+    out['visual_availability_note']=visual_note
+    out['time_note']='词级候选或短语回看范围；同步画面采用实际帧时间；贡献归属采用原特征索引'
     formal_rows.append(out)
 (ROOT/'results/附件4_全20条解释卡.md').write_text('\n\n'.join(card_lines)+'\n')
 with (ROOT/'results/附件4_预测与解释汇总.csv').open('w',encoding='utf-8-sig',newline='') as f:
@@ -534,9 +562,10 @@ for kind,value in blocks:
         figure_number+=1;name,description=value
         p=doc.add_paragraph();no_indent(p);p.alignment=1
         p.paragraph_format.keep_with_next=True
-        p.add_run().add_picture(str(FIG/(name+'.png')),width=Cm(16.1))
+        image_name=name if Path(name).suffix else name+'.png'
+        p.add_run().add_picture(str(FIG/image_name),width=Cm(16.1))
         title=f'图{figure_number}　{description}';caption(title)
-        md += [f'![{title}](figures/{name}.png)','']
+        md += [f'![{title}](figures/{image_name})','']
     elif kind=='table':
         table_number+=1;headers,data,description=value
         title=f'表{table_number}　{description}';caption(title,keep=True)

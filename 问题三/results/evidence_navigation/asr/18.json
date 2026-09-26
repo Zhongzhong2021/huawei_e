@@ -1,0 +1,392 @@
+{
+  "sample_id": "18",
+  "source_sha256": "0faf17accce9e58d81b2cc4ff6b150f8bc7f1d2f620ba420944f5732f41d6759",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " And in Denmark, the first Baltic cod fishery has been MSC certified.",
+      "start": 0.0,
+      "end": 4.72,
+      "avg_logprob": -0.1562500068119594,
+      "no_speech_prob": 0.003345489501953125
+    },
+    {
+      "text": " Meanwhile, the Faroes mackerel fishery has been denied MSC certification",
+      "start": 5.84,
+      "end": 10.26,
+      "avg_logprob": -0.1562500068119594,
+      "no_speech_prob": 0.003345489501953125
+    },
+    {
+      "text": " based on the fact that the fishery has failed to reach an agreement",
+      "start": 10.26,
+      "end": 13.84,
+      "avg_logprob": -0.1562500068119594,
+      "no_speech_prob": 0.003345489501953125
+    },
+    {
+      "text": " on mackerel quotas with Norway and the European Union.",
+      "start": 13.84,
+      "end": 17.92,
+      "avg_logprob": -0.1562500068119594,
+      "no_speech_prob": 0.003345489501953125
+    }
+  ],
+  "words": [
+    {
+      "text": " And",
+      "interval_s": [
+        0.0,
+        0.62
+      ],
+      "probability": 0.435302734375
+    },
+    {
+      "text": " in",
+      "interval_s": [
+        0.62,
+        0.7
+      ],
+      "probability": 0.89111328125
+    },
+    {
+      "text": " Denmark,",
+      "interval_s": [
+        0.7,
+        1.04
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        1.28,
+        1.58
+      ],
+      "probability": 0.9931640625
+    },
+    {
+      "text": " first",
+      "interval_s": [
+        1.58,
+        1.82
+      ],
+      "probability": 0.97216796875
+    },
+    {
+      "text": " Baltic",
+      "interval_s": [
+        1.82,
+        2.34
+      ],
+      "probability": 0.99072265625
+    },
+    {
+      "text": " cod",
+      "interval_s": [
+        2.34,
+        2.54
+      ],
+      "probability": 0.78271484375
+    },
+    {
+      "text": " fishery",
+      "interval_s": [
+        2.54,
+        3.26
+      ],
+      "probability": 0.992919921875
+    },
+    {
+      "text": " has",
+      "interval_s": [
+        3.26,
+        3.66
+      ],
+      "probability": 0.97509765625
+    },
+    {
+      "text": " been",
+      "interval_s": [
+        3.66,
+        3.86
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " MSC",
+      "interval_s": [
+        3.86,
+        4.28
+      ],
+      "probability": 0.986572265625
+    },
+    {
+      "text": " certified.",
+      "interval_s": [
+        4.28,
+        4.72
+      ],
+      "probability": 0.720703125
+    },
+    {
+      "text": " Meanwhile,",
+      "interval_s": [
+        5.84,
+        6.52
+      ],
+      "probability": 0.9892578125
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        6.84,
+        7.12
+      ],
+      "probability": 0.9609375
+    },
+    {
+      "text": " Faroes",
+      "interval_s": [
+        7.12,
+        7.68
+      ],
+      "probability": 0.81005859375
+    },
+    {
+      "text": " mackerel",
+      "interval_s": [
+        7.68,
+        8.08
+      ],
+      "probability": 0.8972981770833334
+    },
+    {
+      "text": " fishery",
+      "interval_s": [
+        8.08,
+        8.58
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " has",
+      "interval_s": [
+        8.58,
+        8.7
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " been",
+      "interval_s": [
+        8.7,
+        8.88
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " denied",
+      "interval_s": [
+        8.88,
+        9.26
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " MSC",
+      "interval_s": [
+        9.26,
+        9.74
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " certification",
+      "interval_s": [
+        9.74,
+        10.26
+      ],
+      "probability": 0.9951171875
+    },
+    {
+      "text": " based",
+      "interval_s": [
+        10.26,
+        11.1
+      ],
+      "probability": 0.84375
+    },
+    {
+      "text": " on",
+      "interval_s": [
+        11.1,
+        11.44
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        11.44,
+        11.56
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " fact",
+      "interval_s": [
+        11.56,
+        11.78
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " that",
+      "interval_s": [
+        11.78,
+        11.98
+      ],
+      "probability": 0.9736328125
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        11.98,
+        12.04
+      ],
+      "probability": 0.98974609375
+    },
+    {
+      "text": " fishery",
+      "interval_s": [
+        12.04,
+        12.56
+      ],
+      "probability": 0.9755859375
+    },
+    {
+      "text": " has",
+      "interval_s": [
+        12.56,
+        12.58
+      ],
+      "probability": 0.98828125
+    },
+    {
+      "text": " failed",
+      "interval_s": [
+        12.58,
+        12.98
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        12.98,
+        13.12
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " reach",
+      "interval_s": [
+        13.12,
+        13.34
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " an",
+      "interval_s": [
+        13.34,
+        13.5
+      ],
+      "probability": 0.9912109375
+    },
+    {
+      "text": " agreement",
+      "interval_s": [
+        13.5,
+        13.84
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " on",
+      "interval_s": [
+        13.84,
+        14.62
+      ],
+      "probability": 0.99072265625
+    },
+    {
+      "text": " mackerel",
+      "interval_s": [
+        14.62,
+        15.12
+      ],
+      "probability": 0.9920247395833334
+    },
+    {
+      "text": " quotas",
+      "interval_s": [
+        15.12,
+        15.68
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " with",
+      "interval_s": [
+        15.68,
+        16.02
+      ],
+      "probability": 0.98828125
+    },
+    {
+      "text": " Norway",
+      "interval_s": [
+        16.02,
+        16.74
+      ],
+      "probability": 0.9873046875
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        16.74,
+        17.1
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        17.1,
+        17.18
+      ],
+      "probability": 0.9931640625
+    },
+    {
+      "text": " European",
+      "interval_s": [
+        17.18,
+        17.42
+      ],
+      "probability": 0.9619140625
+    },
+    {
+      "text": " Union.",
+      "interval_s": [
+        17.42,
+        17.92
+      ],
+      "probability": 0.9892578125
+    }
+  ],
+  "elapsed_s": 1.3791870049899444
+}

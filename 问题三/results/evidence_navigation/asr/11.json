@@ -1,0 +1,131 @@
+{
+  "sample_id": "11",
+  "source_sha256": "972bbc9b3f3cd620b2e576672301be7ccba0f54dae3a22b42194a3e322fd7905",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " I would be ashamed to have made this film if I was the director.",
+      "start": 0.0,
+      "end": 4.98,
+      "avg_logprob": -0.17773437913921145,
+      "no_speech_prob": 0.02288818359375
+    }
+  ],
+  "words": [
+    {
+      "text": " I",
+      "interval_s": [
+        0.0,
+        0.52
+      ],
+      "probability": 0.85302734375
+    },
+    {
+      "text": " would",
+      "interval_s": [
+        0.52,
+        0.64
+      ],
+      "probability": 0.7890625
+    },
+    {
+      "text": " be",
+      "interval_s": [
+        0.64,
+        0.78
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " ashamed",
+      "interval_s": [
+        0.78,
+        1.14
+      ],
+      "probability": 0.9921875
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        1.14,
+        3.18
+      ],
+      "probability": 0.91064453125
+    },
+    {
+      "text": " have",
+      "interval_s": [
+        3.18,
+        3.36
+      ],
+      "probability": 0.9873046875
+    },
+    {
+      "text": " made",
+      "interval_s": [
+        3.36,
+        3.56
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " this",
+      "interval_s": [
+        3.56,
+        3.76
+      ],
+      "probability": 0.99951171875
+    },
+    {
+      "text": " film",
+      "interval_s": [
+        3.76,
+        4.08
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " if",
+      "interval_s": [
+        4.08,
+        4.44
+      ],
+      "probability": 0.92431640625
+    },
+    {
+      "text": " I",
+      "interval_s": [
+        4.44,
+        4.54
+      ],
+      "probability": 0.986328125
+    },
+    {
+      "text": " was",
+      "interval_s": [
+        4.54,
+        4.66
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        4.66,
+        4.72
+      ],
+      "probability": 0.798828125
+    },
+    {
+      "text": " director.",
+      "interval_s": [
+        4.72,
+        4.98
+      ],
+      "probability": 0.9931640625
+    }
+  ],
+  "elapsed_s": 0.5755698290304281
+}

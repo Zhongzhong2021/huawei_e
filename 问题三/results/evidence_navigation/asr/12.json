@@ -1,0 +1,299 @@
+{
+  "sample_id": "12",
+  "source_sha256": "5d4da7ef7e6a4a344a2b9657fadfa2207c3565a9f7c1fb806e629c95b453aff3",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " Or worse, an individual previously had good credit, but usually by no fault of their own, or perhaps by fault of their own, they have let their credit sag and credit score is very low.",
+      "start": 0.0,
+      "end": 12.12,
+      "avg_logprob": -0.15970203696295274,
+      "no_speech_prob": 0.0083160400390625
+    }
+  ],
+  "words": [
+    {
+      "text": " Or",
+      "interval_s": [
+        0.0,
+        0.56
+      ],
+      "probability": 0.3173828125
+    },
+    {
+      "text": " worse,",
+      "interval_s": [
+        0.56,
+        0.94
+      ],
+      "probability": 0.94287109375
+    },
+    {
+      "text": " an",
+      "interval_s": [
+        0.96,
+        1.14
+      ],
+      "probability": 0.9521484375
+    },
+    {
+      "text": " individual",
+      "interval_s": [
+        1.14,
+        1.54
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " previously",
+      "interval_s": [
+        1.54,
+        2.06
+      ],
+      "probability": 0.9501953125
+    },
+    {
+      "text": " had",
+      "interval_s": [
+        2.06,
+        2.58
+      ],
+      "probability": 0.9951171875
+    },
+    {
+      "text": " good",
+      "interval_s": [
+        2.58,
+        2.88
+      ],
+      "probability": 0.99365234375
+    },
+    {
+      "text": " credit,",
+      "interval_s": [
+        2.88,
+        3.3
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " but",
+      "interval_s": [
+        3.4,
+        3.94
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " usually",
+      "interval_s": [
+        3.94,
+        4.72
+      ],
+      "probability": 0.96923828125
+    },
+    {
+      "text": " by",
+      "interval_s": [
+        4.72,
+        5.16
+      ],
+      "probability": 0.94921875
+    },
+    {
+      "text": " no",
+      "interval_s": [
+        5.16,
+        5.4
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " fault",
+      "interval_s": [
+        5.4,
+        5.66
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        5.66,
+        5.86
+      ],
+      "probability": 0.99169921875
+    },
+    {
+      "text": " their",
+      "interval_s": [
+        5.86,
+        5.98
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " own,",
+      "interval_s": [
+        5.98,
+        6.34
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " or",
+      "interval_s": [
+        6.42,
+        6.94
+      ],
+      "probability": 0.99267578125
+    },
+    {
+      "text": " perhaps",
+      "interval_s": [
+        6.94,
+        7.26
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " by",
+      "interval_s": [
+        7.26,
+        7.6
+      ],
+      "probability": 0.99072265625
+    },
+    {
+      "text": " fault",
+      "interval_s": [
+        7.6,
+        7.88
+      ],
+      "probability": 0.94970703125
+    },
+    {
+      "text": " of",
+      "interval_s": [
+        7.88,
+        8.06
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " their",
+      "interval_s": [
+        8.06,
+        8.22
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " own,",
+      "interval_s": [
+        8.22,
+        8.5
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " they",
+      "interval_s": [
+        8.54,
+        8.68
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " have",
+      "interval_s": [
+        8.68,
+        8.92
+      ],
+      "probability": 0.99072265625
+    },
+    {
+      "text": " let",
+      "interval_s": [
+        8.92,
+        9.12
+      ],
+      "probability": 0.95849609375
+    },
+    {
+      "text": " their",
+      "interval_s": [
+        9.12,
+        9.3
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " credit",
+      "interval_s": [
+        9.3,
+        9.64
+      ],
+      "probability": 0.9755859375
+    },
+    {
+      "text": " sag",
+      "interval_s": [
+        9.64,
+        10.04
+      ],
+      "probability": 0.9736328125
+    },
+    {
+      "text": " and",
+      "interval_s": [
+        10.04,
+        10.52
+      ],
+      "probability": 0.857421875
+    },
+    {
+      "text": " credit",
+      "interval_s": [
+        10.52,
+        11.14
+      ],
+      "probability": 0.8681640625
+    },
+    {
+      "text": " score",
+      "interval_s": [
+        11.14,
+        11.4
+      ],
+      "probability": 0.76318359375
+    },
+    {
+      "text": " is",
+      "interval_s": [
+        11.4,
+        11.6
+      ],
+      "probability": 0.98193359375
+    },
+    {
+      "text": " very",
+      "interval_s": [
+        11.6,
+        11.8
+      ],
+      "probability": 0.9990234375
+    },
+    {
+      "text": " low.",
+      "interval_s": [
+        11.8,
+        12.12
+      ],
+      "probability": 0.99951171875
+    }
+  ],
+  "elapsed_s": 0.9888848270056769
+}

@@ -1,0 +1,37 @@
+{
+  "samples": 20,
+  "samples_with_key_navigation": 18,
+  "totals": {
+    "reference_words": 481,
+    "word_candidates": 185,
+    "phrase_candidates": 44,
+    "phrase_only_words": 123
+  },
+  "top_evidence": {
+    "word_candidate": 61,
+    "phrase_candidate": 43,
+    "insufficient_support": 63,
+    "no_lexical_span": 10
+  },
+  "unresolved_reasons": {
+    "acoustic_boundary_support_insufficient": 39,
+    "lexical_identity_not_unique_exact": 14,
+    "run_anchor_support_insufficient": 10
+  },
+  "top_evidence_count": 177,
+  "unique_frames": 70,
+  "word_top_items_compared_with_previous": 61,
+  "word_top_items_previous_boundary_difference_over_02s": 0,
+  "maximum_previous_boundary_difference_s": 0.10323681032392695,
+  "human_data_used": false,
+  "labels_used": false,
+  "scope": "Model corroboration and navigation coverage; no ground-truth timing accuracy or prediction improvement measurement.",
+  "frozen_result_sha256": {
+    "results/uncertainty/special_explanations.jsonl": "3b336726ddf41c2cf7f5a74fbc3abf0da7a0d9ef7026b04a91e72aef8968eeec",
+    "results/uncertainty/special_predictions.csv": "796b75ac78eaedf4762e8803db5d2c45df634c131c2bf02b5538c294c3595421",
+    "results/selfmm/special_predictions.csv": "dcce359a9e841fbd18b09352de3955c9f27bce9584413662a5e36c5147d50d13",
+    "results/tetfn/special_predictions.csv": "6ebbd68f645d6baaa22171969fd1edc6516bf7bcda171dc6206d5a3b5089adbe"
+  },
+  "inputs_sha256": "6e24b8649c3d1272af00bf4aa208454da2ac67401ac3e6882d80d2d9546b0af4",
+  "mapping_sha256": "12bbb50a9229ccb567f2fab37e233d3f9037e3aef4016eea64af7caac7d64967"
+}

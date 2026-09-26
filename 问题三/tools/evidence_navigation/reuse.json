@@ -1,0 +1,14 @@
+{
+  "source": "\u95ee\u98981/scripts",
+  "unmodified_helpers_sha256": {
+    "common.py": "dc44a81c4a88fc18d35f44f3eca05294f7831b36c3c8976b46f8b48daf02734f",
+    "math_features.py": "612a124aeb397f8b8b97d5fb4fcd4622ffcadde60e0dfad0b2917ea0094228aa",
+    "selective_alignment.py": "f913b31e9cfcc1cfe14ff41d58256a694a269254dbe302bf627f441012d5408c",
+    "whisper_support.py": "d5b97092f38f2daa5d7328a257f8b2c020e3098a23caadd3ab34c744eaaf0fea",
+    "acoustic_mapping.py": "37fff97737bbe7b4891e8a12ced4bfd06f782787188bae99a5b62f1cb578559a",
+    "partial_acoustic_mapping.py": "a2b4a58b6336fa8b663ebfa25b44f10a453f0b8b1bf36f5450dcf3865b5cda2e",
+    "phrase_selection.py": "a7c1ec58961b08f0b08166078ea48524e80f3c606cf65e2011cccb549a11fb5e",
+    "multigranular_alignment.py": "70e52c9dba52fb9365973764016e21882c2bea492e7f03b94fc28608c97740dc"
+  },
+  "scope": "Unprompted ASR and two-context MFA corroboration; no baseline forced-alignment acceptance."
+}

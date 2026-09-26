@@ -1,0 +1,194 @@
+{
+  "sample_id": "01",
+  "source_sha256": "3057e24aee7a48fcf15bd618b663bd7f0d061fb8893286c458986a7e1c6d17cf",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " Replacing these wear components when replacing the timing belt is essential",
+      "start": 0.0,
+      "end": 3.98,
+      "avg_logprob": -0.1565290242433548,
+      "no_speech_prob": 0.00036525726318359375
+    },
+    {
+      "text": " to ensuring the new belt performs to its mileage requirements.",
+      "start": 3.98,
+      "end": 7.92,
+      "avg_logprob": -0.1565290242433548,
+      "no_speech_prob": 0.00036525726318359375
+    }
+  ],
+  "words": [
+    {
+      "text": " Replacing",
+      "interval_s": [
+        0.0,
+        0.92
+      ],
+      "probability": 0.969970703125
+    },
+    {
+      "text": " these",
+      "interval_s": [
+        0.92,
+        1.06
+      ],
+      "probability": 0.994140625
+    },
+    {
+      "text": " wear",
+      "interval_s": [
+        1.06,
+        1.26
+      ],
+      "probability": 0.98291015625
+    },
+    {
+      "text": " components",
+      "interval_s": [
+        1.26,
+        1.62
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " when",
+      "interval_s": [
+        1.62,
+        2.04
+      ],
+      "probability": 0.9619140625
+    },
+    {
+      "text": " replacing",
+      "interval_s": [
+        2.04,
+        2.42
+      ],
+      "probability": 0.99560546875
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        2.42,
+        2.62
+      ],
+      "probability": 0.39794921875
+    },
+    {
+      "text": " timing",
+      "interval_s": [
+        2.62,
+        2.84
+      ],
+      "probability": 0.99462890625
+    },
+    {
+      "text": " belt",
+      "interval_s": [
+        2.84,
+        3.12
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " is",
+      "interval_s": [
+        3.12,
+        3.6
+      ],
+      "probability": 0.966796875
+    },
+    {
+      "text": " essential",
+      "interval_s": [
+        3.6,
+        3.98
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        3.98,
+        4.48
+      ],
+      "probability": 0.9912109375
+    },
+    {
+      "text": " ensuring",
+      "interval_s": [
+        4.48,
+        4.78
+      ],
+      "probability": 0.9140625
+    },
+    {
+      "text": " the",
+      "interval_s": [
+        4.78,
+        5.1
+      ],
+      "probability": 0.9892578125
+    },
+    {
+      "text": " new",
+      "interval_s": [
+        5.1,
+        5.3
+      ],
+      "probability": 0.99609375
+    },
+    {
+      "text": " belt",
+      "interval_s": [
+        5.3,
+        5.62
+      ],
+      "probability": 0.9970703125
+    },
+    {
+      "text": " performs",
+      "interval_s": [
+        5.62,
+        6.36
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " to",
+      "interval_s": [
+        6.36,
+        6.82
+      ],
+      "probability": 0.99755859375
+    },
+    {
+      "text": " its",
+      "interval_s": [
+        6.82,
+        7.04
+      ],
+      "probability": 0.96728515625
+    },
+    {
+      "text": " mileage",
+      "interval_s": [
+        7.04,
+        7.42
+      ],
+      "probability": 0.99853515625
+    },
+    {
+      "text": " requirements.",
+      "interval_s": [
+        7.42,
+        7.92
+      ],
+      "probability": 0.99365234375
+    }
+  ],
+  "elapsed_s": 1.2216846030205488
+}

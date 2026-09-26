@@ -1,0 +1,840 @@
+{
+  "schema": "q3-media-consistency-v1",
+  "diagnostic_rule": "Both ordered lexical coverages below 0.5; not semantic accuracy and not a learned decision",
+  "human_verified": false,
+  "ctc_model_files_sha256": {
+    "config.json": "d3ec255c063d9f95057b553b19c20135b259875834a4fe9deb218a6be25b4cf3",
+    "tokenizer_config.json": "dc790594f5bc351a4311c6624f40acd95850d4aaf2a5cb3c656c9b610720b608",
+    "vocab.json": "19727f8944fe6459fc3f240ae2c198395b740f6a029bd23e06656266b83bcf64",
+    "model.safetensors": "8aa76ab2243c81747a1f832954586bc566090c83a0ac167df6f31f0fa917d74a",
+    "special_tokens_map.json": "bb7068de1150661a10b55f9e4b12a0e77af8bf91f5e45e1b58afaf1d0e17f675",
+    "preprocessor_config.json": "b225d617c025463b9e157e06afea8b90dc7078fc70b013c533328423e0486b4a"
+  },
+  "samples": [
+    {
+      "id": "01",
+      "video_sha256": "3057e24aee7a48fcf15bd618b663bd7f0d061fb8893286c458986a7e1c6d17cf",
+      "raw_text": "Replacing these wear components when replacing the timing belt is essential to ensuring the new belt performs to its mileage requirements",
+      "whisper_text": " Replacing these wear components when replacing the timing belt is essential  to ensuring the new belt performs to its mileage requirements.",
+      "ctc_text": "REPLACING THESE WARE COMPONENTS WHEN REPLACING THE TYMY BELT IS ESSENTIAL TO INSURING THE NEW BELT PERFORMS TO ITS MILAGE REQUIREMENTS",
+      "ordered_lexical_coverage": {
+        "whisper": 1.0,
+        "ctc": 0.8095238095238095
+      },
+      "content_status": "no_low_support_flag",
+      "content_verified": false,
+      "feature_availability": {
+        "number": "01",
+        "shared_fields_equal": {
+          "raw_text": true,
+          "text": true,
+          "text_bert": true
+        },
+        "all_zero": {
+          "aligned": {
+            "audio": false,
+            "vision": false
+          },
+          "unaligned": {
+            "audio": false,
+            "vision": false
+          }
+        },
+        "nonzero_rows": {
+          "aligned": {
+            "audio": 22,
+            "vision": 22
+          },
+          "unaligned": {
+            "audio": 179,
+            "vision": 135
+          }
+        }
+      }
+    },
+    {
+      "id": "02",
+      "video_sha256": "6b651e908aefd86959f85b78f945f7d5a5d9e767eb4c095926e1df2ed9629ff9",
+      "raw_text": "We want to live by each other’s happiness - not by each other’s misery.",
+      "whisper_text": " We want to live by each other's happiness, not by each other's misery.",
+      "ctc_text": "WE WANT TO LIVE BY EACH OTHER'S HAPPINESS NOT BY EACH OTHER'S MISERY",
+      "ordered_lexical_coverage": {
+        "whisper": 0.7333333333333333,
+        "ctc": 0.7333333333333333
+      },
+      "content_status": "no_low_support_flag",
+      "content_verified": false,
+      "feature_availability": {
+        "number": "02",
+        "shared_fields_equal": {
+          "raw_text": true,
+          "text": true,
+          "text_bert": true
+        },
+        "all_zero": {
+          "aligned": {
+            "audio": false,
+            "vision": false
+          },
+          "unaligned": {
+            "audio": false,
+            "vision": false
+          }
+        },
+        "nonzero_rows": {
+          "aligned": {
+            "audio": 19,
+            "vision": 19
+          },
+          "unaligned": {
+            "audio": 66,
+            "vision": 50
+          }
+        }
+      }
+    },
+    {
+      "id": "03",
+      "video_sha256": "556b83449ac17fd8cb99ed1dcd6f11c287dd6e0198885e88555579f9bcab84f3",
+      "raw_text": "There's one lender at the moment which I think is just Bankwest who don't take rental income into account, they take rental yield into account.",
+      "whisper_text": " There is one lender at the moment which I think is just Bank West who don't take rental  income into account, they take rental yield into account.",
+      "ctc_text": "OUNT THERE'S ONE LENDAR AT THE MOMENT WHICH I THINK ITS JUST BANK WEST WHO DON'T TAKE RENTEL INCOME INTO ACCOUNT THEY TAKE RENTEL YIELD INTO ACCOUNT SO THAT",
+      "ordered_lexical_coverage": {
+        "whisper": 0.92,
+        "ctc": 0.8
+      },
+      "content_status": "no_low_support_flag",
+      "content_verified": false,
+      "feature_availability": {
+        "number": "03",
+        "shared_fields_equal": {
+          "raw_text": true,
+          "text": true,
+          "text_bert": true
+        },
+        "all_zero": {
+          "aligned": {
+            "audio": false,
+            "vision": false
+          },
+          "unaligned": {
+            "audio": false,
+            "vision": false
+          }
+        },
+        "nonzero_rows": {
+          "aligned": {
+            "audio": 33,
+            "vision": 33
+          },
+          "unaligned": {
+            "audio": 191,
+            "vision": 144
+          }
+        }
+      }
+    },
+    {
+      "id": "04",
+      "video_sha256": "766db8dc32508b8f7f8faaa47656e0eedc8d1707b809fe8235db1e74e15d3369",
+      "raw_text": "If I blow it at the team exercise, should I kiss my chances of cheering \"GO BLUE\" goodbye?] Absolutely not.",
+      "whisper_text": " If I blow it at the team exercise, should I kiss my chances of cheering go blue goodbye?  Absolutely not.",
+      "ctc_text": "IF I GLOW IT AT THE TEAM EXERCISE SHOULD I KISS MY CHANCES OF CHEERING GO BLUE GOOD BYE ABSOLUTELY NOT THERE",
+      "ordered_lexical_coverage": {
+        "whisper": 1.0,
+        "ctc": 0.9
+      },
+      "content_status": "no_low_support_flag",
+      "content_verified": false,
+      "feature_availability": {
+        "number": "04",
+        "shared_fields_equal": {
+          "raw_text": true,
+          "text": true,
+          "text_bert": true
+        },
+        "all_zero": {
+          "aligned": {
+            "audio": false,
+            "vision": false
+          },
+          "unaligned": {
+            "audio": false,
+            "vision": false
+          }
+        },
+        "nonzero_rows": {
+          "aligned": {
+            "audio": 26,
+            "vision": 26
+          },
+          "unaligned": {
+            "audio": 137,
+            "vision": 103
+          }
+        }
+      }
+    },
+    {
+      "id": "05",
+      "video_sha256": "715d7c1dd52a78eac6c0a10cd78ba1c4f632dc778839c86fcf7a510ea4184420",
+      "raw_text": "Hi, my name is Chloe, video marketer for Red Wagon Marketing.",
+      "whisper_text": " Hi, my name is Chloe video marketer for red wagon marketing",
+      "ctc_text": "HI MY NAME WAS CHLOEY VIDIO MARKETER FOR RED WEG IN MARKETING",
+      "ordered_lexical_coverage": {
+        "whisper": 1.0,
+        "ctc": 0.6363636363636364
+      },
+      "content_status": "no_low_support_flag",
+      "content_verified": false,
+      "feature_availability": {
+        "number": "05",
+        "shared_fields_equal": {
+          "raw_text": true,
+          "text": true,
+          "text_bert": true
+        },
+        "all_zero": {
+          "aligned": {
+            "audio": false,
+            "vision": false
+          },
+          "unaligned": {
+            "audio": false,
+            "vision": false
+          }
+        },
+        "nonzero_rows": {
+          "aligned": {
+            "audio": 15,
+            "vision": 15
+          },
+          "unaligned": {
+            "audio": 120,
+            "vision": 90
+          }
+        }
+      }
+    },
+    {
+      "id": "06",
+      "video_sha256": "22e0a0e7c0880d3e92e4eb5e98070e5128884dd21eebc8367852570feb1b1d7f",
+      "raw_text": "If you're a fan of dancing in that sense, just like to watch people dance, see impressive dance moves then you might want to check out this movie solely for that",
+      "whisper_text": " If you're a fan of dancing in that sense, just like to watch people dance, see impressive dance moves,  then you might want to check out this movie solely for that.",
+      "ctc_text": "IF YOU'RE FAN OF DANCING IN THAT SENSE JUST LIKE THO WATCH PEOPLE DANCE SEE IMPRESSIVE DANCE MOVES THAT YOU MIGHT WANT COHAVE Y SOLELY FOR THAT",
+      "ordered_lexical_coverage": {
+        "whisper": 1.0,
+        "ctc": 0.7419354838709677
+      },
+      "content_status": "no_low_support_flag",
+      "content_verified": false,
+      "feature_availability": {
+        "number": "06",
+        "shared_fields_equal": {
+          "raw_text": true,
+          "text": true,
+          "text_bert": true
+        },
+        "all_zero": {
+          "aligned": {
+            "audio": false,
+            "vision": false
+          },
+          "unaligned": {
+            "audio": false,
+            "vision": false
+          }
+        },
+        "nonzero_rows": {
+          "aligned": {
+            "audio": 35,
+            "vision": 35
+          },
+          "unaligned": {
+            "audio": 163,
+            "vision": 123
+          }
+        }
+      }
+    },
+    {
+      "id": "07",
+      "video_sha256": "f3b47ceaddf31d472c367259788cb68e93511b14ae117577836f196e22ecedc5",
+      "raw_text": "As Linn’s associate editor Michael Baadke reports in our November 28 issue, attendees “enthusiastically discussed the topics of growing the hobby, the future of stamp shows, and dealers and philatelic partnerships, along with ways the leading organizations involved in the stamp hobby can work together to make it succeed and grow",
+      "whisper_text": " As Lynn's associate editor Michael Bodke reports in our November 28th issue, attendees  enthusiastically discuss the topics of growing the hobby, the future of stamp shows, and  dealers and philatelic partnerships, along with ways the leading organizations involved  in the stamp hobby can work together to make it succeed and grow.",
+      "ctc_text": "AS LANDES ASSOCIATED INOR MICHAEBAKI REPORTS IN OUR NOVEMBER TWENTY EIGHTH ISSUE ATTEND DAYS ENTHUSIASTICALLY DISCUSS THE TOPICS OF GROWING THE HOBBY THE FUTURE OF STAMSHOWS AND DEALERS AND PHILOTILIC PARKNERSHIPS ALONG WITH WAYS THE LEADING ORGANIZATIONS INVOLVED IN THE STANHOBBY CAN WORK TOGETHER TO MAKE IT SUCCEED AND GROW",
+      "ordered_lexical_coverage": {
+        "whisper": 0.9215686274509803,
+        "ctc": 0.7254901960784313
+      },
+      "content_status": "no_low_support_flag",
+      "content_verified": false,
+      "feature_availability": {
+        "number": "07",
+        "shared_fields_equal": {
+          "raw_text": true,
+          "text": true,
+          "text_bert": true
+        },
+        "all_zero": {
+          "aligned": {
+            "audio": false,
+            "vision": false
+          },
+          "unaligned": {
+            "audio": false,
+            "vision": false
+          }
+        },
+        "nonzero_rows": {
+          "aligned": {
+            "audio": 48,
+            "vision": 48
+          },
+          "unaligned": {
+            "audio": 425,
+            "vision": 319
+          }
+        }
+      }
+    },
+    {
+      "id": "08",
+      "video_sha256": "962057312eb9b751ff907ba5799f455dedfc271cabb5d45abd40803e08f88d79",
+      "raw_text": "That brings us to tonight, the Universal Design Grand Challenge",
+      "whisper_text": " So that brings us to tonight, the Universal Design Grand Challenge.",
+      "ctc_text": "SO THAT BRINGS US TO TO NIGHT THE UNIVERSAL DESIGN GRAND CHALLENGE",
+      "ordered_lexical_coverage": {
+        "whisper": 1.0,
+        "ctc": 0.9
+      },
+      "content_status": "no_low_support_flag",
+      "content_verified": false,
+      "feature_availability": {
+        "number": "08",
+        "shared_fields_equal": {
+          "raw_text": true,
+          "text": true,
+          "text_bert": true
+        },
+        "all_zero": {
+          "aligned": {
+            "audio": false,
+            "vision": false
+          },
+          "unaligned": {
+            "audio": false,
+            "vision": false
+          }
+        },
+        "nonzero_rows": {
+          "aligned": {
+            "audio": 11,
+            "vision": 11
+          },
+          "unaligned": {
+            "audio": 98,
+            "vision": 74
+          }
+        }
+      }
+    },
+    {
+      "id": "09",
+      "video_sha256": "7ecb03c24c8fc45b66bff4eb56bdf2adba033e96db52dd2d858abd93fae9d749",
+      "raw_text": "(uhh) I did not like this movie at all, I would not recommend it",
+      "whisper_text": " I did not like this movie at all. I would not recommend it. I only watched",
+      "ctc_text": "AH I DID NOT LIKE THIS MOVIE AT ALL I WOULD NOT RECOMMEND IT I ONLY WATCH",
+      "ordered_lexical_coverage": {
+        "whisper": 0.9285714285714286,
+        "ctc": 0.9285714285714286
+      },
+      "content_status": "no_low_support_flag",
+      "content_verified": false,
+      "feature_availability": {
+        "number": "09",
+        "shared_fields_equal": {
+          "raw_text": true,
+          "text": true,
+          "text_bert": true
+        },
+        "all_zero": {
+          "aligned": {
+            "audio": false,
+            "vision": false
+          },
+          "unaligned": {
+            "audio": false,
+            "vision": false
+          }
+        },
+        "nonzero_rows": {
+          "aligned": {
+            "audio": 18,
+            "vision": 18
+          },
+          "unaligned": {
+            "audio": 99,
+            "vision": 75
+          }
+        }
+      }
+    },
+    {
+      "id": "10",
+      "video_sha256": "21047991667edfdde0cb848dfd80aa41ccb871bc02742bd24f28d512a70f53db",
+      "raw_text": "(umm) And you know I really do like to see fluffy chick flicks sometimes so I'm not against that but this one was pretty terrible",
+      "whisper_text": " Um, and you know, I really do like to see fluffy chick flicks sometimes, so I'm not against that, but this one was pretty terrible.",
+      "ctc_text": "OH AND YOU KNOW I REALLY DO LIKE TO SEE BLUFFY CHICKFLICKS SOMETIMES THOU NOT AGAINST THAT BUT THIS ONE WAS PRETTY TERRIBLE AND I",
+      "ordered_lexical_coverage": {
+        "whisper": 0.96,
+        "ctc": 0.76
+      },
+      "content_status": "no_low_support_flag",
+      "content_verified": false,
+      "feature_availability": {
+        "number": "10",
+        "shared_fields_equal": {
+          "raw_text": true,
+          "text": true,
+          "text_bert": true
+        },
+        "all_zero": {
+          "aligned": {
+            "audio": false,
+            "vision": false
+          },
+          "unaligned": {
+            "audio": false,
+            "vision": false
+          }
+        },
+        "nonzero_rows": {
+          "aligned": {
+            "audio": 30,
+            "vision": 30
+          },
+          "unaligned": {
+            "audio": 195,
+            "vision": 147
+          }
+        }
+      }
+    },
+    {
+      "id": "11",
+      "video_sha256": "972bbc9b3f3cd620b2e576672301be7ccba0f54dae3a22b42194a3e322fd7905",
+      "raw_text": "I would be ashamed to have made this film if I was a director",
+      "whisper_text": " I would be ashamed to have made this film if I was the director.",
+      "ctc_text": "I'D BE ASHAMED TO HAVE MADE THIS FILM IF IL'S A DIRECTOR S",
+      "ordered_lexical_coverage": {
+        "whisper": 0.9285714285714286,
+        "ctc": 0.7142857142857143
+      },
+      "content_status": "no_low_support_flag",
+      "content_verified": false,
+      "feature_availability": {
+        "number": "11",
+        "shared_fields_equal": {
+          "raw_text": true,
+          "text": true,
+          "text_bert": true
+        },
+        "all_zero": {
+          "aligned": {
+            "audio": false,
+            "vision": false
+          },
+          "unaligned": {
+            "audio": false,
+            "vision": false
+          }
+        },
+        "nonzero_rows": {
+          "aligned": {
+            "audio": 14,
+            "vision": 14
+          },
+          "unaligned": {
+            "audio": 114,
+            "vision": 86
+          }
+        }
+      }
+    },
+    {
+      "id": "12",
+      "video_sha256": "5d4da7ef7e6a4a344a2b9657fadfa2207c3565a9f7c1fb806e629c95b453aff3",
+      "raw_text": "Or worse, an individual previously had good credit, but usually by no fault of their own, or perhaps by fault of their own, they have let their credit sag, and credit scores is very low.",
+      "whisper_text": " Or worse, an individual previously had good credit, but usually by no fault of their own, or perhaps by fault of their own, they have let their credit sag and credit score is very low.",
+      "ctc_text": "OR WORSE AN INDIVIDUAL PREVIOUSLY HAD GOOD CREDIT BUT USUALLY BY NO FAULT OF THEIR OWN OR PERHAPS BY FAULT OF THEIR OWN THEY HAVE LET THEIR CREDIT SEG AND A CREDSCORES VERY LOW",
+      "ordered_lexical_coverage": {
+        "whisper": 0.9714285714285714,
+        "ctc": 0.8857142857142857
+      },
+      "content_status": "no_low_support_flag",
+      "content_verified": false,
+      "feature_availability": {
+        "number": "12",
+        "shared_fields_equal": {
+          "raw_text": true,
+          "text": true,
+          "text_bert": true
+        },
+        "all_zero": {
+          "aligned": {
+            "audio": false,
+            "vision": false
+          },
+          "unaligned": {
+            "audio": false,
+            "vision": false
+          }
+        },
+        "nonzero_rows": {
+          "aligned": {
+            "audio": 42,
+            "vision": 42
+          },
+          "unaligned": {
+            "audio": 257,
+            "vision": 193
+          }
+        }
+      }
+    },
+    {
+      "id": "13",
+      "video_sha256": "8a64f1201e0299f79d915aa87b4a9be811e346525589d1f41060c2533599a7cb",
+      "raw_text": "For example, I could take a set of data and from that data, I can find a relationship between any two of the given factors or more.",
+      "whisper_text": " For example, I could take a set of data, and from that data,  I could find a relationship between any two  of the given variables or more.",
+      "ctc_text": "FOR EXAMPLE I CAN TAKE A SETOTATA AND FROM FROM THAT DATA A CONFEDER RELATIONSHIP BETWEEN ANY TWO OF THE GIVEN BEARER RMO",
+      "ordered_lexical_coverage": {
+        "whisper": 0.9259259259259259,
+        "ctc": 0.6296296296296297
+      },
+      "content_status": "no_low_support_flag",
+      "content_verified": false,
+      "feature_availability": {
+        "number": "13",
+        "shared_fields_equal": {
+          "raw_text": true,
+          "text": true,
+          "text_bert": true
+        },
+        "all_zero": {
+          "aligned": {
+            "audio": false,
+            "vision": true
+          },
+          "unaligned": {
+            "audio": false,
+            "vision": false
+          }
+        },
+        "nonzero_rows": {
+          "aligned": {
+            "audio": 30,
+            "vision": 0
+          },
+          "unaligned": {
+            "audio": 173,
+            "vision": 17
+          }
+        }
+      }
+    },
+    {
+      "id": "14",
+      "video_sha256": "8f1c4cb4b1c97b31cd065317faef41465cfcda403ef12d1defce4a5d23b8e18e",
+      "raw_text": "He is the co-founder of Rossen and Vettese Limited and the former Executive Director of Uniform Final Examination (UFE) courses at Toronto's York University.",
+      "whisper_text": " He is the co-founder of Rawson & Vitesse Limited and the former executive director of Uniform  Final Examination Courses at Toronto's York University.",
+      "ctc_text": "HE'S A COFOUNDER OF RAWSEN AND VITESTE LIMITED AND THE FORMER EXECUTIVE DIRECTOR OF UNIFORM FINAL EXAMINATION COURSES U F AT TORONO'S YORK UNIVERSITY",
+      "ordered_lexical_coverage": {
+        "whisper": 0.84,
+        "ctc": 0.64
+      },
+      "content_status": "no_low_support_flag",
+      "content_verified": false,
+      "feature_availability": {
+        "number": "14",
+        "shared_fields_equal": {
+          "raw_text": true,
+          "text": true,
+          "text_bert": true
+        },
+        "all_zero": {
+          "aligned": {
+            "audio": false,
+            "vision": false
+          },
+          "unaligned": {
+            "audio": false,
+            "vision": false
+          }
+        },
+        "nonzero_rows": {
+          "aligned": {
+            "audio": 35,
+            "vision": 35
+          },
+          "unaligned": {
+            "audio": 204,
+            "vision": 153
+          }
+        }
+      }
+    },
+    {
+      "id": "15",
+      "video_sha256": "bdd4ea47f2dac729a445cdf34009b9dff6d66bdc8ca997b82814bd55dc7fc675",
+      "raw_text": "However, despite their poverty, the family prioritize education because they believed in its power to transform lives",
+      "whisper_text": " Her father, the breadwinner, died when she was barely a year old,  putting the family in a dire financial position.  However, despite their poverty,",
+      "ctc_text": "HER FATHER THE BREAD WINTER DIED WHEN SHE WAS BARELY A YEAR OLD PUTTING THE FAMILY IN A DIRE FINANCIAL POSITION HOWEVER DESPITE THEIR POVER",
+      "ordered_lexical_coverage": {
+        "whisper": 0.23529411764705882,
+        "ctc": 0.17647058823529413
+      },
+      "content_status": "low_cross_recognizer_support",
+      "content_verified": false,
+      "feature_availability": {
+        "number": "15",
+        "shared_fields_equal": {
+          "raw_text": true,
+          "text": true,
+          "text_bert": true
+        },
+        "all_zero": {
+          "aligned": {
+            "audio": false,
+            "vision": false
+          },
+          "unaligned": {
+            "audio": false,
+            "vision": false
+          }
+        },
+        "nonzero_rows": {
+          "aligned": {
+            "audio": 21,
+            "vision": 21
+          },
+          "unaligned": {
+            "audio": 145,
+            "vision": 110
+          }
+        }
+      }
+    },
+    {
+      "id": "16",
+      "video_sha256": "819a4c15dce5b85d8f7717087ea660551c3044daf3cecba1d45d342ae85365e5",
+      "raw_text": "It's a terrible, this is a terrible movie",
+      "whisper_text": " It's a terrible. This is a terrible movie. I do not",
+      "ctc_text": "ITA TERRIBLE IS A TERRIBLE MOVING I DO NOT",
+      "ordered_lexical_coverage": {
+        "whisper": 1.0,
+        "ctc": 0.5
+      },
+      "content_status": "no_low_support_flag",
+      "content_verified": false,
+      "feature_availability": {
+        "number": "16",
+        "shared_fields_equal": {
+          "raw_text": true,
+          "text": true,
+          "text_bert": true
+        },
+        "all_zero": {
+          "aligned": {
+            "audio": false,
+            "vision": false
+          },
+          "unaligned": {
+            "audio": false,
+            "vision": false
+          }
+        },
+        "nonzero_rows": {
+          "aligned": {
+            "audio": 11,
+            "vision": 11
+          },
+          "unaligned": {
+            "audio": 60,
+            "vision": 40
+          }
+        }
+      }
+    },
+    {
+      "id": "17",
+      "video_sha256": "8a2f9bad44684ae0ba22f4ad39e848020dbac6acf7e5fe9d974f2448e6902462",
+      "raw_text": "Applying these four design concepts to your presentations is simple, easy and will make people think you turned into a design guru.",
+      "whisper_text": " applying these four design concepts to your presentations is simple easy and  will make people think you turned into a design guru or",
+      "ctc_text": "TY APPLY THESE FOUR DESIGN CONCEPTS TO YOUR PRESENTATIONS IS SIMPLE EASY AND WILL MAKE PEOPLE THINK YOU TURNED INTO A DESIGN GOROEW",
+      "ordered_lexical_coverage": {
+        "whisper": 1.0,
+        "ctc": 0.9090909090909091
+      },
+      "content_status": "no_low_support_flag",
+      "content_verified": false,
+      "feature_availability": {
+        "number": "17",
+        "shared_fields_equal": {
+          "raw_text": true,
+          "text": true,
+          "text_bert": true
+        },
+        "all_zero": {
+          "aligned": {
+            "audio": false,
+            "vision": false
+          },
+          "unaligned": {
+            "audio": false,
+            "vision": false
+          }
+        },
+        "nonzero_rows": {
+          "aligned": {
+            "audio": 24,
+            "vision": 24
+          },
+          "unaligned": {
+            "audio": 191,
+            "vision": 143
+          }
+        }
+      }
+    },
+    {
+      "id": "18",
+      "video_sha256": "0faf17accce9e58d81b2cc4ff6b150f8bc7f1d2f620ba420944f5732f41d6759",
+      "raw_text": "-And in Denmark - the first Baltic Cod fishery has been MSC – certified -Meanwhile, the Faeroese Mackerel Fishery has been denied MSC certification based on the fact that the fishery has failed to reach an agreement on mackerel quotas with Norway and the European Union.",
+      "whisper_text": " And in Denmark, the first Baltic cod fishery has been MSC certified.  Meanwhile, the Faroes mackerel fishery has been denied MSC certification  based on the fact that the fishery has failed to reach an agreement  on mackerel quotas with Norway and the European Union.",
+      "ctc_text": "AND IN DENMARK THE FIRST BAULTIC COD FISHERY HAS BEEN EMA C CERIFIED MEANWHILE THE PHARAOH'S MACKRIL FISHRY HAS BEEN DENIED ON THE SEA CERFICATION BASED ON THE FACT THAT THE FISHERY IS FAILED TO REACH AN AGREEMENT ON MACREL CROTAS WITH NORWAY AND THE EUROPEAN UNION",
+      "ordered_lexical_coverage": {
+        "whisper": 0.9772727272727273,
+        "ctc": 0.75
+      },
+      "content_status": "no_low_support_flag",
+      "content_verified": false,
+      "feature_availability": {
+        "number": "18",
+        "shared_fields_equal": {
+          "raw_text": true,
+          "text": true,
+          "text_bert": true
+        },
+        "all_zero": {
+          "aligned": {
+            "audio": false,
+            "vision": false
+          },
+          "unaligned": {
+            "audio": false,
+            "vision": false
+          }
+        },
+        "nonzero_rows": {
+          "aligned": {
+            "audio": 48,
+            "vision": 48
+          },
+          "unaligned": {
+            "audio": 372,
+            "vision": 280
+          }
+        }
+      }
+    },
+    {
+      "id": "19",
+      "video_sha256": "26148d75d5b4c1ff6f69a36485cc02a771a74203d2c07d9d08f018bf88658217",
+      "raw_text": "People are surprisingly forgiving brands when they own up to mistakes, and unfortunately some haters out there love to point fingers and jump all over imperfections, but for the most part, people understand",
+      "whisper_text": " People are surprisingly forgiving brands when they own up to mistakes.  And unfortunately, some haters out there love to point fingers and jump all over imperfections.  But for the most part, people understand.",
+      "ctc_text": "PEOPLE ARE SURPRISINGLY FORGIVING BRANDS WHEN THEY OWN UP TO MISTAKES AND UNFORTUNATELY SOME HATERS OUT THEIR LOVE TO POINT FINGERS AND JUMP ALL OVER IMPERFECTIONS BUT FOR THE MOST PART PEOPLE UNDERSTAND PE",
+      "ordered_lexical_coverage": {
+        "whisper": 1.0,
+        "ctc": 0.9696969696969697
+      },
+      "content_status": "no_low_support_flag",
+      "content_verified": false,
+      "feature_availability": {
+        "number": "19",
+        "shared_fields_equal": {
+          "raw_text": true,
+          "text": true,
+          "text_bert": true
+        },
+        "all_zero": {
+          "aligned": {
+            "audio": false,
+            "vision": false
+          },
+          "unaligned": {
+            "audio": false,
+            "vision": false
+          }
+        },
+        "nonzero_rows": {
+          "aligned": {
+            "audio": 39,
+            "vision": 39
+          },
+          "unaligned": {
+            "audio": 272,
+            "vision": 204
+          }
+        }
+      }
+    },
+    {
+      "id": "20",
+      "video_sha256": "0c75c37baddf51add457b20ad35e10166ff7baaa520f77bd6b2af2239c217a1c",
+      "raw_text": "And of course, click in the link of the description of this video for more, and we'll have more live updates and a stock market video (wrap-up) at the end of the day today.",
+      "whisper_text": " out. And of course, click in the link in the description of this video for more. And we'll  have more live updates and stock market video for you at the end of the day today. All right.",
+      "ctc_text": "OUT AND OF COURSE CLICK IN THE LINK IN THE DESCRIPTION OF THIS VIDIOPHER MORE A AND WE'LL HAVE MORE LIVE UPDATES AND DOS STOCK MARKET VIDIO FOR YOU AT THE END OF THE DAY TO DAY RIGHT AND I DON'T F",
+      "ordered_lexical_coverage": {
+        "whisper": 0.8857142857142857,
+        "ctc": 0.7714285714285715
+      },
+      "content_status": "no_low_support_flag",
+      "content_verified": false,
+      "feature_availability": {
+        "number": "20",
+        "shared_fields_equal": {
+          "raw_text": true,
+          "text": true,
+          "text_bert": true
+        },
+        "all_zero": {
+          "aligned": {
+            "audio": false,
+            "vision": false
+          },
+          "unaligned": {
+            "audio": false,
+            "vision": false
+          }
+        },
+        "nonzero_rows": {
+          "aligned": {
+            "audio": 43,
+            "vision": 43
+          },
+          "unaligned": {
+            "audio": 216,
+            "vision": 162
+          }
+        }
+      }
+    }
+  ],
+  "source_sha256": {
+    "media_and_token_comparison.json": "b4e0f4eff6c28858fc94bdfcf65ece291a994b841e693aa09f0ea110b654cb99",
+    "independent_ctc.json": "72ab912144299ec2aa465830552ac878e950556a32eaa175b6671ab0111b0aef"
+  },
+  "script_sha256": "7753083f73b0ffe45a9ad15b041ea01163eb967aef3c78bc9b50dd0a89920f89"
+}

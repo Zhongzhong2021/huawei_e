@@ -1,0 +1,107 @@
+{
+  "sample_id": "05",
+  "source_sha256": "715d7c1dd52a78eac6c0a10cd78ba1c4f632dc778839c86fcf7a510ea4184420",
+  "condition": "identity",
+  "source_time_shift_s": 0.0,
+  "zero_audio": false,
+  "segments": [
+    {
+      "text": " Hi, my name is Chloe video marketer for red wagon marketing",
+      "start": 0.8599999999999994,
+      "end": 5.14,
+      "avg_logprob": -0.38989257998764515,
+      "no_speech_prob": 0.02630615234375
+    }
+  ],
+  "words": [
+    {
+      "text": " Hi,",
+      "interval_s": [
+        0.8599999999999994,
+        1.5
+      ],
+      "probability": 0.6572265625
+    },
+    {
+      "text": " my",
+      "interval_s": [
+        1.5,
+        1.94
+      ],
+      "probability": 0.951171875
+    },
+    {
+      "text": " name",
+      "interval_s": [
+        1.94,
+        2.18
+      ],
+      "probability": 0.998046875
+    },
+    {
+      "text": " is",
+      "interval_s": [
+        2.18,
+        2.3
+      ],
+      "probability": 0.99658203125
+    },
+    {
+      "text": " Chloe",
+      "interval_s": [
+        2.3,
+        2.56
+      ],
+      "probability": 0.8310546875
+    },
+    {
+      "text": " video",
+      "interval_s": [
+        2.56,
+        3.32
+      ],
+      "probability": 0.2607421875
+    },
+    {
+      "text": " marketer",
+      "interval_s": [
+        3.32,
+        4.0
+      ],
+      "probability": 0.995361328125
+    },
+    {
+      "text": " for",
+      "interval_s": [
+        4.0,
+        4.18
+      ],
+      "probability": 0.99267578125
+    },
+    {
+      "text": " red",
+      "interval_s": [
+        4.18,
+        4.46
+      ],
+      "probability": 0.348388671875
+    },
+    {
+      "text": " wagon",
+      "interval_s": [
+        4.46,
+        4.78
+      ],
+      "probability": 0.65380859375
+    },
+    {
+      "text": " marketing",
+      "interval_s": [
+        4.78,
+        5.14
+      ],
+      "probability": 0.98291015625
+    }
+  ],
+  "elapsed_s": 0.5332929400028661
+}

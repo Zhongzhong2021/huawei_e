@@ -1,0 +1,4 @@
+uses_speaker_adaptation: false
+beam: 10
+retry_beam: 40
+dither: 0.0
