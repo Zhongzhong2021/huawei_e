@@ -34,6 +34,15 @@ CON = read('results/contributions/contribution_summary.json')['summary']
 CMP = rows('results/model_comparison.csv')
 SENS = read('results/sensitivity/controlled_comparisons.json')
 SWEEP = rows('results/sensitivity/uncertainty_all_candidates.csv')
+BASE = read('results/baseline_parameters/comparisons.json')['records']
+assert [r['code'] for r in BASE]==['S0','S1','S2','S3','S4','S5','T0','T1']
+assert all(r['config']['train']['seed']==17 and r['config']['train']['max_epochs']==10 for r in BASE)
+for code,family in [('S5','selfmm'),('T1','tetfn_source')]:
+    ref=next(r for r in CMP if r['family']==family)
+    item=next(r for r in BASE if r['code']==code)
+    for split in ['valid','test']:
+        for metric in ['accuracy','macro_f1','mae']:
+            assert abs(item[split][metric]-float(ref[split+'_'+metric]))<1e-7
 assert len(SWEEP)==22
 assert {(r['ordinal_head'],r['uncertainty_fusion']) for r in SENS['structures']}=={(False,False),(False,True),(True,False),(True,True)}
 assert SENS['structures'][-1]['valid']==MET['valid']['final']
@@ -239,7 +248,7 @@ for x in CMP:
     policy=json.loads(x['policy'])
     policies[x['family']]=(f"中性logit偏置{policy['neutral_bias']:+.1f}，取最大类别" if policy['decision_mode']=='classification' else f"回归双阈值：{policy['tau_minus']:.2f} / {policy['tau_plus']:.2f}")
 table(['模型','检查点轮次','验证选定的最终策略'],[[labels[x['family']],x['epoch'],policies[x['family']]] for x in CMP], '模型选优轮次与决策策略')
-para('主模型验证Macro-F1并非三者最高：SELF-MM为0.6390，主模型为0.6323。附件2测试中，主模型比SELF-MM准确率高2.48个百分点、Macro-F1高约0.0104，而MAE稍高约0.0040；相比TETFN，测试准确率、Macro-F1和MAE均更优。选择主模型同时考虑其原生可核算解释，不能称其在所有指标上领先。当前为单随机种子的代表配置比较，未给出多种子方差或统计显著性。')
+para('主模型验证Macro-F1并非三者最高：SELF-MM为0.6390，主模型为0.6323。相对表中按验证Macro-F1选择的SELF-MM参考配置，主模型在附件2测试中准确率高2.48个百分点、Macro-F1高约0.0104，而MAE稍高约0.0040；相比表中TETFN参考配置，测试准确率、Macro-F1和MAE均更优。这一比较限定于表中配置；第6.5节进一步给出两类基线的其他参数结果。选择主模型同时考虑其原生可核算解释，不能称其在所有指标上领先。当前为单随机种子的代表配置比较，未给出多种子方差或统计显著性。')
 figure('03_confusion','图3 三分类混淆矩阵，行是真值、列是预测。中性与正向之间的混淆较突出。')
 table(['验证类别','Precision','Recall','F1','支持数'],[[CN[int(k)],*[f'{v[a]:.4f}' for a in ['precision','recall','f1']],v['support']] for k,v in MET['valid']['final']['per_class'].items()], '验证集逐类别性能')
 figure('04_regression','图4 验证集最终强度散点与残差分布。预测中性置零，形成ŷ=0的水平带。')
@@ -254,7 +263,20 @@ table(['组别','倍率','BERT LR','其他层LR','轮次','Acc(%)','Macro-F1','M
 para('A组中，学习率减半或加倍均未改善参考配置的验证Macro-F1与MAE。B组的两组学习率从4×10⁻⁵/3×10⁻⁴同时加倍后，验证Macro-F1由0.6364降至0.6042，准确率由64.56%降至60.99%，MAE由0.5599增至0.5912，构成较明确的退化案例。该结果对应完整训练过程中的验证最优记录，并非从训练轨迹中抽取较差轮次；但它只能说明这组联合学习率设置不合适，不能分别归因于BERT或其他层的学习率。')
 para('B组参考配置的验证Macro-F1高于A组，但MAE较大，也说明分类与回归目标之间仍有取舍。图6同时展示全部22个固定种子候选，完整参数表随结果提供；其余宽搜索点同时改变了多个超参数，不用于推断某个单独参数的因果作用。本节不额外使用测试集或附件四挑选较弱参数，也不将缺少对应冻结测试记录的配置填入测试成绩。')
 figure('07_parameter_comparison','全部22个不确定性候选的验证性能与两组学习率对照。每点均使用本配置的验证Macro-F1最优轮次和策略；两组曲线连接的是成组参数试验，不是训练轮次。')
-subhead('6.5 验证集错误归因')
+subhead('6.5 开源适配基线的参数对照')
+para('进一步考察开源方法在比赛适配后的参数敏感性。纳入同批实验中固定种子17的全部6组SELF-MM适配配置和2组源码TETFN适配配置，包含较弱设置及各自参考设置。它们均使用附件二对齐版、批量32、最多10轮、早停耐心4轮，各自按验证Macro-F1确定检查点和决策策略。本节重载已有权重，先核对728条验证输出，再固定策略计算727条测试结果，不重新训练或使用测试集调参。该批预算与前述20轮上限实验不同，不能把10轮配置描述为已完成20轮训练。')
+baseline_parameters=[]
+for r in BASE:
+    m,t=r['config']['model'],r['config']['train']
+    baseline_parameters.append([r['code'],'SELF-MM' if r['family']=='selfmm' else 'TETFN',f"{t['encoder_learning_rate']:.0e}",
+        m.get('post_fusion_dropout',m.get('dropout')),m['post_fusion_dim'],m.get('classification_weight',t['classification_weight']),f"{r['epoch']}/{r['actual_epochs']}"])
+table(['代号','模型','BERT LR','Dropout','融合维数','分类权重','选中/实训'],baseline_parameters,'开源适配基线的参数设置（训练上限均为10轮）')
+para('S0为无额外分类头的回归控制，S1为辅助分类监督，S2为温和辅助监督，S3为较宽融合层，S4为较强丢弃设置，S5为分组优化参考；T0、T1为两组源码TETFN配置。SELF-MM的Dropout作用于融合分支，TETFN该参数同时映射到多个网络丢弃位置，含义不能直接等同。S0、S5的音频/视觉/其他非BERT学习率分别为0.005、0.0001、0.001，BERT权重衰减为0.001、音视为0；S1、S3、S4非BERT学习率均为0.0003，S2为0.0002，其配置权重衰减为0.01。T0、T1非BERT学习率均为0.0003。完整配置与冻结策略见随附结果。')
+table(['代号','验证Acc(%)','验证F1','验证MAE','测试Acc(%)','测试F1','测试MAE'],[[r['code'],*[f"{100*r[s]['accuracy']:.2f}" if k=='accuracy' else f"{r[s][k]:.4f}" for s in ['valid','test'] for k in ['accuracy','macro_f1','mae']]] for r in BASE], '各参数配置的验证与测试结果（F1均为Macro-F1）')
+para('SELF-MM较弱参数的影响较明确：S3的验证Macro-F1为0.6227、测试Macro-F1为0.6187，测试MAE为0.6252；S5参考配置对应为0.6390、0.6389和0.5966。S0、S1、S4的测试Macro-F1分别为0.6300、0.6331、0.6298，亦低于S5。S4与S5的网络和BERT学习率相同，但非BERT分组学习率及权重衰减不同，因而这一比较体现的是优化配置的共同影响；S3还同时改变融合维数和BERT学习率，不能将其退化全部归因于“网络更宽”。')
+para('完整对照也显示验证排序未必在测试中保持。S2的验证Macro-F1为0.6354，低于S5，但测试准确率69.60%、Macro-F1为0.6515，分别高于主模型的68.64%和0.6493；其测试MAE为0.6016，与主模型0.6006接近。T0的验证Macro-F1为0.6262，低于T1的0.6321，但测试Macro-F1反而为0.6513，高于T1的0.6285，测试MAE也更低。因此，T0只能称为验证指标较弱的设置，不能据此认定其测试性能较弱。')
+para('S5与T1的验证、测试指标与第6.2节所列20轮上限参考实验一致，表明这两个参考设置在已有延长预算实验中未改变所选结果；其余设置仍受原10轮上限约束。本节结果支持参数选择和分类—回归之间存在取舍，也限制了“主模型全面优于开源基线”的说法。主模型的选用依据仍包括原生证据分解和题目解释要求；补充对照未据测试结果重新选择权重或修改模型。各行均为本比赛适配实验，不代表上游论文原始成绩。')
+subhead('6.6 验证集错误归因')
 para('验证集728条中分类错误254条。真实中性的184条中，89条被判为非中性（23条负向、66条正向），中性召回率51.63%；真实正向338条中67条被判中性，真实负向206条中48条被判中性。中性与正向混淆构成主要误差来源。中性边界校准改善取舍，仍不能解决说明性文本、弱情感与标注差异；继续扩大偏置会同时改变正负样本被归零的比例。')
 vc={x['id']:x for x in rows('results/contributions/all_samples_contributions.csv') if x['split']=='valid'}
 groups=[]
@@ -262,7 +284,7 @@ for name,pred in [('真实负向',lambda x:int(x['true_class'])==0),('真实中�
     sub=[x for x in valid if pred(x)];error=sum(x['polarity']!=x['true_class'] for x in sub);mae=np.mean([abs(float(x['intensity'])-float(x['true_intensity'])) for x in sub]);groups.append([name,len(sub),error,f'{100*error/len(sub):.2f}%',f'{mae:.4f}'])
 table(['验证分组','样本数','分类错误数','错误率','最终MAE'],groups, '验证集标签与观测分组的误差')
 para('分组差异同时受标签分布、语句内容和观测质量影响，只能作为错误诊断线索，不构成模态缺失的因果效应。分类贡献在文本上的集中说明模型更依赖语言判别；语音与视觉的较低分类净贡献也可能来自内部正负项抵消，不能视为它们没有可用信息。强度预测的收缩与中性归零会对强情感样本产生较大残差，图5可用于检查这种系统偏差。')
-subhead('6.6 解释完备性检验')
+subhead('6.7 解释完备性检验')
 table(['解释检查','验证','测试','附件4'],[['分类间隔最大核算误差',*[f"{CON[s]['classification']['max_accounting_error']:.2e}" for s in ['valid','test','special']]],['回归q最大核算误差',*[f"{CON[s]['regression']['max_accounting_error']:.2e}" for s in ['valid','test','special']]],['逐样本核查数量',728,727,20]], '分类间隔与回归预激活的分解误差')
 para('将三模态净分数与偏置相加，并与同次前向的目标分数逐条比较。1475条样本的分解误差均处于浮点计算误差范围。该检查说明解释忠实于当前读出的数值，不证明某个证据词是人类情感成因。本主模型没有单独完成随机扰动对照、多种子解释稳定性或人类证据标注评价，局部读出核算与输入扰动忠实性仍需分别检验。')
 head('7 三模态作用差异与局部重要性')
@@ -528,6 +550,8 @@ for kind,value in blocks:
         elif len(headers)==4:widths=[6.2,3.4,3.4,3.4]
         elif len(headers)==3:widths=[4.5,3.0,8.9]
         elif len(headers)==7 and headers[0]=='结构设置':widths=[4.1,1.6,1.9,1.4,2.2,2.8,2.2]
+        elif len(headers)==7 and headers[:2]==['代号','模型']:widths=[1.1,2.5,2.5,2.1,2.3,2.4,2.5]
+        elif len(headers)==7 and headers[0]=='代号':widths=[1.5,2.65,2.4,2.3,2.65,2.4,2.3]
         elif len(headers)==8:widths=[1.2,1.2,2.5,2.5,1.1,2.2,2.8,2.3]
         elif len(headers)==7:widths=[1.2,2.1,3.0,2.45,2.45,2.45,2.75]
         else:widths=[16.4/len(headers)]*len(headers)

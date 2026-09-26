@@ -1,0 +1,194 @@
+{
+  "code": "T0",
+  "family": "tetfn",
+  "name": "source50_lr1",
+  "run": "runs/q3b_next/tetfn/source50_lr1",
+  "config": {
+    "schema_version": "q3b-1.1",
+    "data": {
+      "aligned_path": "E题数据/附件2-数据集特征文件/aligned_50.pkl",
+      "special_dir": "E题数据/附件4-可解释专项视频样本与特征文件/附件4-可解释专项视频样本与特征文件/对齐版本",
+      "modalities": [
+        "T",
+        "A",
+        "V"
+      ],
+      "special_ids": [
+        0,
+        101,
+        102
+      ],
+      "zero_row_is_unobserved": true,
+      "normalization_epsilon": 1e-06
+    },
+    "model": {
+      "factory": "q3b.tetfn_source_adapter:build",
+      "kind": "tetfn_source",
+      "input_dims": {
+        "T": 768,
+        "A": 74,
+        "V": 35
+      },
+      "window_size": 1,
+      "dst_width": 50,
+      "heads": 5,
+      "dropout": 0.1,
+      "post_fusion_dim": 64,
+      "pretrained_name": "bert-base-uncased"
+    },
+    "train": {
+      "seed": 17,
+      "batch_size": 32,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.01,
+      "max_epochs": 10,
+      "warmup_epochs": 0,
+      "patience": 4,
+      "min_delta": 1e-06,
+      "gradient_clip": 1.0,
+      "huber_delta": 1.0,
+      "classification_weight": 0.5,
+      "interaction_l1": 0.0,
+      "checkpoint_metric": "valid_calibrated_macro_f1",
+      "device": "cuda:2",
+      "num_workers": 0,
+      "amp": false,
+      "ordinal_weight": 0.1,
+      "encoder_learning_rate": 1e-05
+    },
+    "calibration": {
+      "negative_step_indices": [
+        -20,
+        0
+      ],
+      "positive_step_indices": [
+        0,
+        20
+      ],
+      "step_denominator": 20,
+      "max_mae_increase": 0.02,
+      "primary_metric": "macro_f1"
+    },
+    "explain": {
+      "reference": "train_standardized_zero_fixed_structure",
+      "top_k_windows": 3,
+      "contribution_epsilon": 1e-06,
+      "principal_tie_relative": 0.01,
+      "random_control_seed": 2026,
+      "random_controls_per_sample": 20,
+      "optional_coalition_check": false
+    },
+    "evidence": {
+      "tokenizer_candidate": "bert-base-uncased",
+      "require_token_id_match": true,
+      "forced_aligner_candidate": "torchaudio.pipelines.MMS_FA",
+      "audio_sample_rate": 16000,
+      "allow_equal_duration_mapping": false
+    }
+  },
+  "epoch": 2,
+  "policy": {
+    "decision_mode": "classification",
+    "neutral_bias": 0.7
+  },
+  "actual_epochs": 7,
+  "checkpoint_sha256": "18e3c6341a2dbb50b1c9c1982fa1c8e352ebd0b4aa90f519dbd70a136de1840e",
+  "provenance": {
+    "runs/q3b_next/tetfn/source50_lr1/config.json": "5dc791dd65b96d2c434872a24179cc72d5f8e3562143c062c553669c8b992c42",
+    "runs/q3b_next/tetfn/source50_lr1/winners.json": "0137f9e7c27a722ec9cbccb50b355b1d420110f6149a65e2a396b3c24759baba",
+    "runs/q3b_next/tetfn/source50_lr1/stats.json": "5f69218dd9a833cf92a16f7e4343328d871a3fe49945cb0feb77904166e60bc8",
+    "runs/q3b_next/tetfn/source50_lr1/epochs/epoch_002_valid.npz": "173e90bd546d8ce607608d3dcd72c4b69ea862f569aa17c48b94af6907f9a84c"
+  },
+  "validation_reload_max_delta": 0.0,
+  "validation_recalculation_max_delta": 0.0,
+  "valid": {
+    "accuracy": 0.6304945054945055,
+    "macro_f1": 0.6262320070150668,
+    "weighted_f1": 0.6404134851344558,
+    "mae": 0.5822142136416265,
+    "pearson": 0.6632288121611957,
+    "pearson_defined": true,
+    "per_class": {
+      "0": {
+        "precision": 0.69,
+        "recall": 0.6699029126213593,
+        "f1": 0.6798029556650246,
+        "support": 206
+      },
+      "1": {
+        "precision": 0.43283582089552236,
+        "recall": 0.6304347826086957,
+        "f1": 0.5132743362831859,
+        "support": 184
+      },
+      "2": {
+        "precision": 0.7884615384615384,
+        "recall": 0.606508875739645,
+        "f1": 0.68561872909699,
+        "support": 338
+      }
+    },
+    "confusion_matrix": [
+      [
+        138,
+        50,
+        18
+      ],
+      [
+        31,
+        116,
+        37
+      ],
+      [
+        31,
+        102,
+        205
+      ]
+    ]
+  },
+  "test": {
+    "accuracy": 0.6685006877579092,
+    "macro_f1": 0.6512598045423971,
+    "weighted_f1": 0.6808929207818986,
+    "mae": 0.6010022407097863,
+    "pearson": 0.6960587210135024,
+    "pearson_defined": true,
+    "per_class": {
+      "0": {
+        "precision": 0.7198067632850241,
+        "recall": 0.7198067632850241,
+        "f1": 0.7198067632850241,
+        "support": 207
+      },
+      "1": {
+        "precision": 0.4155844155844156,
+        "recall": 0.6075949367088608,
+        "f1": 0.49357326478149105,
+        "support": 158
+      },
+      "2": {
+        "precision": 0.8339100346020761,
+        "recall": 0.6657458563535912,
+        "f1": 0.740399385560676,
+        "support": 362
+      }
+    },
+    "confusion_matrix": [
+      [
+        149,
+        39,
+        19
+      ],
+      [
+        33,
+        96,
+        29
+      ],
+      [
+        25,
+        96,
+        241
+      ]
+    ]
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "code": "S0",
+  "family": "selfmm",
+  "name": "control",
+  "run": "runs/q3b_next/selfmm/control",
+  "config": {
+    "schema_version": "q3b-1.1",
+    "data": {
+      "aligned_path": "E题数据/附件2-数据集特征文件/aligned_50.pkl",
+      "special_dir": "E题数据/附件4-可解释专项视频样本与特征文件/附件4-可解释专项视频样本与特征文件/对齐版本",
+      "modalities": [
+        "T",
+        "A",
+        "V"
+      ],
+      "special_ids": [
+        0,
+        101,
+        102
+      ],
+      "zero_row_is_unobserved": true,
+      "normalization_epsilon": 1e-06
+    },
+    "model": {
+      "factory": "q3b.selfmm_adapter:build",
+      "kind": "selfmm_adapter",
+      "pretrained_name": "bert-base-uncased",
+      "trainable_layers": 12,
+      "window_size": 1,
+      "a_lstm_hidden_size": 16,
+      "v_lstm_hidden_size": 32,
+      "audio_out": 16,
+      "video_out": 32,
+      "post_fusion_dim": 128,
+      "post_text_dim": 64,
+      "post_audio_dim": 16,
+      "post_video_dim": 32,
+      "post_fusion_dropout": 0.1,
+      "post_text_dropout": 0.0,
+      "post_audio_dropout": 0.0,
+      "post_video_dropout": 0.0,
+      "classification_weight": 0.0,
+      "H": 3.0
+    },
+    "train": {
+      "seed": 17,
+      "batch_size": 32,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.01,
+      "max_epochs": 10,
+      "warmup_epochs": 0,
+      "patience": 4,
+      "min_delta": 1e-06,
+      "gradient_clip": 1.0,
+      "huber_delta": 1.0,
+      "classification_weight": 0.0,
+      "interaction_l1": 0.0,
+      "checkpoint_metric": "valid_calibrated_macro_f1",
+      "device": "cuda:1",
+      "num_workers": 0,
+      "amp": false,
+      "ordinal_weight": 0.0,
+      "encoder_learning_rate": 1e-05,
+      "audio_learning_rate": 0.005,
+      "video_learning_rate": 0.0001,
+      "other_learning_rate": 0.001,
+      "encoder_weight_decay": 0.001,
+      "audio_weight_decay": 0.0,
+      "video_weight_decay": 0.0
+    },
+    "calibration": {
+      "negative_step_indices": [
+        -20,
+        0
+      ],
+      "positive_step_indices": [
+        0,
+        20
+      ],
+      "step_denominator": 20,
+      "max_mae_increase": 0.02,
+      "primary_metric": "macro_f1"
+    },
+    "explain": {
+      "reference": "train_standardized_zero_fixed_structure",
+      "top_k_windows": 3,
+      "contribution_epsilon": 1e-06,
+      "principal_tie_relative": 0.01,
+      "random_control_seed": 2026,
+      "random_controls_per_sample": 20,
+      "optional_coalition_check": false
+    },
+    "evidence": {
+      "tokenizer_candidate": "bert-base-uncased",
+      "require_token_id_match": true,
+      "forced_aligner_candidate": "torchaudio.pipelines.MMS_FA",
+      "audio_sample_rate": 16000,
+      "allow_equal_duration_mapping": false
+    }
+  },
+  "epoch": 3,
+  "policy": {
+    "decision_mode": "regression",
+    "tau_minus": 0.0,
+    "tau_plus": 0.4
+  },
+  "actual_epochs": 7,
+  "checkpoint_sha256": "b476c1d3b2bd993146565e0ea60621dac3c034d9491d9ad3890701303045cd33",
+  "provenance": {
+    "runs/q3b_next/selfmm/control/config.json": "d95bed7eff651b615c461731f9224b2395ddbbc24cf4d429dede4441f25b5155",
+    "runs/q3b_next/selfmm/control/winners.json": "4ece74fcbd6b988ba966edd644fdd0f53f4fe17236858544e6c653d7c78a5893",
+    "runs/q3b_next/selfmm/control/stats.json": "5f69218dd9a833cf92a16f7e4343328d871a3fe49945cb0feb77904166e60bc8",
+    "runs/q3b_next/selfmm/control/epochs/epoch_003_valid.npz": "fcc6317bac6e548b951d247759dab9aef76f5135ba1950b426359781d31fa36e"
+  },
+  "validation_reload_max_delta": 0.0,
+  "validation_recalculation_max_delta": 0.0,
+  "valid": {
+    "accuracy": 0.6387362637362637,
+    "macro_f1": 0.6250323863128742,
+    "weighted_f1": 0.6455100807461099,
+    "mae": 0.5527708106776598,
+    "pearson": 0.6870869518801501,
+    "pearson_defined": true,
+    "per_class": {
+      "0": {
+        "precision": 0.6714285714285714,
+        "recall": 0.6844660194174758,
+        "f1": 0.6778846153846154,
+        "support": 206
+      },
+      "1": {
+        "precision": 0.43805309734513276,
+        "recall": 0.5380434782608695,
+        "f1": 0.48292682926829267,
+        "support": 184
+      },
+      "2": {
+        "precision": 0.7705479452054794,
+        "recall": 0.665680473372781,
+        "f1": 0.7142857142857143,
+        "support": 338
+      }
+    },
+    "confusion_matrix": [
+      [
+        141,
+        47,
+        18
+      ],
+      [
+        36,
+        99,
+        49
+      ],
+      [
+        33,
+        80,
+        225
+      ]
+    ]
+  },
+  "test": {
+    "accuracy": 0.6588720770288858,
+    "macro_f1": 0.6299572613070891,
+    "weighted_f1": 0.6683345486209902,
+    "mae": 0.6028632700105071,
+    "pearson": 0.6946060637097562,
+    "pearson_defined": true,
+    "per_class": {
+      "0": {
+        "precision": 0.7121951219512195,
+        "recall": 0.7053140096618358,
+        "f1": 0.7087378640776699,
+        "support": 207
+      },
+      "1": {
+        "precision": 0.38613861386138615,
+        "recall": 0.4936708860759494,
+        "f1": 0.4333333333333333,
+        "support": 158
+      },
+      "2": {
+        "precision": 0.796875,
+        "recall": 0.7044198895027625,
+        "f1": 0.7478005865102639,
+        "support": 362
+      }
+    },
+    "confusion_matrix": [
+      [
+        146,
+        40,
+        21
+      ],
+      [
+        36,
+        78,
+        44
+      ],
+      [
+        23,
+        84,
+        255
+      ]
+    ]
+  }
+}
