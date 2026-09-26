@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-09-26T18:17:57.995008</dc:date>
+    <dc:date>2026-09-26T19:43:57.288358</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -40,7 +40,7 @@ Q 8.874 25.4952 8.874 29.376
 L 8.874 87.588
 Q 8.874 91.4688 12.78 91.4688
 z
-" clip-path="url(#pad6715ec6d)" style="fill: #edf3f7; stroke: #597080; stroke-linejoin: miter"/>
+" clip-path="url(#p7906341980)" style="fill: #edf3f7; stroke: #597080; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
     <path d="M 227.61 91.4688
@@ -53,7 +53,7 @@ Q 223.704 25.4952 223.704 29.376
 L 223.704 87.588
 Q 223.704 91.4688 227.61 91.4688
 z
-" clip-path="url(#pad6715ec6d)" style="fill: #edf3f7; stroke: #597080; stroke-linejoin: miter"/>
+" clip-path="url(#p7906341980)" style="fill: #edf3f7; stroke: #597080; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
     <path d="M 442.44 91.4688
@@ -66,7 +66,7 @@ Q 438.534 25.4952 438.534 29.376
 L 438.534 87.588
 Q 438.534 91.4688 442.44 91.4688
 z
-" clip-path="url(#pad6715ec6d)" style="fill: #edf3f7; stroke: #597080; stroke-linejoin: miter"/>
+" clip-path="url(#p7906341980)" style="fill: #edf3f7; stroke: #597080; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
     <path d="M 238.77 213.4368
@@ -79,7 +79,7 @@ Q 234.864 147.4632 234.864 151.344
 L 234.864 209.556
 Q 234.864 213.4368 238.77 213.4368
 z
-" clip-path="url(#pad6715ec6d)" style="fill: #edf3f7; stroke: #597080; stroke-linejoin: miter"/>
+" clip-path="url(#p7906341980)" style="fill: #edf3f7; stroke: #597080; stroke-linejoin: miter"/>
    </g>
    <g id="patch_6">
     <path d="M 448.02 213.4368
@@ -92,19 +92,19 @@ Q 444.114 147.4632 444.114 151.344
 L 444.114 209.556
 Q 444.114 213.4368 448.02 213.4368
 z
-" clip-path="url(#pad6715ec6d)" style="fill: #edf3f7; stroke: #597080; stroke-linejoin: miter"/>
+" clip-path="url(#p7906341980)" style="fill: #edf3f7; stroke: #597080; stroke-linejoin: miter"/>
    </g>
    <g id="line2d_1">
     <path d="M 526.14 118.08
 L 319.68 118.08
 L 319.68 146.9088
-" clip-path="url(#pad6715ec6d)" style="fill: none; stroke: #597080; stroke-width: 1.4; stroke-linecap: square"/>
+" clip-path="url(#p7906341980)" style="fill: none; stroke: #597080; stroke-width: 1.4; stroke-linecap: square"/>
    </g>
    <g id="text_1">
     <!-- 附件二训练集 -->
     <g transform="translate(69.27 57.282) scale(0.1 -0.1)">
      <defs>
-      <path id="Q3PaperSans-Regular-44a" d="M 3674 2650
+      <path id="Q3PaperSans-Regular-461" d="M 3674 2650
 C 3910 2189 4198 1568 4326 1178
 L 4723 1370
 C 4589 1760 4301 2355 4045 2816
@@ -159,7 +159,7 @@ L 1907 5101
 L 531 5101
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-c1" d="M 2029 2182
+      <path id="Q3PaperSans-Regular-c2" d="M 2029 2182
 L 2029 1715
 L 3866 1715
 L 3866 -512
@@ -196,7 +196,7 @@ C 1773 4269 1990 4742 2170 5216
 L 1715 5350
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-a7" d="M 902 4461
+      <path id="Q3PaperSans-Regular-a8" d="M 902 4461
 L 902 3942
 L 5504 3942
 L 5504 4461
@@ -209,7 +209,7 @@ L 6048 666
 L 365 666
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-3e5" d="M 4102 4877
+      <path id="Q3PaperSans-Regular-3f4" d="M 4102 4877
 L 4102 314
 L 4550 314
 L 4550 4877
@@ -249,7 +249,7 @@ C 1165 269 973 58 858 -38
 C 941 -109 1069 -282 1120 -384
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-387" d="M 294 365
+      <path id="Q3PaperSans-Regular-396" d="M 294 365
 L 410 -109
 C 928 109 1594 384 2240 653
 L 2163 1024
@@ -325,7 +325,7 @@ L 4045 2336
 L 3085 2336
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-45b" d="M 2944 1869
+      <path id="Q3PaperSans-Regular-472" d="M 2944 1869
 L 2944 1440
 L 346 1440
 L 346 1037
@@ -394,12 +394,12 @@ L 3136 2765
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#Q3PaperSans-Regular-44a"/>
-     <use xlink:href="#Q3PaperSans-Regular-c1" transform="translate(100 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-a7" transform="translate(200 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-3e5" transform="translate(300 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-387" transform="translate(400 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-45b" transform="translate(500 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-461"/>
+     <use xlink:href="#Q3PaperSans-Regular-c2" transform="translate(100 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-a8" transform="translate(200 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-3f4" transform="translate(300 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-396" transform="translate(400 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-472" transform="translate(500 0)"/>
     </g>
     <!-- 3395 条：统计估计与参数学习 -->
     <g transform="translate(32.049688 67.282) scale(0.1 -0.1)">
@@ -460,7 +460,7 @@ C 493 224 941 -83 1677 -83
 z
 " transform="scale(0.015625)"/>
       <path id="Q3PaperSans-Regular-1" transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-2ae" d="M 1920 1165
+      <path id="Q3PaperSans-Regular-2ba" d="M 1920 1165
 C 1613 774 1037 307 614 64
 C 717 -13 858 -173 934 -275
 C 1370 6 1965 538 2304 992
@@ -515,7 +515,7 @@ L 3437 2515
 L 2950 2515
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-4d3" d="M 1600 3110
+      <path id="Q3PaperSans-Regular-4ee" d="M 1600 3110
 C 1856 3110 2086 3296 2086 3584
 C 2086 3878 1856 4070 1600 4070
 C 1344 4070 1114 3878 1114 3584
@@ -528,7 +528,7 @@ C 1344 934 1114 749 1114 454
 C 1114 166 1344 -26 1600 -26
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-392" d="M 4467 2253
+      <path id="Q3PaperSans-Regular-3a1" d="M 4467 2253
 L 4467 230
 C 4467 -243 4576 -384 5024 -384
 C 5114 -384 5498 -384 5587 -384
@@ -594,7 +594,7 @@ C 448 3373 326 3226 211 3200
 C 275 3066 352 2810 384 2707
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-3e3" d="M 877 4960
+      <path id="Q3PaperSans-Regular-3f2" d="M 877 4960
 C 1235 4659 1683 4224 1888 3949
 L 2214 4307
 C 1997 4570 1542 4979 1190 5267
@@ -627,7 +627,7 @@ L 4512 5357
 L 4006 5357
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-ca" d="M 1702 5350
+      <path id="Q3PaperSans-Regular-cb" d="M 1702 5350
 C 1344 4378 749 3418 115 2797
 C 205 2688 339 2438 390 2323
 C 608 2547 819 2810 1024 3091
@@ -666,7 +666,7 @@ L 5267 224
 L 2918 224
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-8f" d="M 365 1523
+      <path id="Q3PaperSans-Regular-90" d="M 365 1523
 L 365 1062
 L 4358 1062
 L 4358 1523
@@ -694,7 +694,7 @@ L 2150 5184
 L 1670 5235
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-150" d="M 3507 2566
+      <path id="Q3PaperSans-Regular-154" d="M 3507 2566
 C 3072 2259 2259 1971 1626 1818
 C 1741 1722 1862 1581 1933 1478
 C 2586 1664 3392 1984 3904 2355
@@ -743,7 +743,7 @@ C 1280 4326 1133 4256 1005 4243
 C 1056 4115 1120 3885 1146 3782
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-27b" d="M 2835 5254
+      <path id="Q3PaperSans-Regular-286" d="M 2835 5254
 C 2720 5005 2515 4627 2355 4403
 L 2669 4250
 C 2835 4461 3053 4781 3238 5075
@@ -825,7 +825,7 @@ C 4448 2342 4269 2995 4147 3686
 L 5178 3686
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-1c3" d="M 2944 2221
+      <path id="Q3PaperSans-Regular-1c7" d="M 2944 2221
 L 2944 1760
 L 384 1760
 L 384 1306
@@ -874,7 +874,7 @@ C 3578 4717 3354 5126 3136 5434
 L 2714 5274
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-a0" d="M 1478 3603
+      <path id="Q3PaperSans-Regular-a1" d="M 1478 3603
 C 2054 3206 2810 2624 3174 2266
 L 3514 2630
 C 3130 2982 2368 3539 1805 3917
@@ -906,24 +906,24 @@ z
      <use xlink:href="#Q3PaperSans-Regular-1a" transform="translate(111 0)"/>
      <use xlink:href="#Q3PaperSans-Regular-16" transform="translate(166.5 0)"/>
      <use xlink:href="#Q3PaperSans-Regular-1" transform="translate(222 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-2ae" transform="translate(244.40625 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-4d3" transform="translate(344.40625 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-392" transform="translate(444.40625 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-3e3" transform="translate(544.40625 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-ca" transform="translate(644.40625 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-3e3" transform="translate(744.40625 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-8f" transform="translate(844.40625 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-150" transform="translate(944.40625 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-27b" transform="translate(1044.40625 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-1c3" transform="translate(1144.40625 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-a0" transform="translate(1244.40625 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-2ba" transform="translate(244.40625 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-4ee" transform="translate(344.40625 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-3a1" transform="translate(444.40625 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-3f2" transform="translate(544.40625 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-cb" transform="translate(644.40625 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-3f2" transform="translate(744.40625 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-90" transform="translate(844.40625 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-154" transform="translate(944.40625 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-286" transform="translate(1044.40625 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-1c7" transform="translate(1144.40625 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-a1" transform="translate(1244.40625 0)"/>
     </g>
    </g>
    <g id="text_2">
     <!-- 附件二验证集 -->
     <g transform="translate(284.1 57.282) scale(0.1 -0.1)">
      <defs>
-      <path id="Q3PaperSans-Regular-475" d="M 198 947
+      <path id="Q3PaperSans-Regular-48c" d="M 198 947
 L 301 544
 C 781 678 1370 838 1946 1005
 L 1901 1376
@@ -990,7 +990,7 @@ C 5357 1773 4966 819 4653 224
 L 2784 224
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-3ea" d="M 653 4922
+      <path id="Q3PaperSans-Regular-3f9" d="M 653 4922
 C 998 4621 1434 4205 1645 3936
 L 1978 4269
 C 1766 4531 1318 4934 966 5210
@@ -1032,12 +1032,12 @@ L 320 3366
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#Q3PaperSans-Regular-44a"/>
-     <use xlink:href="#Q3PaperSans-Regular-c1" transform="translate(100 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-a7" transform="translate(200 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-475" transform="translate(300 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-3ea" transform="translate(400 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-45b" transform="translate(500 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-461"/>
+     <use xlink:href="#Q3PaperSans-Regular-c2" transform="translate(100 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-a8" transform="translate(200 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-48c" transform="translate(300 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-3f9" transform="translate(400 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-472" transform="translate(500 0)"/>
     </g>
     <!-- 728 条：检查点与策略选择 -->
     <g transform="translate(254.654688 67.282) scale(0.1 -0.1)">
@@ -1092,7 +1092,7 @@ C 2125 2010 2701 1779 2701 1146
 C 2701 678 2342 352 1798 352
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-2c8" d="M 2995 3392
+      <path id="Q3PaperSans-Regular-2d4" d="M 2995 3392
 L 2995 2976
 L 5165 2976
 L 5165 3392
@@ -1152,7 +1152,7 @@ C 5165 1818 4762 838 4416 224
 L 2195 224
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-2b9" d="M 1888 1395
+      <path id="Q3PaperSans-Regular-2c5" d="M 1888 1395
 L 4480 1395
 L 4480 858
 L 1888 858
@@ -1197,7 +1197,7 @@ L 3418 5376
 L 2944 5376
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-309" d="M 1517 2976
+      <path id="Q3PaperSans-Regular-315" d="M 1517 2976
 L 4864 2976
 L 4864 1830
 L 1517 1830
@@ -1242,7 +1242,7 @@ L 2912 3430
 L 1062 3430
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-36e" d="M 3699 5402
+      <path id="Q3PaperSans-Regular-37d" d="M 3699 5402
 C 3494 4826 3117 4288 2669 3936
 C 2752 3891 2880 3808 2976 3738
 L 2976 3514
@@ -1307,7 +1307,7 @@ C 1536 4966 1613 5120 1677 5280
 L 1222 5402
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-324" d="M 3904 5402
+      <path id="Q3PaperSans-Regular-330" d="M 3904 5402
 C 3622 4710 3155 4058 2611 3622
 L 2611 4998
 L 486 4998
@@ -1384,7 +1384,7 @@ C 4787 2323 5158 2048 5568 1830
 L 3347 1830
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-423" d="M 390 4896
+      <path id="Q3PaperSans-Regular-43a" d="M 390 4896
 C 762 4582 1197 4134 1382 3821
 L 1779 4122
 C 1574 4429 1133 4864 755 5158
@@ -1444,7 +1444,7 @@ C 1926 474 1779 627 1606 640
 L 1606 2918
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-249" d="M 1133 5370
+      <path id="Q3PaperSans-Regular-253" d="M 1133 5370
 L 1133 4090
 L 294 4090
 L 294 3642
@@ -1518,23 +1518,23 @@ z
      <use xlink:href="#Q3PaperSans-Regular-13" transform="translate(55.5 0)"/>
      <use xlink:href="#Q3PaperSans-Regular-19" transform="translate(111 0)"/>
      <use xlink:href="#Q3PaperSans-Regular-1" transform="translate(166.5 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-2ae" transform="translate(188.90625 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-4d3" transform="translate(288.90625 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-2c8" transform="translate(388.90625 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-2b9" transform="translate(488.90625 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-309" transform="translate(588.90625 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-8f" transform="translate(688.90625 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-36e" transform="translate(788.90625 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-324" transform="translate(888.90625 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-423" transform="translate(988.90625 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-249" transform="translate(1088.90625 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-2ba" transform="translate(188.90625 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-4ee" transform="translate(288.90625 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-2d4" transform="translate(388.90625 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-2c5" transform="translate(488.90625 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-315" transform="translate(588.90625 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-90" transform="translate(688.90625 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-37d" transform="translate(788.90625 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-330" transform="translate(888.90625 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-43a" transform="translate(988.90625 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-253" transform="translate(1088.90625 0)"/>
     </g>
    </g>
    <g id="text_3">
     <!-- 固定模型与决策规则 -->
     <g transform="translate(481.14 57.282) scale(0.1 -0.1)">
      <defs>
-      <path id="Q3PaperSans-Regular-188" d="M 2304 2106
+      <path id="Q3PaperSans-Regular-18c" d="M 2304 2106
 L 4141 2106
 L 4141 1184
 L 2304 1184
@@ -1575,7 +1575,7 @@ L 5350 224
 L 1050 224
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-1cb" d="M 1434 2419
+      <path id="Q3PaperSans-Regular-1cf" d="M 1434 2419
 C 1299 1261 947 346 230 -211
 C 346 -282 544 -442 621 -531
 C 1050 -160 1357 326 1581 922
@@ -1614,7 +1614,7 @@ C 3507 4864 3341 5184 3200 5421
 L 2726 5286
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-2cc" d="M 3021 2669
+      <path id="Q3PaperSans-Regular-2d8" d="M 3021 2669
 L 5248 2669
 L 5248 2208
 L 3021 2208
@@ -1692,7 +1692,7 @@ L 1581 5376
 L 1120 5376
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-194" d="M 4064 5011
+      <path id="Q3PaperSans-Regular-198" d="M 4064 5011
 L 4064 2867
 L 4506 2867
 L 4506 5011
@@ -1757,7 +1757,7 @@ L 3482 2125
 L 2989 2125
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-10c" d="M 326 4890
+      <path id="Q3PaperSans-Regular-10f" d="M 326 4890
 C 691 4486 1126 3936 1312 3578
 L 1722 3853
 C 1517 4205 1069 4736 698 5120
@@ -1801,7 +1801,7 @@ L 4077 5363
 L 3571 5363
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-3dc" d="M 3046 5062
+      <path id="Q3PaperSans-Regular-3eb" d="M 3046 5062
 L 3046 1658
 L 3507 1658
 L 3507 4640
@@ -1859,7 +1859,7 @@ L 4621 4096
 L 4173 4096
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-122" d="M 2061 730
+      <path id="Q3PaperSans-Regular-125" d="M 2061 730
 C 2464 403 2976 -64 3219 -352
 L 3526 0
 C 3277 275 2758 717 2362 1030
@@ -1901,20 +1901,20 @@ L 1792 4160
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#Q3PaperSans-Regular-188"/>
-     <use xlink:href="#Q3PaperSans-Regular-1cb" transform="translate(100 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-2cc" transform="translate(200 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-194" transform="translate(300 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-8f" transform="translate(400 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-10c" transform="translate(500 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-36e" transform="translate(600 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-3dc" transform="translate(700 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-122" transform="translate(800 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-18c"/>
+     <use xlink:href="#Q3PaperSans-Regular-1cf" transform="translate(100 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-2d8" transform="translate(200 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-198" transform="translate(300 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-90" transform="translate(400 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-10f" transform="translate(500 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-37d" transform="translate(600 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-3eb" transform="translate(700 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-125" transform="translate(800 0)"/>
     </g>
     <!-- 不确定性融合＋局部证据读出 -->
     <g transform="translate(461.14 67.282) scale(0.1 -0.1)">
      <defs>
-      <path id="Q3PaperSans-Regular-8d" d="M 3578 3059
+      <path id="Q3PaperSans-Regular-8e" d="M 3578 3059
 C 4339 2547 5299 1792 5754 1299
 L 6144 1670
 C 5664 2163 4691 2880 3936 3366
@@ -1935,7 +1935,7 @@ L 5958 4928
 L 442 4928
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-33e" d="M 3533 5395
+      <path id="Q3PaperSans-Regular-34a" d="M 3533 5395
 C 3251 4608 2778 3866 2227 3379
 C 2317 3290 2464 3104 2515 3014
 C 2624 3117 2733 3226 2835 3347
@@ -2019,7 +2019,7 @@ L 1190 723
 L 1190 2630
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-21c" d="M 1101 5376
+      <path id="Q3PaperSans-Regular-225" d="M 1101 5376
 L 1101 -506
 L 1581 -506
 L 1581 5376
@@ -2068,7 +2068,7 @@ L 3974 173
 L 2138 173
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-3c7" d="M 1069 3962
+      <path id="Q3PaperSans-Regular-3d6" d="M 1069 3962
 L 2618 3962
 L 2618 3360
 L 1069 3360
@@ -2155,7 +2155,7 @@ L 3270 2650
 L 435 2650
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-16a" d="M 3309 5395
+      <path id="Q3PaperSans-Regular-16e" d="M 3309 5395
 C 2656 4403 1472 3546 256 3066
 C 390 2957 525 2771 602 2643
 C 934 2790 1267 2963 1587 3162
@@ -2190,7 +2190,7 @@ L 4723 307
 L 1741 307
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-494" d="M 5523 2182
+      <path id="Q3PaperSans-Regular-4ae" d="M 5523 2182
 L 5523 2624
 L 3418 2624
 L 3418 4730
@@ -2205,7 +2205,7 @@ L 3418 2182
 L 5523 2182
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-1e1" d="M 979 5043
+      <path id="Q3PaperSans-Regular-1e7" d="M 979 5043
 L 979 3514
 C 979 2470 902 998 179 -38
 C 282 -96 486 -256 563 -346
@@ -2246,7 +2246,7 @@ L 2419 646
 L 2419 1510
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-437" d="M 902 4019
+      <path id="Q3PaperSans-Regular-44e" d="M 902 4019
 C 1075 3674 1248 3213 1306 2912
 L 1741 3040
 C 1683 3334 1510 3782 1318 4128
@@ -2309,7 +2309,7 @@ L 2906 269
 L 1152 269
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-255" d="M 3098 1523
+      <path id="Q3PaperSans-Regular-260" d="M 3098 1523
 L 3098 -518
 L 3520 -518
 L 3520 -256
@@ -2380,7 +2380,7 @@ L 1517 5370
 L 1069 5370
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-3f5" d="M 2835 2893
+      <path id="Q3PaperSans-Regular-404" d="M 2835 2893
 C 3174 2714 3571 2445 3763 2246
 L 3994 2522
 C 3795 2714 3386 2970 3059 3136
@@ -2456,7 +2456,7 @@ L 1651 3366
 L 256 3366
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-118" d="M 666 2182
+      <path id="Q3PaperSans-Regular-11b" d="M 666 2182
 L 666 -134
 L 5210 -134
 L 5210 -499
@@ -2486,26 +2486,26 @@ L 666 2182
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#Q3PaperSans-Regular-8d"/>
-     <use xlink:href="#Q3PaperSans-Regular-33e" transform="translate(100 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-1cb" transform="translate(200 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-21c" transform="translate(300 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-3c7" transform="translate(400 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-16a" transform="translate(500 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-494" transform="translate(600 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-1e1" transform="translate(700 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-437" transform="translate(800 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-3ea" transform="translate(900 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-255" transform="translate(1000 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-3f5" transform="translate(1100 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-118" transform="translate(1200 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-8e"/>
+     <use xlink:href="#Q3PaperSans-Regular-34a" transform="translate(100 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-1cf" transform="translate(200 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-225" transform="translate(300 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-3d6" transform="translate(400 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-16e" transform="translate(500 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-4ae" transform="translate(600 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-1e7" transform="translate(700 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-44e" transform="translate(800 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-3f9" transform="translate(900 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-260" transform="translate(1000 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-404" transform="translate(1100 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-11b" transform="translate(1200 0)"/>
     </g>
    </g>
    <g id="text_4">
     <!-- 附件二测试集（727 条） -->
     <g transform="translate(265.234688 179.25) scale(0.1 -0.1)">
      <defs>
-      <path id="Q3PaperSans-Regular-2f8" d="M 3110 589
+      <path id="Q3PaperSans-Regular-304" d="M 3110 589
 C 3437 269 3814 -179 3994 -467
 L 4307 -250
 C 4122 26 3738 461 3411 774
@@ -2564,7 +2564,7 @@ L 1242 1869
 C 986 1152 627 320 371 -173
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-3ef" d="M 768 4960
+      <path id="Q3PaperSans-Regular-3fe" d="M 768 4960
 C 1094 4678 1504 4269 1696 4006
 L 2029 4339
 C 1837 4595 1421 4979 1088 5254
@@ -2619,7 +2619,7 @@ L 3091 595
 L 2304 390
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-492" d="M 4448 2432
+      <path id="Q3PaperSans-Regular-4ac" d="M 4448 2432
 C 4448 1184 4954 166 5722 -614
 L 6106 -416
 C 5370 346 4915 1293 4915 2432
@@ -2628,7 +2628,7 @@ L 5722 5478
 C 4954 4698 4448 3680 4448 2432
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-493" d="M 1952 2432
+      <path id="Q3PaperSans-Regular-4ad" d="M 1952 2432
 C 1952 3680 1446 4698 678 5478
 L 294 5280
 C 1030 4518 1485 3571 1485 2432
@@ -2638,24 +2638,24 @@ C 1446 166 1952 1184 1952 2432
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#Q3PaperSans-Regular-44a"/>
-     <use xlink:href="#Q3PaperSans-Regular-c1" transform="translate(100 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-a7" transform="translate(200 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-2f8" transform="translate(300 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-3ef" transform="translate(400 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-45b" transform="translate(500 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-492" transform="translate(600 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-461"/>
+     <use xlink:href="#Q3PaperSans-Regular-c2" transform="translate(100 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-a8" transform="translate(200 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-304" transform="translate(300 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-3fe" transform="translate(400 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-472" transform="translate(500 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-4ac" transform="translate(600 0)"/>
      <use xlink:href="#Q3PaperSans-Regular-18" transform="translate(700 0)"/>
      <use xlink:href="#Q3PaperSans-Regular-13" transform="translate(755.5 0)"/>
      <use xlink:href="#Q3PaperSans-Regular-18" transform="translate(811 0)"/>
      <use xlink:href="#Q3PaperSans-Regular-1" transform="translate(866.5 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-2ae" transform="translate(888.90625 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-493" transform="translate(988.90625 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-2ba" transform="translate(888.90625 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-4ad" transform="translate(988.90625 0)"/>
     </g>
     <!-- 基础性能、误差与贡献分析 -->
     <g transform="translate(259.68 189.25) scale(0.1 -0.1)">
      <defs>
-      <path id="Q3PaperSans-Regular-195" d="M 4378 5370
+      <path id="Q3PaperSans-Regular-199" d="M 4378 5370
 L 4378 4755
 L 2048 4755
 L 2048 5376
@@ -2722,7 +2722,7 @@ L 2048 2298
 L 2048 2752
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-33c" d="M 326 5037
+      <path id="Q3PaperSans-Regular-348" d="M 326 5037
 L 326 4595
 L 1107 4595
 C 928 3616 640 2707 186 2099
@@ -2774,7 +2774,7 @@ L 3187 2240
 L 2701 2240
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-3ad" d="M 2451 2688
+      <path id="Q3PaperSans-Regular-3bc" d="M 2451 2688
 L 2451 2138
 L 1088 2138
 L 1088 2688
@@ -2847,14 +2847,14 @@ C 563 4115 467 4019 371 4000
 C 429 3872 512 3642 538 3539
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-87" d="M 1747 -358
+      <path id="Q3PaperSans-Regular-88" d="M 1747 -358
 L 2182 13
 C 1786 480 1210 1062 749 1434
 L 333 1069
 C 787 698 1338 147 1747 -358
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-3f3" d="M 3181 4653
+      <path id="Q3PaperSans-Regular-402" d="M 3181 4653
 L 5254 4653
 L 5254 3770
 L 3181 3770
@@ -2906,7 +2906,7 @@ C 1190 333 1056 186 960 122
 C 1043 19 1171 -205 1210 -320
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-1e9" d="M 4435 5389
+      <path id="Q3PaperSans-Regular-1ef" d="M 4435 5389
 C 4320 5139 4115 4781 3949 4531
 L 2477 4531
 C 2374 4774 2157 5114 1939 5363
@@ -2954,7 +2954,7 @@ C 4640 4742 4806 4992 4960 5229
 L 4435 5389
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-3fb" d="M 2918 2054
+      <path id="Q3PaperSans-Regular-40a" d="M 2918 2054
 L 2918 1485
 C 2918 992 2733 339 384 -96
 C 499 -198 640 -384 698 -493
@@ -2993,7 +2993,7 @@ L 5606 5030
 L 864 5030
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-319" d="M 5056 4915
+      <path id="Q3PaperSans-Regular-325" d="M 5056 4915
 C 5286 4582 5530 4122 5632 3827
 L 6029 4000
 C 5926 4282 5670 4730 5440 5056
@@ -3073,7 +3073,7 @@ L 1677 3616
 L 448 3616
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-11d" d="M 4307 5261
+      <path id="Q3PaperSans-Regular-120" d="M 4307 5261
 L 3866 5082
 C 4320 4134 5088 3091 5760 2515
 C 5856 2643 6029 2822 6150 2918
@@ -3102,7 +3102,7 @@ C 1773 3539 2253 4288 2586 5107
 L 2074 5248
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-2b5" d="M 3085 4672
+      <path id="Q3PaperSans-Regular-2c1" d="M 3085 4672
 L 3085 2701
 C 3085 1805 3027 602 2445 -256
 C 2560 -294 2758 -422 2842 -499
@@ -3143,25 +3143,25 @@ L 1338 5376
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#Q3PaperSans-Regular-195"/>
-     <use xlink:href="#Q3PaperSans-Regular-33c" transform="translate(100 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-21c" transform="translate(200 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-3ad" transform="translate(300 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-87" transform="translate(400 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-3f3" transform="translate(500 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-1e9" transform="translate(600 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-8f" transform="translate(700 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-3fb" transform="translate(800 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-319" transform="translate(900 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-11d" transform="translate(1000 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-2b5" transform="translate(1100 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-199"/>
+     <use xlink:href="#Q3PaperSans-Regular-348" transform="translate(100 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-225" transform="translate(200 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-3bc" transform="translate(300 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-88" transform="translate(400 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-402" transform="translate(500 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-1ef" transform="translate(600 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-90" transform="translate(700 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-40a" transform="translate(800 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-325" transform="translate(900 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-120" transform="translate(1000 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-2c1" transform="translate(1100 0)"/>
     </g>
    </g>
    <g id="text_5">
     <!-- 附件四（20 条） -->
     <g transform="translate(492.259688 179.25) scale(0.1 -0.1)">
      <defs>
-      <path id="Q3PaperSans-Regular-183" d="M 563 4819
+      <path id="Q3PaperSans-Regular-187" d="M 563 4819
 L 563 -301
 L 1050 -301
 L 1050 186
@@ -3206,20 +3206,20 @@ C 2675 986 2310 390 1779 390
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#Q3PaperSans-Regular-44a"/>
-     <use xlink:href="#Q3PaperSans-Regular-c1" transform="translate(100 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-183" transform="translate(200 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-492" transform="translate(300 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-461"/>
+     <use xlink:href="#Q3PaperSans-Regular-c2" transform="translate(100 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-187" transform="translate(200 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-4ac" transform="translate(300 0)"/>
      <use xlink:href="#Q3PaperSans-Regular-13" transform="translate(400 0)"/>
      <use xlink:href="#Q3PaperSans-Regular-11" transform="translate(455.5 0)"/>
      <use xlink:href="#Q3PaperSans-Regular-1" transform="translate(511 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-2ae" transform="translate(533.40625 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-493" transform="translate(633.40625 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-2ba" transform="translate(533.40625 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-4ad" transform="translate(633.40625 0)"/>
     </g>
     <!-- 全量预测、解释卡与证据定位 -->
     <g transform="translate(463.93 189.25) scale(0.1 -0.1)">
      <defs>
-      <path id="Q3PaperSans-Regular-fc" d="M 3155 5446
+      <path id="Q3PaperSans-Regular-ff" d="M 3155 5446
 C 2509 4429 1338 3488 166 2957
 C 288 2854 429 2694 499 2566
 C 755 2694 1011 2842 1261 3002
@@ -3254,7 +3254,7 @@ C 3808 4032 4454 3494 5165 3014
 L 1280 3014
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-43d" d="M 1600 4256
+      <path id="Q3PaperSans-Regular-454" d="M 1600 4256
 L 4781 4256
 L 4781 3904
 L 1600 3904
@@ -3325,7 +3325,7 @@ L 2957 19
 L 301 19
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-46f" d="M 4288 3168
+      <path id="Q3PaperSans-Regular-486" d="M 4288 3168
 L 4288 1888
 C 4288 1229 4141 365 2624 -134
 C 2733 -224 2861 -384 2918 -480
@@ -3389,7 +3389,7 @@ C 4288 4448 4230 4218 4173 4019
 L 3200 4019
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-3e0" d="M 1677 3379
+      <path id="Q3PaperSans-Regular-3ef" d="M 1677 3379
 L 1677 2598
 L 1107 2598
 L 1107 3379
@@ -3492,7 +3492,7 @@ C 5965 4934 5965 5050 5965 5050
 L 3264 5050
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-43b" d="M 384 4262
+      <path id="Q3PaperSans-Regular-452" d="M 384 4262
 C 570 3974 755 3584 832 3334
 L 1178 3475
 C 1101 3718 902 4102 717 4384
@@ -3571,7 +3571,7 @@ L 4678 2618
 L 4198 2618
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-145" d="M 3418 1485
+      <path id="Q3PaperSans-Regular-149" d="M 3418 1485
 C 4102 1210 5043 787 5523 538
 L 5786 960
 C 5293 1210 4333 1600 3667 1856
@@ -3596,7 +3596,7 @@ L 3309 5376
 L 2810 5376
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-cf" d="M 2362 4211
+      <path id="Q3PaperSans-Regular-d0" d="M 2362 4211
 L 2362 3744
 L 5850 3744
 L 5850 4211
@@ -3636,19 +3636,19 @@ L 1830 5350
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#Q3PaperSans-Regular-fc"/>
-     <use xlink:href="#Q3PaperSans-Regular-43d" transform="translate(100 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-46f" transform="translate(200 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-2f8" transform="translate(300 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-87" transform="translate(400 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-3e0" transform="translate(500 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-43b" transform="translate(600 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-145" transform="translate(700 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-8f" transform="translate(800 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-3ea" transform="translate(900 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-255" transform="translate(1000 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-1cb" transform="translate(1100 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-cf" transform="translate(1200 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-ff"/>
+     <use xlink:href="#Q3PaperSans-Regular-454" transform="translate(100 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-486" transform="translate(200 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-304" transform="translate(300 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-88" transform="translate(400 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-3ef" transform="translate(500 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-452" transform="translate(600 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-149" transform="translate(700 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-90" transform="translate(800 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-3f9" transform="translate(900 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-260" transform="translate(1000 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-1cf" transform="translate(1100 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-d0" transform="translate(1200 0)"/>
     </g>
    </g>
    <g id="patch_7">
@@ -3691,7 +3691,7 @@ L 317.68 143.777926
     <!-- 解释链条 -->
     <g style="fill: #244052" transform="translate(15.57 164.548) scale(0.1 -0.1)">
      <defs>
-      <path id="Q3PaperSans-Regular-440" d="M 2246 4992
+      <path id="Q3PaperSans-Regular-457" d="M 2246 4992
 C 2438 4640 2656 4160 2746 3853
 L 3162 4006
 C 3066 4314 2842 4774 2637 5126
@@ -3783,15 +3783,15 @@ L 3123 3098
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#Q3PaperSans-Regular-3e0"/>
-     <use xlink:href="#Q3PaperSans-Regular-43b" transform="translate(100 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-440" transform="translate(200 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-2ae" transform="translate(300 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-3ef"/>
+     <use xlink:href="#Q3PaperSans-Regular-452" transform="translate(100 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-457" transform="translate(200 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-2ba" transform="translate(300 0)"/>
     </g>
     <!-- 预测目标 → 模态净贡献 → 局部片段 -->
     <g style="fill: #244052" transform="translate(15.57 174.548) scale(0.1 -0.1)">
      <defs>
-      <path id="Q3PaperSans-Regular-32b" d="M 1491 3008
+      <path id="Q3PaperSans-Regular-337" d="M 1491 3008
 L 4858 3008
 L 4858 1952
 L 1491 1952
@@ -3820,7 +3820,7 @@ L 5357 4979
 L 1011 4979
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-2bb" d="M 2982 4890
+      <path id="Q3PaperSans-Regular-2c7" d="M 2982 4890
 L 2982 4435
 L 5773 4435
 L 5773 4890
@@ -3874,7 +3874,7 @@ L 1773 5376
 L 1293 5376
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-78" d="M 5190 2650
+      <path id="Q3PaperSans-Regular-79" d="M 5190 2650
 L 256 2650
 L 256 2214
 L 5190 2214
@@ -3886,7 +3886,7 @@ L 4154 3699
 C 4442 3302 4864 2899 5190 2650
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-21a" d="M 2438 2618
+      <path id="Q3PaperSans-Regular-223" d="M 2438 2618
 C 2816 2400 3270 2067 3475 1830
 L 3904 2106
 C 3667 2349 3219 2669 2842 2874
@@ -3940,7 +3940,7 @@ C 3405 4774 3450 5082 3482 5402
 L 2982 5402
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-10f" d="M 307 4896
+      <path id="Q3PaperSans-Regular-112" d="M 307 4896
 C 640 4442 1037 3821 1216 3443
 L 1664 3680
 C 1472 4051 1056 4653 723 5094
@@ -4008,7 +4008,7 @@ L 5158 3277
 L 5158 2618
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-30d" d="M 1152 5210
+      <path id="Q3PaperSans-Regular-319" d="M 1152 5210
 L 1152 3078
 C 1152 1946 1062 762 243 -147
 C 365 -230 538 -410 621 -525
@@ -4031,7 +4031,7 @@ L 1651 5210
 L 1152 5210
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-2df" d="M 3443 5139
+      <path id="Q3PaperSans-Regular-2eb" d="M 3443 5139
 L 3443 4365
 C 3443 3898 3341 3328 2707 2906
 C 2803 2848 2982 2688 3046 2598
@@ -4097,30 +4097,30 @@ L 755 4806
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#Q3PaperSans-Regular-46f"/>
-     <use xlink:href="#Q3PaperSans-Regular-2f8" transform="translate(100 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-32b" transform="translate(200 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-2bb" transform="translate(300 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-486"/>
+     <use xlink:href="#Q3PaperSans-Regular-304" transform="translate(100 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-337" transform="translate(200 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-2c7" transform="translate(300 0)"/>
      <use xlink:href="#Q3PaperSans-Regular-1" transform="translate(400 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-78" transform="translate(422.40625 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-79" transform="translate(422.40625 0)"/>
      <use xlink:href="#Q3PaperSans-Regular-1" transform="translate(522.40625 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-2cc" transform="translate(544.8125 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-21a" transform="translate(644.8125 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-10f" transform="translate(744.8125 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-3fb" transform="translate(844.8125 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-319" transform="translate(944.8125 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-2d8" transform="translate(544.8125 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-223" transform="translate(644.8125 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-112" transform="translate(744.8125 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-40a" transform="translate(844.8125 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-325" transform="translate(944.8125 0)"/>
      <use xlink:href="#Q3PaperSans-Regular-1" transform="translate(1044.8125 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-78" transform="translate(1067.21875 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-79" transform="translate(1067.21875 0)"/>
      <use xlink:href="#Q3PaperSans-Regular-1" transform="translate(1167.21875 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-1e1" transform="translate(1189.625 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-437" transform="translate(1289.625 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-30d" transform="translate(1389.625 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-2df" transform="translate(1489.625 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-1e7" transform="translate(1189.625 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-44e" transform="translate(1289.625 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-319" transform="translate(1389.625 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-2eb" transform="translate(1489.625 0)"/>
     </g>
     <!-- 保留方向、原文索引与估计时间 -->
     <g style="fill: #244052" transform="translate(15.57 184.548) scale(0.1 -0.1)">
      <defs>
-      <path id="Q3PaperSans-Regular-de" d="M 2893 4646
+      <path id="Q3PaperSans-Regular-e1" d="M 2893 4646
 L 5274 4646
 L 5274 3469
 L 2893 3469
@@ -4161,7 +4161,7 @@ C 1818 4307 2042 4762 2221 5216
 L 1773 5357
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-323" d="M 1562 774
+      <path id="Q3PaperSans-Regular-32f" d="M 1562 774
 L 2982 774
 L 2982 122
 L 1562 122
@@ -4230,7 +4230,7 @@ C 576 2803 704 2618 755 2515
 L 755 2509
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-287" d="M 2816 5235
+      <path id="Q3PaperSans-Regular-292" d="M 2816 5235
 C 2982 4934 3174 4525 3251 4269
 L 435 4269
 L 435 3802
@@ -4257,7 +4257,7 @@ C 3654 4723 3456 5114 3277 5414
 L 2816 5235
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-16e" d="M 2803 5389
+      <path id="Q3PaperSans-Regular-172" d="M 2803 5389
 C 2714 5062 2554 4614 2394 4269
 L 634 4269
 L 634 -512
@@ -4290,7 +4290,7 @@ L 4454 2950
 L 1946 2950
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-14c" d="M 2362 2573
+      <path id="Q3PaperSans-Regular-150" d="M 2362 2573
 L 5043 2573
 L 5043 1971
 L 2362 1971
@@ -4343,7 +4343,7 @@ C 3763 4070 3859 4250 3949 4422
 L 3392 4506
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-27f" d="M 2707 5267
+      <path id="Q3PaperSans-Regular-28a" d="M 2707 5267
 C 2899 4954 3104 4525 3181 4262
 L 3712 4435
 C 3622 4698 3398 5114 3206 5421
@@ -4370,7 +4370,7 @@ L 4550 3776
 C 4230 2912 3789 2202 3226 1619
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-37f" d="M 4051 666
+      <path id="Q3PaperSans-Regular-38e" d="M 4051 666
 C 4595 371 5280 -77 5613 -371
 L 6003 -90
 C 5638 205 4947 627 4416 902
@@ -4434,7 +4434,7 @@ C 1395 2534 1235 2477 1114 2464
 C 1158 2349 1222 2131 1242 2042
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-201" d="M 5005 5312
+      <path id="Q3PaperSans-Regular-209" d="M 5005 5312
 L 5005 -512
 L 5485 -512
 L 5485 5312
@@ -4462,7 +4462,7 @@ L 3002 3635
 L 915 3635
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-28f" d="M 3034 2893
+      <path id="Q3PaperSans-Regular-29a" d="M 3034 2893
 C 3373 2400 3808 1722 4013 1331
 L 4435 1574
 C 4218 1965 3776 2618 3430 3104
@@ -4507,7 +4507,7 @@ L 5376 5344
 L 4890 5344
 z
 " transform="scale(0.015625)"/>
-      <path id="Q3PaperSans-Regular-446" d="M 582 3936
+      <path id="Q3PaperSans-Regular-45d" d="M 582 3936
 L 582 -512
 L 1075 -512
 L 1075 3936
@@ -4551,26 +4551,26 @@ L 2253 5018
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#Q3PaperSans-Regular-de"/>
-     <use xlink:href="#Q3PaperSans-Regular-323" transform="translate(100 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-287" transform="translate(200 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-16e" transform="translate(300 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-87" transform="translate(400 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-14c" transform="translate(500 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-27f" transform="translate(600 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-37f" transform="translate(700 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-201" transform="translate(800 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-8f" transform="translate(900 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-ca" transform="translate(1000 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-3e3" transform="translate(1100 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-28f" transform="translate(1200 0)"/>
-     <use xlink:href="#Q3PaperSans-Regular-446" transform="translate(1300 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-e1"/>
+     <use xlink:href="#Q3PaperSans-Regular-32f" transform="translate(100 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-292" transform="translate(200 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-172" transform="translate(300 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-88" transform="translate(400 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-150" transform="translate(500 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-28a" transform="translate(600 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-38e" transform="translate(700 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-209" transform="translate(800 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-90" transform="translate(900 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-cb" transform="translate(1000 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-3f2" transform="translate(1100 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-29a" transform="translate(1200 0)"/>
+     <use xlink:href="#Q3PaperSans-Regular-45d" transform="translate(1300 0)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="pad6715ec6d">
+  <clipPath id="p7906341980">
    <rect x="7.2" y="7.2" width="613.8" height="227.304"/>
   </clipPath>
  </defs>

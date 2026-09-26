@@ -32,6 +32,13 @@ def save(fig,name):
 MET = read('results/uncertainty/metrics.json')
 CON = read('results/contributions/contribution_summary.json')['summary']
 CMP = rows('results/model_comparison.csv')
+SENS = read('results/sensitivity/controlled_comparisons.json')
+SWEEP = rows('results/sensitivity/uncertainty_all_candidates.csv')
+assert len(SWEEP)==22
+assert {(r['ordinal_head'],r['uncertainty_fusion']) for r in SENS['structures']}=={(False,False),(False,True),(True,False),(True,True)}
+assert SENS['structures'][-1]['valid']==MET['valid']['final']
+for group in 'AB':
+    assert {r['multiplier'] for r in SENS['learning_rates'] if r['group']==group}=={.5,1,2}
 MEDIA = {x['id']:x for x in records('results/media_mapping.jsonl')}
 EXP = {x['id']:x for x in records('results/uncertainty/special_explanations.jsonl')}
 PRED = {x['id']:x for x in rows('results/uncertainty/special_predictions.csv')}
@@ -111,6 +118,20 @@ for ax,split in zip(axes,['valid','test','special']):
     ax.set(xticks=range(3),xticklabels=['分类间隔','回归 q','可靠性'],ylim=(0,106),ylabel='逐样本占比的均值（%）',title={'valid':'验证集','test':'附件二测试集','special':'附件四'}[split]);ax.legend(ncol=3,loc='upper center',bbox_to_anchor=(.5,1.2))
 fig.tight_layout();save(fig,'05_contributions')
 
+# Include the complete seed-17 sweep, alongside complete paired LR groups.
+fig,axes=plt.subplots(1,2,figsize=(10,3.8))
+axes[0].scatter([float(r['macro_f1']) for r in SWEEP],[float(r['mae']) for r in SWEEP],s=30,color='#9DA9AF',alpha=.8,label='全部22组配置')
+for group,color in [('A',COLORS[0]),('B',COLORS[1])]:
+    data=[r for r in SENS['learning_rates'] if r['group']==group]
+    axes[0].scatter([r['valid']['macro_f1'] for r in data],[r['valid']['mae'] for r in data],s=48,color=color,label='参数组'+group)
+    axes[1].plot(range(3),[r['valid']['macro_f1'] for r in data],'o-',color=color,label='参数组'+group)
+    for i,r in enumerate(data):axes[1].annotate(f"{r['valid']['macro_f1']:.4f}",(i,r['valid']['macro_f1']),xytext=(0,7 if group=='B' else -15),textcoords='offset points',ha='center',fontsize=9,color=color)
+axes[0].set(xlabel='验证集 Macro-F1（越高越好）',ylabel='验证集 MAE（越低越好）')
+axes[1].set(xticks=range(3),xticklabels=['0.5倍','1倍','2倍'],xlabel='两组学习率同时缩放的倍率',ylabel='验证集 Macro-F1',ylim=(.597,.645))
+for ax in axes:ax.legend(fontsize=9);ax.grid(alpha=.18)
+axes[0].legend(loc='upper center',bbox_to_anchor=(.5,1.17),ncol=3,fontsize=9)
+fig.tight_layout();save(fig,'07_parameter_comparison')
+
 # Each displayed word is an exact source token mapping; signs retain opposition.
 for sid in ['02','14','16']:
     e=EXP[sid];mapping={j:z for z in MEDIA[sid]['entries'] for j in z['source_indices']}
@@ -134,7 +155,7 @@ add('subtitle','问题三：可解释性模型的建立、求解与结果分析'
 add('abstract_title','摘　要')
 para('针对复杂场景下文本、语音与视觉信息不一致、部分观测缺失以及预测依据难以定位的问题，建立兼顾情感极性分类、强度估计与证据解释的多模态联合模型。本文采用题目给定的对齐版数据，在统一读出结构中保留单模态局部证据与显式成对交互，使预测分数能够按模态及输入位置核算。')
 para('在模型建立方面，以BERT提取上下文化文本表示，对语音和视觉特征进行训练集统计标准化；构建零参考局部编码和低秩双线性交互，以单模态回归残差方差估计可靠性，并对实际参与预测的证据进行精度缩放。以Huber损失、分类交叉熵及辅助监督联合优化，利用验证集选择检查点和中性判别策略。解释以预测类别相对最强竞争类别的间隔为目标，通过交互项等分给出三模态净贡献、主要参考模态及关键片段。')
-para('在结果检验方面，附件二验证集准确率为65.11%、Macro-F1为0.6323、强度MAE为0.5397；测试集相应为68.64%、0.6493和0.6006。与SELF-MM和TETFN的比赛适配基线比较，主模型在测试分类指标与原生解释能力之间取得较好的折中，但并非所有指标均占优。验证集主要错误集中在中性与正向之间，说明弱情感边界仍是模型改进重点。')
+para('在结果检验方面，附件二验证集准确率为65.11%、Macro-F1为0.6323、强度MAE为0.5397；测试集相应为68.64%、0.6493和0.6006。与SELF-MM和TETFN的比赛适配基线比较，主模型在测试分类指标与原生解释能力之间取得较好的折中，但并非所有指标均占优。补充原生结构对照和学习率成组试验表明，组合模块和增大学习率未必改善验证结果。验证集主要错误集中在中性与正向之间，说明弱情感边界仍是模型改进重点。')
 para('对附件四20条无标签样本给出全量预测与解释汇总，并结合典型解释卡和局部重要性图展示证据方向与位置。附件四中，文本在分类间隔中的平均净贡献占89.78%，在回归预激活中的占比为73.76%；可靠性权重与贡献比例存在明显差异。结果说明极性判断和强度估计对三模态的利用方式不同，可加读出为这种差异提供了直接的数值解释。')
 add('keywords','关键词：多模态情感识别；不确定性融合；局部可加证据；成对交互；可解释性')
 add('pagebreak',None)
@@ -222,7 +243,18 @@ para('主模型验证Macro-F1并非三者最高：SELF-MM为0.6390，主模型�
 figure('03_confusion','图3 三分类混淆矩阵，行是真值、列是预测。中性与正向之间的混淆较突出。')
 table(['验证类别','Precision','Recall','F1','支持数'],[[CN[int(k)],*[f'{v[a]:.4f}' for a in ['precision','recall','f1']],v['support']] for k,v in MET['valid']['final']['per_class'].items()], '验证集逐类别性能')
 figure('04_regression','图4 验证集最终强度散点与残差分布。预测中性置零，形成ŷ=0的水平带。')
-subhead('6.3 验证集错误归因')
+subhead('6.3 原生结构对照与性能取舍')
+para('在开源基线之外，补充原生骨干上“有序分类头”和“不确定性融合”两个模块的四格对照。四种设置均采用种子17、最多20轮、早停耐心4轮，以及相同的BERT学习率、其他层学习率、模态丢弃率和联合监督基础权重；各自按验证Macro-F1选择轮次和决策策略。有序分类头指可学习的累计阈值输出，与四种设置均保留的强度有序辅助损失不同。')
+table(['结构设置','有序头','不确定性','轮次','Acc(%)','Macro-F1','MAE'],[[r['label'],'开' if r['ordinal_head'] else '关','开' if r['uncertainty_fusion'] else '关',r['epoch'],f"{100*r['valid']['accuracy']:.2f}",f"{r['valid']['macro_f1']:.4f}",f"{r['valid']['mae']:.4f}"] for r in SENS['structures']], '原生骨干的四种结构设置在验证集上的对照')
+para('仅加入有序分类头时，验证Macro-F1为0.6230、MAE为0.5706；同时加入有序头与不确定性时，相应为0.6165和0.5688，均弱于本文主模型的0.6323和0.5397。对应的既有冻结测试结果中，两种有序设置的准确率均为66.02%，Macro-F1分别为0.6342和0.6212，MAE分别为0.6210和0.6184，也未优于主模型。由此可见，更强的输出约束或更多融合模块并不自动带来更好的分类与回归表现。')
+para('联合监督基础设置在验证集的Macro-F1为0.6412，高于主模型；主模型的MAE则降低约0.0181。因此，四格对照支持不同结构之间存在性能取舍，不能据其中两个较弱设置宣称不确定性模块对所有指标均有增益。各设置使用各自验证最优策略，比较包含训练与策略选择的共同影响；单种子结果也不构成稳定提升的证据。')
+subhead('6.4 学习率成组对照与较弱配置分析')
+para('进一步从既有不确定性模型搜索中，提取两组完整的0.5倍、1倍、2倍学习率试验。A组采用本文主模型的监督权重与模态丢弃率；B组采用较强分类监督，分类、中性、极性、不确定性损失权重依次为4、1、2、1，模态丢弃率为0.05。两组单模态损失权重均为0.1。在每组内部，仅同时缩放BERT与其他层学习率，其余模型与训练参数保持一致；种子均为17、上限20轮、早停耐心6轮，每行仍取该配置自己的验证Macro-F1最优记录。')
+table(['组别','倍率','BERT LR','其他层LR','轮次','Acc(%)','Macro-F1','MAE'],[[r['group'],f"{r['multiplier']:g}",f"{r['config']['train']['encoder_learning_rate']:.1e}",f"{r['config']['train']['learning_rate']:.1e}",r['epoch'],f"{100*r['valid']['accuracy']:.2f}",f"{r['valid']['macro_f1']:.4f}",f"{r['valid']['mae']:.4f}"] for r in SENS['learning_rates']], '不确定性模型的成组学习率对照（验证集）')
+para('A组中，学习率减半或加倍均未改善参考配置的验证Macro-F1与MAE。B组的两组学习率从4×10⁻⁵/3×10⁻⁴同时加倍后，验证Macro-F1由0.6364降至0.6042，准确率由64.56%降至60.99%，MAE由0.5599增至0.5912，构成较明确的退化案例。该结果对应完整训练过程中的验证最优记录，并非从训练轨迹中抽取较差轮次；但它只能说明这组联合学习率设置不合适，不能分别归因于BERT或其他层的学习率。')
+para('B组参考配置的验证Macro-F1高于A组，但MAE较大，也说明分类与回归目标之间仍有取舍。图6同时展示全部22个固定种子候选，完整参数表随结果提供；其余宽搜索点同时改变了多个超参数，不用于推断某个单独参数的因果作用。本节不额外使用测试集或附件四挑选较弱参数，也不将缺少对应冻结测试记录的配置填入测试成绩。')
+figure('07_parameter_comparison','全部22个不确定性候选的验证性能与两组学习率对照。每点均使用本配置的验证Macro-F1最优轮次和策略；两组曲线连接的是成组参数试验，不是训练轮次。')
+subhead('6.5 验证集错误归因')
 para('验证集728条中分类错误254条。真实中性的184条中，89条被判为非中性（23条负向、66条正向），中性召回率51.63%；真实正向338条中67条被判中性，真实负向206条中48条被判中性。中性与正向混淆构成主要误差来源。中性边界校准改善取舍，仍不能解决说明性文本、弱情感与标注差异；继续扩大偏置会同时改变正负样本被归零的比例。')
 vc={x['id']:x for x in rows('results/contributions/all_samples_contributions.csv') if x['split']=='valid'}
 groups=[]
@@ -230,7 +262,7 @@ for name,pred in [('真实负向',lambda x:int(x['true_class'])==0),('真实中�
     sub=[x for x in valid if pred(x)];error=sum(x['polarity']!=x['true_class'] for x in sub);mae=np.mean([abs(float(x['intensity'])-float(x['true_intensity'])) for x in sub]);groups.append([name,len(sub),error,f'{100*error/len(sub):.2f}%',f'{mae:.4f}'])
 table(['验证分组','样本数','分类错误数','错误率','最终MAE'],groups, '验证集标签与观测分组的误差')
 para('分组差异同时受标签分布、语句内容和观测质量影响，只能作为错误诊断线索，不构成模态缺失的因果效应。分类贡献在文本上的集中说明模型更依赖语言判别；语音与视觉的较低分类净贡献也可能来自内部正负项抵消，不能视为它们没有可用信息。强度预测的收缩与中性归零会对强情感样本产生较大残差，图5可用于检查这种系统偏差。')
-subhead('6.4 解释完备性检验')
+subhead('6.6 解释完备性检验')
 table(['解释检查','验证','测试','附件4'],[['分类间隔最大核算误差',*[f"{CON[s]['classification']['max_accounting_error']:.2e}" for s in ['valid','test','special']]],['回归q最大核算误差',*[f"{CON[s]['regression']['max_accounting_error']:.2e}" for s in ['valid','test','special']]],['逐样本核查数量',728,727,20]], '分类间隔与回归预激活的分解误差')
 para('将三模态净分数与偏置相加，并与同次前向的目标分数逐条比较。1475条样本的分解误差均处于浮点计算误差范围。该检查说明解释忠实于当前读出的数值，不证明某个证据词是人类情感成因。本主模型没有单独完成随机扰动对照、多种子解释稳定性或人类证据标注评价，局部读出核算与输入扰动忠实性仍需分别检验。')
 head('7 三模态作用差异与局部重要性')
@@ -326,7 +358,7 @@ para('本模型将预测与解释建立在同一组实际读出上。局部项�
 subhead('9.2 模型局限')
 para('首先，有限训练数据与多次验证选择带来过拟合和选择偏差，当前比较只有一个随机种子，未给出多次重复的方差。其次，分类文本贡献较高，中性与弱极性边界仍有明显混淆；较低音视净贡献可能由证据弱或内部抵消造成，不能仅凭比例判断其信息无用。再次，可加读出保证的是当前前向的数值完备性，不是独立词效应或输入删除的因果忠实性；方差针对单模态回归残差，未验证为融合后的概率区间。最后，音视精确时间戳缺失限制了证据定位精度，三方高阶交互也未显式建模。')
 subhead('9.3 后续改进方向')
-para('后续优先进行多随机种子重复与独立确认实验，检验不确定性缩放、成对项和辅助监督各自带来的增益；围绕中性边界采用嵌套验证控制策略选择偏差，分别考察分类、回归与校准质量。在解释层面，可增加保持训练数据分布的局部扰动实验、跨种子稳定性评价和人工证据核验，区分数值完备、预测忠实与人类可理解三个维度。上述内容为待验证方向，不计入本文已完成结果。')
+para('后续优先扩展本次单种子结构与学习率对照，进行多随机种子重复和独立确认实验，并进一步分离成对项、辅助监督等模块的作用；围绕中性边界采用嵌套验证控制策略选择偏差，分别考察分类、回归与校准质量。在解释层面，可增加保持训练数据分布的局部扰动实验、跨种子稳定性评价和人工证据核验，区分数值完备、预测忠实与人类可理解三个维度。上述扩展内容为待验证方向，不计入本文已完成结果。')
 head('参考文献')
 for reference in [
 '[1] Devlin J, Chang M W, Lee K, Toutanova K. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. NAACL-HLT, 2019: 4171–4186. https://aclanthology.org/N19-1423/',
@@ -495,6 +527,8 @@ for kind,value in blocks:
         elif len(headers)==6 and headers[0]=='模型':widths=[4.4,2.2,2.8,2.2,2.6,2.6]
         elif len(headers)==4:widths=[6.2,3.4,3.4,3.4]
         elif len(headers)==3:widths=[4.5,3.0,8.9]
+        elif len(headers)==7 and headers[0]=='结构设置':widths=[4.1,1.6,1.9,1.4,2.2,2.8,2.2]
+        elif len(headers)==8:widths=[1.2,1.2,2.5,2.5,1.1,2.2,2.8,2.3]
         elif len(headers)==7:widths=[1.2,2.1,3.0,2.45,2.45,2.45,2.75]
         else:widths=[16.4/len(headers)]*len(headers)
         widths=[w*16.4/sum(widths) for w in widths]

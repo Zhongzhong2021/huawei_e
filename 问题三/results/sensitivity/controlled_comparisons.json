@@ -1,0 +1,1391 @@
+{
+  "protocol": {
+    "data": "附件二对齐版",
+    "train_n": 3395,
+    "valid_n": 728,
+    "selection": "validation_macro_f1",
+    "seed": 17,
+    "new_training": false,
+    "structural_patience": 4,
+    "sweep_patience": 6,
+    "max_epochs": 20,
+    "selection_note": "完整四格结构对照及两组0.5/1/2倍学习率，均来自既有实验；同时保留全部22个seed17配置，未选择故意较差的epoch。"
+  },
+  "structures": [
+    {
+      "run": "runs/q3b_all20/reference/native_n04",
+      "config": {
+        "model": {
+          "kind": "bert_evidence",
+          "input_dims": {
+            "T": 768,
+            "A": 74,
+            "V": 35
+          },
+          "window_size": 1,
+          "row_dim": 64,
+          "hidden_dim": 64,
+          "rank": 8,
+          "interaction_output_init": "zero",
+          "dropout": 0.2,
+          "trainable_layers": 12,
+          "pooling": "mean",
+          "text_only": false,
+          "pretrained_name": "/home/dongzhijie/.cache/huggingface/hub/models--bert-base-uncased/snapshots/86b5e0934494bd15c9632b12f734a8a67f723594",
+          "factory": "q3b.native_next:build",
+          "modality_dropout": 0.1
+        },
+        "train": {
+          "seed": 17,
+          "batch_size": 32,
+          "learning_rate": 0.0003,
+          "weight_decay": 0.01,
+          "max_epochs": 20,
+          "warmup_epochs": 0,
+          "patience": 4,
+          "min_delta": 1e-06,
+          "gradient_clip": 1.0,
+          "huber_delta": 1.0,
+          "classification_weight": 0.5,
+          "interaction_l1": 0.001,
+          "checkpoint_metric": "valid_calibrated_macro_f1",
+          "device": "cuda:0",
+          "num_workers": 0,
+          "amp": false,
+          "ordinal_weight": 0.1,
+          "encoder_learning_rate": 2e-05,
+          "unimodal_weight": 0.1,
+          "neutral_weight": 0.1,
+          "polarity_weight": 0.1
+        }
+      },
+      "epoch": 11,
+      "policy": {
+        "decision_mode": "regression",
+        "tau_minus": -0.15,
+        "tau_plus": 0.45
+      },
+      "checkpoint_sha256": "b4941db34e9987705b5b9c0b388282b68bd95bc256d8e353200e4d60438b9a62",
+      "valid": {
+        "accuracy": 0.6524725274725275,
+        "macro_f1": 0.6412006870763794,
+        "weighted_f1": 0.6619087421739593,
+        "mae": 0.5577599905472208,
+        "pearson": 0.6842012387174482,
+        "pearson_defined": true,
+        "per_class": {
+          "0": {
+            "precision": 0.7948717948717948,
+            "recall": 0.6019417475728155,
+            "f1": 0.6850828729281767,
+            "support": 206
+          },
+          "1": {
+            "precision": 0.43529411764705883,
+            "recall": 0.6032608695652174,
+            "f1": 0.5056947608200455,
+            "support": 184
+          },
+          "2": {
+            "precision": 0.7570977917981072,
+            "recall": 0.7100591715976331,
+            "f1": 0.7328244274809161,
+            "support": 338
+          }
+        },
+        "confusion_matrix": [
+          [
+            124,
+            61,
+            21
+          ],
+          [
+            17,
+            111,
+            56
+          ],
+          [
+            15,
+            83,
+            240
+          ]
+        ]
+      },
+      "validation_recalculation_max_delta": 0.0,
+      "provenance": {
+        "runs/q3b_all20/reference/native_n04/config.json": "fd072bb13ecf1890266250ccf5b8ec101a7289482b122651c271a0c52e8d7e5e",
+        "runs/q3b_all20/reference/native_n04/winners.json": "3ca655467c959ce7046158de3ccd724c31718e58a0001869272e8e88395f2022",
+        "runs/q3b_all20/reference/native_n04/epochs/epoch_011_valid.npz": "fbdc683a872e2b2063478054262e9d23e04cce7ea39ad94d75326c537bd404a7"
+      },
+      "label": "联合监督基础",
+      "ordinal_head": false,
+      "uncertainty_fusion": false
+    },
+    {
+      "run": "runs/q3b_all20/ordinal_uncertainty/ordinal_s17",
+      "config": {
+        "model": {
+          "kind": "bert_evidence",
+          "input_dims": {
+            "T": 768,
+            "A": 74,
+            "V": 35
+          },
+          "window_size": 1,
+          "row_dim": 64,
+          "hidden_dim": 64,
+          "rank": 8,
+          "interaction_output_init": "zero",
+          "dropout": 0.2,
+          "trainable_layers": 12,
+          "pooling": "mean",
+          "text_only": false,
+          "pretrained_name": "/home/dongzhijie/.cache/huggingface/hub/models--bert-base-uncased/snapshots/86b5e0934494bd15c9632b12f734a8a67f723594",
+          "factory": "q3b.ordinal_uncertainty:build",
+          "modality_dropout": 0.1,
+          "ordinal_head": true,
+          "uncertainty_fusion": false
+        },
+        "train": {
+          "seed": 17,
+          "batch_size": 32,
+          "learning_rate": 0.0003,
+          "weight_decay": 0.01,
+          "max_epochs": 20,
+          "warmup_epochs": 0,
+          "patience": 4,
+          "min_delta": 1e-06,
+          "gradient_clip": 1.0,
+          "huber_delta": 1.0,
+          "classification_weight": 0.5,
+          "interaction_l1": 0.001,
+          "checkpoint_metric": "valid_calibrated_macro_f1",
+          "device": "cuda:0",
+          "num_workers": 0,
+          "amp": false,
+          "ordinal_weight": 0.1,
+          "encoder_learning_rate": 2e-05,
+          "unimodal_weight": 0.1,
+          "neutral_weight": 0.1,
+          "polarity_weight": 0.1,
+          "uncertainty_weight": 0.1
+        }
+      },
+      "epoch": 1,
+      "policy": {
+        "decision_mode": "regression",
+        "tau_minus": 0.0,
+        "tau_plus": 0.55
+      },
+      "checkpoint_sha256": "17e55b95e152bf0b96e11fed0217c5bcc26aa5e454d7028a3f40114c45017d5b",
+      "valid": {
+        "accuracy": 0.6346153846153846,
+        "macro_f1": 0.6230458400057657,
+        "weighted_f1": 0.6455295872672157,
+        "mae": 0.5706462775325725,
+        "pearson": 0.6727590944008224,
+        "pearson_defined": true,
+        "per_class": {
+          "0": {
+            "precision": 0.7032967032967034,
+            "recall": 0.6213592233009708,
+            "f1": 0.6597938144329898,
+            "support": 206
+          },
+          "1": {
+            "precision": 0.4163424124513619,
+            "recall": 0.5815217391304348,
+            "f1": 0.4852607709750567,
+            "support": 184
+          },
+          "2": {
+            "precision": 0.7854671280276817,
+            "recall": 0.6715976331360947,
+            "f1": 0.7240829346092504,
+            "support": 338
+          }
+        },
+        "confusion_matrix": [
+          [
+            128,
+            63,
+            15
+          ],
+          [
+            30,
+            107,
+            47
+          ],
+          [
+            24,
+            87,
+            227
+          ]
+        ]
+      },
+      "validation_recalculation_max_delta": 0.0,
+      "provenance": {
+        "runs/q3b_all20/ordinal_uncertainty/ordinal_s17/config.json": "e36b9e2deb81382f126a36d5e834a768dd4688d4ebb6143ddeca3ac9dd62686e",
+        "runs/q3b_all20/ordinal_uncertainty/ordinal_s17/winners.json": "d755c4da965359689581ffb68f1b9aaac93ce2d24dd45d8ecaa74dd8fd311423",
+        "runs/q3b_all20/ordinal_uncertainty/ordinal_s17/epochs/epoch_001_valid.npz": "48db84af92268977f9f8acd6411ac4bd232d2ae835d5e1223a2a3a341ce44948",
+        "outputs/q3b_all20/selected/ordinal__macro_f1/metrics.json": "b0d14ca88038624af2124c5b2b24764bc0aaaaf3c81c047ed2394f2b6620dbb8"
+      },
+      "label": "仅有序分类头",
+      "ordinal_head": true,
+      "uncertainty_fusion": false,
+      "test": {
+        "accuracy": 0.6602475928473177,
+        "macro_f1": 0.6341863492207779,
+        "weighted_f1": 0.6722107705310105,
+        "mae": 0.6210231703451157,
+        "pearson": 0.672997908019503,
+        "pearson_defined": true,
+        "per_class": {
+          "0": {
+            "precision": 0.7262569832402235,
+            "recall": 0.6280193236714976,
+            "f1": 0.6735751295336788,
+            "support": 207
+          },
+          "1": {
+            "precision": 0.39823008849557523,
+            "recall": 0.569620253164557,
+            "f1": 0.46874999999999994,
+            "support": 158
+          },
+          "2": {
+            "precision": 0.8074534161490683,
+            "recall": 0.7182320441988951,
+            "f1": 0.760233918128655,
+            "support": 362
+          }
+        },
+        "confusion_matrix": [
+          [
+            130,
+            54,
+            23
+          ],
+          [
+            29,
+            90,
+            39
+          ],
+          [
+            20,
+            82,
+            260
+          ]
+        ]
+      }
+    },
+    {
+      "run": "runs/q3b_all20/ordinal_uncertainty/combined_s17",
+      "config": {
+        "model": {
+          "kind": "bert_evidence",
+          "input_dims": {
+            "T": 768,
+            "A": 74,
+            "V": 35
+          },
+          "window_size": 1,
+          "row_dim": 64,
+          "hidden_dim": 64,
+          "rank": 8,
+          "interaction_output_init": "zero",
+          "dropout": 0.2,
+          "trainable_layers": 12,
+          "pooling": "mean",
+          "text_only": false,
+          "pretrained_name": "/home/dongzhijie/.cache/huggingface/hub/models--bert-base-uncased/snapshots/86b5e0934494bd15c9632b12f734a8a67f723594",
+          "factory": "q3b.ordinal_uncertainty:build",
+          "modality_dropout": 0.1,
+          "ordinal_head": true,
+          "uncertainty_fusion": true
+        },
+        "train": {
+          "seed": 17,
+          "batch_size": 32,
+          "learning_rate": 0.0003,
+          "weight_decay": 0.01,
+          "max_epochs": 20,
+          "warmup_epochs": 0,
+          "patience": 4,
+          "min_delta": 1e-06,
+          "gradient_clip": 1.0,
+          "huber_delta": 1.0,
+          "classification_weight": 0.5,
+          "interaction_l1": 0.001,
+          "checkpoint_metric": "valid_calibrated_macro_f1",
+          "device": "cuda:2",
+          "num_workers": 0,
+          "amp": false,
+          "ordinal_weight": 0.1,
+          "encoder_learning_rate": 2e-05,
+          "unimodal_weight": 0.1,
+          "neutral_weight": 0.1,
+          "polarity_weight": 0.1,
+          "uncertainty_weight": 0.1
+        }
+      },
+      "epoch": 3,
+      "policy": {
+        "decision_mode": "regression",
+        "tau_minus": -0.1,
+        "tau_plus": 0.45
+      },
+      "checkpoint_sha256": "b27999432280dad53b981ee77f076d62e41b0230ea3ed82dd620f109b9c897e9",
+      "valid": {
+        "accuracy": 0.6373626373626373,
+        "macro_f1": 0.6164985788535274,
+        "weighted_f1": 0.6407229731090015,
+        "mae": 0.5688439801969862,
+        "pearson": 0.6953706729363271,
+        "pearson_defined": true,
+        "per_class": {
+          "0": {
+            "precision": 0.6782178217821783,
+            "recall": 0.6650485436893204,
+            "f1": 0.6715686274509804,
+            "support": 206
+          },
+          "1": {
+            "precision": 0.43349753694581283,
+            "recall": 0.4782608695652174,
+            "f1": 0.45478036175710596,
+            "support": 184
+          },
+          "2": {
+            "precision": 0.739938080495356,
+            "recall": 0.7071005917159763,
+            "f1": 0.7231467473524961,
+            "support": 338
+          }
+        },
+        "confusion_matrix": [
+          [
+            137,
+            48,
+            21
+          ],
+          [
+            33,
+            88,
+            63
+          ],
+          [
+            32,
+            67,
+            239
+          ]
+        ]
+      },
+      "validation_recalculation_max_delta": 0.0,
+      "provenance": {
+        "runs/q3b_all20/ordinal_uncertainty/combined_s17/config.json": "9b9a390eb54aa24c53656789ad1a0597c4f2df279299961337162d1daad442fb",
+        "runs/q3b_all20/ordinal_uncertainty/combined_s17/winners.json": "b90a3f962fc1c49e03cbabba2808b953b4730189ca677d0fef3d2e30b0a24eb8",
+        "runs/q3b_all20/ordinal_uncertainty/combined_s17/epochs/epoch_003_valid.npz": "0dc9876dad4add4faacb71e06ba0dbc9b40cb6ce5e942634fb41f373097fcfac",
+        "outputs/q3b_all20/selected/ordinal_uncertainty__macro_f1/metrics.json": "e9e7b7c38820ee73e3cbf77a85218b56c26be8b0d48fc7870fec38eb2f1a0f2d"
+      },
+      "label": "有序头＋不确定性",
+      "ordinal_head": true,
+      "uncertainty_fusion": true,
+      "test": {
+        "accuracy": 0.6602475928473177,
+        "macro_f1": 0.6212469397396067,
+        "weighted_f1": 0.6651901231003505,
+        "mae": 0.6184447569237123,
+        "pearson": 0.7032800354209428,
+        "pearson_defined": true,
+        "per_class": {
+          "0": {
+            "precision": 0.696969696969697,
+            "recall": 0.6666666666666666,
+            "f1": 0.6814814814814815,
+            "support": 207
+          },
+          "1": {
+            "precision": 0.39226519337016574,
+            "recall": 0.44936708860759494,
+            "f1": 0.41887905604719766,
+            "support": 158
+          },
+          "2": {
+            "precision": 0.7787356321839081,
+            "recall": 0.7486187845303868,
+            "f1": 0.7633802816901408,
+            "support": 362
+          }
+        },
+        "confusion_matrix": [
+          [
+            138,
+            47,
+            22
+          ],
+          [
+            32,
+            71,
+            55
+          ],
+          [
+            28,
+            63,
+            271
+          ]
+        ]
+      }
+    },
+    {
+      "run": "runs/q3b_all20/ordinal_uncertainty/uncertainty_s17",
+      "config": {
+        "model": {
+          "kind": "bert_evidence",
+          "input_dims": {
+            "T": 768,
+            "A": 74,
+            "V": 35
+          },
+          "window_size": 1,
+          "row_dim": 64,
+          "hidden_dim": 64,
+          "rank": 8,
+          "interaction_output_init": "zero",
+          "dropout": 0.2,
+          "trainable_layers": 12,
+          "pooling": "mean",
+          "text_only": false,
+          "pretrained_name": "/home/dongzhijie/.cache/huggingface/hub/models--bert-base-uncased/snapshots/86b5e0934494bd15c9632b12f734a8a67f723594",
+          "factory": "q3b.ordinal_uncertainty:build",
+          "modality_dropout": 0.1,
+          "ordinal_head": false,
+          "uncertainty_fusion": true
+        },
+        "train": {
+          "seed": 17,
+          "batch_size": 32,
+          "learning_rate": 0.0003,
+          "weight_decay": 0.01,
+          "max_epochs": 20,
+          "warmup_epochs": 0,
+          "patience": 4,
+          "min_delta": 1e-06,
+          "gradient_clip": 1.0,
+          "huber_delta": 1.0,
+          "classification_weight": 0.5,
+          "interaction_l1": 0.001,
+          "checkpoint_metric": "valid_calibrated_macro_f1",
+          "device": "cuda:0",
+          "num_workers": 0,
+          "amp": false,
+          "ordinal_weight": 0.1,
+          "encoder_learning_rate": 2e-05,
+          "unimodal_weight": 0.1,
+          "neutral_weight": 0.1,
+          "polarity_weight": 0.1,
+          "uncertainty_weight": 0.1
+        }
+      },
+      "epoch": 5,
+      "policy": {
+        "decision_mode": "classification",
+        "neutral_bias": -0.4
+      },
+      "checkpoint_sha256": "fe9a0e879080c4145d2d2ac55326fce2668925c9afdd78557b3b0c90a5a3af79",
+      "valid": {
+        "accuracy": 0.6510989010989011,
+        "macro_f1": 0.6322642061414013,
+        "weighted_f1": 0.6546075487719364,
+        "mae": 0.5396734059204187,
+        "pearson": 0.6992588421704274,
+        "pearson_defined": true,
+        "per_class": {
+          "0": {
+            "precision": 0.7401129943502824,
+            "recall": 0.6359223300970874,
+            "f1": 0.6840731070496084,
+            "support": 206
+          },
+          "1": {
+            "precision": 0.4523809523809524,
+            "recall": 0.5163043478260869,
+            "f1": 0.4822335025380711,
+            "support": 184
+          },
+          "2": {
+            "precision": 0.7272727272727273,
+            "recall": 0.7337278106508875,
+            "f1": 0.7304860088365244,
+            "support": 338
+          }
+        },
+        "confusion_matrix": [
+          [
+            131,
+            48,
+            27
+          ],
+          [
+            23,
+            95,
+            66
+          ],
+          [
+            23,
+            67,
+            248
+          ]
+        ]
+      },
+      "validation_recalculation_max_delta": 0.0,
+      "provenance": {
+        "runs/q3b_all20/ordinal_uncertainty/uncertainty_s17/config.json": "40249783191d62a2c9c2dd63c047c6dccdd7edc1916e30a5a2c5ff9eda54df6a",
+        "runs/q3b_all20/ordinal_uncertainty/uncertainty_s17/winners.json": "32fdc8145b51489877bd4eaaa61b7410e064ccbd649bb53490883cfc7c7c21ea",
+        "runs/q3b_all20/ordinal_uncertainty/uncertainty_s17/epochs/epoch_005_valid.npz": "9dc36e5a750e55aa975c8de56bf688040a62261f0b72531f9716a3dccae3a560"
+      },
+      "label": "不确定性融合（主）",
+      "ordinal_head": false,
+      "uncertainty_fusion": true
+    }
+  ],
+  "learning_rates": [
+    {
+      "run": "runs/q3b_native_sweep/uncertainty/r02_mae",
+      "config": {
+        "model": {
+          "kind": "bert_evidence",
+          "input_dims": {
+            "T": 768,
+            "A": 74,
+            "V": 35
+          },
+          "window_size": 1,
+          "row_dim": 64,
+          "hidden_dim": 64,
+          "rank": 8,
+          "interaction_output_init": "zero",
+          "dropout": 0.2,
+          "trainable_layers": 12,
+          "pooling": "mean",
+          "text_only": false,
+          "pretrained_name": "/home/dongzhijie/.cache/huggingface/hub/models--bert-base-uncased/snapshots/86b5e0934494bd15c9632b12f734a8a67f723594",
+          "factory": "q3b.ordinal_uncertainty:build",
+          "modality_dropout": 0.1,
+          "ordinal_head": false,
+          "uncertainty_fusion": true
+        },
+        "train": {
+          "seed": 17,
+          "batch_size": 32,
+          "learning_rate": 0.00015,
+          "weight_decay": 0.01,
+          "max_epochs": 20,
+          "patience": 6,
+          "gradient_clip": 1.0,
+          "huber_delta": 1.0,
+          "classification_weight": 0.5,
+          "interaction_l1": 0.001,
+          "device": "cuda:2",
+          "ordinal_weight": 0.1,
+          "encoder_learning_rate": 1e-05,
+          "unimodal_weight": 0.1,
+          "neutral_weight": 0.1,
+          "polarity_weight": 0.1,
+          "uncertainty_weight": 0.1
+        }
+      },
+      "epoch": 5,
+      "policy": {
+        "decision_mode": "classification",
+        "neutral_bias": 0.1
+      },
+      "checkpoint_sha256": "bed3e73a04163e331a4e2c43b7e130840ff170faf5e75b5f203123ceb209b49c",
+      "valid": {
+        "accuracy": 0.6428571428571429,
+        "macro_f1": 0.6238978724534406,
+        "weighted_f1": 0.6463355705939338,
+        "mae": 0.5635919930335864,
+        "pearson": 0.6936989664464941,
+        "pearson_defined": true,
+        "per_class": {
+          "0": {
+            "precision": 0.7252747252747253,
+            "recall": 0.6407766990291263,
+            "f1": 0.6804123711340206,
+            "support": 206
+          },
+          "1": {
+            "precision": 0.4423076923076923,
+            "recall": 0.5,
+            "f1": 0.4693877551020408,
+            "support": 184
+          },
+          "2": {
+            "precision": 0.7218934911242604,
+            "recall": 0.7218934911242604,
+            "f1": 0.7218934911242604,
+            "support": 338
+          }
+        },
+        "confusion_matrix": [
+          [
+            132,
+            46,
+            28
+          ],
+          [
+            26,
+            92,
+            66
+          ],
+          [
+            24,
+            70,
+            244
+          ]
+        ]
+      },
+      "validation_recalculation_max_delta": 0.0,
+      "provenance": {
+        "runs/q3b_native_sweep/uncertainty/r02_mae/config.json": "d26b675a2d9523c8c4cb1a073bb7bd7e6287a9e5a25365fe810b5bd3838042d8",
+        "runs/q3b_native_sweep/uncertainty/r02_mae/winners.json": "008522e568f0d2701d138b8b42c135abed1c9389cf9d88e12efbea6202f44d7b",
+        "runs/q3b_native_sweep/uncertainty/r02_mae/epochs/epoch_005_valid.npz": "96b2c03c8d2bd73594f19ce242928b21996b7af54d83c189b83cfdad8c713239"
+      },
+      "group": "A",
+      "multiplier": 0.5,
+      "id": "r02_mae"
+    },
+    {
+      "run": "runs/q3b_native_sweep/uncertainty/b00_anchor",
+      "config": {
+        "model": {
+          "kind": "bert_evidence",
+          "input_dims": {
+            "T": 768,
+            "A": 74,
+            "V": 35
+          },
+          "window_size": 1,
+          "row_dim": 64,
+          "hidden_dim": 64,
+          "rank": 8,
+          "interaction_output_init": "zero",
+          "dropout": 0.2,
+          "trainable_layers": 12,
+          "pooling": "mean",
+          "text_only": false,
+          "pretrained_name": "/home/dongzhijie/.cache/huggingface/hub/models--bert-base-uncased/snapshots/86b5e0934494bd15c9632b12f734a8a67f723594",
+          "factory": "q3b.ordinal_uncertainty:build",
+          "modality_dropout": 0.1,
+          "ordinal_head": false,
+          "uncertainty_fusion": true
+        },
+        "train": {
+          "seed": 17,
+          "batch_size": 32,
+          "learning_rate": 0.0003,
+          "weight_decay": 0.01,
+          "max_epochs": 20,
+          "patience": 6,
+          "gradient_clip": 1.0,
+          "huber_delta": 1.0,
+          "classification_weight": 0.5,
+          "interaction_l1": 0.001,
+          "device": "cuda:2",
+          "ordinal_weight": 0.1,
+          "encoder_learning_rate": 2e-05,
+          "unimodal_weight": 0.1,
+          "neutral_weight": 0.1,
+          "polarity_weight": 0.1,
+          "uncertainty_weight": 0.1
+        }
+      },
+      "epoch": 5,
+      "policy": {
+        "decision_mode": "classification",
+        "neutral_bias": -0.4
+      },
+      "checkpoint_sha256": "fe9a0e879080c4145d2d2ac55326fce2668925c9afdd78557b3b0c90a5a3af79",
+      "valid": {
+        "accuracy": 0.6510989010989011,
+        "macro_f1": 0.6322642061414013,
+        "weighted_f1": 0.6546075487719364,
+        "mae": 0.5396734059204187,
+        "pearson": 0.6992588421704274,
+        "pearson_defined": true,
+        "per_class": {
+          "0": {
+            "precision": 0.7401129943502824,
+            "recall": 0.6359223300970874,
+            "f1": 0.6840731070496084,
+            "support": 206
+          },
+          "1": {
+            "precision": 0.4523809523809524,
+            "recall": 0.5163043478260869,
+            "f1": 0.4822335025380711,
+            "support": 184
+          },
+          "2": {
+            "precision": 0.7272727272727273,
+            "recall": 0.7337278106508875,
+            "f1": 0.7304860088365244,
+            "support": 338
+          }
+        },
+        "confusion_matrix": [
+          [
+            131,
+            48,
+            27
+          ],
+          [
+            23,
+            95,
+            66
+          ],
+          [
+            23,
+            67,
+            248
+          ]
+        ]
+      },
+      "validation_recalculation_max_delta": 0.0,
+      "provenance": {
+        "runs/q3b_native_sweep/uncertainty/b00_anchor/config.json": "9652f0633df1b35ba8037d30634007dcd6068f998a87c49b96a5b7c9fb656448",
+        "runs/q3b_native_sweep/uncertainty/b00_anchor/winners.json": "32fdc8145b51489877bd4eaaa61b7410e064ccbd649bb53490883cfc7c7c21ea",
+        "runs/q3b_native_sweep/uncertainty/b00_anchor/epochs/epoch_005_valid.npz": "9dc36e5a750e55aa975c8de56bf688040a62261f0b72531f9716a3dccae3a560"
+      },
+      "group": "A",
+      "multiplier": 1,
+      "id": "b00_anchor"
+    },
+    {
+      "run": "runs/q3b_native_sweep/uncertainty/r03_mae",
+      "config": {
+        "model": {
+          "kind": "bert_evidence",
+          "input_dims": {
+            "T": 768,
+            "A": 74,
+            "V": 35
+          },
+          "window_size": 1,
+          "row_dim": 64,
+          "hidden_dim": 64,
+          "rank": 8,
+          "interaction_output_init": "zero",
+          "dropout": 0.2,
+          "trainable_layers": 12,
+          "pooling": "mean",
+          "text_only": false,
+          "pretrained_name": "/home/dongzhijie/.cache/huggingface/hub/models--bert-base-uncased/snapshots/86b5e0934494bd15c9632b12f734a8a67f723594",
+          "factory": "q3b.ordinal_uncertainty:build",
+          "modality_dropout": 0.1,
+          "ordinal_head": false,
+          "uncertainty_fusion": true
+        },
+        "train": {
+          "seed": 17,
+          "batch_size": 32,
+          "learning_rate": 0.0006,
+          "weight_decay": 0.01,
+          "max_epochs": 20,
+          "patience": 6,
+          "gradient_clip": 1.0,
+          "huber_delta": 1.0,
+          "classification_weight": 0.5,
+          "interaction_l1": 0.001,
+          "device": "cuda:2",
+          "ordinal_weight": 0.1,
+          "encoder_learning_rate": 4e-05,
+          "unimodal_weight": 0.1,
+          "neutral_weight": 0.1,
+          "polarity_weight": 0.1,
+          "uncertainty_weight": 0.1
+        }
+      },
+      "epoch": 4,
+      "policy": {
+        "decision_mode": "classification",
+        "neutral_bias": 0.8
+      },
+      "checkpoint_sha256": "553b00c31358210b191d22dbd8a0ec6c00dc7bb6c8a264afd761ac3e58d909a7",
+      "valid": {
+        "accuracy": 0.625,
+        "macro_f1": 0.6240595108628999,
+        "weighted_f1": 0.6388230898058425,
+        "mae": 0.5470792582481923,
+        "pearson": 0.6863423813713037,
+        "pearson_defined": true,
+        "per_class": {
+          "0": {
+            "precision": 0.7861635220125787,
+            "recall": 0.6067961165048543,
+            "f1": 0.684931506849315,
+            "support": 206
+          },
+          "1": {
+            "precision": 0.40816326530612246,
+            "recall": 0.6521739130434783,
+            "f1": 0.502092050209205,
+            "support": 184
+          },
+          "2": {
+            "precision": 0.7636363636363637,
+            "recall": 0.621301775147929,
+            "f1": 0.6851549755301795,
+            "support": 338
+          }
+        },
+        "confusion_matrix": [
+          [
+            125,
+            64,
+            17
+          ],
+          [
+            16,
+            120,
+            48
+          ],
+          [
+            18,
+            110,
+            210
+          ]
+        ]
+      },
+      "validation_recalculation_max_delta": 0.0,
+      "provenance": {
+        "runs/q3b_native_sweep/uncertainty/r03_mae/config.json": "39f844e85e788b6c95dc1f355c9346f54008c8be118e29bb6c26b360d2bf3e04",
+        "runs/q3b_native_sweep/uncertainty/r03_mae/winners.json": "1d7cf2eb26f3ceafa09ba477eb61a6470b2f67948d3f1ca78630e5d5d451dd63",
+        "runs/q3b_native_sweep/uncertainty/r03_mae/epochs/epoch_004_valid.npz": "f3350dbf0f56342017086967890e7545662c2b92c5e52ea49e47ce586102adb7"
+      },
+      "group": "A",
+      "multiplier": 2,
+      "id": "r03_mae"
+    },
+    {
+      "run": "runs/q3b_native_sweep/uncertainty/r00_macro_f1",
+      "config": {
+        "model": {
+          "kind": "bert_evidence",
+          "input_dims": {
+            "T": 768,
+            "A": 74,
+            "V": 35
+          },
+          "window_size": 1,
+          "row_dim": 64,
+          "hidden_dim": 64,
+          "rank": 8,
+          "interaction_output_init": "zero",
+          "dropout": 0.2,
+          "trainable_layers": 12,
+          "pooling": "mean",
+          "text_only": false,
+          "pretrained_name": "/home/dongzhijie/.cache/huggingface/hub/models--bert-base-uncased/snapshots/86b5e0934494bd15c9632b12f734a8a67f723594",
+          "factory": "q3b.ordinal_uncertainty:build",
+          "modality_dropout": 0.05,
+          "ordinal_head": false,
+          "uncertainty_fusion": true
+        },
+        "train": {
+          "seed": 17,
+          "batch_size": 32,
+          "learning_rate": 0.00015,
+          "weight_decay": 0.01,
+          "max_epochs": 20,
+          "patience": 6,
+          "gradient_clip": 1.0,
+          "huber_delta": 1.0,
+          "classification_weight": 4.0,
+          "interaction_l1": 0.001,
+          "device": "cuda:2",
+          "ordinal_weight": 0.1,
+          "encoder_learning_rate": 2e-05,
+          "unimodal_weight": 0.1,
+          "neutral_weight": 1.0,
+          "polarity_weight": 2.0,
+          "uncertainty_weight": 1.0
+        }
+      },
+      "epoch": 2,
+      "policy": {
+        "decision_mode": "classification",
+        "neutral_bias": 0.4
+      },
+      "checkpoint_sha256": "a27a9b05d0357436186360489af2718eefd04c5157b05aff68653e273a438b78",
+      "valid": {
+        "accuracy": 0.6387362637362637,
+        "macro_f1": 0.6230953911644311,
+        "weighted_f1": 0.6431608514941849,
+        "mae": 0.5621883696661871,
+        "pearson": 0.6772325583785618,
+        "pearson_defined": true,
+        "per_class": {
+          "0": {
+            "precision": 0.6796116504854369,
+            "recall": 0.6796116504854369,
+            "f1": 0.6796116504854369,
+            "support": 206
+          },
+          "1": {
+            "precision": 0.4481132075471698,
+            "recall": 0.5163043478260869,
+            "f1": 0.4797979797979798,
+            "support": 184
+          },
+          "2": {
+            "precision": 0.7419354838709677,
+            "recall": 0.6804733727810651,
+            "f1": 0.7098765432098766,
+            "support": 338
+          }
+        },
+        "confusion_matrix": [
+          [
+            140,
+            43,
+            23
+          ],
+          [
+            32,
+            95,
+            57
+          ],
+          [
+            34,
+            74,
+            230
+          ]
+        ]
+      },
+      "validation_recalculation_max_delta": 0.0,
+      "provenance": {
+        "runs/q3b_native_sweep/uncertainty/r00_macro_f1/config.json": "a41d9e1fb6ec0072348ba9514f2b353844dc49425b4f19fa0d5bedcac29f0497",
+        "runs/q3b_native_sweep/uncertainty/r00_macro_f1/winners.json": "e97e35eb33769bf28d3329398744275b0f57c58c4979e25a0a44b7172637e4ea",
+        "runs/q3b_native_sweep/uncertainty/r00_macro_f1/epochs/epoch_002_valid.npz": "ed558f8d4319999a798336b549de788b07d0bb77dfd35e71f05720a198e6a5d9"
+      },
+      "group": "B",
+      "multiplier": 0.5,
+      "id": "r00_macro_f1"
+    },
+    {
+      "run": "runs/q3b_native_sweep/uncertainty/b06_wide",
+      "config": {
+        "model": {
+          "kind": "bert_evidence",
+          "input_dims": {
+            "T": 768,
+            "A": 74,
+            "V": 35
+          },
+          "window_size": 1,
+          "row_dim": 64,
+          "hidden_dim": 64,
+          "rank": 8,
+          "interaction_output_init": "zero",
+          "dropout": 0.2,
+          "trainable_layers": 12,
+          "pooling": "mean",
+          "text_only": false,
+          "pretrained_name": "/home/dongzhijie/.cache/huggingface/hub/models--bert-base-uncased/snapshots/86b5e0934494bd15c9632b12f734a8a67f723594",
+          "factory": "q3b.ordinal_uncertainty:build",
+          "modality_dropout": 0.05,
+          "ordinal_head": false,
+          "uncertainty_fusion": true
+        },
+        "train": {
+          "seed": 17,
+          "batch_size": 32,
+          "learning_rate": 0.0003,
+          "weight_decay": 0.01,
+          "max_epochs": 20,
+          "patience": 6,
+          "gradient_clip": 1.0,
+          "huber_delta": 1.0,
+          "classification_weight": 4.0,
+          "interaction_l1": 0.001,
+          "device": "cuda:2",
+          "ordinal_weight": 0.1,
+          "encoder_learning_rate": 4e-05,
+          "unimodal_weight": 0.1,
+          "neutral_weight": 1.0,
+          "polarity_weight": 2.0,
+          "uncertainty_weight": 1.0
+        }
+      },
+      "epoch": 8,
+      "policy": {
+        "decision_mode": "classification",
+        "neutral_bias": -0.5
+      },
+      "checkpoint_sha256": "5672f36ab8c8176bc02362df5a6ffa033455686659b18c7979de4fd301510485",
+      "valid": {
+        "accuracy": 0.6456043956043956,
+        "macro_f1": 0.6364323799173626,
+        "weighted_f1": 0.6539735671697743,
+        "mae": 0.5598675448509197,
+        "pearson": 0.6696976608055716,
+        "pearson_defined": true,
+        "per_class": {
+          "0": {
+            "precision": 0.7362637362637363,
+            "recall": 0.6504854368932039,
+            "f1": 0.6907216494845361,
+            "support": 206
+          },
+          "1": {
+            "precision": 0.44308943089430897,
+            "recall": 0.592391304347826,
+            "f1": 0.5069767441860467,
+            "support": 184
+          },
+          "2": {
+            "precision": 0.7566666666666667,
+            "recall": 0.6715976331360947,
+            "f1": 0.7115987460815049,
+            "support": 338
+          }
+        },
+        "confusion_matrix": [
+          [
+            134,
+            48,
+            24
+          ],
+          [
+            26,
+            109,
+            49
+          ],
+          [
+            22,
+            89,
+            227
+          ]
+        ]
+      },
+      "validation_recalculation_max_delta": 1.1102230246251565e-16,
+      "provenance": {
+        "runs/q3b_native_sweep/uncertainty/b06_wide/config.json": "e1a9e0e7ad574754a91cf12019dcee78fa29b22d7b5ca1bd0dfc3c3a4350f3fb",
+        "runs/q3b_native_sweep/uncertainty/b06_wide/winners.json": "d667b3ef5dd2689f166efcda8a59c3550b43bf98f6e4ae26c0939996355b81ce",
+        "runs/q3b_native_sweep/uncertainty/b06_wide/epochs/epoch_008_valid.npz": "3d33d319ea7a925aacc0161c625c5dc2239d9c4dba5ea741f54c8f003c3fb12e"
+      },
+      "group": "B",
+      "multiplier": 1,
+      "id": "b06_wide"
+    },
+    {
+      "run": "runs/q3b_native_sweep/uncertainty/r01_macro_f1",
+      "config": {
+        "model": {
+          "kind": "bert_evidence",
+          "input_dims": {
+            "T": 768,
+            "A": 74,
+            "V": 35
+          },
+          "window_size": 1,
+          "row_dim": 64,
+          "hidden_dim": 64,
+          "rank": 8,
+          "interaction_output_init": "zero",
+          "dropout": 0.2,
+          "trainable_layers": 12,
+          "pooling": "mean",
+          "text_only": false,
+          "pretrained_name": "/home/dongzhijie/.cache/huggingface/hub/models--bert-base-uncased/snapshots/86b5e0934494bd15c9632b12f734a8a67f723594",
+          "factory": "q3b.ordinal_uncertainty:build",
+          "modality_dropout": 0.05,
+          "ordinal_head": false,
+          "uncertainty_fusion": true
+        },
+        "train": {
+          "seed": 17,
+          "batch_size": 32,
+          "learning_rate": 0.0006,
+          "weight_decay": 0.01,
+          "max_epochs": 20,
+          "patience": 6,
+          "gradient_clip": 1.0,
+          "huber_delta": 1.0,
+          "classification_weight": 4.0,
+          "interaction_l1": 0.001,
+          "device": "cuda:2",
+          "ordinal_weight": 0.1,
+          "encoder_learning_rate": 8e-05,
+          "unimodal_weight": 0.1,
+          "neutral_weight": 1.0,
+          "polarity_weight": 2.0,
+          "uncertainty_weight": 1.0
+        }
+      },
+      "epoch": 14,
+      "policy": {
+        "decision_mode": "regression",
+        "tau_minus": -0.2,
+        "tau_plus": 0.55
+      },
+      "checkpoint_sha256": "6f91968014f981cf45f444255f719087463a280c774767d90fd151bb00a9221f",
+      "valid": {
+        "accuracy": 0.6098901098901099,
+        "macro_f1": 0.6042456942658672,
+        "weighted_f1": 0.6200361187209794,
+        "mae": 0.5911651961300727,
+        "pearson": 0.6230619136132372,
+        "pearson_defined": true,
+        "per_class": {
+          "0": {
+            "precision": 0.7228915662650602,
+            "recall": 0.5825242718446602,
+            "f1": 0.6451612903225807,
+            "support": 206
+          },
+          "1": {
+            "precision": 0.4139194139194139,
+            "recall": 0.6141304347826086,
+            "f1": 0.4945295404814004,
+            "support": 184
+          },
+          "2": {
+            "precision": 0.7301038062283737,
+            "recall": 0.6242603550295858,
+            "f1": 0.6730462519936204,
+            "support": 338
+          }
+        },
+        "confusion_matrix": [
+          [
+            120,
+            57,
+            29
+          ],
+          [
+            22,
+            113,
+            49
+          ],
+          [
+            24,
+            103,
+            211
+          ]
+        ]
+      },
+      "validation_recalculation_max_delta": 0.0,
+      "provenance": {
+        "runs/q3b_native_sweep/uncertainty/r01_macro_f1/config.json": "06c4e04c65338ab4c83e6111344f0f14b4362b9d429146ad06e66371f481ecb9",
+        "runs/q3b_native_sweep/uncertainty/r01_macro_f1/winners.json": "ca3608f402c9078f52194f0784dd7a6c119a5b81658d19c79711c4681cbf46dc",
+        "runs/q3b_native_sweep/uncertainty/r01_macro_f1/epochs/epoch_014_valid.npz": "b13c8dd266d9cbdf9f92769da1726a708f1ba7d748275c4ca1e563c9455551f6"
+      },
+      "group": "B",
+      "multiplier": 2,
+      "id": "r01_macro_f1"
+    }
+  ],
+  "candidate_provenance": {
+    "b00_anchor": {
+      "checkpoint_sha256": "fe9a0e879080c4145d2d2ac55326fce2668925c9afdd78557b3b0c90a5a3af79",
+      "provenance": {
+        "runs/q3b_native_sweep/uncertainty/b00_anchor/config.json": "9652f0633df1b35ba8037d30634007dcd6068f998a87c49b96a5b7c9fb656448",
+        "runs/q3b_native_sweep/uncertainty/b00_anchor/winners.json": "32fdc8145b51489877bd4eaaa61b7410e064ccbd649bb53490883cfc7c7c21ea",
+        "runs/q3b_native_sweep/uncertainty/b00_anchor/epochs/epoch_005_valid.npz": "9dc36e5a750e55aa975c8de56bf688040a62261f0b72531f9716a3dccae3a560"
+      },
+      "validation_recalculation_max_delta": 0.0
+    },
+    "b01_anchor": {
+      "checkpoint_sha256": "4e062d44d80672d861f8e21fa7d578d9ab1c18af52d91125a23d726e87c90b14",
+      "provenance": {
+        "runs/q3b_native_sweep/uncertainty/b01_anchor/config.json": "fd11f0a85abb60e4027abc958820478a1be914fca05ee91e07f8b5eac3a64cdd",
+        "runs/q3b_native_sweep/uncertainty/b01_anchor/winners.json": "4b870f6c118494096251f2c23e6cb0b87c5a68731848f3f471f89183feca99c9",
+        "runs/q3b_native_sweep/uncertainty/b01_anchor/epochs/epoch_009_valid.npz": "7ba4d56dbb0695b04be194e25bb6a7c81feb9525e68ee08781416d46eacec56c"
+      },
+      "validation_recalculation_max_delta": 2.220446049250313e-16
+    },
+    "b02_wide": {
+      "checkpoint_sha256": "c17cf511b18e1eeefe977488ad9123dee46488c5e0bc87f3de61b10ac8b6253f",
+      "provenance": {
+        "runs/q3b_native_sweep/uncertainty/b02_wide/config.json": "03d3ea6298bf3f7fe7fce4e0f7bb7d0e507982a521999e6c61610f502f4ca9d8",
+        "runs/q3b_native_sweep/uncertainty/b02_wide/winners.json": "712e1a91d0f6ea7d2f052234788d5e23b5601ac76995a90c31440ffd18c413dc",
+        "runs/q3b_native_sweep/uncertainty/b02_wide/epochs/epoch_006_valid.npz": "12daaaebdf82808561303cdfca5bf4438a6f6cb0dad4d35ab6091211e5757458"
+      },
+      "validation_recalculation_max_delta": 0.0
+    },
+    "b03_wide": {
+      "checkpoint_sha256": "c4ef867d4e2e0d7eeaff563ca130252568bddd95e921ce1519f57bf79ef42afd",
+      "provenance": {
+        "runs/q3b_native_sweep/uncertainty/b03_wide/config.json": "c5f75b876d964793d3f3e7376f4b8c16fd4acf0aa861ad33b7ab8c10324ce23a",
+        "runs/q3b_native_sweep/uncertainty/b03_wide/winners.json": "35888fe0d1e5b4616a64b5db1a7dd621314c44e844048e752392ce27a9c4e45d",
+        "runs/q3b_native_sweep/uncertainty/b03_wide/epochs/epoch_002_valid.npz": "fd36929e92a626ccecf776636814145930ab6423e17605704ef88ea180c5dd8d"
+      },
+      "validation_recalculation_max_delta": 1.1102230246251565e-16
+    },
+    "b04_wide": {
+      "checkpoint_sha256": "33dd6ec367e87bea6e7b94199d506295673d20b168b684ae10c43d05f1718f8e",
+      "provenance": {
+        "runs/q3b_native_sweep/uncertainty/b04_wide/config.json": "b3b2795424eb61ec9e352a45de0de421d11f9549ea3c9ba432788bee2935dc96",
+        "runs/q3b_native_sweep/uncertainty/b04_wide/winners.json": "3162b81e4a0b76ef061758c63f1443ee7305f142666c701c3dddf1356f9d11bf",
+        "runs/q3b_native_sweep/uncertainty/b04_wide/epochs/epoch_005_valid.npz": "4b6047a66262bcb2035c3de4da9cf26a569be613bd416c977431b4b835746338"
+      },
+      "validation_recalculation_max_delta": 0.0
+    },
+    "b05_wide": {
+      "checkpoint_sha256": "f14e90431f7779eda6f2aa75f362930a014a08b66d2f448795376d0087403c78",
+      "provenance": {
+        "runs/q3b_native_sweep/uncertainty/b05_wide/config.json": "11851452ce0ff36cbbaa00a6adb0b12ffc43f09d5a83227695c131d0a9f50774",
+        "runs/q3b_native_sweep/uncertainty/b05_wide/winners.json": "e02757515d9c4d013678a22177f693cfcbee0b0bfb49642f383a8654d48c667c",
+        "runs/q3b_native_sweep/uncertainty/b05_wide/epochs/epoch_004_valid.npz": "f32063e05ee76c069a5997a0f0165effca157a4e55454a729fed58a12dd5d924"
+      },
+      "validation_recalculation_max_delta": 0.0
+    },
+    "b06_wide": {
+      "checkpoint_sha256": "5672f36ab8c8176bc02362df5a6ffa033455686659b18c7979de4fd301510485",
+      "provenance": {
+        "runs/q3b_native_sweep/uncertainty/b06_wide/config.json": "e1a9e0e7ad574754a91cf12019dcee78fa29b22d7b5ca1bd0dfc3c3a4350f3fb",
+        "runs/q3b_native_sweep/uncertainty/b06_wide/winners.json": "d667b3ef5dd2689f166efcda8a59c3550b43bf98f6e4ae26c0939996355b81ce",
+        "runs/q3b_native_sweep/uncertainty/b06_wide/epochs/epoch_008_valid.npz": "3d33d319ea7a925aacc0161c625c5dc2239d9c4dba5ea741f54c8f003c3fb12e"
+      },
+      "validation_recalculation_max_delta": 1.1102230246251565e-16
+    },
+    "b07_wide": {
+      "checkpoint_sha256": "b3762f787429e0f6dc9f18e0b010cb4da340709f00a3c3b32fd91c00ab1dc09e",
+      "provenance": {
+        "runs/q3b_native_sweep/uncertainty/b07_wide/config.json": "c951dd193decef18fff0d63a9bd8d910c520bb8028d49266eb602c835fd796e1",
+        "runs/q3b_native_sweep/uncertainty/b07_wide/winners.json": "06cc093b6e9f4ac5295545824a3fcf2bf01d79f62adb0de3ffdb6aedc35881d9",
+        "runs/q3b_native_sweep/uncertainty/b07_wide/epochs/epoch_017_valid.npz": "e58b1bb414b1d252c489f8fe113443a751b6dc8d466a2d2f94f9f864047a65c5"
+      },
+      "validation_recalculation_max_delta": 0.0
+    },
+    "b08_wide": {
+      "checkpoint_sha256": "f74b05c1b8873eef492087c982d3d57fa365cf135a66b5e9de518cdf1a47c18c",
+      "provenance": {
+        "runs/q3b_native_sweep/uncertainty/b08_wide/config.json": "7aab29e046d2dddd7d85f1f798d3692e767e50c0ea739dc7458d4c266df1cad0",
+        "runs/q3b_native_sweep/uncertainty/b08_wide/winners.json": "5828b7e809aa872078d9ad6e143f037b5ba9b2f3ccda4605461ff148a6ff21df",
+        "runs/q3b_native_sweep/uncertainty/b08_wide/epochs/epoch_007_valid.npz": "19931aadd38d91f0903f5d36f5dba0266256569abaca3a43544b4f4f929d360e"
+      },
+      "validation_recalculation_max_delta": 0.0
+    },
+    "b09_wide": {
+      "checkpoint_sha256": "ef3858baad1a2bc12d20ee781ab3b8b37f366847233fec1b926f3321726bfa86",
+      "provenance": {
+        "runs/q3b_native_sweep/uncertainty/b09_wide/config.json": "e6a9bbab3499108d340c5e06905334931cfd11c816319d002fc830ec3bf9296c",
+        "runs/q3b_native_sweep/uncertainty/b09_wide/winners.json": "d4855682a23b0cd189f22bc401119497ad107f974262905072118dd713ec80ba",
+        "runs/q3b_native_sweep/uncertainty/b09_wide/epochs/epoch_008_valid.npz": "6f856f12e54c942a88c550bbe47869cde77f0f99883c0a62046f04181cd79116"
+      },
+      "validation_recalculation_max_delta": 0.0
+    },
+    "b10_wide": {
+      "checkpoint_sha256": "e30624553b81780985e1165bd8c27fcda62244ca72265c45a6372e4779387665",
+      "provenance": {
+        "runs/q3b_native_sweep/uncertainty/b10_wide/config.json": "23c61c63a0847ad1222eba837d3803892bc2005cb3ef3af2b84ed1ea30f206bc",
+        "runs/q3b_native_sweep/uncertainty/b10_wide/winners.json": "4e7f185448e98db2986e383a1ccaa8de12fa897dee64188a3e93bc099f9904e4",
+        "runs/q3b_native_sweep/uncertainty/b10_wide/epochs/epoch_006_valid.npz": "30e4a4445b1200f24963941d9d71bcc27c3a193e6e6492c7f43ac6498ac083ed"
+      },
+      "validation_recalculation_max_delta": 2.220446049250313e-16
+    },
+    "b11_wide": {
+      "checkpoint_sha256": "5aa4ed12007ff78e3dc26882e9e232b417ad4568986d28ef7957f7f0932fd6fc",
+      "provenance": {
+        "runs/q3b_native_sweep/uncertainty/b11_wide/config.json": "f0ecde8205717c36375404f56fb99351018cffe2e9311235e61fe6a5911dc286",
+        "runs/q3b_native_sweep/uncertainty/b11_wide/winners.json": "23e6f8f20274cdb6204fde04427b726b5cb845c8ac5a2992275a9ab64885bf9f",
+        "runs/q3b_native_sweep/uncertainty/b11_wide/epochs/epoch_008_valid.npz": "176c64409fdf2373df8bbcd864813c7ed55303c67f2bcf41e3b5383759949c71"
+      },
+      "validation_recalculation_max_delta": 1.1102230246251565e-16
+    },
+    "b12_wide": {
+      "checkpoint_sha256": "cb8aeae6407847948e253f4eee9c3a4cf7cb6c6c855ac190a327f991ef2287de",
+      "provenance": {
+        "runs/q3b_native_sweep/uncertainty/b12_wide/config.json": "542bf7a159e2a2d6b5d69591ea42ea49614f5c01a5407f1e81983ee8c23ef541",
+        "runs/q3b_native_sweep/uncertainty/b12_wide/winners.json": "24c9180d610d72ec1ec742e7a1ad93b34ffd9ed956ef720db89bc990085a2dc1",
+        "runs/q3b_native_sweep/uncertainty/b12_wide/epochs/epoch_005_valid.npz": "d9fbf964d146af8d14eaa4408cbaee2426c8735ae9d5471cd06ebe34acce7b25"
+      },
+      "validation_recalculation_max_delta": 0.0
+    },
+    "b13_wide": {
+      "checkpoint_sha256": "8cfa5de286f74f058c79df2906339f0cedaae3bc1a6df7a8d9939b9d63ef5101",
+      "provenance": {
+        "runs/q3b_native_sweep/uncertainty/b13_wide/config.json": "3a124dacc79d2e39dd28f313ef2a86fb48731deba3fb51185fd5f748676e39ad",
+        "runs/q3b_native_sweep/uncertainty/b13_wide/winners.json": "e8ede183c82a9a44a289b045aeffd8a44d9402c24074a2352074256f9aaf972d",
+        "runs/q3b_native_sweep/uncertainty/b13_wide/epochs/epoch_005_valid.npz": "3104907e101c8ec23c1d49e06db51276cfc737fe64f20295a4cff1e5c827c94f"
+      },
+      "validation_recalculation_max_delta": 1.1102230246251565e-16
+    },
+    "b14_wide": {
+      "checkpoint_sha256": "6bade785332fa46d1b0c0a058bcc1e6bf6bbbd79ca34aecac4947e92a60d368a",
+      "provenance": {
+        "runs/q3b_native_sweep/uncertainty/b14_wide/config.json": "e9d1815f1dd91989e0d00dbdc1f92ee746636db9253dc67438ee7d32a02e1b49",
+        "runs/q3b_native_sweep/uncertainty/b14_wide/winners.json": "dbd15fd9da6075ff893dda1e9969f584faa46d722e100dab9bf3925b5a9795c9",
+        "runs/q3b_native_sweep/uncertainty/b14_wide/epochs/epoch_005_valid.npz": "faa2c1e4e383d4929b97c18f984a5f1293710b2edccb7470314f16e5b0575d6f"
+      },
+      "validation_recalculation_max_delta": 0.0
+    },
+    "b15_wide": {
+      "checkpoint_sha256": "f250c4ecb08eff4586caca5d94363325bf0cfffd5a404ad0bcc930314eae0573",
+      "provenance": {
+        "runs/q3b_native_sweep/uncertainty/b15_wide/config.json": "f25468cf7dd3c17cf48a9969667407e7a022becaafae30b977051472cb6ee0e4",
+        "runs/q3b_native_sweep/uncertainty/b15_wide/winners.json": "6788ae2ecff867bb73218e01ae27dac3a88f144bbe5329dffc62b0f5e559987b",
+        "runs/q3b_native_sweep/uncertainty/b15_wide/epochs/epoch_003_valid.npz": "bff6cca6fad2a0ac642582a87eecfbfbe61b22ca8a7175cc6d56130e2dc40863"
+      },
+      "validation_recalculation_max_delta": 0.0
+    },
+    "b16_wide": {
+      "checkpoint_sha256": "a60d98ec871745ab40b89856f7fcc836794c9bbfcbd4e1c752510cd3180c4270",
+      "provenance": {
+        "runs/q3b_native_sweep/uncertainty/b16_wide/config.json": "ab5894b79ef17b1cdf4d202111cee47b15c8357de0624021818a0aa61a88f65c",
+        "runs/q3b_native_sweep/uncertainty/b16_wide/winners.json": "b52138653ab05ddc64f4a8426d9576a968c430d97bdab86a7c709e65afecaccf",
+        "runs/q3b_native_sweep/uncertainty/b16_wide/epochs/epoch_002_valid.npz": "073a2577e30d75a9d9c59bdc3f60332a6ed8e1130ed64fbd0371dd53f7adbb20"
+      },
+      "validation_recalculation_max_delta": 1.1102230246251565e-16
+    },
+    "b17_wide": {
+      "checkpoint_sha256": "e1e6b83e1784319dcd37a5ac5563554186454cf6d3fbb64c14bf6179f227808f",
+      "provenance": {
+        "runs/q3b_native_sweep/uncertainty/b17_wide/config.json": "2bcdfc9a5f48584856ac3ebeadecfd54e787f9bff309c2e61a768866207b69a2",
+        "runs/q3b_native_sweep/uncertainty/b17_wide/winners.json": "0089f40c223de3a6716756ddc69882c41f2b726ccc6f3cb39b540d9abf45d560",
+        "runs/q3b_native_sweep/uncertainty/b17_wide/epochs/epoch_003_valid.npz": "c369d8a6b8407f6af785a4c588386d1dff6aee6046d70e50103d671826d38b70"
+      },
+      "validation_recalculation_max_delta": 0.0
+    },
+    "r00_macro_f1": {
+      "checkpoint_sha256": "a27a9b05d0357436186360489af2718eefd04c5157b05aff68653e273a438b78",
+      "provenance": {
+        "runs/q3b_native_sweep/uncertainty/r00_macro_f1/config.json": "a41d9e1fb6ec0072348ba9514f2b353844dc49425b4f19fa0d5bedcac29f0497",
+        "runs/q3b_native_sweep/uncertainty/r00_macro_f1/winners.json": "e97e35eb33769bf28d3329398744275b0f57c58c4979e25a0a44b7172637e4ea",
+        "runs/q3b_native_sweep/uncertainty/r00_macro_f1/epochs/epoch_002_valid.npz": "ed558f8d4319999a798336b549de788b07d0bb77dfd35e71f05720a198e6a5d9"
+      },
+      "validation_recalculation_max_delta": 0.0
+    },
+    "r01_macro_f1": {
+      "checkpoint_sha256": "6f91968014f981cf45f444255f719087463a280c774767d90fd151bb00a9221f",
+      "provenance": {
+        "runs/q3b_native_sweep/uncertainty/r01_macro_f1/config.json": "06c4e04c65338ab4c83e6111344f0f14b4362b9d429146ad06e66371f481ecb9",
+        "runs/q3b_native_sweep/uncertainty/r01_macro_f1/winners.json": "ca3608f402c9078f52194f0784dd7a6c119a5b81658d19c79711c4681cbf46dc",
+        "runs/q3b_native_sweep/uncertainty/r01_macro_f1/epochs/epoch_014_valid.npz": "b13c8dd266d9cbdf9f92769da1726a708f1ba7d748275c4ca1e563c9455551f6"
+      },
+      "validation_recalculation_max_delta": 0.0
+    },
+    "r02_mae": {
+      "checkpoint_sha256": "bed3e73a04163e331a4e2c43b7e130840ff170faf5e75b5f203123ceb209b49c",
+      "provenance": {
+        "runs/q3b_native_sweep/uncertainty/r02_mae/config.json": "d26b675a2d9523c8c4cb1a073bb7bd7e6287a9e5a25365fe810b5bd3838042d8",
+        "runs/q3b_native_sweep/uncertainty/r02_mae/winners.json": "008522e568f0d2701d138b8b42c135abed1c9389cf9d88e12efbea6202f44d7b",
+        "runs/q3b_native_sweep/uncertainty/r02_mae/epochs/epoch_005_valid.npz": "96b2c03c8d2bd73594f19ce242928b21996b7af54d83c189b83cfdad8c713239"
+      },
+      "validation_recalculation_max_delta": 0.0
+    },
+    "r03_mae": {
+      "checkpoint_sha256": "553b00c31358210b191d22dbd8a0ec6c00dc7bb6c8a264afd761ac3e58d909a7",
+      "provenance": {
+        "runs/q3b_native_sweep/uncertainty/r03_mae/config.json": "39f844e85e788b6c95dc1f355c9346f54008c8be118e29bb6c26b360d2bf3e04",
+        "runs/q3b_native_sweep/uncertainty/r03_mae/winners.json": "1d7cf2eb26f3ceafa09ba477eb61a6470b2f67948d3f1ca78630e5d5d451dd63",
+        "runs/q3b_native_sweep/uncertainty/r03_mae/epochs/epoch_004_valid.npz": "f3350dbf0f56342017086967890e7545662c2b92c5e52ea49e47ce586102adb7"
+      },
+      "validation_recalculation_max_delta": 0.0
+    }
+  }
+}
