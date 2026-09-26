@@ -55,10 +55,10 @@ if ($Round5Root) {
     }
 }
 if (Test-Path -LiteralPath (Join-Path $source 'round5/reports')) {
-    Copy-Tree 'round5/reports' 'round5/reports' @('.md','.json','.tex')
+    Copy-Tree 'round5/reports' 'round5/reports' @('.docx','.md','.json','.tex')
     Copy-Tree 'round5/figures' 'round5/figures' @('.png','.svg','.pdf','.json')
     foreach ($relative in @(
-        'audit/poststudy_checks.json','audit/interruption_closure.json',
+        'audit/poststudy_checks.json','audit/interruption_closure.json','audit/document_qa.json',
         'recovery_evidence/recovery_verification_complete.json',
         'recovery_evidence/serialization_roundtrips.json','recovery_evidence/tests.log',
         'analysis/internal_folds.csv','analysis/decision_table.csv','study/protocol.json'
@@ -68,6 +68,11 @@ if (Test-Path -LiteralPath (Join-Path $source 'round5/reports')) {
         } else { 'evidence/'+[IO.Path]::GetFileName($relative) }
         Copy-Verified (Join-Path $source "round5/$relative") (Join-Path $target "round5/$folder") "round5/$relative"
     }
+}
+if (Test-Path -LiteralPath (Join-Path $source 'round6/reports')) {
+    Copy-Tree 'round6/reports' 'round6/reports' @('.md')
+    Copy-Tree 'round6/study' 'round6/study' @('.json')
+    Copy-Tree 'round6/audit' 'round6/audit' @('.json')
 }
 
 # A byte-identical copy retains the prior rendered-document QA, not a new QA claim.
@@ -80,6 +85,16 @@ foreach ($entry in @(@('round3',$r3qa), @('round4',$r4qa))) {
         $key = if ($extension -eq 'docx') { 'docx_sha256' } else { 'markdown_sha256' }
         if ((Get-FileHash -LiteralPath $file[0].FullName).Hash.ToLowerInvariant() -ne $entry[1].$key) {
             throw "Previously reviewed document hash mismatch: $($file[0].FullName)"
+        }
+    }
+}
+if (Test-Path -LiteralPath (Join-Path $target 'round5/evidence/document_qa.json')) {
+    $qa5 = Get-Content -LiteralPath (Join-Path $target 'round5/evidence/document_qa.json') -Raw | ConvertFrom-Json
+    foreach ($extension in @('docx','md')) {
+        $file = @(Get-ChildItem -LiteralPath (Join-Path $target 'round5/reports') -Filter "*.$extension")
+        $key = if ($extension -eq 'docx') { 'docx_sha256' } else { 'markdown_sha256' }
+        if ($file.Count -ne 1 -or (Get-FileHash -LiteralPath $file[0].FullName).Hash.ToLowerInvariant() -ne $qa5.$key) {
+            throw 'Round-five reviewed document hash mismatch'
         }
     }
 }
@@ -118,7 +133,7 @@ $summaryPath = Join-Path $target 'iteration_metrics.json'
 $manifestPath = Join-Path $target 'sync_manifest.json'
 [IO.File]::WriteAllText($manifestPath, ([ordered]@{
     synchronized_utc=[DateTime]::UtcNow.ToString('o'); files=@($manifest.ToArray())
-    prior_document_qa_hashes_verified=@('round3','round4')
+    prior_document_qa_hashes_verified=@('round3','round4','round5')
     note='Documents and figures copied without edits. Historical first/second rounds are not the current model. No raw PKL data, weights, or full prediction archives included.'
 } | ConvertTo-Json -Depth 6)+"`n", [Text.UTF8Encoding]::new($false))
 Write-Output "Verified $($manifest.Count) copied files; recomputed three-seed comparison."

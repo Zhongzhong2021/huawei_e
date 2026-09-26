@@ -1,0 +1,30 @@
+{
+  "verified_utc": "2026-09-26T03:45:47.741386+00:00",
+  "docx_sha256": "ebe594d1c7195ff01791ba5dc8b254d854649a3c2126e9eb3a56de53b3551001",
+  "markdown_sha256": "b8fa5e9df6d0b2b63015eff30485af158013a808836c3bc0f53281950e8bdad3",
+  "structured_content_sha256": "4c6ec63a6689551d06d8e511c1570a48d7ea0a3ac18c6d53702ef0c33fb31159",
+  "pages": 5,
+  "visually_reviewed_pages": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "native_equations": 3,
+  "tables": 3,
+  "figures": 2,
+  "layout": "A4 Chinese academic black headings and three-line tables",
+  "table_cells_match_structured_source": true,
+  "paragraphs_match_structured_source": true,
+  "editable_equations_and_captions_visually_checked": true,
+  "render_method": "Canonical render_docx.py failed: bundled soffice.exe unavailable; hidden read-only Word COM PDF export and bundled Poppler rasterization used",
+  "render_pdf_sha256": "20aa02daa9f2a84ec4df228d4bee8aac9abe8487e28813ff4cdc2cdc862a8cd6",
+  "page_png_sha256": {
+    "page-1.png": "4264be83e6f2153d6b920d7cc366d1743ca5ad101fcc9b62f71f72735263fe87",
+    "page-2.png": "3f2b611bc233b4d57931db2c928f2bd9d616ba11c7cdfd080222852331cf4173",
+    "page-3.png": "054f2c85c3e4656eb490832e18f7e93cfc1cc9b5aab6e275be112b9dd81555fa",
+    "page-4.png": "07762e6fc7073c86605ff55a3fef3ed0e1738b2a28c5c29d8f07bbd2e345917a",
+    "page-5.png": "d74e8b64af5513b729591555736bf5198f194a057fec3266fbc65cd9220024ba"
+  }
+}

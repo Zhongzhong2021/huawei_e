@@ -1,5 +1,5 @@
 {
-  "synchronized_utc": "2026-09-25T16:27:20.2838868Z",
+  "synchronized_utc": "2026-09-26T03:47:20.0785061Z",
   "files": [
     {
       "path": "round1/reports/E题问题2解决方案与实验报告.docx",
@@ -440,6 +440,12 @@
       "bytes": 925
     },
     {
+      "path": "round5/reports/E题问题2第五轮延后加权实验与论文补充.docx",
+      "source": "round5/reports/E题问题2第五轮延后加权实验与论文补充.docx",
+      "sha256": "ebe594d1c7195ff01791ba5dc8b254d854649a3c2126e9eb3a56de53b3551001",
+      "bytes": 543876
+    },
+    {
       "path": "round5/reports/E题问题2第五轮延后加权实验与论文补充.md",
       "source": "round5/reports/E题问题2第五轮延后加权实验与论文补充.md",
       "sha256": "b8fa5e9df6d0b2b63015eff30485af158013a808836c3bc0f53281950e8bdad3",
@@ -512,6 +518,12 @@
       "bytes": 1452
     },
     {
+      "path": "round5/evidence/document_qa.json",
+      "source": "round5/audit/document_qa.json",
+      "sha256": "5c2bb81c311ea499f6b6066395f49f39caa3a37c4f2f08e3d744f3933d339114",
+      "bytes": 1435
+    },
+    {
       "path": "round5/evidence/recovery_verification_complete.json",
       "source": "round5/recovery_evidence/recovery_verification_complete.json",
       "sha256": "f59c7d64de2b3dd1473a8a813f2731c5d277a4f0faa60d7272ac2c61ce4f2830",
@@ -546,11 +558,78 @@
       "source": "round5/study/protocol.json",
       "sha256": "aac4226ae3fbb5d23cacd4c494bfa0989d6c4827758226611325c56b6a98c1ef",
       "bytes": 2784
+    },
+    {
+      "path": "round6/reports/E题问题2第六轮固定概率融合实验说明.md",
+      "source": "round6/reports/E题问题2第六轮固定概率融合实验说明.md",
+      "sha256": "59640a117228ff3e0b9670322d80cfe723e4fe0edf9af3598b7a61ae878ffdb6",
+      "bytes": 5143
+    },
+    {
+      "path": "round6/study/confirmation_progress.json",
+      "source": "round6/study/confirmation_progress.json",
+      "sha256": "0c85820fcec040f03700c98970374513cbd5f49b866d20d8111796803d3e9b42",
+      "bytes": 44587
+    },
+    {
+      "path": "round6/study/confirmed.json",
+      "source": "round6/study/confirmed.json",
+      "sha256": "70458d34454d3dccd017ae61027020d814d010082c52df0f2903148599c13b96",
+      "bytes": 67315
+    },
+    {
+      "path": "round6/study/development.json",
+      "source": "round6/study/development.json",
+      "sha256": "6e54b24580d834651f016fd8820a13e2647c2e5adee5fb44578cf689c2aa5c02",
+      "bytes": 68202
+    },
+    {
+      "path": "round6/study/internal_selection.json",
+      "source": "round6/study/internal_selection.json",
+      "sha256": "8ea0e680951220b68192e6a5a3a5c09cc262fd843fd50cae7c9903826a64d7ef",
+      "bytes": 22106
+    },
+    {
+      "path": "round6/study/protocol.json",
+      "source": "round6/study/protocol.json",
+      "sha256": "5253c44dbe82caec9a01c605d19cfb82ac0bcd6b6edeffd42581a72399b0849c",
+      "bytes": 1814
+    },
+    {
+      "path": "round6/study/started.json",
+      "source": "round6/study/started.json",
+      "sha256": "b49a1d66907fb0c9c79fae3030b7351a4f47e132333653fcbc6de873a6ebea88",
+      "bytes": 144
+    },
+    {
+      "path": "round6/study/terminal.json",
+      "source": "round6/study/terminal.json",
+      "sha256": "da646faa9b13f9375c8b52370b1040119c0790e4472b1be8d024ed50333125dd",
+      "bytes": 203
+    },
+    {
+      "path": "round6/audit/implementation.json",
+      "source": "round6/audit/implementation.json",
+      "sha256": "d4d5e33698d3f3a0510f486d2d3a08d523713b910eca53afee4596609bea38e7",
+      "bytes": 178
+    },
+    {
+      "path": "round6/audit/poststudy_checks.json",
+      "source": "round6/audit/poststudy_checks.json",
+      "sha256": "8a6211fe095efe94a781c5256f4611a6205ae97b3d7bb6b54ad27ca755f76692",
+      "bytes": 37411
+    },
+    {
+      "path": "round6/audit/prediction_sources.json",
+      "source": "round6/audit/prediction_sources.json",
+      "sha256": "1bbe2a80e2dea650a0322dac3c57564307a5e2df4977db824748c9024cd05759",
+      "bytes": 19762
     }
   ],
   "prior_document_qa_hashes_verified": [
     "round3",
-    "round4"
+    "round4",
+    "round5"
   ],
   "note": "Documents and figures copied without edits. Historical first/second rounds are not the current model. No raw PKL data, weights, or full prediction archives included."
 }
