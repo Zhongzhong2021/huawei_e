@@ -1,11 +1,11 @@
 % Generated from Paper/manuscript; edit Markdown source.
 \section{问题一：三模态特征与多粒度时序对应}
-\hypertarget{q1-ux5efaux6a21ux76eeux6807ux4e0eux6570ux636eux7ea6ux675f}{%
-\subsection{建模目标与数据约束}\label{q1-ux5efaux6a21ux76eeux6807ux4e0eux6570ux636eux7ea6ux675f}}
+\hypertarget{q1-ux95eeux9898ux5206ux6790ux4e0eux5904ux7406ux539fux5219}{%
+\subsection{问题分析与处理原则}\label{q1-ux95eeux9898ux5206ux6790ux4e0eux5904ux7406ux539fux5219}}
 
 对附件提供的100条视频，令样本标识为\(s=(video\_id,clip\_id)\)，原文为\(R_s\)，情感标注为\(y_s\)。我们建立文本、语音和视觉特征序列及其跨模态关系，保留全部样本、原文和标签。情感标签作为原始样本信息保存，模型采用固定预训练工具与统一参数，全部实验基于赛题附件。
 
-本模型分别记录素材的时间支持、特征维度的有效性及文本与语音的内容对应。输出由原生变长特征、物理时间索引和带状态的文本时间候选组成，各层通过样本编号与位置记录关联。
+本问的难点是：各模态长度不同，文本与音轨未必完整对应，且局部特征可能无定义。我们将处理分为特征提取、词与词组时间候选、跨模态聚合三步。先保留原生观测，再判断哪些文字能够定位，避免为了形成整齐矩阵而强行建立对应。
 
 \hypertarget{q1-ux9644ux4ef6ux81eaux8eabux7684ux8f93ux5165ux6838ux9a8c}{%
 \subsubsection{附件自身的输入核验}\label{q1-ux9644ux4ef6ux81eaux8eabux7684ux8f93ux5165ux6838ux9a8c}}
@@ -93,17 +93,17 @@
 
 表中情形采用统一处理规则。未确定状态包含数据对应问题和模型识别能力不足，具体原因按匹配证据及信号状态记录。
 
+\hypertarget{q1-ux6570ux636eux9884ux5904ux7406ux4e0eux7279ux5f81ux63d0ux53d6}{%
+\subsection{数据预处理与特征提取}\label{q1-ux6570ux636eux9884ux5904ux7406ux4e0eux7279ux5f81ux63d0ux53d6}}
+
 \hypertarget{q1-ux539fux59cbux65f6ux949fux4e0eux5904ux7406ux6d41ux7a0b}{%
-\subsection{原始时钟与处理流程}\label{q1-ux539fux59cbux65f6ux949fux4e0eux5904ux7406ux6d41ux7a0b}}
+\subsubsection{原始时钟与处理流程}\label{q1-ux539fux59cbux65f6ux949fux4e0eux5904ux7406ux6d41ux7a0b}}
 
 逐条读取原视频、文本和标签，检查编号唯一性与SHA256摘要。使用FFprobe取得音视频解码帧的PTS、time\_base与长度；声音另核对FFmpeg实际输出的PCM样本数。源音频采样率为\(f_s\)、起点为\(t_0\)时，采样点\(j\)的时间为\(t_0+j/f_s\)。视频第\(i\)帧的显示支持为\([p_i,p_i+d_i)\)，物理支持集合为这些区间的并集。有效观测时长按解码后的实际支持计算。
 
 模型用音频在声道均值后重采样为16kHz；原采样率、声道数、样本数及起点保留。两条全零音轨仍输出完整记录和特征存储结构，但语音可用性为false，不运行文字强制对齐。源文件未修改。流程为：原始清单与时钟审计→原生三模态特征→文字时间候选与选择性筛选→物理支持下的跨模态聚合→全量核验与汇总。
 
 容器声明时长与实际解码支持可能不同。例如一条视频声明7.475秒，实际PCM约2.820秒、画面支持约2.870秒，时间关系按后两项建立。
-
-\hypertarget{q1-ux4e09ux6a21ux6001ux7279ux5f81ux5b9aux4e49}{%
-\subsection{三模态特征定义}\label{q1-ux4e09ux6a21ux6001ux7279ux5f81ux5b9aux4e49}}
 
 \hypertarget{q1-ux6587ux672c}{%
 \subsubsection{文本}\label{q1-ux6587ux672c}}
@@ -199,8 +199,8 @@ MFCC、能量、ZCR、基频与周期性\strut
 
 这组特征兼顾上下文信息、可解释声学量和面部动作线索。画面以约5帧/秒采样，面向片段级视觉变化。评价围绕特征定义与计算、实际可用性、时间对应和复现一致性展开，分别给出全量统计、受控实验及真实样本展示。
 
-\hypertarget{q1-ux6587ux672cux65f6ux95f4ux5019ux9009ux4e0eux4e0dux786eux5b9aux6027}{%
-\subsection{文本时间候选与不确定性}\label{q1-ux6587ux672cux65f6ux95f4ux5019ux9009ux4e0eux4e0dux786eux5b9aux6027}}
+\hypertarget{q1-ux591aux7c92ux5ea6ux65f6ux5e8fux5bf9ux5e94ux6a21ux578bux7684ux5efaux7acb}{%
+\subsection{多粒度时序对应模型的建立}\label{q1-ux591aux7c92ux5ea6ux65f6ux5e8fux5bf9ux5e94ux6a21ux578bux7684ux5efaux7acb}}
 
 \hypertarget{q1-ux57faux7840ux9009ux62e9ux6027ux5bf9ux5e94}{%
 \subsubsection{基础选择性对应}\label{q1-ux57faux7840ux9009ux62e9ux6027ux5bf9ux5e94}}
@@ -257,8 +257,8 @@ MFCC、能量、ZCR、基频与周期性\strut
 
 先完成词级决策，再选择词组，可以在单词定位因邻接冲突而被拒绝时保留其合格的组级证据；双重顺序约束则避免多个重叠词组重复描述同一片段。
 
-\hypertarget{q1-ux8de8ux6a21ux6001ux652fux6301ux7ea6ux675fux4e0eux9010ux7ef4ux805aux5408}{%
-\subsection{跨模态支持约束与逐维聚合}\label{q1-ux8de8ux6a21ux6001ux652fux6301ux7ea6ux675fux4e0eux9010ux7ef4ux805aux5408}}
+\hypertarget{q1-ux8de8ux6a21ux6001ux65f6ux95f4ux652fux6301ux4e0eux9010ux7ef4ux805aux5408}{%
+\subsubsection{跨模态时间支持与逐维聚合}\label{q1-ux8de8ux6a21ux6001ux65f6ux95f4ux652fux6301ux4e0eux9010ux7ef4ux805aux5408}}
 
 目标区间为\(I\)、特征行代表单元为\(J_i\)、真实素材支持集合为\(S\)，定义交叠权重
 
@@ -266,7 +266,7 @@ MFCC、能量、ZCR、基频与周期性\strut
 
 画面代表单元采用相邻采样帧PTS的中点分割；在单元内使用邻近采样画面，是明确的离散近似。视频空缺不产生观测，重叠源帧以并集计时。文本候选区间和纯物理查询都可使用该算子，但后者不自动建立文本对应。
 
-音频同样与原始PCM的实际支持相交，不能把重采样后按整数样本数构成的末端直接当作原素材末端。本批99条的重采样单元存在不足一个16kHz采样间隔的末端超出，最大约61.08微秒；精确裁切使97条物理索引合计减少约2.86毫秒的虚增观测。原生特征、文字候选及其决策均不变。该修正统一了聚合区间与原始素材的时间定义。
+音频聚合区间与原始PCM的实际支持相交，以消除重采样取整造成的末端超出。该裁切只修正物理索引，不改变原生特征及文字候选。
 
 对第\(d\)维有效掩码\(m_{id}\)和模态可用标记\(u\)，定义
 
@@ -274,8 +274,71 @@ MFCC、能量、ZCR、基频与周期性\strut
 
 分母为0时返回零及false掩码。每维独立分母避免缺失音高被填零后稀释。另输出\(\sum_iw_i(I)/|I|\)作为物理覆盖比例。人脸按独立事件列表返回。
 
-\hypertarget{q1-ux6587ux4ef6ux7ec4ux7ec7ux4e0eux5168ux91cfux7ed3ux679c}{%
-\subsection{文件组织与全量结果}\label{q1-ux6587ux4ef6ux7ec4ux7ec7ux4e0eux5168ux91cfux7ed3ux679c}}
+\hypertarget{q1-ux6a21ux578bux6c42ux89e3ux4e0eux7ed3ux679cux7ec4ux7ec7}{%
+\subsection{模型求解与结果组织}\label{q1-ux6a21ux578bux6c42ux89e3ux4e0eux7ed3ux679cux7ec4ux7ec7}}
+
+模型按``提取特征---筛选词级候选---选择词组---聚合跨模态观测''的顺序求解。固定工具和参数如下，随后说明文件组织与读取方法。
+
+\hypertarget{q1-ux53c2ux6570ux914dux7f6eux4e0eux6c42ux89e3ux6d41ux7a0b}{%
+\subsubsection{参数配置与求解流程}\label{q1-ux53c2ux6570ux914dux7f6eux4e0eux6c42ux89e3ux6d41ux7a0b}}
+
+\begin{PaperTable}{2}
+
+\begin{longtable}[]{@{}ll@{}}
+\caption{参数配置与求解流程}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.17\columnwidth}\raggedright
+环节\strut
+\end{minipage} & \begin{minipage}[b]{0.77\columnwidth}\raggedright
+工具及固定配置\strut
+\end{minipage}\tabularnewline
+\midrule
+\endfirsthead
+\caption[]{参数配置与求解流程（续）}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.17\columnwidth}\raggedright
+环节\strut
+\end{minipage} & \begin{minipage}[b]{0.77\columnwidth}\raggedright
+工具及固定配置\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.17\columnwidth}\raggedright
+基础环境\strut
+\end{minipage} & \begin{minipage}[t]{0.77\columnwidth}\raggedright
+Python 3.10；FFmpeg/FFprobe 4.4.2；PyTorch/torchaudio 2.6.0 CPU；torchvision 0.21.0；transformers 4.48.3；MediaPipe 0.10.21\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.17\columnwidth}\raggedright
+基础推理\strut
+\end{minipage} & \begin{minipage}[t]{0.77\columnwidth}\raggedright
+\texttt{distilbe\allowbreak{}rt-\allowbreak{}base-\allowbreak{}uncased}；\texttt{facebook\allowbreak{}/\allowbreak{}wav2vec2\allowbreak{}-\allowbreak{}base-\allowbreak{}960h}；ResNet18 ImageNet1K\_V1；线程2、种子0、推理模式\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.17\columnwidth}\raggedright
+独立识别\strut
+\end{minipage} & \begin{minipage}[t]{0.77\columnwidth}\raggedright
+faster-whisper 1.2.1；CTranslate2 4.8.2；large-v3；RTX 4060、int8\_float16；英语、beam 5、temperature 0、关闭前文条件与VAD\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.17\columnwidth}\raggedright
+音素对齐\strut
+\end{minipage} & \begin{minipage}[t]{0.77\columnwidth}\raggedright
+MFA 3.3.9；english\_mfa v3.0.0声学模型与词典；english\_us\_mfa v3.0.0 G2P；16kHz、beam 10、retry 40、dither 0、关闭说话者适配\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.17\columnwidth}\raggedright
+局部边界\strut
+\end{minipage} & \begin{minipage}[t]{0.77\columnwidth}\raggedright
+上下文扩展0.5秒及1秒；两种上下文与独立识别的端点一致性门槛0.2秒；词组长度2---8词\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\end{PaperTable}
+
+运行 \texttt{scripts/\allowbreak{}rebuild\_\allowbreak{}core.py}，传入原始附件目录、固定模型缓存和新输出目录，依次生成素材清单、原生特征、基础关系及物理索引。再由 \texttt{scripts/\allowbreak{}rebuild\_\allowbreak{}multigra\allowbreak{}nular.py} 从原始音轨重做独立识别、裁剪与音素对齐，生成最终词级及词组级关系。模型来源、固定版本与摘要由模型清单记录；NPZ保存数值，JSON保存位置与状态。
+
+同一系统和硬件上，在新安装的Python环境中重建全部100条，1900个原生数组和1200个物理索引数组的类型、形状、数值一致。增强分支在新目录重复生成100条识别输出、236个对齐任务及最终关系，结果一致。该实验验证固定环境、权重和参数下的计算复现。
+
+\hypertarget{q1-ux7ed3ux679cux5b58ux50a8ux4e0eux8bfbux53d6}{%
+\subsubsection{结果存储与读取}\label{q1-ux7ed3ux679cux5b58ux50a8ux4e0eux8bfbux53d6}}
 
 每条样本以NPZ保存原生矩阵与掩码，以JSON保存身份、原文、字符映射、源摘要及处理信息。标准化处理包括固定采样率、模型规定的输入预处理，以及统一的特征、时间和掩码组织；声学量按特征定义的量纲保存。文本768维、声学17维、画面512维、人脸52维；序列变长存储。批处理时按模态右补零，统一返回真实长度、序列掩码、逐维掩码和样本可用性。对样本\(s\)、行\(i\)、维度\(d\)，实际使用掩码为\(B_{sid}=\mathbf1(i<L_s)m_{sid}u_s\)，其中\(u_s\)为该模态的样本级可用标记。\texttt{Dataset.batch(ids, modality\allowbreak{})}自动将不可用位置置零并返回这些掩码：全零音轨仍保留真实长度和序列位置，但所有声学维度的使用掩码为false；正常输入的数值零不会被判为缺失。此操作只构造批量视图，不改变原生特征文件。
 
@@ -283,8 +346,10 @@ MFCC、能量、ZCR、基频与周期性\strut
 
 使用\texttt{multigra\allowbreak{}nular\_\allowbreak{}reader.Dataset(root).sample(sid)}读取结果；\texttt{sample.word(i)}、\texttt{sample.phrase(k)}和\texttt{sample.window(a,b)}分别查询原词、词组及物理时间区间，\texttt{Dataset.batch(ids, modality\allowbreak{})}构造掩码批量。读取器核对来源并复算关系决策。正文全量表逐条给出有效时长、序列形状和对应粒度。
 
-\hypertarget{q1-ux5b9eux9a8cux7ed3ux679cux4e0eux8befux5deeux6765ux6e90}{%
-\subsection{实验结果与误差来源}\label{q1-ux5b9eux9a8cux7ed3ux679cux4e0eux8befux5deeux6765ux6e90}}
+\hypertarget{q1-ux7ed3ux679cux68c0ux9a8cux4e0eux5206ux6790}{%
+\subsection{结果检验与分析}\label{q1-ux7ed3ux679cux68c0ux9a8cux4e0eux5206ux6790}}
+
+结果检验围绕四个问题展开：新增覆盖来自何处，词组约束是否有效，算法在受控变化下是否稳定，以及真实样本如何对应。候选覆盖、稳定性与定位准确性分别讨论。
 
 \hypertarget{q1-ux8fdeux7eedux8bedux97f3ux4e0eux591aux7c92ux5ea6ux589eux5f3aux7ed3ux679c}{%
 \subsubsection{连续语音与多粒度增强结果}\label{q1-ux8fdeux7eedux8bedux97f3ux4e0eux591aux7c92ux5ea6ux589eux5f3aux7ed3ux679c}}
@@ -627,7 +692,7 @@ MFCC、能量、ZCR、基频与周期性\strut
 
 典型样本按固定规则选择：在基础策略全部词均有候选的样本中，取源文件SHA256字典序最小的一条。该选择只读取自动结果和源摘要。样本为\texttt{-\allowbreak{}UacrmKiT\allowbreak{}n4\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}10}，原文为``Because, if they are not in any way held accountable for reading the material they won't do it.''。18个原词候选的外包范围为0.522--6.662秒，包含词间停顿。
 
-图中展示18×768文本特征、307×17声学行、31×512画面行及原始视频帧。缺失维度显示为灰色，显示缩放保留原始特征数值。
+图中仅展示0.522--6.662秒候选范围内的18×768文本特征、307×17声学行和31×512画面行。完整样本包含361个声学行和38个画面行，全量表按完整样本统计。灰色表示无定义维度，图中缩放只用于显示。
 
 \begin{figure}
 \centering
@@ -635,77 +700,17 @@ MFCC、能量、ZCR、基频与周期性\strut
 \caption{自动选择样本的真实三模态实例}
 \end{figure}
 
-原帧编号为19、108、199，PTS分别为0.633、3.600、6.633秒。音频区间按候选词界组织，画面按实际时间展示同期场景。物理支持运算排除约4.2088秒源视频空缺；对2759个有有效音高的节点，按逐维有效时长归一化，避免缺失音高填零对聚合值的稀释。
+原帧编号为19、108、199，PTS分别为0.633、3.600、6.633秒。图像用于展示候选范围内的同期场景。另对全量物理索引检查，支持区间运算排除了约4.2088秒源视频空缺；2759个有有效音高的节点采用逐维有效时长归一化，避免将无定义音高填零后压低平均值。
 
-物理支持运算排除了约4.2088秒源视频空缺；2759个有有效音高的节点中，按总时间平均填零音高会压低数值，逐维有效时长归一化避免该稀释。该实验验证物理支持与逐维归一化的实际作用。
-
-\hypertarget{q1-ux53c2ux6570ux914dux7f6eux4e0eux91cdux5efaux6d41ux7a0b}{%
-\subsection{参数配置与重建流程}\label{q1-ux53c2ux6570ux914dux7f6eux4e0eux91cdux5efaux6d41ux7a0b}}
-
-\begin{PaperTable}{2}
-
-\begin{longtable}[]{@{}ll@{}}
-\caption{参数配置与重建流程}\tabularnewline
-\toprule
-\begin{minipage}[b]{0.17\columnwidth}\raggedright
-环节\strut
-\end{minipage} & \begin{minipage}[b]{0.77\columnwidth}\raggedright
-工具及固定配置\strut
-\end{minipage}\tabularnewline
-\midrule
-\endfirsthead
-\caption[]{参数配置与重建流程（续）}\tabularnewline
-\toprule
-\begin{minipage}[b]{0.17\columnwidth}\raggedright
-环节\strut
-\end{minipage} & \begin{minipage}[b]{0.77\columnwidth}\raggedright
-工具及固定配置\strut
-\end{minipage}\tabularnewline
-\midrule
-\endhead
-\begin{minipage}[t]{0.17\columnwidth}\raggedright
-基础环境\strut
-\end{minipage} & \begin{minipage}[t]{0.77\columnwidth}\raggedright
-Python 3.10；FFmpeg/FFprobe 4.4.2；PyTorch/torchaudio 2.6.0 CPU；torchvision 0.21.0；transformers 4.48.3；MediaPipe 0.10.21\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.17\columnwidth}\raggedright
-基础推理\strut
-\end{minipage} & \begin{minipage}[t]{0.77\columnwidth}\raggedright
-\texttt{distilbe\allowbreak{}rt-\allowbreak{}base-\allowbreak{}uncased}；\texttt{facebook\allowbreak{}/\allowbreak{}wav2vec2\allowbreak{}-\allowbreak{}base-\allowbreak{}960h}；ResNet18 ImageNet1K\_V1；线程2、种子0、推理模式\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.17\columnwidth}\raggedright
-独立识别\strut
-\end{minipage} & \begin{minipage}[t]{0.77\columnwidth}\raggedright
-faster-whisper 1.2.1；CTranslate2 4.8.2；large-v3；RTX 4060、int8\_float16；英语、beam 5、temperature 0、关闭前文条件与VAD\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.17\columnwidth}\raggedright
-音素对齐\strut
-\end{minipage} & \begin{minipage}[t]{0.77\columnwidth}\raggedright
-MFA 3.3.9；english\_mfa v3.0.0声学模型与词典；english\_us\_mfa v3.0.0 G2P；16kHz、beam 10、retry 40、dither 0、关闭说话者适配\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.17\columnwidth}\raggedright
-局部边界\strut
-\end{minipage} & \begin{minipage}[t]{0.77\columnwidth}\raggedright
-上下文扩展0.5秒及1秒；两种上下文与独立识别的端点一致性门槛0.2秒；词组长度2---8词\strut
-\end{minipage}\tabularnewline
-\bottomrule
-\end{longtable}
-
-\end{PaperTable}
-
-运行 \texttt{scripts/\allowbreak{}rebuild\_\allowbreak{}core.py}，传入原始附件目录、固定模型缓存和新输出目录，依次生成素材清单、原生特征、基础关系及物理索引。再由 \texttt{scripts/\allowbreak{}rebuild\_\allowbreak{}multigra\allowbreak{}nular.py} 从原始音轨重做独立识别、裁剪与音素对齐，生成最终词级及词组级关系。模型来源、固定版本与摘要由模型清单记录；NPZ保存数值，JSON保存位置与状态。
-
-同一系统和硬件上，在新安装的Python环境中重建全部100条，1900个原生数组和1200个物理索引数组的类型、形状、数值一致。增强分支在新目录重复生成100条识别输出、236个对齐任务及最终关系，结果一致。该实验验证固定环境、权重和参数下的计算复现。
-
-\hypertarget{q1-ux5168ux90e8100ux6761ux7279ux5f81ux4e0eux65f6ux5e8fux7ed3ux679c}{%
-\subsection{全部100条特征与时序结果}\label{q1-ux5168ux90e8100ux6761ux7279ux5f81ux4e0eux65f6ux5e8fux7ed3ux679c}}
+\hypertarget{q1-ux5168ux90e8100ux6761ux6837ux672cux7684ux7279ux5f81ux4e0eux65f6ux5e8fux7ed3ux679c}{%
+\subsection{全部100条样本的特征与时序结果}\label{q1-ux5168ux90e8100ux6761ux6837ux672cux7684ux7279ux5f81ux4e0eux65f6ux5e8fux7ed3ux679c}}
 
 T、A、V、F依次表示文本、声音、画面、人脸事件，特征维度分别为768、17、512、52。表中列出各序列长度，乘相应维度即为完整矩阵形状。A/V时长为实际PCM与源帧支持并集的秒数，保留三位小数；文本按词和字符区间定位，人脸按所属帧定位。W/P/U分别为词级候选数、仅词组覆盖词数、完全未确定词数，逐行之和等于T长度。星号标记全零音轨，其物理时长保留而声音使用掩码为false；其他声音轨迹仍采用逐维掩码。
 
 \begin{PaperTable}{5}
 
 \begin{longtable}[]{@{}lrrll@{}}
-\caption{全部100条特征与时序结果}\tabularnewline
+\caption{全部100条样本的特征与时序结果}\tabularnewline
 \toprule
 \begin{minipage}[b]{0.29\columnwidth}\raggedright
 样本标识\strut
@@ -720,7 +725,7 @@ W/P/U\strut
 \end{minipage}\tabularnewline
 \midrule
 \endfirsthead
-\caption[]{全部100条特征与时序结果（续）}\tabularnewline
+\caption[]{全部100条样本的特征与时序结果（续）}\tabularnewline
 \toprule
 \begin{minipage}[b]{0.29\columnwidth}\raggedright
 样本标识\strut
@@ -1839,3 +1844,8 @@ W/P/U\strut
 \end{longtable}
 
 \end{PaperTable}
+
+\hypertarget{q1-ux672cux95eeux5c0fux7ed3}{%
+\subsection{本问小结}\label{q1-ux672cux95eeux5c0fux7ed3}}
+
+本问为全部100条样本保留原文、标签和变长特征，以词级与词组级关系覆盖1468个原词。双顺序动态规划的作用是在给定证据内消除不兼容关系，逐维聚合则避免无定义特征污染平均值。受控实验验证了稳定性与实现一致性；候选是否对应真实词界，仍需独立时间标注评价。

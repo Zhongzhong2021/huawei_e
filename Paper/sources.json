@@ -3,30 +3,30 @@
     {
       "question": 1,
       "source": "Paper/manuscript/question1.md",
-      "source_sha256": "2cfce5cb0f089149bfaf181e95fa762f965a22440fbe642579e8e72200951a82",
+      "source_sha256": "adeb205f027e0830836844b33eb259cdeb9b59053542be3b132eca1dee0bd5ed",
       "research_source": "问题1/问题1正文稿.md",
       "research_sha256": "890b2022b96c055aa2ccd139c481ade969122b030cafadb5493b7df582c45e43",
-      "chapter_sha256": "553971b1ab70a0eee3c0dc5992254fdd23974544b67d7b1956f37bdbd19bdabb",
+      "chapter_sha256": "bd36a6946f4c6213a452e5a4773115abe62e30c292cd3dd2095d467fae2a1793",
       "images": 1,
       "tables": 8
     },
     {
       "question": 2,
       "source": "Paper/manuscript/question2.md",
-      "source_sha256": "b41e0b12bad916beee40cd00bc218657d476cbab34d0afdeb9c4657c49cc172a",
-      "research_source": "问题2/docs/paper_current/reports/E题问题2统一论文素材与当前模型结果.md",
-      "research_sha256": "e48de1174bf29c2f23b7106ce282f9647589ec024a1c61954d8a21b492fbbd35",
-      "chapter_sha256": "7a277f9f03ff58b7c97d4278c851a547daed71cbb5b9c1998bb5860a90f07005",
+      "source_sha256": "8c605044d347eebdcf3543252de5d173132b1a293676e44ff115d066836c6029",
+      "research_source": "Paper/references/q2-update/question2-source.md",
+      "research_sha256": "b41e0b12bad916beee40cd00bc218657d476cbab34d0afdeb9c4657c49cc172a",
+      "chapter_sha256": "1195d8036d79e5de3f6236612d1eae746599661368980ac426d4c6a68bb30265",
       "images": 4,
       "tables": 11
     },
     {
       "question": 3,
       "source": "Paper/manuscript/question3.md",
-      "source_sha256": "eb5c1dc7a94187295ef4f85bf9027939a34b6b230c63235db2a0c51e1a7dedc3",
-      "research_source": "问题3/paper/问题三_不确定性融合论文.md",
+      "source_sha256": "f4075545d27668487584fa0d6e8d8ba9dc06597dba9684a21bf60f72cdc1a38c",
+      "research_source": "问题三/paper/问题三_不确定性融合论文.md",
       "research_sha256": "8b8c93323450d3d4918eedc6356aff9b2c8d4afd24abfefe6f8a0772d740ce9b",
-      "chapter_sha256": "b525ca7f62fac1a5099454bf3743a84161837a7e7c4de1202621d12297e371be",
+      "chapter_sha256": "557d485ac19d3d96f9f4e11d18f470781362024457406be82b6bd17962142b4e",
       "images": 8,
       "tables": 12
     }
@@ -52,37 +52,37 @@
       "sha256": "a9218a4bc2a055c7bf805c3ba8d9d02dcc166d917021149c73887665653c8df0",
       "source_image": "问题2/docs/final/errors.pdf"
     },
-    "问题3/paper/figures/01_network.png": {
+    "问题三/paper/figures/01_network.png": {
       "sha256": "2d43b46c4f19256ff865035baa273366fd44de3004a347b1d8f5907734d55a12",
-      "source_image": "问题3/paper/figures/01_network.png"
+      "source_image": "问题三/paper/figures/01_network.png"
     },
-    "问题3/paper/figures/02_training.png": {
+    "问题三/paper/figures/02_training.png": {
       "sha256": "30d8f1604c3b7088cfbc59102fd2d0e5de9abb5eacc73af392b18ea030dc74bc",
-      "source_image": "问题3/paper/figures/02_training.png"
+      "source_image": "问题三/paper/figures/02_training.png"
     },
-    "问题3/paper/figures/03_confusion.png": {
+    "问题三/paper/figures/03_confusion.png": {
       "sha256": "c7862d5cb95f6c93c0fd73c5254249c980aaefe7389404b7c4c690bd97b061f5",
-      "source_image": "问题3/paper/figures/03_confusion.png"
+      "source_image": "问题三/paper/figures/03_confusion.png"
     },
-    "问题3/paper/figures/04_regression.png": {
+    "问题三/paper/figures/04_regression.png": {
       "sha256": "31c4032b603ac1bae71c14c78869de85d61537ba35117c98e9ffade5f31fe60b",
-      "source_image": "问题3/paper/figures/04_regression.png"
+      "source_image": "问题三/paper/figures/04_regression.png"
     },
-    "问题3/paper/figures/05_contributions.png": {
+    "问题三/paper/figures/05_contributions.png": {
       "sha256": "9b386cf0c38a3a5f6646d331afdc7cfdc2d0db9b1fdfbd160a09ecee2d675032",
-      "source_image": "问题3/paper/figures/05_contributions.png"
+      "source_image": "问题三/paper/figures/05_contributions.png"
     },
-    "问题3/paper/figures/06_local_16.png": {
+    "问题三/paper/figures/06_local_16.png": {
       "sha256": "c61e7234b425dc33db45b8ef465ba14c78c2d95e0cec47abf927063209e1096c",
-      "source_image": "问题3/paper/figures/06_local_16.png"
+      "source_image": "问题三/paper/figures/06_local_16.png"
     },
-    "问题3/results/evidence_navigation/frames/02_00069.png": {
+    "问题三/results/evidence_navigation/frames/02_00069.png": {
       "sha256": "1d68bbe82390a5f58b7b48698ef7fdded641f2d6c6badcc77cbf599d5058b90c",
-      "source_image": "问题3/results/evidence_navigation/frames/02_00069.png"
+      "source_image": "问题三/results/evidence_navigation/frames/02_00069.png"
     },
-    "问题3/results/evidence_navigation/frames/16_00035.png": {
+    "问题三/results/evidence_navigation/frames/16_00035.png": {
       "sha256": "01eaffc1520a2c0d369f84b268cc6d2b41d0e71fa34b7e0c928b4a3c4618a9b1",
-      "source_image": "问题3/results/evidence_navigation/frames/16_00035.png"
+      "source_image": "问题三/results/evidence_navigation/frames/16_00035.png"
     }
   },
   "references": 17,
@@ -108,16 +108,16 @@
   "paper_inputs": {
     "main.tex": "c3f62644b239d21c6d0a8763860abbf7cd98f460d30b36cfaf381e0eb1d31bf5",
     "preamble.tex": "263c3044d715e180a0b024677fb477463834222cc6c1c3ae21441902ba00a685",
-    "abstract.tex": "b396489f8021c9e2bfb980c9ba0a9babfcfa9ab379d9bec8989326888336b769",
-    "conclusion.tex": "286dd050dce258f1babbb514ffc2f2624e2374ecec94e1cd5654b5c1c2675328",
-    "introduction.tex": "525cafcffc7da55af9efec8d9abb0c132388bf6b9a8b8eac1c1c1c749bb71a0e",
-    "data.tex": "67bee91410f7d9372e6afd6ef53fe0da63b5ea50b6349a7c345881383ff6fe4a",
-    "chapters/references.tex": "21163c0e89897d59ea3ff8453732a4f2829295512ac6022f54c02f1d82eacf52",
-    "assets/official-cover.pdf": "f2f83ac94155c0e1a854ac6e3b3f8beb4ced23c5c63581c414c737f9626afa07",
+    "abstract.tex": "75effe96931ef8cd74bb0a5d87795d0ddbd12864d7acf708a7a4324f6855e95c",
+    "conclusion.tex": "4749385fac0ded3be2d2d71ab126c6e46e7bdc7fdb6018cd0dcf7163f1cd505f",
+    "introduction.tex": "2d285d32b12f694935b6baca7648e0d5352a08c52469b42bf31fca3506ddb313",
+    "data.tex": "94e559f5cd1796110640e2e1ee89db6edabf75c8244e3b3087a467442ba98585",
+    "chapters/references.tex": "e1833bb07807f1f45f49658c3260c48beda05d0c138dcca2a349152a60979b40",
+    "assets/official-cover.pdf": "23ffa2ef55ef2b8aa2b20e13601e2453d9771cba5de84e1e6edae9379dab4019",
     "assets/figure_sources.json": "b570f9da0a5f2092ad61a42465750bbc4401e5f55346402315b7f7174bc8e8bd",
     "assets/q2_confusion.svg": "86e8315cc4006e70f24d45b666e8ff74ef683a8f34ebc8ace7eeac47f09cb0eb",
     "assets/q2_missing.svg": "56bb83df31bebbc374e06d7088dcfd749f0a29e2f84a6732a16340da6a884381"
   },
   "q3_equation_generator_sha256": "66a177362902547c8ef821dbf9b9c6acad009a92600996c4fa94f85dc8ec0b86",
-  "generator_sha256": "b27bab081b76e304c28da486cb55c727252a96e5ce10aba8c34eb16e09313916"
+  "generator_sha256": "bc7cf4d1e707b88b4f5c9a517e8f3e0e0a3a9ad10b8a022af461785bb4861435"
 }

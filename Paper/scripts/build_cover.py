@@ -1,13 +1,23 @@
 """Convert the official DOC cover, retaining artwork and removing its page-0 footer.
-Requires LibreOffice and Poppler. Normal builds use the committed PDF asset.
+Windows uses Microsoft Word; other platforms use LibreOffice and Poppler.
+The source Word document is never saved or overwritten.
 Code edited with OpenAI Codex (GPT-6); release date unavailable.
 """
 from pathlib import Path
 from tempfile import TemporaryDirectory
 from zipfile import ZipFile,ZIP_DEFLATED
 from xml.etree import ElementTree as E
-import subprocess,shutil
+import subprocess,shutil,os
 P=Path(__file__).resolve().parents[1]
+if os.name == 'nt':
+ with TemporaryDirectory(prefix='paper-cover-') as folder:
+  result=Path(folder)/'page-1.pdf'
+  subprocess.run(['powershell.exe','-NoProfile','-NonInteractive','-ExecutionPolicy','Bypass','-File',str(P/'scripts/export_cover_word.ps1'),'-SourcePath',str(P/'references/official/template-2026.doc'),'-OutputPath',str(result)],check=True,timeout=120)
+  if not result.is_file() or not result.read_bytes().startswith(b'%PDF-'):
+   raise RuntimeError('Word cover conversion did not produce a PDF.')
+  shutil.copyfile(result,P/'assets/official-cover.pdf')
+ print('Cover updated from saved template-2026.doc.')
+ raise SystemExit(0)
 with TemporaryDirectory(prefix='paper-cover-') as folder:
  d=Path(folder);profile='-env:UserInstallation='+str((d/'profile').as_uri())
  def convert(p,ext):subprocess.run(['libreoffice',profile,'--headless','--convert-to',ext,'--outdir',str(d),str(p)],check=True)

@@ -1,7 +1,28 @@
 % Generated from Paper/manuscript; edit Markdown source.
 \section{问题三：可解释融合与证据定位}
-\hypertarget{q3-ux5efaux6a21ux5047ux8bbe}{%
-\subsection{建模假设}\label{q3-ux5efaux6a21ux5047ux8bbe}}
+\hypertarget{q3-ux95eeux9898ux5206ux6790ux4e0eux5efaux6a21ux601dux8def}{%
+\subsection{问题分析与建模思路}\label{q3-ux95eeux9898ux5206ux6790ux4e0eux5efaux6a21ux601dux8def}}
+
+本问除预测极性与强度外，还要求说明各模态的作用及主要参考位置。为使预测和解释对应，模型将局部表示通过单模态项与两两交互形成输出，并用同次前向的读出项进行分解。这样可以逐项核算模型分数，同时保留非线性局部编码。
+
+模型需要权衡三点：预测性能、模态可靠性变化和解释粒度。本文用残差方差产生可靠性缩放，分类解释采用预测类别与竞争类别的间隔，回归解释采用预激活q。解释首先落在原特征索引上，再以独立定位方法提供原媒体回看范围；两类位置不混同。
+
+\hypertarget{q3-ux6570ux636eux9884ux5904ux7406ux4e0eux5efaux6a21ux5047ux8bbe}{%
+\subsection{数据预处理与建模假设}\label{q3-ux6570ux636eux9884ux5904ux7406ux4e0eux5efaux6a21ux5047ux8bbe}}
+
+\hypertarget{q3-ux8f93ux5165ux4e0eux6807ux51c6ux5316}{%
+\subsubsection{输入与标准化}\label{q3-ux8f93ux5165ux4e0eux6807ux51c6ux5316}}
+
+使用附件二训练与验证划分建立模型，附件四20条无标签样本用于专项预测与解释。
+
+每条样本最多50个对齐位置，给定文本特征768维、语音特征74维、视觉特征35维，另有BERT词元编号、注意力掩码及类型编号。本模型选择text\_bert输入预训练BERT\cite{q2-ref1}，不把text与text\_bert视为两个模态。剔除特殊词元和填充位置后保留原序列位置source\_index，文本隐状态经LayerNorm后回填到局部窗口。
+
+语音、视觉全零行按无有效数值观测处理。对模态m的第d维，仅在训练集有效观测上计算均值μₘd和总体标准差sₘd，并标准化为(xₘⱼd−μₘd)/sₘd；标准差小于10⁻⁶时置为1。缺失行保持为零且保留掩码，验证、测试和附件四复用训练统计，避免把待评价集合的信息用于归一化参数估计。
+
+本问报告单种子探索性比较，历史测试观察及数据使用范围见共用评价约定。附件四只展示预测与解释，不参与训练或验证策略搜索。
+
+\hypertarget{q3-ux6a21ux578bux5047ux8bbe}{%
+\subsubsection{模型假设}\label{q3-ux6a21ux578bux5047ux8bbe}}
 
 假设1：题目给定的对齐位置可以作为三模态局部读出的共同索引。该索引用于模型计算；机器估计的媒体时间只用于证据回查，不假设其等于原音视特征的精确提取时间。
 
@@ -11,19 +32,8 @@
 
 假设4：单模态回归残差的条件方差可作为该模态读出的相对可靠性线索。此假设用于构造缩放系数；是否提高泛化性能需由数据检验，方差不直接视为分类置信度或人类证据可信程度。
 
-\hypertarget{q3-ux6570ux636eux89c2ux5bdfux4e0eux9884ux5904ux7406}{%
-\subsection{数据观察与预处理}\label{q3-ux6570ux636eux89c2ux5bdfux4e0eux9884ux5904ux7406}}
-
-使用附件二训练与验证划分建立模型，附件四20条无标签样本用于专项预测与解释。
-
-每条样本最多50个对齐位置，给定文本特征768维、语音特征74维、视觉特征35维，另有BERT词元编号、注意力掩码及类型编号。本模型选择text\_bert输入预训练BERT\cite{q2-ref1}，不把text与text\_bert视为两个模态。剔除特殊词元和填充位置后保留原序列位置source\_index，文本隐状态经LayerNorm后回填到局部窗口。
-
-语音、视觉全零行按无有效数值观测处理。对模态m的第d维，仅在训练集有效观测上计算均值μₘd和总体标准差sₘd，并标准化为(xₘⱼd−μₘd)/sₘd；标准差小于10⁻⁶时置为1。缺失行保持为零且保留掩码，验证、测试和附件四复用训练统计，避免把待评价集合的信息用于归一化参数估计。
-
-模型评估基于既有探索实验：历史研究中曾多次查看附件二测试表现，最终方案同时考虑已有性能与解释要求。因而本文报告的是单种子探索性比较，不能作为完全独立、确认性的模型优越性结论；附件四在正式展示中只报告模型输出。
-
-\hypertarget{q3-ux6a21ux578bux5efaux7acb}{%
-\subsection{模型建立}\label{q3-ux6a21ux578bux5efaux7acb}}
+\hypertarget{q3-ux53efux52a0ux878dux5408ux6a21ux578bux7684ux5efaux7acb}{%
+\subsection{可加融合模型的建立}\label{q3-ux53efux52a0ux878dux5408ux6a21ux578bux7684ux5efaux7acb}}
 
 \hypertarget{q3-ux4e0aux4e0bux6587ux5316ux5c40ux90e8ux8bc1ux636eux4e0eux6210ux5bf9ux4ea4ux4e92}{%
 \subsubsection{上下文化局部证据与成对交互}\label{q3-ux4e0aux4e0bux6587ux5316ux5c40ux90e8ux8bc1ux636eux4e0eux6210ux5bf9ux4ea4ux4e92}}
@@ -32,7 +42,7 @@
 
 \begin{figure}
 \centering
-\includegraphics{../问题3/paper/figures/01_network.png}
+\includegraphics{../问题三/paper/figures/01_network.png}
 \caption{不确定性融合网络。T/A/V为文本/语音/视觉；每个分支的4维输出对应q及负向、中性、正向logit。\label{q3-fig2}}
 \end{figure}
 
@@ -88,8 +98,8 @@ P=\{(T,A),(T,V),(A,V)\}为无序模态对的集合，每个成对项只计入一
 
 ã和ĩ表示已缩放、已投影到解释目标的读出。βM包括两个对应输出偏置之差，以及中性−0.4校准项对该类别差的影响。解释卡同时保留符号：正值支持预测类别相对于竞争类别，负值反对该判断。ρ采用模态净值的绝对值归一化，偏置βM单列；它不同于把所有局部绝对值先相加得到的活性比例。若分母近零则标为未定义，主要模态不能强制指定。回归解释以q为目标同样核算，相应比例描述q的加性分解。动态可靠性与BERT上下文均随输入变化，因此当前分数项删除不等于重新运行被修改输入后的输出变化。
 
-\hypertarget{q3-ux6a21ux578bux6c42ux89e3ux4e0eux8badux7ec3ux65b9ux6848}{%
-\subsection{模型求解与训练方案}\label{q3-ux6a21ux578bux6c42ux89e3ux4e0eux8badux7ec3ux65b9ux6848}}
+\hypertarget{q3-ux6a21ux578bux6c42ux89e3ux4e0eux5b9eux9a8cux8bbeux8ba1}{%
+\subsection{模型求解与实验设计}\label{q3-ux6a21ux578bux6c42ux89e3ux4e0eux5b9eux9a8cux8bbeux8ba1}}
 
 \hypertarget{q3-ux591aux4efbux52a1ux76eeux6807ux51fdux6570}{%
 \subsubsection{多任务目标函数}\label{q3-ux591aux4efbux52a1ux76eeux6807ux51fdux6570}}
@@ -195,14 +205,14 @@ AdamW权重衰减 / 梯度裁剪\strut
 
 \begin{figure}
 \centering
-\includegraphics{../问题3/paper/figures/02_training.png}
+\includegraphics{../问题三/paper/figures/02_training.png}
 \caption{主模型训练曲线。虚线为第5轮，实际第9轮停止。右图为原始强度MAE，区别于主表最终强度MAE。\label{q3-fig3}}
 \end{figure}
 
 \hypertarget{q3-ux8bc4ux4ef7ux6307ux6807ux4e0eux5bf9ux6bd4ux8bbeux7f6e}{%
 \subsubsection{评价指标与对比设置}\label{q3-ux8bc4ux4ef7ux6307ux6807ux4e0eux5bf9ux6bd4ux8bbeux7f6e}}
 
-附件二验证集的正向样本占46.43\%，负向和中性分别占28.30\%和25.27\%，类别分布不均衡。因此同时采用准确率、Macro-F1和中性F1评价分类，采用平均绝对误差MAE与Pearson相关系数评价强度。所有回归指标均以类别一致性处理后的最终强度计算。
+附件二验证集的正向样本占46.43\%，负向和中性分别占28.30\%和25.27\%，类别分布不均衡。因此同时采用准确率和Macro-F1评价分类，采用平均绝对误差MAE与Pearson相关系数评价强度。所有回归指标均以类别一致性处理后的最终强度计算。
 
 各指标采用共用评价约定，三分类按负向、中性、正向计算，回归评价最终强度。
 
@@ -210,165 +220,148 @@ AdamW权重衰减 / 梯度裁剪\strut
 
 所有方法仅以3395条训练样本学习，在同一728条验证集上选轮次和策略；本表统一使用各自验证Macro-F1版本。主模型最终按分类logit决策，而两基线的验证最优策略为回归阈值决策，策略差异一并列出，避免把结果误认为统一最后一层阈值的比较。
 
+\hypertarget{q3-ux7ed3ux679cux68c0ux9a8cux4e0eux6a21ux578bux6bd4ux8f83}{%
+\subsection{结果检验与模型比较}\label{q3-ux7ed3ux679cux68c0ux9a8cux4e0eux6a21ux578bux6bd4ux8f83}}
+
 \hypertarget{q3-ux57faux7840ux6027ux80fdux4e0eux53efux89c6ux5316ux5206ux6790}{%
 \subsubsection{基础性能与可视化分析}\label{q3-ux57faux7840ux6027ux80fdux4e0eux53efux89c6ux5316ux5206ux6790}}
 
-\begin{PaperTable}{6}
+\begin{PaperTable}{5}
 
-\begin{longtable}[]{@{}llllll@{}}
+\begin{longtable}[]{@{}lllll@{}}
 \caption{验证集（728条）模型性能比较\label{q3-tab4}}\tabularnewline
 \toprule
-\begin{minipage}[b]{0.22\columnwidth}\raggedright
+\begin{minipage}[b]{0.29\columnwidth}\raggedright
 模型\strut
-\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
 Acc(\%)\strut
-\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
 Macro-F1\strut
-\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
 MAE\strut
-\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
 Pearson\strut
-\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedright
-中性F1\strut
 \end{minipage}\tabularnewline
 \midrule
 \endfirsthead
 \caption[]{验证集（728条）模型性能比较（续）}\tabularnewline
 \toprule
-\begin{minipage}[b]{0.22\columnwidth}\raggedright
+\begin{minipage}[b]{0.29\columnwidth}\raggedright
 模型\strut
-\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
 Acc(\%)\strut
-\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
 Macro-F1\strut
-\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
 MAE\strut
-\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
 Pearson\strut
-\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedright
-中性F1\strut
 \end{minipage}\tabularnewline
 \midrule
 \endhead
-\begin{minipage}[t]{0.22\columnwidth}\raggedright
-SELF-MM适配\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
-64.56\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
-0.6390\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+\begin{minipage}[t]{0.29\columnwidth}\raggedright
+SELF-MM\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+63.56\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+0.6290\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
 0.5491\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
 0.6910\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
-0.5145\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.22\columnwidth}\raggedright
-TETFN源码适配\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
-64.01\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
-0.6321\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+\begin{minipage}[t]{0.29\columnwidth}\raggedright
+TETFN\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+62.01\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
+0.6121\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
 0.5730\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
 0.6569\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
-0.5012\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.22\columnwidth}\raggedright
-不确定性融合（主）\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+\begin{minipage}[t]{0.29\columnwidth}\raggedright
+不确定性融合（ours）\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
 65.11\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
 0.6323\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
 0.5397\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
 0.6993\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
-0.4822\strut
 \end{minipage}\tabularnewline
 \bottomrule
 \end{longtable}
 
 \end{PaperTable}
 
-\begin{PaperTable}{6}
+\begin{PaperTable}{5}
 
-\begin{longtable}[]{@{}llllll@{}}
+\begin{longtable}[]{@{}lllll@{}}
 \caption{附件二测试集（727条）模型性能比较\label{q3-tab5}}\tabularnewline
 \toprule
-\begin{minipage}[b]{0.22\columnwidth}\raggedright
+\begin{minipage}[b]{0.29\columnwidth}\raggedright
 模型\strut
-\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
 Acc(\%)\strut
-\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
 Macro-F1\strut
-\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
 MAE\strut
-\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
 Pearson\strut
-\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedright
-中性F1\strut
 \end{minipage}\tabularnewline
 \midrule
 \endfirsthead
 \caption[]{附件二测试集（727条）模型性能比较（续）}\tabularnewline
 \toprule
-\begin{minipage}[b]{0.22\columnwidth}\raggedright
+\begin{minipage}[b]{0.29\columnwidth}\raggedright
 模型\strut
-\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
 Acc(\%)\strut
-\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
 Macro-F1\strut
-\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
 MAE\strut
-\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
 Pearson\strut
-\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedright
-中性F1\strut
 \end{minipage}\tabularnewline
 \midrule
 \endhead
-\begin{minipage}[t]{0.22\columnwidth}\raggedright
-SELF-MM适配\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+\begin{minipage}[t]{0.29\columnwidth}\raggedright
+SELF-MM\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
 66.16\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
 0.6389\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
 0.5966\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
 0.6978\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
-0.4712\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.22\columnwidth}\raggedright
-TETFN源码适配\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+\begin{minipage}[t]{0.29\columnwidth}\raggedright
+TETFN\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
 65.61\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
 0.6285\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
 0.6226\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
 0.6735\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
-0.4355\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.22\columnwidth}\raggedright
-不确定性融合（主）\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+\begin{minipage}[t]{0.29\columnwidth}\raggedright
+不确定性融合（ours）\strut
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
 68.64\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
 0.6493\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
 0.6006\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
 0.7046\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
-0.4506\strut
 \end{minipage}\tabularnewline
 \bottomrule
 \end{longtable}
@@ -380,45 +373,45 @@ TETFN源码适配\strut
 \begin{longtable}[]{@{}lll@{}}
 \caption{模型选优轮次与决策策略\label{q3-tab6}}\tabularnewline
 \toprule
-\begin{minipage}[b]{0.29\columnwidth}\raggedright
+\begin{minipage}[b]{0.31\columnwidth}\raggedright
 模型\strut
-\end{minipage} & \begin{minipage}[b]{0.16\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{0.15\columnwidth}\raggedright
 检查点轮次\strut
-\end{minipage} & \begin{minipage}[b]{0.46\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{0.45\columnwidth}\raggedright
 验证选定的最终策略\strut
 \end{minipage}\tabularnewline
 \midrule
 \endfirsthead
 \caption[]{模型选优轮次与决策策略（续）}\tabularnewline
 \toprule
-\begin{minipage}[b]{0.29\columnwidth}\raggedright
+\begin{minipage}[b]{0.31\columnwidth}\raggedright
 模型\strut
-\end{minipage} & \begin{minipage}[b]{0.16\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{0.15\columnwidth}\raggedright
 检查点轮次\strut
-\end{minipage} & \begin{minipage}[b]{0.46\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{0.45\columnwidth}\raggedright
 验证选定的最终策略\strut
 \end{minipage}\tabularnewline
 \midrule
 \endhead
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
-SELF-MM适配\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
+\begin{minipage}[t]{0.31\columnwidth}\raggedright
+SELF-MM\strut
+\end{minipage} & \begin{minipage}[t]{0.15\columnwidth}\raggedright
 3\strut
-\end{minipage} & \begin{minipage}[t]{0.46\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.45\columnwidth}\raggedright
 回归双阈值：-0.05 / 0.35\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
-TETFN源码适配\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
+\begin{minipage}[t]{0.31\columnwidth}\raggedright
+TETFN\strut
+\end{minipage} & \begin{minipage}[t]{0.15\columnwidth}\raggedright
 1\strut
-\end{minipage} & \begin{minipage}[t]{0.46\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.45\columnwidth}\raggedright
 回归双阈值：0.00 / 0.55\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
-不确定性融合（主）\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
+\begin{minipage}[t]{0.31\columnwidth}\raggedright
+不确定性融合（ours）\strut
+\end{minipage} & \begin{minipage}[t]{0.15\columnwidth}\raggedright
 5\strut
-\end{minipage} & \begin{minipage}[t]{0.46\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.45\columnwidth}\raggedright
 中性logit偏置-0.4，取最大类别\strut
 \end{minipage}\tabularnewline
 \bottomrule
@@ -426,11 +419,11 @@ TETFN源码适配\strut
 
 \end{PaperTable}
 
-主模型验证Macro-F1并非三者最高：SELF-MM为0.6390，主模型为0.6323。相对表中按验证Macro-F1选择的SELF-MM参考配置，主模型在附件2测试中准确率高2.48个百分点、Macro-F1高约0.0104，而MAE稍高约0.0040；相比表中TETFN参考配置，测试准确率、Macro-F1和MAE均更优。这一比较限定于表中配置；上述方法进一步给出两类基线的其他参数结果。选择主模型同时考虑其原生可核算解释，不能称其在所有指标上领先。当前为单随机种子的代表配置比较，未给出多种子方差或统计显著性。
+主模型验证Macro-F1为0.6323，高于表中SELF-MM的0.6290和TETFN的0.6121。相对表中按验证Macro-F1选择的SELF-MM参考配置，主模型在附件2测试中准确率高2.48个百分点、Macro-F1高约0.0104，而MAE稍高约0.0040；相比表中TETFN参考配置，测试准确率、Macro-F1和MAE均更优。这一比较限定于表中配置；与这两类开源适配基线相比，主模型可直接分解读出项；测试分类与回归结果仍呈现取舍。该比较仅包含一个随机种子，尚无多种子方差或显著性结论。
 
 \begin{figure}
 \centering
-\includegraphics{../问题3/paper/figures/03_confusion.png}
+\includegraphics{../问题三/paper/figures/03_confusion.png}
 \caption{三分类混淆矩阵，行是真值、列是预测。中性与正向之间的混淆较突出。\label{q3-fig4}}
 \end{figure}
 
@@ -507,127 +500,77 @@ F1\strut
 
 \begin{figure}
 \centering
-\includegraphics{../问题3/paper/figures/04_regression.png}
+\includegraphics{../问题三/paper/figures/04_regression.png}
 \caption{验证集最终强度散点与残差分布。预测中性置零，形成ŷ=0的水平带。\label{q3-fig5}}
 \end{figure}
 
-\hypertarget{q3-ux539fux751fux7ed3ux6784ux5bf9ux7167ux4e0eux6027ux80fdux53d6ux820d}{%
-\subsubsection{原生结构对照与性能取舍}\label{q3-ux539fux751fux7ed3ux6784ux5bf9ux7167ux4e0eux6027ux80fdux53d6ux820d}}
+\hypertarget{q3-ux7c7bux522bux4e00ux81f4ux6027ux5904ux7406ux7684ux5f71ux54cd}{%
+\subsubsection{类别一致性处理的影响}\label{q3-ux7c7bux522bux4e00ux81f4ux6027ux5904ux7406ux7684ux5f71ux54cd}}
 
-在开源基线之外，补充原生骨干上``有序分类头''和``不确定性融合''两个模块的四格对照。四种设置均采用种子17、最多20轮、早停耐心4轮，以及相同的BERT学习率、其他层学习率、模态丢弃率和联合监督基础权重；各自按验证Macro-F1选择轮次和决策策略。有序分类头指可学习的累计阈值输出，与四种设置均保留的强度有序辅助损失不同。
+为区分回归头输出与类别一致性规则的作用，使用同一批验证预测分别计算原始强度和最终强度的MAE。三种模型的结果如下。
 
-\begin{PaperTable}{7}
+\begin{PaperTable}{4}
 
-\begin{longtable}[]{@{}lllllll@{}}
-\caption{原生骨干的四种结构设置在验证集上的对照\label{q3-tab8}}\tabularnewline
+\begin{longtable}[]{@{}lrrr@{}}
+\caption{验证集类别一致性处理前后的回归误差\label{q3-tab18}}\tabularnewline
 \toprule
-\begin{minipage}[b]{0.19\columnwidth}\raggedright
-结构设置\strut
-\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedright
-有序头\strut
-\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedright
-不确定性\strut
-\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedright
-轮次\strut
-\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedright
-Acc(\%)\strut
-\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedright
-Macro-F1\strut
-\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedright
-MAE\strut
+\begin{minipage}[b]{0.34\columnwidth}\raggedright
+模型\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedleft
+原始MAE\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedleft
+最终MAE\strut
+\end{minipage} & \begin{minipage}[b]{0.20\columnwidth}\raggedleft
+强度调整条数\strut
 \end{minipage}\tabularnewline
 \midrule
 \endfirsthead
-\caption[]{原生骨干的四种结构设置在验证集上的对照（续）}\tabularnewline
+\caption[]{验证集类别一致性处理前后的回归误差（续）}\tabularnewline
 \toprule
-\begin{minipage}[b]{0.19\columnwidth}\raggedright
-结构设置\strut
-\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedright
-有序头\strut
-\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedright
-不确定性\strut
-\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedright
-轮次\strut
-\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedright
-Acc(\%)\strut
-\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedright
-Macro-F1\strut
-\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedright
-MAE\strut
+\begin{minipage}[b]{0.34\columnwidth}\raggedright
+模型\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedleft
+原始MAE\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedleft
+最终MAE\strut
+\end{minipage} & \begin{minipage}[b]{0.20\columnwidth}\raggedleft
+强度调整条数\strut
 \end{minipage}\tabularnewline
 \midrule
 \endhead
-\begin{minipage}[t]{0.19\columnwidth}\raggedright
-联合监督基础\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
-关\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
-关\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
-11\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
-65.25\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
-0.6412\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
-0.5578\strut
+\begin{minipage}[t]{0.34\columnwidth}\raggedright
+SELF-MM\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft
+0.5557\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft
+0.5491\strut
+\end{minipage} & \begin{minipage}[t]{0.20\columnwidth}\raggedleft
+263/728\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.19\columnwidth}\raggedright
-仅有序分类头\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
-开\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
-关\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
-1\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
-63.46\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
-0.6230\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
-0.5706\strut
+\begin{minipage}[t]{0.34\columnwidth}\raggedright
+TETFN\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft
+0.5919\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft
+0.5730\strut
+\end{minipage} & \begin{minipage}[t]{0.20\columnwidth}\raggedleft
+247/728\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.19\columnwidth}\raggedright
-有序头＋不确定性\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
-开\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
-开\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
-3\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
-63.74\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
-0.6165\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
-0.5688\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.19\columnwidth}\raggedright
-不确定性融合（主）\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
-关\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
-开\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
-5\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
-65.11\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
-0.6323\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
+\begin{minipage}[t]{0.34\columnwidth}\raggedright
+不确定性融合（ours）\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft
+0.5500\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedleft
 0.5397\strut
+\end{minipage} & \begin{minipage}[t]{0.20\columnwidth}\raggedleft
+221/728\strut
 \end{minipage}\tabularnewline
 \bottomrule
 \end{longtable}
 
 \end{PaperTable}
 
-仅加入有序分类头时，验证Macro-F1为0.6230、MAE为0.5706；同时加入有序头与不确定性时，相应为0.6165和0.5688，均弱于本文主模型的0.6323和0.5397。对应的既有冻结测试结果中，两种有序设置的准确率均为66.02\%，Macro-F1分别为0.6342和0.6212，MAE分别为0.6210和0.6184，也未优于主模型。由此可见，更强的输出约束或更多融合模块并不自动带来更好的分类与回归表现。
-
-联合监督基础设置在验证集的Macro-F1为0.6412，高于主模型；主模型的MAE则降低约0.0181。因此，四格对照支持不同结构之间存在性能取舍，不能据其中两个较弱设置宣称不确定性模块对所有指标均有增益。各设置使用各自验证最优策略，比较包含训练与策略选择的共同影响；单种子结果也不构成稳定提升的证据。
-
-\hypertarget{q3-ux5b66ux4e60ux7387ux6210ux7ec4ux5bf9ux7167ux4e0eux8f83ux5f31ux914dux7f6eux5206ux6790}{%
-\subsubsection{学习率成组对照与较弱配置分析}\label{q3-ux5b66ux4e60ux7387ux6210ux7ec4ux5bf9ux7167ux4e0eux8f83ux5f31ux914dux7f6eux5206ux6790}}
+主模型有221条验证记录的强度值经过调整，MAE由0.5500降至0.5397。因此，主表中的回归表现同时包含网络预测与输出约束的作用。后处理不改变分解所针对的预激活q；其分类约束及截断结果应与原始强度一同读取。样本02的原始负值被截为微小正值，是这一规则的具体实例。
 
 \hypertarget{q3-ux9a8cux8bc1ux96c6ux9519ux8befux5f52ux56e0}{%
 \subsubsection{验证集错误归因}\label{q3-ux9a8cux8bc1ux96c6ux9519ux8befux5f52ux56e0}}
@@ -729,8 +672,8 @@ MAE\strut
 
 分组差异同时受标签分布、语句内容和观测质量影响，只能作为错误诊断线索，不构成模态缺失的因果效应。分类贡献在文本上的集中说明模型更依赖语言判别；语音与视觉的较低分类净贡献也可能来自内部正负项抵消，不能视为它们没有可用信息。强度预测的收缩与中性归零会对强情感样本产生较大残差，图\ref{q3-fig5}可用于检查这种系统偏差。
 
-\hypertarget{q3-ux89e3ux91caux5b8cux5907ux6027ux68c0ux9a8c}{%
-\subsubsection{解释完备性检验}\label{q3-ux89e3ux91caux5b8cux5907ux6027ux68c0ux9a8c}}
+\hypertarget{q3-ux6a21ux578bux8bfbux51faux5206ux89e3ux4e00ux81f4ux6027ux68c0ux9a8c}{%
+\subsubsection{模型读出分解一致性检验}\label{q3-ux6a21ux578bux8bfbux51faux5206ux89e3ux4e00ux81f4ux6027ux68c0ux9a8c}}
 
 \begin{PaperTable}{4}
 
@@ -793,10 +736,10 @@ MAE\strut
 
 \end{PaperTable}
 
-将三模态净分数与偏置相加，并与同次前向的目标分数逐条比较。1475条样本的分解误差均处于浮点计算误差范围。该检查说明解释忠实于当前读出的数值，不证明某个证据词是人类情感成因。本主模型没有单独完成随机扰动对照、多种子解释稳定性或人类证据标注评价，局部读出核算与输入扰动忠实性仍需分别检验。
+将三模态净分数与偏置相加，并与同次前向的目标分数逐条比较。1475条推理记录的分解误差均处于浮点计算误差范围；其中专项集与测试集存在重复样本，不作为新增独立评价数量。该检查说明解释忠实于当前读出的数值，不证明某个证据词是人类情感成因。本主模型没有单独完成随机扰动对照、多种子解释稳定性或人类证据标注评价，局部读出核算与输入扰动忠实性仍需分别检验。
 
-\hypertarget{q3-ux4e09ux6a21ux6001ux4f5cux7528ux5deeux5f02ux4e0eux5c40ux90e8ux91cdux8981ux6027}{%
-\subsection{三模态作用差异与局部重要性}\label{q3-ux4e09ux6a21ux6001ux4f5cux7528ux5deeux5f02ux4e0eux5c40ux90e8ux91cdux8981ux6027}}
+\hypertarget{q3-ux6a21ux6001ux4f5cux7528ux4e0eux5c40ux90e8ux4f4dux7f6eux5206ux6790}{%
+\subsection{模态作用与局部位置分析}\label{q3-ux6a21ux6001ux4f5cux7528ux4e0eux5c40ux90e8ux4f4dux7f6eux5206ux6790}}
 
 \hypertarget{q3-ux5206ux7c7bux56deux5f52ux4e0eux53efux9760ux6027ux7684ux533aux522b}{%
 \subsubsection{分类、回归与可靠性的区别}\label{q3-ux5206ux7c7bux56deux5f52ux4e0eux53efux9760ux6027ux7684ux533aux522b}}
@@ -875,7 +818,7 @@ MAE\strut
 
 \begin{figure}
 \centering
-\includegraphics{../问题3/paper/figures/05_contributions.png}
+\includegraphics{../问题三/paper/figures/05_contributions.png}
 \caption{分类贡献、回归贡献与可靠性权重的对照。三者解释不同对象，不能互换。\label{q3-fig7}}
 \end{figure}
 
@@ -884,16 +827,16 @@ MAE\strut
 \hypertarget{q3-ux4e3bux8981ux53c2ux8003ux6a21ux6001ux5185ux7684ux5c40ux90e8ux8bc1ux636eux5206ux5e03}{%
 \subsubsection{主要参考模态内的局部证据分布}\label{q3-ux4e3bux8981ux53c2ux8003ux6a21ux6001ux5185ux7684ux5c40ux90e8ux8bc1ux636eux5206ux5e03}}
 
-局部重要性按分类间隔的有符号读出绘制。为避免只呈现支持结论的片段，图中保留每个有效位置及其正负方向：蓝色为支持预测类，红色为反对预测类。横轴采用原始分数量纲，纵轴保留原BERT位置与原文词元；这使典型解释可以回查到输入，而不只给出无位置的模态占比。
+局部重要性按分类间隔的有符号读出绘制。由于BERT隐状态包含全句上下文，这里的``位置贡献''表示该上下文化表示参与读出的数值，不等于单独删除原词的影响。为避免只呈现支持结论的片段，图中保留每个有效位置及其正负方向：蓝色为支持预测类，红色为反对预测类。横轴采用原始分数量纲，纵轴保留原BERT位置与原文词元；这使典型解释可以回查到输入，而不只给出无位置的模态占比。
 
 \begin{figure}
 \centering
-\includegraphics{../问题3/paper/figures/06_local_16.png}
+\includegraphics{../问题三/paper/figures/06_local_16.png}
 \caption{附件4样本16的主要参考模态内局部重要性。每行给出原BERT位置和对应原文，负值表示反对当前类别间隔；词的上下文由BERT编码。\label{q3-fig8}}
 \end{figure}
 
-\hypertarget{q3-ux9644ux4ef6ux56dbux5168ux91cfux9884ux6d4bux4e0eux5178ux578bux89e3ux91ca}{%
-\subsection{附件四全量预测与典型解释}\label{q3-ux9644ux4ef6ux56dbux5168ux91cfux9884ux6d4bux4e0eux5178ux578bux89e3ux91ca}}
+\hypertarget{q3-ux9644ux4ef6ux56dbux9884ux6d4bux7ed3ux679cux4e0eux5178ux578bux89e3ux91ca}{%
+\subsection{附件四预测结果与典型解释}\label{q3-ux9644ux4ef6ux56dbux9884ux6d4bux7ed3ux679cux4e0eux5178ux578bux89e3ux91ca}}
 
 \hypertarget{q3-ux5168ux91cfux9884ux6d4bux4e0eux4e09ux6a21ux6001ux4f5cux7528ux7a0bux5ea6}{%
 \subsubsection{全量预测与三模态作用程度}\label{q3-ux5168ux91cfux9884ux6d4bux4e0eux4e09ux6a21ux6001ux4f5cux7528ux7a0bux5ea6}}
@@ -1246,7 +1189,7 @@ T/T\strut
 
 \end{PaperTable}
 
-模型预测的类别分布为负向8条、中性3条、正向9条。该分布是预测输出的统计。样本02的最终强度为+1.0×10⁻⁶，来自类别一致性处理，故以科学计数法保留其正号，避免将其显示为中性0。
+模型预测的类别分布为负向8条、中性3条、正向9条。该分布是预测输出的统计，不用于推断专项集真实类别比例。样本02的最终强度为+1.0×10⁻⁶，来自类别一致性处理，故以科学计数法保留其正号，避免将其显示为中性0。
 
 \hypertarget{q3-ux5173ux952eux8bc1ux636eux5b9aux4f4dux4e0eux7ed3ux679cux6587ux4ef6}{%
 \subsubsection{关键证据定位与结果文件}\label{q3-ux5173ux952eux8bc1ux636eux5b9aux4f4dux4e0eux7ed3ux679cux6587ux4ef6}}
@@ -1525,7 +1468,7 @@ T/T\strut
 
 进一步将文本内容支持、特征可用性和媒体定位分别检查。附件四两套版本的原文与文本输入一致，视频逐条字节一致；13号样本在对齐版中视觉数组全零，未对齐版仍有17行非零视觉特征。本文按所选对齐版关闭其视觉贡献，该状态表示当前输入无有效视觉观测。
 
-15号的完整音轨约7.314秒。Whisper与Wav2Vec2 CTC分别在不输入原文的情况下识别音轨，均主要识别出所给句子之前的内容，在末尾才衔接到当前句开头，提示配套媒体可能存在剪辑边界偏移。该样本保留基于给定特征的预测与贡献，媒体对应标为待确认，解释卡不赋予缺少支持的语音区间。两个识别模型的一致现象用于异常筛查，不作为人工真值或故意篡改的判断。
+15号的完整音轨约7.314秒。Whisper与Wav2Vec2 CTC分别在不输入原文的情况下识别音轨，均主要识别出所给句子之前的内容，在末尾才衔接到当前句开头，提示配套媒体可能存在剪辑边界偏移。该样本保留基于给定特征的预测与贡献，媒体对应标为待确认，解释卡不赋予缺少支持的语音区间。两个识别模型的一致现象用于异常筛查，仍需人工复听确认。
 
 \hypertarget{q3-ux5178ux578bux6837ux672cux89e3ux91caux5361}{%
 \subsubsection{典型样本解释卡}\label{q3-ux5178ux578bux6837ux672cux89e3ux91caux5361}}
@@ -1705,7 +1648,7 @@ T/T\strut
 
 \begin{figure}
 \centering
-\includegraphics[width=0.55\textwidth,height=\textheight]{../问题3/results/evidence_navigation/frames/02_00069.png}
+\includegraphics[width=0.55\textwidth,height=\textheight]{../问题三/results/evidence_navigation/frames/02_00069.png}
 \caption{样本02的同期场景，实际帧时间2.300秒，落在文本位置17对应的候选区间内。\label{q3-fig10}}
 \end{figure}
 
@@ -1715,6 +1658,11 @@ T/T\strut
 
 \begin{figure}
 \centering
-\includegraphics[width=0.55\textwidth,height=\textheight]{../问题3/results/evidence_navigation/frames/16_00035.png}
+\includegraphics[width=0.55\textwidth,height=\textheight]{../问题三/results/evidence_navigation/frames/16_00035.png}
 \caption{样本16的同期场景，实际帧时间1.167秒。对应候选短语范围0.76---1.60秒。\label{q3-fig12}}
 \end{figure}
+
+\hypertarget{q3-ux672cux95eeux5c0fux7ed3}{%
+\subsection{本问小结}\label{q3-ux672cux95eeux5c0fux7ed3}}
+
+可加融合结构把当前分类间隔和回归预激活分解为单模态、交互及偏置项，数值核算与前向输出一致。现有对照显示可靠性缩放方案在验证回归误差上较有利，分类Macro-F1则低于基础加性设置。附件四的解释以文本上下文化位置为主，媒体回看覆盖18条样本；分解核算尚不能代替输入扰动与人工证据评价。

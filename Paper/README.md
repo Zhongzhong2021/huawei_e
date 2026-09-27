@@ -1,8 +1,12 @@
 # 总论文
 
-[阅读PDF](paper.pdf)，当前43页（含封面、1页摘要与参考文献），由原66页整合稿重组。论文依据2026年官方模板和E题要求组织，包含统一摘要、总体任务与数据约定、三问模型及全量结果、综合结论和参考文献。正文保留附件一100条特征结果、附件三30条预测、附件四20条预测与解释。
+[阅读PDF](paper.pdf)，当前44页（含封面、1页摘要与参考文献）。2026-09-27参考用户提供的十篇2023年E题论文重新整理叙述结构：问题重述与分析、模型假设与数据准备、三问建模与求解、模型评价与改进方向、结论。正文保留附件一100条特征结果、附件三30条预测、附件四20条预测与解释；另根据已有CSV补充问题三后处理前后MAE对照。
 
 ## 编译与编辑
+
+问题二已按用户补充的`paper.pdf`同步至`q2-final-span-seed42-v1`：验证集Accuracy/Macro-F1/MAE/Pearson为0.6195/0.6102/0.5861/0.6712，图表与附件三30条预测统一使用该版本。最新记录见`../问题2/docs/final/`；历史三个随机种子统计用于说明训练方案选择，与最终模型分开报告。来源快照见`references/q2-update/`。
+
+本地Windows便携环境：在本次交付的`outputs/`目录运行`./rebuild_paper.ps1`，依次从已保存的Word生成封面、同步Markdown、编译、核对并生成`论文_结构调整版.pdf`。封面转换使用本机Microsoft Word，需保留同级`../work/tools/`中的Pandoc 2.9.2.1、Tectonic和字体。原本仅执行LaTeX编译的`compile_pdf.ps1`仍可使用，但不会同步Word封面或Markdown。`-SkipSync`会跳过这两项同步。
 
 从仓库根目录运行：
 
@@ -32,7 +36,7 @@ sudo apt-get install --no-install-recommends pandoc texlive-xetex texlive-lang-c
 
 `make sync`只更新生成章节，保留正式Markdown编辑；`make check`核对已生成PDF。原问题目录的研究稿作为来源保存，修改后需判断是否同步到正式章节。问题三公式由原实现生成器中的LaTeX定义读取。
 
-封面来自官方二进制DOC，经LibreOffice转换，删除原模板的封面“0”页码，仅取第一页。`python3 scripts/build_cover.py`可重新生成，额外需要LibreOffice Writer。队伍信息尚未提供，当前封面字段留空。
+首页编辑入口为`references/official/template-2026.doc`。保存Word后运行`outputs/rebuild_paper.ps1`，脚本会重新生成`assets/official-cover.pdf`并编入整篇论文；保存Word本身不会触发自动编译。转换只取第一页，并在转换副本中删除页脚，源Word保持不变。单独执行`python scripts/build_cover.py`也可生成封面：Windows使用Microsoft Word，其他平台需要LibreOffice Writer及Poppler。
 
 ## 内容与验证范围
 
