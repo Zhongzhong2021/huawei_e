@@ -28,6 +28,8 @@ def main():
     i=int(m[1]);return '$$\n'+r'\begin{gathered}'+r' \\ '.join(formulas[i-1])+r'\end{gathered}'+f'\\tag{{{i}}}'+'\n$$'
    text=re.sub(r'^[^\n#]+　（(\d+)）[ \t]*$',eq,text,flags=re.M)
   def cite(m):
+   # Bracketed source positions are indices, even when the number is a reference key.
+   if text[max(0,m.start()-2):m.start()]=='位置':return m[0]
    ids=re.split('[,，]',m[1])
    if not all(i in local for i in ids):return m[0]
    for i in ids:
@@ -51,7 +53,7 @@ def main():
   text=re.sub(r'(?<![词代])(表|图)(\d+)(?![\d])',tabref,text)
   text=re.sub(r'式（(\d+)）',lambda m:r'式\eqref{q'+str(number)+'-eq'+m[1]+'}',text)
   text=re.sub(r'\\tag\{(\d+)\}',lambda m:r'\label{q'+str(number)+'-eq'+m[1]+'}',text)
-  doc=json.loads(pandoc(text));ni=0;nt=0
+  doc=json.loads(pandoc(text));ni=0;nt=0;table_layouts=[]
   def transform(node):
    nonlocal ni
    if isinstance(node,dict):
@@ -89,21 +91,76 @@ def main():
      return sum(size(v) for v in node) if isinstance(node,list) else 0
     rows=[block['c'][3]]+block['c'][4]
     weights=[max(10,min(44,max(size(row[i]) for row in rows))) for i in range(cols)]
-    if number==1 and len(block['c'][4])==100:weights=[36,12,12,29,16]
-    if number==3 and len(block['c'][4])==20 and cols==7:weights=[6,10,15,10,10,10,15]
-    block['c'][2]=[w/sum(weights) for w in weights]
+    # Explicit widths preserve identifiers, uncertainty estimates and time ranges.
+    layouts={
+     (1,1):[24,35,41],(1,2):[26,44,30],(1,3):[15,85],
+     (1,4):[40,30,30],(1,5):[40,14,19,10,17],(1,6):[30,12,58],
+     (1,7):[30,12,15,8,8,27],(1,8):[33,12,12,26,17],
+     (2,1):[23,44,33],(2,2):[8,92],(2,3):[31,69],
+     (2,4):[35,13,14,13,14,11],(2,5):[24,15,16,15,16,14],
+     (2,6):[29,28,28,15],(2,7):[29,17,16,38],
+     (2,8):[25,25,25,25],(2,9):[13,12,21,18,18,18],
+     (2,10):[28,36,36],(2,11):[30,20,25,25],
+     (3,1):[44,56],(3,2):[34,16,18,16,16],(3,3):[34,16,18,16,16],
+     (3,4):[31,20,49],(3,5):[22,22,20,20,16],(3,6):[34,20,20,26],
+     (3,7):[32,15,19,17,17],(3,8):[43,19,19,19],(3,9):[46,18,18,18],
+     (3,10):[8,13,18,14,14,14,19],(3,11):[7,34,16,28,15],
+     (3,12):[34,22,22,22],
+    }
+    weights=layouts.get((number,nt),weights)
+    fractions=[w/sum(weights) for w in weights]
+    block['c'][2]=fractions
+    # Numeric columns align by their right edge; identifiers and prose stay left.
+    def plain(node):
+     if isinstance(node,dict):
+      if node.get('t')=='Str':return node['c']
+      if node.get('t')=='Space':return ' '
+      return ''.join(plain(v) for v in node.values())
+     if isinstance(node,list):return ''.join(plain(v) for v in node)
+     return ''
+    numeric=[]
+    for i in range(cols):
+     values=[plain(row[i]) for row in block['c'][4]]
+     numeric.append(all(re.fullmatch(r'[+−\-\d.,/%()（）± eE—]+',v) for v in values))
+    table_layouts.append((fractions,numeric,len(block['c'][4])))
     blocks.extend([raw(r'\begin{PaperWideTable}' if wide else r'\begin{PaperTable}{'+str(cols)+'}'),block,raw(r'\end{PaperWideTable}' if wide else r'\end{PaperTable}')])
    else:blocks.append(block)
   doc['blocks']=blocks;transform(doc)
   target=PAPER/'chapters'/f'question{number}.tex'
   latex=pandoc(json.dumps(doc,ensure_ascii=False),'json','latex')
+  layout_iter=iter(table_layouts)
   def continued(m):
-   table=m[0];caption=re.search(r'\\caption\{(.*?)\}\\tabularnewline',table,re.S)
+   table=m[0];fractions,numeric,row_count=next(layout_iter);col_count=len(fractions);cell_index=0
+   def cell(match):
+    nonlocal cell_index
+    col=cell_index%col_count;cell_index+=1
+    # Pandoc 2.9 rounds relative widths; set exact widths after subtracting gutters.
+    width=r'\dimexpr '+f'{fractions[col]:.6f}'+r'\linewidth-'+f'{fractions[col]*2*(col_count-1):.6f}'+r'\tabcolsep\relax'
+    alignment=r'\raggedleft' if numeric[col] else r'\raggedright'
+    return r'\begin{minipage}['+match[1]+']{'+width+'}'+alignment
+   table=re.sub(r'\\begin\{minipage\}\[([bt])\]\{[0-9.]+\\columnwidth\}\\(?:raggedright|raggedleft|centering)',cell,table)
+   caption=re.search(r'\\caption\{(.*?)\}\\tabularnewline',table,re.S)
+   if row_count<=20 and caption:
+    # Keep short result tables intact. Long sample tables retain repeated headers.
+    spec=re.search(r'\\begin\{longtable\}\[\]\{(.*?)\}\n',table)[1]
+    header=table.split(r'\toprule',1)[1].split(r'\endfirsthead',1)[0]
+    body=table.split(r'\endhead',1)[1].split(r'\end{longtable}',1)[0]
+    return (r'\begin{table}[!htbp]'+ '\n'+r'\centering\caption{'+caption[1]+'}\n'+
+            r'\begin{tabular}{'+spec+'}\n'+r'\toprule'+header+body+r'\end{tabular}'+ '\n'+r'\end{table}')
    if caption:
     title=re.sub(r'\\label\{[^}]+\}','',caption[1])
     table=table.replace(r'\endfirsthead',r'\endfirsthead'+'\n'+r'\caption[]{'+title+'（续）}'+r'\tabularnewline',1)
    return table
   latex=re.sub(r'\\begin\{longtable\}.*?\\end\{longtable\}',continued,latex,flags=re.S)
+  # Adjacent media examples share one row and retain separate figure counters.
+  def paired_frames(match):
+   parts=[]
+   for body in (match[1],match[2]):
+    if 'evidence_navigation/frames/' not in body:return match[0]
+    body=re.sub(r'\\includegraphics\[[^\]]*\]',lambda _:r'\includegraphics[width=\linewidth,height=.22\textheight,keepaspectratio]',body)
+    parts.append(r'\begin{minipage}[t]{.48\linewidth}'+body+r'\end{minipage}')
+   return r'\begin{figure}[H]'+'\n'+r'\centering'+parts[0]+r'\hfill'+parts[1]+'\n'+r'\end{figure}'
+  latex=re.sub(r'\\begin\{figure\}\s*((?:(?!\\end\{figure\}).)*)\\end\{figure\}\s*\\begin\{figure\}\s*((?:(?!\\end\{figure\}).)*)\\end\{figure\}',paired_frames,latex,flags=re.S)
   target.write_text('% Generated from Paper/manuscript; edit Markdown source.\n'+f'\\section{{{title}}}\n'+latex)
   records.append({'question':number,'source':path.relative_to(ROOT).as_posix(),'source_sha256':digest(path),'research_source':ORIGINALS[number-1].relative_to(ROOT).as_posix(),'research_sha256':digest(ORIGINALS[number-1]),'chapter_sha256':digest(target),'images':ni,'tables':nt})
  bibliography=[r'\begin{thebibliography}{99}',r'\raggedright']

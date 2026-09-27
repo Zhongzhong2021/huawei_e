@@ -1,8 +1,8 @@
 {
   "status": "passed",
   "pages": 43,
-  "pdf_bytes": 2073088,
-  "pdf_sha256": "8defc8fd782f7b862d4fcb414bd8f8231a4ad1d88693ea540657e99f8cd70989",
+  "pdf_bytes": 2009462,
+  "pdf_sha256": "ab5edeae13e477ba49af52304a9e438dd41d13f2ba7d68c3bda1f6a5d4810ec7",
   "sources_verified": true,
   "abstract_pages": 1,
   "continuous_page_numbers": true,
@@ -20,36 +20,55 @@
     "q3_prediction_rows": 20,
     "q3_location_rows": 20,
     "q3_metrics_match_json": true,
-    "q2_comparison_scope": "existing manuscript predictions; model weights unavailable in this workspace"
+    "q2_final_metrics_match_json": true,
+    "q2_final_predictions_match_csv": true,
+    "q2_source_hashes_verified": true,
+    "q2_comparison_scope": "final version q2-final-span-seed42-v1; tables checked against recorded CSV/JSON; archived CPU replay checked in revision record",
+    "postprocessing_table_matches_csv": true
   },
   "scope": "PDF compilation, pagination, source hashes, tables and recorded metrics; no new model training or independent accuracy evaluation.",
+  "revision": "Humanizer-zh中文润色与PDF排版优化，2026-09-27",
+  "content_preservation": {
+    "all_manuscript_table_cells_unchanged": true,
+    "display_formulas_unchanged": true,
+    "manuscript_headings_unchanged": true,
+    "cover_unchanged": true
+  },
   "visual_review": {
-    "method": "Rendered full-document contact sheets, then inspected final changed pages at higher resolution",
+    "method": "全篇缩略图审阅，修改后重点页面高分辨率检查",
     "checked_final_physical_pages": [
-      14,
+      3,
+      11,
       23,
-      25,
-      37,
       38,
       39,
       40,
       41
     ],
     "checks": [
-      "official four-logo cover retained and page zero removed",
-      "abstract one page; body begins on following page",
-      "Chinese body and tables retain specified size",
-      "complete table identifiers and continuation headings",
-      "diagram labels, mathematical equations, scientific plots and media captions legible",
-      "typical-card scalar values separated by row",
-      "conclusion begins on a new page"
+      "均值与标准差同一行",
+      "时间范围和数值列对齐",
+      "短表整体排版，长表重复表头",
+      "典型场景图并排展示",
+      "词元索引与参考文献引用分开",
+      "结论衔接消除小结独占一页"
     ],
-    "render_cache": "/workspace/paper-revision-render",
-    "scope_note": "Full contact-sheet review preceded the final pagination adjustments; final changed table/card/conclusion pages were separately reviewed."
+    "render_cache": "/workspace/paper-polish-review"
+  },
+  "q2_reproduction_evidence": {
+    "scope": "本轮核对既有权重和已保存CPU重放记录",
+    "checkpoint_sha256": "c78045f8f014955ccab9cc83709b989e4ebdbdf53e0859eca08ed8b30b4b4112",
+    "scaler_sha256": "30bfe7e4d67527107f6931794e53d5a5f977517dd644ac477cb5ca3b38285d6c",
+    "both_model_files_verified": true,
+    "cpu_replay_rows": 30,
+    "class_equal": true,
+    "max_intensity_difference": 2.1457672119140625e-06,
+    "single_batch_class_equal": true,
+    "reload_exact_match": true,
+    "replay_csv": "/workspace/submission-q2-replay.csv",
+    "replay_checks": "/workspace/submission-q2-replay.checks.json"
   },
   "remaining_metadata": [
-    "cover school, team number and names not supplied",
-    "AI model release date and earlier tool-use metadata not supplied"
-  ],
-  "existing_reproduction_gap": "Q2 final/model.pt and final/scaler.npz absent from this workspace; no new inference replay claimed."
+    "AI模型版本发布日期及此前完整工具使用记录待据实补充"
+  ]
 }

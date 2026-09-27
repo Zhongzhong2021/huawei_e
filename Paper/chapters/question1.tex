@@ -3,9 +3,9 @@
 \hypertarget{q1-ux95eeux9898ux5206ux6790ux4e0eux5904ux7406ux539fux5219}{%
 \subsection{问题分析与处理原则}\label{q1-ux95eeux9898ux5206ux6790ux4e0eux5904ux7406ux539fux5219}}
 
-对附件提供的100条视频，令样本标识为\(s=(video\_id,clip\_id)\)，原文为\(R_s\)，情感标注为\(y_s\)。我们建立文本、语音和视觉特征序列及其跨模态关系，保留全部样本、原文和标签。情感标签作为原始样本信息保存，模型采用固定预训练工具与统一参数，全部实验基于赛题附件。
+对附件提供的100条视频，令样本标识为\(s=(video\_id,clip\_id)\)，原文为\(R_s\)，情感标注为\(y_s\)。本文以固定预训练工具和统一参数提取文本、语音与视觉特征，建立跨模态时序关系，并保留全部样本、原文和情感标签。全部实验基于赛题附件。
 
-本问的难点是：各模态长度不同，文本与音轨未必完整对应，且局部特征可能无定义。我们将处理分为特征提取、词与词组时间候选、跨模态聚合三步。先保留原生观测，再判断哪些文字能够定位，避免为了形成整齐矩阵而强行建立对应。
+各模态长度不同，文本与音轨可能仅部分对应，局部特征也可能无定义。处理依次包括原生特征提取、词与词组时间候选生成、跨模态聚合；文字定位以识别和声学证据为依据。
 
 \hypertarget{q1-ux9644ux4ef6ux81eaux8eabux7684ux8f93ux5165ux6838ux9a8c}{%
 \subsubsection{附件自身的输入核验}\label{q1-ux9644ux4ef6ux81eaux8eabux7684ux8f93ux5165ux6838ux9a8c}}
@@ -21,77 +21,68 @@
 
 \begin{PaperTable}{3}
 
-\begin{longtable}[]{@{}lll@{}}
-\caption{输出目标与处理原则}\tabularnewline
+\begin{table}[!htbp]
+\centering\caption{输出目标与处理原则}
+\begin{tabular}{@{}lll@{}}
 \toprule
-\begin{minipage}[b]{0.26\columnwidth}\raggedright
+\begin{minipage}[b]{\dimexpr 0.240000\linewidth-0.960000\tabcolsep\relax}\raggedright
 数据情形\strut
-\end{minipage} & \begin{minipage}[b]{0.32\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\dimexpr 0.350000\linewidth-1.400000\tabcolsep\relax}\raggedright
 特征如何保留\strut
-\end{minipage} & \begin{minipage}[b]{0.32\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\dimexpr 0.410000\linewidth-1.640000\tabcolsep\relax}\raggedright
 时间关系如何建立\strut
 \end{minipage}\tabularnewline
 \midrule
-\endfirsthead
-\caption[]{输出目标与处理原则（续）}\tabularnewline
-\toprule
-\begin{minipage}[b]{0.26\columnwidth}\raggedright
-数据情形\strut
-\end{minipage} & \begin{minipage}[b]{0.32\columnwidth}\raggedright
-特征如何保留\strut
-\end{minipage} & \begin{minipage}[b]{0.32\columnwidth}\raggedright
-时间关系如何建立\strut
-\end{minipage}\tabularnewline
-\midrule
-\endhead
-\begin{minipage}[t]{0.26\columnwidth}\raggedright
+
+\begin{minipage}[t]{\dimexpr 0.240000\linewidth-0.960000\tabcolsep\relax}\raggedright
 文本与实际语音有匹配证据\strut
-\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.350000\linewidth-1.400000\tabcolsep\relax}\raggedright
 保留三模态原生序列\strut
-\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.410000\linewidth-1.640000\tabcolsep\relax}\raggedright
 按识别与声学互证规则给出词级候选，再按实际支持聚合\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.26\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.240000\linewidth-0.960000\tabcolsep\relax}\raggedright
 全零音轨\strut
-\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.350000\linewidth-1.400000\tabcolsep\relax}\raggedright
 保留样本与存储结构，声音可用标记为false；文本及可用视觉照常提取\strut
-\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.410000\linewidth-1.640000\tabcolsep\relax}\raggedright
 语音词界标记为不可用，声音聚合返回无效掩码\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.26\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.240000\linewidth-0.960000\tabcolsep\relax}\raggedright
 语音存在但内容不对应，或模型无法确认\strut
-\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.350000\linewidth-1.400000\tabcolsep\relax}\raggedright
 保留原文及实际声学、画面特征\strut
-\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.410000\linewidth-1.640000\tabcolsep\relax}\raggedright
 物理音视频索引仍可使用，文字局部关系按证据保留未确定\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.26\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.240000\linewidth-0.960000\tabcolsep\relax}\raggedright
 弱读、连读、专名或首尾额外语音\strut
-\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.350000\linewidth-1.400000\tabcolsep\relax}\raggedright
 完整保留原文和实际声音\strut
-\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.410000\linewidth-1.640000\tabcolsep\relax}\raggedright
 用外侧通配与局部互证建立候选，逐词记录证据状态\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.26\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.240000\linewidth-0.960000\tabcolsep\relax}\raggedright
 疑似非英语或译文关系\strut
-\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.350000\linewidth-1.400000\tabcolsep\relax}\raggedright
 保留各模态及待核查状态\strut
-\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.410000\linewidth-1.640000\tabcolsep\relax}\raggedright
 采用固定英语对齐工具；跨语言对应保留未确定状态\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.26\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.240000\linewidth-0.960000\tabcolsep\relax}\raggedright
 画面有人脸缺失、多人或遮挡\strut
-\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.350000\linewidth-1.400000\tabcolsep\relax}\raggedright
 画面特征与人脸事件分别保留\strut
-\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.410000\linewidth-1.640000\tabcolsep\relax}\raggedright
 整体画面与人脸检测状态分别记录，发声者身份标记未知\strut
 \end{minipage}\tabularnewline
 \bottomrule
-\end{longtable}
+\end{tabular}
+\end{table}
 
 \end{PaperTable}
 
-表中情形采用统一处理规则。未确定状态包含数据对应问题和模型识别能力不足，具体原因按匹配证据及信号状态记录。
+未确定状态可能来自素材内容差异或模型识别不足，按匹配证据与信号状态记录原因。
 
 \hypertarget{q1-ux6570ux636eux9884ux5904ux7406ux4e0eux7279ux5f81ux63d0ux53d6}{%
 \subsection{数据预处理与特征提取}\label{q1-ux6570ux636eux9884ux5904ux7406ux4e0eux7279ux5f81ux63d0ux53d6}}
@@ -101,7 +92,7 @@
 
 逐条读取原视频、文本和标签，检查编号唯一性与SHA256摘要。使用FFprobe取得音视频解码帧的PTS、time\_base与长度；声音另核对FFmpeg实际输出的PCM样本数。源音频采样率为\(f_s\)、起点为\(t_0\)时，采样点\(j\)的时间为\(t_0+j/f_s\)。视频第\(i\)帧的显示支持为\([p_i,p_i+d_i)\)，物理支持集合为这些区间的并集。有效观测时长按解码后的实际支持计算。
 
-模型用音频在声道均值后重采样为16kHz；原采样率、声道数、样本数及起点保留。两条全零音轨仍输出完整记录和特征存储结构，但语音可用性为false，不运行文字强制对齐。源文件未修改。流程为：原始清单与时钟审计→原生三模态特征→文字时间候选与选择性筛选→物理支持下的跨模态聚合→全量核验与汇总。
+模型用音频在声道均值后重采样为16kHz；同时保存原采样率、声道数、样本数和起点。两条全零音轨保留记录与存储结构，语音可用性置为false，跳过文字强制对齐。源文件保持原样。流程为：原始清单与时钟审计→原生三模态特征→文字时间候选与选择性筛选→物理支持下的跨模态聚合→全量核验与汇总。
 
 容器声明时长与实际解码支持可能不同。例如一条视频声明7.475秒，实际PCM约2.820秒、画面支持约2.870秒，时间关系按后两项建立。
 
@@ -112,7 +103,7 @@
 
 \begin{equation}x^T_j=\frac{1}{|B_j|}\sum_{k\in B_j}h_k,\qquad B_j=\{k:\text{子词字符区间与}[l_j,r_j)\text{相交}\}.\end{equation}
 
-原始文本直接输入文本模型；数字口语化、大小写等规范化只服务于语音匹配，并保存其与原词的映射。完整文本经子词映射形成逐词上下文表示，保留情感词、否定和程度修饰所在的语言语境。
+原始文本直接输入文本模型；数字口语化、大小写等规范化只服务于语音匹配，并保存其与原词的映射。逐词上下文表示保留情感词、否定和程度修饰的语言语境。
 
 \hypertarget{q1-ux58f0ux97f3}{%
 \subsubsection{声音}\label{q1-ux58f0ux97f3}}
@@ -137,63 +128,54 @@ MediaPipe FaceLandmarker\cite{q1-ref3}为每个检测人脸输出52维形变向�
 \hypertarget{q1-ux7279ux5f81ux9009ux62e9ux4e0eux60c5ux611fux4efbux52a1ux7684ux5173ux7cfb}{%
 \subsubsection{特征选择与情感任务的关系}\label{q1-ux7279ux5f81ux9009ux62e9ux4e0eux60c5ux611fux4efbux52a1ux7684ux5173ux7cfb}}
 
-三类特征从语言语境、声音韵律、画面背景与面部动作四个方面组织情感相关信息。变长序列保留局部变化，时间对应支持同一片段内的跨模态比较。
+三模态特征分别保留语言语境、声音韵律、画面背景及面部动作，以变长序列记录局部变化，以时间关系关联同一片段内的观测。
 
 \begin{PaperTable}{3}
 
-\begin{longtable}[]{@{}lll@{}}
-\caption{特征选择与情感任务的关系}\tabularnewline
+\begin{table}[!htbp]
+\centering\caption{特征选择与情感任务的关系}
+\begin{tabular}{@{}lll@{}}
 \toprule
-\begin{minipage}[b]{0.23\columnwidth}\raggedright
+\begin{minipage}[b]{\dimexpr 0.260000\linewidth-1.040000\tabcolsep\relax}\raggedright
 特征\strut
-\end{minipage} & \begin{minipage}[b]{0.34\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\dimexpr 0.440000\linewidth-1.760000\tabcolsep\relax}\raggedright
 所保留的情感相关信息\strut
-\end{minipage} & \begin{minipage}[b]{0.34\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\dimexpr 0.300000\linewidth-1.200000\tabcolsep\relax}\raggedright
 本问输出的含义\strut
 \end{minipage}\tabularnewline
 \midrule
-\endfirsthead
-\caption[]{特征选择与情感任务的关系（续）}\tabularnewline
-\toprule
-\begin{minipage}[b]{0.23\columnwidth}\raggedright
-特征\strut
-\end{minipage} & \begin{minipage}[b]{0.34\columnwidth}\raggedright
-所保留的情感相关信息\strut
-\end{minipage} & \begin{minipage}[b]{0.34\columnwidth}\raggedright
-本问输出的含义\strut
-\end{minipage}\tabularnewline
-\midrule
-\endhead
-\begin{minipage}[t]{0.23\columnwidth}\raggedright
+
+\begin{minipage}[t]{\dimexpr 0.260000\linewidth-1.040000\tabcolsep\relax}\raggedright
 上下文化文本向量\strut
-\end{minipage} & \begin{minipage}[t]{0.34\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.440000\linewidth-1.760000\tabcolsep\relax}\raggedright
 词语在原句中的语义和上下文，例如否定与程度修饰所在的语境\strut
-\end{minipage} & \begin{minipage}[t]{0.34\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.300000\linewidth-1.200000\tabcolsep\relax}\raggedright
 逐词上下文语义表示\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.23\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.260000\linewidth-1.040000\tabcolsep\relax}\raggedright
 MFCC、能量、ZCR、基频与周期性\strut
-\end{minipage} & \begin{minipage}[t]{0.34\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.440000\linewidth-1.760000\tabcolsep\relax}\raggedright
 频谱、强弱和发声周期随时间的变化\strut
-\end{minipage} & \begin{minipage}[t]{0.34\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.300000\linewidth-1.200000\tabcolsep\relax}\raggedright
 可计算的声学量；音乐和环境声也可能产生有效值\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.23\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.260000\linewidth-1.040000\tabcolsep\relax}\raggedright
 全局画面向量\strut
-\end{minipage} & \begin{minipage}[t]{0.34\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.440000\linewidth-1.760000\tabcolsep\relax}\raggedright
 场景与可见内容背景\strut
-\end{minipage} & \begin{minipage}[t]{0.34\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.300000\linewidth-1.200000\tabcolsep\relax}\raggedright
 整体场景与可见内容表示\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.23\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.260000\linewidth-1.040000\tabcolsep\relax}\raggedright
 人脸形变事件\strut
-\end{minipage} & \begin{minipage}[t]{0.34\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.440000\linewidth-1.760000\tabcolsep\relax}\raggedright
 检出人脸的局部几何动作\strut
-\end{minipage} & \begin{minipage}[t]{0.34\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.300000\linewidth-1.200000\tabcolsep\relax}\raggedright
 逐个人脸的形变表示，附检测状态与位置\strut
 \end{minipage}\tabularnewline
 \bottomrule
-\end{longtable}
+\end{tabular}
+\end{table}
 
 \end{PaperTable}
 
@@ -221,7 +203,7 @@ MFCC、能量、ZCR、基频与周期性\strut
 
 满足规则时输出识别词区间，否则保留原词、特征和未确定原因。最优路径唯一性针对本次识别序列；两条CTC分支的端点比较衡量同一模型内部的一致性。专名、弱读及识别拼写差异造成的匹配歧义继续保留，并由后续局部发音对齐补充检验。
 
-在上述基础门控之外，局部互证策略增加局部上下文互证。将原文与识别结果中连续、唯一精确对应且满足原边界一致性要求的词组成最大局部片段，每段至少包含两个不同信息性锚词。设片段\(B_i\)的锚词集合为\(A_i\)，对于整句门控未通过的样本，仅当存在另一个分离片段\(B_j\)满足\(A_i\cap A_j=\varnothing\)时，恢复\(B_i\)的自动候选。一次偶然短语相同或重复使用同一对锚词不足以恢复。原有候选不修改；恢复词单独标为\texttt{local\_\allowbreak{}coherent\allowbreak{}\_\allowbreak{}candidat\allowbreak{}e}。互证范围为同一识别结果中的分离片段，确认粒度保持局部。
+对未通过整句门控的样本，进一步检查局部片段之间的互证关系。将原文与识别结果中连续、唯一精确对应且满足原边界一致性要求的词组成最大局部片段，每段至少包含两个不同信息性锚词。设片段\(B_i\)的锚词集合为\(A_i\)，对于整句门控未通过的样本，仅当存在另一个分离片段\(B_j\)满足\(A_i\cap A_j=\varnothing\)时，恢复\(B_i\)的自动候选。恢复候选须由不同片段中的独立锚词支持。原有候选保持不变，恢复词标为\texttt{local\_\allowbreak{}coherent\allowbreak{}\_\allowbreak{}candidat\allowbreak{}e}。互证范围为同一识别结果中的分离片段，确认粒度保持局部。
 
 \hypertarget{q1-ux65e0ux63d0ux793aux8bc6ux522bux4e0eux5c40ux90e8ux53d1ux97f3ux5bf9ux9f50}{%
 \subsubsection{无提示识别与局部发音对齐}\label{q1-ux65e0ux63d0ux793aux8bc6ux522bux4e0eux5c40ux90e8ux53d1ux97f3ux5bf9ux9f50}}
@@ -247,7 +229,7 @@ MFCC、能量、ZCR、基频与周期性\strut
 
 \begin{equation}\left(\sum_{p\in\mathcal P}|U\cap[l_p,r_p]|,\ -\sum_{p\in\mathcal P}(r_p-l_p+1),\ -|\mathcal P|\right).\end{equation}
 
-第一项最大化新增未定词覆盖；覆盖相同时，第二项优先更短的总词跨度，再由第三项减少词组数量。该目标只在已经通过内容与声学检查的候选中进行选择。
+第一项最大化新增未定词覆盖；覆盖相同时，第二项优先更短的总词跨度，再由第三项减少词组数量。优化范围为已通过内容与声学检查的候选集合。
 
 按右侧原词位置排序，记每个词组的上述三维权重为\(w(p)\)，以\(p\)结尾的最优序列满足
 
@@ -277,59 +259,52 @@ MFCC、能量、ZCR、基频与周期性\strut
 \hypertarget{q1-ux6a21ux578bux6c42ux89e3ux4e0eux7ed3ux679cux7ec4ux7ec7}{%
 \subsection{模型求解与结果组织}\label{q1-ux6a21ux578bux6c42ux89e3ux4e0eux7ed3ux679cux7ec4ux7ec7}}
 
-模型按``提取特征---筛选词级候选---选择词组---聚合跨模态观测''的顺序求解。固定工具和参数如下，随后说明文件组织与读取方法。
+求解顺序为特征提取、词级筛选、词组选择和跨模态聚合，工具及参数保持固定。
 
 \hypertarget{q1-ux53c2ux6570ux914dux7f6eux4e0eux6c42ux89e3ux6d41ux7a0b}{%
 \subsubsection{参数配置与求解流程}\label{q1-ux53c2ux6570ux914dux7f6eux4e0eux6c42ux89e3ux6d41ux7a0b}}
 
 \begin{PaperTable}{2}
 
-\begin{longtable}[]{@{}ll@{}}
-\caption{参数配置与求解流程}\tabularnewline
+\begin{table}[!htbp]
+\centering\caption{参数配置与求解流程}
+\begin{tabular}{@{}ll@{}}
 \toprule
-\begin{minipage}[b]{0.17\columnwidth}\raggedright
+\begin{minipage}[b]{\dimexpr 0.150000\linewidth-0.300000\tabcolsep\relax}\raggedright
 环节\strut
-\end{minipage} & \begin{minipage}[b]{0.77\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\dimexpr 0.850000\linewidth-1.700000\tabcolsep\relax}\raggedright
 工具及固定配置\strut
 \end{minipage}\tabularnewline
 \midrule
-\endfirsthead
-\caption[]{参数配置与求解流程（续）}\tabularnewline
-\toprule
-\begin{minipage}[b]{0.17\columnwidth}\raggedright
-环节\strut
-\end{minipage} & \begin{minipage}[b]{0.77\columnwidth}\raggedright
-工具及固定配置\strut
-\end{minipage}\tabularnewline
-\midrule
-\endhead
-\begin{minipage}[t]{0.17\columnwidth}\raggedright
+
+\begin{minipage}[t]{\dimexpr 0.150000\linewidth-0.300000\tabcolsep\relax}\raggedright
 基础环境\strut
-\end{minipage} & \begin{minipage}[t]{0.77\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.850000\linewidth-1.700000\tabcolsep\relax}\raggedright
 Python 3.10；FFmpeg/FFprobe 4.4.2；PyTorch/torchaudio 2.6.0 CPU；torchvision 0.21.0；transformers 4.48.3；MediaPipe 0.10.21\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.17\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.150000\linewidth-0.300000\tabcolsep\relax}\raggedright
 基础推理\strut
-\end{minipage} & \begin{minipage}[t]{0.77\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.850000\linewidth-1.700000\tabcolsep\relax}\raggedright
 \texttt{distilbe\allowbreak{}rt-\allowbreak{}base-\allowbreak{}uncased}；\texttt{facebook\allowbreak{}/\allowbreak{}wav2vec2\allowbreak{}-\allowbreak{}base-\allowbreak{}960h}；ResNet18 ImageNet1K\_V1；线程2、种子0、推理模式\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.17\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.150000\linewidth-0.300000\tabcolsep\relax}\raggedright
 独立识别\strut
-\end{minipage} & \begin{minipage}[t]{0.77\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.850000\linewidth-1.700000\tabcolsep\relax}\raggedright
 faster-whisper 1.2.1；CTranslate2 4.8.2；large-v3；RTX 4060、int8\_float16；英语、beam 5、temperature 0、关闭前文条件与VAD\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.17\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.150000\linewidth-0.300000\tabcolsep\relax}\raggedright
 音素对齐\strut
-\end{minipage} & \begin{minipage}[t]{0.77\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.850000\linewidth-1.700000\tabcolsep\relax}\raggedright
 MFA 3.3.9；english\_mfa v3.0.0声学模型与词典；english\_us\_mfa v3.0.0 G2P；16kHz、beam 10、retry 40、dither 0、关闭说话者适配\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.17\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.150000\linewidth-0.300000\tabcolsep\relax}\raggedright
 局部边界\strut
-\end{minipage} & \begin{minipage}[t]{0.77\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.850000\linewidth-1.700000\tabcolsep\relax}\raggedright
 上下文扩展0.5秒及1秒；两种上下文与独立识别的端点一致性门槛0.2秒；词组长度2---8词\strut
 \end{minipage}\tabularnewline
 \bottomrule
-\end{longtable}
+\end{tabular}
+\end{table}
 
 \end{PaperTable}
 
@@ -349,68 +324,59 @@ MFA 3.3.9；english\_mfa v3.0.0声学模型与词典；english\_us\_mfa v3.0.0 G
 \hypertarget{q1-ux7ed3ux679cux68c0ux9a8cux4e0eux5206ux6790}{%
 \subsection{结果检验与分析}\label{q1-ux7ed3ux679cux68c0ux9a8cux4e0eux5206ux6790}}
 
-结果检验围绕四个问题展开：新增覆盖来自何处，词组约束是否有效，算法在受控变化下是否稳定，以及真实样本如何对应。候选覆盖、稳定性与定位准确性分别讨论。
+以下检验候选覆盖、词组兼容性、受控稳定性与真实样本对应，并区分这些指标与定位准确率。
 
 \hypertarget{q1-ux8fdeux7eedux8bedux97f3ux4e0eux591aux7c92ux5ea6ux589eux5f3aux7ed3ux679c}{%
 \subsubsection{连续语音与多粒度增强结果}\label{q1-ux8fdeux7eedux8bedux97f3ux4e0eux591aux7c92ux5ea6ux589eux5f3aux7ed3ux679c}}
 
-全部100条采用统一无提示识别。原CTC识别与原文的唯一精确词匹配数为1390，Whisper为1624；该指标衡量文字一致性。生成阶段未读取人工转写、人工时间、复核备注或情感标签。筛选得到118个局部片段，形成236个MFA裁剪任务，其中117个片段有两种不同裁剪，1个片段的裁剪因音轨边界而重合。
+全部100条采用统一无提示识别。原CTC识别与原文的唯一精确词匹配数为1390，Whisper为1624；该指标衡量文字一致性。候选生成仅使用原文、音轨和固定模型输出。筛选得到118个局部片段，形成236个MFA裁剪任务，其中117个片段有两种不同裁剪，1个片段的裁剪因音轨边界而重合。
 
 \begin{PaperTable}{3}
 
-\begin{longtable}[]{@{}lrr@{}}
-\caption{连续语音与多粒度增强结果}\tabularnewline
+\begin{table}[!htbp]
+\centering\caption{连续语音与多粒度增强结果}
+\begin{tabular}{@{}lrr@{}}
 \toprule
-\begin{minipage}[b]{0.38\columnwidth}\raggedright
+\begin{minipage}[b]{\dimexpr 0.400000\linewidth-1.600000\tabcolsep\relax}\raggedright
 输出\strut
-\end{minipage} & \begin{minipage}[b]{0.27\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[b]{\dimexpr 0.300000\linewidth-1.200000\tabcolsep\relax}\raggedleft
 基础策略\strut
-\end{minipage} & \begin{minipage}[b]{0.27\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[b]{\dimexpr 0.300000\linewidth-1.200000\tabcolsep\relax}\raggedleft
 增强策略\strut
 \end{minipage}\tabularnewline
 \midrule
-\endfirsthead
-\caption[]{连续语音与多粒度增强结果（续）}\tabularnewline
-\toprule
-\begin{minipage}[b]{0.38\columnwidth}\raggedright
-输出\strut
-\end{minipage} & \begin{minipage}[b]{0.27\columnwidth}\raggedleft
-基础策略\strut
-\end{minipage} & \begin{minipage}[b]{0.27\columnwidth}\raggedleft
-增强策略\strut
-\end{minipage}\tabularnewline
-\midrule
-\endhead
-\begin{minipage}[t]{0.38\columnwidth}\raggedright
+
+\begin{minipage}[t]{\dimexpr 0.400000\linewidth-1.600000\tabcolsep\relax}\raggedright
 词级候选\strut
-\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.300000\linewidth-1.200000\tabcolsep\relax}\raggedleft
 1342（69.46\%）\strut
-\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.300000\linewidth-1.200000\tabcolsep\relax}\raggedleft
 1397（72.31\%）\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.38\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.400000\linewidth-1.600000\tabcolsep\relax}\raggedright
 仅由词组关系覆盖的词\strut
-\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.300000\linewidth-1.200000\tabcolsep\relax}\raggedleft
 0\strut
-\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.300000\linewidth-1.200000\tabcolsep\relax}\raggedleft
 71\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.38\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.400000\linewidth-1.600000\tabcolsep\relax}\raggedright
 词级或词组级覆盖的词\strut
-\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.300000\linewidth-1.200000\tabcolsep\relax}\raggedleft
 1342（69.46\%）\strut
-\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.300000\linewidth-1.200000\tabcolsep\relax}\raggedleft
 1468（75.98\%）\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.38\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.400000\linewidth-1.600000\tabcolsep\relax}\raggedright
 完全未确定的词\strut
-\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.300000\linewidth-1.200000\tabcolsep\relax}\raggedleft
 590\strut
-\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.300000\linewidth-1.200000\tabcolsep\relax}\raggedleft
 464\strut
 \end{minipage}\tabularnewline
 \bottomrule
-\end{longtable}
+\end{tabular}
+\end{table}
 
 \end{PaperTable}
 
@@ -425,72 +391,59 @@ MFA 3.3.9；english\_mfa v3.0.0声学模型与词典；english\_us\_mfa v3.0.0 G
 
 \begin{PaperTable}{5}
 
-\begin{longtable}[]{@{}lrrrr@{}}
-\caption{词组选择的固定证据对照}\tabularnewline
+\begin{table}[!htbp]
+\centering\caption{词组选择的固定证据对照}
+\begin{tabular}{@{}lrrrr@{}}
 \toprule
-\begin{minipage}[b]{0.35\columnwidth}\raggedright
+\begin{minipage}[b]{\dimexpr 0.400000\linewidth-3.200000\tabcolsep\relax}\raggedright
 选择方式\strut
-\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[b]{\dimexpr 0.140000\linewidth-1.120000\tabcolsep\relax}\raggedleft
 词级候选\strut
-\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[b]{\dimexpr 0.190000\linewidth-1.520000\tabcolsep\relax}\raggedleft
 仅词组覆盖词数\strut
-\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[b]{\dimexpr 0.100000\linewidth-0.800000\tabcolsep\relax}\raggedleft
 词组数\strut
-\end{minipage} & \begin{minipage}[b]{0.16\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[b]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 词组间不兼容对数\strut
 \end{minipage}\tabularnewline
 \midrule
-\endfirsthead
-\caption[]{词组选择的固定证据对照（续）}\tabularnewline
-\toprule
-\begin{minipage}[b]{0.35\columnwidth}\raggedright
-选择方式\strut
-\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedleft
-词级候选\strut
-\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedleft
-仅词组覆盖词数\strut
-\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedleft
-词组数\strut
-\end{minipage} & \begin{minipage}[b]{0.16\columnwidth}\raggedleft
-词组间不兼容对数\strut
-\end{minipage}\tabularnewline
-\midrule
-\endhead
-\begin{minipage}[t]{0.35\columnwidth}\raggedright
+
+\begin{minipage}[t]{\dimexpr 0.400000\linewidth-3.200000\tabcolsep\relax}\raggedright
 词级提议阶段筛选、短组优先\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.140000\linewidth-1.120000\tabcolsep\relax}\raggedleft
 1397\strut
-\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.190000\linewidth-1.520000\tabcolsep\relax}\raggedleft
 56\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.100000\linewidth-0.800000\tabcolsep\relax}\raggedleft
 38\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 2\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.35\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.400000\linewidth-3.200000\tabcolsep\relax}\raggedright
 最终词级决策后筛选、短组优先\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.140000\linewidth-1.120000\tabcolsep\relax}\raggedleft
 1397\strut
-\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.190000\linewidth-1.520000\tabcolsep\relax}\raggedleft
 71\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.100000\linewidth-0.800000\tabcolsep\relax}\raggedleft
 53\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 2\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.35\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.400000\linewidth-3.200000\tabcolsep\relax}\raggedright
 最终词级决策后筛选、双顺序动态规划\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.140000\linewidth-1.120000\tabcolsep\relax}\raggedleft
 1397\strut
-\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.190000\linewidth-1.520000\tabcolsep\relax}\raggedleft
 71\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.100000\linewidth-0.800000\tabcolsep\relax}\raggedleft
 50\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 0\strut
 \end{minipage}\tabularnewline
 \bottomrule
-\end{longtable}
+\end{tabular}
+\end{table}
 
 \end{PaperTable}
 
@@ -507,80 +460,71 @@ MFA 3.3.9；english\_mfa v3.0.0声学模型与词典；english\_us\_mfa v3.0.0 G
 
 \begin{PaperTable}{3}
 
-\begin{longtable}[]{@{}lrl@{}}
-\caption{特征可用性与未确定状态}\tabularnewline
+\begin{table}[!htbp]
+\centering\caption{特征可用性与未确定状态}
+\begin{tabular}{@{}lrl@{}}
 \toprule
-\begin{minipage}[b]{0.33\columnwidth}\raggedright
+\begin{minipage}[b]{\dimexpr 0.300000\linewidth-1.200000\tabcolsep\relax}\raggedright
 状态\strut
-\end{minipage} & \begin{minipage}[b]{0.21\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[b]{\dimexpr 0.120000\linewidth-0.480000\tabcolsep\relax}\raggedleft
 词数\strut
-\end{minipage} & \begin{minipage}[b]{0.37\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\dimexpr 0.580000\linewidth-2.320000\tabcolsep\relax}\raggedright
 处理\strut
 \end{minipage}\tabularnewline
 \midrule
-\endfirsthead
-\caption[]{特征可用性与未确定状态（续）}\tabularnewline
-\toprule
-\begin{minipage}[b]{0.33\columnwidth}\raggedright
-状态\strut
-\end{minipage} & \begin{minipage}[b]{0.21\columnwidth}\raggedleft
-词数\strut
-\end{minipage} & \begin{minipage}[b]{0.37\columnwidth}\raggedright
-处理\strut
-\end{minipage}\tabularnewline
-\midrule
-\endhead
-\begin{minipage}[t]{0.33\columnwidth}\raggedright
+
+\begin{minipage}[t]{\dimexpr 0.300000\linewidth-1.200000\tabcolsep\relax}\raggedright
 无语音信号\strut
-\end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.480000\tabcolsep\relax}\raggedleft
 24\strut
-\end{minipage} & \begin{minipage}[t]{0.37\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.580000\linewidth-2.320000\tabcolsep\relax}\raggedright
 声音使用掩码关闭\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.33\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.300000\linewidth-1.200000\tabcolsep\relax}\raggedright
 无信息性锚点\strut
-\end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.480000\tabcolsep\relax}\raggedleft
 216\strut
-\end{minipage} & \begin{minipage}[t]{0.37\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.580000\linewidth-2.320000\tabcolsep\relax}\raggedright
 保留原文与原生观测\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.33\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.300000\linewidth-1.200000\tabcolsep\relax}\raggedright
 整体支持不足\strut
-\end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.480000\tabcolsep\relax}\raggedleft
 102\strut
-\end{minipage} & \begin{minipage}[t]{0.37\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.580000\linewidth-2.320000\tabcolsep\relax}\raggedright
 保留局部证据记录\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.33\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.300000\linewidth-1.200000\tabcolsep\relax}\raggedright
 未匹配或位置歧义\strut
-\end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.480000\tabcolsep\relax}\raggedleft
 96\strut
-\end{minipage} & \begin{minipage}[t]{0.37\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.580000\linewidth-2.320000\tabcolsep\relax}\raggedright
 保留待定位置\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.33\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.300000\linewidth-1.200000\tabcolsep\relax}\raggedright
 仅近似文字对应\strut
-\end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.480000\tabcolsep\relax}\raggedleft
 16\strut
-\end{minipage} & \begin{minipage}[t]{0.37\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.580000\linewidth-2.320000\tabcolsep\relax}\raggedright
 保留近似匹配证据\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.33\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.300000\linewidth-1.200000\tabcolsep\relax}\raggedright
 跨模型时间冲突\strut
-\end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.480000\tabcolsep\relax}\raggedleft
 9\strut
-\end{minipage} & \begin{minipage}[t]{0.37\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.580000\linewidth-2.320000\tabcolsep\relax}\raggedright
 分别保存冲突候选\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.33\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.300000\linewidth-1.200000\tabcolsep\relax}\raggedright
 边界不稳定\strut
-\end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.480000\tabcolsep\relax}\raggedleft
 1\strut
-\end{minipage} & \begin{minipage}[t]{0.37\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.580000\linewidth-2.320000\tabcolsep\relax}\raggedright
 保留边界差异记录\strut
 \end{minipage}\tabularnewline
 \bottomrule
-\end{longtable}
+\end{tabular}
+\end{table}
 
 \end{PaperTable}
 
@@ -599,82 +543,67 @@ MFA 3.3.9；english\_mfa v3.0.0声学模型与词典；english\_us\_mfa v3.0.0 G
 
 \begin{PaperTable}{6}
 
-\begin{longtable}[]{@{}lrrrrl@{}}
-\caption{基础策略受控稳定性与声学量校核}\tabularnewline
+\begin{table}[!htbp]
+\centering\caption{基础策略受控稳定性与声学量校核}
+\begin{tabular}{@{}lrrrrl@{}}
 \toprule
-\begin{minipage}[b]{0.21\columnwidth}\raggedright
+\begin{minipage}[b]{\dimexpr 0.300000\linewidth-3.000000\tabcolsep\relax}\raggedright
 条件\strut
-\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[b]{\dimexpr 0.120000\linewidth-1.200000\tabcolsep\relax}\raggedleft
 候选词数\strut
-\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[b]{\dimexpr 0.150000\linewidth-1.500000\tabcolsep\relax}\raggedleft
 保留原候选\strut
-\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[b]{\dimexpr 0.080000\linewidth-0.800000\tabcolsep\relax}\raggedleft
 丢失\strut
-\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[b]{\dimexpr 0.080000\linewidth-0.800000\tabcolsep\relax}\raggedleft
 新增\strut
-\end{minipage} & \begin{minipage}[b]{0.21\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\dimexpr 0.270000\linewidth-2.700000\tabcolsep\relax}\raggedright
 端点残差中位数/95分位\strut
 \end{minipage}\tabularnewline
 \midrule
-\endfirsthead
-\caption[]{基础策略受控稳定性与声学量校核（续）}\tabularnewline
-\toprule
-\begin{minipage}[b]{0.21\columnwidth}\raggedright
-条件\strut
-\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedleft
-候选词数\strut
-\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedleft
-保留原候选\strut
-\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedleft
-丢失\strut
-\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedleft
-新增\strut
-\end{minipage} & \begin{minipage}[b]{0.21\columnwidth}\raggedright
-端点残差中位数/95分位\strut
-\end{minipage}\tabularnewline
-\midrule
-\endhead
-\begin{minipage}[t]{0.21\columnwidth}\raggedright
+
+\begin{minipage}[t]{\dimexpr 0.300000\linewidth-3.000000\tabcolsep\relax}\raggedright
 原输入\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-1.200000\tabcolsep\relax}\raggedleft
 1342\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.150000\linewidth-1.500000\tabcolsep\relax}\raggedleft
 1342\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.080000\linewidth-0.800000\tabcolsep\relax}\raggedleft
 0\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.080000\linewidth-0.800000\tabcolsep\relax}\raggedleft
 0\strut
-\end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.270000\linewidth-2.700000\tabcolsep\relax}\raggedright
 0/0毫秒\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.21\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.300000\linewidth-3.000000\tabcolsep\relax}\raggedright
 幅度减半\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-1.200000\tabcolsep\relax}\raggedleft
 1342\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.150000\linewidth-1.500000\tabcolsep\relax}\raggedleft
 1342\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.080000\linewidth-0.800000\tabcolsep\relax}\raggedleft
 0\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.080000\linewidth-0.800000\tabcolsep\relax}\raggedleft
 0\strut
-\end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.270000\linewidth-2.700000\tabcolsep\relax}\raggedright
 0/0毫秒\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.21\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.300000\linewidth-3.000000\tabcolsep\relax}\raggedright
 前置1秒静音并扣除平移\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-1.200000\tabcolsep\relax}\raggedleft
 1343\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.150000\linewidth-1.500000\tabcolsep\relax}\raggedleft
 1325\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.080000\linewidth-0.800000\tabcolsep\relax}\raggedleft
 17\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.080000\linewidth-0.800000\tabcolsep\relax}\raggedleft
 18\strut
-\end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.270000\linewidth-2.700000\tabcolsep\relax}\raggedright
 0/20毫秒\strut
 \end{minipage}\tabularnewline
 \bottomrule
-\end{longtable}
+\end{tabular}
+\end{table}
 
 \end{PaperTable}
 
@@ -712,1132 +641,1132 @@ T、A、V、F依次表示文本、声音、画面、人脸事件，特征维度�
 \begin{longtable}[]{@{}lrrll@{}}
 \caption{全部100条样本的特征与时序结果}\tabularnewline
 \toprule
-\begin{minipage}[b]{0.29\columnwidth}\raggedright
+\begin{minipage}[b]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 样本标识\strut
-\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[b]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 A秒\strut
-\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[b]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 V秒\strut
-\end{minipage} & \begin{minipage}[b]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 T/A/V/F长度\strut
-\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 W/P/U\strut
 \end{minipage}\tabularnewline
 \midrule
 \endfirsthead
 \caption[]{全部100条样本的特征与时序结果（续）}\tabularnewline
 \toprule
-\begin{minipage}[b]{0.29\columnwidth}\raggedright
+\begin{minipage}[b]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 样本标识\strut
-\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[b]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 A秒\strut
-\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[b]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 V秒\strut
-\end{minipage} & \begin{minipage}[b]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 T/A/V/F长度\strut
-\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 W/P/U\strut
 \end{minipage}\tabularnewline
 \midrule
 \endhead
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}3g5yACwY\allowbreak{}nA\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}13}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 5.399\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 5.433\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 15/269/29/29\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 14/1/0\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}3g5yACwY\allowbreak{}nA\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}2}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 9.231\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 9.267\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 14/461/47/47\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 12/0/2\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}3g5yACwY\allowbreak{}nA\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}3}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 14.328\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 14.367\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 29/716/73/73\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 21/6/2\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}3g5yACwY\allowbreak{}nA\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}9}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 8.696\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 8.767\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 23/434/45/45\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 19/3/1\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}3nNcZdcd\allowbreak{}vU\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}5}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 7.789\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 7.867\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 18/389/40/39\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 16/0/2\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}571d8cVa\allowbreak{}uQ\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}0}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 4.992\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 5.067\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 12/249/27/26\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 7/0/5\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}571d8cVa\allowbreak{}uQ\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}5}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 15.115\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 15.167\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 43/755/77/77\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 41/1/1\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}6rXp3zJ3\allowbreak{}kc\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}8}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 12.738\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 12.800\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 34/636/65/65\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 30/1/3\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}9y-\allowbreak{}fZ3swSY\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}0}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 6.757\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 6.833\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 22/337/35/35\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 11/1/10\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}9y-\allowbreak{}fZ3swSY\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}4}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 2.665\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 2.700\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 9/132/15/15\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 4/3/2\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}9y-\allowbreak{}fZ3swSY\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}8}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 4.917\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 4.967\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 12/245/26/23\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 12/0/0\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}AUZQgSxy\allowbreak{}PQ\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}2}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 22.405\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 22.467\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 41/1119/113/113\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 15/3/23\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}HeZS2-\allowbreak{}Prhc\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}2}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 8.151\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 8.200\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 16/407/42/42\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 11/2/3\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}HwX2H8Z4\allowbreak{}hY\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}2}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 3.916\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 3.967\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 7/195/21/5\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 0/0/7\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}HwX2H8Z4\allowbreak{}hY\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}5}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 5.544\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 5.600\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 9/276/29/10\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 7/0/2\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}HwX2H8Z4\allowbreak{}hY\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}6}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 3.256\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 3.300\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 7/162/18/11\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 5/1/1\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}HwX2H8Z4\allowbreak{}hY\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}9}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 7.636\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 7.733\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 22/381/40/0\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 6/2/14\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}I\_\allowbreak{}e4mIh0yE\allowbreak{}\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}1}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 7.444\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 7.500\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 18/371/39/39\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 18/0/0\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}I\_\allowbreak{}e4mIh0yE\allowbreak{}\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}3}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 8.994\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 9.033\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 22/449/46/46\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 17/0/5\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}MeTTeMJB\allowbreak{}Nc\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}0}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 9.218\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 9.300\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 21/460/48/47\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 20/0/1\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}MeTTeMJB\allowbreak{}Nc\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}13}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 5.256\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 5.300\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 14/262/28/28\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 12/0/2\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}MeTTeMJB\allowbreak{}Nc\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}7}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 10.411\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 10.467\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 31/520/54/54\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 31/0/0\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}NFrJFQij\allowbreak{}FE\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}1}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 5.659\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 5.680\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 16/282/29/0\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 0/0/16\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}NFrJFQij\allowbreak{}FE\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}2}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 6.698\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 6.760\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 18/334/35/0\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 0/0/18\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}RfYyzHpj\allowbreak{}k4\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}11}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 5.075\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 5.133\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 17/253/27/27\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 13/3/1\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}RfYyzHpj\allowbreak{}k4\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}2}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 5.392\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 5.467\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 25/269/29/29\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 22/3/0\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}RfYyzHpj\allowbreak{}k4\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}8}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 4.532\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 4.567\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 17/226/24/24\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 16/0/1\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}THoVjtIk\allowbreak{}eU\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}12}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 14.806\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 14.833\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 39/740/75/75\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 35/0/4\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}THoVjtIk\allowbreak{}eU\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}2}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 4.231\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 4.267\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 10/211/23/23\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 10/0/0\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}THoVjtIk\allowbreak{}eU\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}6}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 7.983\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 8.033\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 30/398/41/41\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 27/0/3\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}UUCSKoHe\allowbreak{}MA\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}0}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 7.732\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 7.800\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 18/386/40/39\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 16/2/0\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}UacrmKiT\allowbreak{}n4\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}10}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 7.242\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 7.267\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 18/361/38/38\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 18/0/0\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}UacrmKiT\allowbreak{}n4\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}4}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 4.682\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 4.733\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 14/233/25/25\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 13/0/1\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}UuX1xuai\allowbreak{}iE\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}0}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 3.576\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 3.633\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 9/178/20/29\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 8/1/0\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}UuX1xuai\allowbreak{}iE\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}1}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 10.267\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 10.300\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 27/513/53/105\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 24/2/1\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}UuX1xuai\allowbreak{}iE\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}3}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 4.038\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 4.100\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 9/201/22/22\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 7/1/1\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}UuX1xuai\allowbreak{}iE\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}6}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 7.944\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 8.000\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 22/396/41/41\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 17/2/3\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}a55Q6RWv\allowbreak{}TA\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}3}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 22.083\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 22.133\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 65/1103/112/116\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 61/2/2\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}aNfi7CP8\allowbreak{}vM\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}7}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 8.538\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 8.567\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 18/426/44/44\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 12/2/4\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}aqamKhZ1\allowbreak{}Ec\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}0}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 10.890\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 10.967\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 14/544/56/56\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 6/5/3\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}dxfTGcXJ\allowbreak{}oc\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}0}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 20.410\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 20.500\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 40/1020/104/81\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 30/1/9\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}dxfTGcXJ\allowbreak{}oc\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}1}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 16.018\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 16.067\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 37/800/82/82\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 32/4/1\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}dxfTGcXJ\allowbreak{}oc\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}2}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 16.633\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 16.667\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 34/831/85/85\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 32/0/2\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}dxfTGcXJ\allowbreak{}oc\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}6}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 12.628\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 12.700\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 28/631/65/65\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 26/1/1\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}egA8-\allowbreak{}b7-\allowbreak{}3M\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}1}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 10.156\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 10.200\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 20/507/52/52\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 15/4/1\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}egA8-\allowbreak{}b7-\allowbreak{}3M\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}13}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 4.024\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 4.100\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 11/200/22/22\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 11/0/0\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}egA8-\allowbreak{}b7-\allowbreak{}3M\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}16}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 5.483\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 5.533\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 11/273/29/29\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 11/0/0\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}egA8-\allowbreak{}b7-\allowbreak{}3M\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}17}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 7.095\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 7.167\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 16/354/37/37\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 15/1/0\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}egA8-\allowbreak{}b7-\allowbreak{}3M\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}18}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 8.266\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 8.333\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 22/413/43/43\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 21/1/0\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}egA8-\allowbreak{}b7-\allowbreak{}3M\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}20}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 6.474\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 6.533\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 20/323/34/34\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 20/0/0\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}egA8-\allowbreak{}b7-\allowbreak{}3M\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}26}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 5.921\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 5.967\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 15/295/31/31\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 14/0/1\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}egA8-\allowbreak{}b7-\allowbreak{}3M\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}6}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 6.183\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 6.233\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 12/308/32/32\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 11/0/1\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}egA8-\allowbreak{}b7-\allowbreak{}3M\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}9}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 4.936\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 5.000\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 10/246/26/26\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 10/0/0\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}hnBHBN8p\allowbreak{}5A\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}6}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 6.333\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 6.380\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 13/316/33/17\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 0/0/13\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}hnBHBN8p\allowbreak{}5A\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}7}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 7.309\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 7.339\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 13/365/38/29\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 0/0/13\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}iRBcNs9o\allowbreak{}I8\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}3}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 5.538\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 5.572\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 8/276/29/29\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 0/0/8\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}iRBcNs9o\allowbreak{}I8\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}6}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 2.820\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 2.836\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 5/140/15/15\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 0/0/5\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}iRBcNs9o\allowbreak{}I8\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}7}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 4.006\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 4.004\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 9/200/21/21\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 0/0/9\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}iRBcNs9o\allowbreak{}I8\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}8}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 8.026\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 8.041\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 21/401/41/41\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 0/0/21\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}iRBcNs9o\allowbreak{}I8\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}9}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 3.374\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 3.403\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 5/168/18/13\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 0/0/5\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}lzEya4AM\allowbreak{}\_\allowbreak{}4\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}5}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 7.570\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 7.633\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 19/378/39/39\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 16/1/2\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}lzEya4AM\allowbreak{}\_\allowbreak{}4\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}6}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 14.740\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 14.767\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 43/736/75/75\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 39/2/2\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}mJ2ud6oK\allowbreak{}I8\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}1}*\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 6.055\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 6.073\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 13/302/32/0\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 0/0/13\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}mJ2ud6oK\allowbreak{}I8\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}2}*\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 5.702\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 5.706\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 11/284/30/0\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 0/0/11\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}mJ2ud6oK\allowbreak{}I8\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}6}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 2.228\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 2.236\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 5/111/12/12\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 0/0/5\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}mJ2ud6oK\allowbreak{}I8\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}8}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 4.171\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 4.171\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 11/208/22/22\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 0/0/11\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}mJ2ud6oK\allowbreak{}I8\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}9}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 6.909\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 6.940\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 22/345/36/36\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 0/0/22\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}mqbVkbCn\allowbreak{}dg\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}0}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 6.385\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 6.467\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 14/319/34/34\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 14/0/0\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}qDkUB0Gg\allowbreak{}YY\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}6}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 4.615\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 4.667\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 16/230/24/24\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 9/0/7\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}ri04Z7vw\allowbreak{}nc\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}0}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 2.763\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 2.794\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 8/137/15/0\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 0/0/8\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}ri04Z7vw\allowbreak{}nc\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}2}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 5.913\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 5.963\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 16/295/31/12\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 0/0/16\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}ri04Z7vw\allowbreak{}nc\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}5}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 3.440\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 3.461\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 8/171/18/18\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 0/0/8\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}s9qJ7ATP\allowbreak{}7w\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}0}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 6.711\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 6.800\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 24/335/35/35\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 18/0/6\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}s9qJ7ATP\allowbreak{}7w\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}1}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 4.644\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 4.667\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 11/231/24/24\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 10/0/1\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}s9qJ7ATP\allowbreak{}7w\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}4}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 4.247\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 4.300\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 9/212/23/16\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 8/0/1\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}s9qJ7ATP\allowbreak{}7w\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}5}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 8.398\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 8.433\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 19/419/43/43\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 18/0/1\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}s9qJ7ATP\allowbreak{}7w\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}6}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 2.315\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 2.367\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 5/115/13/10\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 5/0/0\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}s9qJ7ATP\allowbreak{}7w\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}7}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 6.839\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 6.900\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 28/341/36/23\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 26/2/0\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}s9qJ7ATP\allowbreak{}7w\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}8}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 3.184\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 3.233\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 12/158/17/17\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 9/0/3\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}t217m2on\allowbreak{}-\allowbreak{}s\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}2}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 5.630\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 5.667\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 12/281/29/29\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 11/0/1\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}t217m2on\allowbreak{}-\allowbreak{}s\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}7}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 17.026\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 17.067\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 45/851/87/87\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 43/1/1\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}tANM6ETl\allowbreak{}\_\allowbreak{}M\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}3}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 6.604\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 6.667\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 22/329/35/35\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 20/1/1\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}tPCytz4r\allowbreak{}ww\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}10}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 4.679\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 4.733\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 12/233/25/25\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 10/0/2\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}tPCytz4r\allowbreak{}ww\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}11}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 5.379\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 5.467\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 17/268/29/29\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 15/0/2\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}tPCytz4r\allowbreak{}ww\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}12}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 11.736\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 11.767\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 26/586/60/60\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 20/0/6\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}tPCytz4r\allowbreak{}ww\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}16}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 7.139\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 7.200\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 16/356/37/37\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 13/0/3\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}tPCytz4r\allowbreak{}ww\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}18}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 6.569\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 6.633\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 16/328/34/34\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 16/0/0\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}uywlfIYO\allowbreak{}S8\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}4}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 5.881\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 5.967\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 18/293/31/31\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 16/0/2\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}vxjVxOeS\allowbreak{}cU\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}4}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 9.037\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 9.067\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 21/451/47/47\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 18/3/0\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}wMB\_\allowbreak{}hJL-\allowbreak{}3o\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}7}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 5.976\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 6.033\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 22/298/31/30\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 22/0/0\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}wny0OAz3\allowbreak{}g8\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}0}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 3.274\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 3.333\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 9/163/18/18\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 9/0/0\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}wny0OAz3\allowbreak{}g8\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}1}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 6.777\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 6.833\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 22/338/35/35\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 22/0/0\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}wny0OAz3\allowbreak{}g8\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}2}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 6.523\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 6.567\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 23/325/34/34\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 23/0/0\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}wny0OAz3\allowbreak{}g8\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}3}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 6.100\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 6.133\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 20/304/32/32\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 19/0/1\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}wny0OAz3\allowbreak{}g8\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}5}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 6.741\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 6.800\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 20/336/35/35\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 19/1/0\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}wny0OAz3\allowbreak{}g8\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}7}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 7.910\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 8.000\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 29/395/41/41\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 25/1/3\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}wny0OAz3\allowbreak{}g8\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}9}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 6.043\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 6.100\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 20/301/32/32\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 20/0/0\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}yRb-\allowbreak{}Jum7EQ\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}1}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 29.110\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 29.167\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 49/1455/147/167\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 1/0/48\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}yRb-\allowbreak{}Jum7EQ\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}5}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 13.045\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 13.133\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 25/651/67/67\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 1/0/24\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{minipage}[t]{\dimexpr 0.330000\linewidth-2.640000\tabcolsep\relax}\raggedright
 \texttt{-\allowbreak{}yRb-\allowbreak{}Jum7EQ\$\allowbreak{}\_\allowbreak{}\$\allowbreak{}6}\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 11.243\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedleft
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.120000\linewidth-0.960000\tabcolsep\relax}\raggedleft
 11.200\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.260000\linewidth-2.080000\tabcolsep\relax}\raggedleft
 19/561/57/57\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{\dimexpr 0.170000\linewidth-1.360000\tabcolsep\relax}\raggedleft
 0/0/19\strut
 \end{minipage}\tabularnewline
 \bottomrule
@@ -1848,4 +1777,4 @@ W/P/U\strut
 \hypertarget{q1-ux672cux95eeux5c0fux7ed3}{%
 \subsection{本问小结}\label{q1-ux672cux95eeux5c0fux7ed3}}
 
-本问为全部100条样本保留原文、标签和变长特征，以词级与词组级关系覆盖1468个原词。双顺序动态规划的作用是在给定证据内消除不兼容关系，逐维聚合则避免无定义特征污染平均值。受控实验验证了稳定性与实现一致性；候选是否对应真实词界，仍需独立时间标注评价。
+全部100条样本均保留原文、标签与变长特征，词级及词组级候选覆盖1468个原词。双顺序动态规划在固定候选集合内消除不兼容关系，逐维聚合按有效观测时长计算均值。受控实验验证了输出稳定性、声学量定义与重建一致性；75.98\%表示候选覆盖率，词界准确性尚无独立时间真值评价。

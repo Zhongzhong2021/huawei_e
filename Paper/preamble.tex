@@ -12,13 +12,15 @@
 \usepackage{pdflscape}
 \usepackage{caption}
 % Source captions retain their verified chapter-local identifiers.
-\captionsetup{font=normalsize,labelfont=normalfont,labelsep=quad}
+\captionsetup{font=normalsize,labelfont=normalfont,labelsep=quad,skip=6pt}
+\captionsetup[table]{position=top}
 \usepackage{xcolor}
 \usepackage{xurl}
 \usepackage[hidelinks,unicode,pdfauthor={},pdftitle={复杂场景下多模态情感预测的时序建模与可解释融合}]{hyperref}
 \usepackage{bookmark}
 \usepackage{fancyhdr}
-\usepackage{etoolbox,placeins}
+\usepackage{etoolbox}
+\usepackage[section]{placeins}
 \newfontfamily\symbolfont{DejaVu Sans}
 \usepackage{newunicodechar}
 \newunicodechar{ℓ}{\ensuremath{\ell}}
@@ -34,16 +36,19 @@
 \fancyfoot[C]{\thepage}
 \setlength{\emergencystretch}{3em}
 \raggedbottom
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
 \setlength{\parskip}{0pt}
 \setlength{\parindent}{2em}
 \setlength{\tabcolsep}{3pt}
-\renewcommand{\arraystretch}{1.0}
+\renewcommand{\arraystretch}{1.12}
 \setcounter{tocdepth}{2}
 \setcounter{secnumdepth}{3}
 \providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \providecommand{\passthrough}[1]{#1}
 \newenvironment{PaperTable}[1]{%
- \FloatBarrier\par\Needspace{7\baselineskip}\begingroup\normalsize\setlength{\LTpre}{5pt}\setlength{\LTpost}{5pt}%
+ \par\begingroup\normalsize\setlength{\LTpre}{5pt}\setlength{\LTpost}{5pt}%
 }{\endgroup\par}
 \newenvironment{PaperWideTable}{\FloatBarrier\begin{landscape}\begingroup\normalsize\setlength{\columnwidth}{\linewidth}}{\endgroup\end{landscape}}
 \AtBeginEnvironment{longtable}{\setlength{\parindent}{0pt}}
@@ -55,9 +60,17 @@
 
 \usepackage{pdfpages,tikz,needspace}
 \usetikzlibrary{arrows.meta,positioning}
-\ctexset{section={format=\centering\heiti\zihao{4},beforeskip=1.2ex,afterskip=1ex},subsection={format=\heiti\zihao{-4},beforeskip=1ex,afterskip=.6ex},subsubsection={format=\heiti\zihao{-4},beforeskip=.8ex,afterskip=.4ex}}
+\ctexset{section={format=\centering\heiti\zihao{4},beforeskip=1.2ex,afterskip=1ex},subsection={format=\songti\bfseries\zihao{-4},beforeskip=1ex,afterskip=.6ex},subsubsection={format=\songti\bfseries\zihao{-4},beforeskip=.8ex,afterskip=.4ex}}
 \linespread{1}
 \renewcommand{\footnotesize}{\normalsize}
 \numberwithin{equation}{section}
 \numberwithin{table}{section}
 \numberwithin{figure}{section}
+
+% Keep result tables near their discussion without isolating medium tables.
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.8}
+\renewcommand{\textfraction}{0.05}
+\renewcommand{\floatpagefraction}{0.8}
+\setcounter{topnumber}{3}
+\setcounter{totalnumber}{4}

@@ -33,6 +33,8 @@ def check_results():
  q2metrics=json.loads((q2dir/'validation_metrics.json').read_text());clean=q2metrics['clean']
  assert len([v for v in q2metrics.values() if 'n' in v])==46 and clean['n']==728
  assert table(m[1],'表18')==[[f'{clean[k]:.4f}' for k in ['accuracy','macro_f1','mae','pearson']]]
+ abstract=(PAPER/'abstract.tex').read_text()
+ for k in ['accuracy','macro_f1','mae','pearson']:assert f'{clean[k]:.4f}' in abstract,('abstract q2 metric',k)
  for row in table(m[1],'表10'):
   modality={'文本':'text','语音':'audio','视觉':'vision'}[row[0]]
   result=q2metrics[f"{modality}_{row[1].rstrip('%')}_random"]
@@ -61,7 +63,7 @@ def check_results():
   assert row[1:5]==[f"{100*a['accuracy']:.2f}",*[f'{a[k]:.4f}' for k in ['macro_f1','mae','pearson']]]
  media=json.loads((Q3/'results/evidence_navigation/media_consistency.json').read_text())
  assert [r['id'] for r in media['samples'] if r['feature_availability']['all_zero']['aligned']['vision']]==['13']
- return {'q1_rows':100,'q1_word_states':sums,'q2_rows':30,'q3_prediction_rows':20,'q3_location_rows':20,'q3_metrics_match_json':True,'q2_final_metrics_match_json':True,'q2_final_predictions_match_csv':True,'q2_source_hashes_verified':True,'q2_comparison_scope':'final version q2-final-span-seed42-v1; supplied PDF and recorded CSV/JSON checked; no local model inference'}
+ return {'q1_rows':100,'q1_word_states':sums,'q2_rows':30,'q3_prediction_rows':20,'q3_location_rows':20,'q3_metrics_match_json':True,'q2_final_metrics_match_json':True,'q2_final_predictions_match_csv':True,'q2_source_hashes_verified':True,'q2_comparison_scope':'final version q2-final-span-seed42-v1; tables checked against recorded CSV/JSON; archived CPU replay checked in revision record'}
 def main():
  pdf=PAPER/'paper.pdf';assert pdf.is_file() and pdf.stat().st_size>10000
  info=subprocess.check_output(['pdfinfo',str(pdf)],text=True);pages=int(re.search(r'^Pages:\s+(\d+)',info,re.M)[1])
@@ -98,6 +100,10 @@ def main():
   assert (PAPER/record['svg']).read_text()==expected
   assert digest(PAPER/record['pdf'])==record['pdf_sha256']
  assert not re.search(r'Round [2-6]|Frozen round [2-6]',text)
+ # Source indices must never be converted to bibliography citations.
+ chapter3=(PAPER/'chapters/question3.tex').read_text()
+ assert not re.search(r'位置\\cite\{',chapter3)
+ for index in [3,5,7]:assert '位置{[}'+str(index)+'{]}' in chapter3
  results=check_results()
  # Recompute the added postprocessing comparison from saved predictions.
  manuscript=(PAPER/'manuscript/question3.md').read_text()
