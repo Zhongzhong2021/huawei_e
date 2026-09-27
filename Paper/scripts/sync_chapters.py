@@ -5,7 +5,7 @@ import ast,hashlib,json,re,subprocess
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[2]; PAPER=ROOT/'Paper'
 SOURCES=[PAPER/'manuscript'/f'question{i}.md' for i in range(1,4)]
-ORIGINALS=[ROOT/'问题1/问题1正文稿.md',ROOT/'问题2/docs/paper_current/reports/E题问题2统一论文素材与当前模型结果.md',ROOT/'问题三/paper/问题三_不确定性融合论文.md']
+ORIGINALS=[ROOT/'问题1/问题1正文稿.md',ROOT/'问题2/docs/paper_current/reports/E题问题2统一论文素材与当前模型结果.md',ROOT/'问题3/paper/问题三_不确定性融合论文.md']
 TITLES=['问题一：三模态特征与多粒度时序对应','问题二：局部缺失下的情感预测','问题三：可解释融合与证据定位']
 FORMAT='markdown+pipe_tables+tex_math_dollars+raw_tex+table_captions+autolink_bare_uris-smart'
 def pandoc(text,from_format=FORMAT,to='json'):
@@ -14,7 +14,7 @@ def digest(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def raw(t):return {'t':'RawBlock','c':['latex',t]}
 def main():
  records=[];refs=[];keys={};assets={};used=[]
- tree=ast.parse((ROOT/'问题三/paper/build_paper.py').read_text())
+ tree=ast.parse((ROOT/'问题3/paper/build_paper.py').read_text())
  formulas=next(ast.literal_eval(n.value) for n in tree.body if isinstance(n,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='LATEX' for t in n.targets))
  for number,(path,title) in enumerate(zip(SOURCES,TITLES),1):
   text=path.read_text();parts=text.split('## 参考文献',1);text=parts[0];local={}
@@ -108,6 +108,6 @@ def main():
   bibliography.extend([r'\bibitem{'+key+'}',pandoc(re.sub(r'(https?://[^\s，。<>]+)',r'<\1>',entry),FORMAT,'latex').strip()])
  bibliography.append(r'\end{thebibliography}');(PAPER/'chapters/references.tex').write_text('\n'.join(bibliography)+'\n')
  inputs=['main.tex','preamble.tex','abstract.tex','conclusion.tex','introduction.tex','data.tex','chapters/references.tex','assets/official-cover.pdf','assets/figure_sources.json','assets/q2_confusion.svg','assets/q2_missing.svg']
- (PAPER/'sources.json').write_text(json.dumps({'sources':records,'assets':assets,'references':len(refs),'citation_order':used,'paper_inputs':{n:digest(PAPER/n) for n in inputs},'q3_equation_generator_sha256':digest(ROOT/'问题三/paper/build_paper.py'),'generator_sha256':digest(Path(__file__))},ensure_ascii=False,indent=2)+'\n')
+ (PAPER/'sources.json').write_text(json.dumps({'sources':records,'assets':assets,'references':len(refs),'citation_order':used,'paper_inputs':{n:digest(PAPER/n) for n in inputs},'q3_equation_generator_sha256':digest(ROOT/'问题3/paper/build_paper.py'),'generator_sha256':digest(Path(__file__))},ensure_ascii=False,indent=2)+'\n')
  print(json.dumps({'chapters':3,'figures':sum(r['images'] for r in records),'tables':sum(r['tables'] for r in records),'references':len(refs)}))
 if __name__=='__main__':main()

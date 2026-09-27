@@ -17,7 +17,7 @@
   "raw_competition_data_included": false,
   "fits_50mb_competition_limit": false,
   "hash_algorithm": "SHA256",
-  "total_bytes": 1389207404,
+  "total_bytes": 1389207396,
   "files": [
     {
       "path": ".gitignore",
@@ -46,8 +46,8 @@
     },
     {
       "path": "docs/模块说明.md",
-      "bytes": 3155,
-      "sha256": "5ed94fef2f019a81be0319393f0192297e3fa7fddcc106e4e5ace30f60ab2531"
+      "bytes": 3153,
+      "sha256": "5d02d2dc75d68dbd5e23dd97edbf516cdb9776d0e07598526969c77cf2a92515"
     },
     {
       "path": "docs/模型来源与复现实验说明.md",
@@ -56,8 +56,8 @@
     },
     {
       "path": "docs/环境配置.md",
-      "bytes": 3301,
-      "sha256": "68344f25625af4026723e3fe342a72ddbd55db836f726d7bdd3f0022fefa5532"
+      "bytes": 3299,
+      "sha256": "215dbd33ac17d4c4db91e39ba876010d66b9408897c089dc9890211c983966b3"
     },
     {
       "path": "docs/补充对照实验说明.md",
@@ -66,8 +66,8 @@
     },
     {
       "path": "docs/论文写作参考与修订说明.md",
-      "bytes": 5531,
-      "sha256": "359ffec61ffb7812d2719ee2efc7a48dbcf2c45797ce2989e73691b6a776fc7e"
+      "bytes": 5529,
+      "sha256": "78823ce7df6e07578445c5a0c946613c8469c212dc4aa8ce738ecc43c56a536b"
     },
     {
       "path": "docs/详细使用指南.md",
@@ -1596,8 +1596,8 @@
     },
     {
       "path": "tools/package_delivery.py",
-      "bytes": 3858,
-      "sha256": "0b9504ca8df56b9fb333fbfa6264e9d6c98af38930e981b474d4c7b7157ea1f5"
+      "bytes": 3856,
+      "sha256": "7df55918c3a0bed2dbef15193280af4198f051494153528682eb31db1fc517bf"
     },
     {
       "path": "weights/selfmm/best.pt",

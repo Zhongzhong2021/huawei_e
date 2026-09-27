@@ -74,7 +74,7 @@ def main():
         with out.open('wb') as raw, gzip.GzipFile(filename='', mode='wb', fileobj=raw, mtime=0, compresslevel=1) as compressed:
             with tarfile.open(fileobj=compressed,mode='w|') as archive:
                 for p in sorted([*content,target]):
-                    archive.add(p,arcname=str(Path('问题三')/p.relative_to(ROOT)),recursive=False,filter=normalized)
+                    archive.add(p,arcname=str(Path('问题3')/p.relative_to(ROOT)),recursive=False,filter=normalized)
         sha = digest(out)
         out.with_name(out.name+'.sha256').write_text(f'{sha}  {out.name}\n')
         print(json.dumps({'archive':str(out),'bytes':out.stat().st_size,'sha256':sha},ensure_ascii=False))

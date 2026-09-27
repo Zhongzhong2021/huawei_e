@@ -1,8 +1,8 @@
 {
   "status": "passed",
   "pages": 43,
-  "pdf_bytes": 2073088,
-  "pdf_sha256": "8defc8fd782f7b862d4fcb414bd8f8231a4ad1d88693ea540657e99f8cd70989",
+  "pdf_bytes": 1995455,
+  "pdf_sha256": "6e077426df28e67ec58c8562acccb459bc220d54d3744fdbcb217a54c92ba77c",
   "sources_verified": true,
   "abstract_pages": 1,
   "continuous_page_numbers": true,
@@ -20,36 +20,39 @@
     "q3_prediction_rows": 20,
     "q3_location_rows": 20,
     "q3_metrics_match_json": true,
-    "q2_comparison_scope": "existing manuscript predictions; model weights unavailable in this workspace"
+    "q2_comparison_scope": "final retrained seed42 model for validation diagnostics and attachment3; historical recipe-selection experiments identified separately",
+    "q2_supplementary_results_match_json": true
   },
   "scope": "PDF compilation, pagination, source hashes, tables and recorded metrics; no new model training or independent accuracy evaluation.",
   "visual_review": {
-    "method": "Rendered full-document contact sheets, then inspected final changed pages at higher resolution",
+    "method": "Rendered final Q2 validation, missingness, error analysis and 30-row prediction pages; inspected charts, table continuation and captions",
     "checked_final_physical_pages": [
-      14,
-      23,
+      24,
       25,
-      37,
-      38,
-      39,
-      40,
-      41
+      26,
+      27
     ],
-    "checks": [
-      "official four-logo cover retained and page zero removed",
-      "abstract one page; body begins on following page",
-      "Chinese body and tables retain specified size",
-      "complete table identifiers and continuation headings",
-      "diagram labels, mathematical equations, scientific plots and media captions legible",
-      "typical-card scalar values separated by row",
-      "conclusion begins on a new page"
-    ],
-    "render_cache": "/workspace/paper-revision-render",
-    "scope_note": "Full contact-sheet review preceded the final pagination adjustments; final changed table/card/conclusion pages were separately reviewed."
+    "render_cache": "/workspace/paper-q2-frozen-render",
+    "scope_note": "Focused review of revised Q2 content; unchanged parts retain previous checks."
   },
   "remaining_metadata": [
     "cover school, team number and names not supplied",
     "AI model release date and earlier tool-use metadata not supplied"
   ],
-  "existing_reproduction_gap": "Q2 final/model.pt and final/scaler.npz absent from this workspace; no new inference replay claimed."
+  "q2_model_versions": {
+    "final_model": "c78045f8f014955ccab9cc83709b989e4ebdbdf53e0859eca08ed8b30b4b4112",
+    "final_results": "docs/final: same model for validation diagnostics and attachment3 CSV; model and scaler available locally",
+    "historical_results": "Recipe selection, three-seed and controlled augmentation studies explicitly identified as separate fitted models"
+  },
+  "q2_submission_packaging": {
+    "complete": false,
+    "method": "External download of frozen fine-tuned weights; code, configuration, results and download manifest in system attachment",
+    "model_bytes": 435513419,
+    "task_total_attachment_limit_mb": 50,
+    "external_download_allowed_source": "https://www.shumo.com/forum/forum.php?mod=viewthread&tid=251903",
+    "source_author": "E题专家2",
+    "source_reply": "可以",
+    "verified_on": "2026-09-27",
+    "remaining": "Upload exact frozen files to chosen host, insert actual download URL and verify access; files have not been published."
+  }
 }

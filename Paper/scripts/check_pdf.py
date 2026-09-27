@@ -24,11 +24,16 @@ def check_results():
   n=[int(x) for x in row[4].split('/')];assert sum(n)==int(src[3].split('x')[0]),sid
   sums=[a+b for a,b in zip(sums,n)]
  assert sums==[1397,71,464]
- q2src=(ROOT/'问题2/docs/paper_current/reports/E题问题2统一论文素材与当前模型结果.md').read_text()
  q2rows=[cells(l) for l in m[1].splitlines() if re.match(r'^\| 附件3_\d\d \|',l)]
- old2=[cells(l) for l in q2src.splitlines() if re.match(r'^\| 附件3_\d\d \|',l)]
- assert q2rows==old2 and len(q2rows)==30 and len({r[0] for r in q2rows})==30
- with (ROOT/'问题三/results/附件4_预测与解释汇总.csv').open(encoding='utf-8-sig') as f:actual={r['id']:r for r in csv.DictReader(f)}
+ with (ROOT/'问题2/docs/final/attachment3_predictions.csv').open(encoding='utf-8-sig') as f:finalrows=list(csv.DictReader(f))
+ expected=[[r['sample_id'].split('.pkl')[0],{'Negative':'负向','Neutral':'中性','Positive':'正向'}[r['sentiment']],f"{float(r['intensity']):.4f}",f"{max(float(r['prob_'+c]) for c in ['negative','neutral','positive']):.4f}"] for r in finalrows]
+ assert q2rows==expected and len(q2rows)==30 and len({r[0] for r in q2rows})==30
+ finalmetrics=json.loads((ROOT/'问题2/docs/final/validation_metrics.json').read_text())
+ assert table(m[1],'表18')[0]==[f"{finalmetrics['clean'][k]:.4f}" for k in ['accuracy','macro_f1','mae','pearson']]
+ for row in table(m[1],'表10'):
+  name={'文本':'text','语音':'audio','视觉':'vision'}[row[0]];rate=int(row[1].rstrip('%'));v=finalmetrics[f'{name}_{rate}_random'];c=finalmetrics['clean']
+  assert row[2:]==[f"{v['macro_f1']:.4f}",f"{v['macro_f1']-c['macro_f1']:+.4f}",f"{v['mae']:.4f}",f"{v['mae']-c['mae']:+.4f}"]
+ with (ROOT/'问题3/results/附件4_预测与解释汇总.csv').open(encoding='utf-8-sig') as f:actual={r['id']:r for r in csv.DictReader(f)}
  preds=table(m[2],'表15');locations=table(m[2],'表16');assert len(preds)==len(locations)==len(actual)==20
  for row in preds:
   src=actual[row[0]];assert row[1]==src['predicted_label']
@@ -42,13 +47,35 @@ def check_results():
   score=re.search(r'分数([+\-\d.]+)',first);assert row[2]==score[1]
   if frame:
    bounds=re.search(r'([\d.]+)—([\d.]+)',row[3]);assert bounds and float(bounds[1])<=float(row[4])<=float(bounds[2])
- metrics=json.loads((ROOT/'问题三/results/uncertainty/metrics.json').read_text())
+ metrics=json.loads((ROOT/'问题3/results/uncertainty/metrics.json').read_text())
  for split,cap in [('valid','表4'),('test','表5')]:
   row=table(m[2],cap)[-1];a=metrics[split]['final']
   assert row[1:5]==[f"{100*a['accuracy']:.2f}",*[f'{a[k]:.4f}' for k in ['macro_f1','mae','pearson']]]
- media=json.loads((ROOT/'问题三/results/evidence_navigation/media_consistency.json').read_text())
+ media=json.loads((ROOT/'问题3/results/evidence_navigation/media_consistency.json').read_text())
  assert [r['id'] for r in media['samples'] if r['feature_availability']['all_zero']['aligned']['vision']]==['13']
- return {'q1_rows':100,'q1_word_states':sums,'q2_rows':30,'q3_prediction_rows':20,'q3_location_rows':20,'q3_metrics_match_json':True,'q2_comparison_scope':'existing manuscript predictions; model weights unavailable in this workspace'}
+ extra=m[1].split('### 固定配方重训与共同缺失对照',1)[1].split('## 局部缺失规律',1)[0]
+ retrained=json.loads((ROOT/'问题2/docs/retraining_seed42/summary.json').read_text())
+ for batch in ['clean','historical_seed42_clean']:
+  for key in ['accuracy','macro_f1','mae','pearson']:assert f"{retrained[batch][key]:.4f}" in extra
+ study=json.loads((ROOT/'问题2/docs/joint_missing_study/analysis.json').read_text())
+ decision=study['development']['selection'];assert not decision['passed']
+ for arm in ['reference_mean','candidate_mean']:
+  for group in ['low_medium','heavy_joint']:assert f"{decision[arm][group]['macro_f1']:.4f}" in extra
+  assert f"{decision[arm]['low_medium']['mae']:.4f}" in extra
+ assert len(study['development']['verified_tables'])==276
+ noaug=json.loads((ROOT/'问题2/docs/no_augmentation_study/analysis.json').read_text())
+ assert not noaug['terminal']['development_simplicity']['passed']
+ assert len(noaug['development']['verified_tables'])==276
+ assert noaug['condition_counts']['none_mae_lower']==0
+ for arm in ['reference_mean','candidate_mean']:
+  for group in ['clean','low_medium','heavy_joint']:
+   assert f"{noaug['development']['selection'][arm][group]['macro_f1']:.4f}" in extra
+  for group in ['clean','low_medium']:
+   assert f"{noaug['development']['selection'][arm][group]['mae']:.4f}" in extra
+ for folder in ['retraining_seed42','joint_missing_study','no_augmentation_study','final']:
+  base=ROOT/'问题2/docs'/folder
+  for name,sha in json.loads((base/'files.json').read_text()).items():assert digest(base/name)==sha,(folder,name)
+ return {'q1_rows':100,'q1_word_states':sums,'q2_rows':30,'q3_prediction_rows':20,'q3_location_rows':20,'q3_metrics_match_json':True,'q2_comparison_scope':'final retrained seed42 model for validation diagnostics and attachment3; historical recipe-selection experiments identified separately','q2_supplementary_results_match_json':True}
 def main():
  pdf=PAPER/'paper.pdf';assert pdf.is_file() and pdf.stat().st_size>10000
  info=subprocess.check_output(['pdfinfo',str(pdf)],text=True);pages=int(re.search(r'^Pages:\s+(\d+)',info,re.M)[1])
@@ -69,7 +96,7 @@ def main():
   assert digest(PAPER/'chapters'/f"question{r['question']}.tex")==r['chapter_sha256']
  for n,v in sources['paper_inputs'].items():assert digest(PAPER/n)==v,n
  assert digest(PAPER/'scripts/sync_chapters.py')==sources['generator_sha256']
- assert digest(ROOT/'问题三/paper/build_paper.py')==sources['q3_equation_generator_sha256']
+ assert digest(ROOT/'问题3/paper/build_paper.py')==sources['q3_equation_generator_sha256']
  for n,r in sources['assets'].items():assert digest(ROOT/n)==r['sha256']
  # The bibliography contains exactly the first-citation order of used sources.
  ordered=[]
