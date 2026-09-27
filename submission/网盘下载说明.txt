@@ -1,0 +1,16 @@
+配套资源下载
+
+百度网盘链接：待填写
+提取码：待填写
+
+网盘文件：
+weights_q2.zip：问题2定版模型权重。
+weights_q3_main.zip：问题3主模型权重。
+weights_q3_baselines.zip：问题3对照模型权重。
+media_q3.zip：解释卡引用的70张画面。
+
+下载后，将所需ZIP解压到本说明所在的系统附件根目录，与问题2、问题3目录合并。
+问题2推理需要weights_q2.zip；问题3主模型推理需要weights_q3_main.zip。
+完整查看解释卡需media_q3.zip；重放对照实验需weights_q3_baselines.zip。
+
+运行方法见README.md。文件校验信息见manifest.json和external_files.json。
