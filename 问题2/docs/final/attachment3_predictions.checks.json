@@ -1,0 +1,16 @@
+{
+  "text_observation_policy": "retain",
+  "unknown_token_positions": 131,
+  "lexical_available_positions": 474,
+  "rows": 30,
+  "unique_ids": 30,
+  "device": "cuda",
+  "single_batch_max_probability_diff": 4.76837158203125e-07,
+  "single_batch_max_intensity_diff": 6.146728992462158e-07,
+  "single_batch_class_equal": true,
+  "reload_exact_match": true,
+  "finite": true,
+  "checkpoint_sha256": "c78045f8f014955ccab9cc83709b989e4ebdbdf53e0859eca08ed8b30b4b4112",
+  "scaler_sha256": "30bfe7e4d67527107f6931794e53d5a5f977517dd644ac477cb5ca3b38285d6c",
+  "csv_sha256": "dc09f4dfc9e1cdde5e71cd3db82241e42e3ab98965ce68ed1988f5ed5af46611"
+}

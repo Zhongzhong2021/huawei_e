@@ -1,0 +1,596 @@
+[
+  {
+    "run": "fold0_candidate_s42",
+    "config": {
+      "kind": "bert",
+      "layers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "pretrained": true,
+      "multimodal": true,
+      "augmentation": "mixed_joint",
+      "distillation": false,
+      "seed": 42,
+      "max_epochs": 6,
+      "vocabulary_mode": "full",
+      "class_weight_power": 1.0,
+      "separate_augmentation_rng": true
+    },
+    "epochs": [
+      {
+        "epoch": 1,
+        "loss": 1.4299485374259078,
+        "score": null,
+        "clean_f1": null,
+        "clean_mae": null,
+        "seconds": 7.37350869178772,
+        "batch_size": 32,
+        "microbatch_size": 32,
+        "classification_weights": [
+          1.0485637187957764,
+          1.350324273109436,
+          0.6011120676994324
+        ]
+      },
+      {
+        "epoch": 2,
+        "loss": 1.0809919143920619,
+        "score": null,
+        "clean_f1": null,
+        "clean_mae": null,
+        "seconds": 15.4964280128479,
+        "batch_size": 32,
+        "microbatch_size": 32,
+        "classification_weights": [
+          1.0485637187957764,
+          1.350324273109436,
+          0.6011120676994324
+        ]
+      },
+      {
+        "epoch": 3,
+        "loss": 0.9094784398057145,
+        "score": null,
+        "clean_f1": null,
+        "clean_mae": null,
+        "seconds": 23.717568397521973,
+        "batch_size": 32,
+        "microbatch_size": 32,
+        "classification_weights": [
+          1.0485637187957764,
+          1.350324273109436,
+          0.6011120676994324
+        ]
+      },
+      {
+        "epoch": 4,
+        "loss": 0.7955801199015962,
+        "score": null,
+        "clean_f1": null,
+        "clean_mae": null,
+        "seconds": 32.0681734085083,
+        "batch_size": 32,
+        "microbatch_size": 32,
+        "classification_weights": [
+          1.0485637187957764,
+          1.350324273109436,
+          0.6011120676994324
+        ]
+      }
+    ],
+    "training_metadata": {
+      "best_epoch": 4,
+      "epochs": 4,
+      "seconds": 49.879937410354614,
+      "parameters": 108676676,
+      "checkpoint_sha256": "2b81fc498ec151bff3a014b1626a028dd8c07a10f040810ea8af297de218e70e",
+      "peak_cuda_allocated_bytes": 2416082432
+    }
+  },
+  {
+    "run": "fold0_reference_s42",
+    "config": {
+      "kind": "bert",
+      "layers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "pretrained": true,
+      "multimodal": true,
+      "augmentation": "span",
+      "distillation": false,
+      "seed": 42,
+      "max_epochs": 6,
+      "vocabulary_mode": "full",
+      "class_weight_power": 1.0,
+      "separate_augmentation_rng": true
+    },
+    "epochs": [
+      {
+        "epoch": 1,
+        "loss": 1.407260105599007,
+        "score": null,
+        "clean_f1": null,
+        "clean_mae": null,
+        "seconds": 7.787846326828003,
+        "batch_size": 32,
+        "microbatch_size": 32,
+        "classification_weights": [
+          1.0485637187957764,
+          1.350324273109436,
+          0.6011120676994324
+        ]
+      },
+      {
+        "epoch": 2,
+        "loss": 1.0377202259895464,
+        "score": null,
+        "clean_f1": null,
+        "clean_mae": null,
+        "seconds": 17.007709503173828,
+        "batch_size": 32,
+        "microbatch_size": 32,
+        "classification_weights": [
+          1.0485637187957764,
+          1.350324273109436,
+          0.6011120676994324
+        ]
+      },
+      {
+        "epoch": 3,
+        "loss": 0.8405751492879162,
+        "score": null,
+        "clean_f1": null,
+        "clean_mae": null,
+        "seconds": 25.92729139328003,
+        "batch_size": 32,
+        "microbatch_size": 32,
+        "classification_weights": [
+          1.0485637187957764,
+          1.350324273109436,
+          0.6011120676994324
+        ]
+      },
+      {
+        "epoch": 4,
+        "loss": 0.6942821205478825,
+        "score": null,
+        "clean_f1": null,
+        "clean_mae": null,
+        "seconds": 34.195383071899414,
+        "batch_size": 32,
+        "microbatch_size": 32,
+        "classification_weights": [
+          1.0485637187957764,
+          1.350324273109436,
+          0.6011120676994324
+        ]
+      }
+    ],
+    "training_metadata": {
+      "best_epoch": 4,
+      "epochs": 4,
+      "seconds": 51.66993427276611,
+      "parameters": 108676676,
+      "checkpoint_sha256": "9668647d157c21bfe7527a6e95686d4b425a6e247d370934bab511e4727147e0",
+      "peak_cuda_allocated_bytes": 2416082432
+    }
+  },
+  {
+    "run": "fold1_candidate_s42",
+    "config": {
+      "kind": "bert",
+      "layers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "pretrained": true,
+      "multimodal": true,
+      "augmentation": "mixed_joint",
+      "distillation": false,
+      "seed": 42,
+      "max_epochs": 6,
+      "vocabulary_mode": "full",
+      "class_weight_power": 1.0,
+      "separate_augmentation_rng": true
+    },
+    "epochs": [
+      {
+        "epoch": 1,
+        "loss": 1.3907929928172267,
+        "score": null,
+        "clean_f1": null,
+        "clean_mae": null,
+        "seconds": 7.6851019859313965,
+        "batch_size": 32,
+        "microbatch_size": 32,
+        "classification_weights": [
+          1.0627775192260742,
+          1.3289837837219238,
+          0.6082386374473572
+        ]
+      },
+      {
+        "epoch": 2,
+        "loss": 1.079278673015399,
+        "score": null,
+        "clean_f1": null,
+        "clean_mae": null,
+        "seconds": 16.091004610061646,
+        "batch_size": 32,
+        "microbatch_size": 32,
+        "classification_weights": [
+          1.0627775192260742,
+          1.3289837837219238,
+          0.6082386374473572
+        ]
+      },
+      {
+        "epoch": 3,
+        "loss": 0.933647086369691,
+        "score": null,
+        "clean_f1": null,
+        "clean_mae": null,
+        "seconds": 24.53479838371277,
+        "batch_size": 32,
+        "microbatch_size": 32,
+        "classification_weights": [
+          1.0627775192260742,
+          1.3289837837219238,
+          0.6082386374473572
+        ]
+      },
+      {
+        "epoch": 4,
+        "loss": 0.8318317785768484,
+        "score": null,
+        "clean_f1": null,
+        "clean_mae": null,
+        "seconds": 33.13754963874817,
+        "batch_size": 32,
+        "microbatch_size": 32,
+        "classification_weights": [
+          1.0627775192260742,
+          1.3289837837219238,
+          0.6082386374473572
+        ]
+      }
+    ],
+    "training_metadata": {
+      "best_epoch": 4,
+      "epochs": 4,
+      "seconds": 49.230327129364014,
+      "parameters": 108676676,
+      "checkpoint_sha256": "54f8f0a09ea58e796f3696b6ba93467672dd8a9c7621f493300fd1208affe1ab",
+      "peak_cuda_allocated_bytes": 2416082432
+    }
+  },
+  {
+    "run": "fold1_reference_s42",
+    "config": {
+      "kind": "bert",
+      "layers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "pretrained": true,
+      "multimodal": true,
+      "augmentation": "span",
+      "distillation": false,
+      "seed": 42,
+      "max_epochs": 6,
+      "vocabulary_mode": "full",
+      "class_weight_power": 1.0,
+      "separate_augmentation_rng": true
+    },
+    "epochs": [
+      {
+        "epoch": 1,
+        "loss": 1.366440503209907,
+        "score": null,
+        "clean_f1": null,
+        "clean_mae": null,
+        "seconds": 8.381887197494507,
+        "batch_size": 32,
+        "microbatch_size": 32,
+        "classification_weights": [
+          1.0627775192260742,
+          1.3289837837219238,
+          0.6082386374473572
+        ]
+      },
+      {
+        "epoch": 2,
+        "loss": 1.0120551672114382,
+        "score": null,
+        "clean_f1": null,
+        "clean_mae": null,
+        "seconds": 17.76822829246521,
+        "batch_size": 32,
+        "microbatch_size": 32,
+        "classification_weights": [
+          1.0627775192260742,
+          1.3289837837219238,
+          0.6082386374473572
+        ]
+      },
+      {
+        "epoch": 3,
+        "loss": 0.8070066960659574,
+        "score": null,
+        "clean_f1": null,
+        "clean_mae": null,
+        "seconds": 26.79741859436035,
+        "batch_size": 32,
+        "microbatch_size": 32,
+        "classification_weights": [
+          1.0627775192260742,
+          1.3289837837219238,
+          0.6082386374473572
+        ]
+      },
+      {
+        "epoch": 4,
+        "loss": 0.6930225776859619,
+        "score": null,
+        "clean_f1": null,
+        "clean_mae": null,
+        "seconds": 35.69976282119751,
+        "batch_size": 32,
+        "microbatch_size": 32,
+        "classification_weights": [
+          1.0627775192260742,
+          1.3289837837219238,
+          0.6082386374473572
+        ]
+      }
+    ],
+    "training_metadata": {
+      "best_epoch": 4,
+      "epochs": 4,
+      "seconds": 52.21583533287048,
+      "parameters": 108676676,
+      "checkpoint_sha256": "87c67cb250b94ffb477cada77d466f2b72c3c76a719ae7040a26972de69a5acd",
+      "peak_cuda_allocated_bytes": 2416082432
+    }
+  },
+  {
+    "run": "fold2_candidate_s42",
+    "config": {
+      "kind": "bert",
+      "layers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "pretrained": true,
+      "multimodal": true,
+      "augmentation": "mixed_joint",
+      "distillation": false,
+      "seed": 42,
+      "max_epochs": 6,
+      "vocabulary_mode": "full",
+      "class_weight_power": 1.0,
+      "separate_augmentation_rng": true
+    },
+    "epochs": [
+      {
+        "epoch": 1,
+        "loss": 1.3904892826619826,
+        "score": null,
+        "clean_f1": null,
+        "clean_mae": null,
+        "seconds": 7.745617389678955,
+        "batch_size": 32,
+        "microbatch_size": 32,
+        "classification_weights": [
+          1.0411896705627441,
+          1.343013048171997,
+          0.6157972812652588
+        ]
+      },
+      {
+        "epoch": 2,
+        "loss": 1.0842272028703084,
+        "score": null,
+        "clean_f1": null,
+        "clean_mae": null,
+        "seconds": 16.407203912734985,
+        "batch_size": 32,
+        "microbatch_size": 32,
+        "classification_weights": [
+          1.0411896705627441,
+          1.343013048171997,
+          0.6157972812652588
+        ]
+      },
+      {
+        "epoch": 3,
+        "loss": 0.8923446884146974,
+        "score": null,
+        "clean_f1": null,
+        "clean_mae": null,
+        "seconds": 24.942774295806885,
+        "batch_size": 32,
+        "microbatch_size": 32,
+        "classification_weights": [
+          1.0411896705627441,
+          1.343013048171997,
+          0.6157972812652588
+        ]
+      },
+      {
+        "epoch": 4,
+        "loss": 0.82098734778254,
+        "score": null,
+        "clean_f1": null,
+        "clean_mae": null,
+        "seconds": 33.59636998176575,
+        "batch_size": 32,
+        "microbatch_size": 32,
+        "classification_weights": [
+          1.0411896705627441,
+          1.343013048171997,
+          0.6157972812652588
+        ]
+      }
+    ],
+    "training_metadata": {
+      "best_epoch": 4,
+      "epochs": 4,
+      "seconds": 50.16723036766052,
+      "parameters": 108676676,
+      "checkpoint_sha256": "4802fb2796077ea0cf073084acaa47e873dd384f3df920e94d1236b65ea1a5f9",
+      "peak_cuda_allocated_bytes": 2416082432
+    }
+  },
+  {
+    "run": "fold2_reference_s42",
+    "config": {
+      "kind": "bert",
+      "layers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "pretrained": true,
+      "multimodal": true,
+      "augmentation": "span",
+      "distillation": false,
+      "seed": 42,
+      "max_epochs": 6,
+      "vocabulary_mode": "full",
+      "class_weight_power": 1.0,
+      "separate_augmentation_rng": true
+    },
+    "epochs": [
+      {
+        "epoch": 1,
+        "loss": 1.3826758860504242,
+        "score": null,
+        "clean_f1": null,
+        "clean_mae": null,
+        "seconds": 8.049880981445312,
+        "batch_size": 32,
+        "microbatch_size": 32,
+        "classification_weights": [
+          1.0411896705627441,
+          1.343013048171997,
+          0.6157972812652588
+        ]
+      },
+      {
+        "epoch": 2,
+        "loss": 1.028748531150652,
+        "score": null,
+        "clean_f1": null,
+        "clean_mae": null,
+        "seconds": 16.44054079055786,
+        "batch_size": 32,
+        "microbatch_size": 32,
+        "classification_weights": [
+          1.0411896705627441,
+          1.343013048171997,
+          0.6157972812652588
+        ]
+      },
+      {
+        "epoch": 3,
+        "loss": 0.8187711209810953,
+        "score": null,
+        "clean_f1": null,
+        "clean_mae": null,
+        "seconds": 24.836499452590942,
+        "batch_size": 32,
+        "microbatch_size": 32,
+        "classification_weights": [
+          1.0411896705627441,
+          1.343013048171997,
+          0.6157972812652588
+        ]
+      },
+      {
+        "epoch": 4,
+        "loss": 0.7135478933548491,
+        "score": null,
+        "clean_f1": null,
+        "clean_mae": null,
+        "seconds": 33.5887291431427,
+        "batch_size": 32,
+        "microbatch_size": 32,
+        "classification_weights": [
+          1.0411896705627441,
+          1.343013048171997,
+          0.6157972812652588
+        ]
+      }
+    ],
+    "training_metadata": {
+      "best_epoch": 4,
+      "epochs": 4,
+      "seconds": 49.65156078338623,
+      "parameters": 108676676,
+      "checkpoint_sha256": "a6731595c67c62efa6bf8d37dceea916e533e2926dd97d4faba63844e0b8829f",
+      "peak_cuda_allocated_bytes": 2416082432
+    }
+  }
+]

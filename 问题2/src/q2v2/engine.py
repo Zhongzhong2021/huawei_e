@@ -93,6 +93,10 @@ def train_run(root, name, config, train_data, valid_data, vocabulary, source=Non
     schedule = None if is_mlp else torch.optim.lr_scheduler.LambdaLR(optimizer, lambda step:
                 min((step + 1) / warmup, max(0., (steps-step) / max(1, steps-warmup))))
     rng = np.random.default_rng(config.get("seed", 42))
+    # Optional study control: augmentation draws cannot change the next epoch's
+    # sample permutation when comparing different corruption mechanisms.
+    augmentation_rng = np.random.default_rng(np.random.SeedSequence(
+        [config.get("seed", 42), 270927])) if config.get("separate_augmentation_rng", False) else rng
     masks = {s: scenario_mask(valid_data, s) for s in ["clean"] + MAIN}
     best, best_epoch, stale = -float("inf"), 0, 0
     log = []
@@ -123,10 +127,11 @@ def train_run(root, name, config, train_data, valid_data, vocabulary, source=Non
                 torch.from_numpy(train_data['labels'][idx]).to(device)].sum().item())
             optimizer.zero_grad(set_to_none=True)
             rng_state = copy.deepcopy(rng.bit_generator.state)
+            augmentation_rng_state = copy.deepcopy(augmentation_rng.bit_generator.state)
             cpu_state = torch.get_rng_state()
             cuda_state = torch.cuda.get_rng_state() if device.type == "cuda" else None
             try:
-                drop = augmentation_mask(train_data["valid"][idx], rng, config.get("augmentation", "span"), .7)
+                drop = augmentation_mask(train_data["valid"][idx], augmentation_rng, config.get("augmentation", "span"), .7)
                 effective_loss = 0.
                 for offset in range(0, len(idx), microbatch_size):
                     micro_idx = idx[offset:offset+microbatch_size]
@@ -165,6 +170,7 @@ def train_run(root, name, config, train_data, valid_data, vocabulary, source=Non
             except torch.cuda.OutOfMemoryError:
                 optimizer.zero_grad(set_to_none=True)
                 rng.bit_generator.state = rng_state
+                augmentation_rng.bit_generator.state = augmentation_rng_state
                 torch.set_rng_state(cpu_state)
                 if cuda_state is not None:
                     torch.cuda.set_rng_state(cuda_state)

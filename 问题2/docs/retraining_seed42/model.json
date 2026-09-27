@@ -1,0 +1,11 @@
+{
+  "frozen_utc": "2026-09-27T00:00:44.137608+00:00",
+  "model_name": "fixed_recipe_seed42_retrained",
+  "identity": "New fitted model; historical checkpoint is not required or replaced",
+  "checkpoint_sha256": "c78045f8f014955ccab9cc83709b989e4ebdbdf53e0859eca08ed8b30b4b4112",
+  "scaler_sha256": "30bfe7e4d67527107f6931794e53d5a5f977517dd644ac477cb5ca3b38285d6c",
+  "protocol_sha256": "7c0d5ca34a359855c4da8c8884254810d418a09c1cebd723732e69404d50401a",
+  "test_used_for_selection": false,
+  "quantization": null,
+  "fixed_epochs": 4
+}

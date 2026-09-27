@@ -1,0 +1,17 @@
+{
+  "README.md": "6a23b5d606ae6e15eb9fe14e23175e0d5496433ec19250bc08b279987229f6b4",
+  "analysis.json": "1b7fd355ec88234153213a14ea64dac5d0c29fbbf22224b0cabc13a7aa7b234a",
+  "augmentation_comparison.pdf": "642e8c8eb37074032daeedc95c17e5ffab766c09c4e7a004a3aa644579fc0c6c",
+  "augmentation_comparison.png": "f6f0c5737769f79129ac0c43ceced0518253bbf0629b261e65b8ab2c9f17c15d",
+  "comparison_by_condition.csv": "f692a65624ebef7c7ea9523d9037c8ef1a55f9a7b38456e40cf43740bf6e164e",
+  "condition_metrics.json": "453cdf99952b24307ad1bdf9624477b311ed79454ff4bc77f3a51d554b392438",
+  "development.json": "5e5110e5bdcafa5dfba0b80d1850c85bc6d6c524951ac672a97091c5174abae7",
+  "development_decision.json": "c892a89c5420381e8a609fe50c0654993735cc261dcf87966239a540408bd176",
+  "development_simplicity.json": "0991be6105d705d28ca3d639c77fadfa86bc6fabcc9f2770993810a7484d9280",
+  "protocol.json": "9e7fcca1327ab2733951c38eeb8da80d4e9babcc8d9c258bd53d572d1170aebd",
+  "reused_references.json": "8fcf04fff3a89a35c4bd4194f3a4a7312d9b88d14d29cc558685b6a23a0fcc7a",
+  "runs.json": "34db371b8b4493ae37a7978e89735f917d3fce429f17b97d09f98e1e4bf30a52",
+  "started.json": "075563a5148f9383c35a6ba0b77606a168382105c41b1df98a8324cd475d0dc0",
+  "terminal.json": "e6850ead7bb1e6bf2185a1fd2d5fa96ffda319fd90d63981dd81540641e712e0",
+  "verification.json": "f2b37d19b8efb951484b0518a0832cbc12bb9d673a6605a6f139bb612c7a1122"
+}

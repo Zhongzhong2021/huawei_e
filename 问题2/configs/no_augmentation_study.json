@@ -1,0 +1,71 @@
+{
+  "version": "q2-no-augmentation-controlled-v1",
+  "candidate": "none",
+  "reference": "span",
+  "fixed_epochs": 4,
+  "folds": 3,
+  "fold_seed": 240924,
+  "development_seed": 42,
+  "separate_augmentation_rng": true,
+  "randomness_control": "Both arms use identical sample-order seeds and a separate augmentation RNG; historical runs keep their original RNG path",
+  "confirmation_seeds": [
+    42,
+    2026,
+    3407
+  ],
+  "evaluation_mask_seeds": [
+    270927,
+    270928,
+    270929
+  ],
+  "evaluation_joint_rates": [
+    10,
+    20,
+    30,
+    50
+  ],
+  "evaluation_joint_shapes": [
+    "random",
+    "scattered",
+    "short"
+  ],
+  "comparison_policy": "mask_unk for both models; isolates training augmentation",
+  "groups": {
+    "low_joint": [
+      10,
+      20
+    ],
+    "medium_joint": [
+      30
+    ],
+    "heavy_joint": [
+      50
+    ]
+  },
+  "guardrails": {
+    "clean_f1_drop": 0.01,
+    "clean_accuracy_drop": 0.01,
+    "clean_mae_increase": 0.02,
+    "single_f1_drop": 0.01,
+    "single_mae_increase": 0.02,
+    "joint_group_f1_drop": 0.005,
+    "joint_group_mae_increase": 0.02
+  },
+  "selection": "Report prior superiority rule separately. Simplification requires all predefined performance guards and all paired interval noninferiority bounds below.",
+  "score": "0.5*mean_low_medium_macro_f1 + 0.5*(1-mean_low_medium_mae/6); excludes heavy conditions",
+  "confirmation": "Only if internal simplicity gate passes; identical criterion on three paired full-training seeds; no retuning",
+  "deployment_seed": 42,
+  "scope": "Target-input-informed design; fitting/selection uses attachment2 train only; validation confirmation is conditional, not an untouched benchmark; no test evaluation or special labels",
+  "budget": "Three candidate internal fits using audited reference fits; if simplicity gate passes, six paired full confirmation fits",
+  "simplification": {
+    "clean_f1_margin": 0.01,
+    "clean_mae_margin": 0.02,
+    "single_f1_margin": 0.01,
+    "single_mae_margin": 0.02,
+    "joint_f1_margin": 0.005,
+    "joint_mae_margin": 0.02,
+    "low_medium_score_margin": 0.002,
+    "minimum_noninferior_folds": 2,
+    "interval_rule": "Require every two-sided 95% video-bootstrap interval to lie within its one-sided noninferiority margin. Conditional fixed-fit evidence; not training-seed or selection-adjusted."
+  }
+}

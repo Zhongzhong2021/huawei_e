@@ -1,0 +1,13 @@
+{
+  "version": "q2-fixed-recipe-retrain-v1",
+  "config": "confirmed_seed42.json",
+  "training_protocol": "frozen_protocol.json",
+  "fixed_epochs": 4,
+  "seed": 42,
+  "vocabulary_size": 30522,
+  "pretrained_repository": "google-bert/bert-base-uncased",
+  "pretrained_revision": "86b5e0934494bd15c9632b12f734a8a67f723594",
+  "selection": "Fixed configuration and final epoch; no validation selection",
+  "evaluation": "Validation only; attachment 3 predictions have no accuracy labels",
+  "identity": "New fitted model; historical checkpoint is not required or replaced"
+}

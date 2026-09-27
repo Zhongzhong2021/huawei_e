@@ -18,6 +18,20 @@ def select_positions(valid, rate, shape, rng):
     count = min(len(idx), max(1, int(np.floor(len(idx) * rate + 0.5))))
     if shape == "scattered":
         return np.sort(rng.choice(idx, count, replace=False))
+    if shape == "short":
+        # At most two positions in each four-position block. Adjacent block
+        # boundary runs may merge (maximum four); total removal stays exact.
+        blocks = [idx[start:start + 4] for start in range(0, len(idx), 4)]
+        slots = np.repeat(np.arange(len(blocks)), [min(2, len(b)) for b in blocks])
+        if count > len(slots):
+            raise ValueError("Short-run masks require a rate no greater than 0.5")
+        counts = np.bincount(rng.choice(slots, count, replace=False), minlength=len(blocks))
+        selected = []
+        for block, size in zip(blocks, counts):
+            if size:
+                start = int(rng.integers(0, len(block) - size + 1))
+                selected.extend(block[start:start + size])
+        return np.asarray(sorted(selected), dtype=np.int64)
     if shape == "multi":
         # Distribute exactly count removed positions over up to three short runs.
         groups = np.array_split(idx, min(3, len(idx)))
@@ -49,6 +63,19 @@ def scenario_mask(data, scenario):
 def augmentation_mask(valid, rng, mode, probability=0.7):
     drop = np.zeros((*valid.shape, 3), dtype=bool)
     if mode == "none":
+        return drop
+    if mode == "mixed_joint":
+        for i, row in enumerate(valid):
+            if rng.random() >= probability:
+                continue
+            if rng.random() < .5:
+                modality = int(rng.integers(3))
+                pos = select_positions(row, float(rng.choice([.1, .3, .5])), "random", rng)
+                drop[i, pos, modality] = True
+            else:
+                shape = str(rng.choice(["random", "scattered", "short"]))
+                pos = select_positions(row, float(rng.choice([.1, .2, .3, .4, .5])), shape, rng)
+                drop[i, pos, :] = True
         return drop
     shape = "scattered" if mode == "scattered" else "random"
     for i, row in enumerate(valid):

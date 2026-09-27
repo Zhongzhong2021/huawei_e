@@ -1,0 +1,42 @@
+{
+  "development_simplicity": {
+    "passed": false,
+    "checks": {
+      "clean_f1": true,
+      "clean_accuracy": true,
+      "clean_mae": true,
+      "single_f1": true,
+      "single_mae": true,
+      "low_joint_f1": true,
+      "low_joint_mae": true,
+      "medium_joint_f1": true,
+      "medium_joint_mae": true,
+      "heavy_joint_f1": false,
+      "heavy_joint_mae": true,
+      "mean_score_noninferior": true,
+      "paired_noninferior": true,
+      "clean_macro_f1_interval": true,
+      "clean_mae_interval": true,
+      "single_macro_f1_interval": true,
+      "single_mae_interval": true,
+      "low_joint_macro_f1_interval": false,
+      "low_joint_mae_interval": true,
+      "medium_joint_macro_f1_interval": false,
+      "medium_joint_mae_interval": true,
+      "heavy_joint_macro_f1_interval": false,
+      "heavy_joint_mae_interval": true,
+      "low_medium_macro_f1_interval": false,
+      "low_medium_mae_interval": true
+    },
+    "scope": "Require every two-sided 95% video-bootstrap interval to lie within its one-sided noninferiority margin. Conditional fixed-fit evidence; not training-seed or selection-adjusted."
+  },
+  "validation_evaluated": false,
+  "candidate_promoted": false,
+  "test_evaluated": false,
+  "special_labels_used": false,
+  "new_fits": 3,
+  "reused_fits": 3,
+  "status": "completed",
+  "seconds": 385.56008887290955,
+  "completed_utc": "2026-09-27T00:56:30.313725+00:00"
+}

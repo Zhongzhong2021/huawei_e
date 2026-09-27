@@ -1,0 +1,17 @@
+[
+  {
+    "run": "fold0_reference_s42",
+    "checkpoint_sha256": "9668647d157c21bfe7527a6e95686d4b425a6e247d370934bab511e4727147e0",
+    "source": "/workspace/q2-joint-study-20260927/runs/fold0_reference_s42"
+  },
+  {
+    "run": "fold1_reference_s42",
+    "checkpoint_sha256": "87c67cb250b94ffb477cada77d466f2b72c3c76a719ae7040a26972de69a5acd",
+    "source": "/workspace/q2-joint-study-20260927/runs/fold1_reference_s42"
+  },
+  {
+    "run": "fold2_reference_s42",
+    "checkpoint_sha256": "a6731595c67c62efa6bf8d37dceea916e533e2926dd97d4faba63844e0b8829f",
+    "source": "/workspace/q2-joint-study-20260927/runs/fold2_reference_s42"
+  }
+]

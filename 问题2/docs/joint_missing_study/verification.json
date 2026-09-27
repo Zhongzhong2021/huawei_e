@@ -1,0 +1,12 @@
+{
+  "tests_passed": 64,
+  "test_log_sha256": "471faf81039b61187f54e1b5a7c508f7b55a58bfc15c608e37ba4d8008231202",
+  "trained_models": 6,
+  "model_hashes_verified": true,
+  "prediction_tables_recomputed": 276,
+  "data_audit": "analysis.json:data_audit",
+  "original_augmentation_golden_masks_unchanged": true,
+  "default_prediction_policy": "retain",
+  "candidate_promoted": false,
+  "analysis_script_sha256": "84b75a63330636674cc640b4135ad696136ae01d2683ba8d437f4b48586b975a"
+}

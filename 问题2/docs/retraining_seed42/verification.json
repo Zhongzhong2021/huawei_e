@@ -1,0 +1,16 @@
+{
+  "tests": 59,
+  "tests_passed": true,
+  "gpu_test_log_sha256": "23ea4bca6492f945e27443bc2646b4cf54d8ad1b6e3e45231c15719c42af5b05",
+  "source_hashes_match_training": true,
+  "checkpoint_and_scaler_hashes_match": true,
+  "all_46_scenario_masks_recomputed": true,
+  "all_26_policy_masks_recomputed": true,
+  "test_dataset_processed": false,
+  "script_sha256": {
+    "retrain_seed42.py": "8b6cc0c6e1c1fd4525f2bcf97d66e1c77477c05bdd43b7801e21b22d9d09e823",
+    "evaluate_retrained.py": "2a1be69b5b39b40518578c98772d2aee74248960dbce9a7c71c0ae89696ad8ca",
+    "prepare_bert_initialization.py": "20dc35b09457a9c1535182f086a4c567194af0ceb064a60d05038c0df35eb1ba",
+    "evaluate_observation_policy.py": "0d6704db199284f8109cb1a0b030267c7c12796fc977772a00ae6cf645bd9637"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "passed": false,
+  "checks": {
+    "clean_f1": true,
+    "clean_accuracy": true,
+    "clean_mae": true,
+    "single_f1": true,
+    "single_mae": true,
+    "mean_score": false,
+    "paired_successes": false,
+    "low_joint_f1": true,
+    "low_joint_mae": true,
+    "medium_joint_f1": true,
+    "medium_joint_mae": true,
+    "heavy_joint_f1": false,
+    "heavy_joint_mae": true
+  },
+  "reference_mean": {
+    "clean": {
+      "accuracy": 0.6516319764761335,
+      "macro_f1": 0.6281648504585879,
+      "mae": 0.6042123185657194,
+      "pearson": 0.7069581114504055
+    },
+    "single": {
+      "accuracy": 0.6314519477241868,
+      "macro_f1": 0.6104531015279343,
+      "mae": 0.6229726258445208,
+      "pearson": 0.6777313194548814
+    },
+    "low_joint": {
+      "accuracy": 0.6233043816835422,
+      "macro_f1": 0.6037075910661814,
+      "mae": 0.6286045973898432,
+      "pearson": 0.6666130299773765
+    },
+    "medium_joint": {
+      "accuracy": 0.5961443910416866,
+      "macro_f1": 0.5804745869384186,
+      "mae": 0.6538193358828143,
+      "pearson": 0.626755994186902
+    },
+    "heavy_joint": {
+      "accuracy": 0.5379741179545405,
+      "macro_f1": 0.5299694489060637,
+      "mae": 0.7047290271199963,
+      "pearson": 0.5400000201678035
+    },
+    "low_medium": {
+      "accuracy": 0.6142510514695904,
+      "macro_f1": 0.5959632563569272,
+      "mae": 0.6370095102208336,
+      "pearson": 0.6533273513805516
+    },
+    "score": 0.7448975023267274
+  },
+  "candidate_mean": {
+    "clean": {
+      "accuracy": 0.6569652694630422,
+      "macro_f1": 0.6345582622413116,
+      "mae": 0.6101330162714512,
+      "pearson": 0.7031935453056805
+    },
+    "single": {
+      "accuracy": 0.6325779091979911,
+      "macro_f1": 0.6124084084623016,
+      "mae": 0.6285760322533621,
+      "pearson": 0.6727883845635354
+    },
+    "low_joint": {
+      "accuracy": 0.6206373461118431,
+      "macro_f1": 0.6018507059226105,
+      "mae": 0.6340559928658626,
+      "pearson": 0.6610002139680002
+    },
+    "medium_joint": {
+      "accuracy": 0.5940839917703019,
+      "macro_f1": 0.5785064003301271,
+      "mae": 0.6602741546836021,
+      "pearson": 0.6201277006587466
+    },
+    "heavy_joint": {
+      "accuracy": 0.533194204741273,
+      "macro_f1": 0.5237056650475242,
+      "mae": 0.7110008508693294,
+      "pearson": 0.5277039084711491
+    },
+    "low_medium": {
+      "accuracy": 0.611786227997996,
+      "macro_f1": 0.594069270725116,
+      "mae": 0.6427953801384424,
+      "pearson": 0.6473760428649156
+    },
+    "score": 0.7434683536843544
+  },
+  "paired_score_differences": [
+    -0.003565116638769017,
+    -0.0009937966883158955,
+    0.00027146739996597447
+  ]
+}

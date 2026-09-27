@@ -1,0 +1,12 @@
+{
+  "README.md": "c522bc3750f060fa8909629eee4aad64974137b6128f58edbd2c6dd5df1b77d5",
+  "attachment3_predictions.checks.json": "fadec080fed167bff0f7ae1eaa6489338fecf38087ccf38c69fe8aff98d4368a",
+  "attachment3_predictions.csv": "dc09f4dfc9e1cdde5e71cd3db82241e42e3ab98965ce68ed1988f5ed5af46611",
+  "diagnostics.json": "74b90f3c54048d28e36c3a4d0401528e34ab829e1f7976f36fb60a9809e0b881",
+  "errors.pdf": "a9218a4bc2a055c7bf805c3ba8d9d02dcc166d917021149c73887665653c8df0",
+  "missing.pdf": "dcb8580a178f4913016220954e3b2abbb8412c43d0262f5b6f37bc869e54014d",
+  "missing_shapes.pdf": "cea30d316a03861176e289e0592445b0c9555f201b091f4a243aadfa95b06180",
+  "model.json": "a15d3e94a3247e268bb221de746b9895fadc2af16f7732a7851a899df154e4a9",
+  "validation_metrics.json": "66fd4ff3361e89d46ca8a0742a3ec1dc6f5db9ba659c1797b0dc33ed3da75153",
+  "verification.json": "3a1249e14a1900d65f306e10091a48b7487a9ca0245188289b4adc0232ad47d5"
+}

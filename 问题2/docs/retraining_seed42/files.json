@@ -1,0 +1,14 @@
+{
+  "README.md": "260480a631cfeee514fda929b7435d9dc702989c663adb01760a06987ed9a3d4",
+  "attachment3_predictions.csv": "dc09f4dfc9e1cdde5e71cd3db82241e42e3ab98965ce68ed1988f5ed5af46611",
+  "data_audit.json": "244afa7152ef2f5efc77f96fe0ccd27e61d98fc658964feb6012be4a85e41e49",
+  "environment.txt": "2d9d9cb9c3524148e16f93360022dcfd3510c4b8bb0bec7a052e1df7cb159869",
+  "epochs.json": "abe6fd4249f872957234c21469cff9e3849e6451890724e66898532fdd472bf0",
+  "model.json": "a1c87781146804cd05730aef0b6d674a6b919042d5a6e9743b084054896df2ef",
+  "observation_results.json": "e276a81064fb522b0857408f2ebe91f335cf5a13abb0753a0b259394a811385a",
+  "prediction_checks.json": "b93ac657a2ab30518a360513b4a13d6a5148cae45a3dcfe912747ee646601846",
+  "provenance.json": "6228d0d834713e8bd0f522edcdd1a5df3324bd823e0e1bd0914cff0c3b84d666",
+  "summary.json": "5e3f2d2a6c1687b9e729644c8e788d579c7b30b192ad4f55658f1f89c56e194a",
+  "validation_metrics.json": "66fd4ff3361e89d46ca8a0742a3ec1dc6f5db9ba659c1797b0dc33ed3da75153",
+  "verification.json": "eba57fd4c759915132d8521a6011d2d1d442875bf9d231d47ab8f201449b6616"
+}

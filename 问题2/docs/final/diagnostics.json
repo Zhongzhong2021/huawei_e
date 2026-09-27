@@ -1,0 +1,11 @@
+{
+  "neutral_count": 184,
+  "neutral_correct": 104,
+  "opposite_polarity_count": 14,
+  "neutral_nonzero_count": 248,
+  "class_mae": [
+    0.7981313434339047,
+    0.4116116473989045,
+    0.5519448733312
+  ]
+}

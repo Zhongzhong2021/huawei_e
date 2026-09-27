@@ -1,0 +1,10 @@
+{
+  "tables": 276,
+  "csv_metrics_recomputed_during_analysis": true,
+  "csv_hashes_rechecked": true,
+  "data_masks_scalers_class_weights_reconstructed": true,
+  "paired_configs_differ_only_in_augmentation": true,
+  "reused_baseline_checkpoints_exact": true,
+  "report_script_sha256": "eb5237c1794f285d29605be264aeaea958226ae48fd6e45c41e651c7385b80b5",
+  "automated_tests_passed": 67
+}

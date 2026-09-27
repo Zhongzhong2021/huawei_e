@@ -1,0 +1,68 @@
+{
+  "train": {
+    "n": 3395,
+    "all_empty_rows": 0,
+    "boundary_without_sep": 0,
+    "attention_id_disagreement": 0,
+    "valid_positions": 76882,
+    "modalities": {
+      "audio": {
+        "observed": 76817,
+        "interior_all_zero": 65,
+        "nonfinite_vectors": 0,
+        "nonzero_outside_valid": 0
+      },
+      "vision": {
+        "observed": 72633,
+        "interior_all_zero": 4249,
+        "nonfinite_vectors": 0,
+        "nonzero_outside_valid": 0
+      },
+      "text": {
+        "observed": 76882,
+        "missing_inside_extent": 0
+      }
+    },
+    "text_observation_policy": "retain",
+    "text_unknown_positions": 0,
+    "text_lexical_available_positions": 76882,
+    "class_counts": [
+      967,
+      758,
+      1670
+    ]
+  },
+  "valid": {
+    "n": 728,
+    "all_empty_rows": 0,
+    "boundary_without_sep": 0,
+    "attention_id_disagreement": 0,
+    "valid_positions": 17172,
+    "modalities": {
+      "audio": {
+        "observed": 17126,
+        "interior_all_zero": 46,
+        "nonfinite_vectors": 0,
+        "nonzero_outside_valid": 0
+      },
+      "vision": {
+        "observed": 16192,
+        "interior_all_zero": 980,
+        "nonfinite_vectors": 0,
+        "nonzero_outside_valid": 0
+      },
+      "text": {
+        "observed": 17172,
+        "missing_inside_extent": 0
+      }
+    },
+    "text_observation_policy": "retain",
+    "text_unknown_positions": 0,
+    "text_lexical_available_positions": 17172,
+    "class_counts": [
+      206,
+      184,
+      338
+    ]
+  }
+}
